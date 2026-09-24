@@ -1,0 +1,21 @@
+{
+  "name": "claude-code-changelogs-observatory",
+  "version": "1.0.0",
+  "description": "Visualisation graphique et analyse du potentiel des changements de Claude Code avec mise à jour quotidienne",
+  "scripts": {
+    "start": "python3 server.py",
+    "update": "python3 scripts/update_changelog.py",
+    "cron:setup": "./scripts/setup_daily_cron.sh"
+  },
+  "keywords": [
+    "claude-code",
+    "changelog",
+    "anthropic",
+    "dashboard",
+    "analytics",
+    "mcp",
+    "agents"
+  ],
+  "author": "Regis",
+  "license": "MIT"
+}

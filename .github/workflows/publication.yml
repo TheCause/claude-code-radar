@@ -1,0 +1,53 @@
+# Publication du site sur GitHub Pages.
+#
+# Les données ne sont PAS produites ici : elles sont lues, analysées par un modèle local
+# et commitées chaque matin sur la machine de l'auteur (scripts/publier_quotidien.sh).
+# Ce workflow se déclenche sur ce push et publie, rien d'autre.
+#
+# Sécurité :
+# - le site publié est STATIQUE (web/ + data/*.json) : server.py n'est jamais déployé ;
+# - aucun droit par défaut ; le job reçoit le strict nécessaire, sans écriture du dépôt ;
+# - actions tierces figées sur l'empreinte de leur commit (une étiquette se déplace) ;
+# - aucun déclencheur pull_request : personne d'extérieur ne fait tourner ce code ici.
+name: Publication
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "data/**"
+      - "web/**"
+      - ".github/workflows/**"
+
+permissions: {}
+
+concurrency:
+  group: publication
+  cancel-in-progress: false
+
+jobs:
+  publication:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deploiement.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Assembler le site statique
+        run: |
+          mkdir -p _site/data
+          cp -R web/. _site/
+          cp data/changelog.json data/insights.json _site/data/
+          touch _site/.nojekyll
+          test -s _site/index.html && test -s _site/data/insights.json
+      - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
+        with:
+          path: _site
+      - id: deploiement
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5.0.1

@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+logs/*.log
+logs/*.error.log
+
+# Généré par machine (chemins absolus locaux) : jamais dans le dépôt
+scripts/com.claude.changelog.daily.plist
+# Copie de data/ pour l'ancien mode local ; le site publié lit data/
+public/
+# Copie brute de la source : seul repli LOCAL, jamais utilisé en publication (--strict)
+data/raw_changelog.md
+.publication.lock/

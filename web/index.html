@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+  <title>Observatoire Claude Code - Analyse Stratégique & Changelogs</title>
+  <meta name="description" content="Visualisation graphique, analyse du potentiel et suivi quotidien des changements et évolutions de Claude Code par Anthropic.">
+  
+  <!-- Inline theme initializer to prevent FOUC -->
+  <script>
+    (function() {
+      const savedTheme = localStorage.getItem('claude-obs-theme');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const theme = savedTheme || (prefersDark ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <!-- Google Fonts & Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+</head>
+<body>
+
+  <!-- Top Sticky Header -->
+  <header class="site-header" id="main-header">
+    <div class="container header-content">
+      <a href="#" class="logo-area" id="logo-link">
+        <div class="logo-icon">▲</div>
+        <div class="logo-text">
+          <h1>Claude Code Radar <span class="logo-tag" id="header-version-tag">—</span></h1>
+          <p>Observatoire Stratégique des Évolutions & Potentiel d'Anthropic</p>
+        </div>
+      </a>
+
+      <div class="header-actions">
+        <div class="sync-badge" id="sync-status-badge">
+          <span class="sync-dot"></span>
+          <span id="sync-status-text">Chargement…</span>
+        </div>
+
+        <button class="btn btn-primary" id="btn-trigger-update" title="Télécharger et analyser la dernière version du changelog officiel">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/>
+          </svg>
+          <span id="update-btn-label">Mettre à jour</span>
+        </button>
+
+        <button class="btn-icon" id="theme-toggle" title="Basculer Thème Sombre / Clair">
+          <svg id="theme-icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container" style="padding-top: 1.5rem;">
+
+    <!-- Navigation Tabs -->
+    <nav class="tab-nav" id="main-tabs" role="tablist">
+      <button class="tab-btn active" data-tab="tab-overview" id="btn-tab-overview" role="tab">
+        <span>📊</span> Vue d'Ensemble & Vélocité
+      </button>
+      <button class="tab-btn" data-tab="tab-pillars" id="btn-tab-pillars" role="tab">
+        <span>💡</span> Potentiel & 5 Piliers Stratégiques
+      </button>
+      <button class="tab-btn" data-tab="tab-gamechangers" id="btn-tab-gamechangers" role="tab">
+        <span>🌟</span> Game-Changers (Innovations Majeures)
+      </button>
+      <button class="tab-btn" data-tab="tab-explorer" id="btn-tab-explorer" role="tab">
+        <span>📜</span> Explorateur des 400+ Versions
+      </button>
+      <button class="tab-btn" data-tab="tab-diff" id="btn-tab-diff" role="tab">
+        <span>🔀</span> Comparateur de Versions (Diff)
+      </button>
+      <button class="tab-btn" data-tab="tab-automation" id="btn-tab-automation" role="tab">
+        <span>⚙️</span> Automatisation Quotidienne
+      </button>
+    </nav>
+
+    <!-- Key Metrics Hero Bar (Always Visible) -->
+    <section class="hero-stats" id="hero-stats-bar">
+      <div class="stat-card">
+        <div class="stat-header">
+          <span class="stat-title">Versions Déployées</span>
+          <span class="stat-icon">📦</span>
+        </div>
+        <div class="stat-value" id="kpi-total-versions">—</div>
+        <div class="stat-desc">
+          <span class="badge-trend">13 à 28 / mois</span>
+          <span>(20-28 / mois en 2026)</span>
+        </div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-header">
+          <span class="stat-title">Modifications Enregistrées</span>
+          <span class="stat-icon">⚡</span>
+        </div>
+        <div class="stat-value" id="kpi-total-items">—</div>
+        <div class="stat-desc">
+          <span>Features, fixes & optimisations</span>
+        </div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-header">
+          <span class="stat-title">Dernière Version</span>
+          <span class="stat-icon">🚀</span>
+        </div>
+        <div class="stat-value" style="font-size: 1.8rem;" id="kpi-latest-ver">—</div>
+        <div class="stat-desc" id="kpi-latest-date">—</div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-header">
+          <span class="stat-title">Innovations de Rupture</span>
+          <span class="stat-icon">🌟</span>
+        </div>
+        <div class="stat-value" id="kpi-high-impact">—</div>
+        <div class="stat-desc">
+          <span>Opus 5.5, Subagents, MCP, Gateway</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         TAB 1: OVERVIEW & VELOCITY (CHARTS)
+         ========================================================================= -->
+    <section class="view-section active" id="tab-overview" role="tabpanel">
+      <div class="section-header">
+        <h2 class="section-title"><span>📈</span> Vélocité & Dynamique d'Évolution</h2>
+        <p class="section-subtitle">
+          Analyse de l'effort de développement d'Anthropic sur Claude Code. Découvrez comment la plateforme est passée d'un CLI expérimental à un système d'ingénierie autonome d'entreprise.
+        </p>
+      </div>
+
+      <div class="charts-grid">
+        <!-- Monthly Release Cadence Chart -->
+        <div class="chart-card">
+          <div class="chart-header">
+            <h3 class="chart-title">Vélocité Mensuelle (Releases & Modifications)</h3>
+            <span class="chart-badge">Évolution chronologique</span>
+          </div>
+          <div class="chart-container">
+            <canvas id="chart-timeline"></canvas>
+          </div>
+        </div>
+
+        <!-- Category Donut Chart -->
+        <div class="chart-card">
+          <div class="chart-header">
+            <h3 class="chart-title">Nature des Changements</h3>
+            <span class="chart-badge">Répartition</span>
+          </div>
+          <div class="chart-container">
+            <canvas id="chart-categories"></canvas>
+          </div>
+        </div>
+      </div>
+
+      <div class="charts-grid">
+        <!-- Strategic Tags Breakdown -->
+        <div class="chart-card">
+          <div class="chart-header">
+            <h3 class="chart-title">Répartition par Domaine Stratégique</h3>
+            <span class="chart-badge">Multi-Agent, MCP, Sécurité...</span>
+          </div>
+          <div class="chart-container">
+            <canvas id="chart-tags"></canvas>
+          </div>
+        </div>
+
+        <!-- Executive Summary Card -->
+        <div class="chart-card" style="justify-content: center; background: linear-gradient(145deg, var(--card-bg), var(--bg-surface-elevated));">
+          <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
+            <div style="font-size: 2rem;">🎯</div>
+            <div>
+              <h4 style="font-family: var(--font-heading); font-size: 1.15rem; font-weight: 700;">Le Rythme Anthropic</h4>
+              <p style="font-size: 0.8rem; color: var(--text-muted);">Constat statistique clé</p>
+            </div>
+          </div>
+          <p style="font-size: 0.9rem; color: var(--text-main); margin-bottom: 1rem; line-height: 1.6;">
+            Avec une cadence de <strong>20 à 28 versions par mois en 2026</strong> (et de 13 à 28 versions par mois sur l'ensemble de l'historique 2025-2026, min 13 en mai 2025), Claude Code bénéficie d'une cadence d'itération continue et soutenue.
+          </p>
+          <div style="display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.82rem; color: var(--text-muted);">
+            <div>🔹 <strong>10%</strong> Nouveautés de rupture (Added)</div>
+            <div>🔹 <strong>52%</strong> Durcissement & corrections ultra-rapides (Fixed)</div>
+            <div>🔹 <strong>28%</strong> Ergonomie terminal, plugins et gains de latence (Improved)</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         TAB 2: STRATEGIC PILLARS (COMPRENDRE LE POTENTIEL)
+         ========================================================================= -->
+    <section class="view-section" id="tab-pillars" role="tabpanel">
+      <div class="section-header">
+        <h2 class="section-title"><span>💡</span> Comprendre le Potentiel de Claude Code</h2>
+        <p class="section-subtitle">
+          Synthèse des 5 axes directeurs qui définissent la vision d'Anthropic pour transformer l'ingénierie logicielle avec l'IA.
+        </p>
+      </div>
+
+      <div class="pillars-grid" id="pillars-container">
+        <!-- Injected dynamically via app.js -->
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         TAB 3: GAME-CHANGERS (HALL OF FAME)
+         ========================================================================= -->
+    <section class="view-section" id="tab-gamechangers" role="tabpanel">
+      <div class="section-header">
+        <h2 class="section-title"><span>🌟</span> Innovations Majeures ("Game-Changers")</h2>
+        <p class="section-subtitle">
+          Les fonctionnalités phares introduites dans les versions récentes qui débloquent de véritables super-pouvoirs pour les équipes d'ingénierie.
+        </p>
+      </div>
+
+      <div class="gamechangers-grid" id="gamechangers-container">
+        <!-- Injected dynamically via app.js -->
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         TAB 4: EXPLORATEUR DE VERSIONS & RECHERCHE
+         ========================================================================= -->
+    <section class="view-section" id="tab-explorer" role="tabpanel">
+      <div class="section-header">
+        <h2 class="section-title"><span>📜</span> Explorateur des 400+ Versions</h2>
+        <p class="section-subtitle">
+          Recherchez parmi l'intégralité des 6 200+ modifications avec filtres instantanés par domaine, version ou mot-clé.
+        </p>
+      </div>
+
+      <!-- Controls -->
+      <div class="explorer-controls">
+        <div class="search-row">
+          <div class="search-box">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="search-input" class="search-input" placeholder="Rechercher une fonctionnalité (ex: opus, subagent, mcp, bedrock, vim, sandbox)...">
+          </div>
+          <button class="btn btn-outline" id="btn-clear-search">Réinitialiser</button>
+        </div>
+
+        <div class="filter-tags-row">
+          <span class="filter-label">Domaine :</span>
+          <button class="filter-chip active" data-filter-tag="all">Tous</button>
+          <button class="filter-chip" data-filter-tag="Multi-Agent & Workflows">🤖 Multi-Agent</button>
+          <button class="filter-chip" data-filter-tag="MCP & Tools">🔌 MCP & Tools</button>
+          <button class="filter-chip" data-filter-tag="Models & Intelligence">🧠 Modèles & Cache</button>
+          <button class="filter-chip" data-filter-tag="Security & Governance">🛡️ Sécurité & Gateway</button>
+          <button class="filter-chip" data-filter-tag="IDE & Cloud Ubiquity">🌐 VS Code / Web / Slack</button>
+          <button class="filter-chip" data-filter-tag="Performance & Reliability">⚡ Performance</button>
+          <button class="filter-chip" data-filter-tag="Terminal & UX">💻 Terminal / UX</button>
+        </div>
+
+        <div class="filter-tags-row">
+          <span class="filter-label">Action :</span>
+          <button class="filter-chip active" data-filter-action="all">Toutes</button>
+          <button class="filter-chip" data-filter-action="Added">✨ Added</button>
+          <button class="filter-chip" data-filter-action="Improved">⚡ Improved</button>
+          <button class="filter-chip" data-filter-action="Fixed">🛠️ Fixed</button>
+          <button class="filter-chip" data-filter-action="Changed">🔄 Changed</button>
+        </div>
+      </div>
+
+      <div class="results-meta">
+        <span id="results-count-text">Affichage des versions...</span>
+        <button class="btn btn-outline" id="btn-toggle-all-cards" style="font-size: 0.78rem; padding: 0.3rem 0.65rem;">
+          Déplier / Replier tout
+        </button>
+      </div>
+
+      <!-- Version List -->
+      <div class="versions-list" id="versions-container">
+        <!-- Rendered by app.js -->
+      </div>
+
+      <div class="load-more-container" id="load-more-box">
+        <button class="btn btn-outline" id="btn-load-more">Charger 20 versions supplémentaires...</button>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         TAB 5: COMPARATEUR DE VERSIONS (DIFF)
+         ========================================================================= -->
+    <section class="view-section" id="tab-diff" role="tabpanel">
+      <div class="section-header">
+        <h2 class="section-title"><span>🔀</span> Comparateur de Versions (Diff)</h2>
+        <p class="section-subtitle">
+          Sélectionnez deux versions pour comparer immédiatement les nouveautés et correctifs apparus entre elles.
+        </p>
+      </div>
+
+      <div class="comparator-box">
+        <div class="comparator-selectors">
+          <div class="select-group">
+            <label for="select-version-a">Version Source (Base) :</label>
+            <select id="select-version-a" class="custom-select"></select>
+          </div>
+
+          <div style="font-size: 1.5rem; color: var(--text-dim); padding-top: 1rem;">➔</div>
+
+          <div class="select-group">
+            <label for="select-version-b">Version Cible (Nouvelle) :</label>
+            <select id="select-version-b" class="custom-select"></select>
+          </div>
+
+          <div style="padding-top: 1rem;">
+            <button class="btn btn-primary" id="btn-run-diff">Comparer les versions</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="diff-results-container">
+        <!-- Rendered by app.js -->
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         TAB 6: AUTOMATISATION QUOTIDIENNE
+         ========================================================================= -->
+    <section class="view-section" id="tab-automation" role="tabpanel">
+      <div class="section-header">
+        <h2 class="section-title"><span>⚙️</span> Automatisation Quotidienne & Synchronisation</h2>
+        <p class="section-subtitle">
+          Comment maintenir votre observatoire à jour chaque jour automatiquement avec les dernières notes de version officielles.
+        </p>
+      </div>
+
+      <div class="automation-grid">
+        <!-- Card 1: 1-Click Refresh -->
+        <div class="automation-card">
+          <h3><span>⚡</span> Déclenchement Immédiat</h3>
+          <p>
+            Vous pouvez forcer une récupération instantanée du changelog officiel (depuis <code>code.claude.com/docs/en/changelog.md</code>) directement via l'API locale.
+          </p>
+          <button class="btn btn-primary" id="btn-manual-sync" style="align-self: flex-start; margin-bottom: 1rem;">
+            <span>🔄</span> Lancer la synchronisation maintenant
+          </button>
+          <div style="font-size: 0.8rem; color: var(--text-dim);" id="manual-sync-feedback">
+            Dernière exécution réussie.
+          </div>
+        </div>
+
+        <!-- Card 2: macOS launchd Service -->
+        <div class="automation-card">
+          <h3><span>🍏</span> Script Launchd macOS</h3>
+          <p>
+            Le script <code>./scripts/setup_daily_cron.sh</code> prépare le descripteur <code>com.claude.changelog.daily.plist</code> avec le binaire absolu Python et <code>RunAtLoad=false</code>.
+          </p>
+          <div class="code-snippet">./scripts/setup_daily_cron.sh</div>
+          <p style="font-size: 0.8rem; color: var(--text-dim);">
+            Généré localement dans le dossier <code>scripts/</code>. Non installé par défaut (pour charger dans ~/Library/LaunchAgents : <code>./scripts/setup_daily_cron.sh --install</code>).
+          </p>
+        </div>
+
+        <!-- Card 3: Standard Crontab -->
+        <div class="automation-card">
+          <h3><span>🐧</span> Crontab Linux / Mac</h3>
+          <p>
+            Si vous préférez une commande cron manuelle dans votre propre ordonnanceur :
+          </p>
+          <div class="code-snippet">0 4 * * * cd /chemin/vers/Claude-ChangeLogs && python3 scripts/update_changelog.py >> logs/cron.log 2>&1</div>
+          <p style="font-size: 0.8rem; color: var(--text-dim);">
+            Exécution locale sans écriture hors du dossier de travail.
+          </p>
+        </div>
+
+        <!-- Card 4: Périmètre d'Exploration Locale -->
+        <div class="automation-card">
+          <h3><span>🎯</span> Périmètre : Exploration Locale</h3>
+          <p>
+            Cet observatoire est dédié exclusivement à l'exploration visuelle et analytique de l'historique (graphiques, recherche avancée, comparaison de versions) sur votre machine, sans notification externe.
+          </p>
+          <div style="font-size: 0.8rem; color: var(--text-dim);">
+            Aucun envoi Telegram, aucune notification externe, et écoute strictement restreinte à <code>127.0.0.1</code>.
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>
+        <strong>Claude Code Radar & Strategic Observatory</strong> · Conçu pour comprendre et exploiter le plein potentiel des évolutions de Claude Code.
+      </p>
+      <p style="margin-top: 0.4rem;">
+        Données synchronisées depuis <a href="https://code.claude.com/docs/en/changelog" target="_blank" rel="noopener noreferrer">Anthropic Claude Code Official Changelog</a>.
+      </p>
+      <p style="margin-top: 0.4rem;">
+        <span id="analyse-ia-statut"></span>
+      </p>
+      <p style="margin-top: 0.4rem;">
+        Site <strong>non officiel</strong>, non affilié à Anthropic. « Claude » et « Claude Code » sont des marques d'Anthropic.
+        Le texte des entrées reste celui du changelog officiel, qui fait foi.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- Main Application Logic -->
+  <script src="app.js"></script>
+</body>
+</html>
