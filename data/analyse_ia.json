@@ -404,5 +404,608 @@
   "0.2.26",
   "0.2.21"
  ],
- "entrees": {}
+ "entrees": {
+  "d18ec4c7ba9b3499": {
+   "version": "2.1.282",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Nouvelle option pour limiter la largeur du texte dans les terminaux larges, sans affecter les tableaux ni le code.",
+   "le": "2026-09-25T05:03:01Z"
+  },
+  "cd3fe7ad25297b38": {
+   "version": "2.1.282",
+   "domaine": "hooks_config",
+   "impact": "notable",
+   "resume": "Les commandes de diagnostic affichent désormais les variables de télémétrie ignorées ou désactivées dans les fichiers de configuration.",
+   "le": "2026-09-25T05:03:01Z"
+  },
+  "7a45ded813cb2a4c": {
+   "version": "2.1.282",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Nouvelle configuration gérée permettant d'exécuter le mode Chrome avec un serveur MCP exclusif, avec un message d'erreur plus clair.",
+   "le": "2026-09-25T05:03:01Z"
+  },
+  "e7001154907da5c6": {
+   "version": "2.1.282",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "Le point de contrôle de disponibilité reste actif lors de brèves pannes de base de données grâce à une nouvelle tolérance de temps.",
+   "le": "2026-09-25T05:03:01Z"
+  },
+  "0fa901386ce77300": {
+   "version": "2.1.282",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Une barre de défilement apparaît désormais sur la liste des brouillons de retour d'information en mode plein écran.",
+   "le": "2026-09-25T05:03:01Z"
+  },
+  "d1910c65e6515a71": {
+   "version": "2.1.282",
+   "domaine": "autre",
+   "impact": "notable",
+   "resume": "Correction des erreurs 400 survenant lorsque l'historique contient des résultats de recherche web que l'API ne peut pas déchiffrer.",
+   "le": "2026-09-25T05:03:01Z"
+  },
+  "b01204db424c7078": {
+   "version": "2.1.282",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Les sessions reprises ne modifient plus les messages antérieurs, évitant ainsi la perte du raisonnement précédent par l'API.",
+   "le": "2026-09-25T05:03:01Z"
+  },
+  "21c4fcf0ee8f90d0": {
+   "version": "2.1.282",
+   "domaine": "modeles",
+   "impact": "notable",
+   "resume": "Le raisonnement étendu n'est plus perdu lors de l'utilisation de commandes instantanées comme le changement de modèle pendant le travail.",
+   "le": "2026-09-25T05:03:01Z"
+  },
+  "fa6fc3e937e3d83e": {
+   "version": "2.1.282",
+   "domaine": "modeles",
+   "impact": "notable",
+   "resume": "Correction de la perte du raisonnement étendu lors de la reprise de sessions si la liste des outils exclut un outil utilisé précédemment.",
+   "le": "2026-09-25T05:03:01Z"
+  },
+  "4ebac99d415f0452": {
+   "version": "2.1.282",
+   "domaine": "modeles",
+   "impact": "notable",
+   "resume": "Les erreurs d'API liées aux blocs de pensée masqués sont désormais gérées par un abandon temporaire et une nouvelle tentative automatique.",
+   "le": "2026-09-25T05:03:01Z"
+  },
+  "8ee62a72f4e9fc4b": {
+   "version": "2.1.282",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "La compaction de la conversation réussit désormais même si la demande de résumée est refusée, grâce à une bascule sur un modèle de secours.",
+   "le": "2026-09-25T05:03:01Z"
+  },
+  "72aa1d17ea24206d": {
+   "version": "2.1.282",
+   "domaine": "modeles",
+   "impact": "mineur",
+   "resume": "Correction des erreurs d'effort incohérentes après un changement de modèle de sécurité dans les sessions avec le raisonnement désactivé.",
+   "le": "2026-09-25T05:03:01Z"
+  },
+  "9f58e8d43025a743": {
+   "version": "2.1.282",
+   "domaine": "modeles",
+   "impact": "mineur",
+   "resume": "Les sessions SDK ne changent plus de modèle lors d'une demande de crédits non répondue ; le tour se termine simplement avec une notification.",
+   "le": "2026-09-25T05:03:01Z"
+  },
+  "0c6c560fd505a5b0": {
+   "version": "2.1.282",
+   "domaine": "modeles",
+   "impact": "mineur",
+   "resume": "La commande de changement de modèle ouvre désormais la fenêtre de crédits d'utilisation au lieu d'afficher une erreur API si les crédits sont inactifs.",
+   "le": "2026-09-25T05:03:01Z"
+  },
+  "1b6475650ea33538": {
+   "version": "2.1.282",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Correction des erreurs de connexion bloquantes pendant une minute après la fermeture d'un autre processus en cours de rafraîchissement d'authentification.",
+   "le": "2026-09-25T05:03:01Z"
+  },
+  "2f5ccff8897d3125": {
+   "version": "2.1.282",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Les sessions démarrées pendant un rafraîchissement de connexion dans une autre fenêtre réessaient désormais la récupération des politiques organisationnelles.",
+   "le": "2026-09-25T05:03:01Z"
+  },
+  "1e6074d62d5fd951": {
+   "version": "2.1.282",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Correction d'une faille de sécurité où les liens symboliques dans les fichiers de configuration pouvaient accéder à des chemins système sensibles sur macOS.",
+   "le": "2026-09-25T05:03:01Z"
+  },
+  "84a3ca9afd7bb3b1": {
+   "version": "2.1.282",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Les règles de permission Bash avec des motifs complexes fonctionnent désormais uniformément depuis tous les fichiers de configuration, avec un avertissement au démarrage.",
+   "le": "2026-09-25T05:03:01Z"
+  },
+  "7d9132e58d3b5fad": {
+   "version": "2.1.282",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Correction de l'exécution double des commandes approuvées lors du redémarrage du travailleur dans les sessions distantes.",
+   "le": "2026-09-25T05:03:01Z"
+  },
+  "4a4ddf68c5751bb6": {
+   "version": "2.1.282",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Les clés de verrouillage booléennes mal orthographiées dans les configurations gérées sont désormais appliquées, avec un nommage explicite au démarrage.",
+   "le": "2026-09-25T05:03:01Z"
+  },
+  "15440326b76b0d6a": {
+   "version": "2.1.282",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Les configurations gérées de permissions et de mode automatique s'appliquent désormais même si une valeur imbriquée est invalide, au lieu d'être ignorées.",
+   "le": "2026-09-25T05:03:01Z"
+  },
+  "63ce230032c853f3": {
+   "version": "2.1.282",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Les plugins et commandes ne peuvent plus pré-approuver leurs propres outils via des listes autorisées lorsque les règles de permissions gérées sont actives.",
+   "le": "2026-09-25T05:03:01Z"
+  },
+  "8d6de1053af0a090": {
+   "version": "2.1.282",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Les messages de blocage de sécurité sur Bedrock affichent désormais un identifiant de requête et un identifiant de message pour le débogage.",
+   "le": "2026-09-25T05:03:01Z"
+  },
+  "e061519d7c7f1e73": {
+   "version": "2.1.282",
+   "domaine": "modeles",
+   "impact": "mineur",
+   "resume": "La recherche web est désormais proposée sur Vertex AI pour les nouveaux modèles non encore reconnus par l'outil.",
+   "le": "2026-09-25T05:03:01Z"
+  },
+  "a1d6a38d2c73f709": {
+   "version": "2.1.282",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Les erreurs de quota disque dans les shells Bash et PowerShell affichent désormais le vrai problème au lieu d'un simple code de sortie générique.",
+   "le": "2026-09-25T05:03:01Z"
+  },
+  "f1718ff98f5c5b52": {
+   "version": "2.1.282",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Les erreurs de validation des paramètres d'outils listent désormais tous les champs invalides, pas seulement le premier.",
+   "le": "2026-09-25T05:03:28Z"
+  },
+  "8a5cb95ba153a3e9": {
+   "version": "2.1.282",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Le collage de texte multi-lignes ne se soumet plus ligne par ligne si le mode collage du terminal est réinitialisé.",
+   "le": "2026-09-25T05:03:28Z"
+  },
+  "fa2f720fb2d01c51": {
+   "version": "2.1.282",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Le texte d'exemple du prompt ne clignote plus au démarrage dans les projets utilisant un hook de session.",
+   "le": "2026-09-25T05:03:28Z"
+  },
+  "8eab9ba759568064": {
+   "version": "2.1.282",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "L'écran blanc fugace avant la première image n'apparaît plus au lancement en mode plein écran.",
+   "le": "2026-09-25T05:03:28Z"
+  },
+  "7782a8b5d040a7ac": {
+   "version": "2.1.282",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Les lignes déformées ou mal placées dans le rendu non plein écran sont corrigées lors du redimensionnement.",
+   "le": "2026-09-25T05:03:28Z"
+  },
+  "8e2100b6e2630290": {
+   "version": "2.1.282",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Les caractères CJK ou emojis qui débordent sur la ligne suivante ne laissent plus de résidu visuel dans les diffs.",
+   "le": "2026-09-25T05:03:28Z"
+  },
+  "e35ee11360866be4": {
+   "version": "2.1.282",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Le curseur se positionne correctement à la fin d'un prompt rappelé de l'historique contenant des tabulations.",
+   "le": "2026-09-25T05:03:28Z"
+  },
+  "e805fb687ec6e01c": {
+   "version": "2.1.282",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "L'astuce d'envoi s'adapte aux terminaux Windows anciens qui interprètent Ctrl+Entrée comme un retour à la ligne.",
+   "le": "2026-09-25T05:03:28Z"
+  },
+  "f3b72e751d351f44": {
+   "version": "2.1.282",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "L'option de débogage pour le contrôle à distance est désormais reconnue, corrigeant une erreur d'argument inconnu.",
+   "le": "2026-09-25T05:03:28Z"
+  },
+  "c5351a9481021ac6": {
+   "version": "2.1.282",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "L'annulation de l'installation de l'app GitHub stoppe désormais les étapes restantes et empêche l'enregistrement des clés API.",
+   "le": "2026-09-25T05:03:28Z"
+  },
+  "dd35f61ff767c824": {
+   "version": "2.1.282",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "L'annulation des commandes de feedback ou de partage sur les fournisseurs tiers empêche la sauvegarde du fichier de rapport.",
+   "le": "2026-09-25T05:03:28Z"
+  },
+  "e4889fcd403a5016": {
+   "version": "2.1.282",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Le désinstallation d'un plugin ne supprime plus ses options si son fichier de configuration est actif ou illisible.",
+   "le": "2026-09-25T05:03:28Z"
+  },
+  "6bb2ee1d3ca73d13": {
+   "version": "2.1.282",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Les options et secrets d'un plugin sont conservés lors du désinstallation si la liste des plugins installés est illisible.",
+   "le": "2026-09-25T05:03:28Z"
+  },
+  "bd807fdb6dfde642": {
+   "version": "2.1.282",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "La saisie d'une touche juste après la barre oblique dans /skills cible désormais la boîte de recherche au lieu de la liste.",
+   "le": "2026-09-25T05:03:28Z"
+  },
+  "82fb943f14a112a8": {
+   "version": "2.1.282",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Le curseur ne saute plus entre la boîte de recherche et la liste des skills pendant la saisie, améliorant l'entrée IME.",
+   "le": "2026-09-25T05:03:28Z"
+  },
+  "6ea33c1ee40cd0b1": {
+   "version": "2.1.282",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Les listes avec barre de défilement comme /skills et /mcp occupent désormais toute la largeur hors mode plein écran.",
+   "le": "2026-09-25T05:03:28Z"
+  },
+  "84ad591601d5522d": {
+   "version": "2.1.282",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Le pied de page du panneau agent ne se plie plus sur deux lignes avec des raccourcis longs et respecte les touches rebondées.",
+   "le": "2026-09-25T05:03:28Z"
+  },
+  "44f7a691f880a212": {
+   "version": "2.1.282",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Le séparateur doublé dans le pied de page de la boîte de dialogue des tâches est corrigé si le raccourci d'arrêt est désactivé.",
+   "le": "2026-09-25T05:03:28Z"
+  },
+  "9cafa800b6415c58": {
+   "version": "2.1.282",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Les publications d'artefacts échouant avec des libellés de version trop longs sont corrigées par un raccourcissement automatique.",
+   "le": "2026-09-25T05:03:28Z"
+  },
+  "81972340d35261f5": {
+   "version": "2.1.282",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Les lignes vides en tête de blocs de code dans les listes ou citations ne sont plus perdues en mode lecteur d'écran.",
+   "le": "2026-09-25T05:03:28Z"
+  },
+  "696fc0d374ee36f6": {
+   "version": "2.1.282",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Les messages d'erreur de lecture PDF affichent correctement les chemins avec accents et évitent les causes fausses dues aux noms de dossiers.",
+   "le": "2026-09-25T05:03:28Z"
+  },
+  "983ad2c3289362de": {
+   "version": "2.1.282",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Plusieurs bugs du mode vim concernant l'indentation, la suppression et le décalage des lignes avec des compteurs sont corrigés.",
+   "le": "2026-09-25T05:03:28Z"
+  },
+  "305b1ecabf3cd2bf": {
+   "version": "2.1.282",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "La position du curseur en mode vim est corrigée après des commandes de suppression, copie ou insertion de lignes entières.",
+   "le": "2026-09-25T05:03:28Z"
+  },
+  "afaa0a685195db0d": {
+   "version": "2.1.282",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Le mode vim gère désormais correctement les compteurs avant la répétition et les commandes agissant sur des lignes précédentes.",
+   "le": "2026-09-25T05:03:28Z"
+  },
+  "2f289822357a351c": {
+   "version": "2.1.282",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Le curseur en mode vim ne dépasse plus la fin d'un prompt rappelé de l'historique ou de la file d'attente.",
+   "le": "2026-09-25T05:03:28Z"
+  },
+  "df89cd9735897677": {
+   "version": "2.1.282",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Le temps de reprise des très grandes sessions est amélioré, y compris celles jamais compactées.",
+   "le": "2026-09-25T05:03:52Z"
+  },
+  "0e8884e6099b9560": {
+   "version": "2.1.282",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Sur Windows, l'erreur de reprise de session indique désormais les causes possibles et les actions à tenter.",
+   "le": "2026-09-25T05:03:52Z"
+  },
+  "12592d184326e60a": {
+   "version": "2.1.282",
+   "domaine": "modeles",
+   "impact": "mineur",
+   "resume": "L'erreur de modèle inconnu dans Claude Desktop suggère désormais de changer de modèle.",
+   "le": "2026-09-25T05:03:52Z"
+  },
+  "1a78e6d4b475d713": {
+   "version": "2.1.282",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "L'affichage des caractères Unicode inhabituels dans les invites de permission est amélioré.",
+   "le": "2026-09-25T05:03:52Z"
+  },
+  "29975a1eb5f0df73": {
+   "version": "2.1.282",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "La commande /artifacts offre un meilleur alignement, une suppression propre et une navigation clavier/souris.",
+   "le": "2026-09-25T05:03:52Z"
+  },
+  "b1afa0572b021970": {
+   "version": "2.1.282",
+   "domaine": "modeles",
+   "impact": "mineur",
+   "resume": "La compétence claude-api précise la facturation des refus et leur impact sur les limites de débit.",
+   "le": "2026-09-25T05:03:52Z"
+  },
+  "946c0dedcd1557b4": {
+   "version": "2.1.282",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "La compétence claude-api recommande d'utiliser ant apply pour versionner les ressources des agents gérés.",
+   "le": "2026-09-25T05:03:52Z"
+  },
+  "e038c9b4f5cc5fe1": {
+   "version": "2.1.282",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Le mode auto utilise par défaut le classifieur serveur si la télémétrie est désactivée sur API directe.",
+   "le": "2026-09-25T05:03:52Z"
+  },
+  "fade130f2f62bd01": {
+   "version": "2.1.282",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Les commandes exclues du sandbox ignorent les réglages locaux si les politiques gérées l'exigent.",
+   "le": "2026-09-25T05:03:52Z"
+  },
+  "1f1ed380a4b14cbc": {
+   "version": "2.1.282",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Les variables OpenTelemetry d'export et de capture sont ignorées dans les réglages projet et locaux.",
+   "le": "2026-09-25T05:03:52Z"
+  },
+  "3f0ba9af08fb9f89": {
+   "version": "2.1.282",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Sur Windows/WSL, une politique admin invalide empêche l'application des réglages utilisateurs locaux.",
+   "le": "2026-09-25T05:03:52Z"
+  },
+  "881b1647f73b824d": {
+   "version": "2.1.282",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Les règles d'autorisation Skill(anthropic-skills:*) ne couvrent plus que les compétences synchronisées depuis claude.ai.",
+   "le": "2026-09-25T05:03:52Z"
+  },
+  "b58bf00b9a9420f0": {
+   "version": "2.1.282",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Les dossiers de compétences et commandes des espaces de noms anthropic-skills ou claude-ai ne se chargent plus.",
+   "le": "2026-09-25T05:03:52Z"
+  },
+  "fc397f19ac3944fe": {
+   "version": "2.1.282",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Les serveurs MCP nommés anthropic-skills ou claude-ai ne listent plus de compétences, mais leurs outils fonctionnent.",
+   "le": "2026-09-25T05:03:52Z"
+  },
+  "5a738fea94f5a234": {
+   "version": "2.1.282",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Les visuels ultracode dans /effort et l'entrée sont simplifiés, sans effets dynamiques ni spinner.",
+   "le": "2026-09-25T05:03:52Z"
+  },
+  "6aec6e73db36f765": {
+   "version": "2.1.282",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Les pieds du mascotte Clawd dans le bannière de démarrage sont repositionnés sous les coins du corps.",
+   "le": "2026-09-25T05:03:52Z"
+  },
+  "cffe007f47fd4cc4": {
+   "version": "2.1.282",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Dans VSCode, les longues réponses ne retardent plus le flux car le panneau ne re-analyse plus tout à chaque mise à jour.",
+   "le": "2026-09-25T05:03:52Z"
+  },
+  "a06e3652c6ae401e": {
+   "version": "2.1.282",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Dans VSCode, le bouton micro de dictée ne couvre plus la barre de défilement de l'entrée de message.",
+   "le": "2026-09-25T05:03:52Z"
+  },
+  "7c7c6ca05796c8fd": {
+   "version": "2.1.282",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Dans VSCode, les sessions Remote Control locales s'ouvrent correctement depuis la liste des sessions Web.",
+   "le": "2026-09-25T05:03:52Z"
+  },
+  "f22c316afe8c9b4b": {
+   "version": "2.1.282",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Dans VSCode, l'écran de connexion de l'onglet éditeur affiche un message si l'hôte d'extension redémarre.",
+   "le": "2026-09-25T05:03:52Z"
+  },
+  "f4560c41df322b65": {
+   "version": "2.1.282",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Les sessions cloud affichent le statut de l'application GitHub dans les paramètres Connecteurs, avec étapes de connexion.",
+   "le": "2026-09-25T05:03:52Z"
+  },
+  "0c3e6cda1c7f0e2e": {
+   "version": "2.1.282",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Les sessions cloud sur Git non-GitHub ajoutent des liens pour ouvrir le dépôt et la page de comparaison.",
+   "le": "2026-09-25T05:03:52Z"
+  },
+  "355fb925a607394a": {
+   "version": "2.1.282",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Les sessions cloud permettent d'attacher un dépôt d'un autre propriétaire GitHub, comme un fork upstream.",
+   "le": "2026-09-25T05:03:52Z"
+  },
+  "7df1b1f26d93c1e0": {
+   "version": "2.1.282",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de l'heure de prochaine exécution des routines horaires pour les fuseaux à décalage de 30 minutes.",
+   "le": "2026-09-25T05:03:52Z"
+  },
+  "4e8afa90084b7127": {
+   "version": "2.1.282",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "La page Routines et la liste des planifications se chargent plus vite pour les comptes avec beaucoup de rappels.",
+   "le": "2026-09-25T05:03:52Z"
+  },
+  "70c6f0b6284a52b5": {
+   "version": "2.1.282",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Corrige l'ignorance des motifs de canaux en entreprise, permettant à Claude de rejoindre les nouveaux canaux correspondants.",
+   "le": "2026-09-25T05:04:04Z"
+  },
+  "7a7e4486af00ad6f": {
+   "version": "2.1.282",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Répare la non-réponse de Claude dans les canaux partagés entre deux espaces de travail d'une même organisation.",
+   "le": "2026-09-25T05:04:04Z"
+  },
+  "922857439ef838ac": {
+   "version": "2.1.282",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Améliore la carte de progression pour les dépôts GitHub Enterprise en affichant le nom du dépôt et un bouton fonctionnel.",
+   "le": "2026-09-25T05:04:04Z"
+  },
+  "868a5a824affa2b9": {
+   "version": "2.1.282",
+   "domaine": "modeles",
+   "impact": "notable",
+   "resume": "Corrige le repli sur un modèle obsolète dans les fils Slack, garantissant désormais l'utilisation d'un modèle fonctionnel.",
+   "le": "2026-09-25T05:04:04Z"
+  },
+  "fade75f3b84662f8": {
+   "version": "2.1.282",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Permet aux légendes des fichiers uploadés sur Slack d'afficher des tableaux avec le même formatage que les réponses.",
+   "le": "2026-09-25T05:04:04Z"
+  },
+  "d187c21a3e39ab2b": {
+   "version": "2.1.282",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Corrige l'affichage des fils dans la vue Agents & tools de Slack pour qu'ils soient listés par leur nom et non leur premier message.",
+   "le": "2026-09-25T05:04:04Z"
+  },
+  "b8fd85bf9ae34daf": {
+   "version": "2.1.282",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Répare l'échec de sauvegarde lors du retrait d'une autorisation GitHub après la déconnexion de l'organisation.",
+   "le": "2026-09-25T05:04:04Z"
+  },
+  "08e84a881828236f": {
+   "version": "2.1.282",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Améliore le message d'erreur dans les canaux partagés pour préciser quel espace de travail nécessite l'application.",
+   "le": "2026-09-25T05:04:04Z"
+  },
+  "6b01e4dda692aa9f": {
+   "version": "2.1.282",
+   "domaine": "modeles",
+   "impact": "notable",
+   "resume": "Corrige l'affichage erroné des coûts et des totaux de jetons après le redémarrage du travailleur cloud.",
+   "le": "2026-09-25T05:04:04Z"
+  },
+  "3473758c90134374": {
+   "version": "2.1.282",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Modifie les cartes encadrées dans les réponses Slack pour qu'elles s'affichent en largeur par défaut au lieu d'une largeur étroite.",
+   "le": "2026-09-25T05:04:04Z"
+  },
+  "876660a2d1540089": {
+   "version": "2.1.282",
+   "domaine": "modeles",
+   "impact": "notable",
+   "resume": "Les nouveaux espaces Slack connectés utilisent désormais le modèle par défaut actuel au lieu de celui en vigueur lors de la connexion.",
+   "le": "2026-09-25T05:04:04Z"
+  }
+ }
 }
