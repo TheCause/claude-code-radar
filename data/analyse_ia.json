@@ -2364,6 +2364,958 @@
    "impact": "notable",
    "resume": "Code Review réessaie de publier la revue si une revue non soumise existe déjà sur la pull request GitHub.",
    "le": "2026-09-29T05:01:56Z"
+  },
+  "e0d1583bcc4ef346": {
+   "version": "2.1.285",
+   "domaine": "hooks_config",
+   "impact": "mineur",
+   "resume": "Nouvelle variable d'environnement pour désactiver l'outil de récupération web.",
+   "le": "2026-09-30T05:03:01Z"
+  },
+  "11dbed0bde463d06": {
+   "version": "2.1.285",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Nouvelle commande pour ouvrir l'application bureau sur le dossier ou la session actuelle.",
+   "le": "2026-09-30T05:03:01Z"
+  },
+  "11f2a04aa7f8367c": {
+   "version": "2.1.285",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Nouvelle commande pour afficher et configurer les options d'un plugin via l'interface en ligne de commande.",
+   "le": "2026-09-30T05:03:01Z"
+  },
+  "3c3b551d058eaae0": {
+   "version": "2.1.285",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Possibilité de définir les paramètres d'un serveur MCP lors de l'installation du plugin.",
+   "le": "2026-09-30T05:03:01Z"
+  },
+  "e576e223abf9195c": {
+   "version": "2.1.285",
+   "domaine": "securite",
+   "impact": "majeur",
+   "resume": "Nouvelle configuration gérée pour restreindre les fournisseurs d'API autorisés sur la machine.",
+   "le": "2026-09-30T05:03:01Z"
+  },
+  "07de2bc89f42994a": {
+   "version": "2.1.285",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "Nouvelle variable pour limiter les tentatives de retransmission des requêtes non streamées en échec.",
+   "le": "2026-09-30T05:03:01Z"
+  },
+  "c2733ae5219cd746": {
+   "version": "2.1.285",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Correction pour que les sous-agents reçoivent correctement le résultat de leurs appels d'agent enfants.",
+   "le": "2026-09-30T05:03:01Z"
+  },
+  "2da7d850472605f4": {
+   "version": "2.1.285",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Correction pour respecter la configuration SSH lors de l'installation de plugins via SSH.",
+   "le": "2026-09-30T05:03:01Z"
+  },
+  "eef9439ed872ca85": {
+   "version": "2.1.285",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Claude Code démarre désormais avec un avertissement si le fichier de configuration gérée est illisible.",
+   "le": "2026-09-30T05:03:01Z"
+  },
+  "04f2b00bd565367c": {
+   "version": "2.1.285",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction pour permettre la mise à jour d'artefacts dans les sessions cloud après compaction.",
+   "le": "2026-09-30T05:03:01Z"
+  },
+  "e6090c6b85dd0894": {
+   "version": "2.1.285",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Correction pour que l'activation/désactivation de plugins cible la bonne entrée de configuration.",
+   "le": "2026-09-30T05:03:01Z"
+  },
+  "346c0f9cb4d00bec": {
+   "version": "2.1.285",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Les fichiers joints via Remote Control sont désormais retentés en cas d'échec de téléchargement.",
+   "le": "2026-09-30T05:03:01Z"
+  },
+  "130c5ae11b49407c": {
+   "version": "2.1.285",
+   "domaine": "modeles",
+   "impact": "notable",
+   "resume": "Correction pour que le changement de modèle en cours de session applique immédiatement les nouvelles limites.",
+   "le": "2026-09-30T05:03:01Z"
+  },
+  "9af0cb46040e8ad9": {
+   "version": "2.1.285",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Correction pour masquer correctement les mots de passe dans les URL des journaux et transcripts.",
+   "le": "2026-09-30T05:03:01Z"
+  },
+  "451f3f0633393840": {
+   "version": "2.1.285",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Les prompts SSH bloquants lors des fetchs worktree/teleport sont remplacés par une échec rapide.",
+   "le": "2026-09-30T05:03:01Z"
+  },
+  "ad8138c36c6c4df9": {
+   "version": "2.1.285",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Correction pour que la désactivation d'un serveur MCP en cours de session retire bien ses outils.",
+   "le": "2026-09-30T05:03:01Z"
+  },
+  "c2b81cfcc1c4b05f": {
+   "version": "2.1.285",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Les demandes de permission des sous-agents en arrière-plan sont désormais transmises à l'outil de prompt.",
+   "le": "2026-09-30T05:03:01Z"
+  },
+  "d40b58843ef3ce39": {
+   "version": "2.1.285",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Correction pour éviter l'affichage de caractères de contrôle dans les noms de serveurs MCP.",
+   "le": "2026-09-30T05:03:01Z"
+  },
+  "73f194d7ec8f8a17": {
+   "version": "2.1.285",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Le mode sandbox n'exige plus d'approbation pour les scripts inline contenant un signe égal.",
+   "le": "2026-09-30T05:03:01Z"
+  },
+  "d38fb31d78a9fcfe": {
+   "version": "2.1.285",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Les sous-agents forkés héritent désormais du mode de permission de leur parent et ne peuvent pas le changer.",
+   "le": "2026-09-30T05:03:01Z"
+  },
+  "e9015a5ef800bae7": {
+   "version": "2.1.285",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de l'aide pour clarifier que Chrome est désactivé par défaut dans les sessions Remote Control.",
+   "le": "2026-09-30T05:03:01Z"
+  },
+  "429f04303b9251d4": {
+   "version": "2.1.285",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Suppression d'une réponse redondante des sous-agents en arrière-plan en mode auto.",
+   "le": "2026-09-30T05:03:01Z"
+  },
+  "cd494dcde9c33ffb": {
+   "version": "2.1.285",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction pour lire tous les environnements de l'account lors de la création de sessions cloud.",
+   "le": "2026-09-30T05:03:01Z"
+  },
+  "3044252b6162d699": {
+   "version": "2.1.285",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Les messages Remote Control ne sont marqués lus qu'à la prise en charge et ne sont plus perdus si le terminal ferme.",
+   "le": "2026-09-30T05:03:01Z"
+  },
+  "380d0327e1b718be": {
+   "version": "2.1.285",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Refus de l'installation de plugins dont l'ID diffère seulement par la casse ou des caractères spécifiques.",
+   "le": "2026-09-30T05:03:01Z"
+  },
+  "02bac990bffb7352": {
+   "version": "2.1.285",
+   "domaine": "hooks_config",
+   "impact": "mineur",
+   "resume": "Corrige un bug où les hooks et le SDK voyaient un plan obsolète lors de la sortie du mode plan.",
+   "le": "2026-09-30T05:03:26Z"
+  },
+  "6df573e6bea3f4e2": {
+   "version": "2.1.285",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "Répare un retard de quelques millisecondes sur la première réponse des sessions cloud.",
+   "le": "2026-09-30T05:03:26Z"
+  },
+  "da62efaf4a6fbb43": {
+   "version": "2.1.285",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Assure le chargement correct des politiques organisationnelles lors de l'authentification par jeton.",
+   "le": "2026-09-30T05:03:26Z"
+  },
+  "6f7adf4968e78f0c": {
+   "version": "2.1.285",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Empêche les erreurs de promesses non gérées dans les workflows de terminer prématurément les sessions de fond.",
+   "le": "2026-09-30T05:03:26Z"
+  },
+  "c541ee704f4f1092": {
+   "version": "2.1.285",
+   "domaine": "hooks_config",
+   "impact": "notable",
+   "resume": "Évite que les hooks synchrones ne bloquent l'outil si un processus de fond garde sa sortie ouverte.",
+   "le": "2026-09-30T05:03:26Z"
+  },
+  "71f0afc5b98c8511": {
+   "version": "2.1.285",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Corrige l'affichage erroné des erreurs de sécurité de domaine comme des blocages réseau ou entreprise.",
+   "le": "2026-09-30T05:03:26Z"
+  },
+  "fa5637db83e27d91": {
+   "version": "2.1.285",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Optimise l'affichage du transcript en plein écran lors de l'ouverture sur des tours avec beaucoup d'outils.",
+   "le": "2026-09-30T05:03:26Z"
+  },
+  "0f1e32a6af6f8b34": {
+   "version": "2.1.285",
+   "domaine": "modeles",
+   "impact": "mineur",
+   "resume": "Affiche un message d'erreur clair au lieu d'un corps JSON brut pour les erreurs Bedrock en cours de flux.",
+   "le": "2026-09-30T05:03:26Z"
+  },
+  "af55b8e5f4f375d3": {
+   "version": "2.1.285",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Corrige les fausses alertes d'absence de l'application GitHub pour les commandes /autofix-pr et /schedule.",
+   "le": "2026-09-30T05:03:26Z"
+  },
+  "6a2482027c12073a": {
+   "version": "2.1.285",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Corrige le comportement de la suppression d'une ligne dans /artifacts qui créait de nouveaux artefacts au lieu de les mettre à jour.",
+   "le": "2026-09-30T05:03:26Z"
+  },
+  "8540373d522ec4e1": {
+   "version": "2.1.285",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Empêche l'outil Artifact d'écraser le contenu récent d'un fichier après un retour en arrière sans relecture.",
+   "le": "2026-09-30T05:03:26Z"
+  },
+  "1449460800d31f69": {
+   "version": "2.1.285",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Corrige une règle d'autorisation qui permettait à l'outil Artifact de publier des fichiers hors des répertoires autorisés.",
+   "le": "2026-09-30T05:03:26Z"
+  },
+  "5e6beb81c21a6095": {
+   "version": "2.1.285",
+   "domaine": "modeles",
+   "impact": "mineur",
+   "resume": "Corrige le rapport de coût et d'usage du modèle lorsqu'un modèle de secours différent est utilisé par le serveur.",
+   "le": "2026-09-30T05:03:26Z"
+  },
+  "394f10fcf068e98f": {
+   "version": "2.1.285",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Empêche l'outil Artifact d'écraser un fichier source sans relecture si la lecture précédente a été interrompue ou modifiée.",
+   "le": "2026-09-30T05:03:26Z"
+  },
+  "11f7d35cc20bff5a": {
+   "version": "2.1.285",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Corrige le mode auto qui ignorait le classifieur de sécurité pour les uploads d'assets de l'outil Artifact.",
+   "le": "2026-09-30T05:03:26Z"
+  },
+  "48f3d024d781dc2d": {
+   "version": "2.1.285",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Supprime une erreur trompeuse sur core.worktree lors de l'exécution de /ultrareview si le dossier est temporairement illisible.",
+   "le": "2026-09-30T05:03:26Z"
+  },
+  "defdbe51a5878ff4": {
+   "version": "2.1.285",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Corrige l'échec de l'upload de l'arbre de travail par /ultrareview sur macOS et Linux avec la configuration core.longpaths.",
+   "le": "2026-09-30T05:03:26Z"
+  },
+  "1146f1757ddf38ad": {
+   "version": "2.1.285",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Corrige les faux rapports de conflit de publication d'artefact après une erreur serveur temporaire et une nouvelle tentative.",
+   "le": "2026-09-30T05:03:26Z"
+  },
+  "136eb01a5ebb5ab1": {
+   "version": "2.1.285",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Empêche /ultrareview d'inclure des fichiers de credentials non commités dont le nom contient un deux-points avant l'extension.",
+   "le": "2026-09-30T05:03:26Z"
+  },
+  "cf368f5175b21322": {
+   "version": "2.1.285",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Corrige un échec d'authentification rare lors de la récupération simultanée d'un verrou de rafraîchissement de session.",
+   "le": "2026-09-30T05:03:26Z"
+  },
+  "18a40866d4fe8661": {
+   "version": "2.1.285",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Corrige la vérification des permissions de l'outil PowerShell qui ignorait les règles de refus en cas d'échec du parseur.",
+   "le": "2026-09-30T05:03:26Z"
+  },
+  "2ad5c4f5d0091fcf": {
+   "version": "2.1.285",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "Améliore la vitesse des uploads /ultrareview et la détection des fichiers de credentials avec des noms inhabituels.",
+   "le": "2026-09-30T05:03:26Z"
+  },
+  "15f8b937f2958664": {
+   "version": "2.1.285",
+   "domaine": "hooks_config",
+   "impact": "notable",
+   "resume": "Empêche les commandes shell ou hooks annulés de continuer à s'exécuter si l'annulation arrive pendant leur initialisation.",
+   "le": "2026-09-30T05:03:26Z"
+  },
+  "4c20fbe49c9a582e": {
+   "version": "2.1.285",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Corrige le mode vim où les touches x ou r en mode NORMAL cassaient les placeholders de texte collé après édition externe.",
+   "le": "2026-09-30T05:03:26Z"
+  },
+  "c02e538f772bf49d": {
+   "version": "2.1.285",
+   "domaine": "modeles",
+   "impact": "notable",
+   "resume": "Affiche immédiatement l'erreur du filtre de contenu de sortie au lieu de réessayer pendant des minutes.",
+   "le": "2026-09-30T05:03:26Z"
+  },
+  "210b6cc1e99d487c": {
+   "version": "2.1.285",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Les plugins signalent désormais clairement lorsqu'un serveur MCP nécessite une configuration manuelle.",
+   "le": "2026-09-30T05:03:50Z"
+  },
+  "26cf474fabccf5dc": {
+   "version": "2.1.285",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Correction des échecs de reprise de session causés par des marqueurs de compaction mal formés.",
+   "le": "2026-09-30T05:03:50Z"
+  },
+  "19ca53e8845ab84b": {
+   "version": "2.1.285",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Sous WSL, l'upload de fichiers avec des caractères spéciaux dans le nom fonctionne désormais.",
+   "le": "2026-09-30T05:03:50Z"
+  },
+  "ec3f3640174c6d44": {
+   "version": "2.1.285",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "La reprise d'un tour interrompu ne relance plus un tour qui avait atteint la limite maximale.",
+   "le": "2026-09-30T05:03:50Z"
+  },
+  "56bb04a41855e30d": {
+   "version": "2.1.285",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "La connexion ne reste plus bloquée indéfiniment après la confirmation dans le navigateur.",
+   "le": "2026-09-30T05:03:50Z"
+  },
+  "9ebe74606e456b50": {
+   "version": "2.1.285",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Sous Windows, l'upload de worktrees liés dans le dossier personnel est corrigé.",
+   "le": "2026-09-30T05:03:50Z"
+  },
+  "67d5ff741d363f28": {
+   "version": "2.1.285",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Les sessions cloud ne signalent plus à tort le dossier d'upload comme manquant.",
+   "le": "2026-09-30T05:03:50Z"
+  },
+  "426f06b1a9818e49": {
+   "version": "2.1.285",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Une réponse depuis 'claude agents' n'approuve plus accidentellement une commande en attente.",
+   "le": "2026-09-30T05:03:50Z"
+  },
+  "a00c00da18da72cd": {
+   "version": "2.1.285",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Les commandes comme 'attach' ou 'logs' ne créent plus de session erronée si les options précèdent le nom.",
+   "le": "2026-09-30T05:03:50Z"
+  },
+  "ea171ee095c6e483": {
+   "version": "2.1.285",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "La commande 'claude mcp list' affiche désormais les serveurs WebSocket avec leur URL et statut.",
+   "le": "2026-09-30T05:03:50Z"
+  },
+  "faf377fba93e177c": {
+   "version": "2.1.285",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Les détails des serveurs stdio s'affichent correctement même si le champ 'type' est omis.",
+   "le": "2026-09-30T05:03:50Z"
+  },
+  "f8c57305aeb0c6f8": {
+   "version": "2.1.285",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Les règles d'autorisation locales fonctionnent désormais hors dépôt git, même avec trace2 activé.",
+   "le": "2026-09-30T05:03:50Z"
+  },
+  "76ad5a14b97950db": {
+   "version": "2.1.285",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Le générateur d'évaluations ne s'exécute plus via des liens symboliques malveillants.",
+   "le": "2026-09-30T05:03:50Z"
+  },
+  "1dba32dbf12a2e7b": {
+   "version": "2.1.285",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "Les réponses tronquées sont désormais marquées comme telles et exclues des moyennes de score.",
+   "le": "2026-09-30T05:03:50Z"
+  },
+  "8e51e0e6c1a19898": {
+   "version": "2.1.285",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Les entités HTML comme '&nbsp;' s'affichent correctement dans le terminal au lieu du texte brut.",
+   "le": "2026-09-30T05:03:50Z"
+  },
+  "7508f16dc1ffea42": {
+   "version": "2.1.285",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "Correction d'un gel bref de une seconde lors des longues sessions hors mode plein écran.",
+   "le": "2026-09-30T05:03:50Z"
+  },
+  "ca4846580d0672d1": {
+   "version": "2.1.285",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Les modifications approuvées sur des fichiers spéciaux (comme /dev/null) sont désormais appliquées.",
+   "le": "2026-09-30T05:03:50Z"
+  },
+  "b7c57cf64010d21b": {
+   "version": "2.1.285",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Les tentatives de reconnexion partagent désormais le budget de retries global, évitant les boucles infinies.",
+   "le": "2026-09-30T05:03:50Z"
+  },
+  "a6c8409e4f30e8cb": {
+   "version": "2.1.285",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Dans Chrome, les navigateurs connectés sont identifiés par le nom de l'ordinateur plutôt que par un numéro.",
+   "le": "2026-09-30T05:03:50Z"
+  },
+  "7950d157cbebf0ff": {
+   "version": "2.1.285",
+   "domaine": "modeles",
+   "impact": "notable",
+   "resume": "Sur Bedrock et Vertex, le système bascule automatiquement sur un modèle équivalent si l'accès est retiré.",
+   "le": "2026-09-30T05:03:50Z"
+  },
+  "5af072f1346a564f": {
+   "version": "2.1.285",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Les erreurs de marketplace précisent désormais la raison du refus d'une adresse git.",
+   "le": "2026-09-30T05:03:50Z"
+  },
+  "e127aeb1855cd71f": {
+   "version": "2.1.285",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Amélioration de la validation des URLs git pour les plugins et les dépôts distants.",
+   "le": "2026-09-30T05:03:50Z"
+  },
+  "c74c7a368ccca461": {
+   "version": "2.1.285",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "L'outil Artifact suggère la publication immédiatement après l'écriture, réduisant les allers-retours.",
+   "le": "2026-09-30T05:03:50Z"
+  },
+  "f4b246fb28a38949": {
+   "version": "2.1.285",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Les questions latérales via '/btw' voient désormais le tour en cours, pas seulement le dernier terminé.",
+   "le": "2026-09-30T05:03:50Z"
+  },
+  "ab80a07bb6f8d70f": {
+   "version": "2.1.285",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Les images en formats exotiques (BMP, HEIC, etc.) affichent désormais un aperçu dans les apps Claude.",
+   "le": "2026-09-30T05:03:50Z"
+  },
+  "3abce9ec956e7357": {
+   "version": "2.1.285",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Les sous-agents en mode auto terminent leur exécution dès la remise du rapport, évitant des tours inutiles.",
+   "le": "2026-09-30T05:04:15Z"
+  },
+  "53187f413aa8b18b": {
+   "version": "2.1.285",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Les vérifications de modèles Bedrock et Vertex sont mémorisées 24h, accélérant le démarrage.",
+   "le": "2026-09-30T05:04:15Z"
+  },
+  "0e0b18081f34726a": {
+   "version": "2.1.285",
+   "domaine": "modeles",
+   "impact": "mineur",
+   "resume": "La publication d'artefacts consomme moins de jetons grâce à des messages de confirmation plus courts.",
+   "le": "2026-09-30T05:04:15Z"
+  },
+  "fc451e5ef25c0870": {
+   "version": "2.1.285",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Des événements ping sont envoyés toutes les 30 secondes pour maintenir la connexion SDK active.",
+   "le": "2026-09-30T05:04:15Z"
+  },
+  "0a965ef66949e081": {
+   "version": "2.1.285",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "La commande /resume peut désormais ouvrir et interagir avec des sessions en arrière-plan.",
+   "le": "2026-09-30T05:04:15Z"
+  },
+  "c2a8a764ac9d621a": {
+   "version": "2.1.285",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Les performances par tour sont améliorées lorsque de nombreuses règles de refus et outils MCP sont configurés.",
+   "le": "2026-09-30T05:04:15Z"
+  },
+  "fbc9dd7c00008679": {
+   "version": "2.1.285",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "La sortie de la vue transcripte (Ctrl+O) est plus réactive dans les longues sessions sans plein écran.",
+   "le": "2026-09-30T05:04:15Z"
+  },
+  "92e7139b9b291023": {
+   "version": "2.1.285",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Les vérifications de démarrage Bedrock, Vertex et Mantle envoient désormais les mêmes en-têtes que les requêtes standard.",
+   "le": "2026-09-30T05:04:15Z"
+  },
+  "d17f98de9101d820": {
+   "version": "2.1.285",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Les outils MCP définissant 'alwaysLoad' à false restent différés même si le serveur est configuré pour un chargement immédiat.",
+   "le": "2026-09-30T05:04:15Z"
+  },
+  "ee7c39e9b83b5e29": {
+   "version": "2.1.285",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Les commandes Bash et PowerShell en arrière-plan s'arrêtent après un délai maximal, avec notification à Claude.",
+   "le": "2026-09-30T05:04:15Z"
+  },
+  "0fb570b6fd0d120b": {
+   "version": "2.1.285",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Les revues de code et /ultrareview fonctionnent désormais même si les workflows sont désactivés, sauf blocage admin.",
+   "le": "2026-09-30T05:04:15Z"
+  },
+  "4956fc8600c902fa": {
+   "version": "2.1.285",
+   "domaine": "modeles",
+   "impact": "notable",
+   "resume": "Les sessions via URL personnalisée utilisent désormais la fenêtre de contexte 1M des modèles compatibles.",
+   "le": "2026-09-30T05:04:15Z"
+  },
+  "efa1d58f122e2779": {
+   "version": "2.1.285",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "L'outil WebFetch est retenu pour les sessions Team/Enterprise jusqu'au chargement de la politique organisationnelle.",
+   "le": "2026-09-30T05:04:15Z"
+  },
+  "a6100e06b3077b3f": {
+   "version": "2.1.285",
+   "domaine": "hooks_config",
+   "impact": "mineur",
+   "resume": "La mémoire automatique ne peut plus être activée depuis une session en arrière-plan ou lancée par un outil interne.",
+   "le": "2026-09-30T05:04:15Z"
+  },
+  "111fa97cdb0bbd61": {
+   "version": "2.1.285",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "L'offre pour passer en mode auto par défaut s'affiche désormais aussi avec les fournisseurs tiers et la télémétrie désactivée.",
+   "le": "2026-09-30T05:04:15Z"
+  },
+  "88d778332ebee8dc": {
+   "version": "2.1.285",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Les sessions non interactives (claude -p, SDK) démarrent en mode auto par défaut si aucun mode n'est configuré.",
+   "le": "2026-09-30T05:04:15Z"
+  },
+  "ac0097ace1dd9970": {
+   "version": "2.1.285",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Les requêtes Bedrock, Mantle et AWS incluent désormais le port non standard dans l'en-tête Host signé SigV4.",
+   "le": "2026-09-30T05:04:15Z"
+  },
+  "d61c566d3f04cd7e": {
+   "version": "2.1.285",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Le nom de serveur MCP 'widgets' est réservé dans les sessions cloud et auto-hébergées, nécessitant un renommage.",
+   "le": "2026-09-30T05:04:15Z"
+  },
+  "e3992157ad0d0b50": {
+   "version": "2.1.285",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "/ultrareview sur macOS/Linux exclut les références symboliques lors de l'upload et refuse les branches symboliques.",
+   "le": "2026-09-30T05:04:15Z"
+  },
+  "ece43d69ec5c3905": {
+   "version": "2.1.285",
+   "domaine": "hooks_config",
+   "impact": "mineur",
+   "resume": "Sur Windows, les variables système comme ALLUSERSPROFILE ne sont plus définies par les réglages projet ou locaux.",
+   "le": "2026-09-30T05:04:15Z"
+  },
+  "513cb2e385bdc474": {
+   "version": "2.1.285",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "La commande /tasks regroupe les tâches système internes sous une ligne unique 'System tasks'.",
+   "le": "2026-09-30T05:04:15Z"
+  },
+  "f6488fd1f3b82bf7": {
+   "version": "2.1.285",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "/ultrareview exige désormais git 2.31+ pour l'upload local et refuse les checkouts avec --separate-git-dir.",
+   "le": "2026-09-30T05:04:15Z"
+  },
+  "a28ef44ba1ae1100": {
+   "version": "2.1.285",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "/ultrareview envoie un clone partiel comme instantané d'arborescence sur git 2.31+ au lieu de refuser ou de basculer.",
+   "le": "2026-09-30T05:04:15Z"
+  },
+  "07e1e6cdf81c631c": {
+   "version": "2.1.285",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "/ultrareview refuse les clones partiels incomplets sur les anciennes versions de git au lieu de tenter un fetch.",
+   "le": "2026-09-30T05:04:15Z"
+  },
+  "1cda88c04ead0271": {
+   "version": "2.1.285",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Les vérifications de démarrage Bedrock, Vertex et Mantle s'identifient désormais comme Claude Code.",
+   "le": "2026-09-30T05:04:15Z"
+  },
+  "fe819dba46b70ecc": {
+   "version": "2.1.285",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Les détails techniques des serveurs MCP fournis par des plugins sont désormais masqués dans la commande d'inspection.",
+   "le": "2026-09-30T05:04:39Z"
+  },
+  "859c13402d49fd66": {
+   "version": "2.1.285",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "La commande d'accès à l'API n'est plus exécutable depuis les clients de contrôle à distance.",
+   "le": "2026-09-30T05:04:39Z"
+  },
+  "f6c0dc6d68a632ed": {
+   "version": "2.1.285",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "L'activation de l'intégration Chrome via la configuration redirige désormais vers le panneau dédié au lieu d'activer directement.",
+   "le": "2026-09-30T05:04:39Z"
+  },
+  "7df0026a3f768976": {
+   "version": "2.1.285",
+   "domaine": "securite",
+   "impact": "majeur",
+   "resume": "Les réglages de projet ne peuvent plus contourner les restrictions de sandbox imposées par l'administrateur.",
+   "le": "2026-09-30T05:04:39Z"
+  },
+  "5d700853313728fb": {
+   "version": "2.1.285",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Une note explicative apparaît sous le dernier message d'un onglet restauré si la session a été interrompue par un rechargement.",
+   "le": "2026-09-30T05:04:39Z"
+  },
+  "3dd4160a43c5178c": {
+   "version": "2.1.285",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Un formulaire d'options s'ouvre à l'installation des plugins et permet de modifier leurs paramètres via une icône engrenage.",
+   "le": "2026-09-30T05:04:39Z"
+  },
+  "afa504028aa0e6da": {
+   "version": "2.1.285",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Un outil de diagnostic permet à Claude de lire les erreurs et avertissements du panneau Problèmes à tout moment.",
+   "le": "2026-09-30T05:04:39Z"
+  },
+  "43ce76a19db69858": {
+   "version": "2.1.285",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction d'un bug où la touche Entrée après une commande slash exécutait un élément de menu non lié.",
+   "le": "2026-09-30T05:04:39Z"
+  },
+  "7efe03c72b59cd32": {
+   "version": "2.1.285",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction d'un bug où les messages récents d'un agent étaient perdus dans la transcription lors de longues sessions.",
+   "le": "2026-09-30T05:04:39Z"
+  },
+  "9c2dec85a4f56106": {
+   "version": "2.1.285",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction d'un bug où le texte suivant une citation de balise IDE ou Claude Code était tronqué dans le chat.",
+   "le": "2026-09-30T05:04:39Z"
+  },
+  "a0b7d7612144a4b6": {
+   "version": "2.1.285",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction d'un bug où un message envoyé pendant le travail de Claude disparaissait après la réouverture de la session.",
+   "le": "2026-09-30T05:04:39Z"
+  },
+  "6c07d805f91677d2": {
+   "version": "2.1.285",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction d'un bug où l'onglet Web de la liste des sessions affichait les conversations de l'ancien compte après changement.",
+   "le": "2026-09-30T05:04:39Z"
+  },
+  "354f1e0849301533": {
+   "version": "2.1.285",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction d'un bug où les onglets restaurés relançaient un tour interrompu malgré le réglage de continuation désactivé.",
+   "le": "2026-09-30T05:04:39Z"
+  },
+  "3fffc1e614b67ee7": {
+   "version": "2.1.285",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction d'un bug où la touche Échap arrêtait le tour en cours au lieu de fermer le menu de commandes.",
+   "le": "2026-09-30T05:04:39Z"
+  },
+  "5650e431ff0fafbf": {
+   "version": "2.1.285",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction d'un bug où l'ouverture d'une conversation passée remplaçait la conversation active par sa copie sauvegardée.",
+   "le": "2026-09-30T05:04:39Z"
+  },
+  "d7d45dda624e49c7": {
+   "version": "2.1.285",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction d'un bug où l'onglet Claude restait vide après un redémarrage d'extension au lieu d'afficher les instructions de récupération.",
+   "le": "2026-09-30T05:04:39Z"
+  },
+  "499e8bed5d9e10dd": {
+   "version": "2.1.285",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction d'un bug où l'ouverture d'une conversation déjà active dans une autre fenêtre créait un doublon sans avertissement.",
+   "le": "2026-09-30T05:04:39Z"
+  },
+  "432b0724d6eb408a": {
+   "version": "2.1.285",
+   "domaine": "hooks_config",
+   "impact": "mineur",
+   "resume": "Correction d'un bug où la raison de blocage d'un hook disparaissait après un rechargement de la fenêtre.",
+   "le": "2026-09-30T05:04:39Z"
+  },
+  "d551000598e8eed9": {
+   "version": "2.1.285",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction d'un bug où les onglets restaient bloqués sur une conversation non réinitialisable sans proposer de démarrer une nouvelle.",
+   "le": "2026-09-30T05:04:39Z"
+  },
+  "9d7211567f98495b": {
+   "version": "2.1.285",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Correction d'un bug où les opérations de lecture et d'écriture de fichiers étaient bloquées dix minutes si l'éditeur ne répondait pas.",
+   "le": "2026-09-30T05:04:39Z"
+  },
+  "f5e234aaa25f9d2b": {
+   "version": "2.1.285",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction d'un bug où la carte des agents affichait le modèle de la session au lieu du modèle réellement utilisé par le sous-agent.",
+   "le": "2026-09-30T05:04:39Z"
+  },
+  "4f5a3138e3d3ba43": {
+   "version": "2.1.285",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Correction d'un bug où le désinstallation d'un plugin supprimait l'installation incorrecte ou échouait pour les plugins de projet.",
+   "le": "2026-09-30T05:04:39Z"
+  },
+  "8c2f5e87799719dd": {
+   "version": "2.1.285",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Correction d'un bug où la connexion restait bloquée à l'étape de code d'autorisation après retour sur la même méthode.",
+   "le": "2026-09-30T05:04:39Z"
+  },
+  "96e381bcfc24d5fc": {
+   "version": "2.1.285",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "Correction d'un bug où le panneau de chat se figeait lors de la suppression des lignes les plus anciennes dans les longues sessions.",
+   "le": "2026-09-30T05:04:39Z"
+  },
+  "8722053a3f2cacb2": {
+   "version": "2.1.285",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction d'un bug où la conversation disparaissait de la session lorsque de nombreux agents étaient exécutés simultanément.",
+   "le": "2026-09-30T05:04:39Z"
+  },
+  "0f7d6281aa1ac4b5": {
+   "version": "2.1.285",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Corrige l'affichage du nom de l'onglet dans VSCode après un renommage de session.",
+   "le": "2026-09-30T05:04:51Z"
+  },
+  "a2d809ddf39d7df3": {
+   "version": "2.1.285",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Affiche désormais tous les messages envoyés à un agent en cours d'exécution dans la vue de transcript.",
+   "le": "2026-09-30T05:04:51Z"
+  },
+  "d1cef21022566c5e": {
+   "version": "2.1.285",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Améliore le dialogue de gestion des plugins en affichant des explications claires en cas d'échec.",
+   "le": "2026-09-30T05:04:51Z"
+  },
+  "53e6f6932926649f": {
+   "version": "2.1.285",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Demande confirmation avant de désactiver un plugin activé par les paramètres partagés du projet.",
+   "le": "2026-09-30T05:04:51Z"
+  },
+  "069629a44ee474e0": {
+   "version": "2.1.285",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Affiche une explication claire au lieu d'une erreur interne si une routine cloud est refusée.",
+   "le": "2026-09-30T05:04:51Z"
+  },
+  "5ea7b2e1b1c02642": {
+   "version": "2.1.285",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Optimise le cache des outils MCP dans les sessions cloud pour accélérer le redémarrage.",
+   "le": "2026-09-30T05:04:51Z"
+  },
+  "e4c10525725cc4b0": {
+   "version": "2.1.285",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Permet les messages directs avec Claude pour les membres Enterprise sans siège Claude Code dédié.",
+   "le": "2026-09-30T05:04:51Z"
+  },
+  "9c27dfd7a82e9587": {
+   "version": "2.1.285",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Empêche la sélection de modèles non autorisés par l'organisation dans les paramètres d'administration.",
+   "le": "2026-09-30T05:04:51Z"
+  },
+  "550caac2483b81c1": {
+   "version": "2.1.285",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Préserve l'information sur le modèle de secours utilisé lors des modifications de messages Slack.",
+   "le": "2026-09-30T05:04:51Z"
+  },
+  "445ef1254a852afd": {
+   "version": "2.1.285",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Charge dynamiquement la liste complète des organisations GitHub dans le dialogue d'ajout de dépôt.",
+   "le": "2026-09-30T05:04:51Z"
+  },
+  "ac25bf16a50915f1": {
+   "version": "2.1.285",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Indique clairement pourquoi le fichier REVIEW.md n'a pas été appliqué lors d'une revue de code.",
+   "le": "2026-09-30T05:04:51Z"
   }
  }
 }

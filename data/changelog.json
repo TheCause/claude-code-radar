@@ -1,12 +1,12 @@
 {
   "metadata": {
-    "lastUpdated": "2026-09-30 05:59:19",
+    "lastUpdated": "2026-09-30 07:00:07",
     "latestVersion": "2.1.285",
     "latestDate": "September 29, 2026",
     "totalVersions": 407,
     "totalItems": 6660,
     "highImpactCount": 1366,
-    "lastUpdatedUtc": "2026-09-30T03:59:19Z",
+    "lastUpdatedUtc": "2026-09-30T05:00:07Z",
     "sourceLive": true,
     "analyseIA": {
       "versionsAnalysees": [
@@ -15,11 +15,9 @@
         "2.1.283",
         "2.1.282"
       ],
-      "entreesAnalysees": 280,
-      "enAttente": 136,
-      "pannes": [
-        "service d'état GPU injoignable : URLError"
-      ]
+      "entreesAnalysees": 416,
+      "enAttente": 0,
+      "pannes": []
     }
   },
   "versions": [
@@ -41,7 +39,12 @@
           ],
           "impact": "Medium",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "hooks_config",
+            "impact": "mineur",
+            "resume": "Nouvelle variable d'environnement pour désactiver l'outil de récupération web."
+          }
         },
         {
           "text": "Added `claude --desktop` to open the Claude desktop app on the current directory, or on a session with `--continue` / `--resume <id>`",
@@ -53,7 +56,12 @@
           ],
           "impact": "Medium",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "interface",
+            "impact": "notable",
+            "resume": "Nouvelle commande pour ouvrir l'application bureau sur le dossier ou la session actuelle."
+          }
         },
         {
           "text": "Added `claude plugin configure <plugin>` to show a plugin's options and which are unset, or save new values read from stdin with `--values-stdin`",
@@ -65,7 +73,12 @@
           ],
           "impact": "Medium",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "mcp",
+            "impact": "notable",
+            "resume": "Nouvelle commande pour afficher et configurer les options d'un plugin via l'interface en ligne de commande."
+          }
         },
         {
           "text": "Added `<server>.<key>=<value>` to `claude plugin install --config`, so a bundled `.mcpb` MCP server's own settings can be set at install time and it starts without visiting `/plugin` → Configure",
@@ -78,7 +91,12 @@
           ],
           "impact": "High",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "mcp",
+            "impact": "notable",
+            "resume": "Possibilité de définir les paramètres d'un serveur MCP lors de l'installation du plugin."
+          }
         },
         {
           "text": "Added `allowedProviders` managed setting to limit which API providers a machine may use (Anthropic API, a custom endpoint, Bedrock, Mantle, Vertex AI, Foundry, Claude Platform on AWS, or a Cloud gateway)",
@@ -90,7 +108,12 @@
           ],
           "impact": "High",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "securite",
+            "impact": "majeur",
+            "resume": "Nouvelle configuration gérée pour restreindre les fournisseurs d'API autorisés sur la machine."
+          }
         },
         {
           "text": "Added `CLAUDE_CODE_NONSTREAMING_TIMEOUT_RETRIES` environment variable to cap re-sends of a non-streaming fallback request that timed out",
@@ -102,7 +125,12 @@
           ],
           "impact": "Medium",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "performance",
+            "impact": "mineur",
+            "resume": "Nouvelle variable pour limiter les tentatives de retransmission des requêtes non streamées en échec."
+          }
         },
         {
           "text": "Fixed `claude -p` with `CLAUDE_CODE_FORK_SUBAGENT=1`: a subagent's own Agent call now runs in the foreground, so the subagent gets the child's result",
@@ -114,7 +142,12 @@
           ],
           "impact": "High",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "agents",
+            "impact": "notable",
+            "resume": "Correction pour que les sous-agents reçoivent correctement le résultat de leurs appels d'agent enfants."
+          }
         },
         {
           "text": "Fixed plugin and marketplace installs and updates over SSH ignoring the ssh program set in `GIT_SSH` or in your git config's `core.sshCommand`",
@@ -126,7 +159,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "mcp",
+            "impact": "mineur",
+            "resume": "Correction pour respecter la configuration SSH lors de l'installation de plugins via SSH."
+          }
         },
         {
           "text": "Fixed Claude Code refusing to start when the OS denies reading the managed settings file; it now warns and starts without that file's policies. Other read errors and unparseable files stop every session",
@@ -138,7 +176,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "securite",
+            "impact": "notable",
+            "resume": "Claude Code démarre désormais avec un avertissement si le fichier de configuration gérée est illisible."
+          }
         },
         {
           "text": "Fixed cloud sessions that restarted after their conversation was compacted refusing the next update to an artifact the session had already read or published",
@@ -150,7 +193,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Correction pour permettre la mise à jour d'artefacts dans les sessions cloud après compaction."
+          }
         },
         {
           "text": "Fixed `claude plugin disable` and `enable` with a full `name@marketplace` id changing a settings entry in another letter case instead of the installed plugin's own",
@@ -162,7 +210,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "mcp",
+            "impact": "mineur",
+            "resume": "Correction pour que l'activation/désactivation de plugins cible la bonne entrée de configuration."
+          }
         },
         {
           "text": "Fixed files attached to a message sent over Remote Control being left out after a single failed download; a network error, timeout or server error is now retried up to twice",
@@ -174,7 +227,12 @@
           ],
           "impact": "High",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Les fichiers joints via Remote Control sont désormais retentés en cas d'échec de téléchargement."
+          }
         },
         {
           "text": "Fixed switching models mid-session with a `set_model` request (such as the Agent SDK's `setModel`) leaving the new model on the built-in output-token limit and auto-compact window until restart",
@@ -188,7 +246,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "modeles",
+            "impact": "notable",
+            "resume": "Correction pour que le changement de modèle en cours de session applique immédiatement les nouvelles limites."
+          }
         },
         {
           "text": "Fixed redacted logs and transcripts showing part of a URL password that contains `@`, or all of it when the URL writes its `@` as `%40`",
@@ -200,7 +263,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "securite",
+            "impact": "mineur",
+            "resume": "Correction pour masquer correctement les mots de passe dans les URL des journaux et transcripts."
+          }
         },
         {
           "text": "Fixed SSH passphrase and new-host prompts from worktree and `/teleport` fetches taking over the terminal; these fetches now fail fast instead of asking",
@@ -212,7 +280,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "securite",
+            "impact": "mineur",
+            "resume": "Les prompts SSH bloquants lors des fetchs worktree/teleport sont remplacés par une échec rapide."
+          }
         },
         {
           "text": "Fixed switching off an MCP server added mid-session in SDK and `-p` sessions leaving its tools available",
@@ -224,7 +297,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "mcp",
+            "impact": "notable",
+            "resume": "Correction pour que la désactivation d'un serveur MCP en cours de session retire bien ses outils."
+          }
         },
         {
           "text": "Fixed `claude -p --permission-prompt-tool`: a background subagent's permission request now goes to the prompt tool instead of being auto-denied",
@@ -238,7 +316,12 @@
           ],
           "impact": "High",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "agents",
+            "impact": "notable",
+            "resume": "Les demandes de permission des sous-agents en arrière-plan sont désormais transmises à l'outil de prompt."
+          }
         },
         {
           "text": "Fixed `claude mcp list` and `claude mcp get`, and the not-found error of `claude mcp remove`, `login` and `logout`, printing line breaks and terminal escape sequences from MCP server names and values",
@@ -251,7 +334,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "mcp",
+            "impact": "mineur",
+            "resume": "Correction pour éviter l'affichage de caractères de contrôle dans les noms de serveurs MCP."
+          }
         },
         {
           "text": "Fixed sandbox auto-allow asking for approval on every run of many inline scripts (`python3 -c`, `node -e`) just because they contain `=`",
@@ -263,7 +351,12 @@
           ],
           "impact": "High",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "securite",
+            "impact": "notable",
+            "resume": "Le mode sandbox n'exige plus d'approbation pour les scripts inline contenant un signe égal."
+          }
         },
         {
           "text": "Fixed fork subagents not keeping the session's plan mode or `dontAsk` mode: a fork now runs under its parent's permission mode and cannot exit plan mode",
@@ -276,7 +369,12 @@
           ],
           "impact": "High",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "agents",
+            "impact": "notable",
+            "resume": "Les sous-agents forkés héritent désormais du mode de permission de leur parent et ne peuvent pas le changer."
+          }
         },
         {
           "text": "Fixed `claude remote-control --help` saying `--[no-]chrome` defaults to the machine's `/chrome` setting; spawned sessions keep Claude in Chrome off unless `--chrome` is passed",
@@ -288,7 +386,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Correction de l'aide pour clarifier que Chrome est désactivé par défaut dans les sessions Remote Control."
+          }
         },
         {
           "text": "Fixed background subagents in auto mode prompting a second, redundant reply after each report",
@@ -302,7 +405,12 @@
           ],
           "impact": "High",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "agents",
+            "impact": "mineur",
+            "resume": "Suppression d'une réponse redondante des sous-agents en arrière-plan en mode auto."
+          }
         },
         {
           "text": "Fixed cloud session creation and `/remote-env` reading only the newest 20 of an account's environments",
@@ -314,7 +422,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Correction pour lire tous les environnements de l'account lors de la création de sessions cloud."
+          }
         },
         {
           "text": "Fixed Remote Control marking a message as read as soon as it arrived instead of when Claude started on it, and losing a message still queued when the terminal quit (it now arrives on the next resume)",
@@ -328,7 +441,12 @@
           ],
           "impact": "High",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "interface",
+            "impact": "notable",
+            "resume": "Les messages Remote Control ne sont marqués lus qu'à la prise en charge et ne sont plus perdus si le terminal ferme."
+          }
         },
         {
           "text": "Fixed installing a plugin with `claude plugin install` or `/plugin` putting it into an installed plugin's cache or data folder when their ids differ only in `.`, `-`, `@` or (macOS, Windows) capitals; the install is now refused",
@@ -341,7 +459,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "mcp",
+            "impact": "mineur",
+            "resume": "Refus de l'installation de plugins dont l'ID diffère seulement par la casse ou des caractères spécifiques."
+          }
         },
         {
           "text": "Fixed hooks and SDK permission callbacks seeing a missing or outdated plan on ExitPlanMode when the plan was written in the same response",
@@ -354,7 +477,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "hooks_config",
+            "impact": "mineur",
+            "resume": "Corrige un bug où les hooks et le SDK voyaient un plan obsolète lors de la sortie du mode plan."
+          }
         },
         {
           "text": "Fixed the first reply in cloud sessions arriving tens of milliseconds late, a regression in 2.1.283",
@@ -366,7 +494,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "performance",
+            "impact": "mineur",
+            "resume": "Répare un retard de quelques millisecondes sur la première réponse des sessions cloud."
+          }
         },
         {
           "text": "Fixed sessions that authenticate with `ANTHROPIC_AUTH_TOKEN` against the Anthropic API never loading the organization's policy",
@@ -378,7 +511,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "securite",
+            "impact": "notable",
+            "resume": "Assure le chargement correct des politiques organisationnelles lors de l'authentification par jeton."
+          }
         },
         {
           "text": "Fixed a failed `agent()`, `parallel()` or `pipeline()` call that a workflow script awaits later, or not at all, being treated as an unhandled promise rejection, which could end a background session",
@@ -390,7 +528,12 @@
           ],
           "impact": "High",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "agents",
+            "impact": "notable",
+            "resume": "Empêche les erreurs de promesses non gérées dans les workflows de terminer prématurément les sessions de fond."
+          }
         },
         {
           "text": "Fixed synchronous hooks hanging Claude Code while a background process the hook started (for example `some-daemon &`) kept its output open; the hook now finishes shortly after its own process exits",
@@ -402,7 +545,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "hooks_config",
+            "impact": "notable",
+            "resume": "Évite que les hooks synchrones ne bloquent l'outil si un processus de fond garde sa sortie ouverte."
+          }
         },
         {
           "text": "Fixed WebFetch reporting a rate-limited domain safety check as a network or enterprise policy block",
@@ -414,7 +562,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Corrige l'affichage erroné des erreurs de sécurité de domaine comme des blocages réseau ou entreprise."
+          }
         },
         {
           "text": "Fixed the fullscreen ctrl+o transcript freezing briefly when opened on turns with hundreds of file reads or searches; tool calls still running when the transcript opens now show their results when they finish",
@@ -426,7 +579,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Optimise l'affichage du transcript en plein écran lors de l'ouverture sur des tours avec beaucoup d'outils."
+          }
         },
         {
           "text": "Fixed Amazon Bedrock mid-stream `modelTimeoutException` and `serviceUnavailableException` errors showing a raw JSON body instead of the error message",
@@ -440,7 +598,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "modeles",
+            "impact": "mineur",
+            "resume": "Affiche un message d'erreur clair au lieu d'un corps JSON brut pour les erreurs Bedrock en cours de flux."
+          }
         },
         {
           "text": "Fixed `/autofix-pr` and `/schedule` saying the Claude GitHub App is not installed on a repository whose install status had not been checked yet",
@@ -452,7 +615,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Corrige les fausses alertes d'absence de l'application GitHub pour les commandes /autofix-pr et /schedule."
+          }
         },
         {
           "text": "Fixed dismissing a row (x) in `/artifacts` unlinking its file from the artifact, so publishing the same file again created a new artifact instead of updating it",
@@ -464,7 +632,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Corrige le comportement de la suppression d'une ligne dans /artifacts qui créait de nouveaux artefacts au lieu de les mettre à jour."
+          }
         },
         {
           "text": "Fixed Artifact tool publishes after a conversation rewind (Esc Esc) overwriting a file's newer content that Claude had read only in the rewound turns; the publish is now refused until Claude re-reads the file",
@@ -476,7 +649,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "securite",
+            "impact": "notable",
+            "resume": "Empêche l'outil Artifact d'écraser le contenu récent d'un fichier après un retour en arrière sans relecture."
+          }
         },
         {
           "text": "Fixed an `Artifact` allow rule (\"don't ask again\") letting the Artifact tool publish a file outside the working directories without asking; add the file's folder with `--add-dir` for the rule to cover it",
@@ -488,7 +666,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "securite",
+            "impact": "notable",
+            "resume": "Corrige une règle d'autorisation qui permettait à l'outil Artifact de publier des fichiers hors des répertoires autorisés."
+          }
         },
         {
           "text": "Fixed `/cost` and SDK `modelUsage` reporting a turn under the wrong model when the server answered a refusal with a different fallback model than the client expected",
@@ -501,7 +684,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "modeles",
+            "impact": "mineur",
+            "resume": "Corrige le rapport de coût et d'usage du modèle lorsqu'un modèle de secours différent est utilisé par le serveur."
+          }
         },
         {
           "text": "Fixed the Artifact tool so that publishing a page no longer lets Claude overwrite its source file without re-reading it when Claude's earlier read was cut short or the file had changed since",
@@ -513,7 +701,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "securite",
+            "impact": "notable",
+            "resume": "Empêche l'outil Artifact d'écraser un fichier source sans relecture si la lecture précédente a été interrompue ou modifiée."
+          }
         },
         {
           "text": "Fixed auto mode skipping its classifier for Artifact tool asset uploads and reads of someone else's artifact when you had approved that artifact earlier in another permission mode",
@@ -525,7 +718,12 @@
           ],
           "impact": "High",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "securite",
+            "impact": "notable",
+            "resume": "Corrige le mode auto qui ignorait le classifieur de sécurité pour les uploads d'assets de l'outil Artifact."
+          }
         },
         {
           "text": "Fixed a misleading \"core.worktree is set\" error from `/ultrareview` when the project folder briefly could not be read",
@@ -537,7 +735,12 @@
           ],
           "impact": "High",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Supprime une erreur trompeuse sur core.worktree lors de l'exécution de /ultrareview si le dossier est temporairement illisible."
+          }
         },
         {
           "text": "Fixed `/ultrareview` on macOS and Linux failing to upload the working tree from a git worktree whose per-worktree config sets `core.longpaths`",
@@ -549,7 +752,12 @@
           ],
           "impact": "High",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Corrige l'échec de l'upload de l'arbre de travail par /ultrareview sur macOS et Linux avec la configuration core.longpaths."
+          }
         },
         {
           "text": "Fixed the Artifact tool sometimes reporting a publish as a conflict with another session after retrying a temporary server error, when the first attempt had actually succeeded",
@@ -561,7 +769,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Corrige les faux rapports de conflit de publication d'artefact après une erreur serveur temporaire et une nouvelle tentative."
+          }
         },
         {
           "text": "Fixed `/ultrareview` uploads including uncommitted changes to credential files whose name has a colon before the extension, such as `server:8443.key`",
@@ -573,7 +786,12 @@
           ],
           "impact": "High",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "securite",
+            "impact": "notable",
+            "resume": "Empêche /ultrareview d'inclure des fichiers de credentials non commités dont le nom contient un deux-points avant l'extension."
+          }
         },
         {
           "text": "Fixed a rare auth failure when two sessions recover a login refresh lock left by a crashed process at the same time",
@@ -585,7 +803,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "securite",
+            "impact": "mineur",
+            "resume": "Corrige un échec d'authentification rare lors de la récupération simultanée d'un verrou de rafraîchissement de session."
+          }
         },
         {
           "text": "Fixed the PowerShell tool's permission check skipping deny and ask rules, and caching that failure for later checks, when its command parser failed to start (for example when the machine was out of memory)",
@@ -598,7 +821,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "securite",
+            "impact": "notable",
+            "resume": "Corrige la vérification des permissions de l'outil PowerShell qui ignorait les règles de refus en cas d'échec du parseur."
+          }
         },
         {
           "text": "Fixed `/ultrareview` uploads on macOS and Linux running slowly on some unusual file names, and their credential-file check missing file or folder names with many backup or editor marks",
@@ -610,7 +838,12 @@
           ],
           "impact": "High",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "performance",
+            "impact": "mineur",
+            "resume": "Améliore la vitesse des uploads /ultrareview et la détection des fichiers de credentials avec des noms inhabituels."
+          }
         },
         {
           "text": "Fixed a cancelled shell command or hook still starting, and running to its end, when the cancel arrived while it was being set up",
@@ -622,7 +855,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "hooks_config",
+            "impact": "notable",
+            "resume": "Empêche les commandes shell ou hooks annulés de continuer à s'exécuter si l'annulation arrive pendant leur initialisation."
+          }
         },
         {
           "text": "Fixed vim mode: after editing in the external editor (Ctrl+G), `x` or `r` in NORMAL mode no longer breaks a pasted-text placeholder at the end of the prompt",
@@ -634,7 +872,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Corrige le mode vim où les touches x ou r en mode NORMAL cassaient les placeholders de texte collé après édition externe."
+          }
         },
         {
           "text": "Fixed responses blocked by the API's output content filter being re-sent and retried, sometimes for minutes, instead of showing the filter's error right away",
@@ -646,7 +889,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "modeles",
+            "impact": "notable",
+            "resume": "Affiche immédiatement l'erreur du filtre de contenu de sortie au lieu de réessayer pendant des minutes."
+          }
         },
         {
           "text": "Fixed plugins silently skipping a bundled `.mcpb` MCP server that still needs configuration: `/plugin`, the install message and `claude plugin install` now say so and point to Configure",
@@ -659,7 +907,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "mcp",
+            "impact": "notable",
+            "resume": "Les plugins signalent désormais clairement lorsqu'un serveur MCP nécessite une configuration manuelle."
+          }
         },
         {
           "text": "Fixed compacting or resuming a session failing, opening without its history, or crashing when its saved transcript holds a compaction marker or loop wakeup entry with missing or malformed fields",
@@ -671,7 +924,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "performance",
+            "impact": "notable",
+            "resume": "Correction des échecs de reprise de session causés par des marqueurs de compaction mal formés."
+          }
         },
         {
           "text": "WSL: Fixed `/ultrareview` refusing to upload a checkout on a Linux volume when a changed file's name has a colon or ends in a dot or space",
@@ -683,7 +941,12 @@
           ],
           "impact": "High",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Sous WSL, l'upload de fichiers avec des caractères spéciaux dans le nom fonctionne désormais."
+          }
         },
         {
           "text": "Fixed `CLAUDE_CODE_RESUME_INTERRUPTED_TURN` re-running a turn that had ended at `--max-turns`",
@@ -695,7 +958,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "agents",
+            "impact": "mineur",
+            "resume": "La reprise d'un tour interrompu ne relance plus un tour qui avait atteint la limite maximale."
+          }
         },
         {
           "text": "Fixed sign-in that could wait forever after the browser showed success",
@@ -707,7 +975,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "securite",
+            "impact": "notable",
+            "resume": "La connexion ne reste plus bloquée indéfiniment après la confirmation dans le navigateur."
+          }
         },
         {
           "text": "Windows: Fixed `/ultrareview` uploading a linked worktree of a repository rooted at your home folder in some cases",
@@ -719,7 +992,12 @@
           ],
           "impact": "High",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Sous Windows, l'upload de worktrees liés dans le dossier personnel est corrigé."
+          }
         },
         {
           "text": "Fixed cloud sessions reporting the uploads folder as missing before any file had been uploaded",
@@ -731,7 +1009,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Les sessions cloud ne signalent plus à tort le dossier d'upload comme manquant."
+          }
         },
         {
           "text": "Fixed a reply sent from `claude agents` to a background session waiting on a permission prompt sometimes approving the pending command",
@@ -745,7 +1028,12 @@
           ],
           "impact": "High",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "agents",
+            "impact": "notable",
+            "resume": "Une réponse depuis 'claude agents' n'approuve plus accidentellement une commande en attente."
+          }
         },
         {
           "text": "Fixed `claude attach`, `logs`, `stop`, `respawn` and `rm` starting a new session with the command name as its prompt when options came before it, such as from a shell alias",
@@ -757,7 +1045,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Les commandes comme 'attach' ou 'logs' ne créent plus de session erronée si les options précèdent le nom."
+          }
         },
         {
           "text": "Fixed `claude mcp list` leaving out WebSocket (`ws`) MCP servers; each is now listed with its URL and health status",
@@ -770,7 +1063,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "mcp",
+            "impact": "notable",
+            "resume": "La commande 'claude mcp list' affiche désormais les serveurs WebSocket avec leur URL et statut."
+          }
         },
         {
           "text": "Fixed `claude mcp get` showing no Type, Command, Args, or Environment for stdio servers whose config entry omits the `type` field",
@@ -782,7 +1080,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "mcp",
+            "impact": "mineur",
+            "resume": "Les détails des serveurs stdio s'affichent correctement même si le champ 'type' est omis."
+          }
         },
         {
           "text": "Fixed `.claude/settings.local.json` allow rules being held back outside a git repository when git's trace2 output is configured",
@@ -794,7 +1097,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "securite",
+            "impact": "notable",
+            "resume": "Les règles d'autorisation locales fonctionnent désormais hors dépôt git, même avec trace2 activé."
+          }
         },
         {
           "text": "Fixed the `/claude-api` eval runner scaffold and report builder writing through a symlink or hard link planted at an output file",
@@ -806,7 +1114,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "securite",
+            "impact": "mineur",
+            "resume": "Le générateur d'évaluations ne s'exécute plus via des liens symboliques malveillants."
+          }
         },
         {
           "text": "Fixed the `/claude-api` eval runner scaffold counting responses cut off at `max_tokens` in the score averages; they are now marked truncated and counted separately",
@@ -818,7 +1131,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "performance",
+            "impact": "mineur",
+            "resume": "Les réponses tronquées sont désormais marquées comme telles et exclues des moyennes de score."
+          }
         },
         {
           "text": "Fixed `&nbsp;` showing as literal text in the terminal when a reply uses it to indent text, such as row labels in a markdown table",
@@ -830,7 +1148,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Les entités HTML comme '&nbsp;' s'affichent correctement dans le terminal au lieu du texte brut."
+          }
         },
         {
           "text": "Fixed a brief freeze (up to a second) partway through long sessions outside fullscreen mode, which came back after `/clear` or `/compact`",
@@ -842,7 +1165,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "performance",
+            "impact": "mineur",
+            "resume": "Correction d'un gel bref de une seconde lors des longues sessions hors mode plein écran."
+          }
         },
         {
           "text": "Fixed an approved Edit never going through when its target is a device, such as a file symlinked to /dev/null, and the approval came from the IDE diff view or changed the edit",
@@ -854,7 +1182,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "securite",
+            "impact": "mineur",
+            "resume": "Les modifications approuvées sur des fichiers spéciaux (comme /dev/null) sont désormais appliquées."
+          }
         },
         {
           "text": "Fixed a failing API request being retried up to 21 times when streaming kept failing; the non-streaming fallback now shares the request's retry budget instead of getting a fresh set of retries",
@@ -866,7 +1199,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "performance",
+            "impact": "notable",
+            "resume": "Les tentatives de reconnexion partagent désormais le budget de retries global, évitant les boucles infinies."
+          }
         },
         {
           "text": "Improved Claude in Chrome: the native host now reports your computer's name, so connected browsers can be labeled by computer instead of \"Browser 1\" / \"Browser 2\"",
@@ -878,7 +1216,12 @@
           ],
           "impact": "Medium",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Dans Chrome, les navigateurs connectés sont identifiés par le nom de l'ordinateur plutôt que par un numéro."
+          }
         },
         {
           "text": "Improved Bedrock and Vertex AI sessions to switch to an older available model of the same tier, instead of failing, when an admin removes access to the default model; session titles and summaries now fall back with it",
@@ -891,7 +1234,12 @@
           ],
           "impact": "Medium",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "modeles",
+            "impact": "notable",
+            "resume": "Sur Bedrock et Vertex, le système bascule automatiquement sur un modèle équivalent si l'accès est retiré."
+          }
         },
         {
           "text": "Improved plugin marketplace errors to name why a git address is refused instead of citing enterprise policy",
@@ -903,7 +1251,12 @@
           ],
           "impact": "Medium",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "mcp",
+            "impact": "mineur",
+            "resume": "Les erreurs de marketplace précisent désormais la raison du refus d'une adresse git."
+          }
         },
         {
           "text": "Improved validation of git URLs for plugins, marketplaces and the current repository's remote",
@@ -915,7 +1268,12 @@
           ],
           "impact": "Medium",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "mcp",
+            "impact": "mineur",
+            "resume": "Amélioration de la validation des URLs git pour les plugins et les dépôts distants."
+          }
         },
         {
           "text": "Improved Artifact tool results: they now suggest publishing in the same step as writing or editing the page, which can save a round trip",
@@ -927,7 +1285,12 @@
           ],
           "impact": "Medium",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "agents",
+            "impact": "notable",
+            "resume": "L'outil Artifact suggère la publication immédiatement après l'écriture, réduisant les allers-retours."
+          }
         },
         {
           "text": "Improved Remote Control: a `/btw` side question asked of a session hosted by an app such as Claude Desktop now sees the turn in progress, not only the last finished one",
@@ -939,7 +1302,12 @@
           ],
           "impact": "High",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "agents",
+            "impact": "notable",
+            "resume": "Les questions latérales via '/btw' voient désormais le tour en cours, pas seulement le dernier terminé."
+          }
         },
         {
           "text": "Improved pictures Claude sends as BMP, HEIC, HEIF, AVIF or TIFF files: the Claude apps now show a preview where Claude Code can convert them",
@@ -951,7 +1319,12 @@
           ],
           "impact": "Medium",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Les images en formats exotiques (BMP, HEIC, etc.) affichent désormais un aperçu dans les apps Claude."
+          }
         },
         {
           "text": "Improved subagents in auto mode: a subagent's run now ends as soon as it hands its report back to its caller, instead of taking extra turns that reach no one",
@@ -964,7 +1337,12 @@
           ],
           "impact": "High",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "agents",
+            "impact": "notable",
+            "resume": "Les sous-agents en mode auto terminent leur exécution dès la remise du rapport, évitant des tours inutiles."
+          }
         },
         {
           "text": "Improved Bedrock and Vertex start-up model checks: models your account cannot use are now remembered for up to a day instead of being re-checked on every launch",
@@ -977,7 +1355,12 @@
           ],
           "impact": "Medium",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "performance",
+            "impact": "notable",
+            "resume": "Les vérifications de modèles Bedrock et Vertex sont mémorisées 24h, accélérant le démarrage."
+          }
         },
         {
           "text": "Improved Artifact tool publish results to use fewer tokens: the note on updating an artifact is shorter, and where to find your artifacts is no longer repeated after every publish",
@@ -989,7 +1372,12 @@
           ],
           "impact": "Medium",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "modeles",
+            "impact": "mineur",
+            "resume": "La publication d'artefacts consomme moins de jetons grâce à des messages de confirmation plus courts."
+          }
         },
         {
           "text": "Improved SDK liveness during a non-streaming fallback request: with partial messages on, a `ping` stream event is now sent every 30 seconds on the Anthropic API, Claude Platform on AWS and gateways",
@@ -1001,7 +1389,12 @@
           ],
           "impact": "Medium",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "mcp",
+            "impact": "mineur",
+            "resume": "Des événements ping sont envoyés toutes les 30 secondes pour maintenir la connexion SDK active."
+          }
         },
         {
           "text": "Improved `/resume` and `claude --resume` on a session that is running in the background: they now open that session instead of refusing, and a prompt given with `claude --resume <id> \"prompt\"` is sent to it as its next turn",
@@ -1014,7 +1407,12 @@
           ],
           "impact": "Medium",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "interface",
+            "impact": "notable",
+            "resume": "La commande /resume peut désormais ouvrir et interagir avec des sessions en arrière-plan."
+          }
         },
         {
           "text": "Improved per-turn performance when many permission deny rules and MCP tools are configured",
@@ -1028,7 +1426,12 @@
           ],
           "impact": "Medium",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "performance",
+            "impact": "notable",
+            "resume": "Les performances par tour sont améliorées lorsque de nombreuses règles de refus et outils MCP sont configurés."
+          }
         },
         {
           "text": "Improved responsiveness when leaving the ctrl+o transcript view in long sessions when fullscreen rendering is off",
@@ -1040,7 +1443,12 @@
           ],
           "impact": "Medium",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "La sortie de la vue transcripte (Ctrl+O) est plus réactive dans les longues sessions sans plein écran."
+          }
         },
         {
           "text": "Improved Bedrock, Vertex and Mantle start-up model checks to send the same User-Agent, x-app and session ID headers as regular requests",
@@ -1054,7 +1462,12 @@
           ],
           "impact": "Medium",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "securite",
+            "impact": "mineur",
+            "resume": "Les vérifications de démarrage Bedrock, Vertex et Mantle envoient désormais les mêmes en-têtes que les requêtes standard."
+          }
         },
         {
           "text": "Changed MCP tools so a tool that sets its own `_meta['anthropic/alwaysLoad']` to false stays deferred when its `--mcp-config`, Agent SDK or plugin server is set to `alwaysLoad`",
@@ -1068,7 +1481,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "mcp",
+            "impact": "mineur",
+            "resume": "Les outils MCP définissant 'alwaysLoad' à false restent différés même si le serveur est configuré pour un chargement immédiat."
+          }
         },
         {
           "text": "Changed background Bash and PowerShell commands to stop after a time limit (their `timeout` with `run_in_background`, default 30 min, max 2 h); Claude is notified when one is stopped",
@@ -1080,7 +1498,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "agents",
+            "impact": "notable",
+            "resume": "Les commandes Bash et PowerShell en arrière-plan s'arrêtent après un délai maximal, avec notification à Claude."
+          }
         },
         {
           "text": "Changed Code Review's pull request reviews and `/ultrareview` to run when `disableWorkflows` is on, unless the machine running the review has it set by its own administrator (MDM or the managed-settings file)",
@@ -1092,7 +1515,12 @@
           ],
           "impact": "High",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "agents",
+            "impact": "notable",
+            "resume": "Les revues de code et /ultrareview fonctionnent désormais même si les workflows sont désactivés, sauf blocage admin."
+          }
         },
         {
           "text": "Changed sessions behind a custom `ANTHROPIC_BASE_URL` to use the 1M context window of models that have one (Opus 4.7+, Sonnet 5+, Fable); run `/autocompact 200k` if your gateway stops at 200K",
@@ -1104,7 +1532,12 @@
           ],
           "impact": "High",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "modeles",
+            "impact": "notable",
+            "resume": "Les sessions via URL personnalisée utilisent désormais la fenêtre de contexte 1M des modèles compatibles."
+          }
         },
         {
           "text": "Changed Team and Enterprise sessions, and sessions whose sign-in plan Claude Code can't determine, to withhold WebFetch until the organization policy loads if it couldn't be loaded at startup",
@@ -1117,7 +1550,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "securite",
+            "impact": "notable",
+            "resume": "L'outil WebFetch est retenu pour les sessions Team/Enterprise jusqu'au chargement de la politique organisationnelle."
+          }
         },
         {
           "text": "Changed /memory so that Auto-memory can no longer be turned on from a background session or from a session one of Claude Code's own tools started; turning it off there still works",
@@ -1129,7 +1567,12 @@
           ],
           "impact": "High",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "hooks_config",
+            "impact": "mineur",
+            "resume": "La mémoire automatique ne peut plus être activée depuis une session en arrière-plan ou lancée par un outil interne."
+          }
         },
         {
           "text": "Changed the one-time offer to make auto mode your default permission mode to also show on third-party providers and with telemetry off, when your user settings default to another mode",
@@ -1141,7 +1584,12 @@
           ],
           "impact": "High",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "securite",
+            "impact": "mineur",
+            "resume": "L'offre pour passer en mode auto par défaut s'affiche désormais aussi avec les fournisseurs tiers et la télémétrie désactivée."
+          }
         },
         {
           "text": "Changed `claude -p` and Python Agent SDK sessions on third-party providers or with telemetry off to start in auto mode when no permission mode is configured, like interactive sessions; `--permission-mode` still overrides it",
@@ -1154,7 +1602,12 @@
           ],
           "impact": "High",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "securite",
+            "impact": "notable",
+            "resume": "Les sessions non interactives (claude -p, SDK) démarrent en mode auto par défaut si aucun mode n'est configuré."
+          }
         },
         {
           "text": "Changed Bedrock, Mantle and Claude Platform on AWS requests to a base URL with a non-default port to include the port in the SigV4-signed Host header",
@@ -1166,7 +1619,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "securite",
+            "impact": "mineur",
+            "resume": "Les requêtes Bedrock, Mantle et AWS incluent désormais le port non standard dans l'en-tête Host signé SigV4."
+          }
         },
         {
           "text": "Changed the MCP server name `widgets` to be reserved in cloud sessions and on self-hosted runners: your own server under it, or a close spelling such as `widgets_`, no longer loads, so rename it",
@@ -1178,7 +1636,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "mcp",
+            "impact": "notable",
+            "resume": "Le nom de serveur MCP 'widgets' est réservé dans les sessions cloud et auto-hébergées, nécessitant un renommage."
+          }
         },
         {
           "text": "Changed `/ultrareview` on macOS and Linux to leave symbolic refs out when uploading a local checkout; a checkout whose current branch is a symbolic ref is now refused with an explanation",
@@ -1190,7 +1653,12 @@
           ],
           "impact": "High",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "/ultrareview sur macOS/Linux exclut les références symboliques lors de l'upload et refuse les branches symboliques."
+          }
         },
         {
           "text": "Windows: Changed project and local settings `env` to no longer set `ALLUSERSPROFILE`, `SystemDrive`, or the `CommonProgramFiles` variables; set them in user or managed settings instead",
@@ -1202,7 +1670,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "hooks_config",
+            "impact": "mineur",
+            "resume": "Sur Windows, les variables système comme ALLUSERSPROFILE ne sont plus définies par les réglages projet ou locaux."
+          }
         },
         {
           "text": "Changed `/tasks` to fold background work Claude Code runs for itself under one \"System tasks\" row; press Enter on it to show those tasks",
@@ -1214,7 +1687,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "La commande /tasks regroupe les tâches système internes sous une ligne unique 'System tasks'."
+          }
         },
         {
           "text": "Changed `/ultrareview` on macOS and Linux to require git 2.31 or newer to upload a local repository; checkouts made with `--separate-git-dir` are now refused instead of being uploaded with an older method",
@@ -1227,7 +1705,12 @@
           ],
           "impact": "High",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "/ultrareview exige désormais git 2.31+ pour l'upload local et refuse les checkouts avec --separate-git-dir."
+          }
         },
         {
           "text": "Changed `/ultrareview` uploads on macOS and Linux to send a partial clone as a working-tree snapshot on git 2.31 or newer, instead of falling back or refusing when git's version looked too old",
@@ -1239,7 +1722,12 @@
           ],
           "impact": "High",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "/ultrareview envoie un clone partiel comme instantané d'arborescence sur git 2.31+ au lieu de refuser ou de basculer."
+          }
         },
         {
           "text": "Changed `/ultrareview` uploads on macOS and Linux to refuse, instead of fetching, a partial clone missing some of its working tree's files on older git versions; a clone made without `--filter` uploads",
@@ -1251,7 +1739,12 @@
           ],
           "impact": "High",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "/ultrareview refuse les clones partiels incomplets sur les anciennes versions de git au lieu de tenter un fetch."
+          }
         },
         {
           "text": "Changed Bedrock, Vertex and Mantle start-up model checks to identify themselves as Claude Code, like other Claude Code requests",
@@ -1264,7 +1757,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "securite",
+            "impact": "mineur",
+            "resume": "Les vérifications de démarrage Bedrock, Vertex et Mantle s'identifient désormais comme Claude Code."
+          }
         },
         {
           "text": "Changed `claude mcp get` to hide the command, arguments, and environment values of stdio MCP servers provided by plugins; variable names are still shown",
@@ -1277,7 +1775,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "mcp",
+            "impact": "notable",
+            "resume": "Les détails techniques des serveurs MCP fournis par des plugins sont désormais masqués dans la commande d'inspection."
+          }
         },
         {
           "text": "Changed `/claude-api` so it can no longer be run from Remote Control clients",
@@ -1289,7 +1792,12 @@
           ],
           "impact": "High",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "La commande d'accès à l'API n'est plus exécutable depuis les clients de contrôle à distance."
+          }
         },
         {
           "text": "Changed `/config chrome=true` to direct you to the /config panel instead of enabling Claude in Chrome by default; `/config chrome=false` still turns it off when it was on",
@@ -1301,7 +1809,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "L'activation de l'intégration Chrome via la configuration redirige désormais vers le panneau dédié au lieu d'activer directement."
+          }
         },
         {
           "text": "Changed sandbox settings so project settings cannot widen or turn off an admin-required sandbox, replace the proxy behind a managed deny list, extend a strict allowlist, or reopen managed read-denies",
@@ -1314,7 +1827,12 @@
           ],
           "impact": "High",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "securite",
+            "impact": "majeur",
+            "resume": "Les réglages de projet ne peuvent plus contourner les restrictions de sandbox imposées par l'administrateur."
+          }
         },
         {
           "text": "\\[VSCode] Added a note under a restored tab's last message when a window reload interrupted it and no reply will follow",
@@ -1326,7 +1844,12 @@
           ],
           "impact": "Medium",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Une note explicative apparaît sous le dernier message d'un onglet restauré si la session a été interrompue par un rechargement."
+          }
         },
         {
           "text": "\\[VSCode] Added a plugin options form to Manage plugins: installing a plugin that has options asks for the unset ones, and a gear on its row changes them later",
@@ -1338,7 +1861,12 @@
           ],
           "impact": "Medium",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "mcp",
+            "impact": "notable",
+            "resume": "Un formulaire d'options s'ouvre à l'installation des plugins et permet de modifier leurs paramètres via une icône engrenage."
+          }
         },
         {
           "text": "\\[VSCode] Added an on-demand diagnostics tool so Claude in the panel can read the Problems panel's current errors and warnings at any time, not only right after it edits a file",
@@ -1350,7 +1878,12 @@
           ],
           "impact": "Medium",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "interface",
+            "impact": "notable",
+            "resume": "Un outil de diagnostic permet à Claude de lire les erreurs et avertissements du panneau Problèmes à tout moment."
+          }
         },
         {
           "text": "\\[VSCode] Fixed pressing Enter after typing a slash command running an unrelated menu item picked by fuzzy match, or doing nothing",
@@ -1362,7 +1895,12 @@
           ],
           "impact": "Medium",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Correction d'un bug où la touche Entrée après une commande slash exécutait un élément de menu non lié."
+          }
         },
         {
           "text": "\\[VSCode] Fixed an open agent transcript losing the agent's newer messages during a long session",
@@ -1374,7 +1912,12 @@
           ],
           "impact": "Medium",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Correction d'un bug où les messages récents d'un agent étaient perdus dans la transcription lors de longues sessions."
+          }
         },
         {
           "text": "\\[VSCode] Fixed a message that quotes a Claude Code or IDE tag losing the rest of its text in the chat",
@@ -1386,7 +1929,12 @@
           ],
           "impact": "Medium",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Correction d'un bug où le texte suivant une citation de balise IDE ou Claude Code était tronqué dans le chat."
+          }
         },
         {
           "text": "\\[VSCode] Fixed a message sent while Claude was working disappearing from the conversation after the session was reopened",
@@ -1398,7 +1946,12 @@
           ],
           "impact": "Medium",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Correction d'un bug où un message envoyé pendant le travail de Claude disparaissait après la réouverture de la session."
+          }
         },
         {
           "text": "\\[VSCode] Fixed the session list's Web tab showing the previous account's sessions after an account switch",
@@ -1410,7 +1963,12 @@
           ],
           "impact": "Medium",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Correction d'un bug où l'onglet Web de la liste des sessions affichait les conversations de l'ancien compte après changement."
+          }
         },
         {
           "text": "\\[VSCode] Fixed restored tabs re-running an interrupted turn when VS Code was started with `CLAUDE_CODE_RESUME_INTERRUPTED_TURN` set, even with Continue After Reload off",
@@ -1423,7 +1981,12 @@
           ],
           "impact": "Medium",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Correction d'un bug où les onglets restaurés relançaient un tour interrompu malgré le réglage de continuation désactivé."
+          }
         },
         {
           "text": "\\[VSCode] Fixed Escape stopping the running turn instead of closing the command menu after clicking one of its rows",
@@ -1435,7 +1998,12 @@
           ],
           "impact": "Medium",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Correction d'un bug où la touche Échap arrêtait le tour en cours au lieu de fermer le menu de commandes."
+          }
         },
         {
           "text": "\\[VSCode] Fixed opening Past conversations replacing a live conversation with its saved copy",
@@ -1447,7 +2015,12 @@
           ],
           "impact": "Medium",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Correction d'un bug où l'ouverture d'une conversation passée remplaçait la conversation active par sa copie sauvegardée."
+          }
         },
         {
           "text": "\\[VSCode] Fixed a Claude tab reloaded after an extension restart staying blank instead of saying how to recover",
@@ -1459,7 +2032,12 @@
           ],
           "impact": "Medium",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Correction d'un bug où l'onglet Claude restait vide après un redémarrage d'extension au lieu d'afficher les instructions de récupération."
+          }
         },
         {
           "text": "\\[VSCode] Fixed opening a conversation that is already open in another window or app starting a second copy of it without warning; it now asks first",
@@ -1471,7 +2049,12 @@
           ],
           "impact": "Medium",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Correction d'un bug où l'ouverture d'une conversation déjà active dans une autre fenêtre créait un doublon sans avertissement."
+          }
         },
         {
           "text": "\\[VSCode] Fixed a hook's reason for blocking or stopping a prompt disappearing after a window reload",
@@ -1484,7 +2067,12 @@
           ],
           "impact": "Medium",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "hooks_config",
+            "impact": "mineur",
+            "resume": "Correction d'un bug où la raison de blocage d'un hook disparaissait après un rechargement de la fenêtre."
+          }
         },
         {
           "text": "\\[VSCode] Fixed tabs stuck on a conversation that can't be resumed: the error now says so and offers to start a new conversation",
@@ -1496,7 +2084,12 @@
           ],
           "impact": "Medium",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Correction d'un bug où les onglets restaient bloqués sur une conversation non réinitialisable sans proposer de démarrer une nouvelle."
+          }
         },
         {
           "text": "\\[VSCode] Fixed every file Read, Write and Edit stalling for ten minutes and then being skipped when the editor stops responding to the extension's automatic save before the tool runs",
@@ -1508,7 +2101,12 @@
           ],
           "impact": "Medium",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "performance",
+            "impact": "notable",
+            "resume": "Correction d'un bug où les opérations de lecture et d'écriture de fichiers étaient bloquées dix minutes si l'éditeur ne répondait pas."
+          }
         },
         {
           "text": "\\[VSCode] Fixed the agent map labeling a sub-agent with the session's model instead of the model it actually ran on (e.g. under `CLAUDE_CODE_SUBAGENT_MODEL_FORCE` or an agent's own `model`)",
@@ -1521,7 +2119,12 @@
           ],
           "impact": "High",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "agents",
+            "impact": "mineur",
+            "resume": "Correction d'un bug où la carte des agents affichait le modèle de la session au lieu du modèle réellement utilisé par le sous-agent."
+          }
         },
         {
           "text": "\\[VSCode] Fixed uninstalling a plugin from the Manage plugins dialog, which removed the wrong installation or failed for a plugin installed for the project",
@@ -1534,7 +2137,12 @@
           ],
           "impact": "Medium",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "mcp",
+            "impact": "mineur",
+            "resume": "Correction d'un bug où le désinstallation d'un plugin supprimait l'installation incorrecte ou échouait pour les plugins de projet."
+          }
         },
         {
           "text": "\\[VSCode] Fixed sign-in staying on the authorization-code step after going back and choosing the same sign-in method again",
@@ -1546,7 +2154,12 @@
           ],
           "impact": "Medium",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "securite",
+            "impact": "mineur",
+            "resume": "Correction d'un bug où la connexion restait bloquée à l'étape de code d'autorisation après retour sur la même méthode."
+          }
         },
         {
           "text": "\\[VSCode] Fixed the chat panel stalling when a long session trims its oldest rows",
@@ -1558,7 +2171,12 @@
           ],
           "impact": "Medium",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "performance",
+            "impact": "mineur",
+            "resume": "Correction d'un bug où le panneau de chat se figeait lors de la suppression des lignes les plus anciennes dans les longues sessions."
+          }
         },
         {
           "text": "\\[VSCode] Fixed the conversation disappearing from a session when many agents run",
@@ -1570,7 +2188,12 @@
           ],
           "impact": "Medium",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "agents",
+            "impact": "mineur",
+            "resume": "Correction d'un bug où la conversation disparaissait de la session lorsque de nombreux agents étaient exécutés simultanément."
+          }
         },
         {
           "text": "\\[VSCode] Fixed the editor tab keeping an old name after a session was renamed with /rename, by a SessionStart hook, or on claude.ai",
@@ -1583,7 +2206,12 @@
           ],
           "impact": "Medium",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Corrige l'affichage du nom de l'onglet dans VSCode après un renommage de session."
+          }
         },
         {
           "text": "\\[VSCode] Fixed the agent map's transcript view leaving out messages sent to a running agent",
@@ -1595,7 +2223,12 @@
           ],
           "impact": "Medium",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Affiche désormais tous les messages envoyés à un agent en cours d'exécution dans la vue de transcript."
+          }
         },
         {
           "text": "\\[VSCode] Improved the Manage plugins dialog: a failed plugin action now opens a popup that explains it and, where there is one, offers the fix",
@@ -1608,7 +2241,12 @@
           ],
           "impact": "Medium",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "mcp",
+            "impact": "notable",
+            "resume": "Améliore le dialogue de gestion des plugins en affichant des explications claires en cas d'échec."
+          }
         },
         {
           "text": "\\[VSCode] Changed the Manage plugins dialog to ask before removing a marketplace or turning off a plugin that your project's shared `.claude/settings.json` turns on",
@@ -1621,7 +2259,12 @@
           ],
           "impact": "Medium",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "mcp",
+            "impact": "notable",
+            "resume": "Demande confirmation avant de désactiver un plugin activé par les paramètres partagés du projet."
+          }
         },
         {
           "text": "\\[Cloud sessions] Fixed Run now on a routine showing internal error text when the run is refused before it starts; it now shows the same explanation as the routine's failure notification",
@@ -1633,7 +2276,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Affiche une explication claire au lieu d'une erreur interne si une routine cloud est refusée."
+          }
         },
         {
           "text": "\\[Cloud sessions] Changed `MCP_DISCOVERY_CACHE=1`, when set in your cloud environment's variables rather than a settings file, to reuse your connectors' tool lists after a session restart; other MCP servers are no longer cached and connect at startup",
@@ -1646,7 +2294,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "mcp",
+            "impact": "notable",
+            "resume": "Optimise le cache des outils MCP dans les sessions cloud pour accélérer le redémarrage."
+          }
         },
         {
           "text": "\\[Claude Tag] Added direct messages with Claude for members on an Enterprise plan Standard or Usage-Based Chat seat who also have Cowork; a seat that includes Claude Code is no longer required",
@@ -1658,7 +2311,12 @@
           ],
           "impact": "Medium",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "interface",
+            "impact": "notable",
+            "resume": "Permet les messages directs avec Claude pour les membres Enterprise sans siège Claude Code dédié."
+          }
         },
         {
           "text": "\\[Claude Tag] Fixed the Default model setting in admin settings and a channel's Configure page offering models your organization can't use, which made saves or new sessions fail",
@@ -1670,7 +2328,12 @@
           ],
           "impact": "Medium",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "securite",
+            "impact": "notable",
+            "resume": "Empêche la sélection de modèles non autorisés par l'organisation dans les paramètres d'administration."
+          }
         },
         {
           "text": "\\[Claude Tag] Fixed the note under Claude's Slack messages saying it answered on a fallback model, and why, disappearing when Claude later edited that message",
@@ -1683,7 +2346,12 @@
           ],
           "impact": "Medium",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Préserve l'information sur le modèle de secours utilisé lors des modifications de messages Slack."
+          }
         },
         {
           "text": "\\[Code Review] Fixed the organization menu in Code Review's \"Add a repository\" dialog showing only a few of your GitHub organizations; it now loads more as you scroll",
@@ -1695,7 +2363,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "interface",
+            "impact": "notable",
+            "resume": "Charge dynamiquement la liste complète des organisations GitHub dans le dialogue d'ajout de dépôt."
+          }
         },
         {
           "text": "\\[Code Review] Improved the Code Review check run to say when your repository's REVIEW\\.md wasn't applied, for example on a very large pull request or when REVIEW\\.md is a symbolic link",
@@ -1707,7 +2380,12 @@
           ],
           "impact": "Medium",
           "version": "2.1.285",
-          "date": "2026-09-29"
+          "date": "2026-09-29",
+          "ia": {
+            "domaine": "interface",
+            "impact": "notable",
+            "resume": "Indique clairement pourquoi le fichier REVIEW.md n'a pas été appliqué lors d'une revue de code."
+          }
         }
       ]
     },

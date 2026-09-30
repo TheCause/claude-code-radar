@@ -1,12 +1,12 @@
 {
   "metadata": {
-    "lastUpdated": "2026-09-30 05:59:19",
+    "lastUpdated": "2026-09-30 07:00:07",
     "latestVersion": "2.1.285",
     "latestDate": "September 29, 2026",
     "totalVersions": 407,
     "totalItems": 6660,
     "highImpactCount": 1366,
-    "lastUpdatedUtc": "2026-09-30T03:59:19Z",
+    "lastUpdatedUtc": "2026-09-30T05:00:07Z",
     "sourceLive": true,
     "analyseIA": {
       "versionsAnalysees": [
@@ -15,11 +15,9 @@
         "2.1.283",
         "2.1.282"
       ],
-      "entreesAnalysees": 280,
-      "enAttente": 136,
-      "pannes": [
-        "service d'état GPU injoignable : URLError"
-      ]
+      "entreesAnalysees": 416,
+      "enAttente": 0,
+      "pannes": []
     }
   },
   "actionCounts": {
