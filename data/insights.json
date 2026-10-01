@@ -1,49 +1,50 @@
 {
   "metadata": {
-    "lastUpdated": "2026-09-30 07:00:07",
-    "latestVersion": "2.1.285",
-    "latestDate": "September 29, 2026",
-    "totalVersions": 407,
-    "totalItems": 6660,
-    "highImpactCount": 1366,
-    "lastUpdatedUtc": "2026-09-30T05:00:07Z",
+    "lastUpdated": "2026-10-01 07:00:06",
+    "latestVersion": "2.1.286",
+    "latestDate": "September 30, 2026",
+    "totalVersions": 408,
+    "totalItems": 6748,
+    "highImpactCount": 1384,
+    "lastUpdatedUtc": "2026-10-01T05:00:06Z",
     "sourceLive": true,
     "analyseIA": {
       "versionsAnalysees": [
+        "2.1.286",
         "2.1.285",
         "2.1.284",
         "2.1.283",
         "2.1.282"
       ],
-      "entreesAnalysees": 416,
+      "entreesAnalysees": 504,
       "enAttente": 0,
       "pannes": []
     }
   },
   "actionCounts": {
-    "Added": 793,
-    "Fixed": 3825,
-    "Improved": 692,
-    "Changed": 327,
-    "Other": 971,
-    "Removed": 52
+    "Added": 800,
+    "Fixed": 3874,
+    "Improved": 708,
+    "Changed": 342,
+    "Removed": 53,
+    "Other": 971
   },
   "tagCounts": {
-    "IDE & Cloud Ubiquity": 548,
-    "Performance & Reliability": 1024,
-    "Plugins & Skills": 855,
-    "MCP & Tools": 475,
-    "Security & Governance": 759,
-    "Multi-Agent & Workflows": 898,
-    "General Core": 1807,
-    "Models & Intelligence": 787,
-    "Terminal & UX": 1598
+    "Security & Governance": 763,
+    "Terminal & UX": 1617,
+    "General Core": 1833,
+    "Multi-Agent & Workflows": 912,
+    "Performance & Reliability": 1030,
+    "Plugins & Skills": 869,
+    "Models & Intelligence": 796,
+    "IDE & Cloud Ubiquity": 561,
+    "MCP & Tools": 483
   },
   "scopeCounts": {
-    "Core CLI": 6120,
-    "VSCode": 322,
-    "Cloud sessions": 11,
-    "Claude Tag": 119,
+    "Core CLI": 6186,
+    "VSCode": 332,
+    "Cloud sessions": 17,
+    "Claude Tag": 125,
     "Code Review": 27,
     "Claude Code on the web": 52,
     "IDE": 3,
@@ -189,11 +190,11 @@
     },
     {
       "month": "2026-09",
-      "releases": 26,
-      "items": 1737,
-      "added": 185,
-      "fixed": 1099,
-      "improved": 253
+      "releases": 27,
+      "items": 1825,
+      "added": 192,
+      "fixed": 1148,
+      "improved": 269
     }
   ],
   "gameChangers": [
@@ -267,7 +268,7 @@
       "title": "1. Multi-Agents & Workflows Asynchrones",
       "icon": "🤖",
       "badge": "Autonomie",
-      "metric": "898 entrées contenant ces mots-clés",
+      "metric": "912 entrées contenant ces mots-clés",
       "keywords": [
         "agent",
         "subagent",
@@ -290,7 +291,7 @@
       "title": "2. Écosystème MCP & Extensibilité",
       "icon": "🔌",
       "badge": "Intégration",
-      "metric": "475 entrées contenant ces mots-clés",
+      "metric": "483 entrées contenant ces mots-clés",
       "keywords": [
         "mcp",
         "model context protocol",
@@ -309,7 +310,7 @@
       "title": "3. Sécurité, Passerelle & Sandboxing",
       "icon": "🛡️",
       "badge": "Gouvernance",
-      "metric": "759 entrées contenant ces mots-clés",
+      "metric": "763 entrées contenant ces mots-clés",
       "keywords": [
         "sandbox",
         "permission",
@@ -335,7 +336,7 @@
       "title": "4. Interfaces Multiples (CLI, IDE, Web, Slack)",
       "icon": "🌐",
       "badge": "Omnicanal",
-      "metric": "493 entrées scopées",
+      "metric": "509 entrées scopées",
       "keywords": [
         "vscode",
         "vs code",
@@ -358,7 +359,7 @@
       "title": "5. Modèles & Lecture de Cache",
       "icon": "⚡",
       "badge": "Modèles",
-      "metric": "787 entrées contenant ces mots-clés",
+      "metric": "796 entrées contenant ces mots-clés",
       "keywords": [
         "opus",
         "sonnet",
