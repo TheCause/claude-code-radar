@@ -1,15 +1,16 @@
 {
   "metadata": {
-    "lastUpdated": "2026-10-02 07:02:47",
-    "latestVersion": "2.1.287",
-    "latestDate": "October 1, 2026",
-    "totalVersions": 409,
-    "totalItems": 6854,
-    "highImpactCount": 1412,
-    "lastUpdatedUtc": "2026-10-02T05:02:47Z",
+    "lastUpdated": "2026-10-03 07:00:47",
+    "latestVersion": "2.1.288",
+    "latestDate": "October 2, 2026",
+    "totalVersions": 410,
+    "totalItems": 6943,
+    "highImpactCount": 1434,
+    "lastUpdatedUtc": "2026-10-03T05:00:47Z",
     "sourceLive": true,
     "analyseIA": {
       "versionsAnalysees": [
+        "2.1.288",
         "2.1.287",
         "2.1.286",
         "2.1.285",
@@ -17,12 +18,1449 @@
         "2.1.283",
         "2.1.282"
       ],
-      "entreesAnalysees": 610,
-      "enAttente": 0,
-      "pannes": []
+      "entreesAnalysees": 674,
+      "enAttente": 25,
+      "pannes": [
+        "modèle injoignable : ConnectionResetError"
+      ]
     }
   },
   "versions": [
+    {
+      "version": "2.1.288",
+      "date": "October 2, 2026",
+      "isoDate": "2026-10-02",
+      "yearMonth": "2026-10",
+      "yearQuarter": "2026-Q4",
+      "itemCount": 89,
+      "items": [
+        {
+          "text": "Added `$.ui.selection()` for mods: returns the text you last selected in fullscreen mode and, when the selection lies within one transcript row, that row",
+          "cleanText": "Added `$.ui.selection()` for mods: returns the text you last selected in fullscreen mode and, when the selection lies within one transcript row, that row",
+          "scope": "Core CLI",
+          "actionType": "Added",
+          "tags": [
+            "Terminal & UX"
+          ],
+          "impact": "Medium",
+          "version": "2.1.288",
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Nouvelle fonctionnalité pour les mods permettant de récupérer le texte sélectionné en mode plein écran."
+          }
+        },
+        {
+          "text": "Added a built-in `gh api` to cloud sessions whose image has no GitHub CLI, and fixed the built-in sending control characters from file names, jq filters or GitHub errors to the terminal",
+          "cleanText": "Added a built-in `gh api` to cloud sessions whose image has no GitHub CLI, and fixed the built-in sending control characters from file names, jq filters or GitHub errors to the terminal",
+          "scope": "Core CLI",
+          "actionType": "Added",
+          "tags": [
+            "Terminal & UX"
+          ],
+          "impact": "Medium",
+          "version": "2.1.288",
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "mcp",
+            "impact": "notable",
+            "resume": "Ajout d'une commande API GitHub intégrée aux sessions cloud et correction des caractères de contrôle envoyés au terminal."
+          }
+        },
+        {
+          "text": "Added recovery for a prompt cleared with Ctrl+C: pressing Up on the empty prompt brings the draft back, including pasted text and images",
+          "cleanText": "Added recovery for a prompt cleared with Ctrl+C: pressing Up on the empty prompt brings the draft back, including pasted text and images",
+          "scope": "Core CLI",
+          "actionType": "Added",
+          "tags": [
+            "Terminal & UX"
+          ],
+          "impact": "Medium",
+          "version": "2.1.288",
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "interface",
+            "impact": "notable",
+            "resume": "Récupération possible du brouillon effacé par Ctrl+C en appuyant sur la flèche haut, y compris pour les images collées."
+          }
+        },
+        {
+          "text": "Added a re-authenticate prompt when an MCP server asks for more OAuth scope during a tool call",
+          "cleanText": "Added a re-authenticate prompt when an MCP server asks for more OAuth scope during a tool call",
+          "scope": "Core CLI",
+          "actionType": "Added",
+          "tags": [
+            "MCP & Tools",
+            "Terminal & UX"
+          ],
+          "impact": "High",
+          "version": "2.1.288",
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "mcp",
+            "impact": "notable",
+            "resume": "Demande de réauthentification automatique si un serveur MCP requiert plus de permissions OAuth pendant un appel d'outil."
+          }
+        },
+        {
+          "text": "Added `--max-findings <n>|all` to /code-review to report more or fewer findings than the usual limit; the choice is reused until you pass `--max-findings default`",
+          "cleanText": "Added `--max-findings <n>|all` to /code-review to report more or fewer findings than the usual limit; the choice is reused until you pass `--max-findings default`",
+          "scope": "Core CLI",
+          "actionType": "Added",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Medium",
+          "version": "2.1.288",
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Option pour ajuster le nombre de résultats affichés par la commande de revue de code, avec mémorisation du choix."
+          }
+        },
+        {
+          "text": "Added Ctrl+F to find a session by name and Alt+↑/↓ to jump between groups in the agents view; both, and rename, can be rebound in keybindings.json",
+          "cleanText": "Added Ctrl+F to find a session by name and Alt+↑/↓ to jump between groups in the agents view; both, and rename, can be rebound in keybindings.json",
+          "scope": "Core CLI",
+          "actionType": "Added",
+          "tags": [
+            "Multi-Agent & Workflows",
+            "Terminal & UX"
+          ],
+          "impact": "High",
+          "version": "2.1.288",
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Raccourcis clavier pour rechercher une session et naviguer entre les groupes dans la vue des agents, personnalisables."
+          }
+        },
+        {
+          "text": "Added a screen reader mode announcement of the new permission mode when you approve a plan, including with Shift+Tab",
+          "cleanText": "Added a screen reader mode announcement of the new permission mode when you approve a plan, including with Shift+Tab",
+          "scope": "Core CLI",
+          "actionType": "Added",
+          "tags": [
+            "Security & Governance"
+          ],
+          "impact": "High",
+          "version": "2.1.288",
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Annonce vocale du nouveau mode de permission lors de l'approbation d'un plan pour les lecteurs d'écran."
+          }
+        },
+        {
+          "text": "Fixed mid-response API timeouts failing the turn: non-interactive sessions and subagents now continue from the partial response, and thinking-only responses are retried",
+          "cleanText": "Fixed mid-response API timeouts failing the turn: non-interactive sessions and subagents now continue from the partial response, and thinking-only responses are retried",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Multi-Agent & Workflows",
+            "Models & Intelligence"
+          ],
+          "impact": "High",
+          "version": "2.1.288",
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "performance",
+            "impact": "notable",
+            "resume": "Correction des timeouts API en cours de réponse : les sessions non interactives et sous-agents continuent depuis la réponse partielle."
+          }
+        },
+        {
+          "text": "Fixed long conversations failing with \"Prompt is too long\" instead of auto-compacting when the last reply reported zero token usage",
+          "cleanText": "Fixed long conversations failing with \"Prompt is too long\" instead of auto-compacting when the last reply reported zero token usage",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Models & Intelligence",
+            "Terminal & UX"
+          ],
+          "impact": "Standard",
+          "version": "2.1.288",
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "performance",
+            "impact": "notable",
+            "resume": "Correction de l'erreur « Prompt is too long » lors des longues conversations, avec compactage automatique si l'usage est nul."
+          }
+        },
+        {
+          "text": "Fixed `--resume` sometimes dropping files and other context that a compaction had just restored",
+          "cleanText": "Fixed `--resume` sometimes dropping files and other context that a compaction had just restored",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Performance & Reliability"
+          ],
+          "impact": "Standard",
+          "version": "2.1.288",
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "performance",
+            "impact": "mineur",
+            "resume": "Correction d'un bug où la reprise de session perdait parfois les fichiers et le contexte restaurés par le compactage."
+          }
+        },
+        {
+          "text": "Fixed a resumed session sometimes not saving the last response of a turn, so that the next `--resume` showed the prompt unanswered",
+          "cleanText": "Fixed a resumed session sometimes not saving the last response of a turn, so that the next `--resume` showed the prompt unanswered",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Performance & Reliability",
+            "Terminal & UX"
+          ],
+          "impact": "Standard",
+          "version": "2.1.288",
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "performance",
+            "impact": "mineur",
+            "resume": "Correction du non-enregistrement de la dernière réponse lors de la reprise, qui laissait le prompt sans réponse."
+          }
+        },
+        {
+          "text": "Fixed resume occasionally loading a transcript cut short when the same session rewrote the file during the load",
+          "cleanText": "Fixed resume occasionally loading a transcript cut short when the same session rewrote the file during the load",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Performance & Reliability"
+          ],
+          "impact": "Standard",
+          "version": "2.1.288",
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "performance",
+            "impact": "mineur",
+            "resume": "Correction du chargement d'un transcript tronqué lors de la reprise si la session réécrivait le fichier pendant le chargement."
+          }
+        },
+        {
+          "text": "Fixed resuming a conversation started on 2.1.286 or earlier dropping the model's earlier thinking",
+          "cleanText": "Fixed resuming a conversation started on 2.1.286 or earlier dropping the model's earlier thinking",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Models & Intelligence"
+          ],
+          "impact": "Standard",
+          "version": "2.1.288",
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "performance",
+            "impact": "mineur",
+            "resume": "Correction de la perte de la réflexion antérieure du modèle lors de la reprise de conversations anciennes."
+          }
+        },
+        {
+          "text": "Fixed session titles, memory recall and prompt hooks failing on Mantle or behind gateways that reject structured outputs; added `CLAUDE_CODE_DISABLE_STRUCTURED_OUTPUTS` to turn structured outputs off",
+          "cleanText": "Fixed session titles, memory recall and prompt hooks failing on Mantle or behind gateways that reject structured outputs; added `CLAUDE_CODE_DISABLE_STRUCTURED_OUTPUTS` to turn structured outputs off",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Plugins & Skills",
+            "Performance & Reliability",
+            "Terminal & UX"
+          ],
+          "impact": "Standard",
+          "version": "2.1.288",
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "hooks_config",
+            "impact": "notable",
+            "resume": "Correction des échecs de titres, mémoire et hooks sur Mantle ou passerelles, avec option pour désactiver les sorties structurées."
+          }
+        },
+        {
+          "text": "Fixed auto mode denials pointing Claude at a Bash permission rule when the blocked tool was not Bash",
+          "cleanText": "Fixed auto mode denials pointing Claude at a Bash permission rule when the blocked tool was not Bash",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Security & Governance"
+          ],
+          "impact": "High",
+          "version": "2.1.288",
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "securite",
+            "impact": "mineur",
+            "resume": "Correction des refus en mode auto qui pointaient vers une règle Bash incorrecte pour les outils non-Bash bloqués."
+          }
+        },
+        {
+          "text": "Fixed auto mode on Bedrock and Mantle switching to the local classifier for the rest of the session after a request to an older model, such as a WebFetch summary or a `sonnet` subagent",
+          "cleanText": "Fixed auto mode on Bedrock and Mantle switching to the local classifier for the rest of the session after a request to an older model, such as a WebFetch summary or a `sonnet` subagent",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Multi-Agent & Workflows",
+            "Models & Intelligence",
+            "Security & Governance",
+            "IDE & Cloud Ubiquity"
+          ],
+          "impact": "High",
+          "version": "2.1.288",
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "securite",
+            "impact": "notable",
+            "resume": "Correction du basculement vers le classifieur local en mode auto sur Bedrock/Mantle après une requête à un modèle plus ancien."
+          }
+        },
+        {
+          "text": "Fixed cloud sessions that restarted on a newly picked model replying with that model after the server refused it",
+          "cleanText": "Fixed cloud sessions that restarted on a newly picked model replying with that model after the server refused it",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Models & Intelligence"
+          ],
+          "impact": "Standard",
+          "version": "2.1.288",
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "modeles",
+            "impact": "mineur",
+            "resume": "Correction des réponses utilisant un modèle refusé par le serveur lors du redémarrage des sessions cloud."
+          }
+        },
+        {
+          "text": "Fixed Cowork cloud sessions staying marked as waiting for input after a WebFetch permission prompt for an unapproved URL went unanswered for five minutes",
+          "cleanText": "Fixed Cowork cloud sessions staying marked as waiting for input after a WebFetch permission prompt for an unapproved URL went unanswered for five minutes",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Security & Governance",
+            "IDE & Cloud Ubiquity",
+            "Terminal & UX"
+          ],
+          "impact": "Standard",
+          "version": "2.1.288",
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Correction de l'état « en attente d'entrée » persistant dans les sessions Cowork après un prompt de permission WebFetch ignoré."
+          }
+        },
+        {
+          "text": "Fixed prompt suggestions not appearing on a phone that joins a Cowork cloud session started on another device",
+          "cleanText": "Fixed prompt suggestions not appearing on a phone that joins a Cowork cloud session started on another device",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Terminal & UX"
+          ],
+          "impact": "Standard",
+          "version": "2.1.288",
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Correction de l'absence de suggestions de prompt sur téléphone lors de la jointure d'une session Cowork démarrée ailleurs."
+          }
+        },
+        {
+          "text": "Fixed a mod's button sometimes running a different button's action when pressed on a view drawn before Claude Code restarted",
+          "cleanText": "Fixed a mod's button sometimes running a different button's action when pressed on a view drawn before Claude Code restarted",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Terminal & UX"
+          ],
+          "impact": "Standard",
+          "version": "2.1.288",
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Correction d'un bug où un bouton de mod exécutait l'action d'un autre bouton sur une vue dessinée avant redémarrage."
+          }
+        },
+        {
+          "text": "Fixed a plugin's pane showing nothing when one `Code` element held a diff that does not parse; it now draws as plain code",
+          "cleanText": "Fixed a plugin's pane showing nothing when one `Code` element held a diff that does not parse; it now draws as plain code",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Plugins & Skills",
+            "Terminal & UX"
+          ],
+          "impact": "Standard",
+          "version": "2.1.288",
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "mcp",
+            "impact": "mineur",
+            "resume": "Correction de l'affichage vide des panneaux de plugin quand un élément Code contenait un diff non analysable."
+          }
+        },
+        {
+          "text": "Fixed plugin LSP servers receiving literal `${user_config.*}` and `${CLAUDE_PLUGIN_ROOT}` placeholders in `initializationOptions` and `settings` instead of substituted values or manifest defaults",
+          "cleanText": "Fixed plugin LSP servers receiving literal `${user_config.*}` and `${CLAUDE_PLUGIN_ROOT}` placeholders in `initializationOptions` and `settings` instead of substituted values or manifest defaults",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Plugins & Skills"
+          ],
+          "impact": "Standard",
+          "version": "2.1.288",
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "mcp",
+            "impact": "notable",
+            "resume": "Correction de la réception de placeholders littéraux par les serveurs LSP de plugins au lieu des valeurs substituées."
+          }
+        },
+        {
+          "text": "Fixed a plugin's `tool.call` hook making Bash fail and file searches read the wrong folder in subagents that run in a worktree",
+          "cleanText": "Fixed a plugin's `tool.call` hook making Bash fail and file searches read the wrong folder in subagents that run in a worktree",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Multi-Agent & Workflows",
+            "Plugins & Skills"
+          ],
+          "impact": "High",
+          "version": "2.1.288",
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "mcp",
+            "impact": "notable",
+            "resume": "Correction des échecs Bash et lectures de dossiers incorrects dans les sous-agents worktree causés par un hook de plugin."
+          }
+        },
+        {
+          "text": "Fixed `git-subdir` plugin installs failing, or caching an incomplete plugin, on older git (before 2.39, e.g. Ubuntu 22.04's 2.34)",
+          "cleanText": "Fixed `git-subdir` plugin installs failing, or caching an incomplete plugin, on older git (before 2.39, e.g. Ubuntu 22.04's 2.34)",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Plugins & Skills"
+          ],
+          "impact": "Standard",
+          "version": "2.1.288",
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "mcp",
+            "impact": "mineur",
+            "resume": "Correction des échecs d'installation ou du cache incomplet des plugins git-subdir sur les versions anciennes de git."
+          }
+        },
+        {
+          "text": "Fixed plugins loaded with `--plugin-dir` not showing \"Configure options\" in `/plugin`",
+          "cleanText": "Fixed plugins loaded with `--plugin-dir` not showing \"Configure options\" in `/plugin`",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Plugins & Skills"
+          ],
+          "impact": "Standard",
+          "version": "2.1.288",
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "mcp",
+            "impact": "mineur",
+            "resume": "Correction de l'absence de l'option « Configurer les options » dans /plugin pour les plugins chargés via --plugin-dir."
+          }
+        },
+        {
+          "text": "Fixed background sessions ending when a plugin was reloaded or disabled while one of its timers or reads was still running",
+          "cleanText": "Fixed background sessions ending when a plugin was reloaded or disabled while one of its timers or reads was still running",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Plugins & Skills"
+          ],
+          "impact": "High",
+          "version": "2.1.288",
+          "date": "2026-10-02"
+        },
+        {
+          "text": "Fixed sandboxed heredocs with an unquoted delimiter (`python3 <<EOF`) asking for approval on every run under sandbox auto-allow when the body holds only plain text and simple `$VAR` references",
+          "cleanText": "Fixed sandboxed heredocs with an unquoted delimiter (`python3 <<EOF`) asking for approval on every run under sandbox auto-allow when the body holds only plain text and simple `$VAR` references",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Security & Governance"
+          ],
+          "impact": "High",
+          "version": "2.1.288",
+          "date": "2026-10-02"
+        },
+        {
+          "text": "Fixed Bash tool permission check to prompt before a `BASHPID` assignment whose value the shell would evaluate as arithmetic, instead of allowing it silently",
+          "cleanText": "Fixed Bash tool permission check to prompt before a `BASHPID` assignment whose value the shell would evaluate as arithmetic, instead of allowing it silently",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Security & Governance",
+            "Terminal & UX"
+          ],
+          "impact": "Standard",
+          "version": "2.1.288",
+          "date": "2026-10-02"
+        },
+        {
+          "text": "Fixed fullscreen sessions exiting with \"unrecoverable interface error\" when opening the background tasks dialog while a plugin or mod showed rows above the prompt",
+          "cleanText": "Fixed fullscreen sessions exiting with \"unrecoverable interface error\" when opening the background tasks dialog while a plugin or mod showed rows above the prompt",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Plugins & Skills",
+            "Terminal & UX"
+          ],
+          "impact": "Standard",
+          "version": "2.1.288",
+          "date": "2026-10-02"
+        },
+        {
+          "text": "Fixed Claude reporting a message to another session as delivered when that session held it: the notice now says it wasn't delivered and names the session, and in SDK sessions Claude can now learn of it mid-turn",
+          "cleanText": "Fixed Claude reporting a message to another session as delivered when that session held it: the notice now says it wasn't delivered and names the session, and in SDK sessions Claude can now learn of it mid-turn",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Standard",
+          "version": "2.1.288",
+          "date": "2026-10-02"
+        },
+        {
+          "text": "Fixed OpenTelemetry `claude_code.tool.blocked_on_user` spans reporting `unknown` source or decision in `-p` and SDK sessions and for PreToolUse hook approvals",
+          "cleanText": "Fixed OpenTelemetry `claude_code.tool.blocked_on_user` spans reporting `unknown` source or decision in `-p` and SDK sessions and for PreToolUse hook approvals",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Plugins & Skills"
+          ],
+          "impact": "Standard",
+          "version": "2.1.288",
+          "date": "2026-10-02"
+        },
+        {
+          "text": "Fixed permission asks that ended unanswered, in `-p` or on an interrupted turn, emitting no `tool_decision` event",
+          "cleanText": "Fixed permission asks that ended unanswered, in `-p` or on an interrupted turn, emitting no `tool_decision` event",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Security & Governance"
+          ],
+          "impact": "Standard",
+          "version": "2.1.288",
+          "date": "2026-10-02"
+        },
+        {
+          "text": "Fixed Edit and Retry in Cowork cloud sessions refusing a message sent before `/compact` even though its history was still saved",
+          "cleanText": "Fixed Edit and Retry in Cowork cloud sessions refusing a message sent before `/compact` even though its history was still saved",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Performance & Reliability"
+          ],
+          "impact": "Standard",
+          "version": "2.1.288",
+          "date": "2026-10-02"
+        },
+        {
+          "text": "Fixed unattended sessions (`CLAUDE_CODE_RETRY_WATCHDOG`) retrying for hours after a very long response stream failed; Claude Code now streams again, and gives up after three timeouts",
+          "cleanText": "Fixed unattended sessions (`CLAUDE_CODE_RETRY_WATCHDOG`) retrying for hours after a very long response stream failed; Claude Code now streams again, and gives up after three timeouts",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Performance & Reliability"
+          ],
+          "impact": "Standard",
+          "version": "2.1.288",
+          "date": "2026-10-02"
+        },
+        {
+          "text": "Fixed `/login` reporting \"Login successful\" when credentials could not be saved to secure storage; it now shows the failure, and offers a retry when the new login didn't take effect (anthropics/claude-code#73861)",
+          "cleanText": "Fixed `/login` reporting \"Login successful\" when credentials could not be saved to secure storage; it now shows the failure, and offers a retry when the new login didn't take effect (anthropics/claude-code#73861)",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Performance & Reliability"
+          ],
+          "impact": "Standard",
+          "version": "2.1.288",
+          "date": "2026-10-02"
+        },
+        {
+          "text": "Fixed a Stop during Bedrock credential lookup sometimes moving the session to a fallback model instead of ending the request",
+          "cleanText": "Fixed a Stop during Bedrock credential lookup sometimes moving the session to a fallback model instead of ending the request",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Models & Intelligence",
+            "Security & Governance"
+          ],
+          "impact": "Standard",
+          "version": "2.1.288",
+          "date": "2026-10-02"
+        },
+        {
+          "text": "Fixed a second `gcpAuthRefresh`/`awsAuthRefresh` browser sign-in opening when a laptop wakes from sleep while another Claude Code process is signing in",
+          "cleanText": "Fixed a second `gcpAuthRefresh`/`awsAuthRefresh` browser sign-in opening when a laptop wakes from sleep while another Claude Code process is signing in",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Standard",
+          "version": "2.1.288",
+          "date": "2026-10-02"
+        },
+        {
+          "text": "Fixed agent teams: a plugin-defined agent spawned by name now runs with its own prompt, tools, disallowedTools and effort instead of the defaults",
+          "cleanText": "Fixed agent teams: a plugin-defined agent spawned by name now runs with its own prompt, tools, disallowedTools and effort instead of the defaults",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Multi-Agent & Workflows",
+            "Plugins & Skills",
+            "Terminal & UX"
+          ],
+          "impact": "Standard",
+          "version": "2.1.288",
+          "date": "2026-10-02"
+        },
+        {
+          "text": "Fixed headless (`-p` / SDK) sessions occasionally ignoring SIGTERM when a supervisor such as `timeout` or systemd sends SIGCONT alongside it",
+          "cleanText": "Fixed headless (`-p` / SDK) sessions occasionally ignoring SIGTERM when a supervisor such as `timeout` or systemd sends SIGCONT alongside it",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "High",
+          "version": "2.1.288",
+          "date": "2026-10-02"
+        },
+        {
+          "text": "Fixed restarted cloud sessions restoring a model that the organization's enforced model list refuses",
+          "cleanText": "Fixed restarted cloud sessions restoring a model that the organization's enforced model list refuses",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Models & Intelligence"
+          ],
+          "impact": "Standard",
+          "version": "2.1.288",
+          "date": "2026-10-02"
+        },
+        {
+          "text": "Fixed MCP tool calls sometimes running twice when a remote server's result was over 16 MB or could not be parsed",
+          "cleanText": "Fixed MCP tool calls sometimes running twice when a remote server's result was over 16 MB or could not be parsed",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "MCP & Tools"
+          ],
+          "impact": "Standard",
+          "version": "2.1.288",
+          "date": "2026-10-02"
+        },
+        {
+          "text": "Fixed subagents in Claude Desktop's Code tab getting none of the tools of a user-configured MCP server named `memory`",
+          "cleanText": "Fixed subagents in Claude Desktop's Code tab getting none of the tools of a user-configured MCP server named `memory`",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "MCP & Tools",
+            "Multi-Agent & Workflows",
+            "Performance & Reliability"
+          ],
+          "impact": "High",
+          "version": "2.1.288",
+          "date": "2026-10-02"
+        },
+        {
+          "text": "Fixed Claude in Chrome asking before every screenshot and page read on a site you allowed when auto mode is unavailable (such as with `disableAutoMode` or an older model); typing, navigation and JavaScript still ask",
+          "cleanText": "Fixed Claude in Chrome asking before every screenshot and page read on a site you allowed when auto mode is unavailable (such as with `disableAutoMode` or an older model); typing, navigation and JavaScript still ask",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Models & Intelligence",
+            "Security & Governance"
+          ],
+          "impact": "High",
+          "version": "2.1.288",
+          "date": "2026-10-02"
+        },
+        {
+          "text": "Fixed `claude plugin install` failing for GitHub-source plugins on macOS and Linux machines with no GitHub SSH key: the clone now falls back to HTTPS and prints a notice",
+          "cleanText": "Fixed `claude plugin install` failing for GitHub-source plugins on macOS and Linux machines with no GitHub SSH key: the clone now falls back to HTTPS and prints a notice",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Plugins & Skills"
+          ],
+          "impact": "Standard",
+          "version": "2.1.288",
+          "date": "2026-10-02"
+        },
+        {
+          "text": "Fixed `sandbox.credentials.files` entries on git config files not taking effect while `permissions.blockReadsOutsideWorkingDirectories` is on",
+          "cleanText": "Fixed `sandbox.credentials.files` entries on git config files not taking effect while `permissions.blockReadsOutsideWorkingDirectories` is on",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Security & Governance"
+          ],
+          "impact": "High",
+          "version": "2.1.288",
+          "date": "2026-10-02"
+        },
+        {
+          "text": "Fixed Claude leaving out your organization's design systems when starting slides or a design with the Artifact tool on Team and Enterprise plans or machines with managed settings",
+          "cleanText": "Fixed Claude leaving out your organization's design systems when starting slides or a design with the Artifact tool on Team and Enterprise plans or machines with managed settings",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Standard",
+          "version": "2.1.288",
+          "date": "2026-10-02"
+        },
+        {
+          "text": "Fixed the keyboard not working on Windows after Claude Code restarts itself (first sign-in to a Claude apps gateway, provider setup, `/tui`)",
+          "cleanText": "Fixed the keyboard not working on Windows after Claude Code restarts itself (first sign-in to a Claude apps gateway, provider setup, `/tui`)",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Terminal & UX"
+          ],
+          "impact": "High",
+          "version": "2.1.288",
+          "date": "2026-10-02"
+        },
+        {
+          "text": "Fixed a stall when launching an agent whose `tools:` lists very many `Agent(...)` entries",
+          "cleanText": "Fixed a stall when launching an agent whose `tools:` lists very many `Agent(...)` entries",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Multi-Agent & Workflows"
+          ],
+          "impact": "Standard",
+          "version": "2.1.288",
+          "date": "2026-10-02"
+        },
+        {
+          "text": "Fixed sessions on Claude 3 Opus and Claude 3 Sonnet failing on every turn after a whole PDF entered the conversation",
+          "cleanText": "Fixed sessions on Claude 3 Opus and Claude 3 Sonnet failing on every turn after a whole PDF entered the conversation",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Models & Intelligence"
+          ],
+          "impact": "High",
+          "version": "2.1.288",
+          "date": "2026-10-02"
+        },
+        {
+          "text": "Fixed the npm auto-updater reporting success when the platform-native binary failed to download and only the placeholder `claude` stub was installed",
+          "cleanText": "Fixed the npm auto-updater reporting success when the platform-native binary failed to download and only the placeholder `claude` stub was installed",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Standard",
+          "version": "2.1.288",
+          "date": "2026-10-02"
+        },
+        {
+          "text": "Fixed Remote Control cleanup archiving a session that is still connected or was just re-attached by another Claude Code process",
+          "cleanText": "Fixed Remote Control cleanup archiving a session that is still connected or was just re-attached by another Claude Code process",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "IDE & Cloud Ubiquity"
+          ],
+          "impact": "High",
+          "version": "2.1.288",
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "agents",
+            "impact": "mineur",
+            "resume": "Corrige un bug où le nettoyage du contrôle distant archivait des sessions encore actives ou récemment reconnectées."
+          }
+        },
+        {
+          "text": "Fixed `owner/repo` plugin marketplaces showing only the second attempt's error when both the SSH and HTTPS fetch fail; both errors are now shown, with the transport tried first on top",
+          "cleanText": "Fixed `owner/repo` plugin marketplaces showing only the second attempt's error when both the SSH and HTTPS fetch fail; both errors are now shown, with the transport tried first on top",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Plugins & Skills"
+          ],
+          "impact": "Standard",
+          "version": "2.1.288",
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "mcp",
+            "impact": "mineur",
+            "resume": "Les erreurs SSH et HTTPS sont désormais toutes affichées lors de l'échec de la récupération d'un plugin, au lieu de n'en montrer qu'une."
+          }
+        },
+        {
+          "text": "Fixed path-scoped `.claude/rules` and nested CLAUDE.md files not loading when Write or Edit creates or changes a file in their scope (previously only Read loaded them)",
+          "cleanText": "Fixed path-scoped `.claude/rules` and nested CLAUDE.md files not loading when Write or Edit creates or changes a file in their scope (previously only Read loaded them)",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Standard",
+          "version": "2.1.288",
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "hooks_config",
+            "impact": "notable",
+            "resume": "Les règles et fichiers CLAUDE.md imbriqués se chargent désormais correctement lors de l'édition ou de la création de fichiers, pas seulement à la lecture."
+          }
+        },
+        {
+          "text": "Fixed a dangerous `rm` (such as one on `/` or the home directory) inside a `bash -c` or `sh -c` script running without a prompt in bypassPermissions mode or under a shell allow rule (anthropics/claude-code#96300)",
+          "cleanText": "Fixed a dangerous `rm` (such as one on `/` or the home directory) inside a `bash -c` or `sh -c` script running without a prompt in bypassPermissions mode or under a shell allow rule (anthropics/claude-code#96300)",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Security & Governance",
+            "Terminal & UX"
+          ],
+          "impact": "Standard",
+          "version": "2.1.288",
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "securite",
+            "impact": "majeur",
+            "resume": "Empêche l'exécution silencieuse de commandes de suppression dangereuses (comme rm -rf /) en mode bypassPermissions ou sous règles shell."
+          }
+        },
+        {
+          "text": "Fixed LSP tool calls hanging indefinitely when a language server uses dynamic capability registration or stops responding; requests now time out after 60s (per-server `requestTimeout`)",
+          "cleanText": "Fixed LSP tool calls hanging indefinitely when a language server uses dynamic capability registration or stops responding; requests now time out after 60s (per-server `requestTimeout`)",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Standard",
+          "version": "2.1.288",
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "performance",
+            "impact": "notable",
+            "resume": "Les appels d'outils LSP ne bloquent plus indéfiniment ; ils expirent après 60 secondes si le serveur de langage ne répond pas."
+          }
+        },
+        {
+          "text": "Fixed `idle_prompt` notification hooks firing while background agents are still running (anthropics/claude-code#93672)",
+          "cleanText": "Fixed `idle_prompt` notification hooks firing while background agents are still running (anthropics/claude-code#93672)",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Multi-Agent & Workflows",
+            "Plugins & Skills",
+            "Terminal & UX"
+          ],
+          "impact": "Standard",
+          "version": "2.1.288",
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "agents",
+            "impact": "mineur",
+            "resume": "Les hooks de notification d'inactivité ne se déclenchent plus tant que des agents en arrière-plan sont encore en cours d'exécution."
+          }
+        },
+        {
+          "text": "Fixed PreToolUse and PermissionRequest hooks being skipped when matching them failed or the tool's input could not be serialized to JSON; the call is now blocked",
+          "cleanText": "Fixed PreToolUse and PermissionRequest hooks being skipped when matching them failed or the tool's input could not be serialized to JSON; the call is now blocked",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Security & Governance",
+            "Plugins & Skills"
+          ],
+          "impact": "Standard",
+          "version": "2.1.288",
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "securite",
+            "impact": "notable",
+            "resume": "Les hooks PreToolUse et PermissionRequest bloquent désormais l'appel si leur exécution échoue ou si l'entrée n'est pas sérialisable, au lieu d'être ignorés."
+          }
+        },
+        {
+          "text": "Fixed the first request in a fresh environment or after a model switch using the built-in output limit and auto-compact window, not the server's; that request may now wait up to 1.5 seconds",
+          "cleanText": "Fixed the first request in a fresh environment or after a model switch using the built-in output limit and auto-compact window, not the server's; that request may now wait up to 1.5 seconds",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Models & Intelligence",
+            "Terminal & UX"
+          ],
+          "impact": "Standard",
+          "version": "2.1.288",
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "modeles",
+            "impact": "mineur",
+            "resume": "La première requête après un changement de modèle utilise désormais les limites de contexte du serveur, avec un délai d'attente maximal de 1,5 s."
+          }
+        },
+        {
+          "text": "Fixed the \"What should Claude do instead?\" hint showing on the Interrupted row after sending queued messages with ctrl+enter",
+          "cleanText": "Fixed the \"What should Claude do instead?\" hint showing on the Interrupted row after sending queued messages with ctrl+enter",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Standard",
+          "version": "2.1.288",
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Le message d'aide « Que doit faire Claude ? » n'apparaît plus incorrectement sur la ligne d'interruption après l'envoi de messages en file."
+          }
+        },
+        {
+          "text": "Fixed `/login` in a `--bare` session running a sign-in the session never reads, which could replace your saved login; it now says which credentials work",
+          "cleanText": "Fixed `/login` in a `--bare` session running a sign-in the session never reads, which could replace your saved login; it now says which credentials work",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Standard",
+          "version": "2.1.288",
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "securite",
+            "impact": "notable",
+            "resume": "La commande /login en session --bare ne remplace plus les identifiants enregistrés et indique clairement quelles credentials fonctionnent."
+          }
+        },
+        {
+          "text": "Fixed the InstructionsLoaded hook omitting agent\\_id and agent\\_type when a subagent's file access loads a rule or nested CLAUDE.md; rules and nested CLAUDE.md files loaded on file access now also report effort",
+          "cleanText": "Fixed the InstructionsLoaded hook omitting agent\\_id and agent\\_type when a subagent's file access loads a rule or nested CLAUDE.md; rules and nested CLAUDE.md files loaded on file access now also report effort",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Multi-Agent & Workflows",
+            "Plugins & Skills"
+          ],
+          "impact": "High",
+          "version": "2.1.288",
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "hooks_config",
+            "impact": "mineur",
+            "resume": "Le hook InstructionsLoaded inclut désormais les identifiants d'agent et le niveau d'effort lors du chargement de règles par les sous-agents."
+          }
+        },
+        {
+          "text": "Fixed the Agent tool in `claude mcp serve` always reporting no available agents and rejecting every subagent\\_type",
+          "cleanText": "Fixed the Agent tool in `claude mcp serve` always reporting no available agents and rejecting every subagent\\_type",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "MCP & Tools",
+            "Multi-Agent & Workflows"
+          ],
+          "impact": "High",
+          "version": "2.1.288",
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "mcp",
+            "impact": "notable",
+            "resume": "L'outil Agent dans claude mcp serve détecte désormais correctement les agents disponibles au lieu de les refuser systématiquement."
+          }
+        },
+        {
+          "text": "Fixed the terminal cursor not following the typed text in the fullscreen transcript viewer's search and in `/theme`'s custom color search",
+          "cleanText": "Fixed the terminal cursor not following the typed text in the fullscreen transcript viewer's search and in `/theme`'s custom color search",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Terminal & UX"
+          ],
+          "impact": "Standard",
+          "version": "2.1.288",
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Le curseur terminal suit désormais le texte saisi dans la recherche du visionneuse de transcript plein écran et dans la recherche de thèmes."
+          }
+        },
+        {
+          "text": "Fixed `/permissions` in screen reader mode: typing a rule's number now picks it instead of opening the search box",
+          "cleanText": "Fixed `/permissions` in screen reader mode: typing a rule's number now picks it instead of opening the search box",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Security & Governance"
+          ],
+          "impact": "Standard",
+          "version": "2.1.288",
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "En mode lecteur d'écran, la saisie du numéro d'une règle dans /permissions la sélectionne directement au lieu d'ouvrir la boîte de recherche."
+          }
+        },
+        {
+          "text": "Improved auto mode: when a conversation grows too long for the client-side safety classifier to review, it is now compacted instead of prompting for, or failing, every tool call",
+          "cleanText": "Improved auto mode: when a conversation grows too long for the client-side safety classifier to review, it is now compacted instead of prompting for, or failing, every tool call",
+          "scope": "Core CLI",
+          "actionType": "Improved",
+          "tags": [
+            "Security & Governance",
+            "Terminal & UX"
+          ],
+          "impact": "High",
+          "version": "2.1.288",
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "securite",
+            "impact": "notable",
+            "resume": "En mode auto, les conversations trop longues sont compactées automatiquement au lieu de bloquer chaque appel d'outil ou de demander une confirmation."
+          }
+        },
+        {
+          "text": "Improved screen reader mode: short announcements, such as a deleted word, now stay on screen until your next key press or until something above them on screen changes",
+          "cleanText": "Improved screen reader mode: short announcements, such as a deleted word, now stay on screen until your next key press or until something above them on screen changes",
+          "scope": "Core CLI",
+          "actionType": "Improved",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Medium",
+          "version": "2.1.288",
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "En mode lecteur d'écran, les annonces courtes restent affichées jusqu'à la prochaine touche ou changement d'élément supérieur."
+          }
+        },
+        {
+          "text": "Improved screen reader mode: answered questions in question dialogs now say \"answered\" beside their box",
+          "cleanText": "Improved screen reader mode: answered questions in question dialogs now say \"answered\" beside their box",
+          "scope": "Core CLI",
+          "actionType": "Improved",
+          "tags": [
+            "Terminal & UX"
+          ],
+          "impact": "Medium",
+          "version": "2.1.288",
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "En mode lecteur d'écran, les questions répondues dans les dialogues affichent désormais le statut « répondu » à côté de la boîte."
+          }
+        },
+        {
+          "text": "Improved the `/usage-credits` message shown to Team and Enterprise members whose organization has turned off usage credit requests",
+          "cleanText": "Improved the `/usage-credits` message shown to Team and Enterprise members whose organization has turned off usage credit requests",
+          "scope": "Core CLI",
+          "actionType": "Improved",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Medium",
+          "version": "2.1.288",
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Le message /usage-credits est amélioré pour les membres Team/Enterprise dont l'organisation a désactivé les demandes de crédits."
+          }
+        },
+        {
+          "text": "Improved cloud sessions: a new conversation's first turn no longer waits for a stdio MCP server whose config sets `alwaysLoad: false`",
+          "cleanText": "Improved cloud sessions: a new conversation's first turn no longer waits for a stdio MCP server whose config sets `alwaysLoad: false`",
+          "scope": "Core CLI",
+          "actionType": "Improved",
+          "tags": [
+            "MCP & Tools"
+          ],
+          "impact": "Medium",
+          "version": "2.1.288",
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "performance",
+            "impact": "notable",
+            "resume": "Les sessions cloud ne bloquent plus le premier tour de conversation sur les serveurs MCP configurés avec alwaysLoad: false."
+          }
+        },
+        {
+          "text": "Improved \"You should know\" notes to say \"we\", \"the main agent\" or \"you\" depending on who was responsible for a decision",
+          "cleanText": "Improved \"You should know\" notes to say \"we\", \"the main agent\" or \"you\" depending on who was responsible for a decision",
+          "scope": "Core CLI",
+          "actionType": "Improved",
+          "tags": [
+            "Multi-Agent & Workflows"
+          ],
+          "impact": "Medium",
+          "version": "2.1.288",
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Les notes « À savoir » utilisent désormais des pronoms précis (nous, l'agent principal, vous) selon qui a pris la décision."
+          }
+        },
+        {
+          "text": "Improved the error for an artifact database write refused at the database's size limit: it now states the limit and what frees space",
+          "cleanText": "Improved the error for an artifact database write refused at the database's size limit: it now states the limit and what frees space",
+          "scope": "Core CLI",
+          "actionType": "Improved",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Medium",
+          "version": "2.1.288",
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "L'erreur de base de données d'artefacts indique désormais la limite de taille atteinte et comment libérer de l'espace."
+          }
+        },
+        {
+          "text": "Improved Bash permission prompts to give a shorter reason when part of a command can't be checked before it runs",
+          "cleanText": "Improved Bash permission prompts to give a shorter reason when part of a command can't be checked before it runs",
+          "scope": "Core CLI",
+          "actionType": "Improved",
+          "tags": [
+            "Security & Governance",
+            "Terminal & UX"
+          ],
+          "impact": "Medium",
+          "version": "2.1.288",
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "securite",
+            "impact": "mineur",
+            "resume": "Les prompts de permission Bash fournissent une raison plus courte lorsqu'une partie de la commande ne peut pas être vérifiée avant exécution."
+          }
+        },
+        {
+          "text": "Self-hosted runner: Improved the built-in `gh api`: a refused gh command now prints its `gh api` equivalent, `--paginate` follows every page of a repository's lists, and a nested `claude` no longer removes it",
+          "cleanText": "Self-hosted runner: Improved the built-in `gh api`: a refused gh command now prints its `gh api` equivalent, `--paginate` follows every page of a repository's lists, and a nested `claude` no longer removes it",
+          "scope": "Core CLI",
+          "actionType": "Other",
+          "tags": [
+            "Terminal & UX"
+          ],
+          "impact": "Standard",
+          "version": "2.1.288",
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "mcp",
+            "impact": "notable",
+            "resume": "L'outil gh api intégré aux runners auto-hébergés affiche l'équivalent gh api en cas d'échec et gère mieux la pagination et les commandes imbriquées."
+          }
+        },
+        {
+          "text": "Improved Remote Control's recovery from an expired server credential: sessions stay connected during renewal and are kept if it gives up after a server outage",
+          "cleanText": "Improved Remote Control's recovery from an expired server credential: sessions stay connected during renewal and are kept if it gives up after a server outage",
+          "scope": "Core CLI",
+          "actionType": "Improved",
+          "tags": [
+            "IDE & Cloud Ubiquity"
+          ],
+          "impact": "High",
+          "version": "2.1.288",
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "securite",
+            "impact": "notable",
+            "resume": "Le contrôle distant maintient les sessions connectées pendant le renouvellement des identifiants expirés et les préserve en cas d'échec après une panne serveur."
+          }
+        },
+        {
+          "text": "Changed the background command time limit to apply only in unattended sessions (`-p`, Agent SDK, CI, cloud); terminal, desktop app and VS Code sessions have no limit",
+          "cleanText": "Changed the background command time limit to apply only in unattended sessions (`-p`, Agent SDK, CI, cloud); terminal, desktop app and VS Code sessions have no limit",
+          "scope": "Core CLI",
+          "actionType": "Changed",
+          "tags": [
+            "Multi-Agent & Workflows",
+            "IDE & Cloud Ubiquity",
+            "Terminal & UX"
+          ],
+          "impact": "Standard",
+          "version": "2.1.288",
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "agents",
+            "impact": "notable",
+            "resume": "La limite de temps des commandes en arrière-plan ne s'applique plus qu'aux sessions non supervisées (CI, cloud), pas aux terminaux ou IDE."
+          }
+        },
+        {
+          "text": "Changed the client-side auto mode classifier to ignore an `ANTHROPIC_DEFAULT_SONNET_MODEL` pin that names Claude Sonnet 5.5 or Opus 5.5 and use Claude Sonnet 5 instead",
+          "cleanText": "Changed the client-side auto mode classifier to ignore an `ANTHROPIC_DEFAULT_SONNET_MODEL` pin that names Claude Sonnet 5.5 or Opus 5.5 and use Claude Sonnet 5 instead",
+          "scope": "Core CLI",
+          "actionType": "Changed",
+          "tags": [
+            "Models & Intelligence",
+            "Security & Governance"
+          ],
+          "impact": "High",
+          "version": "2.1.288",
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "modeles",
+            "impact": "mineur",
+            "resume": "Le classifieur d'automatisation ignore désormais les verrouillages de modèles spécifiques pour utiliser Sonnet 5 par défaut."
+          }
+        },
+        {
+          "text": "Changed `claude project purge` to `claude purge`; the old name still works and prints a notice",
+          "cleanText": "Changed `claude project purge` to `claude purge`; the old name still works and prints a notice",
+          "scope": "Core CLI",
+          "actionType": "Changed",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Standard",
+          "version": "2.1.288",
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "La commande de purge des projets est renommée en « claude purge », l'ancienne syntaxe reste fonctionnelle avec un avertissement."
+          }
+        },
+        {
+          "text": "Changed the agents view `n:` filter (and Ctrl+F search) so Enter opens the session whose name matches best instead of the top row",
+          "cleanText": "Changed the agents view `n:` filter (and Ctrl+F search) so Enter opens the session whose name matches best instead of the top row",
+          "scope": "Core CLI",
+          "actionType": "Changed",
+          "tags": [
+            "Multi-Agent & Workflows"
+          ],
+          "impact": "Standard",
+          "version": "2.1.288",
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Dans la vue des agents, la touche Entrée ouvre désormais la session dont le nom correspond le mieux au filtre ou à la recherche."
+          }
+        },
+        {
+          "text": "Changed `/autocompact` to save the auto-compact window per model, so each model keeps its own setting when you switch",
+          "cleanText": "Changed `/autocompact` to save the auto-compact window per model, so each model keeps its own setting when you switch",
+          "scope": "Core CLI",
+          "actionType": "Changed",
+          "tags": [
+            "Models & Intelligence"
+          ],
+          "impact": "Standard",
+          "version": "2.1.288",
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "hooks_config",
+            "impact": "mineur",
+            "resume": "La fenêtre de compactage automatique est désormais mémorisée individuellement pour chaque modèle utilisé."
+          }
+        },
+        {
+          "text": "Changed MCP URL prompts from servers that can't report when you're done to wait for \"I'm done, continue\" before the tool call continues, so you can finish in the browser first",
+          "cleanText": "Changed MCP URL prompts from servers that can't report when you're done to wait for \"I'm done, continue\" before the tool call continues, so you can finish in the browser first",
+          "scope": "Core CLI",
+          "actionType": "Changed",
+          "tags": [
+            "MCP & Tools",
+            "Terminal & UX"
+          ],
+          "impact": "Standard",
+          "version": "2.1.288",
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "mcp",
+            "impact": "notable",
+            "resume": "Les serveurs MCP sans retour de statut attendent désormais un signal explicite de fin avant de poursuivre l'appel d'outil."
+          }
+        },
+        {
+          "text": "\\[VSCode] Fixed a claude.ai connector staying on \"Needs authentication\" after you authorize it: the MCP servers dialog now offers Check connection",
+          "cleanText": "Fixed a claude.ai connector staying on \"Needs authentication\" after you authorize it: the MCP servers dialog now offers Check connection",
+          "scope": "VSCode",
+          "actionType": "Fixed",
+          "tags": [
+            "MCP & Tools",
+            "IDE & Cloud Ubiquity",
+            "Terminal & UX"
+          ],
+          "impact": "Medium",
+          "version": "2.1.288",
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "mcp",
+            "impact": "mineur",
+            "resume": "Correction dans VSCode : le connecteur claude.ai ne reste plus bloqué sur « Authentification requise » après autorisation."
+          }
+        },
+        {
+          "text": "\\[VSCode] Fixed the opt-in New Conversation shortcut (Cmd/Ctrl+N) starting a conversation in every visible Claude view instead of only the one you are in",
+          "cleanText": "Fixed the opt-in New Conversation shortcut (Cmd/Ctrl+N) starting a conversation in every visible Claude view instead of only the one you are in",
+          "scope": "VSCode",
+          "actionType": "Fixed",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Medium",
+          "version": "2.1.288",
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Correction dans VSCode : le raccourci nouvelle conversation ne s'active plus que dans la vue active au lieu de toutes les vues."
+          }
+        },
+        {
+          "text": "\\[VSCode] Fixed the chat view resuming the next saved session after you archive the one it shows; it now starts a new conversation instead",
+          "cleanText": "Fixed the chat view resuming the next saved session after you archive the one it shows; it now starts a new conversation instead",
+          "scope": "VSCode",
+          "actionType": "Fixed",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Medium",
+          "version": "2.1.288",
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Correction dans VSCode : l'archivage d'une session affiche désormais une nouvelle conversation au lieu de la suivante sauvegardée."
+          }
+        },
+        {
+          "text": "\\[Cloud sessions] Fixed the Cloud sessions switch in Claude Code admin settings staying locked off while an unrelated security setting was loading or had failed to load",
+          "cleanText": "Fixed the Cloud sessions switch in Claude Code admin settings staying locked off while an unrelated security setting was loading or had failed to load",
+          "scope": "Cloud sessions",
+          "actionType": "Fixed",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Standard",
+          "version": "2.1.288",
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "securite",
+            "impact": "mineur",
+            "resume": "Correction des sessions cloud : l'interrupteur d'activation ne reste plus verrouillé lors du chargement d'un paramètre de sécurité."
+          }
+        },
+        {
+          "text": "\\[Cloud sessions] Fixed pressing Stop while a self-hosted runner was still starting not cancelling the queued message, which could then run once the runner was up",
+          "cleanText": "Fixed pressing Stop while a self-hosted runner was still starting not cancelling the queued message, which could then run once the runner was up",
+          "scope": "Cloud sessions",
+          "actionType": "Fixed",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Standard",
+          "version": "2.1.288",
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "agents",
+            "impact": "mineur",
+            "resume": "Correction des sessions cloud : l'arrêt pendant le démarrage d'un exécuteur annule désormais correctement le message en file d'attente."
+          }
+        },
+        {
+          "text": "\\[Claude Tag] Fixed Claude Tag admin settings offering a \"Remove this scope\" option, which always failed, on channels whose settings were created automatically",
+          "cleanText": "Fixed Claude Tag admin settings offering a \"Remove this scope\" option, which always failed, on channels whose settings were created automatically",
+          "scope": "Claude Tag",
+          "actionType": "Fixed",
+          "tags": [
+            "IDE & Cloud Ubiquity"
+          ],
+          "impact": "High",
+          "version": "2.1.288",
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Correction Claude Tag : l'option « Supprimer cette portée » ne s'affiche plus sur les canaux créés automatiquement."
+          }
+        },
+        {
+          "text": "\\[Claude Tag] Improved Claude to also follow a related Slack thread in another channel that it only read, so updates there reach the conversation that depends on them",
+          "cleanText": "Improved Claude to also follow a related Slack thread in another channel that it only read, so updates there reach the conversation that depends on them",
+          "scope": "Claude Tag",
+          "actionType": "Improved",
+          "tags": [
+            "IDE & Cloud Ubiquity"
+          ],
+          "impact": "Medium",
+          "version": "2.1.288",
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "agents",
+            "impact": "notable",
+            "resume": "Claude Tag suit désormais les fils de discussion Slack liés dans d'autres canaux pour intégrer les mises à jour pertinentes."
+          }
+        },
+        {
+          "text": "\\[Claude Tag] Improved save errors on a channel's Configure page: too-long channel instructions now say to shorten them, and a save refused for lost access no longer says to try again",
+          "cleanText": "Improved save errors on a channel's Configure page: too-long channel instructions now say to shorten them, and a save refused for lost access no longer says to try again",
+          "scope": "Claude Tag",
+          "actionType": "Improved",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Medium",
+          "version": "2.1.288",
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Amélioration des messages d'erreur lors de la configuration des canaux Claude Tag pour plus de clarté."
+          }
+        },
+        {
+          "text": "Fixed `claude plugin test` reporting mods as turned off remotely when it had only read an out-of-date saved setting",
+          "cleanText": "Fixed `claude plugin test` reporting mods as turned off remotely when it had only read an out-of-date saved setting",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Plugins & Skills"
+          ],
+          "impact": "Standard",
+          "version": "2.1.288",
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "mcp",
+            "impact": "mineur",
+            "resume": "Correction du test de plugin : les modifications ne sont plus faussement signalées comme désactivées à distance."
+          }
+        }
+      ]
+    },
     {
       "version": "2.1.287",
       "date": "October 1, 2026",

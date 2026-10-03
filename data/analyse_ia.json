@@ -4674,6 +4674,454 @@
    "impact": "mineur",
    "resume": "Amélioration du message d'erreur lors d'une revue bloquée par un verrouillage de conversation, précisant l'absence de facturation.",
    "le": "2026-10-02T05:07:08Z"
+  },
+  "d1e6598903a733b2": {
+   "version": "2.1.288",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Nouvelle fonctionnalité pour les mods permettant de récupérer le texte sélectionné en mode plein écran.",
+   "le": "2026-10-03T05:02:06Z"
+  },
+  "e2433ba7cc98893e": {
+   "version": "2.1.288",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Ajout d'une commande API GitHub intégrée aux sessions cloud et correction des caractères de contrôle envoyés au terminal.",
+   "le": "2026-10-03T05:02:06Z"
+  },
+  "dd817322460769a3": {
+   "version": "2.1.288",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Récupération possible du brouillon effacé par Ctrl+C en appuyant sur la flèche haut, y compris pour les images collées.",
+   "le": "2026-10-03T05:02:06Z"
+  },
+  "15693697a61ab701": {
+   "version": "2.1.288",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Demande de réauthentification automatique si un serveur MCP requiert plus de permissions OAuth pendant un appel d'outil.",
+   "le": "2026-10-03T05:02:06Z"
+  },
+  "6da028a97694b1ad": {
+   "version": "2.1.288",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Option pour ajuster le nombre de résultats affichés par la commande de revue de code, avec mémorisation du choix.",
+   "le": "2026-10-03T05:02:06Z"
+  },
+  "75a0609fda51f562": {
+   "version": "2.1.288",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Raccourcis clavier pour rechercher une session et naviguer entre les groupes dans la vue des agents, personnalisables.",
+   "le": "2026-10-03T05:02:06Z"
+  },
+  "dadde4bae66a3ad0": {
+   "version": "2.1.288",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Annonce vocale du nouveau mode de permission lors de l'approbation d'un plan pour les lecteurs d'écran.",
+   "le": "2026-10-03T05:02:06Z"
+  },
+  "9741eec73aa97d08": {
+   "version": "2.1.288",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Correction des timeouts API en cours de réponse : les sessions non interactives et sous-agents continuent depuis la réponse partielle.",
+   "le": "2026-10-03T05:02:06Z"
+  },
+  "1ddfe7587c39be43": {
+   "version": "2.1.288",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Correction de l'erreur « Prompt is too long » lors des longues conversations, avec compactage automatique si l'usage est nul.",
+   "le": "2026-10-03T05:02:06Z"
+  },
+  "9f8a7a65d4b9a0f5": {
+   "version": "2.1.288",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "Correction d'un bug où la reprise de session perdait parfois les fichiers et le contexte restaurés par le compactage.",
+   "le": "2026-10-03T05:02:06Z"
+  },
+  "ff52bfb3ccd58acf": {
+   "version": "2.1.288",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "Correction du non-enregistrement de la dernière réponse lors de la reprise, qui laissait le prompt sans réponse.",
+   "le": "2026-10-03T05:02:06Z"
+  },
+  "2861909f8ffc3ae1": {
+   "version": "2.1.288",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "Correction du chargement d'un transcript tronqué lors de la reprise si la session réécrivait le fichier pendant le chargement.",
+   "le": "2026-10-03T05:02:06Z"
+  },
+  "47f405cd1dd14891": {
+   "version": "2.1.288",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "Correction de la perte de la réflexion antérieure du modèle lors de la reprise de conversations anciennes.",
+   "le": "2026-10-03T05:02:06Z"
+  },
+  "0794a28fc05882da": {
+   "version": "2.1.288",
+   "domaine": "hooks_config",
+   "impact": "notable",
+   "resume": "Correction des échecs de titres, mémoire et hooks sur Mantle ou passerelles, avec option pour désactiver les sorties structurées.",
+   "le": "2026-10-03T05:02:06Z"
+  },
+  "3f6228b5d2f1c785": {
+   "version": "2.1.288",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Correction des refus en mode auto qui pointaient vers une règle Bash incorrecte pour les outils non-Bash bloqués.",
+   "le": "2026-10-03T05:02:06Z"
+  },
+  "c1cdb815fca7c389": {
+   "version": "2.1.288",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Correction du basculement vers le classifieur local en mode auto sur Bedrock/Mantle après une requête à un modèle plus ancien.",
+   "le": "2026-10-03T05:02:06Z"
+  },
+  "25c42555bd76ed2a": {
+   "version": "2.1.288",
+   "domaine": "modeles",
+   "impact": "mineur",
+   "resume": "Correction des réponses utilisant un modèle refusé par le serveur lors du redémarrage des sessions cloud.",
+   "le": "2026-10-03T05:02:06Z"
+  },
+  "af3ff385460582b1": {
+   "version": "2.1.288",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de l'état « en attente d'entrée » persistant dans les sessions Cowork après un prompt de permission WebFetch ignoré.",
+   "le": "2026-10-03T05:02:06Z"
+  },
+  "03be680f9e591f24": {
+   "version": "2.1.288",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de l'absence de suggestions de prompt sur téléphone lors de la jointure d'une session Cowork démarrée ailleurs.",
+   "le": "2026-10-03T05:02:06Z"
+  },
+  "1dbc8fc46c2ea813": {
+   "version": "2.1.288",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction d'un bug où un bouton de mod exécutait l'action d'un autre bouton sur une vue dessinée avant redémarrage.",
+   "le": "2026-10-03T05:02:06Z"
+  },
+  "9ae5abc03629e2f0": {
+   "version": "2.1.288",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Correction de l'affichage vide des panneaux de plugin quand un élément Code contenait un diff non analysable.",
+   "le": "2026-10-03T05:02:06Z"
+  },
+  "d4f8113be28a902e": {
+   "version": "2.1.288",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Correction de la réception de placeholders littéraux par les serveurs LSP de plugins au lieu des valeurs substituées.",
+   "le": "2026-10-03T05:02:06Z"
+  },
+  "5f9da8b5ecd0dd56": {
+   "version": "2.1.288",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Correction des échecs Bash et lectures de dossiers incorrects dans les sous-agents worktree causés par un hook de plugin.",
+   "le": "2026-10-03T05:02:06Z"
+  },
+  "97120db5d6297160": {
+   "version": "2.1.288",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Correction des échecs d'installation ou du cache incomplet des plugins git-subdir sur les versions anciennes de git.",
+   "le": "2026-10-03T05:02:06Z"
+  },
+  "0415ab230cba2037": {
+   "version": "2.1.288",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Correction de l'absence de l'option « Configurer les options » dans /plugin pour les plugins chargés via --plugin-dir.",
+   "le": "2026-10-03T05:02:06Z"
+  },
+  "cb7bf84860a94e82": {
+   "version": "2.1.288",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Corrige un bug où le nettoyage du contrôle distant archivait des sessions encore actives ou récemment reconnectées.",
+   "le": "2026-10-03T06:41:02Z"
+  },
+  "f3eee42cd4822bf3": {
+   "version": "2.1.288",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Les erreurs SSH et HTTPS sont désormais toutes affichées lors de l'échec de la récupération d'un plugin, au lieu de n'en montrer qu'une.",
+   "le": "2026-10-03T06:41:02Z"
+  },
+  "ced6cc69496c84e2": {
+   "version": "2.1.288",
+   "domaine": "hooks_config",
+   "impact": "notable",
+   "resume": "Les règles et fichiers CLAUDE.md imbriqués se chargent désormais correctement lors de l'édition ou de la création de fichiers, pas seulement à la lecture.",
+   "le": "2026-10-03T06:41:02Z"
+  },
+  "1cecafa7d162fa3a": {
+   "version": "2.1.288",
+   "domaine": "securite",
+   "impact": "majeur",
+   "resume": "Empêche l'exécution silencieuse de commandes de suppression dangereuses (comme rm -rf /) en mode bypassPermissions ou sous règles shell.",
+   "le": "2026-10-03T06:41:02Z"
+  },
+  "6af1ba5ee24b00ef": {
+   "version": "2.1.288",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Les appels d'outils LSP ne bloquent plus indéfiniment ; ils expirent après 60 secondes si le serveur de langage ne répond pas.",
+   "le": "2026-10-03T06:41:02Z"
+  },
+  "dd33060069943c48": {
+   "version": "2.1.288",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Les hooks de notification d'inactivité ne se déclenchent plus tant que des agents en arrière-plan sont encore en cours d'exécution.",
+   "le": "2026-10-03T06:41:02Z"
+  },
+  "962388c8ef92dcae": {
+   "version": "2.1.288",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Les hooks PreToolUse et PermissionRequest bloquent désormais l'appel si leur exécution échoue ou si l'entrée n'est pas sérialisable, au lieu d'être ignorés.",
+   "le": "2026-10-03T06:41:02Z"
+  },
+  "1bebda7b6653ef97": {
+   "version": "2.1.288",
+   "domaine": "modeles",
+   "impact": "mineur",
+   "resume": "La première requête après un changement de modèle utilise désormais les limites de contexte du serveur, avec un délai d'attente maximal de 1,5 s.",
+   "le": "2026-10-03T06:41:02Z"
+  },
+  "7587d55fb3ef6e41": {
+   "version": "2.1.288",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Le message d'aide « Que doit faire Claude ? » n'apparaît plus incorrectement sur la ligne d'interruption après l'envoi de messages en file.",
+   "le": "2026-10-03T06:41:02Z"
+  },
+  "e479f57aaa65a365": {
+   "version": "2.1.288",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "La commande /login en session --bare ne remplace plus les identifiants enregistrés et indique clairement quelles credentials fonctionnent.",
+   "le": "2026-10-03T06:41:02Z"
+  },
+  "fed34be4ba5b3d68": {
+   "version": "2.1.288",
+   "domaine": "hooks_config",
+   "impact": "mineur",
+   "resume": "Le hook InstructionsLoaded inclut désormais les identifiants d'agent et le niveau d'effort lors du chargement de règles par les sous-agents.",
+   "le": "2026-10-03T06:41:02Z"
+  },
+  "bef330a74ae37ffa": {
+   "version": "2.1.288",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "L'outil Agent dans claude mcp serve détecte désormais correctement les agents disponibles au lieu de les refuser systématiquement.",
+   "le": "2026-10-03T06:41:02Z"
+  },
+  "6fe53f2978dc96c9": {
+   "version": "2.1.288",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Le curseur terminal suit désormais le texte saisi dans la recherche du visionneuse de transcript plein écran et dans la recherche de thèmes.",
+   "le": "2026-10-03T06:41:02Z"
+  },
+  "acf7e610a8ae8859": {
+   "version": "2.1.288",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "En mode lecteur d'écran, la saisie du numéro d'une règle dans /permissions la sélectionne directement au lieu d'ouvrir la boîte de recherche.",
+   "le": "2026-10-03T06:41:02Z"
+  },
+  "21471e2740e8059c": {
+   "version": "2.1.288",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "En mode auto, les conversations trop longues sont compactées automatiquement au lieu de bloquer chaque appel d'outil ou de demander une confirmation.",
+   "le": "2026-10-03T06:41:02Z"
+  },
+  "a18b3754131df3c7": {
+   "version": "2.1.288",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "En mode lecteur d'écran, les annonces courtes restent affichées jusqu'à la prochaine touche ou changement d'élément supérieur.",
+   "le": "2026-10-03T06:41:02Z"
+  },
+  "cfeaec371fcf923c": {
+   "version": "2.1.288",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "En mode lecteur d'écran, les questions répondues dans les dialogues affichent désormais le statut « répondu » à côté de la boîte.",
+   "le": "2026-10-03T06:41:02Z"
+  },
+  "004e250bf24d97f4": {
+   "version": "2.1.288",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Le message /usage-credits est amélioré pour les membres Team/Enterprise dont l'organisation a désactivé les demandes de crédits.",
+   "le": "2026-10-03T06:41:02Z"
+  },
+  "d11c62521af6f95c": {
+   "version": "2.1.288",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Les sessions cloud ne bloquent plus le premier tour de conversation sur les serveurs MCP configurés avec alwaysLoad: false.",
+   "le": "2026-10-03T06:41:02Z"
+  },
+  "17394cb90d9e3e14": {
+   "version": "2.1.288",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Les notes « À savoir » utilisent désormais des pronoms précis (nous, l'agent principal, vous) selon qui a pris la décision.",
+   "le": "2026-10-03T06:41:02Z"
+  },
+  "3684c6ea6389088b": {
+   "version": "2.1.288",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "L'erreur de base de données d'artefacts indique désormais la limite de taille atteinte et comment libérer de l'espace.",
+   "le": "2026-10-03T06:41:02Z"
+  },
+  "b8f13cfb8101956d": {
+   "version": "2.1.288",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Les prompts de permission Bash fournissent une raison plus courte lorsqu'une partie de la commande ne peut pas être vérifiée avant exécution.",
+   "le": "2026-10-03T06:41:02Z"
+  },
+  "46720a56bc9ee8e9": {
+   "version": "2.1.288",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "L'outil gh api intégré aux runners auto-hébergés affiche l'équivalent gh api en cas d'échec et gère mieux la pagination et les commandes imbriquées.",
+   "le": "2026-10-03T06:41:02Z"
+  },
+  "4dc12ba76e644294": {
+   "version": "2.1.288",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Le contrôle distant maintient les sessions connectées pendant le renouvellement des identifiants expirés et les préserve en cas d'échec après une panne serveur.",
+   "le": "2026-10-03T06:41:02Z"
+  },
+  "b6a037dbb8b9d397": {
+   "version": "2.1.288",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "La limite de temps des commandes en arrière-plan ne s'applique plus qu'aux sessions non supervisées (CI, cloud), pas aux terminaux ou IDE.",
+   "le": "2026-10-03T06:41:02Z"
+  },
+  "b76d1954880322c2": {
+   "version": "2.1.288",
+   "domaine": "modeles",
+   "impact": "mineur",
+   "resume": "Le classifieur d'automatisation ignore désormais les verrouillages de modèles spécifiques pour utiliser Sonnet 5 par défaut.",
+   "le": "2026-10-03T06:41:17Z"
+  },
+  "8577dedafb05f7d8": {
+   "version": "2.1.288",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "La commande de purge des projets est renommée en « claude purge », l'ancienne syntaxe reste fonctionnelle avec un avertissement.",
+   "le": "2026-10-03T06:41:17Z"
+  },
+  "2623125a2916f65d": {
+   "version": "2.1.288",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Dans la vue des agents, la touche Entrée ouvre désormais la session dont le nom correspond le mieux au filtre ou à la recherche.",
+   "le": "2026-10-03T06:41:17Z"
+  },
+  "487843be3a8c592e": {
+   "version": "2.1.288",
+   "domaine": "hooks_config",
+   "impact": "mineur",
+   "resume": "La fenêtre de compactage automatique est désormais mémorisée individuellement pour chaque modèle utilisé.",
+   "le": "2026-10-03T06:41:17Z"
+  },
+  "ab95d98bd6a6abe2": {
+   "version": "2.1.288",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Les serveurs MCP sans retour de statut attendent désormais un signal explicite de fin avant de poursuivre l'appel d'outil.",
+   "le": "2026-10-03T06:41:17Z"
+  },
+  "64090cea875fe676": {
+   "version": "2.1.288",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Correction dans VSCode : le connecteur claude.ai ne reste plus bloqué sur « Authentification requise » après autorisation.",
+   "le": "2026-10-03T06:41:17Z"
+  },
+  "b1edb9806b3518af": {
+   "version": "2.1.288",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction dans VSCode : le raccourci nouvelle conversation ne s'active plus que dans la vue active au lieu de toutes les vues.",
+   "le": "2026-10-03T06:41:17Z"
+  },
+  "51626f4df471df66": {
+   "version": "2.1.288",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction dans VSCode : l'archivage d'une session affiche désormais une nouvelle conversation au lieu de la suivante sauvegardée.",
+   "le": "2026-10-03T06:41:17Z"
+  },
+  "14b2401b6993ed82": {
+   "version": "2.1.288",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Correction des sessions cloud : l'interrupteur d'activation ne reste plus verrouillé lors du chargement d'un paramètre de sécurité.",
+   "le": "2026-10-03T06:41:17Z"
+  },
+  "651a6f49d04310e0": {
+   "version": "2.1.288",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction des sessions cloud : l'arrêt pendant le démarrage d'un exécuteur annule désormais correctement le message en file d'attente.",
+   "le": "2026-10-03T06:41:17Z"
+  },
+  "7246daffc820ccac": {
+   "version": "2.1.288",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction Claude Tag : l'option « Supprimer cette portée » ne s'affiche plus sur les canaux créés automatiquement.",
+   "le": "2026-10-03T06:41:17Z"
+  },
+  "c871a3564a04adcd": {
+   "version": "2.1.288",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Claude Tag suit désormais les fils de discussion Slack liés dans d'autres canaux pour intégrer les mises à jour pertinentes.",
+   "le": "2026-10-03T06:41:17Z"
+  },
+  "839e5000f0c0683b": {
+   "version": "2.1.288",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Amélioration des messages d'erreur lors de la configuration des canaux Claude Tag pour plus de clarté.",
+   "le": "2026-10-03T06:41:17Z"
+  },
+  "419ce4aad19fa61e": {
+   "version": "2.1.288",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Correction du test de plugin : les modifications ne sont plus faussement signalées comme désactivées à distance.",
+   "le": "2026-10-03T06:41:17Z"
   }
  }
 }
