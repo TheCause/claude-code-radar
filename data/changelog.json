@@ -1,15 +1,16 @@
 {
   "metadata": {
-    "lastUpdated": "2026-10-03 07:00:47",
-    "latestVersion": "2.1.288",
-    "latestDate": "October 2, 2026",
-    "totalVersions": 410,
-    "totalItems": 6943,
-    "highImpactCount": 1434,
-    "lastUpdatedUtc": "2026-10-03T05:00:47Z",
+    "lastUpdated": "2026-10-04 07:00:08",
+    "latestVersion": "2.1.289",
+    "latestDate": "October 3, 2026",
+    "totalVersions": 411,
+    "totalItems": 6970,
+    "highImpactCount": 1438,
+    "lastUpdatedUtc": "2026-10-04T05:00:08Z",
     "sourceLive": true,
     "analyseIA": {
       "versionsAnalysees": [
+        "2.1.289",
         "2.1.288",
         "2.1.287",
         "2.1.286",
@@ -18,14 +19,488 @@
         "2.1.283",
         "2.1.282"
       ],
-      "entreesAnalysees": 674,
-      "enAttente": 25,
-      "pannes": [
-        "modèle injoignable : ConnectionResetError"
-      ]
+      "entreesAnalysees": 726,
+      "enAttente": 0,
+      "pannes": []
     }
   },
   "versions": [
+    {
+      "version": "2.1.289",
+      "date": "October 3, 2026",
+      "isoDate": "2026-10-03",
+      "yearMonth": "2026-10",
+      "yearQuarter": "2026-Q4",
+      "itemCount": 27,
+      "items": [
+        {
+          "text": "Fixed a deny or ask rule on a nested part of a compound shell command not holding over a user-installed mod's approval on managed machines",
+          "cleanText": "Fixed a deny or ask rule on a nested part of a compound shell command not holding over a user-installed mod's approval on managed machines",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Standard",
+          "version": "2.1.289",
+          "date": "2026-10-03",
+          "ia": {
+            "domaine": "securite",
+            "impact": "mineur",
+            "resume": "Corrige un contournement des règles de refus sur les commandes shell complexes avec modules installés."
+          }
+        },
+        {
+          "text": "Fixed the terminal freezing on short code blocks with many unclosed `<script>` tags or deeply nested `${` substitutions",
+          "cleanText": "Fixed the terminal freezing on short code blocks with many unclosed `<script>` tags or deeply nested `${` substitutions",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Terminal & UX"
+          ],
+          "impact": "Standard",
+          "version": "2.1.289",
+          "date": "2026-10-03",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Évite le gel du terminal lors de l'affichage de blocs de code contenant des balises script non fermées."
+          }
+        },
+        {
+          "text": "Fixed `Read` deny rules not applying to files @-mentioned, changed, or selected in the IDE through a symlink",
+          "cleanText": "Fixed `Read` deny rules not applying to files @-mentioned, changed, or selected in the IDE through a symlink",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Standard",
+          "version": "2.1.289",
+          "date": "2026-10-03",
+          "ia": {
+            "domaine": "securite",
+            "impact": "mineur",
+            "resume": "Applique désormais les règles de refus de lecture aux fichiers accédés via des liens symboliques dans l'IDE."
+          }
+        },
+        {
+          "text": "\\[VSCode] Reverted a 2.1.288 change to `claude auth status` that may have made sign-outs more frequent",
+          "cleanText": "Reverted a 2.1.288 change to `claude auth status` that may have made sign-outs more frequent",
+          "scope": "VSCode",
+          "actionType": "Other",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Medium",
+          "version": "2.1.289",
+          "date": "2026-10-03",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Rétablit la stabilité des déconnexions dans VSCode après une modification récente du statut d'authentification."
+          }
+        },
+        {
+          "text": "Improved how quickly large files open in a plugin code pane by laying the highlighted view out once at its final width",
+          "cleanText": "Improved how quickly large files open in a plugin code pane by laying the highlighted view out once at its final width",
+          "scope": "Core CLI",
+          "actionType": "Improved",
+          "tags": [
+            "Plugins & Skills",
+            "Terminal & UX"
+          ],
+          "impact": "Medium",
+          "version": "2.1.289",
+          "date": "2026-10-03",
+          "ia": {
+            "domaine": "performance",
+            "impact": "mineur",
+            "resume": "Accélère l'ouverture des gros fichiers dans les panneaux de code des plugins en optimisant le rendu."
+          }
+        },
+        {
+          "text": "Fixed `plugin list`, `plugin eval` and `plugin update` showing a stale copy of a plugin installed from a local folder marketplace, and hot reload for a symlinked `--plugin-dir`",
+          "cleanText": "Fixed `plugin list`, `plugin eval` and `plugin update` showing a stale copy of a plugin installed from a local folder marketplace, and hot reload for a symlinked `--plugin-dir`",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Plugins & Skills"
+          ],
+          "impact": "Standard",
+          "version": "2.1.289",
+          "date": "2026-10-03",
+          "ia": {
+            "domaine": "mcp",
+            "impact": "mineur",
+            "resume": "Corrige l'affichage obsolète des plugins locaux et le rechargement à chaud des dossiers symboliques."
+          }
+        },
+        {
+          "text": "Fixed installed mods not loading in the first session after an upgrade",
+          "cleanText": "Fixed installed mods not loading in the first session after an upgrade",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Standard",
+          "version": "2.1.289",
+          "date": "2026-10-03",
+          "ia": {
+            "domaine": "mcp",
+            "impact": "mineur",
+            "resume": "Assure le chargement correct des modules installés dès la première session après une mise à niveau."
+          }
+        },
+        {
+          "text": "Fixed a plugin's rows above the prompt showing a stale row while the Background tasks dialog was open in fullscreen",
+          "cleanText": "Fixed a plugin's rows above the prompt showing a stale row while the Background tasks dialog was open in fullscreen",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Plugins & Skills",
+            "Terminal & UX"
+          ],
+          "impact": "Standard",
+          "version": "2.1.289",
+          "date": "2026-10-03",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Évite l'affichage de lignes obsolètes dans les plugins lorsque la boîte de dialogue des tâches est en plein écran."
+          }
+        },
+        {
+          "text": "Fixed plugin panes drawing nothing when a link used a localhost address, an `@` in its path, an uppercase host or a `file:` path",
+          "cleanText": "Fixed plugin panes drawing nothing when a link used a localhost address, an `@` in its path, an uppercase host or a `file:` path",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Plugins & Skills"
+          ],
+          "impact": "Standard",
+          "version": "2.1.289",
+          "date": "2026-10-03",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Corrige le rendu vide des panneaux de plugin pour les liens localhost, avec @, en majuscules ou file:."
+          }
+        },
+        {
+          "text": "Fixed a user-installed plugin being able to rewrite the descriptions of an organization-managed MCP server's sign-in tools",
+          "cleanText": "Fixed a user-installed plugin being able to rewrite the descriptions of an organization-managed MCP server's sign-in tools",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "MCP & Tools",
+            "Plugins & Skills"
+          ],
+          "impact": "Standard",
+          "version": "2.1.289",
+          "date": "2026-10-03",
+          "ia": {
+            "domaine": "securite",
+            "impact": "notable",
+            "resume": "Empêche les plugins utilisateurs de modifier les descriptions des outils d'authentification des serveurs MCP gérés."
+          }
+        },
+        {
+          "text": "Fixed a freeze or forced quit at launch when a plugin drew a Box with a border style the terminal does not know",
+          "cleanText": "Fixed a freeze or forced quit at launch when a plugin drew a Box with a border style the terminal does not know",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Plugins & Skills",
+            "Terminal & UX"
+          ],
+          "impact": "Standard",
+          "version": "2.1.289",
+          "date": "2026-10-03",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Évite le gel ou la fermeture forcée au démarrage si un plugin utilise un style de bordure inconnu du terminal."
+          }
+        },
+        {
+          "text": "Fixed supervised and background sessions ending when a plugin's on-screen handler threw asynchronously",
+          "cleanText": "Fixed supervised and background sessions ending when a plugin's on-screen handler threw asynchronously",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Plugins & Skills"
+          ],
+          "impact": "High",
+          "version": "2.1.289",
+          "date": "2026-10-03",
+          "ia": {
+            "domaine": "agents",
+            "impact": "mineur",
+            "resume": "Empêche la fin des sessions supervisées ou en arrière-plan si un gestionnaire d'écran du plugin échoue."
+          }
+        },
+        {
+          "text": "Fixed sessions ending with an interface error when a plugin region with no height kept growing",
+          "cleanText": "Fixed sessions ending with an interface error when a plugin region with no height kept growing",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Plugins & Skills"
+          ],
+          "impact": "Standard",
+          "version": "2.1.289",
+          "date": "2026-10-03",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Corrige la fin de session par erreur d'interface lorsqu'une région de plugin sans hauteur continue de croître."
+          }
+        },
+        {
+          "text": "Fixed Bash deny and ask rules missing a command behind an environment variable prefix with an expanded value (e.g. `TZ=\"$HOME\" rm -rf build`) when the sandbox auto-allows commands",
+          "cleanText": "Fixed Bash deny and ask rules missing a command behind an environment variable prefix with an expanded value (e.g. `TZ=\"$HOME\" rm -rf build`) when the sandbox auto-allows commands",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Security & Governance",
+            "Terminal & UX"
+          ],
+          "impact": "High",
+          "version": "2.1.289",
+          "date": "2026-10-03",
+          "ia": {
+            "domaine": "securite",
+            "impact": "notable",
+            "resume": "Applique les règles de refus Bash aux commandes précédées de variables d'environnement dans le mode sandbox."
+          }
+        },
+        {
+          "text": "Fixed a Bash deny or ask rule being skipped under sandbox auto-allow when a bare variable assignment came before the command",
+          "cleanText": "Fixed a Bash deny or ask rule being skipped under sandbox auto-allow when a bare variable assignment came before the command",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Security & Governance"
+          ],
+          "impact": "High",
+          "version": "2.1.289",
+          "date": "2026-10-03",
+          "ia": {
+            "domaine": "securite",
+            "impact": "notable",
+            "resume": "Corrige le contournement des règles de refus Bash par des affectations de variables simples en mode sandbox."
+          }
+        },
+        {
+          "text": "Fixed `claude plugin validate` skipping the plugin when the folder also holds a marketplace manifest",
+          "cleanText": "Fixed `claude plugin validate` skipping the plugin when the folder also holds a marketplace manifest",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Plugins & Skills"
+          ],
+          "impact": "Standard",
+          "version": "2.1.289",
+          "date": "2026-10-03",
+          "ia": {
+            "domaine": "mcp",
+            "impact": "mineur",
+            "resume": "Corrige la validation des plugins qui échouait si le dossier contenait aussi un manifeste de marketplace."
+          }
+        },
+        {
+          "text": "Added `agent.spawn` for teammates, one agent id across plugin hook events, and idle and waiting states in `$.agent.list()`",
+          "cleanText": "Added `agent.spawn` for teammates, one agent id across plugin hook events, and idle and waiting states in `$.agent.list()`",
+          "scope": "Core CLI",
+          "actionType": "Added",
+          "tags": [
+            "Multi-Agent & Workflows",
+            "Plugins & Skills"
+          ],
+          "impact": "High",
+          "version": "2.1.289",
+          "date": "2026-10-03",
+          "ia": {
+            "domaine": "agents",
+            "impact": "notable",
+            "resume": "Ajoute la génération d'agents, un identifiant unique et des états d'attente dans les événements de hooks."
+          }
+        },
+        {
+          "text": "Fixed sessions ending with \"unrecoverable interface error\" when a value a mod's `ui.render` hook wrote made a row throw while drawn; the engine now draws its own row instead",
+          "cleanText": "Fixed sessions ending with \"unrecoverable interface error\" when a value a mod's `ui.render` hook wrote made a row throw while drawn; the engine now draws its own row instead",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Plugins & Skills",
+            "Terminal & UX"
+          ],
+          "impact": "Standard",
+          "version": "2.1.289",
+          "date": "2026-10-03",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Évite la fin de session irréversible si le rendu d'un hook d'interface d'un module provoque une erreur."
+          }
+        },
+        {
+          "text": "Fixed text with a tab, a stray escape and a C1 control, or a short text with a tab and CRLF line endings, drawing over the rows below it",
+          "cleanText": "Fixed text with a tab, a stray escape and a C1 control, or a short text with a tab and CRLF line endings, drawing over the rows below it",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Standard",
+          "version": "2.1.289",
+          "date": "2026-10-03",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Corrige le chevauchement des lignes lors de l'affichage de textes avec onglets, échappements ou fins de ligne CRLF."
+          }
+        },
+        {
+          "text": "Fixed right-aligned content in a mod's pane or band drawing under the close mark or `[-]`, which now also keep one column in from the terminal's edge",
+          "cleanText": "Fixed right-aligned content in a mod's pane or band drawing under the close mark or `[-]`, which now also keep one column in from the terminal's edge",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Terminal & UX"
+          ],
+          "impact": "Standard",
+          "version": "2.1.289",
+          "date": "2026-10-03",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Ajuste l'alignement à droite des contenus de modules pour éviter le chevauchement avec les boutons de fermeture."
+          }
+        },
+        {
+          "text": "Fixed a mod's `Client` that fails while drawn taking down everything the mod drew around it; it now fails alone and raises `ui.fault`",
+          "cleanText": "Fixed a mod's `Client` that fails while drawn taking down everything the mod drew around it; it now fails alone and raises `ui.fault`",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Terminal & UX"
+          ],
+          "impact": "Standard",
+          "version": "2.1.289",
+          "date": "2026-10-03",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Isole les erreurs de rendu d'un composant de module pour éviter de faire échouer l'ensemble de l'interface."
+          }
+        },
+        {
+          "text": "Fixed `claude plugin validate` failing an Anthropic marketplace's own plugin and listing a clean `plugin.json` in `--json`",
+          "cleanText": "Fixed `claude plugin validate` failing an Anthropic marketplace's own plugin and listing a clean `plugin.json` in `--json`",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Plugins & Skills"
+          ],
+          "impact": "Standard",
+          "version": "2.1.289",
+          "date": "2026-10-03",
+          "ia": {
+            "domaine": "mcp",
+            "impact": "mineur",
+            "resume": "Corrige la validation des plugins de la marketplace Anthropic et l'affichage JSON des fichiers plugin.json valides."
+          }
+        },
+        {
+          "text": "Fixed a mod's band that fails to draw briefly telling the cards under it to step aside",
+          "cleanText": "Fixed a mod's band that fails to draw briefly telling the cards under it to step aside",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Standard",
+          "version": "2.1.289",
+          "date": "2026-10-03",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Empêche les cartes sous une bande de module en échec de rendu de se déplacer brièvement."
+          }
+        },
+        {
+          "text": "Fixed a failed plugin component showing `Error` or nothing as its reason when the failure carried no message",
+          "cleanText": "Fixed a failed plugin component showing `Error` or nothing as its reason when the failure carried no message",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Plugins & Skills"
+          ],
+          "impact": "Standard",
+          "version": "2.1.289",
+          "date": "2026-10-03",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Affiche un message d'erreur explicite au lieu de rien ou d'un générique si un composant de plugin échoue sans message."
+          }
+        },
+        {
+          "text": "Improved the line a mod's author sees when its band or pane fails to draw: it names the mod and says nothing was drawn",
+          "cleanText": "Improved the line a mod's author sees when its band or pane fails to draw: it names the mod and says nothing was drawn",
+          "scope": "Core CLI",
+          "actionType": "Improved",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Medium",
+          "version": "2.1.289",
+          "date": "2026-10-03",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Améliore le message d'erreur affiché aux auteurs de modules en cas d'échec de rendu de leur bande ou panneau."
+          }
+        },
+        {
+          "text": "Fixed published artifact pages freezing or crashing the reader's browser tab on short code blocks with many unclosed `<script>` tags",
+          "cleanText": "Fixed published artifact pages freezing or crashing the reader's browser tab on short code blocks with many unclosed `<script>` tags",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Performance & Reliability"
+          ],
+          "impact": "Standard",
+          "version": "2.1.289",
+          "date": "2026-10-03",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Corrige le gel du navigateur lors de l'affichage de blocs de code contenant des balises script non fermées."
+          }
+        },
+        {
+          "text": "Fixed a mod's Client region staying failed for the whole session after the terminal threw while drawing it",
+          "cleanText": "Fixed a mod's Client region staying failed for the whole session after the terminal threw while drawing it",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Terminal & UX"
+          ],
+          "impact": "Standard",
+          "version": "2.1.289",
+          "date": "2026-10-03",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Empêche la région client d'un mod de rester en échec pour toute la session après une erreur d'affichage terminal."
+          }
+        }
+      ]
+    },
     {
       "version": "2.1.288",
       "date": "October 2, 2026",
@@ -483,7 +958,12 @@
           ],
           "impact": "High",
           "version": "2.1.288",
-          "date": "2026-10-02"
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "agents",
+            "impact": "notable",
+            "resume": "Empêche les sessions en arrière-plan de se terminer prématurément lors du rechargement ou de la désactivation d'un plugin."
+          }
         },
         {
           "text": "Fixed sandboxed heredocs with an unquoted delimiter (`python3 <<EOF`) asking for approval on every run under sandbox auto-allow when the body holds only plain text and simple `$VAR` references",
@@ -495,7 +975,12 @@
           ],
           "impact": "High",
           "version": "2.1.288",
-          "date": "2026-10-02"
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "securite",
+            "impact": "mineur",
+            "resume": "Supprime les demandes d'approbation inutiles pour les heredocs sandboxés contenant du texte simple et des variables."
+          }
         },
         {
           "text": "Fixed Bash tool permission check to prompt before a `BASHPID` assignment whose value the shell would evaluate as arithmetic, instead of allowing it silently",
@@ -508,7 +993,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.288",
-          "date": "2026-10-02"
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "securite",
+            "impact": "notable",
+            "resume": "Demande désormais une approbation avant l'exécution d'assignations Bash qui pourraient être évaluées comme des opérations arithmétiques."
+          }
         },
         {
           "text": "Fixed fullscreen sessions exiting with \"unrecoverable interface error\" when opening the background tasks dialog while a plugin or mod showed rows above the prompt",
@@ -521,7 +1011,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.288",
-          "date": "2026-10-02"
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Corrige la sortie avec une erreur d'interface irrécoverable lors de l'ouverture du dialogue des tâches en arrière-plan en plein écran."
+          }
         },
         {
           "text": "Fixed Claude reporting a message to another session as delivered when that session held it: the notice now says it wasn't delivered and names the session, and in SDK sessions Claude can now learn of it mid-turn",
@@ -533,7 +1028,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.288",
-          "date": "2026-10-02"
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "agents",
+            "impact": "notable",
+            "resume": "Signale correctement l'échec de livraison d'un message entre sessions et permet à Claude de l'apprendre en cours de tour."
+          }
         },
         {
           "text": "Fixed OpenTelemetry `claude_code.tool.blocked_on_user` spans reporting `unknown` source or decision in `-p` and SDK sessions and for PreToolUse hook approvals",
@@ -545,7 +1045,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.288",
-          "date": "2026-10-02"
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "mcp",
+            "impact": "mineur",
+            "resume": "Corrige les métadonnées OpenTelemetry qui rapportaient une source ou une décision inconnue pour les approbations d'outils."
+          }
         },
         {
           "text": "Fixed permission asks that ended unanswered, in `-p` or on an interrupted turn, emitting no `tool_decision` event",
@@ -557,7 +1062,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.288",
-          "date": "2026-10-02"
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "securite",
+            "impact": "mineur",
+            "resume": "Émet désormais un événement de décision d'outil même lorsque la demande de permission reste sans réponse ou est interrompue."
+          }
         },
         {
           "text": "Fixed Edit and Retry in Cowork cloud sessions refusing a message sent before `/compact` even though its history was still saved",
@@ -569,7 +1079,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.288",
-          "date": "2026-10-02"
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Permet l'édition et la réessai des messages envoyés avant /compact dans les sessions cloud Cowork, même si l'historique est conservé."
+          }
         },
         {
           "text": "Fixed unattended sessions (`CLAUDE_CODE_RETRY_WATCHDOG`) retrying for hours after a very long response stream failed; Claude Code now streams again, and gives up after three timeouts",
@@ -581,7 +1096,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.288",
-          "date": "2026-10-02"
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "performance",
+            "impact": "notable",
+            "resume": "Limite les tentatives de réessai des sessions non supervisées à trois timeouts au lieu de continuer pendant des heures après un échec."
+          }
         },
         {
           "text": "Fixed `/login` reporting \"Login successful\" when credentials could not be saved to secure storage; it now shows the failure, and offers a retry when the new login didn't take effect (anthropics/claude-code#73861)",
@@ -593,7 +1113,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.288",
-          "date": "2026-10-02"
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "securite",
+            "impact": "notable",
+            "resume": "Affiche un échec de connexion si les identifiants ne peuvent pas être sauvegardés, au lieu de signaler un succès trompeur."
+          }
         },
         {
           "text": "Fixed a Stop during Bedrock credential lookup sometimes moving the session to a fallback model instead of ending the request",
@@ -606,7 +1131,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.288",
-          "date": "2026-10-02"
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "modeles",
+            "impact": "mineur",
+            "resume": "Empêche le basculement vers un modèle de secours lors d'une interruption pendant la recherche des identifiants Bedrock."
+          }
         },
         {
           "text": "Fixed a second `gcpAuthRefresh`/`awsAuthRefresh` browser sign-in opening when a laptop wakes from sleep while another Claude Code process is signing in",
@@ -618,7 +1148,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.288",
-          "date": "2026-10-02"
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "securite",
+            "impact": "mineur",
+            "resume": "Empêche l'ouverture d'une seconde fenêtre de connexion navigateur lors du réveil du PC si un autre processus est déjà en cours."
+          }
         },
         {
           "text": "Fixed agent teams: a plugin-defined agent spawned by name now runs with its own prompt, tools, disallowedTools and effort instead of the defaults",
@@ -632,7 +1167,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.288",
-          "date": "2026-10-02"
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "agents",
+            "impact": "notable",
+            "resume": "Permet aux agents définis par des plugins d'utiliser leurs propres outils et paramètres au lieu des valeurs par défaut."
+          }
         },
         {
           "text": "Fixed headless (`-p` / SDK) sessions occasionally ignoring SIGTERM when a supervisor such as `timeout` or systemd sends SIGCONT alongside it",
@@ -644,7 +1184,12 @@
           ],
           "impact": "High",
           "version": "2.1.288",
-          "date": "2026-10-02"
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "performance",
+            "impact": "mineur",
+            "resume": "Corrige l'ignorance du signal SIGTERM dans les sessions headless lorsqu'un superviseur envoie simultanément un signal SIGCONT."
+          }
         },
         {
           "text": "Fixed restarted cloud sessions restoring a model that the organization's enforced model list refuses",
@@ -656,7 +1201,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.288",
-          "date": "2026-10-02"
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "modeles",
+            "impact": "mineur",
+            "resume": "Empêche la restauration d'un modèle refusé par la liste imposée par l'organisation lors du redémarrage des sessions cloud."
+          }
         },
         {
           "text": "Fixed MCP tool calls sometimes running twice when a remote server's result was over 16 MB or could not be parsed",
@@ -668,7 +1218,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.288",
-          "date": "2026-10-02"
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "mcp",
+            "impact": "notable",
+            "resume": "Évite l'exécution double des appels d'outils MCP lorsque le résultat du serveur distant est trop volumineux ou illisible."
+          }
         },
         {
           "text": "Fixed subagents in Claude Desktop's Code tab getting none of the tools of a user-configured MCP server named `memory`",
@@ -682,7 +1237,12 @@
           ],
           "impact": "High",
           "version": "2.1.288",
-          "date": "2026-10-02"
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "mcp",
+            "impact": "mineur",
+            "resume": "Corrige l'absence d'outils du serveur MCP nommé memory pour les sous-agents dans l'onglet Code de Claude Desktop."
+          }
         },
         {
           "text": "Fixed Claude in Chrome asking before every screenshot and page read on a site you allowed when auto mode is unavailable (such as with `disableAutoMode` or an older model); typing, navigation and JavaScript still ask",
@@ -695,7 +1255,12 @@
           ],
           "impact": "High",
           "version": "2.1.288",
-          "date": "2026-10-02"
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "securite",
+            "impact": "notable",
+            "resume": "Supprime les demandes de confirmation pour les captures d'écran et lectures de page sur les sites autorisés en mode auto indisponible."
+          }
         },
         {
           "text": "Fixed `claude plugin install` failing for GitHub-source plugins on macOS and Linux machines with no GitHub SSH key: the clone now falls back to HTTPS and prints a notice",
@@ -707,7 +1272,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.288",
-          "date": "2026-10-02"
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "mcp",
+            "impact": "notable",
+            "resume": "Permet l'installation de plugins GitHub sans clé SSH en basculant automatiquement sur HTTPS sur macOS et Linux."
+          }
         },
         {
           "text": "Fixed `sandbox.credentials.files` entries on git config files not taking effect while `permissions.blockReadsOutsideWorkingDirectories` is on",
@@ -719,7 +1289,12 @@
           ],
           "impact": "High",
           "version": "2.1.288",
-          "date": "2026-10-02"
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "securite",
+            "impact": "mineur",
+            "resume": "Applique correctement les entrées de fichiers de credentials sandbox sur les fichiers de configuration git même avec les restrictions de lecture."
+          }
         },
         {
           "text": "Fixed Claude leaving out your organization's design systems when starting slides or a design with the Artifact tool on Team and Enterprise plans or machines with managed settings",
@@ -731,7 +1306,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.288",
-          "date": "2026-10-02"
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Inclut désormais les systèmes de design de l'organisation lors de la création de diapositives ou de designs avec l'outil Artifact."
+          }
         },
         {
           "text": "Fixed the keyboard not working on Windows after Claude Code restarts itself (first sign-in to a Claude apps gateway, provider setup, `/tui`)",
@@ -743,7 +1323,12 @@
           ],
           "impact": "High",
           "version": "2.1.288",
-          "date": "2026-10-02"
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Corrige le dysfonctionnement du clavier sur Windows après un redémarrage automatique de Claude Code lors de la configuration initiale."
+          }
         },
         {
           "text": "Fixed a stall when launching an agent whose `tools:` lists very many `Agent(...)` entries",
@@ -755,7 +1340,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.288",
-          "date": "2026-10-02"
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "agents",
+            "impact": "mineur",
+            "resume": "Corrige le blocage au lancement d'un agent dont la liste d'outils contient un très grand nombre d'entrées Agent."
+          }
         },
         {
           "text": "Fixed sessions on Claude 3 Opus and Claude 3 Sonnet failing on every turn after a whole PDF entered the conversation",
@@ -767,7 +1357,12 @@
           ],
           "impact": "High",
           "version": "2.1.288",
-          "date": "2026-10-02"
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "modeles",
+            "impact": "notable",
+            "resume": "Correction d'un bug bloquant les sessions sur Claude 3 Opus et Sonnet après l'insertion d'un PDF complet."
+          }
         },
         {
           "text": "Fixed the npm auto-updater reporting success when the platform-native binary failed to download and only the placeholder `claude` stub was installed",
@@ -779,7 +1374,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.288",
-          "date": "2026-10-02"
+          "date": "2026-10-02",
+          "ia": {
+            "domaine": "performance",
+            "impact": "notable",
+            "resume": "Correction d'un faux positif de l'auto-mise à jour npm signalant le succès lors d'un échec de téléchargement."
+          }
         },
         {
           "text": "Fixed Remote Control cleanup archiving a session that is still connected or was just re-attached by another Claude Code process",

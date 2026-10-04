@@ -5122,6 +5122,370 @@
    "impact": "mineur",
    "resume": "Correction du test de plugin : les modifications ne sont plus faussement signalées comme désactivées à distance.",
    "le": "2026-10-03T06:41:17Z"
+  },
+  "e27b5f155abb02e8": {
+   "version": "2.1.289",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Corrige un contournement des règles de refus sur les commandes shell complexes avec modules installés.",
+   "le": "2026-10-04T05:01:47Z"
+  },
+  "3f2ac4dd05fd2410": {
+   "version": "2.1.289",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Évite le gel du terminal lors de l'affichage de blocs de code contenant des balises script non fermées.",
+   "le": "2026-10-04T05:01:47Z"
+  },
+  "d5cc4f8b513cf463": {
+   "version": "2.1.289",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Applique désormais les règles de refus de lecture aux fichiers accédés via des liens symboliques dans l'IDE.",
+   "le": "2026-10-04T05:01:47Z"
+  },
+  "5dbfb213c7e471c5": {
+   "version": "2.1.289",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Rétablit la stabilité des déconnexions dans VSCode après une modification récente du statut d'authentification.",
+   "le": "2026-10-04T05:01:47Z"
+  },
+  "a317a53f86f4689e": {
+   "version": "2.1.289",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "Accélère l'ouverture des gros fichiers dans les panneaux de code des plugins en optimisant le rendu.",
+   "le": "2026-10-04T05:01:47Z"
+  },
+  "a33a199d5950f16e": {
+   "version": "2.1.289",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Corrige l'affichage obsolète des plugins locaux et le rechargement à chaud des dossiers symboliques.",
+   "le": "2026-10-04T05:01:47Z"
+  },
+  "3cfcdb76d3a61db4": {
+   "version": "2.1.289",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Assure le chargement correct des modules installés dès la première session après une mise à niveau.",
+   "le": "2026-10-04T05:01:47Z"
+  },
+  "9a6a70a440ace8e7": {
+   "version": "2.1.289",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Évite l'affichage de lignes obsolètes dans les plugins lorsque la boîte de dialogue des tâches est en plein écran.",
+   "le": "2026-10-04T05:01:47Z"
+  },
+  "6402e58eeaff33a4": {
+   "version": "2.1.289",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Corrige le rendu vide des panneaux de plugin pour les liens localhost, avec @, en majuscules ou file:.",
+   "le": "2026-10-04T05:01:47Z"
+  },
+  "4eb3da514bf21021": {
+   "version": "2.1.289",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Empêche les plugins utilisateurs de modifier les descriptions des outils d'authentification des serveurs MCP gérés.",
+   "le": "2026-10-04T05:01:47Z"
+  },
+  "dcc9960472149109": {
+   "version": "2.1.289",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Évite le gel ou la fermeture forcée au démarrage si un plugin utilise un style de bordure inconnu du terminal.",
+   "le": "2026-10-04T05:01:47Z"
+  },
+  "e1283a8b84870cef": {
+   "version": "2.1.289",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Empêche la fin des sessions supervisées ou en arrière-plan si un gestionnaire d'écran du plugin échoue.",
+   "le": "2026-10-04T05:01:47Z"
+  },
+  "eccd86bfe7ca4e3b": {
+   "version": "2.1.289",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Corrige la fin de session par erreur d'interface lorsqu'une région de plugin sans hauteur continue de croître.",
+   "le": "2026-10-04T05:01:47Z"
+  },
+  "c11189a7cf14c352": {
+   "version": "2.1.289",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Applique les règles de refus Bash aux commandes précédées de variables d'environnement dans le mode sandbox.",
+   "le": "2026-10-04T05:01:47Z"
+  },
+  "647c645dceb83eec": {
+   "version": "2.1.289",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Corrige le contournement des règles de refus Bash par des affectations de variables simples en mode sandbox.",
+   "le": "2026-10-04T05:01:47Z"
+  },
+  "9662682176f95d76": {
+   "version": "2.1.289",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Corrige la validation des plugins qui échouait si le dossier contenait aussi un manifeste de marketplace.",
+   "le": "2026-10-04T05:01:47Z"
+  },
+  "81a761f7e6c3c8a6": {
+   "version": "2.1.289",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Ajoute la génération d'agents, un identifiant unique et des états d'attente dans les événements de hooks.",
+   "le": "2026-10-04T05:01:47Z"
+  },
+  "b6dfc29d12dd1afc": {
+   "version": "2.1.289",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Évite la fin de session irréversible si le rendu d'un hook d'interface d'un module provoque une erreur.",
+   "le": "2026-10-04T05:01:47Z"
+  },
+  "20c800a45fdaceb6": {
+   "version": "2.1.289",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Corrige le chevauchement des lignes lors de l'affichage de textes avec onglets, échappements ou fins de ligne CRLF.",
+   "le": "2026-10-04T05:01:47Z"
+  },
+  "709f3d6a510df80b": {
+   "version": "2.1.289",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Ajuste l'alignement à droite des contenus de modules pour éviter le chevauchement avec les boutons de fermeture.",
+   "le": "2026-10-04T05:01:47Z"
+  },
+  "836d6f53c59f60a0": {
+   "version": "2.1.289",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Isole les erreurs de rendu d'un composant de module pour éviter de faire échouer l'ensemble de l'interface.",
+   "le": "2026-10-04T05:01:47Z"
+  },
+  "963490d803c131a7": {
+   "version": "2.1.289",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Corrige la validation des plugins de la marketplace Anthropic et l'affichage JSON des fichiers plugin.json valides.",
+   "le": "2026-10-04T05:01:47Z"
+  },
+  "1e41a44417341a7d": {
+   "version": "2.1.289",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Empêche les cartes sous une bande de module en échec de rendu de se déplacer brièvement.",
+   "le": "2026-10-04T05:01:47Z"
+  },
+  "3b88433f703d5763": {
+   "version": "2.1.289",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Affiche un message d'erreur explicite au lieu de rien ou d'un générique si un composant de plugin échoue sans message.",
+   "le": "2026-10-04T05:01:47Z"
+  },
+  "f09447659e4e1caf": {
+   "version": "2.1.289",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Améliore le message d'erreur affiché aux auteurs de modules en cas d'échec de rendu de leur bande ou panneau.",
+   "le": "2026-10-04T05:01:47Z"
+  },
+  "8652dbba49dec127": {
+   "version": "2.1.289",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Corrige le gel du navigateur lors de l'affichage de blocs de code contenant des balises script non fermées.",
+   "le": "2026-10-04T05:02:13Z"
+  },
+  "71a7144cdf158bba": {
+   "version": "2.1.289",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Empêche la région client d'un mod de rester en échec pour toute la session après une erreur d'affichage terminal.",
+   "le": "2026-10-04T05:02:13Z"
+  },
+  "c29e0554581c74eb": {
+   "version": "2.1.288",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Empêche les sessions en arrière-plan de se terminer prématurément lors du rechargement ou de la désactivation d'un plugin.",
+   "le": "2026-10-04T05:02:13Z"
+  },
+  "b842119110d96882": {
+   "version": "2.1.288",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Supprime les demandes d'approbation inutiles pour les heredocs sandboxés contenant du texte simple et des variables.",
+   "le": "2026-10-04T05:02:13Z"
+  },
+  "9ce2d798473b9460": {
+   "version": "2.1.288",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Demande désormais une approbation avant l'exécution d'assignations Bash qui pourraient être évaluées comme des opérations arithmétiques.",
+   "le": "2026-10-04T05:02:13Z"
+  },
+  "d101ca2a439375da": {
+   "version": "2.1.288",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Corrige la sortie avec une erreur d'interface irrécoverable lors de l'ouverture du dialogue des tâches en arrière-plan en plein écran.",
+   "le": "2026-10-04T05:02:13Z"
+  },
+  "b383f9802a7e286c": {
+   "version": "2.1.288",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Signale correctement l'échec de livraison d'un message entre sessions et permet à Claude de l'apprendre en cours de tour.",
+   "le": "2026-10-04T05:02:13Z"
+  },
+  "0d1eb3fa43a2eb69": {
+   "version": "2.1.288",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Corrige les métadonnées OpenTelemetry qui rapportaient une source ou une décision inconnue pour les approbations d'outils.",
+   "le": "2026-10-04T05:02:13Z"
+  },
+  "7f0407069255bf5c": {
+   "version": "2.1.288",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Émet désormais un événement de décision d'outil même lorsque la demande de permission reste sans réponse ou est interrompue.",
+   "le": "2026-10-04T05:02:13Z"
+  },
+  "e93a0dc602791d8f": {
+   "version": "2.1.288",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Permet l'édition et la réessai des messages envoyés avant /compact dans les sessions cloud Cowork, même si l'historique est conservé.",
+   "le": "2026-10-04T05:02:13Z"
+  },
+  "443828c364c01d94": {
+   "version": "2.1.288",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Limite les tentatives de réessai des sessions non supervisées à trois timeouts au lieu de continuer pendant des heures après un échec.",
+   "le": "2026-10-04T05:02:13Z"
+  },
+  "f95e8ea9b6e1f625": {
+   "version": "2.1.288",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Affiche un échec de connexion si les identifiants ne peuvent pas être sauvegardés, au lieu de signaler un succès trompeur.",
+   "le": "2026-10-04T05:02:13Z"
+  },
+  "f437998786770cda": {
+   "version": "2.1.288",
+   "domaine": "modeles",
+   "impact": "mineur",
+   "resume": "Empêche le basculement vers un modèle de secours lors d'une interruption pendant la recherche des identifiants Bedrock.",
+   "le": "2026-10-04T05:02:13Z"
+  },
+  "4b8c6e9c9d3c3871": {
+   "version": "2.1.288",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Empêche l'ouverture d'une seconde fenêtre de connexion navigateur lors du réveil du PC si un autre processus est déjà en cours.",
+   "le": "2026-10-04T05:02:13Z"
+  },
+  "d47f806a58f2c3dc": {
+   "version": "2.1.288",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Permet aux agents définis par des plugins d'utiliser leurs propres outils et paramètres au lieu des valeurs par défaut.",
+   "le": "2026-10-04T05:02:13Z"
+  },
+  "5cf376dc9b750819": {
+   "version": "2.1.288",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "Corrige l'ignorance du signal SIGTERM dans les sessions headless lorsqu'un superviseur envoie simultanément un signal SIGCONT.",
+   "le": "2026-10-04T05:02:13Z"
+  },
+  "dfe42654ce0e1862": {
+   "version": "2.1.288",
+   "domaine": "modeles",
+   "impact": "mineur",
+   "resume": "Empêche la restauration d'un modèle refusé par la liste imposée par l'organisation lors du redémarrage des sessions cloud.",
+   "le": "2026-10-04T05:02:13Z"
+  },
+  "bebc8fdd4984129c": {
+   "version": "2.1.288",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Évite l'exécution double des appels d'outils MCP lorsque le résultat du serveur distant est trop volumineux ou illisible.",
+   "le": "2026-10-04T05:02:13Z"
+  },
+  "4360aa04e8102531": {
+   "version": "2.1.288",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Corrige l'absence d'outils du serveur MCP nommé memory pour les sous-agents dans l'onglet Code de Claude Desktop.",
+   "le": "2026-10-04T05:02:13Z"
+  },
+  "5401ee4ef1f92ee6": {
+   "version": "2.1.288",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Supprime les demandes de confirmation pour les captures d'écran et lectures de page sur les sites autorisés en mode auto indisponible.",
+   "le": "2026-10-04T05:02:13Z"
+  },
+  "b20d2e842ab9dda7": {
+   "version": "2.1.288",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Permet l'installation de plugins GitHub sans clé SSH en basculant automatiquement sur HTTPS sur macOS et Linux.",
+   "le": "2026-10-04T05:02:13Z"
+  },
+  "3f6c690cac91048d": {
+   "version": "2.1.288",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Applique correctement les entrées de fichiers de credentials sandbox sur les fichiers de configuration git même avec les restrictions de lecture.",
+   "le": "2026-10-04T05:02:13Z"
+  },
+  "0d20981d78cc6f4f": {
+   "version": "2.1.288",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Inclut désormais les systèmes de design de l'organisation lors de la création de diapositives ou de designs avec l'outil Artifact.",
+   "le": "2026-10-04T05:02:13Z"
+  },
+  "a559c3d25394fd3c": {
+   "version": "2.1.288",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Corrige le dysfonctionnement du clavier sur Windows après un redémarrage automatique de Claude Code lors de la configuration initiale.",
+   "le": "2026-10-04T05:02:13Z"
+  },
+  "0bf523cd0a85bdce": {
+   "version": "2.1.288",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Corrige le blocage au lancement d'un agent dont la liste d'outils contient un très grand nombre d'entrées Agent.",
+   "le": "2026-10-04T05:02:13Z"
+  },
+  "4294d49623a7395b": {
+   "version": "2.1.288",
+   "domaine": "modeles",
+   "impact": "notable",
+   "resume": "Correction d'un bug bloquant les sessions sur Claude 3 Opus et Sonnet après l'insertion d'un PDF complet.",
+   "le": "2026-10-04T05:02:18Z"
+  },
+  "97ed111a62779069": {
+   "version": "2.1.288",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Correction d'un faux positif de l'auto-mise à jour npm signalant le succès lors d'un échec de téléchargement.",
+   "le": "2026-10-04T05:02:18Z"
   }
  }
 }
