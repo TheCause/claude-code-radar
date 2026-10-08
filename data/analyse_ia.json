@@ -7474,6 +7474,398 @@
    "impact": "mineur",
    "resume": "Les revues de code utilisent désormais la version de base du fichier CLAUDE.md, même si la PR le modifie.",
    "le": "2026-10-07T05:03:02Z"
+  },
+  "735236192c5000f5": {
+   "version": "2.1.293",
+   "domaine": "modeles",
+   "impact": "majeur",
+   "resume": "Nouveau modèle Haiku 5.5 par défaut avec 1M de contexte et des tarifs ajustés selon la taille du prompt.",
+   "le": "2026-10-08T05:02:13Z"
+  },
+  "d62fdea73304fdfd": {
+   "version": "2.1.293",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Le type d'agent est désormais inclus dans le statut des sous-agents pour permettre une meilleure distinction par les scripts.",
+   "le": "2026-10-08T05:02:13Z"
+  },
+  "c4ec130f1575db63": {
+   "version": "2.1.293",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Les extensions peuvent désormais afficher immédiatement le schéma de leurs outils dans le prompt au lieu de les masquer.",
+   "le": "2026-10-08T05:02:13Z"
+  },
+  "3b6026ca65f24515": {
+   "version": "2.1.293",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Correction d'un bug où Claude annulait ou refaisait des tâches déjà terminées après une compaction de contexte.",
+   "le": "2026-10-08T05:02:13Z"
+  },
+  "4f3ca35f06018a64": {
+   "version": "2.1.293",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Correction d'une fuite mémoire liée aux connexions MCP HTTP qui conservaient toutes les requêtes envoyées.",
+   "le": "2026-10-08T05:02:13Z"
+  },
+  "4e5fc0d8e68c7a85": {
+   "version": "2.1.293",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Les messages envoyés pendant le travail ne sont plus perdus lors du passage en arrière-plan de la session.",
+   "le": "2026-10-08T05:02:13Z"
+  },
+  "a589a318e48eb727": {
+   "version": "2.1.293",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction d'un bug où la navigation des niveaux d'effort pouvait enregistrer accidentellement un niveau bas par défaut.",
+   "le": "2026-10-08T05:02:13Z"
+  },
+  "b751aedd7684f1ce": {
+   "version": "2.1.293",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction d'une déconnexion inattendue dans Chrome lors de l'utilisation de l'option --chrome et du respect de --no-chrome.",
+   "le": "2026-10-08T05:02:13Z"
+  },
+  "9fbd174259d5b5b4": {
+   "version": "2.1.293",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Correction d'un bug où Claude utilisait l'outil SendMessage même si celui-ci était désactivé par les permissions ou les outils.",
+   "le": "2026-10-08T05:02:13Z"
+  },
+  "d7338d19a3a20358": {
+   "version": "2.1.293",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Les sous-agents ne sont plus informés à tort qu'un outil intégré est désactivé pour toute la session.",
+   "le": "2026-10-08T05:02:13Z"
+  },
+  "d2e45e8694aac8a2": {
+   "version": "2.1.293",
+   "domaine": "hooks_config",
+   "impact": "mineur",
+   "resume": "Les descriptions modifiées des compétences synchronisées sont désormais transmises au modèle sans attendre un nouveau chat.",
+   "le": "2026-10-08T05:02:13Z"
+  },
+  "1cef53534eae738e": {
+   "version": "2.1.293",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Correction d'un bug où certaines commandes de gestion des agents déconnectaient l'utilisateur si la session était expirée.",
+   "le": "2026-10-08T05:02:13Z"
+  },
+  "dda27524a803eadf": {
+   "version": "2.1.293",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Le compteur d'agents dans le pied de page ne disparaît plus après une erreur temporaire de lecture des sessions.",
+   "le": "2026-10-08T05:02:13Z"
+  },
+  "d90bac9c6fbe47b2": {
+   "version": "2.1.293",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction de l'affichage du nom et du type des agents personnalisés dans les dialogues de détails.",
+   "le": "2026-10-08T05:02:13Z"
+  },
+  "e1461c327df6f9c6": {
+   "version": "2.1.293",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction d'un affichage temporaire incorrect du chemin dans la ligne de transcript de l'outil Artifact.",
+   "le": "2026-10-08T05:02:13Z"
+  },
+  "443cda70d2295e4b": {
+   "version": "2.1.293",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Correction d'un refus d'upload sur Linux lié à des fichiers de configuration non analysables pendant l'exécution sandbox.",
+   "le": "2026-10-08T05:02:13Z"
+  },
+  "ac67128763eb30a4": {
+   "version": "2.1.293",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Correction d'un conseil de commande git incorrect lors du refus d'upload d'index fractionnés.",
+   "le": "2026-10-08T05:02:13Z"
+  },
+  "c57d8acfb2d8054a": {
+   "version": "2.1.293",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Les réponses dans les longues sessions distantes ou cloud s'affichent désormais en flux continu au lieu de blocs.",
+   "le": "2026-10-08T05:02:13Z"
+  },
+  "8c72574e2efea24e": {
+   "version": "2.1.293",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction d'un bug où l'historique de départ était re-téléchargé après chaque récupération d'identifiants.",
+   "le": "2026-10-08T05:02:13Z"
+  },
+  "0715cc72cb8d715b": {
+   "version": "2.1.293",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction d'un faux message d'inactivité du contrôle distant dans les sessions lancées via la commande dédiée.",
+   "le": "2026-10-08T05:02:13Z"
+  },
+  "7d6ca6327c3431c3": {
+   "version": "2.1.293",
+   "domaine": "hooks_config",
+   "impact": "notable",
+   "resume": "Les hooks des extensions sur les événements classiques ne sont plus ignorés lors des redémarrages du worker.",
+   "le": "2026-10-08T05:02:13Z"
+  },
+  "fe966096decd4ed6": {
+   "version": "2.1.293",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Correction d'un échec de test pour les extensions utilisant l'ajout de session, avec une nouvelle API de mock.",
+   "le": "2026-10-08T05:02:13Z"
+  },
+  "73cb8d4db6b4ba1c": {
+   "version": "2.1.293",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Correction d'un refus d'exécution Bash sur Mac avec Docker Desktop, avec un message d'erreur plus précis.",
+   "le": "2026-10-08T05:02:13Z"
+  },
+  "45a3c35286196182": {
+   "version": "2.1.293",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Correction d'un refus de démarrage de la passerelle d'apps due à des clés de navigateur intégrées dans la politique.",
+   "le": "2026-10-08T05:02:13Z"
+  },
+  "eae53d9f226affc9": {
+   "version": "2.1.293",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Les permissions de contournement sont désormais demandées avant d'être appliquées, avec un avertissement si ignorées.",
+   "le": "2026-10-08T05:02:13Z"
+  },
+  "4cb456a155589533": {
+   "version": "2.1.293",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Corrige un bug où la touche flèche gauche annulait le passage en arrière-plan si du texte non envoyé restait dans le prompt.",
+   "le": "2026-10-08T05:02:40Z"
+  },
+  "b4915b842f17fb7a": {
+   "version": "2.1.293",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Répare l'arrêt du tour par Échap ou « Non » sur une demande de permission après un passage en arrière-plan.",
+   "le": "2026-10-08T05:02:40Z"
+  },
+  "7deeb7916d9a0a4c": {
+   "version": "2.1.293",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Évite l'affichage de lignes de remplacement dans la vue des agents si le dossier des sessions est illisible.",
+   "le": "2026-10-08T05:02:40Z"
+  },
+  "f43b80b0b053a0cf": {
+   "version": "2.1.293",
+   "domaine": "hooks_config",
+   "impact": "notable",
+   "resume": "Assure le chargement des règles de chemin et des fichiers CLAUDE.md imbriqués lors de l'usage d'outils Bash comme cat ou grep.",
+   "le": "2026-10-08T05:02:40Z"
+  },
+  "a2468053b87a245c": {
+   "version": "2.1.293",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Corrige un problème où du texte collé commençant et finissant par les mêmes mots était traité comme s'il avait été tapé.",
+   "le": "2026-10-08T05:02:40Z"
+  },
+  "7d6f5ab280ef90fa": {
+   "version": "2.1.293",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Répare la fusion d'accents tapés après un collage qui pouvait fausser l'interprétation du nom de compétence.",
+   "le": "2026-10-08T05:02:40Z"
+  },
+  "95e6aef2c9f1c078": {
+   "version": "2.1.293",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Permet d'annuler l'envoi d'un rapport de retour d'information même après un retour à la liste des brouillons.",
+   "le": "2026-10-08T05:02:40Z"
+  },
+  "0d9e420dd108df55": {
+   "version": "2.1.293",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "La commande de purge signale désormais les fichiers non supprimables et retourne un code d'erreur au lieu de se terminer silencieusement.",
+   "le": "2026-10-08T05:02:40Z"
+  },
+  "2f70d7126cd4ce74": {
+   "version": "2.1.293",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Corrige la validation des raccourcis clavier pour ne plus signaler d'erreur sur la barre espace et avertir sur les combinaisons invalides.",
+   "le": "2026-10-08T05:02:40Z"
+  },
+  "71a23f5f8d5173b2": {
+   "version": "2.1.293",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Répare le positionnement du curseur en mode vim après décalage de lignes contenant uniquement des espaces.",
+   "le": "2026-10-08T05:02:40Z"
+  },
+  "d499c1a1872b0142": {
+   "version": "2.1.293",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Corrige le comportement du curseur et de la répétition en mode vim après suppression de lignes complètes en mode visuel.",
+   "le": "2026-10-08T05:02:40Z"
+  },
+  "beace844075d49d9": {
+   "version": "2.1.293",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Empêche l'arrêt d'un processus sur Windows de tuer accidentellement un autre processus ayant le même identifiant.",
+   "le": "2026-10-08T05:02:40Z"
+  },
+  "c38363f231064567": {
+   "version": "2.1.293",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Rétablit le message de refus du mode automatique pour préciser qu'il couvre le résultat et non seulement la commande exacte.",
+   "le": "2026-10-08T05:02:40Z"
+  },
+  "011808beafa0d010": {
+   "version": "2.1.293",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Rétablit le comportement où les sessions cloud restent endormies si une tâche planifiée est perdue lors d'un redémarrage.",
+   "le": "2026-10-08T05:02:40Z"
+  },
+  "bb6043f0467a85a5": {
+   "version": "2.1.293",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Améliore le démarrage pour les organisations Team et Enterprise en récupérant les politiques plus tôt et en réessayant les requêtes bloquées.",
+   "le": "2026-10-08T05:02:40Z"
+  },
+  "e0093837b76a1605": {
+   "version": "2.1.293",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Réduit les refus d'actions dans Claude in Chrome lorsque le navigateur est lent à signaler ses onglets.",
+   "le": "2026-10-08T05:02:40Z"
+  },
+  "4b53d0a05bfac11b": {
+   "version": "2.1.293",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Améliore le message d'erreur dans les sessions cloud si le navigateur est injoignable, en précisant l'organisation requise.",
+   "le": "2026-10-08T05:02:40Z"
+  },
+  "6e0621d835f2ca5d": {
+   "version": "2.1.293",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Clarifie la note de diff des modifications Bash pour indiquer que les fichiers listés ont changé pendant l'exécution.",
+   "le": "2026-10-08T05:02:40Z"
+  },
+  "51ac08724e94d35f": {
+   "version": "2.1.293",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Les artefacts épinglent désormais les bibliothèques à des versions exactes datant d'au moins deux semaines.",
+   "le": "2026-10-08T05:02:40Z"
+  },
+  "c4ff74351e2b40ed": {
+   "version": "2.1.293",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "La synchronisation des compétences depuis claude.ai vérifie les changements toutes les 40 minutes au lieu de 10 si aucune session n'est active.",
+   "le": "2026-10-08T05:02:40Z"
+  },
+  "665727c63f694e17": {
+   "version": "2.1.293",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Les noms contenant des caractères non-ASCII sont désormais triés après les noms ASCII dans les listes d'agents et de serveurs MCP.",
+   "le": "2026-10-08T05:02:40Z"
+  },
+  "ff7e6adab369fffe": {
+   "version": "2.1.293",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "Limite la journalisation OpenTelemetry des mentions à 100 événements d'agents et 100 de ressources MCP par lecture de prompt.",
+   "le": "2026-10-08T05:02:40Z"
+  },
+  "e1220bdaa686fd57": {
+   "version": "2.1.293",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "L'orchestrateur auto-hébergé alterne désormais entre 4 et 6 secondes de pause pour éviter que plusieurs répliques ne pollent simultanément.",
+   "le": "2026-10-08T05:02:40Z"
+  },
+  "8742c0b2a762a9b6": {
+   "version": "2.1.293",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Corrige un faux message d'erreur dans Slack indiquant que l'espace de travail n'est pas configuré dans les canaux Enterprise Grid.",
+   "le": "2026-10-08T05:02:40Z"
+  },
+  "aa1eeee479d07f45": {
+   "version": "2.1.293",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Empêche Claude dans Slack d'interrompre une tâche en cours si un administrateur modifie les connecteurs ou règles du canal.",
+   "le": "2026-10-08T05:02:40Z"
+  },
+  "640215c438bb5bff": {
+   "version": "2.1.293",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Corrige un bug où les notes ajoutées dans Slack créaient une exécution séparée incapable de répondre.",
+   "le": "2026-10-08T05:02:48Z"
+  },
+  "72c2b8e7ccca0110": {
+   "version": "2.1.293",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Corrige l'affichage erroné des connecteurs Google dans les paramètres d'administration de Claude Tag.",
+   "le": "2026-10-08T05:02:48Z"
+  },
+  "902bdcc61de2af2f": {
+   "version": "2.1.293",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Permet de voir et de connecter un Enterprise Grid non relié dans les paramètres d'administration de Claude Tag.",
+   "le": "2026-10-08T05:02:48Z"
+  },
+  "f84e55f765728f69": {
+   "version": "2.1.293",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Claude rejoint désormais les canaux d'annonce de Slack sans y publier son message d'introduction.",
+   "le": "2026-10-08T05:02:48Z"
+  },
+  "2ed62b8ad2404379": {
+   "version": "2.1.293",
+   "domaine": "hooks_config",
+   "impact": "notable",
+   "resume": "Augmente la limite de règles de canal dans les paramètres d'administration de 20 à 50 par espace de travail.",
+   "le": "2026-10-08T05:02:48Z"
+  },
+  "e4ce4fbdf829ecc6": {
+   "version": "2.1.293",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Améliore le dialogue d'ajout de dépôt pour lister les échecs et leurs raisons, comme l'accès manquant.",
+   "le": "2026-10-08T05:02:48Z"
   }
  }
 }
