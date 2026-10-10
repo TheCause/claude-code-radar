@@ -8790,6 +8790,496 @@
    "impact": "notable",
    "resume": "Améliore l'évaluation des hooks de fin de tâche pour éviter que Claude s'arrête prématurément si le build est cassé.",
    "le": "2026-10-09T05:04:11Z"
+  },
+  "6ce2c9b98d03b5f7": {
+   "version": "2.1.296",
+   "domaine": "hooks_config",
+   "impact": "notable",
+   "resume": "Les politiques de gestion s'appliquent désormais aussi à l'onglet Code de Claude Desktop via une nouvelle clé.",
+   "le": "2026-10-10T05:01:07Z"
+  },
+  "c4a9ba83b20ec156": {
+   "version": "2.1.296",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Les sous-agents peuvent désormais compacter leur contexte plus tôt que la conversation principale.",
+   "le": "2026-10-10T05:01:07Z"
+  },
+  "662b58bf7980b59f": {
+   "version": "2.1.296",
+   "domaine": "modeles",
+   "impact": "notable",
+   "resume": "Une variable d'environnement permet de forcer un modèle unique pour tous les agents de workflow.",
+   "le": "2026-10-10T05:01:07Z"
+  },
+  "0d7bacf6406c7057": {
+   "version": "2.1.296",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "Le délai maximal de réessai lors des erreurs de surcharge (529) est désormais configurable.",
+   "le": "2026-10-10T05:01:07Z"
+  },
+  "279e79911a9f938c": {
+   "version": "2.1.296",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Une note s'affiche dans /plugin si des hooks sont ignorés à cause d'un conflit de noms.",
+   "le": "2026-10-10T05:01:07Z"
+  },
+  "c6d68cf69b4d28c8": {
+   "version": "2.1.296",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "L'outil de lecture peut désormais lire des fichiers texte très volumineux en une seule fois.",
+   "le": "2026-10-10T05:01:07Z"
+  },
+  "c22538688e50c670": {
+   "version": "2.1.296",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Un filtre de statut multiple est ajouté aux listes de sessions dans l'interface d'administration.",
+   "le": "2026-10-10T05:01:07Z"
+  },
+  "c0995926ffcc2764": {
+   "version": "2.1.296",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Les administrateurs peuvent gérer les fichiers de mémoire des espaces de travail via l'interface web.",
+   "le": "2026-10-10T05:01:07Z"
+  },
+  "c442798fa83b2048": {
+   "version": "2.1.296",
+   "domaine": "modeles",
+   "impact": "notable",
+   "resume": "Le prix de la lecture du cache pour Sonnet 5.5 est réduit de moitié dans les calculs de coût.",
+   "le": "2026-10-10T05:01:07Z"
+  },
+  "8c18e433c2179eb7": {
+   "version": "2.1.296",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Ajustements visuels mineurs sur les couleurs et l'axe Y des graphiques générés par le skill dataviz.",
+   "le": "2026-10-10T05:01:07Z"
+  },
+  "03e063277eca01f0": {
+   "version": "2.1.296",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "La limite de caractères pour les descriptions d'outils MCP est doublée à 4 096.",
+   "le": "2026-10-10T05:01:07Z"
+  },
+  "66066c8ae43635f8": {
+   "version": "2.1.296",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "La touche flèche gauche interrompt désormais les commandes lancées pendant le passage en arrière-plan.",
+   "le": "2026-10-10T05:01:07Z"
+  },
+  "b7a1fb98b79eaa01": {
+   "version": "2.1.296",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Claude dans Chrome demande désormais confirmation avant chaque action navigateur, comme dans le terminal.",
+   "le": "2026-10-10T05:01:07Z"
+  },
+  "e9fadd12266238c4": {
+   "version": "2.1.296",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Dans Slack, le pied de page avec le lien de session n'apparaît plus que sur la dernière réponse.",
+   "le": "2026-10-10T05:01:07Z"
+  },
+  "b5456b8790dcda9e": {
+   "version": "2.1.296",
+   "domaine": "hooks_config",
+   "impact": "notable",
+   "resume": "Correction des hooks de gestion qui refusaient un outil sans correctement terminer le tour.",
+   "le": "2026-10-10T05:01:07Z"
+  },
+  "ff1ec2d2cb80a7ae": {
+   "version": "2.1.296",
+   "domaine": "hooks_config",
+   "impact": "mineur",
+   "resume": "Correction d'un bug où les hooks PostToolUse n'appliquaient pas certaines mises à jour de sortie MCP.",
+   "le": "2026-10-10T05:01:07Z"
+  },
+  "e37a3642f1619d32": {
+   "version": "2.1.296",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Les serveurs MCP désactivés pour un dossier ne sont plus lancés par erreur lors d'un changement de répertoire.",
+   "le": "2026-10-10T05:01:07Z"
+  },
+  "67a9c90d26fc0bf2": {
+   "version": "2.1.296",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Correction d'un verrouillage des portables causé par une configuration de passerelle spécifique.",
+   "le": "2026-10-10T05:01:07Z"
+  },
+  "02e8a52370e0bef0": {
+   "version": "2.1.296",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Correction d'une régression où la connexion via passerelle était ignorée sur certaines machines gérées.",
+   "le": "2026-10-10T05:01:07Z"
+  },
+  "776e169b97182aba": {
+   "version": "2.1.296",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction d'un bug où --teleport ouvrait une conversation vide si l'historique était illisible.",
+   "le": "2026-10-10T05:01:07Z"
+  },
+  "94f666138771c211": {
+   "version": "2.1.296",
+   "domaine": "modeles",
+   "impact": "notable",
+   "resume": "Correction du comptage des jetons pour les modèles utilisant uniquement la réflexion adaptative.",
+   "le": "2026-10-10T05:01:07Z"
+  },
+  "20ec285f0ad8570c": {
+   "version": "2.1.296",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Les sous-agents repris ne sont plus faussement informés d'un refus d'outil dû à une fermeture de session.",
+   "le": "2026-10-10T05:01:07Z"
+  },
+  "5c64c3fa7c1a560d": {
+   "version": "2.1.296",
+   "domaine": "hooks_config",
+   "impact": "mineur",
+   "resume": "Correction d'une altération de la sortie des hooks contenant du texte ressemblant à une balise de plugin.",
+   "le": "2026-10-10T05:01:07Z"
+  },
+  "4f9cffbaf8a9952b": {
+   "version": "2.1.296",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Amélioration du masquage des secrets dans les journaux pour les clés sans valeur explicite.",
+   "le": "2026-10-10T05:01:07Z"
+  },
+  "cce34044d4676ea5": {
+   "version": "2.1.296",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction d'une séquence d'échappement parasite affichée après copie dans certains terminaux VTE.",
+   "le": "2026-10-10T05:01:07Z"
+  },
+  "474ccbad41dfa371": {
+   "version": "2.1.296",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Les notifications s'affichent désormais immédiatement au lieu d'attendre la fermeture du panneau de diff.",
+   "le": "2026-10-10T05:01:33Z"
+  },
+  "ca7fc3c997532626": {
+   "version": "2.1.296",
+   "domaine": "hooks_config",
+   "impact": "notable",
+   "resume": "L'interruption pendant un hook de soumission ne coupe plus la session ni ne laisse passer le prompt non vérifié.",
+   "le": "2026-10-10T05:01:33Z"
+  },
+  "acc7c79591c83621": {
+   "version": "2.1.296",
+   "domaine": "hooks_config",
+   "impact": "mineur",
+   "resume": "Les hooks de démarrage de session des plugins chargés tardivement ne sont plus ignorés si un autre plugin a déjà tourné.",
+   "le": "2026-10-10T05:01:33Z"
+  },
+  "b1dcac45e8e034f9": {
+   "version": "2.1.296",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Les erreurs d'enregistrement du runner auto-hébergé précisent désormais la cause (réglage admin ou ordre de travail).",
+   "le": "2026-10-10T05:01:33Z"
+  },
+  "51db815d66ed8e8e": {
+   "version": "2.1.296",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Les opérations Git fonctionnent désormais correctement sur les runners multi-capacité même si plusieurs sessions utilisent le même dépôt.",
+   "le": "2026-10-10T05:01:33Z"
+  },
+  "dcde48e5c449eae7": {
+   "version": "2.1.296",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "Les résultats de scripts très imbriqués ne sont plus tronqués silencieusement et ne génèrent plus de fichiers de sortie énormes.",
+   "le": "2026-10-10T05:01:33Z"
+  },
+  "cffb77dec4a2dcf1": {
+   "version": "2.1.296",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Les méthodes HTTP des plugins s'exécutent désormais dans le répertoire de travail de l'agent appelant, et non de la session principale.",
+   "le": "2026-10-10T05:01:33Z"
+  },
+  "d8f7107a4e3e2b6e": {
+   "version": "2.1.296",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "L'enregistrement d'agents via des hooks de mods rechargés ou supprimés est désormais refusé pour éviter les états incohérents.",
+   "le": "2026-10-10T05:01:33Z"
+  },
+  "2118536d83ffce3d": {
+   "version": "2.1.296",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Les requêtes HEAD des mods ne sont plus refusées si la longueur du contenu dépasse la limite de corps de 4 Mo.",
+   "le": "2026-10-10T05:01:33Z"
+  },
+  "3ca6e9a3ea57f7dd": {
+   "version": "2.1.296",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "L'ajout de marketplaces nommés 'constructor' ne provoque plus d'erreur interne et est désormais clairement refusé.",
+   "le": "2026-10-10T05:01:33Z"
+  },
+  "fc9bd9c398334586": {
+   "version": "2.1.296",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Les secrets de plugins nommés 'constructor' ou 'prototype' ne sont plus supprimés lors de la sauvegarde des options.",
+   "le": "2026-10-10T05:01:33Z"
+  },
+  "fe57c5f9545cd9e4": {
+   "version": "2.1.296",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Le mode auto applique désormais correctement les vérifications de permissions sur les actions Chrome dans les sessions cloud.",
+   "le": "2026-10-10T05:01:33Z"
+  },
+  "4ddf04fa5c09def1": {
+   "version": "2.1.296",
+   "domaine": "hooks_config",
+   "impact": "mineur",
+   "resume": "Le redémarrage ne relance plus un tour terminé si un résultat d'outil MCP avait déjà clôturé la conversation.",
+   "le": "2026-10-10T05:01:33Z"
+  },
+  "3bf409a4d1721716": {
+   "version": "2.1.296",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Les commandes Bash utilisant la variable BASH_ARGV0 demandent désormais une approbation explicite au lieu d'être auto-approuvées.",
+   "le": "2026-10-10T05:01:33Z"
+  },
+  "50571f3a41b46f25": {
+   "version": "2.1.296",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Les modifications de fichiers non UTF-8 (Windows-1252, etc.) sont refusées pour éviter la corruption des caractères non ASCII.",
+   "le": "2026-10-10T05:01:33Z"
+  },
+  "55ba75b110b12a2a": {
+   "version": "2.1.296",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Un prompt envoyé juste après une flèche gauche n'est plus exécuté deux fois si le service de fond est lent.",
+   "le": "2026-10-10T05:01:33Z"
+  },
+  "a2d80ba07e7f5929": {
+   "version": "2.1.296",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Un prompt envoyé pendant l'exécution des hooks de démarrage peut être récupéré avec la flèche haut s'il est perdu lors du passage en arrière-plan.",
+   "le": "2026-10-10T05:01:33Z"
+  },
+  "d0b4544912909094": {
+   "version": "2.1.296",
+   "domaine": "hooks_config",
+   "impact": "mineur",
+   "resume": "La sortie des hooks de démarrage de plugins chargés tardivement ne pollue plus la nouvelle conversation après un /clear.",
+   "le": "2026-10-10T05:01:33Z"
+  },
+  "0281a2ce27be9828": {
+   "version": "2.1.296",
+   "domaine": "hooks_config",
+   "impact": "notable",
+   "resume": "Les commandes PowerShell accèdent désormais aux variables écrites par les hooks dans le fichier d'environnement.",
+   "le": "2026-10-10T05:01:33Z"
+  },
+  "ab67b5008c7a8cea": {
+   "version": "2.1.296",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Claude ne propose plus de commandes MCP interactives dans les sessions cloud non interactives nécessitant une authentification.",
+   "le": "2026-10-10T05:01:33Z"
+  },
+  "345d7e0760188178": {
+   "version": "2.1.296",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Les résultats de /code-review s'affichent désormais comme une liste numérotée au lieu d'un tableau JSON brut.",
+   "le": "2026-10-10T05:01:33Z"
+  },
+  "ba68efb9964c92c4": {
+   "version": "2.1.296",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Le mode auto ne refuse plus à tort la mise à jour d'un artefact propre en invoquant un changement de partage inexistant.",
+   "le": "2026-10-10T05:01:33Z"
+  },
+  "9ec53141c467d1f8": {
+   "version": "2.1.296",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "L'installation des compétences synchronisées depuis claude.ai se termine désormais correctement même avec plusieurs sessions partageant la config.",
+   "le": "2026-10-10T05:01:33Z"
+  },
+  "8a8274137bcd4558": {
+   "version": "2.1.296",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Les plugins synchronisés depuis claude.ai ne sont plus désactivés si leur dépendance marketplace est également synchronisée.",
+   "le": "2026-10-10T05:01:33Z"
+  },
+  "ea8c63aff780eff0": {
+   "version": "2.1.296",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "Correction d'un blocage au démarrage sur macOS lorsque les chemins de plugins proviennent d'une machine Linux.",
+   "le": "2026-10-10T05:01:33Z"
+  },
+  "ef3bc3105451b5ee": {
+   "version": "2.1.296",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Le refus des scripts avec fins de ligne Windows est corrigé, améliorant la compatibilité des workflows.",
+   "le": "2026-10-10T05:01:53Z"
+  },
+  "2082045cc26d2d2a": {
+   "version": "2.1.296",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "L'identifiant de commit Git est désormais correctement transmis dans les événements de télémétrie.",
+   "le": "2026-10-10T05:01:53Z"
+  },
+  "1a760eade53b20f4": {
+   "version": "2.1.296",
+   "domaine": "hooks_config",
+   "impact": "mineur",
+   "resume": "Les séparateurs Unicode ne provoquent plus la perte de messages dans les transcripts sauvegardés.",
+   "le": "2026-10-10T05:01:53Z"
+  },
+  "1156e8b7607d13b3": {
+   "version": "2.1.296",
+   "domaine": "hooks_config",
+   "impact": "mineur",
+   "resume": "La commande de purge ne laisse plus de résidus dans l'historique si le texte contient des séparateurs Unicode.",
+   "le": "2026-10-10T05:01:53Z"
+  },
+  "422ccbc3a6cc9538": {
+   "version": "2.1.296",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Sur Windows, les commandes PowerShell longues ne demandent plus systématiquement une autorisation manuelle.",
+   "le": "2026-10-10T05:01:53Z"
+  },
+  "fbfb2e4142daf4dc": {
+   "version": "2.1.296",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Les serveurs MCP sur Windows ne sont plus tués brutalement à la fermeture, évitant les pertes de données.",
+   "le": "2026-10-10T05:01:53Z"
+  },
+  "59ee8d74aad999e5": {
+   "version": "2.1.296",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "L'installation de plugins GitHub sur Windows fonctionne désormais sans clé SSH grâce à un repli HTTPS.",
+   "le": "2026-10-10T05:01:53Z"
+  },
+  "597d1af3595ed828": {
+   "version": "2.1.296",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Sur Windows, les commandes de suppression dangereuses demandent désormais confirmation même en mode bypass.",
+   "le": "2026-10-10T05:01:53Z"
+  },
+  "fb70bd7d4c69248b": {
+   "version": "2.1.296",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "La configuration du spinner dans VS Code est validée et ne casse plus le panneau de chat si mal formée.",
+   "le": "2026-10-10T05:01:53Z"
+  },
+  "cbfbad77710333a3": {
+   "version": "2.1.296",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Les liens vers des fichiers Windows s'ouvrent correctement dans l'extension VS Code.",
+   "le": "2026-10-10T05:01:53Z"
+  },
+  "1593546677d57b8f": {
+   "version": "2.1.296",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "L'indicateur d'activité respecte désormais les préférences de réduction des animations du système.",
+   "le": "2026-10-10T05:01:53Z"
+  },
+  "7ecfc1a7e5011c2e": {
+   "version": "2.1.296",
+   "domaine": "modeles",
+   "impact": "mineur",
+   "resume": "L'indicateur de cache ne s'affiche plus comme chaud à tort après une reconnexion ou un affichage tardif.",
+   "le": "2026-10-10T05:01:53Z"
+  },
+  "f0ba4fb922f40a06": {
+   "version": "2.1.296",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Chaque session cloud affiche désormais sa position réelle dans la file d'attente plutôt qu'une position identique.",
+   "le": "2026-10-10T05:01:53Z"
+  },
+  "69b5ffedaaa414e8": {
+   "version": "2.1.296",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Les messages envoyés pendant une réponse en cours restent correctement ordonnés dans les sessions cloud.",
+   "le": "2026-10-10T05:01:53Z"
+  },
+  "b6a042218cb8ee51": {
+   "version": "2.1.296",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Les liens contenant des parenthèses fonctionnent désormais correctement dans les réponses Slack.",
+   "le": "2026-10-10T05:01:53Z"
+  },
+  "3aadfeec056920c5": {
+   "version": "2.1.296",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Les numéros de pull request ne sont plus interprétés à tort comme des codes couleur dans Slack.",
+   "le": "2026-10-10T05:01:53Z"
+  },
+  "d100db5ddd3dcb6d": {
+   "version": "2.1.296",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "La carte de confirmation de plugin dans Slack affiche désormais le nom du plugin au lieu de son ID.",
+   "le": "2026-10-10T05:01:53Z"
+  },
+  "c92f400639ddde68": {
+   "version": "2.1.296",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Slack explique désormais l'origine d'un plugin au lieu de proposer sa suppression si il n'est pas configuré.",
+   "le": "2026-10-10T05:01:53Z"
+  },
+  "d4e07759e9296589": {
+   "version": "2.1.296",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Les réponses dans Slack ne sont plus perdues lors d'un changement de runner en environnement auto-hébergé.",
+   "le": "2026-10-10T05:01:53Z"
+  },
+  "70c5f3a07a2c727e": {
+   "version": "2.1.296",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Le statut de la revue de code sur les pull requests affiche désormais le résultat final au lieu de rester en cours.",
+   "le": "2026-10-10T05:01:53Z"
   }
  }
 }
