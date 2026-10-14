@@ -9280,6 +9280,1224 @@
    "impact": "notable",
    "resume": "Le statut de la revue de code sur les pull requests affiche désormais le résultat final au lieu de rester en cours.",
    "le": "2026-10-10T05:01:53Z"
+  },
+  "0253c2799d41dba1": {
+   "version": "2.1.299",
+   "domaine": "hooks_config",
+   "impact": "notable",
+   "resume": "Nouvelle variable pour contrôler si Claude lit le contenu ou seulement le chemin des fichiers mentionnés avec @.",
+   "le": "2026-10-14T05:02:24Z"
+  },
+  "2f22a8caf5ffef9c": {
+   "version": "2.1.299",
+   "domaine": "performance",
+   "impact": "majeur",
+   "resume": "Compaction automatique des longues conversations inactives pour éviter de re-traiter tout l'historique à la prochaine requête.",
+   "le": "2026-10-14T05:02:24Z"
+  },
+  "392d431e0c7fc67b": {
+   "version": "2.1.299",
+   "domaine": "hooks_config",
+   "impact": "mineur",
+   "resume": "Paramètres pour ajuster le seuil de compaction inactif ou la désactiver complètement via les réglages.",
+   "le": "2026-10-14T05:02:24Z"
+  },
+  "5bc2a4c4df55f51e": {
+   "version": "2.1.299",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Les hooks de soumission de prompt peuvent désormais accéder aux données brutes des images ou documents joints.",
+   "le": "2026-10-14T05:02:24Z"
+  },
+  "14e8b8c69a318b9c": {
+   "version": "2.1.299",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Nouvelle fonction pour les mods gérés permettant de vérifier l'organisation et l'email de la session active.",
+   "le": "2026-10-14T05:02:24Z"
+  },
+  "a73399c0c5158af8": {
+   "version": "2.1.299",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Ajout de propriétés de style texte (taille, graisse, mono) et d'espacement aux composants d'interface des mods.",
+   "le": "2026-10-14T05:02:24Z"
+  },
+  "f29819cba40e4ab2": {
+   "version": "2.1.299",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Option pour le runner auto-hébergé afin de laisser le temps aux tâches en cours de se terminer avant l'arrêt.",
+   "le": "2026-10-14T05:02:24Z"
+  },
+  "c8c92d1487a12314": {
+   "version": "2.1.299",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Les hooks de compétence reçoivent désormais plus de métadonnées (source, nom du plugin, chemin du fichier).",
+   "le": "2026-10-14T05:02:24Z"
+  },
+  "7ea2f2299c724e6e": {
+   "version": "2.1.299",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Nouvelles commandes /effort et /fast dans la vue agent pour définir les paramètres de démarrage des sessions.",
+   "le": "2026-10-14T05:02:24Z"
+  },
+  "fc0785228ad0f09e": {
+   "version": "2.1.299",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Affichage d'une ligne indiquant le mode sûr dans le panneau d'aperçu des sessions en arrière-plan.",
+   "le": "2026-10-14T05:02:24Z"
+  },
+  "78bac6417f65a678": {
+   "version": "2.1.299",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Note d'avertissement affichée lorsque le mode plan ne demande pas confirmation car les permissions sont contournées.",
+   "le": "2026-10-14T05:02:24Z"
+  },
+  "f3ec260789413dca": {
+   "version": "2.1.299",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Options pour interdire l'utilisation de certains outils intégrés lors de l'évaluation des plugins.",
+   "le": "2026-10-14T05:02:24Z"
+  },
+  "43761dbf70ab6964": {
+   "version": "2.1.299",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Possibilité de désactiver le bloc d'attribution dans l'onglet Code de Claude Desktop via une variable d'environnement.",
+   "le": "2026-10-14T05:02:24Z"
+  },
+  "8d0afd5366b27bc4": {
+   "version": "2.1.299",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Ajout d'un champ d'attribution dans les sessions derrière un gateway, désactivable par variable d'environnement.",
+   "le": "2026-10-14T05:02:24Z"
+  },
+  "df7ce0f5c0462407": {
+   "version": "2.1.299",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Nouveau hook permettant aux mods de modifier les enregistrements de la file d'attente de la transcription.",
+   "le": "2026-10-14T05:02:24Z"
+  },
+  "0d863f7a0d354d41": {
+   "version": "2.1.299",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Indication dans /plugin et la validation des plugins des hooks ignorés en raison de la gestion organisationnelle.",
+   "le": "2026-10-14T05:02:24Z"
+  },
+  "f0a29550d31ad3a5": {
+   "version": "2.1.299",
+   "domaine": "modeles",
+   "impact": "notable",
+   "resume": "Avertissements dans /usage pour signaler les coûts élevés liés à l'effort maximal, aux workflows ou aux gros résultats.",
+   "le": "2026-10-14T05:02:24Z"
+  },
+  "212dfe60cc75cd20": {
+   "version": "2.1.299",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Claude dans Slack peut désormais supprimer un canvas qu'il a créé dans un canal sur demande.",
+   "le": "2026-10-14T05:02:24Z"
+  },
+  "561d89c7247567cd": {
+   "version": "2.1.299",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Refus des valeurs renvoyées par les hooks ou scripts de workflow si leur profondeur de nesting dépasse 28 000 niveaux.",
+   "le": "2026-10-14T05:02:24Z"
+  },
+  "49ca89091bc3d29f": {
+   "version": "2.1.299",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Les actions bloquées par un hook sont désormais refusées si le hook échoue, au lieu d'être laissées passer.",
+   "le": "2026-10-14T05:02:24Z"
+  },
+  "8d536c1b1d2344f7": {
+   "version": "2.1.299",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Les requêtes vers les proxys de connecteurs et serveurs MCP hébergés ne suivent plus les redirections HTTP.",
+   "le": "2026-10-14T05:02:24Z"
+  },
+  "5fc77660638628a6": {
+   "version": "2.1.299",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Les requêtes MCP dans les sessions cloud ou auto-hébergées ne suivent plus les redirections du proxy de session.",
+   "le": "2026-10-14T05:02:24Z"
+  },
+  "867eb684188b52be": {
+   "version": "2.1.299",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Les compétences ou commandes avec des caractères cachés ou de direction dans leur nom ne sont plus proposées.",
+   "le": "2026-10-14T05:02:24Z"
+  },
+  "77252928996e44b0": {
+   "version": "2.1.299",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Les arbres de rendu dans les tests de plugins incluent désormais le nom du mod, ce qui affecte les assertions exactes.",
+   "le": "2026-10-14T05:02:24Z"
+  },
+  "602b4fa89597cc26": {
+   "version": "2.1.299",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "L'effort des lectures WebFetch est désormais choisi comme pour les recherches web, selon le modèle ou les réglages.",
+   "le": "2026-10-14T05:02:24Z"
+  },
+  "9e0eda907c851688": {
+   "version": "2.1.299",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Les appels de méthodes de plugins qui ne répondent pas en dix secondes échouent désormais.",
+   "le": "2026-10-14T05:02:47Z"
+  },
+  "01e7feecd39824aa": {
+   "version": "2.1.299",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Les règles d'autorisation MCP sont plus strictes et ne s'appliquent plus aux serveurs aux noms similaires.",
+   "le": "2026-10-14T05:02:47Z"
+  },
+  "9e0f40df3af87da4": {
+   "version": "2.1.299",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Les listes d'outils des agents ne récupèrent plus que les outils du serveur MCP spécifié.",
+   "le": "2026-10-14T05:02:47Z"
+  },
+  "6bfa6e1387a97980": {
+   "version": "2.1.299",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Dans les sessions cloud, les actions sensibles demandent désormais confirmation au lieu d'être refusées.",
+   "le": "2026-10-14T05:02:47Z"
+  },
+  "55571986b83734b6": {
+   "version": "2.1.299",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "La version du protocole MCP négociée par défaut est mise à jour pour les sessions cloud.",
+   "le": "2026-10-14T05:02:47Z"
+  },
+  "d28eee5c9bc31d4b": {
+   "version": "2.1.299",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Les descriptions d'outils MCP d'Anthropic ne sont plus tronquées à 4096 caractères.",
+   "le": "2026-10-14T05:02:47Z"
+  },
+  "1356ffe63656d3e4": {
+   "version": "2.1.299",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Les hooks ne peuvent plus approuver les commandes shell ou sous-agents en mode automatique.",
+   "le": "2026-10-14T05:02:47Z"
+  },
+  "52e640b751f69ea2": {
+   "version": "2.1.299",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "La commande de reprise affiche l'ID de session pour éviter l'exécution de code via le nom.",
+   "le": "2026-10-14T05:02:47Z"
+  },
+  "867f4f60a5c5a30e": {
+   "version": "2.1.299",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "La commande de reprise s'adapte à la largeur du terminal pour les sessions worktree.",
+   "le": "2026-10-14T05:02:47Z"
+  },
+  "46ee0267b06a30b8": {
+   "version": "2.1.299",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Les questions latérales non répondues après 11 minutes renvoient une erreur de délai dépassé.",
+   "le": "2026-10-14T05:02:47Z"
+  },
+  "bad0f921f991af76": {
+   "version": "2.1.299",
+   "domaine": "hooks_config",
+   "impact": "notable",
+   "resume": "Les hooks s'exécutent avant l'expansion des commandes personnalisées pour bloquer les scripts intégrés.",
+   "le": "2026-10-14T05:02:47Z"
+  },
+  "cc5438a9c941313c": {
+   "version": "2.1.299",
+   "domaine": "hooks_config",
+   "impact": "mineur",
+   "resume": "Le hook de prompt d'une skill s'exécute sur le prompt suivant celui qui l'a invoqué.",
+   "le": "2026-10-14T05:02:47Z"
+  },
+  "fbb2a6f85e352d91": {
+   "version": "2.1.299",
+   "domaine": "hooks_config",
+   "impact": "notable",
+   "resume": "Le hook de début de tour détecte désormais aussi les tours des sous-agents et coéquipiers.",
+   "le": "2026-10-14T05:02:47Z"
+  },
+  "877805626881e908": {
+   "version": "2.1.299",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Les erreurs d'upload ne suggèrent plus de committer des fichiers non suivis comme .env.",
+   "le": "2026-10-14T05:02:47Z"
+  },
+  "973e480af1c770aa": {
+   "version": "2.1.299",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Le message de sécurité cyber ne demande plus d'appliquer au programme de vérification.",
+   "le": "2026-10-14T05:02:47Z"
+  },
+  "813900dc2128b6b2": {
+   "version": "2.1.299",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "La suppression d'un environnement auto-hébergé désactive immédiatement ses routines.",
+   "le": "2026-10-14T05:02:47Z"
+  },
+  "0e188bc402e9069b": {
+   "version": "2.1.299",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Dans Slack, Claude modifie son message en place au lieu de le barrer lors d'une correction.",
+   "le": "2026-10-14T05:02:47Z"
+  },
+  "5dfd75b4584c8fc3": {
+   "version": "2.1.299",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Claude rejoint silencieusement les canaux Slack de plus de 100 membres sans message d'intro.",
+   "le": "2026-10-14T05:02:47Z"
+  },
+  "f54206949138d6c5": {
+   "version": "2.1.299",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Correction de l'erreur de session cloud refusée qui pointait vers la mauvaise organisation.",
+   "le": "2026-10-14T05:02:47Z"
+  },
+  "80bb904268817024": {
+   "version": "2.1.299",
+   "domaine": "modeles",
+   "impact": "notable",
+   "resume": "Correction d'une erreur de compaction automatique sur les modèles via URL personnalisée.",
+   "le": "2026-10-14T05:02:47Z"
+  },
+  "e5b889538dc60470": {
+   "version": "2.1.299",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Les mods ne maintiennent plus une session active au-delà des limites de tours ou de budget.",
+   "le": "2026-10-14T05:02:47Z"
+  },
+  "c7c8a790097b7110": {
+   "version": "2.1.299",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de l'affichage du texte de suivi du modèle après l'étiquette d'outil.",
+   "le": "2026-10-14T05:02:47Z"
+  },
+  "635d5ac7625a394c": {
+   "version": "2.1.299",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Les outils d'édition demandent confirmation avant de créer des mods dans le dossier de session.",
+   "le": "2026-10-14T05:02:47Z"
+  },
+  "ac275c7e5606e353": {
+   "version": "2.1.299",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Les mods désactivés à distance se déchargent désormais entre les tours dans une session ouverte.",
+   "le": "2026-10-14T05:02:47Z"
+  },
+  "9c7c83c593c8ad82": {
+   "version": "2.1.299",
+   "domaine": "hooks_config",
+   "impact": "notable",
+   "resume": "Correction de l'échec de l'édition ou de la reprise si des hooks étaient encore en cours d'exécution.",
+   "le": "2026-10-14T05:02:47Z"
+  },
+  "df915d683c6db29e": {
+   "version": "2.1.299",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Corrige une fuite de données sensibles dans la description des tâches des agents.",
+   "le": "2026-10-14T05:03:11Z"
+  },
+  "781c4007beece306": {
+   "version": "2.1.299",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Résout le gel de l'interface web lors de l'envoi de gros volumes de données sur connexion lente.",
+   "le": "2026-10-14T05:03:11Z"
+  },
+  "b27e97ecd9f3bd01": {
+   "version": "2.1.299",
+   "domaine": "securite",
+   "impact": "majeur",
+   "resume": "Empêche les commandes sandboxées d'écrire dans les dossiers de plugins exécutés hors sandbox.",
+   "le": "2026-10-14T05:03:11Z"
+  },
+  "82a6d059f34e9c7b": {
+   "version": "2.1.299",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Corrige la croissance de la mémoire et les blocages à la sortie lors de l'activation du mode debug.",
+   "le": "2026-10-14T05:03:11Z"
+  },
+  "d2605b89ee687558": {
+   "version": "2.1.299",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Évite la surconsommation de mémoire quand la sortie de debug n'est plus lue par le processus parent.",
+   "le": "2026-10-14T05:03:11Z"
+  },
+  "fe7f70319747e900": {
+   "version": "2.1.299",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Supprime les demandes de confirmation inutiles pour les scripts shell contenant des commandes rm dynamiques.",
+   "le": "2026-10-14T05:03:11Z"
+  },
+  "2b93b2c6f05785b3": {
+   "version": "2.1.299",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Permet de sélectionner un mot par double-clic dans le transcript en mode plein écran sans replier la ligne.",
+   "le": "2026-10-14T05:03:11Z"
+  },
+  "28d66717710d5626": {
+   "version": "2.1.299",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Corrige l'erreur d'invalidité signalée pour un fichier de configuration MCP vide.",
+   "le": "2026-10-14T05:03:11Z"
+  },
+  "c2dbef1ba2b0bf9b": {
+   "version": "2.1.299",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Empêche la commande /btw de faire défiler le transcript vers le bas en mode plein écran.",
+   "le": "2026-10-14T05:03:11Z"
+  },
+  "9ecd55172f5ef627": {
+   "version": "2.1.299",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Corrige l'échec des commandes sandboxées sur WSL2 lors de l'accès aux lecteurs Windows.",
+   "le": "2026-10-14T05:03:11Z"
+  },
+  "c4baba7765a59314": {
+   "version": "2.1.299",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Assure le déclenchement des réveils planifiés même si une tâche de fond est en cours d'exécution.",
+   "le": "2026-10-14T05:03:11Z"
+  },
+  "c59e4ca0da0f6daa": {
+   "version": "2.1.299",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Corrige la perte silencieuse des réécritures de prompt par les mods lors de l'envoi d'images.",
+   "le": "2026-10-14T05:03:11Z"
+  },
+  "3d61fd3e50cb3e73": {
+   "version": "2.1.299",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Empêche la perte de prompts Remote Control si un autre prompt de la même série échoue.",
+   "le": "2026-10-14T05:03:11Z"
+  },
+  "804fa777a6211cb3": {
+   "version": "2.1.299",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Préserve l'historique des prompts Remote Control validés par les hooks lors d'une interruption.",
+   "le": "2026-10-14T05:03:11Z"
+  },
+  "05392cd5c71a0468": {
+   "version": "2.1.299",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Corrige la perte apparente des connexions et configurations MCP après une commande sandboxée sur Linux.",
+   "le": "2026-10-14T05:03:11Z"
+  },
+  "27fe11519b828cd0": {
+   "version": "2.1.299",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Affiche un message d'erreur clair si le réglage du sandbox ne peut pas être sauvegardé.",
+   "le": "2026-10-14T05:03:11Z"
+  },
+  "03763022705a2399": {
+   "version": "2.1.299",
+   "domaine": "modeles",
+   "impact": "notable",
+   "resume": "Désactive automatiquement le mode auto si le modèle sélectionné ne le supporte pas.",
+   "le": "2026-10-14T05:03:11Z"
+  },
+  "e1c4e27465ca3b94": {
+   "version": "2.1.299",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Corrige la non-connexion des serveurs MCP nommés constructor ou prototype.",
+   "le": "2026-10-14T05:03:11Z"
+  },
+  "de89c0619b5dc2bd": {
+   "version": "2.1.299",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Corrige les demandes de permissions inutiles pour les outils de serveurs MCP nommés toString.",
+   "le": "2026-10-14T05:03:11Z"
+  },
+  "9d0ab73e54acfbdc": {
+   "version": "2.1.299",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Supprime une erreur de plugin erronée au démarrage lors d'une mise à jour concurrente.",
+   "le": "2026-10-14T05:03:11Z"
+  },
+  "7e0435ff701d6078": {
+   "version": "2.1.299",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Affiche un message d'erreur précis au lieu de suggérer une nouvelle tentative en cas de refus HTTP 403.",
+   "le": "2026-10-14T05:03:11Z"
+  },
+  "fc3a2cd720f0bd90": {
+   "version": "2.1.299",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Corrige le maintien d'un ancien plugin après un rechargement ou un redémarrage des sessions cloud.",
+   "le": "2026-10-14T05:03:11Z"
+  },
+  "0e3d3b982f1467b9": {
+   "version": "2.1.299",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Empêche la suppression des blocs de documents envoyés pendant que Claude travaille.",
+   "le": "2026-10-14T05:03:11Z"
+  },
+  "f15edb0e1a3bc8c5": {
+   "version": "2.1.299",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Affiche un message clair indiquant que l'extension navigateur n'est pas connectée.",
+   "le": "2026-10-14T05:03:11Z"
+  },
+  "51518ddb194f81de": {
+   "version": "2.1.299",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Rend visible la notification de mise à jour installée en mode plein écran.",
+   "le": "2026-10-14T05:03:11Z"
+  },
+  "751229a9bf788d9a": {
+   "version": "2.1.299",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Corrige une boucle infinie dans les hooks de modules attendant une dépendance externe.",
+   "le": "2026-10-14T05:03:34Z"
+  },
+  "879a7efdbec1e977": {
+   "version": "2.1.299",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Le gateway respecte désormais les politiques de blocage de modèles en renvoyant une erreur 400.",
+   "le": "2026-10-14T05:03:34Z"
+  },
+  "8fba3684094b059a": {
+   "version": "2.1.299",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Empêche l'envoi accidentel de clés API de gateways tiers lors des requêtes de configuration.",
+   "le": "2026-10-14T05:03:34Z"
+  },
+  "9b8508943f0165e7": {
+   "version": "2.1.299",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Augmente le délai d'attente des flux via un gateway personnalisé de 180 à 300 secondes.",
+   "le": "2026-10-14T05:03:34Z"
+  },
+  "589b376c2cb217e1": {
+   "version": "2.1.299",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Assure la transmission des réponses modifiées par les hooks de modules au tour suivant.",
+   "le": "2026-10-14T05:03:34Z"
+  },
+  "550fe1084def99ec": {
+   "version": "2.1.299",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Corrige l'ignorance des fichiers de configuration listant un seul serveur MCP en chaîne simple.",
+   "le": "2026-10-14T05:03:34Z"
+  },
+  "04872f377dc7327a": {
+   "version": "2.1.299",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Corrige le gel du budget temporel des hooks de plugins lors d'appels de méthodes imbriqués.",
+   "le": "2026-10-14T05:03:34Z"
+  },
+  "8f5aad4d4359e24b": {
+   "version": "2.1.299",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Réduit la consommation de mémoire après la reprise de sessions cloud utilisant de nombreux sous-agents.",
+   "le": "2026-10-14T05:03:34Z"
+  },
+  "c99b77b8dcbb9275": {
+   "version": "2.1.299",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Corrige le saut des hooks de plugins lors du passage de données d'outils très imbriquées.",
+   "le": "2026-10-14T05:03:34Z"
+  },
+  "aa4477592424b164": {
+   "version": "2.1.299",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Limite le refus de valeurs aux clés spécifiques en cas d'erreur de getter dans les hooks de modules.",
+   "le": "2026-10-14T05:03:34Z"
+  },
+  "95719ff8d53795d2": {
+   "version": "2.1.299",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Corrige l'affichage d'une utilisation supérieure à 100 % dans les indicateurs de quota.",
+   "le": "2026-10-14T05:03:34Z"
+  },
+  "b0a7b6124fdc8cd4": {
+   "version": "2.1.299",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Corrige les problèmes d'affichage du texte mélangé CJK/emoji dans le terminal.",
+   "le": "2026-10-14T05:03:34Z"
+  },
+  "677254117e2aa0b8": {
+   "version": "2.1.299",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Corrige l'ignorance des réponses aux prompts de permission lors du remplacement du worker cloud.",
+   "le": "2026-10-14T05:03:34Z"
+  },
+  "29ac2e401b31c2db": {
+   "version": "2.1.299",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Corrige la perte des styles de texte imbriqués sur les bordures de tableaux et lignes enveloppées.",
+   "le": "2026-10-14T05:03:34Z"
+  },
+  "9970924d8e3bd0e7": {
+   "version": "2.1.299",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Synchronise immédiatement les changements de plugins entre appareils dans les sessions cloud Cowork.",
+   "le": "2026-10-14T05:03:34Z"
+  },
+  "86e248c90e723dbd": {
+   "version": "2.1.299",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Applique correctement les règles de refus pour les serveurs MCP dont le nom contient un double tiret bas.",
+   "le": "2026-10-14T05:03:34Z"
+  },
+  "d4a3ad368a828cd8": {
+   "version": "2.1.299",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Préserve les nouvelles images jointes dans les conversations longues après un refus d'image volumineuse.",
+   "le": "2026-10-14T05:03:34Z"
+  },
+  "ab78e9419d052ef9": {
+   "version": "2.1.299",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Corrige le rapport de télémétrie indiquant à tort l'absence de hooks pour certains plugins.",
+   "le": "2026-10-14T05:03:34Z"
+  },
+  "7e3dcbffe53b71fc": {
+   "version": "2.1.299",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Optimise la taille des images jointes pendant le travail pour éviter les erreurs répétées.",
+   "le": "2026-10-14T05:03:34Z"
+  },
+  "c79723f1b4bb19c9": {
+   "version": "2.1.299",
+   "domaine": "modeles",
+   "impact": "mineur",
+   "resume": "Corrige les coordonnées d'images manquantes ou inexactes pour les images quasi carrées.",
+   "le": "2026-10-14T05:03:34Z"
+  },
+  "eb42078fcfe47125": {
+   "version": "2.1.299",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Empêche l'envoi de clés API de gateways tiers lors des requêtes de fonctionnalités et profils.",
+   "le": "2026-10-14T05:03:34Z"
+  },
+  "362a1afef66b1d27": {
+   "version": "2.1.299",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Corrige le rechargement à chaud des modules ignorant les corrections sauvegardées après un échec.",
+   "le": "2026-10-14T05:03:34Z"
+  },
+  "3930f069f42195fe": {
+   "version": "2.1.299",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Autorise les modules source utilisant des fonctions importées dans leurs hooks de transmission.",
+   "le": "2026-10-14T05:03:34Z"
+  },
+  "ca965a914ff57e27": {
+   "version": "2.1.299",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Empêche l'exécution double d'outils approuvés lors de la reprise de sessions cloud ou headless.",
+   "le": "2026-10-14T05:03:34Z"
+  },
+  "e68881903d54e5f2": {
+   "version": "2.1.299",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Corrige l'annonce des tâches planifiées pour la mauvaise minute en rapportant l'heure réelle.",
+   "le": "2026-10-14T05:03:34Z"
+  },
+  "a6ac1fe6a42a0594": {
+   "version": "2.1.299",
+   "domaine": "securite",
+   "impact": "majeur",
+   "resume": "Corrige une faille de sécurité où des clés cachées pouvaient contourner les garde-fous de sécurité des outils.",
+   "le": "2026-10-14T05:04:00Z"
+  },
+  "54dd601af1ac996e": {
+   "version": "2.1.299",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Les erreurs de validation des fichiers de configuration sont désormais affichées clairement en sortie d'erreur.",
+   "le": "2026-10-14T05:04:00Z"
+  },
+  "35d2e3ed6cc82d54": {
+   "version": "2.1.299",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Corrige la perte de texte lors du collage de longs contenus dans les terminaux sans support du collage bracketé.",
+   "le": "2026-10-14T05:04:00Z"
+  },
+  "781f2a335daa9ebe": {
+   "version": "2.1.299",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Assure la récupération des paramètres gérés même si le plan de connexion a été modifié localement sur la machine.",
+   "le": "2026-10-14T05:04:00Z"
+  },
+  "288ac3b2f9f90131": {
+   "version": "2.1.299",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Évite les blocages de 30 secondes lors des connexions MCP HTTP si le serveur ne termine pas sa réponse.",
+   "le": "2026-10-14T05:04:00Z"
+  },
+  "0ceaf4c72cb3e841": {
+   "version": "2.1.299",
+   "domaine": "securite",
+   "impact": "majeur",
+   "resume": "Empêche la connexion de serveurs MCP bloqués par la politique avant que les vérifications de sécurité ne soient effectuées.",
+   "le": "2026-10-14T05:04:00Z"
+  },
+  "21701e96e9b5bb25": {
+   "version": "2.1.299",
+   "domaine": "securite",
+   "impact": "majeur",
+   "resume": "Empêche le démarrage de serveurs MCP bloqués par la politique lors de l'utilisation des commandes de liste ou de sous-agents.",
+   "le": "2026-10-14T05:04:00Z"
+  },
+  "63ec1a58ed9d975b": {
+   "version": "2.1.299",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Corrige le rechargement des plugins installés depuis un autre terminal pour qu'ils soient immédiatement disponibles.",
+   "le": "2026-10-14T05:04:00Z"
+  },
+  "b3020a9dec2d252a": {
+   "version": "2.1.299",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Corrige l'affichage de lignes vides sous les textes CJK et emojis dans les colonnes très étroites.",
+   "le": "2026-10-14T05:04:00Z"
+  },
+  "298a5611c8263c3a": {
+   "version": "2.1.299",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Corrige les coupures de texte et la disparition d'emojis lors de changements de couleur ou de caractères larges.",
+   "le": "2026-10-14T05:04:00Z"
+  },
+  "5397b7a09d2fd8e7": {
+   "version": "2.1.299",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Les notifications en mode bare indiquent désormais les bonnes commandes pour arrêter ou reprendre la session.",
+   "le": "2026-10-14T05:04:00Z"
+  },
+  "870fe21191423b8a": {
+   "version": "2.1.299",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Le bouton retour affiche désormais la raison pour laquelle il reste inactif sur un message en file d'attente.",
+   "le": "2026-10-14T05:04:00Z"
+  },
+  "de3e435322542db8": {
+   "version": "2.1.299",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Corrige le refus injustifié des réponses HTTP 304, 204 ou 205 avec une longueur de contenu supérieure à 4 Mo.",
+   "le": "2026-10-14T05:04:00Z"
+  },
+  "80e1d76482ac697f": {
+   "version": "2.1.299",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Corrige l'envoi de l'ancienne valeur au lieu de la nouvelle lors de la modification des notifications push dans les réglages.",
+   "le": "2026-10-14T05:04:00Z"
+  },
+  "58e61fa2dcefbbcc": {
+   "version": "2.1.299",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Corrige les réponses incomplètes dans les sessions cloud lorsque le travailleur est remplacé après la limite de jetons.",
+   "le": "2026-10-14T05:04:00Z"
+  },
+  "27cc118ac15d59c2": {
+   "version": "2.1.299",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Corrige l'échec de la lecture des plages de pages PDF dans les sessions distantes Linux sans privilèges élevés.",
+   "le": "2026-10-14T05:04:00Z"
+  },
+  "516dc5fbdb1411f1": {
+   "version": "2.1.299",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Corrige la réponse automatique aux prompts de permission ou de question lorsqu'un message non envoyé est en cours de saisie.",
+   "le": "2026-10-14T05:04:00Z"
+  },
+  "5bb72f869d350aec": {
+   "version": "2.1.299",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Les fichiers joints dont le téléchargement a échoué sont désormais retentés au lieu d'être ignorés dans les sessions distantes.",
+   "le": "2026-10-14T05:04:00Z"
+  },
+  "61bf508ee56f1deb": {
+   "version": "2.1.299",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Corrige la fusion incorrecte des prompts en file d'attente envoyés via le format stream-json sans saut de ligne.",
+   "le": "2026-10-14T05:04:00Z"
+  },
+  "5406d6b6e27c018c": {
+   "version": "2.1.299",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Empêche l'arrêt des serveurs MCP ajoutés via un wrapper lors des changements de connecteurs dans les sessions auto-hébergées.",
+   "le": "2026-10-14T05:04:00Z"
+  },
+  "8dbcd0f49a5a30d3": {
+   "version": "2.1.299",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Les exécutions échouées par erreur API sont désormais notées 0 et font échouer la suite de tests au lieu de passer.",
+   "le": "2026-10-14T05:04:00Z"
+  },
+  "12b5c77117880edf": {
+   "version": "2.1.299",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Corrige la coupure prématurée des prompts de permission lorsque le texte contient des emojis combinés ou des keycaps.",
+   "le": "2026-10-14T05:04:00Z"
+  },
+  "a6c6466b30dff3f4": {
+   "version": "2.1.299",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Les paramètres de connexion forcés par MDM ne sont plus masqués ou remplacés par les paramètres gérés par le serveur.",
+   "le": "2026-10-14T05:04:00Z"
+  },
+  "3475d0763093da17": {
+   "version": "2.1.299",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Corrige l'exclusion des serveurs MCP nommés 'constructor' ou 'prototype' dans les sessions en mode bare.",
+   "le": "2026-10-14T05:04:00Z"
+  },
+  "d57dea1b1ce5395a": {
+   "version": "2.1.299",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Corrige la réassociation incorrecte à la session Remote Control lors de la reprise d'une conversation après un /clear.",
+   "le": "2026-10-14T05:04:00Z"
+  },
+  "6f5e82231540cb11": {
+   "version": "2.1.299",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Corrige un bug où une invite commençant par / était exécutée comme commande slash après un redémarrage.",
+   "le": "2026-10-14T05:04:24Z"
+  },
+  "5e9a13dca9a14a08": {
+   "version": "2.1.299",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Le mode sûr reste actif lors du réveil ou du redémarrage des sessions en arrière-plan.",
+   "le": "2026-10-14T05:04:24Z"
+  },
+  "a5810114603ef6b2": {
+   "version": "2.1.299",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Les tâches planifiées ne se déclenchent plus en double ou trop tôt lors du changement d'heure.",
+   "le": "2026-10-14T05:04:24Z"
+  },
+  "6ab008867b980462": {
+   "version": "2.1.299",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "La vue de diff affiche correctement les noms de fichiers contenant des espaces en début ou fin.",
+   "le": "2026-10-14T05:04:24Z"
+  },
+  "c2cae154cd37e87d": {
+   "version": "2.1.299",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Les appels d'outils MCP en session headless ne échouent plus ni ne se dupliquent lors d'une reconnexion.",
+   "le": "2026-10-14T05:04:24Z"
+  },
+  "e1a9381e201239b7": {
+   "version": "2.1.299",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Les questions latérales /btw sont annulées à la fin de la session et ne se relancent plus en double.",
+   "le": "2026-10-14T05:04:24Z"
+  },
+  "ad1290c8cf02a487": {
+   "version": "2.1.299",
+   "domaine": "securite",
+   "impact": "majeur",
+   "resume": "Le sandbox macOS bloque désormais l'accès aux chemins refusés via des liens symboliques.",
+   "le": "2026-10-14T05:04:24Z"
+  },
+  "56f0725640c036a7": {
+   "version": "2.1.299",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Les motifs de lecture avec caractères spéciaux sont interprétés de manière cohérente par le sandbox.",
+   "le": "2026-10-14T05:04:24Z"
+  },
+  "0990b6ae52e6b9d5": {
+   "version": "2.1.299",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Les règles de lecture/écriture du sandbox sont re-vérifiées si le dossier de base devient un lien symbolique.",
+   "le": "2026-10-14T05:04:24Z"
+  },
+  "7461b57e634965aa": {
+   "version": "2.1.299",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Les sessions isolées par worktree refusent désormais certains programmes awk dangereux.",
+   "le": "2026-10-14T05:04:24Z"
+  },
+  "2834a784850129e3": {
+   "version": "2.1.299",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "L'ajout d'un serveur MCP en arrière-plan ne crée plus de session de fond indésirable.",
+   "le": "2026-10-14T05:04:24Z"
+  },
+  "dafdf90043cd8699": {
+   "version": "2.1.299",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Les messages contenant --bg ne sont plus interprétés comme des drapeaux, évitant la création de sessions.",
+   "le": "2026-10-14T05:04:24Z"
+  },
+  "f8e7298b9de3a238": {
+   "version": "2.1.299",
+   "domaine": "hooks_config",
+   "impact": "mineur",
+   "resume": "Les commandes shell intégrées aux slash commands ne s'exécutent plus deux fois lors d'une interruption.",
+   "le": "2026-10-14T05:04:24Z"
+  },
+  "60bbfa9d79e6e91e": {
+   "version": "2.1.299",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "Les sessions --worktree ne laissent plus de dossiers résiduels dans .git/worktrees avec le stockage reftable.",
+   "le": "2026-10-14T05:04:24Z"
+  },
+  "0ec357644a7c7f35": {
+   "version": "2.1.299",
+   "domaine": "autre",
+   "impact": "mineur",
+   "resume": "Les sessions self-hosted-runner ne marquent plus les fichiers suivis comme supprimés dans les clones réutilisés.",
+   "le": "2026-10-14T05:04:24Z"
+  },
+  "f8637d92db1951d3": {
+   "version": "2.1.299",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Ultracode est désormais correctement annoncé aux tâches planifiées et aux tours headless.",
+   "le": "2026-10-14T05:04:24Z"
+  },
+  "f64bc2167297212d": {
+   "version": "2.1.299",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "L'authentification OAuth MCP envoie désormais les en-têtes configurés, corrigeant les proxys d'authentification.",
+   "le": "2026-10-14T05:04:24Z"
+  },
+  "aec1a013934c46c3": {
+   "version": "2.1.299",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "L'outil Artifact ne signale plus de fausses différences lors de la republication de grandes pages HTML.",
+   "le": "2026-10-14T05:04:24Z"
+  },
+  "dcab3d2029477772": {
+   "version": "2.1.299",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "L'outil $.ui.open ne signale plus de panneaux placés dans les sessions où aucune surface ne les dessine.",
+   "le": "2026-10-14T05:04:24Z"
+  },
+  "36819ab7ef436b48": {
+   "version": "2.1.299",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Le hook agent.spawn s'exécute désormais lors de la reprise d'un sous-agent terminé ou tué, permettant de la refuser.",
+   "le": "2026-10-14T05:04:24Z"
+  },
+  "f736e70ba73bb126": {
+   "version": "2.1.299",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "claude plugin validate accepte désormais les références $.state si le contrat est dans ./types/index.d.ts.",
+   "le": "2026-10-14T05:04:24Z"
+  },
+  "e7f93392e70c1311": {
+   "version": "2.1.299",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Le texte dimColor est distinct du texte normal sous le thème ANSI sombre et sur les terminaux 16 couleurs.",
+   "le": "2026-10-14T05:04:24Z"
+  },
+  "bfd209b3ff54e5be": {
+   "version": "2.1.299",
+   "domaine": "securite",
+   "impact": "majeur",
+   "resume": "Le mode plan bloque désormais les écritures autorisées par erreur par les hooks PreToolUse ou tool.check.",
+   "le": "2026-10-14T05:04:24Z"
+  },
+  "82b93b47c060c54d": {
+   "version": "2.1.299",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Les sous-agents en arrière-plan en mode auto n'envoient plus leur rapport final deux fois.",
+   "le": "2026-10-14T05:04:24Z"
+  },
+  "69de68d53261fa8e": {
+   "version": "2.1.299",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "SendMessage retrouve les sous-agents par nom après un redémarrage, même si le nom a changé après compaction.",
+   "le": "2026-10-14T05:04:24Z"
+  },
+  "c0120fbd92a7d6ec": {
+   "version": "2.1.299",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "Corrige une coupure silencieuse des réponses en mode non-flux, garantissant désormais un retour d'erreur ou une nouvelle tentative.",
+   "le": "2026-10-14T05:04:50Z"
+  },
+  "7847076e9d8d1985": {
+   "version": "2.1.299",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Améliore la gestion des encodages exotiques (UTF-16, Windows-1252) pour éviter la corruption ou la conversion silencieuse des fichiers.",
+   "le": "2026-10-14T05:04:50Z"
+  },
+  "b93cca2c4713465c": {
+   "version": "2.1.299",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Corrige un bug où les sessions cloud perdaient une réponse si le travailleur était remplacé juste après une compaction.",
+   "le": "2026-10-14T05:04:50Z"
+  },
+  "3bb24fc9a35c55ef": {
+   "version": "2.1.299",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Empêche les sessions cloud de répondre à nouveau à un tour terminé après un redémarrage, notamment lors du chargement de compétences.",
+   "le": "2026-10-14T05:04:50Z"
+  },
+  "0f7dc897baff01b5": {
+   "version": "2.1.299",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Assure que les photos envoyées via le contrôle distant sont toujours visibles par Claude, même si leur sauvegarde locale échoue.",
+   "le": "2026-10-14T05:04:50Z"
+  },
+  "de4415ddd3c00230": {
+   "version": "2.1.299",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Corrige la perte occasionnelle de fichiers envoyés via le contrôle distant dans les sessions de longue durée.",
+   "le": "2026-10-14T05:04:50Z"
+  },
+  "419b4ba2ad00e9e7": {
+   "version": "2.1.299",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Résout le problème de non-réception des fichiers de 30 à 35 Mo envoyés via le contrôle distant ou les sessions cloud.",
+   "le": "2026-10-14T05:04:50Z"
+  },
+  "dfbd9de90925a2ce": {
+   "version": "2.1.299",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Empêche les modules utilisateur de modifier l'environnement ou le préfixe shell des hooks de commandes gérés par l'administrateur.",
+   "le": "2026-10-14T05:04:50Z"
+  },
+  "c0479c0effde45ab": {
+   "version": "2.1.299",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "Corrige la fuite de processus PowerShell orphelins sur Windows qui pouvait épuiser la mémoire vive sur les machines chargées.",
+   "le": "2026-10-14T05:04:50Z"
+  },
+  "0bc9eb11402eb18e": {
+   "version": "2.1.299",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Sur Windows, les hooks de sécurité bloquent désormais correctement les appels si Git for Windows est absent, au lieu de laisser passer.",
+   "le": "2026-10-14T05:04:50Z"
+  },
+  "4120fd0d06506e25": {
+   "version": "2.1.299",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Corrige l'erreur « command not found » persistante sur Windows lorsque Git Bash ne rapporte pas son PATH au démarrage.",
+   "le": "2026-10-14T05:04:50Z"
+  },
+  "8bb3a03ab2a57813": {
+   "version": "2.1.299",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Corrige le retard de fermeture des sessions auto-hébergées qui écrivaient une sortie avant le premier tour, en respectant le délai de retrait.",
+   "le": "2026-10-14T05:04:50Z"
+  },
+  "4ce9104736fbba58": {
+   "version": "2.1.299",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Dans VSCode, les prompts non envoyés et leurs pièces jointes ne sont plus perdus lors d'un changement de session.",
+   "le": "2026-10-14T05:04:50Z"
+  },
+  "77bec1d8b6a3dfde": {
+   "version": "2.1.299",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "Dans VSCode, les chats vides inutilisés ne maintiennent plus un processus Claude en arrière-plan après le démarrage d'une nouvelle conversation.",
+   "le": "2026-10-14T05:04:50Z"
+  },
+  "1ba6029dcf521bb9": {
+   "version": "2.1.299",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Dans VSCode, le bouton micro propose désormais de se connecter à claude.ai au lieu d'afficher une erreur interne si l'utilisateur est déconnecté.",
+   "le": "2026-10-14T05:04:50Z"
+  },
+  "2de5ca3886ab7d64": {
+   "version": "2.1.299",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "Corrige un pic de mémoire dans les sessions cloud qui pouvait provoquer un crash lors de la réenvoi simultané de nombreux fichiers de sortie.",
+   "le": "2026-10-14T05:04:50Z"
+  },
+  "10c7e1c33d067a0c": {
+   "version": "2.1.299",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Les routines modifiées dans les sessions cloud conservent désormais leur environnement d'origine, même si celui-ci a été supprimé de la liste.",
+   "le": "2026-10-14T05:04:50Z"
+  },
+  "54fdee0c7b3d6628": {
+   "version": "2.1.299",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "La recherche de sessions par ID collé fonctionne désormais correctement dans l'interface d'administration des environnements auto-hébergés.",
+   "le": "2026-10-14T05:04:50Z"
+  },
+  "dde4f31b5b3653f9": {
+   "version": "2.1.299",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Les listes de sessions et de runners affichent désormais un message de « aucun résultat » au lieu de « liste vide » lors d'une recherche sans correspondance.",
+   "le": "2026-10-14T05:04:50Z"
+  },
+  "d09d9a8558d637e0": {
+   "version": "2.1.299",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Le contrôle distant bloque l'envoi de messages si l'ordinateur cible est injoignable, au lieu de laisser croire que l'envoi a réussi.",
+   "le": "2026-10-14T05:04:50Z"
+  },
+  "930c64cf72b591d7": {
+   "version": "2.1.299",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Claude répond désormais dans Slack aux messages non étiquetés si les instructions du canal le demandent, même en présence d'invités.",
+   "le": "2026-10-14T05:04:50Z"
+  },
+  "783f7c352257176f": {
+   "version": "2.1.299",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Dans Slack, Claude informe correctement l'utilisateur si une réponse n'a pas pu être livrée dans un fil où il n'est pas membre.",
+   "le": "2026-10-14T05:04:50Z"
+  },
+  "69849979c04ad284": {
+   "version": "2.1.299",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Corrige un bug où Claude dans Slack ne postait pas sa réponse si l'image du runner auto-hébergé ne contenait pas python3.",
+   "le": "2026-10-14T05:04:50Z"
+  },
+  "b13af969a001ab8b": {
+   "version": "2.1.299",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Les liens de Code Review vers les limites de dépenses mènent désormais à la page d'utilisation plutôt qu'aux réglages de Claude Code.",
+   "le": "2026-10-14T05:04:50Z"
   }
  }
 }
