@@ -1,15 +1,16 @@
 {
   "metadata": {
-    "lastUpdated": "2026-10-14 07:00:07",
-    "latestVersion": "2.1.299",
+    "lastUpdated": "2026-10-15 07:00:07",
+    "latestVersion": "2.1.300",
     "latestDate": "October 14, 2026",
-    "totalVersions": 419,
-    "totalItems": 5311,
-    "highImpactCount": 1169,
-    "lastUpdatedUtc": "2026-10-14T05:00:07Z",
+    "totalVersions": 420,
+    "totalItems": 5340,
+    "highImpactCount": 1177,
+    "lastUpdatedUtc": "2026-10-15T05:00:07Z",
     "sourceLive": true,
     "analyseIA": {
       "versionsAnalysees": [
+        "2.1.300",
         "2.1.299",
         "2.1.296",
         "2.1.295",
@@ -27,12 +28,526 @@
         "2.1.283",
         "2.1.282"
       ],
-      "entreesAnalysees": 1442,
+      "entreesAnalysees": 1471,
       "enAttente": 0,
       "pannes": []
     }
   },
   "versions": [
+    {
+      "version": "2.1.300",
+      "date": "October 14, 2026",
+      "isoDate": "2026-10-14",
+      "yearMonth": "2026-10",
+      "yearQuarter": "2026-Q4",
+      "itemCount": 29,
+      "items": [
+        {
+          "text": "Added `virtualText` to a mod's prompt decorations: text drawn in the prompt box that never enters the draft or the submitted prompt",
+          "cleanText": "Added `virtualText` to a mod's prompt decorations: text drawn in the prompt box that never enters the draft or the submitted prompt",
+          "scope": "Core CLI",
+          "actionType": "Added",
+          "tags": [
+            "Terminal & UX"
+          ],
+          "impact": "Medium",
+          "version": "2.1.300",
+          "date": "2026-10-14",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Ajout d'un texte décoratif dans la zone de saisie qui n'est jamais envoyé au modèle."
+          }
+        },
+        {
+          "text": "Added `cache_creation_5m_tokens` and `cache_creation_1h_tokens` to the OpenTelemetry `api_request` event, splitting cache writes by lifetime",
+          "cleanText": "Added `cache_creation_5m_tokens` and `cache_creation_1h_tokens` to the OpenTelemetry `api_request` event, splitting cache writes by lifetime",
+          "scope": "Core CLI",
+          "actionType": "Added",
+          "tags": [
+            "Models & Intelligence"
+          ],
+          "impact": "High",
+          "version": "2.1.300",
+          "date": "2026-10-14",
+          "ia": {
+            "domaine": "performance",
+            "impact": "mineur",
+            "resume": "Les métriques OpenTelemetry distinguent désormais les écritures de cache selon leur durée de vie."
+          }
+        },
+        {
+          "text": "Added `$.ui.view({ agentId })` for mods: shows an agent's transcript in the main view when you ask, and `$.ui.view({})` goes back",
+          "cleanText": "Added `$.ui.view({ agentId })` for mods: shows an agent's transcript in the main view when you ask, and `$.ui.view({})` goes back",
+          "scope": "Core CLI",
+          "actionType": "Added",
+          "tags": [
+            "Multi-Agent & Workflows",
+            "Terminal & UX"
+          ],
+          "impact": "High",
+          "version": "2.1.300",
+          "date": "2026-10-14",
+          "ia": {
+            "domaine": "interface",
+            "impact": "notable",
+            "resume": "Les extensions peuvent afficher la transcription d'un agent dans la vue principale sur demande."
+          }
+        },
+        {
+          "text": "Added a `dir` prop on a mod's `Text` for right-to-left text: on Windows and in VS Code's terminal its rows read in that direction and sit flush right",
+          "cleanText": "Added a `dir` prop on a mod's `Text` for right-to-left text: on Windows and in VS Code's terminal its rows read in that direction and sit flush right",
+          "scope": "Core CLI",
+          "actionType": "Added",
+          "tags": [
+            "IDE & Cloud Ubiquity",
+            "Terminal & UX"
+          ],
+          "impact": "Medium",
+          "version": "2.1.300",
+          "date": "2026-10-14",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Support de l'affichage du texte de droite à gauche dans les composants d'interface des extensions."
+          }
+        },
+        {
+          "text": "Added `/advisor` on Claude Platform on AWS; no advisor runs until you pick one with `/advisor`, `advisorModel` or `--advisor`, and `CLAUDE_CODE_DISABLE_ADVISOR_TOOL=1` turns it off",
+          "cleanText": "Added `/advisor` on Claude Platform on AWS; no advisor runs until you pick one with `/advisor`, `advisorModel` or `--advisor`, and `CLAUDE_CODE_DISABLE_ADVISOR_TOOL=1` turns it off",
+          "scope": "Core CLI",
+          "actionType": "Added",
+          "tags": [
+            "Models & Intelligence"
+          ],
+          "impact": "High",
+          "version": "2.1.300",
+          "date": "2026-10-14",
+          "ia": {
+            "domaine": "modeles",
+            "impact": "notable",
+            "resume": "Nouvelle commande /advisor sur AWS pour choisir un modèle conseiller, désactivable par variable d'environnement."
+          }
+        },
+        {
+          "text": "Added OpenTelemetry GenAI semantic-convention attributes to trace spans, such as `gen_ai.provider.name`, `gen_ai.conversation.id`, `gen_ai.tool.name` and `error.type`",
+          "cleanText": "Added OpenTelemetry GenAI semantic-convention attributes to trace spans, such as `gen_ai.provider.name`, `gen_ai.conversation.id`, `gen_ai.tool.name` and `error.type`",
+          "scope": "Core CLI",
+          "actionType": "Added",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Medium",
+          "version": "2.1.300",
+          "date": "2026-10-14",
+          "ia": {
+            "domaine": "performance",
+            "impact": "mineur",
+            "resume": "Ajout d'attributs sémantiques GenAI aux traces OpenTelemetry pour un meilleur suivi des requêtes."
+          }
+        },
+        {
+          "text": "Added support for rewriting a workflow agent's `prompt` and `model` in the `agent.spawn` mod hook, which could only refuse workflow agents before",
+          "cleanText": "Added support for rewriting a workflow agent's `prompt` and `model` in the `agent.spawn` mod hook, which could only refuse workflow agents before",
+          "scope": "Core CLI",
+          "actionType": "Added",
+          "tags": [
+            "Multi-Agent & Workflows",
+            "Models & Intelligence",
+            "Plugins & Skills",
+            "Terminal & UX"
+          ],
+          "impact": "High",
+          "version": "2.1.300",
+          "date": "2026-10-14",
+          "ia": {
+            "domaine": "agents",
+            "impact": "notable",
+            "resume": "Les hooks peuvent désormais modifier le prompt et le modèle des agents de workflow au lieu de simplement les refuser."
+          }
+        },
+        {
+          "text": "Added the `prompt.change` mod hook, raised when the prompt box's text changes without a typed edit: a recalled history entry, a clear, an undo, or a plugin's fill",
+          "cleanText": "Added the `prompt.change` mod hook, raised when the prompt box's text changes without a typed edit: a recalled history entry, a clear, an undo, or a plugin's fill",
+          "scope": "Core CLI",
+          "actionType": "Added",
+          "tags": [
+            "Plugins & Skills",
+            "Terminal & UX"
+          ],
+          "impact": "Medium",
+          "version": "2.1.300",
+          "date": "2026-10-14",
+          "ia": {
+            "domaine": "hooks_config",
+            "impact": "mineur",
+            "resume": "Nouveau hook déclenché lors des modifications du prompt non liées à la frappe directe (historique, annulation)."
+          }
+        },
+        {
+          "text": "\\[VSCode] Added the `claudeCode.attachSelection` setting to stop text selected in the editor from being added to your messages",
+          "cleanText": "Added the `claudeCode.attachSelection` setting to stop text selected in the editor from being added to your messages",
+          "scope": "VSCode",
+          "actionType": "Added",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Medium",
+          "version": "2.1.300",
+          "date": "2026-10-14",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Option VS Code pour empêcher la sélection de texte dans l'éditeur d'être ajoutée automatiquement aux messages."
+          }
+        },
+        {
+          "text": "\\[Claude Tag] Added support for Slack Connect channels: an Owner or Claude Tag admin can let Claude in Slack answer in channels shared with another organization; it's off by default",
+          "cleanText": "Added support for Slack Connect channels: an Owner or Claude Tag admin can let Claude in Slack answer in channels shared with another organization; it's off by default",
+          "scope": "Claude Tag",
+          "actionType": "Added",
+          "tags": [
+            "IDE & Cloud Ubiquity"
+          ],
+          "impact": "High",
+          "version": "2.1.300",
+          "date": "2026-10-14",
+          "ia": {
+            "domaine": "interface",
+            "impact": "notable",
+            "resume": "Claude dans Slack peut désormais répondre dans les canaux partagés via Slack Connect, désactivé par défaut."
+          }
+        },
+        {
+          "text": "\\[Claude Tag] Added a private Allow once / Deny card in Slack threads for connector actions that need your approval, so Claude asks instead of refusing; others only see that it's waiting on you",
+          "cleanText": "Added a private Allow once / Deny card in Slack threads for connector actions that need your approval, so Claude asks instead of refusing; others only see that it's waiting on you",
+          "scope": "Claude Tag",
+          "actionType": "Added",
+          "tags": [
+            "IDE & Cloud Ubiquity"
+          ],
+          "impact": "Medium",
+          "version": "2.1.300",
+          "date": "2026-10-14",
+          "ia": {
+            "domaine": "securite",
+            "impact": "notable",
+            "resume": "Nouvelle carte d'approbation privée dans Slack pour les actions de connecteurs nécessitant une validation utilisateur."
+          }
+        },
+        {
+          "text": "\\[Claude Tag] Added support for Slack voice clips in Claude in Slack: Claude reads Slack's transcript of a clip when Slack has one",
+          "cleanText": "Added support for Slack voice clips in Claude in Slack: Claude reads Slack's transcript of a clip when Slack has one",
+          "scope": "Claude Tag",
+          "actionType": "Added",
+          "tags": [
+            "IDE & Cloud Ubiquity"
+          ],
+          "impact": "Medium",
+          "version": "2.1.300",
+          "date": "2026-10-14",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Claude dans Slack peut lire les transcriptions des clips vocaux partagés dans les canaux."
+          }
+        },
+        {
+          "text": "Changed `CLAUDE_CODE_PROVIDER_MANAGED_BY_HOST` sessions to ignore CA-bundle, tool-proxy, git TLS and git config variables like `SSL_CERT_FILE` in settings; under Claude Desktop, only in project settings",
+          "cleanText": "Changed `CLAUDE_CODE_PROVIDER_MANAGED_BY_HOST` sessions to ignore CA-bundle, tool-proxy, git TLS and git config variables like `SSL_CERT_FILE` in settings; under Claude Desktop, only in project settings",
+          "scope": "Core CLI",
+          "actionType": "Changed",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Standard",
+          "version": "2.1.300",
+          "date": "2026-10-14",
+          "ia": {
+            "domaine": "securite",
+            "impact": "mineur",
+            "resume": "Les sessions gérées par l'hôte ignorent désormais certaines variables de configuration TLS et Git pour la sécurité."
+          }
+        },
+        {
+          "text": "Changed exit to force-kill background commands still running 1.5 seconds after being asked to stop; in fullscreen mode they could previously be left running",
+          "cleanText": "Changed exit to force-kill background commands still running 1.5 seconds after being asked to stop; in fullscreen mode they could previously be left running",
+          "scope": "Core CLI",
+          "actionType": "Changed",
+          "tags": [
+            "Terminal & UX"
+          ],
+          "impact": "Standard",
+          "version": "2.1.300",
+          "date": "2026-10-14",
+          "ia": {
+            "domaine": "performance",
+            "impact": "mineur",
+            "resume": "Les commandes en arrière-plan sont désormais forcées à s'arrêter après 1,5 seconde si elles ne répondent pas."
+          }
+        },
+        {
+          "text": "Changed Claude Desktop's Code tab to apply managed settings when `forceLoginGatewayUrl` names an Anthropic-operated gateway that serves the session's hostname; that gateway must be reachable at start",
+          "cleanText": "Changed Claude Desktop's Code tab to apply managed settings when `forceLoginGatewayUrl` names an Anthropic-operated gateway that serves the session's hostname; that gateway must be reachable at start",
+          "scope": "Core CLI",
+          "actionType": "Changed",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Standard",
+          "version": "2.1.300",
+          "date": "2026-10-14",
+          "ia": {
+            "domaine": "securite",
+            "impact": "mineur",
+            "resume": "Claude Desktop applique les paramètres gérés si la passerelle nommée est opérationnelle et accessible au démarrage."
+          }
+        },
+        {
+          "text": "Changed `claude gateway` to stop at start, naming the key, on a `desktop:` policy key that Claude Desktop cannot use from a gateway, where it earlier started with a warning",
+          "cleanText": "Changed `claude gateway` to stop at start, naming the key, on a `desktop:` policy key that Claude Desktop cannot use from a gateway, where it earlier started with a warning",
+          "scope": "Core CLI",
+          "actionType": "Changed",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Standard",
+          "version": "2.1.300",
+          "date": "2026-10-14",
+          "ia": {
+            "domaine": "securite",
+            "impact": "mineur",
+            "resume": "La commande claude gateway échoue désormais au démarrage si une clé de politique incompatible est détectée."
+          }
+        },
+        {
+          "text": "Changed large requests to api.anthropic.com to use gzip compression even when telemetry is disabled; set `CLAUDE_CODE_GZIP_REQUEST_BODIES=0` to turn it off",
+          "cleanText": "Changed large requests to api.anthropic.com to use gzip compression even when telemetry is disabled; set `CLAUDE_CODE_GZIP_REQUEST_BODIES=0` to turn it off",
+          "scope": "Core CLI",
+          "actionType": "Changed",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Standard",
+          "version": "2.1.300",
+          "date": "2026-10-14",
+          "ia": {
+            "domaine": "performance",
+            "impact": "mineur",
+            "resume": "Compression gzip activée par défaut pour les grandes requêtes API, même si la télémétrie est désactivée."
+          }
+        },
+        {
+          "text": "Changed the `claude-api` skill to leave Managed Agents sessions in place unless you ask to archive or delete them",
+          "cleanText": "Changed the `claude-api` skill to leave Managed Agents sessions in place unless you ask to archive or delete them",
+          "scope": "Core CLI",
+          "actionType": "Changed",
+          "tags": [
+            "Multi-Agent & Workflows",
+            "Plugins & Skills"
+          ],
+          "impact": "Standard",
+          "version": "2.1.300",
+          "date": "2026-10-14",
+          "ia": {
+            "domaine": "agents",
+            "impact": "mineur",
+            "resume": "Les sessions d'agents gérés ne sont plus archivées automatiquement par la compétence claude-api."
+          }
+        },
+        {
+          "text": "Changed background sessions to resume a carried workflow through the Workflow tool's approval instead of running it from the handoff file",
+          "cleanText": "Changed background sessions to resume a carried workflow through the Workflow tool's approval instead of running it from the handoff file",
+          "scope": "Core CLI",
+          "actionType": "Changed",
+          "tags": [
+            "Multi-Agent & Workflows",
+            "Performance & Reliability"
+          ],
+          "impact": "High",
+          "version": "2.1.300",
+          "date": "2026-10-14",
+          "ia": {
+            "domaine": "agents",
+            "impact": "notable",
+            "resume": "Les sessions en arrière-plan reprennent les workflows via l'outil d'approbation au lieu du fichier de transfert."
+          }
+        },
+        {
+          "text": "Changed local session transcripts to also record each API request's system prompt, tools and parameters, so a transcript you choose to share can reproduce a request exactly",
+          "cleanText": "Changed local session transcripts to also record each API request's system prompt, tools and parameters, so a transcript you choose to share can reproduce a request exactly",
+          "scope": "Core CLI",
+          "actionType": "Changed",
+          "tags": [
+            "Terminal & UX"
+          ],
+          "impact": "Standard",
+          "version": "2.1.300",
+          "date": "2026-10-14",
+          "ia": {
+            "domaine": "securite",
+            "impact": "notable",
+            "resume": "Les transcriptions locales enregistrent désormais les prompts système et paramètres pour permettre la reproduction exacte."
+          }
+        },
+        {
+          "text": "Changed the `/sandbox` mode options to read \"Sandbox commands\" instead of \"Sandbox BashTool\"",
+          "cleanText": "Changed the `/sandbox` mode options to read \"Sandbox commands\" instead of \"Sandbox BashTool\"",
+          "scope": "Core CLI",
+          "actionType": "Changed",
+          "tags": [
+            "Security & Governance"
+          ],
+          "impact": "High",
+          "version": "2.1.300",
+          "date": "2026-10-14",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Renommage de l'option de mode sandbox pour plus de clarté dans l'interface."
+          }
+        },
+        {
+          "text": "Changed `PermissionRequest` hooks in Cowork cloud sessions: a `setMode` update in a hook's allow is now ignored; the rest of the approval still applies",
+          "cleanText": "Changed `PermissionRequest` hooks in Cowork cloud sessions: a `setMode` update in a hook's allow is now ignored; the rest of the approval still applies",
+          "scope": "Core CLI",
+          "actionType": "Changed",
+          "tags": [
+            "Security & Governance",
+            "Plugins & Skills"
+          ],
+          "impact": "Standard",
+          "version": "2.1.300",
+          "date": "2026-10-14",
+          "ia": {
+            "domaine": "securite",
+            "impact": "mineur",
+            "resume": "Les hooks de demande de permission dans les sessions cloud ignorent désormais les mises à jour de mode."
+          }
+        },
+        {
+          "text": "Changed hooks: `updatedInput` from PreToolUse and PermissionRequest hooks is now validated like Claude's own input: unknown keys are dropped, and input the tool rejects denies the call",
+          "cleanText": "Changed hooks: `updatedInput` from PreToolUse and PermissionRequest hooks is now validated like Claude's own input: unknown keys are dropped, and input the tool rejects denies the call",
+          "scope": "Core CLI",
+          "actionType": "Changed",
+          "tags": [
+            "Security & Governance",
+            "Plugins & Skills"
+          ],
+          "impact": "Standard",
+          "version": "2.1.300",
+          "date": "2026-10-14",
+          "ia": {
+            "domaine": "securite",
+            "impact": "notable",
+            "resume": "Les entrées modifiées par les hooks sont désormais validées strictement, rejetant les clés inconnues ou invalides."
+          }
+        },
+        {
+          "text": "Removed the `--sandbox` and `--no-sandbox` flags from `claude remote-control`, which had no effect; passing either now exits with an error. Set `sandbox.enabled` in settings to sandbox sessions",
+          "cleanText": "Removed the `--sandbox` and `--no-sandbox` flags from `claude remote-control`, which had no effect; passing either now exits with an error. Set `sandbox.enabled` in settings to sandbox sessions",
+          "scope": "Core CLI",
+          "actionType": "Removed",
+          "tags": [
+            "Security & Governance"
+          ],
+          "impact": "High",
+          "version": "2.1.300",
+          "date": "2026-10-14",
+          "ia": {
+            "domaine": "securite",
+            "impact": "mineur",
+            "resume": "Suppression des drapeaux sandbox inutiles de claude remote-control, à configurer via les réglages."
+          }
+        },
+        {
+          "text": "\\[Claude Tag] Changed access bundles an admin attached to a Slack channel to keep applying once the channel becomes a Slack Connect channel, with no need to remove and re-attach them",
+          "cleanText": "Changed access bundles an admin attached to a Slack channel to keep applying once the channel becomes a Slack Connect channel, with no need to remove and re-attach them",
+          "scope": "Claude Tag",
+          "actionType": "Changed",
+          "tags": [
+            "IDE & Cloud Ubiquity"
+          ],
+          "impact": "Medium",
+          "version": "2.1.300",
+          "date": "2026-10-14",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Les bundles d'accès administrateur restent actifs dans Slack même si le canal devient un canal Connect."
+          }
+        },
+        {
+          "text": "Improved WebFetch in Cowork cloud sessions to tell Claude that a page failed moments ago instead of fetching it again",
+          "cleanText": "Improved WebFetch in Cowork cloud sessions to tell Claude that a page failed moments ago instead of fetching it again",
+          "scope": "Core CLI",
+          "actionType": "Improved",
+          "tags": [
+            "IDE & Cloud Ubiquity"
+          ],
+          "impact": "Medium",
+          "version": "2.1.300",
+          "date": "2026-10-14",
+          "ia": {
+            "domaine": "performance",
+            "impact": "mineur",
+            "resume": "Optimisation des sessions cloud pour éviter les requêtes redondantes lors d'échecs de chargement de pages."
+          }
+        },
+        {
+          "text": "Improved mod sharing in the built-in `plugin-authoring` skill: Claude scans a mod's files for keys before opening them, and asks before scanning a folder outside the project",
+          "cleanText": "Improved mod sharing in the built-in `plugin-authoring` skill: Claude scans a mod's files for keys before opening them, and asks before scanning a folder outside the project",
+          "scope": "Core CLI",
+          "actionType": "Improved",
+          "tags": [
+            "Plugins & Skills",
+            "Terminal & UX"
+          ],
+          "impact": "Medium",
+          "version": "2.1.300",
+          "date": "2026-10-14",
+          "ia": {
+            "domaine": "securite",
+            "impact": "notable",
+            "resume": "Renforcement de la sécurité lors du partage de mods : vérification des clés avant ouverture et confirmation pour les dossiers externes."
+          }
+        },
+        {
+          "text": "Improved the note Claude 3 models get about an @-mentioned PDF, so they less often answer without reading it",
+          "cleanText": "Improved the note Claude 3 models get about an @-mentioned PDF, so they less often answer without reading it",
+          "scope": "Core CLI",
+          "actionType": "Improved",
+          "tags": [
+            "Models & Intelligence"
+          ],
+          "impact": "Medium",
+          "version": "2.1.300",
+          "date": "2026-10-14",
+          "ia": {
+            "domaine": "modeles",
+            "impact": "notable",
+            "resume": "Amélioration de la prise en compte des PDF mentionnés pour les modèles Claude 3, réduisant les réponses sans lecture."
+          }
+        },
+        {
+          "text": "Improved artifact updates: Claude now applies a small change and republishes the artifact in one call, and makes larger edits and republishes within a single response",
+          "cleanText": "Improved artifact updates: Claude now applies a small change and republishes the artifact in one call, and makes larger edits and republishes within a single response",
+          "scope": "Core CLI",
+          "actionType": "Improved",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Medium",
+          "version": "2.1.300",
+          "date": "2026-10-14",
+          "ia": {
+            "domaine": "interface",
+            "impact": "notable",
+            "resume": "Mise à jour des artefacts plus fluide : application des modifications et republication en une seule étape."
+          }
+        }
+      ]
+    },
     {
       "version": "2.1.299",
       "date": "October 14, 2026",

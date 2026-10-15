@@ -10498,6 +10498,209 @@
    "impact": "mineur",
    "resume": "Les liens de Code Review vers les limites de dépenses mènent désormais à la page d'utilisation plutôt qu'aux réglages de Claude Code.",
    "le": "2026-10-14T05:04:50Z"
+  },
+  "424772222d1ad0f7": {
+   "version": "2.1.300",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Ajout d'un texte décoratif dans la zone de saisie qui n'est jamais envoyé au modèle.",
+   "le": "2026-10-15T05:02:24Z"
+  },
+  "6772c0e185e6ecb9": {
+   "version": "2.1.300",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "Les métriques OpenTelemetry distinguent désormais les écritures de cache selon leur durée de vie.",
+   "le": "2026-10-15T05:02:24Z"
+  },
+  "62c451a6350b98de": {
+   "version": "2.1.300",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Les extensions peuvent afficher la transcription d'un agent dans la vue principale sur demande.",
+   "le": "2026-10-15T05:02:24Z"
+  },
+  "9cdeb21ec9a162f5": {
+   "version": "2.1.300",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Support de l'affichage du texte de droite à gauche dans les composants d'interface des extensions.",
+   "le": "2026-10-15T05:02:24Z"
+  },
+  "f179650c47eb80d8": {
+   "version": "2.1.300",
+   "domaine": "modeles",
+   "impact": "notable",
+   "resume": "Nouvelle commande /advisor sur AWS pour choisir un modèle conseiller, désactivable par variable d'environnement.",
+   "le": "2026-10-15T05:02:24Z"
+  },
+  "8c742d2cba74bbfc": {
+   "version": "2.1.300",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "Ajout d'attributs sémantiques GenAI aux traces OpenTelemetry pour un meilleur suivi des requêtes.",
+   "le": "2026-10-15T05:02:24Z"
+  },
+  "2dd8bc256b1fca01": {
+   "version": "2.1.300",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Les hooks peuvent désormais modifier le prompt et le modèle des agents de workflow au lieu de simplement les refuser.",
+   "le": "2026-10-15T05:02:24Z"
+  },
+  "3d37065037461128": {
+   "version": "2.1.300",
+   "domaine": "hooks_config",
+   "impact": "mineur",
+   "resume": "Nouveau hook déclenché lors des modifications du prompt non liées à la frappe directe (historique, annulation).",
+   "le": "2026-10-15T05:02:24Z"
+  },
+  "d5b52db4324fe2ab": {
+   "version": "2.1.300",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Option VS Code pour empêcher la sélection de texte dans l'éditeur d'être ajoutée automatiquement aux messages.",
+   "le": "2026-10-15T05:02:24Z"
+  },
+  "35c8fd63b9b07aac": {
+   "version": "2.1.300",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Claude dans Slack peut désormais répondre dans les canaux partagés via Slack Connect, désactivé par défaut.",
+   "le": "2026-10-15T05:02:24Z"
+  },
+  "8b590c95856a74e0": {
+   "version": "2.1.300",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Nouvelle carte d'approbation privée dans Slack pour les actions de connecteurs nécessitant une validation utilisateur.",
+   "le": "2026-10-15T05:02:24Z"
+  },
+  "95c453201093099d": {
+   "version": "2.1.300",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Claude dans Slack peut lire les transcriptions des clips vocaux partagés dans les canaux.",
+   "le": "2026-10-15T05:02:24Z"
+  },
+  "e161e57dae41cfab": {
+   "version": "2.1.300",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Les sessions gérées par l'hôte ignorent désormais certaines variables de configuration TLS et Git pour la sécurité.",
+   "le": "2026-10-15T05:02:24Z"
+  },
+  "c28c74390b01683a": {
+   "version": "2.1.300",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "Les commandes en arrière-plan sont désormais forcées à s'arrêter après 1,5 seconde si elles ne répondent pas.",
+   "le": "2026-10-15T05:02:24Z"
+  },
+  "19c82a8b1e1b51d2": {
+   "version": "2.1.300",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Claude Desktop applique les paramètres gérés si la passerelle nommée est opérationnelle et accessible au démarrage.",
+   "le": "2026-10-15T05:02:24Z"
+  },
+  "7fbde825bbfbae57": {
+   "version": "2.1.300",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "La commande claude gateway échoue désormais au démarrage si une clé de politique incompatible est détectée.",
+   "le": "2026-10-15T05:02:24Z"
+  },
+  "90ed5f09e81e2cd4": {
+   "version": "2.1.300",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "Compression gzip activée par défaut pour les grandes requêtes API, même si la télémétrie est désactivée.",
+   "le": "2026-10-15T05:02:24Z"
+  },
+  "7eb8ffa966ebb38b": {
+   "version": "2.1.300",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Les sessions d'agents gérés ne sont plus archivées automatiquement par la compétence claude-api.",
+   "le": "2026-10-15T05:02:24Z"
+  },
+  "715546bac184683e": {
+   "version": "2.1.300",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Les sessions en arrière-plan reprennent les workflows via l'outil d'approbation au lieu du fichier de transfert.",
+   "le": "2026-10-15T05:02:24Z"
+  },
+  "2ec8dd508c92974f": {
+   "version": "2.1.300",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Les transcriptions locales enregistrent désormais les prompts système et paramètres pour permettre la reproduction exacte.",
+   "le": "2026-10-15T05:02:24Z"
+  },
+  "e4c5ee341cfa8239": {
+   "version": "2.1.300",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Renommage de l'option de mode sandbox pour plus de clarté dans l'interface.",
+   "le": "2026-10-15T05:02:24Z"
+  },
+  "1286be6a8e7a2bcc": {
+   "version": "2.1.300",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Les hooks de demande de permission dans les sessions cloud ignorent désormais les mises à jour de mode.",
+   "le": "2026-10-15T05:02:24Z"
+  },
+  "64609697c8f027bf": {
+   "version": "2.1.300",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Les entrées modifiées par les hooks sont désormais validées strictement, rejetant les clés inconnues ou invalides.",
+   "le": "2026-10-15T05:02:24Z"
+  },
+  "84ab14e9e9511d37": {
+   "version": "2.1.300",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Suppression des drapeaux sandbox inutiles de claude remote-control, à configurer via les réglages.",
+   "le": "2026-10-15T05:02:24Z"
+  },
+  "5e7244870cdc0587": {
+   "version": "2.1.300",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Les bundles d'accès administrateur restent actifs dans Slack même si le canal devient un canal Connect.",
+   "le": "2026-10-15T05:02:24Z"
+  },
+  "e18c4fa3f00193b7": {
+   "version": "2.1.300",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "Optimisation des sessions cloud pour éviter les requêtes redondantes lors d'échecs de chargement de pages.",
+   "le": "2026-10-15T05:02:31Z"
+  },
+  "5dcb99112b5ba089": {
+   "version": "2.1.300",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Renforcement de la sécurité lors du partage de mods : vérification des clés avant ouverture et confirmation pour les dossiers externes.",
+   "le": "2026-10-15T05:02:31Z"
+  },
+  "b8ac48b831e54304": {
+   "version": "2.1.300",
+   "domaine": "modeles",
+   "impact": "notable",
+   "resume": "Amélioration de la prise en compte des PDF mentionnés pour les modèles Claude 3, réduisant les réponses sans lecture.",
+   "le": "2026-10-15T05:02:31Z"
+  },
+  "6c895a743da67e6a": {
+   "version": "2.1.300",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Mise à jour des artefacts plus fluide : application des modifications et republication en une seule étape.",
+   "le": "2026-10-15T05:02:31Z"
   }
  }
 }
