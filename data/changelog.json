@@ -1,15 +1,16 @@
 {
   "metadata": {
-    "lastUpdated": "2026-10-15 07:00:07",
-    "latestVersion": "2.1.300",
-    "latestDate": "October 14, 2026",
-    "totalVersions": 420,
-    "totalItems": 5340,
-    "highImpactCount": 1177,
-    "lastUpdatedUtc": "2026-10-15T05:00:07Z",
+    "lastUpdated": "2026-10-16 07:00:08",
+    "latestVersion": "2.1.301",
+    "latestDate": "October 15, 2026",
+    "totalVersions": 421,
+    "totalItems": 5354,
+    "highImpactCount": 1179,
+    "lastUpdatedUtc": "2026-10-16T05:00:08Z",
     "sourceLive": true,
     "analyseIA": {
       "versionsAnalysees": [
+        "2.1.301",
         "2.1.300",
         "2.1.299",
         "2.1.296",
@@ -28,12 +29,263 @@
         "2.1.283",
         "2.1.282"
       ],
-      "entreesAnalysees": 1471,
+      "entreesAnalysees": 1485,
       "enAttente": 0,
       "pannes": []
     }
   },
   "versions": [
+    {
+      "version": "2.1.301",
+      "date": "October 15, 2026",
+      "isoDate": "2026-10-15",
+      "yearMonth": "2026-10",
+      "yearQuarter": "2026-Q4",
+      "itemCount": 14,
+      "items": [
+        {
+          "text": "Added `CLAUDE_CODE_RETRY_WATCHDOG_MAX_USAGE_LIMIT_WAIT_MS` so unattended retry mode (`CLAUDE_CODE_RETRY_WATCHDOG`) ends a request at a usage limit that resets too far away instead of waiting",
+          "cleanText": "Added `CLAUDE_CODE_RETRY_WATCHDOG_MAX_USAGE_LIMIT_WAIT_MS` so unattended retry mode (`CLAUDE_CODE_RETRY_WATCHDOG`) ends a request at a usage limit that resets too far away instead of waiting",
+          "scope": "Core CLI",
+          "actionType": "Added",
+          "tags": [
+            "Performance & Reliability"
+          ],
+          "impact": "Medium",
+          "version": "2.1.301",
+          "date": "2026-10-15",
+          "ia": {
+            "domaine": "hooks_config",
+            "impact": "mineur",
+            "resume": "Nouvelle variable pour limiter l'attente des requêtes en mode automatique non supervisé."
+          }
+        },
+        {
+          "text": "Added OpenTelemetry tracing guidance to the `claude-api` skill, including setting up trace destinations with the `ant` CLI",
+          "cleanText": "Added OpenTelemetry tracing guidance to the `claude-api` skill, including setting up trace destinations with the `ant` CLI",
+          "scope": "Core CLI",
+          "actionType": "Added",
+          "tags": [
+            "Plugins & Skills",
+            "Terminal & UX"
+          ],
+          "impact": "Medium",
+          "version": "2.1.301",
+          "date": "2026-10-15",
+          "ia": {
+            "domaine": "mcp",
+            "impact": "mineur",
+            "resume": "Ajout de conseils pour configurer le traçage OpenTelemetry dans la compétence API."
+          }
+        },
+        {
+          "text": "Added the `%` motion to vim mode: jump to the matching bracket, alone or with d/c/y",
+          "cleanText": "Added the `%` motion to vim mode: jump to the matching bracket, alone or with d/c/y",
+          "scope": "Core CLI",
+          "actionType": "Added",
+          "tags": [
+            "Terminal & UX"
+          ],
+          "impact": "Medium",
+          "version": "2.1.301",
+          "date": "2026-10-15",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Le mouvement '%' est ajouté au mode vim pour naviguer entre les accolades."
+          }
+        },
+        {
+          "text": "Added `rows` to a mod's `Input`: a text field of several lines in the terminal, where Enter submits and Shift+Enter or a backslash before Enter starts a new line",
+          "cleanText": "Added `rows` to a mod's `Input`: a text field of several lines in the terminal, where Enter submits and Shift+Enter or a backslash before Enter starts a new line",
+          "scope": "Core CLI",
+          "actionType": "Added",
+          "tags": [
+            "Terminal & UX"
+          ],
+          "impact": "Medium",
+          "version": "2.1.301",
+          "date": "2026-10-15",
+          "ia": {
+            "domaine": "interface",
+            "impact": "notable",
+            "resume": "Les modules peuvent désormais afficher des champs de texte multi-lignes dans le terminal."
+          }
+        },
+        {
+          "text": "Added `classifier_verdict` and `permission_mode` to OpenTelemetry `tool_decision` events, so auto mode classifier decisions can be told apart from permission rules",
+          "cleanText": "Added `classifier_verdict` and `permission_mode` to OpenTelemetry `tool_decision` events, so auto mode classifier decisions can be told apart from permission rules",
+          "scope": "Core CLI",
+          "actionType": "Added",
+          "tags": [
+            "Security & Governance"
+          ],
+          "impact": "High",
+          "version": "2.1.301",
+          "date": "2026-10-15",
+          "ia": {
+            "domaine": "securite",
+            "impact": "mineur",
+            "resume": "Les événements de traçage distinguent désormais les décisions du classifieur des règles."
+          }
+        },
+        {
+          "text": "Added `classifier_category` to OpenTelemetry `tool_decision` events, naming the built-in rule a classifier block matched, when `OTEL_LOG_TOOL_DETAILS=1`",
+          "cleanText": "Added `classifier_category` to OpenTelemetry `tool_decision` events, naming the built-in rule a classifier block matched, when `OTEL_LOG_TOOL_DETAILS=1`",
+          "scope": "Core CLI",
+          "actionType": "Added",
+          "tags": [
+            "Terminal & UX"
+          ],
+          "impact": "Medium",
+          "version": "2.1.301",
+          "date": "2026-10-15",
+          "ia": {
+            "domaine": "securite",
+            "impact": "mineur",
+            "resume": "Le traçage précise la catégorie de règle bloquée par le classifieur si activé."
+          }
+        },
+        {
+          "text": "\\[VSCode] Added LaTeX math rendering in Claude's responses, including `$$` and multi-line `\\[ … \\]` blocks and inline `$…$` and `\\(…\\)` math",
+          "cleanText": "Added LaTeX math rendering in Claude's responses, including `$$` and multi-line `\\[ … \\]` blocks and inline `$…$` and `\\(…\\)` math",
+          "scope": "VSCode",
+          "actionType": "Added",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Medium",
+          "version": "2.1.301",
+          "date": "2026-10-15",
+          "ia": {
+            "domaine": "interface",
+            "impact": "notable",
+            "resume": "VS Code affiche désormais les formules mathématiques LaTeX dans les réponses."
+          }
+        },
+        {
+          "text": "\\[VSCode] Added a \"Get more usage\" link to the usage-limit banner for Pro and Max plans in the VS Code and JetBrains panels",
+          "cleanText": "Added a \"Get more usage\" link to the usage-limit banner for Pro and Max plans in the VS Code and JetBrains panels",
+          "scope": "VSCode",
+          "actionType": "Added",
+          "tags": [
+            "IDE & Cloud Ubiquity"
+          ],
+          "impact": "Medium",
+          "version": "2.1.301",
+          "date": "2026-10-15",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Un lien pour augmenter l'usage est ajouté dans le bandeau de limite VS Code."
+          }
+        },
+        {
+          "text": "Changed a mod hook's `.catch` handler to run only when the hook throws or times out; events raised beneath the hook's own calls now skip that hook without asking its `.catch`",
+          "cleanText": "Changed a mod hook's `.catch` handler to run only when the hook throws or times out; events raised beneath the hook's own calls now skip that hook without asking its `.catch`",
+          "scope": "Core CLI",
+          "actionType": "Changed",
+          "tags": [
+            "Plugins & Skills"
+          ],
+          "impact": "Standard",
+          "version": "2.1.301",
+          "date": "2026-10-15",
+          "ia": {
+            "domaine": "hooks_config",
+            "impact": "mineur",
+            "resume": "Le gestionnaire d'erreur des hooks ne s'exécute plus que sur erreur ou timeout."
+          }
+        },
+        {
+          "text": "Changed a mod's `$.env.set` to resolve with `{}` once the variable is set or unset, or with `{ deny }` saying why when the write is not made",
+          "cleanText": "Changed a mod's `$.env.set` to resolve with `{}` once the variable is set or unset, or with `{ deny }` saying why when the write is not made",
+          "scope": "Core CLI",
+          "actionType": "Changed",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Standard",
+          "version": "2.1.301",
+          "date": "2026-10-15",
+          "ia": {
+            "domaine": "hooks_config",
+            "impact": "mineur",
+            "resume": "La fonction de configuration des variables retourne désormais un statut explicite."
+          }
+        },
+        {
+          "text": "Improved switching to a model with a smaller context window: a conversation too long for the new model is now summarized by the previous model first",
+          "cleanText": "Improved switching to a model with a smaller context window: a conversation too long for the new model is now summarized by the previous model first",
+          "scope": "Core CLI",
+          "actionType": "Improved",
+          "tags": [
+            "Models & Intelligence"
+          ],
+          "impact": "Medium",
+          "version": "2.1.301",
+          "date": "2026-10-15",
+          "ia": {
+            "domaine": "modeles",
+            "impact": "notable",
+            "resume": "Le changement vers un modèle à plus petit contexte résume d'abord la conversation."
+          }
+        },
+        {
+          "text": "Improved rendering performance while a long-running subagent works: its progress trail now updates incrementally instead of being reprocessed in full on every render",
+          "cleanText": "Improved rendering performance while a long-running subagent works: its progress trail now updates incrementally instead of being reprocessed in full on every render",
+          "scope": "Core CLI",
+          "actionType": "Improved",
+          "tags": [
+            "Multi-Agent & Workflows",
+            "Performance & Reliability"
+          ],
+          "impact": "High",
+          "version": "2.1.301",
+          "date": "2026-10-15",
+          "ia": {
+            "domaine": "performance",
+            "impact": "notable",
+            "resume": "L'affichage du progrès des sous-agents est mis à jour de façon incrémentale."
+          }
+        },
+        {
+          "text": "Improved artifacts: pages Claude writes now paint the band above a sticky header, so scrolled text no longer shows there in the mobile apps",
+          "cleanText": "Improved artifacts: pages Claude writes now paint the band above a sticky header, so scrolled text no longer shows there in the mobile apps",
+          "scope": "Core CLI",
+          "actionType": "Improved",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Medium",
+          "version": "2.1.301",
+          "date": "2026-10-15",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Correction du rendu des en-têtes fixes dans les applications mobiles."
+          }
+        },
+        {
+          "text": "Improved mods: in VS Code and the desktop and mobile apps, a tree drawn above the question dialog can now hold Markdown and up to 48 rows; the terminal keeps 12 plain rows",
+          "cleanText": "Improved mods: in VS Code and the desktop and mobile apps, a tree drawn above the question dialog can now hold Markdown and up to 48 rows; the terminal keeps 12 plain rows",
+          "scope": "Core CLI",
+          "actionType": "Improved",
+          "tags": [
+            "IDE & Cloud Ubiquity",
+            "Terminal & UX"
+          ],
+          "impact": "Medium",
+          "version": "2.1.301",
+          "date": "2026-10-15",
+          "ia": {
+            "domaine": "interface",
+            "impact": "notable",
+            "resume": "Les boîtes de dialogue des modules supportent désormais le Markdown et plus de lignes."
+          }
+        }
+      ]
+    },
     {
       "version": "2.1.300",
       "date": "October 14, 2026",

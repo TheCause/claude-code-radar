@@ -10701,6 +10701,104 @@
    "impact": "notable",
    "resume": "Mise à jour des artefacts plus fluide : application des modifications et republication en une seule étape.",
    "le": "2026-10-15T05:02:31Z"
+  },
+  "cd483f9e8e99b38b": {
+   "version": "2.1.301",
+   "domaine": "hooks_config",
+   "impact": "mineur",
+   "resume": "Nouvelle variable pour limiter l'attente des requêtes en mode automatique non supervisé.",
+   "le": "2026-10-16T05:01:50Z"
+  },
+  "db15023878fd11fd": {
+   "version": "2.1.301",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Ajout de conseils pour configurer le traçage OpenTelemetry dans la compétence API.",
+   "le": "2026-10-16T05:01:50Z"
+  },
+  "b65d1b278bcdc6eb": {
+   "version": "2.1.301",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Le mouvement '%' est ajouté au mode vim pour naviguer entre les accolades.",
+   "le": "2026-10-16T05:01:50Z"
+  },
+  "e1ac5a3a73158672": {
+   "version": "2.1.301",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Les modules peuvent désormais afficher des champs de texte multi-lignes dans le terminal.",
+   "le": "2026-10-16T05:01:50Z"
+  },
+  "c6ffea52d2d86f46": {
+   "version": "2.1.301",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Les événements de traçage distinguent désormais les décisions du classifieur des règles.",
+   "le": "2026-10-16T05:01:50Z"
+  },
+  "f62f6277bf3413b1": {
+   "version": "2.1.301",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Le traçage précise la catégorie de règle bloquée par le classifieur si activé.",
+   "le": "2026-10-16T05:01:50Z"
+  },
+  "a44ea2ac40253fb8": {
+   "version": "2.1.301",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "VS Code affiche désormais les formules mathématiques LaTeX dans les réponses.",
+   "le": "2026-10-16T05:01:50Z"
+  },
+  "3d636f316d7a1908": {
+   "version": "2.1.301",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Un lien pour augmenter l'usage est ajouté dans le bandeau de limite VS Code.",
+   "le": "2026-10-16T05:01:50Z"
+  },
+  "2ff56b44946f3fda": {
+   "version": "2.1.301",
+   "domaine": "hooks_config",
+   "impact": "mineur",
+   "resume": "Le gestionnaire d'erreur des hooks ne s'exécute plus que sur erreur ou timeout.",
+   "le": "2026-10-16T05:01:50Z"
+  },
+  "82bb698656a103a8": {
+   "version": "2.1.301",
+   "domaine": "hooks_config",
+   "impact": "mineur",
+   "resume": "La fonction de configuration des variables retourne désormais un statut explicite.",
+   "le": "2026-10-16T05:01:50Z"
+  },
+  "1a945d898bc66319": {
+   "version": "2.1.301",
+   "domaine": "modeles",
+   "impact": "notable",
+   "resume": "Le changement vers un modèle à plus petit contexte résume d'abord la conversation.",
+   "le": "2026-10-16T05:01:50Z"
+  },
+  "7958691ac39667ca": {
+   "version": "2.1.301",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "L'affichage du progrès des sous-agents est mis à jour de façon incrémentale.",
+   "le": "2026-10-16T05:01:50Z"
+  },
+  "9eb544af0fe7fa81": {
+   "version": "2.1.301",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction du rendu des en-têtes fixes dans les applications mobiles.",
+   "le": "2026-10-16T05:01:50Z"
+  },
+  "1a5f36d9f324503a": {
+   "version": "2.1.301",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Les boîtes de dialogue des modules supportent désormais le Markdown et plus de lignes.",
+   "le": "2026-10-16T05:01:50Z"
   }
  }
 }
