@@ -10799,6 +10799,398 @@
    "impact": "notable",
    "resume": "Les boîtes de dialogue des modules supportent désormais le Markdown et plus de lignes.",
    "le": "2026-10-16T05:01:50Z"
+  },
+  "2ec00da289be3ace": {
+   "version": "2.1.302",
+   "domaine": "modeles",
+   "impact": "notable",
+   "resume": "Permet de choisir le modèle utilisé par le classifieur de mode automatique côté client.",
+   "le": "2026-10-17T05:02:32Z"
+  },
+  "885000efbc9fe2cf": {
+   "version": "2.1.302",
+   "domaine": "hooks_config",
+   "impact": "notable",
+   "resume": "Ajoute une option dans /config pour désactiver la compaction en veille et clarifie les notifications.",
+   "le": "2026-10-17T05:02:32Z"
+  },
+  "c55af1b24b128659": {
+   "version": "2.1.302",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Affiche un avertissement sur la fermeture de Claude Design standalone prévue pour décembre 2026.",
+   "le": "2026-10-17T05:02:32Z"
+  },
+  "fbecb74ada94347b": {
+   "version": "2.1.302",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Affiche une bannière expliquant pourquoi une routine cloud n'a pas démarré, comme une limite de sessions.",
+   "le": "2026-10-17T05:02:32Z"
+  },
+  "3b692bf51139b3f6": {
+   "version": "2.1.302",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Les sessions sans mode de permission défini démarrent désormais en mode par défaut sur les fournisseurs tiers.",
+   "le": "2026-10-17T05:02:32Z"
+  },
+  "8270707a4ff7bb2c": {
+   "version": "2.1.302",
+   "domaine": "agents",
+   "impact": "majeur",
+   "resume": "Les sous-agents de type fork sont activés par défaut dans l'API, le SDK, le bureau et VS Code.",
+   "le": "2026-10-17T05:02:32Z"
+  },
+  "ef96a418401ca6be": {
+   "version": "2.1.302",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Les sous-agents de la conversation principale s'exécutent toujours en arrière-plan dans le bureau et VS Code.",
+   "le": "2026-10-17T05:02:32Z"
+  },
+  "10c58ade2b6d1ac0": {
+   "version": "2.1.302",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "L'indice de pied de page pour les agents disparaît après 10 secondes, mais le compteur reste visible.",
+   "le": "2026-10-17T05:02:32Z"
+  },
+  "58cb4d6b0352b171": {
+   "version": "2.1.302",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Optimisation du cache de prompt pour les instructions Chrome afin d'améliorer la réutilisation des conversations.",
+   "le": "2026-10-17T05:02:32Z"
+  },
+  "ee6ee070774c4c69": {
+   "version": "2.1.302",
+   "domaine": "hooks_config",
+   "impact": "notable",
+   "resume": "Limite la concurrence des hooks de prompt et d'agent à 12 exécutions simultanées maximum.",
+   "le": "2026-10-17T05:02:32Z"
+  },
+  "835279b5604125b1": {
+   "version": "2.1.302",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Le message d'erreur de /feedback redirige désormais vers GitHub au lieu d'un administrateur organisationnel.",
+   "le": "2026-10-17T05:02:32Z"
+  },
+  "71001ae11c1ba9f2": {
+   "version": "2.1.302",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Les paramètres d'administration Claude Tag sont réorganisés en quatre onglets distincts pour plus de clarté.",
+   "le": "2026-10-17T05:02:32Z"
+  },
+  "aacd51cce759d610": {
+   "version": "2.1.302",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Les rôles des gestionnaires de canaux Claude Tag sont regroupés dans une section repliée des paramètres.",
+   "le": "2026-10-17T05:02:32Z"
+  },
+  "7457a5c9d95e848f": {
+   "version": "2.1.302",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "Corrige une erreur de longueur de prompt lors de l'arrêt d'un tour pendant la compaction.",
+   "le": "2026-10-17T05:02:32Z"
+  },
+  "702c993dc23c560e": {
+   "version": "2.1.302",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Corrige les échecs de requêtes après un changement de fournisseur vers Vertex ou Bedrock en cours de session.",
+   "le": "2026-10-17T05:02:32Z"
+  },
+  "9dc201278b5d0138": {
+   "version": "2.1.302",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Refuse le chargement en mémoire d'images ou de fichiers de plus de 128 Mo pour éviter les fuites de mémoire.",
+   "le": "2026-10-17T05:02:32Z"
+  },
+  "c1e048b735ea01d1": {
+   "version": "2.1.302",
+   "domaine": "modeles",
+   "impact": "mineur",
+   "resume": "Corrige l'enregistrement des réglages /autocompact et /effort sur le mauvais modèle via des passerelles.",
+   "le": "2026-10-17T05:02:32Z"
+  },
+  "ed03909d114afe72": {
+   "version": "2.1.302",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Corrige les manques de cache de prompt lors du rechargement d'outils ajoutés en cours de session.",
+   "le": "2026-10-17T05:02:32Z"
+  },
+  "3599ca3fa1eee097": {
+   "version": "2.1.302",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Empêche la perte de modifications de configuration lors de l'arrêt prématuré des sous-commandes plugin.",
+   "le": "2026-10-17T05:02:32Z"
+  },
+  "2be51417365a7ddc": {
+   "version": "2.1.302",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Corrige le re-clonage inutile des marketplaces et les versions inconnues des plugins git avec reftable.",
+   "le": "2026-10-17T05:02:32Z"
+  },
+  "0a6ab53800871f7b": {
+   "version": "2.1.302",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Corrige la détection des commandes dans le dossier bin des plugins et les erreurs de pipeline PowerShell.",
+   "le": "2026-10-17T05:02:32Z"
+  },
+  "9779ac8b39fc3c96": {
+   "version": "2.1.302",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Corrige les redirections erronées vers claude.ai ou /mcp pour l'autorisation des serveurs MCP dans le bureau.",
+   "le": "2026-10-17T05:02:32Z"
+  },
+  "be4858256947e27b": {
+   "version": "2.1.302",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Corrige les échecs de publication d'artefacts avec des listes de modifications vides ou des conflits de version.",
+   "le": "2026-10-17T05:02:32Z"
+  },
+  "2dd4bf3cf8678d5c": {
+   "version": "2.1.302",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Corrige les événements OpenTelemetry manquants ou tronqués pour les décisions d'outils en mode automatique.",
+   "le": "2026-10-17T05:02:32Z"
+  },
+  "2288c8f71141ea7d": {
+   "version": "2.1.302",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Corrige les lignes vides dans la vue des agents après défilement ou repli de sections.",
+   "le": "2026-10-17T05:02:32Z"
+  },
+  "97b5b2a4862ce8f5": {
+   "version": "2.1.302",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Le mode d'emploi de la commande de contrôle à distance s'affiche désormais correctement même sans connexion.",
+   "le": "2026-10-17T05:02:57Z"
+  },
+  "3bd2477c92418bb8": {
+   "version": "2.1.302",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Les messages d'erreur des commandes de consentement pointent vers le bon lien de configuration dans les sessions cloud.",
+   "le": "2026-10-17T05:02:57Z"
+  },
+  "6812bbfb4f8c3480": {
+   "version": "2.1.302",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Les serveurs MCP fonctionnent à nouveau correctement même s'ils omettent certains champs de négociation de protocole.",
+   "le": "2026-10-17T05:02:57Z"
+  },
+  "dba0f2b29ea02f14": {
+   "version": "2.1.302",
+   "domaine": "modeles",
+   "impact": "notable",
+   "resume": "Les suggestions de prompts ne consomment plus de crédits sur les modèles facturés uniquement via crédits.",
+   "le": "2026-10-17T05:02:57Z"
+  },
+  "1b17535d7a4fa57c": {
+   "version": "2.1.302",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Les URLs sur plusieurs lignes dans le terminal sont désormais entièrement cliquables.",
+   "le": "2026-10-17T05:02:57Z"
+  },
+  "c3012767fd484565": {
+   "version": "2.1.302",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "L'erreur pour les plugins intégrés non trouvés pointe désormais vers la commande /plugin au lieu de /plugin list.",
+   "le": "2026-10-17T05:02:57Z"
+  },
+  "5bc869ccfb8f7fbb": {
+   "version": "2.1.302",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Les emojis au début d'un lien ne déforment plus la mise en page des tableaux et aperçus de questions.",
+   "le": "2026-10-17T05:02:57Z"
+  },
+  "f72278f0d520b085": {
+   "version": "2.1.302",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "La création de worktrees fonctionne à nouveau avec Git 2.56+ même en présence de fichiers .git orphelins.",
+   "le": "2026-10-17T05:02:57Z"
+  },
+  "33c17627fc289669": {
+   "version": "2.1.302",
+   "domaine": "modeles",
+   "impact": "notable",
+   "resume": "Le suivi des coûts et de l'utilisation ne se réinitialise plus à zéro après la reprise d'une session cloud.",
+   "le": "2026-10-17T05:02:57Z"
+  },
+  "1408eb83c5cbc704": {
+   "version": "2.1.302",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Les récupérations Git échouant sur les références invalides dans les checkouts reftable sont corrigées pour les runners auto-hébergés.",
+   "le": "2026-10-17T05:02:57Z"
+  },
+  "17b8002c7f6e6bc4": {
+   "version": "2.1.302",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "L'écriture de fichiers est autorisée sans demande de permission sur les lecteurs exFAT ou FAT32 sous Windows.",
+   "le": "2026-10-17T05:02:57Z"
+  },
+  "227a6d7d6c1146a7": {
+   "version": "2.1.302",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Le texte après un bloc de code non fermé dans une liste s'affiche correctement pendant le streaming dans VSCode.",
+   "le": "2026-10-17T05:02:57Z"
+  },
+  "c14f1c7843ffa071": {
+   "version": "2.1.302",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "La connexion aux serveurs MCP depuis le panneau VSCode fonctionne même si l'URL contient une chaîne de requête.",
+   "le": "2026-10-17T05:02:57Z"
+  },
+  "014a30308ff6d9f0": {
+   "version": "2.1.302",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Le bandeau @browser dans VSCode n'affiche plus « Browser connected » si aucun navigateur compatible n'est détecté.",
+   "le": "2026-10-17T05:02:57Z"
+  },
+  "120d5899677f9862": {
+   "version": "2.1.302",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "La fonction « Rewind to here » fonctionne désormais sur tous les messages des sessions cloud, pas seulement le dernier.",
+   "le": "2026-10-17T05:02:57Z"
+  },
+  "8de85481deddd9c8": {
+   "version": "2.1.302",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "La barre de statut des pull requests dans les sessions cloud ne bascule plus incorrectement en « ready » lors des conflits.",
+   "le": "2026-10-17T05:02:57Z"
+  },
+  "1396af25b7033365": {
+   "version": "2.1.302",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Les exécutions de routines cloud arrêtées ou archivées avant démarrage sont désormais marquées comme échouées au lieu de complétées.",
+   "le": "2026-10-17T05:02:57Z"
+  },
+  "259453db5bc0e867": {
+   "version": "2.1.302",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "La vue des différences dans les sessions cloud charge correctement les changements même si le dépôt GitHub a été renommé.",
+   "le": "2026-10-17T05:02:57Z"
+  },
+  "33aba46e6a1acbf5": {
+   "version": "2.1.302",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Les exécutions de routines cloud échouées ne sont plus relancées automatiquement plus tard, évitant les doublons.",
+   "le": "2026-10-17T05:02:57Z"
+  },
+  "30beb2e16958e461": {
+   "version": "2.1.302",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Les messages envoyés depuis un autre appareil apparaissent désormais immédiatement dans la session cloud ouverte.",
+   "le": "2026-10-17T05:02:57Z"
+  },
+  "573cabc463b3338a": {
+   "version": "2.1.302",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Le panneau des sous-agents affiche un message de déconnexion au lieu de tourner indéfiniment si l'ordinateur passe hors ligne.",
+   "le": "2026-10-17T05:02:57Z"
+  },
+  "afda14b1ac935716": {
+   "version": "2.1.302",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "L'indicateur « is thinking… » disparaît correctement dans Slack après une réponse par édition de message.",
+   "le": "2026-10-17T05:02:57Z"
+  },
+  "40d1d025c8995308": {
+   "version": "2.1.302",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Les URLs dans les blocs de code des réponses Slack ne sont plus entourées de chevrons, permettant de copier les commandes.",
+   "le": "2026-10-17T05:02:57Z"
+  },
+  "ba66fd5da2f99817": {
+   "version": "2.1.302",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Les images HEIC, SVG, TIFF et BMP envoyées dans Slack sont désormais transmises à Claude comme des fichiers.",
+   "le": "2026-10-17T05:02:57Z"
+  },
+  "d0e913e395c4c8f3": {
+   "version": "2.1.302",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Les nouveaux gestionnaires de canal ont désormais accès à Claude dans Slack dans les organisations restreignant l'accès par rôle.",
+   "le": "2026-10-17T05:02:57Z"
+  },
+  "4ab7ec3e2f53c12d": {
+   "version": "2.1.302",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Les serveurs MCP hébergés sur le même hôte s'affichent désormais distinctement dans les paramètres d'administration.",
+   "le": "2026-10-17T05:03:05Z"
+  },
+  "aeddfa4ebf0737d6": {
+   "version": "2.1.302",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Claude dans Slack évite les erreurs de messagerie directe en relançant la requête si une recherche initiale échoue.",
+   "le": "2026-10-17T05:03:05Z"
+  },
+  "e21a2142c79e4fe2": {
+   "version": "2.1.302",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Les messages directs dans Slack Enterprise respectent désormais l'espace de travail sélectionné lors de la dernière ouverture.",
+   "le": "2026-10-17T05:03:05Z"
+  },
+  "e4f95a5731bdf1a0": {
+   "version": "2.1.302",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "L'alerte de limite de dépenses mensuelles dans Slack identifie correctement le propriétaire de l'organisation.",
+   "le": "2026-10-17T05:03:05Z"
+  },
+  "15e2dcbc730df515": {
+   "version": "2.1.302",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Les liens dans les réponses Slack ne cassent plus la mise en forme du texte qui les suit immédiatement.",
+   "le": "2026-10-17T05:03:05Z"
+  },
+  "f6eef1388333ce75": {
+   "version": "2.1.302",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "La configuration de Code Review reprend là où elle s'était arrêtée après la connexion à GitHub.",
+   "le": "2026-10-17T05:03:05Z"
   }
  }
 }

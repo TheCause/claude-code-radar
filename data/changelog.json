@@ -1,15 +1,16 @@
 {
   "metadata": {
-    "lastUpdated": "2026-10-16 07:00:08",
-    "latestVersion": "2.1.301",
-    "latestDate": "October 15, 2026",
-    "totalVersions": 421,
-    "totalItems": 5354,
-    "highImpactCount": 1179,
-    "lastUpdatedUtc": "2026-10-16T05:00:08Z",
+    "lastUpdated": "2026-10-17 07:00:08",
+    "latestVersion": "2.1.302",
+    "latestDate": "October 16, 2026",
+    "totalVersions": 422,
+    "totalItems": 5410,
+    "highImpactCount": 1191,
+    "lastUpdatedUtc": "2026-10-17T05:00:08Z",
     "sourceLive": true,
     "analyseIA": {
       "versionsAnalysees": [
+        "2.1.302",
         "2.1.301",
         "2.1.300",
         "2.1.299",
@@ -29,12 +30,992 @@
         "2.1.283",
         "2.1.282"
       ],
-      "entreesAnalysees": 1485,
+      "entreesAnalysees": 1541,
       "enAttente": 0,
       "pannes": []
     }
   },
   "versions": [
+    {
+      "version": "2.1.302",
+      "date": "October 16, 2026",
+      "isoDate": "2026-10-16",
+      "yearMonth": "2026-10",
+      "yearQuarter": "2026-Q4",
+      "itemCount": 56,
+      "items": [
+        {
+          "text": "Added `CLAUDE_CODE_AUTO_MODE_MODEL` to choose the model the client-side auto mode classifier uses; it does not change the model for server-side auto mode",
+          "cleanText": "Added `CLAUDE_CODE_AUTO_MODE_MODEL` to choose the model the client-side auto mode classifier uses; it does not change the model for server-side auto mode",
+          "scope": "Core CLI",
+          "actionType": "Added",
+          "tags": [
+            "Models & Intelligence",
+            "Security & Governance"
+          ],
+          "impact": "High",
+          "version": "2.1.302",
+          "date": "2026-10-16",
+          "ia": {
+            "domaine": "modeles",
+            "impact": "notable",
+            "resume": "Permet de choisir le modèle utilisé par le classifieur de mode automatique côté client."
+          }
+        },
+        {
+          "text": "Added an `Idle compaction` row to `/config` for turning idle compaction off or back on; the notices shown after an idle compaction now say how to turn it off",
+          "cleanText": "Added an `Idle compaction` row to `/config` for turning idle compaction off or back on; the notices shown after an idle compaction now say how to turn it off",
+          "scope": "Core CLI",
+          "actionType": "Added",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Medium",
+          "version": "2.1.302",
+          "date": "2026-10-16",
+          "ia": {
+            "domaine": "hooks_config",
+            "impact": "notable",
+            "resume": "Ajoute une option dans /config pour désactiver la compaction en veille et clarifie les notifications."
+          }
+        },
+        {
+          "text": "Added a notice to `/design-sync` and `/design-login` that standalone Claude Design (claude.ai/design) closes by December 14, 2026",
+          "cleanText": "Added a notice to `/design-sync` and `/design-login` that standalone Claude Design (claude.ai/design) closes by December 14, 2026",
+          "scope": "Core CLI",
+          "actionType": "Added",
+          "tags": [
+            "IDE & Cloud Ubiquity"
+          ],
+          "impact": "Medium",
+          "version": "2.1.302",
+          "date": "2026-10-16",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Affiche un avertissement sur la fermeture de Claude Design standalone prévue pour décembre 2026."
+          }
+        },
+        {
+          "text": "\\[Cloud sessions] Added a banner on a routine's page that says why its last run didn't start, such as your organization reaching its limit on concurrent cloud sessions",
+          "cleanText": "Added a banner on a routine's page that says why its last run didn't start, such as your organization reaching its limit on concurrent cloud sessions",
+          "scope": "Cloud sessions",
+          "actionType": "Added",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Medium",
+          "version": "2.1.302",
+          "date": "2026-10-16",
+          "ia": {
+            "domaine": "interface",
+            "impact": "notable",
+            "resume": "Affiche une bannière expliquant pourquoi une routine cloud n'a pas démarré, comme une limite de sessions."
+          }
+        },
+        {
+          "text": "Changed `claude -p` and Agent SDK sessions with no permission mode to start in `default` mode on third-party providers, with telemetry off or on a fresh install; `--permission-mode auto` keeps auto",
+          "cleanText": "Changed `claude -p` and Agent SDK sessions with no permission mode to start in `default` mode on third-party providers, with telemetry off or on a fresh install; `--permission-mode auto` keeps auto",
+          "scope": "Core CLI",
+          "actionType": "Changed",
+          "tags": [
+            "Multi-Agent & Workflows",
+            "Security & Governance"
+          ],
+          "impact": "Standard",
+          "version": "2.1.302",
+          "date": "2026-10-16",
+          "ia": {
+            "domaine": "securite",
+            "impact": "notable",
+            "resume": "Les sessions sans mode de permission défini démarrent désormais en mode par défaut sur les fournisseurs tiers."
+          }
+        },
+        {
+          "text": "Changed fork subagents (`subagent_type: \"fork\"`) to be on by default in `claude -p`, the Agent SDK, the desktop app and VS Code, as they already are in the terminal; `CLAUDE_CODE_FORK_SUBAGENT=0` turns them off, and `claude mcp serve` never offers them",
+          "cleanText": "Changed fork subagents (`subagent_type: \"fork\"`) to be on by default in `claude -p`, the Agent SDK, the desktop app and VS Code, as they already are in the terminal; `CLAUDE_CODE_FORK_SUBAGENT=0` turns them off, and `claude mcp serve` never offers them",
+          "scope": "Core CLI",
+          "actionType": "Changed",
+          "tags": [
+            "MCP & Tools",
+            "Multi-Agent & Workflows",
+            "IDE & Cloud Ubiquity",
+            "Terminal & UX"
+          ],
+          "impact": "High",
+          "version": "2.1.302",
+          "date": "2026-10-16",
+          "ia": {
+            "domaine": "agents",
+            "impact": "majeur",
+            "resume": "Les sous-agents de type fork sont activés par défaut dans l'API, le SDK, le bureau et VS Code."
+          }
+        },
+        {
+          "text": "Changed the desktop app and VS Code to always run the main conversation's subagents in the background, as the terminal does, rather than let Claude choose; a subagent's own Agent calls in `claude -p`, the Agent SDK, the desktop app and VS Code now run in the foreground by default",
+          "cleanText": "Changed the desktop app and VS Code to always run the main conversation's subagents in the background, as the terminal does, rather than let Claude choose; a subagent's own Agent calls in `claude -p`, the Agent SDK, the desktop app and VS Code now run in the foreground by default",
+          "scope": "Core CLI",
+          "actionType": "Changed",
+          "tags": [
+            "Multi-Agent & Workflows",
+            "IDE & Cloud Ubiquity",
+            "Terminal & UX"
+          ],
+          "impact": "High",
+          "version": "2.1.302",
+          "date": "2026-10-16",
+          "ia": {
+            "domaine": "agents",
+            "impact": "notable",
+            "resume": "Les sous-agents de la conversation principale s'exécutent toujours en arrière-plan dans le bureau et VS Code."
+          }
+        },
+        {
+          "text": "Changed the `← for agents` footer hint to hide 10 seconds after a session opens; the count of agents waiting on you still shows",
+          "cleanText": "Changed the `← for agents` footer hint to hide 10 seconds after a session opens; the count of agents waiting on you still shows",
+          "scope": "Core CLI",
+          "actionType": "Changed",
+          "tags": [
+            "Multi-Agent & Workflows"
+          ],
+          "impact": "Standard",
+          "version": "2.1.302",
+          "date": "2026-10-16",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "L'indice de pied de page pour les agents disparaît après 10 secondes, mais le compteur reste visible."
+          }
+        },
+        {
+          "text": "Changed where the Claude in Chrome instructions sit in the system prompt so that new conversations can read them from the shared prompt cache",
+          "cleanText": "Changed where the Claude in Chrome instructions sit in the system prompt so that new conversations can read them from the shared prompt cache",
+          "scope": "Core CLI",
+          "actionType": "Changed",
+          "tags": [
+            "Models & Intelligence",
+            "Terminal & UX"
+          ],
+          "impact": "High",
+          "version": "2.1.302",
+          "date": "2026-10-16",
+          "ia": {
+            "domaine": "performance",
+            "impact": "notable",
+            "resume": "Optimisation du cache de prompt pour les instructions Chrome afin d'améliorer la réutilisation des conversations."
+          }
+        },
+        {
+          "text": "Changed prompt and agent hooks so that at most 12 of one event run at a time; the rest wait their turn",
+          "cleanText": "Changed prompt and agent hooks so that at most 12 of one event run at a time; the rest wait their turn",
+          "scope": "Core CLI",
+          "actionType": "Changed",
+          "tags": [
+            "Multi-Agent & Workflows",
+            "Plugins & Skills",
+            "Terminal & UX"
+          ],
+          "impact": "Standard",
+          "version": "2.1.302",
+          "date": "2026-10-16",
+          "ia": {
+            "domaine": "hooks_config",
+            "impact": "notable",
+            "resume": "Limite la concurrence des hooks de prompt et d'agent à 12 exécutions simultanées maximum."
+          }
+        },
+        {
+          "text": "Changed the message shown when your organization's policy turns off `/feedback`: it now points to GitHub issues instead of an organization admin",
+          "cleanText": "Changed the message shown when your organization's policy turns off `/feedback`: it now points to GitHub issues instead of an organization admin",
+          "scope": "Core CLI",
+          "actionType": "Changed",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Standard",
+          "version": "2.1.302",
+          "date": "2026-10-16",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Le message d'erreur de /feedback redirige désormais vers GitHub au lieu d'un administrateur organisationnel."
+          }
+        },
+        {
+          "text": "\\[Claude Tag] Changed Claude Tag admin settings to organize Claude's access into four tabs: Bundles, Connectors, Skills and plugins, and Channels",
+          "cleanText": "Changed Claude Tag admin settings to organize Claude's access into four tabs: Bundles, Connectors, Skills and plugins, and Channels",
+          "scope": "Claude Tag",
+          "actionType": "Changed",
+          "tags": [
+            "IDE & Cloud Ubiquity",
+            "Plugins & Skills"
+          ],
+          "impact": "High",
+          "version": "2.1.302",
+          "date": "2026-10-16",
+          "ia": {
+            "domaine": "mcp",
+            "impact": "notable",
+            "resume": "Les paramètres d'administration Claude Tag sont réorganisés en quatre onglets distincts pour plus de clarté."
+          }
+        },
+        {
+          "text": "\\[Claude Tag] Changed the Roles page in organization settings to group the roles created for Claude Tag channel managers in a collapsed section below your organization's own roles",
+          "cleanText": "Changed the Roles page in organization settings to group the roles created for Claude Tag channel managers in a collapsed section below your organization's own roles",
+          "scope": "Claude Tag",
+          "actionType": "Changed",
+          "tags": [
+            "IDE & Cloud Ubiquity"
+          ],
+          "impact": "High",
+          "version": "2.1.302",
+          "date": "2026-10-16",
+          "ia": {
+            "domaine": "mcp",
+            "impact": "mineur",
+            "resume": "Les rôles des gestionnaires de canaux Claude Tag sont regroupés dans une section repliée des paramètres."
+          }
+        },
+        {
+          "text": "Fixed a \"Prompt is too long\" error when stopping a turn while the conversation was being compacted",
+          "cleanText": "Fixed a \"Prompt is too long\" error when stopping a turn while the conversation was being compacted",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Terminal & UX"
+          ],
+          "impact": "Standard",
+          "version": "2.1.302",
+          "date": "2026-10-16",
+          "ia": {
+            "domaine": "performance",
+            "impact": "mineur",
+            "resume": "Corrige une erreur de longueur de prompt lors de l'arrêt d'un tour pendant la compaction."
+          }
+        },
+        {
+          "text": "Fixed requests failing with \"diagnostics: Extra inputs are not permitted\" after switching to Vertex or Bedrock mid-session",
+          "cleanText": "Fixed requests failing with \"diagnostics: Extra inputs are not permitted\" after switching to Vertex or Bedrock mid-session",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Security & Governance"
+          ],
+          "impact": "Standard",
+          "version": "2.1.302",
+          "date": "2026-10-16",
+          "ia": {
+            "domaine": "securite",
+            "impact": "mineur",
+            "resume": "Corrige les échecs de requêtes après un changement de fournisseur vers Vertex ou Bedrock en cours de session."
+          }
+        },
+        {
+          "text": "Fixed the Read tool loading an image file of any size, or a pipe or device named like an image, entirely into memory; image sources over 128 MB are now refused",
+          "cleanText": "Fixed the Read tool loading an image file of any size, or a pipe or device named like an image, entirely into memory; image sources over 128 MB are now refused",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Performance & Reliability"
+          ],
+          "impact": "Standard",
+          "version": "2.1.302",
+          "date": "2026-10-16",
+          "ia": {
+            "domaine": "securite",
+            "impact": "notable",
+            "resume": "Refuse le chargement en mémoire d'images ou de fichiers de plus de 128 Mo pour éviter les fuites de mémoire."
+          }
+        },
+        {
+          "text": "Fixed `/autocompact` and `/effort` saving to the wrong model when a gateway names Opus 4 or 4.1 with a prefix, such as `anthropic/claude-opus-4-1`",
+          "cleanText": "Fixed `/autocompact` and `/effort` saving to the wrong model when a gateway names Opus 4 or 4.1 with a prefix, such as `anthropic/claude-opus-4-1`",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Models & Intelligence"
+          ],
+          "impact": "High",
+          "version": "2.1.302",
+          "date": "2026-10-16",
+          "ia": {
+            "domaine": "modeles",
+            "impact": "mineur",
+            "resume": "Corrige l'enregistrement des réglages /autocompact et /effort sur le mauvais modèle via des passerelles."
+          }
+        },
+        {
+          "text": "Fixed a prompt cache miss when a tool added mid-session was loaded again through ToolSearch or after compaction",
+          "cleanText": "Fixed a prompt cache miss when a tool added mid-session was loaded again through ToolSearch or after compaction",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Models & Intelligence",
+            "Terminal & UX"
+          ],
+          "impact": "High",
+          "version": "2.1.302",
+          "date": "2026-10-16",
+          "ia": {
+            "domaine": "performance",
+            "impact": "notable",
+            "resume": "Corrige les manques de cache de prompt lors du rechargement d'outils ajoutés en cours de session."
+          }
+        },
+        {
+          "text": "Fixed `claude plugin` and other subcommands sometimes exiting before a queued settings or config write finished, which could lose the change or leave a `.tmp` file behind",
+          "cleanText": "Fixed `claude plugin` and other subcommands sometimes exiting before a queued settings or config write finished, which could lose the change or leave a `.tmp` file behind",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Plugins & Skills"
+          ],
+          "impact": "Standard",
+          "version": "2.1.302",
+          "date": "2026-10-16",
+          "ia": {
+            "domaine": "mcp",
+            "impact": "mineur",
+            "resume": "Empêche la perte de modifications de configuration lors de l'arrêt prématuré des sous-commandes plugin."
+          }
+        },
+        {
+          "text": "Fixed plugin marketplaces re-cloning on every refresh, and newly installed git plugins showing version \"unknown\", when git defaults to the reftable ref format",
+          "cleanText": "Fixed plugin marketplaces re-cloning on every refresh, and newly installed git plugins showing version \"unknown\", when git defaults to the reftable ref format",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Plugins & Skills"
+          ],
+          "impact": "Standard",
+          "version": "2.1.302",
+          "date": "2026-10-16",
+          "ia": {
+            "domaine": "mcp",
+            "impact": "mineur",
+            "resume": "Corrige le re-clonage inutile des marketplaces et les versions inconnues des plugins git avec reftable."
+          }
+        },
+        {
+          "text": "Fixed the PowerShell tool not finding commands in a plugin's `bin/` folder, and reporting an error when a search that finds nothing (rg, grep, findstr, git grep) is piped into `Select-Object` or another formatting cmdlet",
+          "cleanText": "Fixed the PowerShell tool not finding commands in a plugin's `bin/` folder, and reporting an error when a search that finds nothing (rg, grep, findstr, git grep) is piped into `Select-Object` or another formatting cmdlet",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Plugins & Skills"
+          ],
+          "impact": "Standard",
+          "version": "2.1.302",
+          "date": "2026-10-16",
+          "ia": {
+            "domaine": "mcp",
+            "impact": "mineur",
+            "resume": "Corrige la détection des commandes dans le dossier bin des plugins et les erreurs de pipeline PowerShell."
+          }
+        },
+        {
+          "text": "Fixed Claude in the desktop app pointing you to claude.ai settings or `/mcp` to authorize or reconnect an MCP server where that option isn't available",
+          "cleanText": "Fixed Claude in the desktop app pointing you to claude.ai settings or `/mcp` to authorize or reconnect an MCP server where that option isn't available",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "MCP & Tools",
+            "IDE & Cloud Ubiquity"
+          ],
+          "impact": "Standard",
+          "version": "2.1.302",
+          "date": "2026-10-16",
+          "ia": {
+            "domaine": "mcp",
+            "impact": "mineur",
+            "resume": "Corrige les redirections erronées vers claude.ai ou /mcp pour l'autorisation des serveurs MCP dans le bureau."
+          }
+        },
+        {
+          "text": "Fixed artifact publishes sometimes failing when Claude sent an empty list of edits, and Claude retrying an artifact update the wrong way after a newer version of the artifact turned it away",
+          "cleanText": "Fixed artifact publishes sometimes failing when Claude sent an empty list of edits, and Claude retrying an artifact update the wrong way after a newer version of the artifact turned it away",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Performance & Reliability"
+          ],
+          "impact": "Standard",
+          "version": "2.1.302",
+          "date": "2026-10-16",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Corrige les échecs de publication d'artefacts avec des listes de modifications vides ou des conflits de version."
+          }
+        },
+        {
+          "text": "Fixed `classifier_category` missing from OpenTelemetry `tool_decision` events for most auto mode classifier blocks, and new `tool_decision` attributes pushing out `tool_use_id`, `tool_source` and `tool_parameters` when `OTEL_LOGRECORD_ATTRIBUTE_COUNT_LIMIT` is low",
+          "cleanText": "Fixed `classifier_category` missing from OpenTelemetry `tool_decision` events for most auto mode classifier blocks, and new `tool_decision` attributes pushing out `tool_use_id`, `tool_source` and `tool_parameters` when `OTEL_LOGRECORD_ATTRIBUTE_COUNT_LIMIT` is low",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Security & Governance"
+          ],
+          "impact": "High",
+          "version": "2.1.302",
+          "date": "2026-10-16",
+          "ia": {
+            "domaine": "securite",
+            "impact": "mineur",
+            "resume": "Corrige les événements OpenTelemetry manquants ou tronqués pour les décisions d'outils en mode automatique."
+          }
+        },
+        {
+          "text": "Fixed rows in the agents view staying blank after moving down a long list or folding a section",
+          "cleanText": "Fixed rows in the agents view staying blank after moving down a long list or folding a section",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Multi-Agent & Workflows"
+          ],
+          "impact": "Standard",
+          "version": "2.1.302",
+          "date": "2026-10-16",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Corrige les lignes vides dans la vue des agents après défilement ou repli de sections."
+          }
+        },
+        {
+          "text": "Fixed `claude remote-control --help` not printing its usage and exiting when not signed in",
+          "cleanText": "Fixed `claude remote-control --help` not printing its usage and exiting when not signed in",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Standard",
+          "version": "2.1.302",
+          "date": "2026-10-16",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Le mode d'emploi de la commande de contrôle à distance s'affiche désormais correctement même sans connexion."
+          }
+        },
+        {
+          "text": "Fixed `/design consent` and `/design revoke` suggesting `/design-login` when they fail in a cloud session, where it isn't available; the message now points to claude.ai/design/settings",
+          "cleanText": "Fixed `/design consent` and `/design revoke` suggesting `/design-login` when they fail in a cloud session, where it isn't available; the message now points to claude.ai/design/settings",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "IDE & Cloud Ubiquity"
+          ],
+          "impact": "Standard",
+          "version": "2.1.302",
+          "date": "2026-10-16",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Les messages d'erreur des commandes de consentement pointent vers le bon lien de configuration dans les sessions cloud."
+          }
+        },
+        {
+          "text": "Fixed MCP servers showing no tools, or every tool call failing, when the server negotiates protocol version 2026-07-28 but omits `resultType`, `ttlMs` or `cacheScope`",
+          "cleanText": "Fixed MCP servers showing no tools, or every tool call failing, when the server negotiates protocol version 2026-07-28 but omits `resultType`, `ttlMs` or `cacheScope`",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "MCP & Tools"
+          ],
+          "impact": "Standard",
+          "version": "2.1.302",
+          "date": "2026-10-16",
+          "ia": {
+            "domaine": "mcp",
+            "impact": "notable",
+            "resume": "Les serveurs MCP fonctionnent à nouveau correctement même s'ils omettent certains champs de négociation de protocole."
+          }
+        },
+        {
+          "text": "Fixed prompt suggestions spending usage credits on models your plan pays for only with credits: they are now skipped after a reply billed to credits",
+          "cleanText": "Fixed prompt suggestions spending usage credits on models your plan pays for only with credits: they are now skipped after a reply billed to credits",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Models & Intelligence",
+            "Terminal & UX"
+          ],
+          "impact": "Standard",
+          "version": "2.1.302",
+          "date": "2026-10-16",
+          "ia": {
+            "domaine": "modeles",
+            "impact": "notable",
+            "resume": "Les suggestions de prompts ne consomment plus de crédits sur les modèles facturés uniquement via crédits."
+          }
+        },
+        {
+          "text": "Fixed URLs written in backticks being clickable only on their first row when they wrap; the whole URL is now one link in terminals that support hyperlinks",
+          "cleanText": "Fixed URLs written in backticks being clickable only on their first row when they wrap; the whole URL is now one link in terminals that support hyperlinks",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Terminal & UX"
+          ],
+          "impact": "Standard",
+          "version": "2.1.302",
+          "date": "2026-10-16",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Les URLs sur plusieurs lignes dans le terminal sont désormais entièrement cliquables."
+          }
+        },
+        {
+          "text": "Fixed `claude plugin details <name>@builtin` suggesting `claude plugin list`, which never shows built-in plugins, when the plugin isn't found; it now points to `/plugin`",
+          "cleanText": "Fixed `claude plugin details <name>@builtin` suggesting `claude plugin list`, which never shows built-in plugins, when the plugin isn't found; it now points to `/plugin`",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Plugins & Skills",
+            "Terminal & UX"
+          ],
+          "impact": "Standard",
+          "version": "2.1.302",
+          "date": "2026-10-16",
+          "ia": {
+            "domaine": "mcp",
+            "impact": "mineur",
+            "resume": "L'erreur pour les plugins intégrés non trouvés pointe désormais vers la commande /plugin au lieu de /plugin list."
+          }
+        },
+        {
+          "text": "Fixed an emoji that a link starts inside wrapping one column too wide, which hid it in question previews and turned tables into lists",
+          "cleanText": "Fixed an emoji that a link starts inside wrapping one column too wide, which hid it in question previews and turned tables into lists",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Standard",
+          "version": "2.1.302",
+          "date": "2026-10-16",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Les emojis au début d'un lien ne déforment plus la mise en page des tableaux et aperçus de questions."
+          }
+        },
+        {
+          "text": "Fixed worktree isolation refusing to create or resume worktrees under git 2.56 or later when a stray `.git` file points at a directory that doesn't exist",
+          "cleanText": "Fixed worktree isolation refusing to create or resume worktrees under git 2.56 or later when a stray `.git` file points at a directory that doesn't exist",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Performance & Reliability"
+          ],
+          "impact": "Standard",
+          "version": "2.1.302",
+          "date": "2026-10-16",
+          "ia": {
+            "domaine": "agents",
+            "impact": "notable",
+            "resume": "La création de worktrees fonctionne à nouveau avec Git 2.56+ même en présence de fichiers .git orphelins."
+          }
+        },
+        {
+          "text": "Fixed a cloud session's cost and usage restarting from zero after the session resumed in a new process",
+          "cleanText": "Fixed a cloud session's cost and usage restarting from zero after the session resumed in a new process",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Performance & Reliability"
+          ],
+          "impact": "Standard",
+          "version": "2.1.302",
+          "date": "2026-10-16",
+          "ia": {
+            "domaine": "modeles",
+            "impact": "notable",
+            "resume": "Le suivi des coûts et de l'utilisation ne se réinitialise plus à zéro après la reprise d'une session cloud."
+          }
+        },
+        {
+          "text": "Self-hosted runner: Fixed git fetches failing with \"bad object refs/heads\" in sessions that reuse a checkout stored in git's reftable format",
+          "cleanText": "Self-hosted runner: Fixed git fetches failing with \"bad object refs/heads\" in sessions that reuse a checkout stored in git's reftable format",
+          "scope": "Core CLI",
+          "actionType": "Other",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Standard",
+          "version": "2.1.302",
+          "date": "2026-10-16",
+          "ia": {
+            "domaine": "agents",
+            "impact": "mineur",
+            "resume": "Les récupérations Git échouant sur les références invalides dans les checkouts reftable sont corrigées pour les runners auto-hébergés."
+          }
+        },
+        {
+          "text": "Windows: Fixed every file write being refused or asked about for projects on exFAT or FAT32 drives, including in sessions started with `--plugin-dir`",
+          "cleanText": "Windows: Fixed every file write being refused or asked about for projects on exFAT or FAT32 drives, including in sessions started with `--plugin-dir`",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Plugins & Skills"
+          ],
+          "impact": "Standard",
+          "version": "2.1.302",
+          "date": "2026-10-16",
+          "ia": {
+            "domaine": "securite",
+            "impact": "notable",
+            "resume": "L'écriture de fichiers est autorisée sans demande de permission sur les lecteurs exFAT ou FAT32 sous Windows."
+          }
+        },
+        {
+          "text": "\\[VSCode] Fixed text after an unclosed code block in a list showing as plain text while a reply streams, then turning into code",
+          "cleanText": "Fixed text after an unclosed code block in a list showing as plain text while a reply streams, then turning into code",
+          "scope": "VSCode",
+          "actionType": "Fixed",
+          "tags": [
+            "Performance & Reliability"
+          ],
+          "impact": "Medium",
+          "version": "2.1.302",
+          "date": "2026-10-16",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Le texte après un bloc de code non fermé dans une liste s'affiche correctement pendant le streaming dans VSCode."
+          }
+        },
+        {
+          "text": "\\[VSCode] Fixed MCP server sign-in from the panel opening a broken authorization page when the server URL contains a query string",
+          "cleanText": "Fixed MCP server sign-in from the panel opening a broken authorization page when the server URL contains a query string",
+          "scope": "VSCode",
+          "actionType": "Fixed",
+          "tags": [
+            "MCP & Tools"
+          ],
+          "impact": "Medium",
+          "version": "2.1.302",
+          "date": "2026-10-16",
+          "ia": {
+            "domaine": "mcp",
+            "impact": "notable",
+            "resume": "La connexion aux serveurs MCP depuis le panneau VSCode fonctionne même si l'URL contient une chaîne de requête."
+          }
+        },
+        {
+          "text": "\\[VSCode] Fixed the `@browser` banner saying \"Browser connected\" when no browser with the Claude extension can be reached",
+          "cleanText": "Fixed the `@browser` banner saying \"Browser connected\" when no browser with the Claude extension can be reached",
+          "scope": "VSCode",
+          "actionType": "Fixed",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Medium",
+          "version": "2.1.302",
+          "date": "2026-10-16",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Le bandeau @browser dans VSCode n'affiche plus « Browser connected » si aucun navigateur compatible n'est détecté."
+          }
+        },
+        {
+          "text": "\\[Cloud sessions] Fixed \"Rewind to here\" failing on every message except the newest in cloud sessions; self-hosted runners need Claude Code v2.1.246 or later",
+          "cleanText": "Fixed \"Rewind to here\" failing on every message except the newest in cloud sessions; self-hosted runners need Claude Code v2.1.246 or later",
+          "scope": "Cloud sessions",
+          "actionType": "Fixed",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Standard",
+          "version": "2.1.302",
+          "date": "2026-10-16",
+          "ia": {
+            "domaine": "agents",
+            "impact": "notable",
+            "resume": "La fonction « Rewind to here » fonctionne désormais sur tous les messages des sessions cloud, pas seulement le dernier."
+          }
+        },
+        {
+          "text": "\\[Cloud sessions] Fixed the pull request status bar in cloud sessions flipping a pull request with merge conflicts back to ready while GitHub rechecked it",
+          "cleanText": "Fixed the pull request status bar in cloud sessions flipping a pull request with merge conflicts back to ready while GitHub rechecked it",
+          "scope": "Cloud sessions",
+          "actionType": "Fixed",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Standard",
+          "version": "2.1.302",
+          "date": "2026-10-16",
+          "ia": {
+            "domaine": "agents",
+            "impact": "mineur",
+            "resume": "La barre de statut des pull requests dans les sessions cloud ne bascule plus incorrectement en « ready » lors des conflits."
+          }
+        },
+        {
+          "text": "\\[Cloud sessions] Fixed routine runs showing as Completed after their cloud session stopped unexpectedly, and as Cancelled when archived before they started, instead of failed",
+          "cleanText": "Fixed routine runs showing as Completed after their cloud session stopped unexpectedly, and as Cancelled when archived before they started, instead of failed",
+          "scope": "Cloud sessions",
+          "actionType": "Fixed",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Standard",
+          "version": "2.1.302",
+          "date": "2026-10-16",
+          "ia": {
+            "domaine": "agents",
+            "impact": "notable",
+            "resume": "Les exécutions de routines cloud arrêtées ou archivées avant démarrage sont désormais marquées comme échouées au lieu de complétées."
+          }
+        },
+        {
+          "text": "\\[Cloud sessions] Fixed the diff view in cloud sessions missing changes or failing to load after the session's GitHub repository was renamed or moved",
+          "cleanText": "Fixed the diff view in cloud sessions missing changes or failing to load after the session's GitHub repository was renamed or moved",
+          "scope": "Cloud sessions",
+          "actionType": "Fixed",
+          "tags": [
+            "Terminal & UX"
+          ],
+          "impact": "Standard",
+          "version": "2.1.302",
+          "date": "2026-10-16",
+          "ia": {
+            "domaine": "agents",
+            "impact": "notable",
+            "resume": "La vue des différences dans les sessions cloud charge correctement les changements même si le dépôt GitHub a été renommé."
+          }
+        },
+        {
+          "text": "\\[Cloud sessions] Fixed a scheduled routine run that failed partway being run again from the start an hour or more later, which could repeat work such as posting the same report twice",
+          "cleanText": "Fixed a scheduled routine run that failed partway being run again from the start an hour or more later, which could repeat work such as posting the same report twice",
+          "scope": "Cloud sessions",
+          "actionType": "Fixed",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Standard",
+          "version": "2.1.302",
+          "date": "2026-10-16",
+          "ia": {
+            "domaine": "agents",
+            "impact": "notable",
+            "resume": "Les exécutions de routines cloud échouées ne sont plus relancées automatiquement plus tard, évitant les doublons."
+          }
+        },
+        {
+          "text": "\\[Cloud sessions] Fixed an open cloud session sometimes not showing messages sent from another device until you reloaded the page or clicked away and back",
+          "cleanText": "Fixed an open cloud session sometimes not showing messages sent from another device until you reloaded the page or clicked away and back",
+          "scope": "Cloud sessions",
+          "actionType": "Fixed",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Standard",
+          "version": "2.1.302",
+          "date": "2026-10-16",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Les messages envoyés depuis un autre appareil apparaissent désormais immédiatement dans la session cloud ouverte."
+          }
+        },
+        {
+          "text": "\\[Remote Control] Fixed a subagent's pane spinning forever in a Remote Control session after your computer goes offline; it now says Remote Control is disconnected",
+          "cleanText": "Fixed a subagent's pane spinning forever in a Remote Control session after your computer goes offline; it now says Remote Control is disconnected",
+          "scope": "Remote Control",
+          "actionType": "Fixed",
+          "tags": [
+            "Multi-Agent & Workflows",
+            "IDE & Cloud Ubiquity"
+          ],
+          "impact": "High",
+          "version": "2.1.302",
+          "date": "2026-10-16",
+          "ia": {
+            "domaine": "agents",
+            "impact": "notable",
+            "resume": "Le panneau des sous-agents affiche un message de déconnexion au lieu de tourner indéfiniment si l'ordinateur passe hors ligne."
+          }
+        },
+        {
+          "text": "\\[Claude Tag] Fixed \"is thinking…\" staying up under a mention in a Slack channel or DM after Claude answered it by editing one of its earlier messages",
+          "cleanText": "Fixed \"is thinking…\" staying up under a mention in a Slack channel or DM after Claude answered it by editing one of its earlier messages",
+          "scope": "Claude Tag",
+          "actionType": "Fixed",
+          "tags": [
+            "Models & Intelligence",
+            "IDE & Cloud Ubiquity"
+          ],
+          "impact": "Medium",
+          "version": "2.1.302",
+          "date": "2026-10-16",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "L'indicateur « is thinking… » disparaît correctement dans Slack après une réponse par édition de message."
+          }
+        },
+        {
+          "text": "\\[Claude Tag] Fixed URLs in code blocks under a numbered or bulleted step of Claude's Slack replies being wrapped in angle brackets, which broke copied commands",
+          "cleanText": "Fixed URLs in code blocks under a numbered or bulleted step of Claude's Slack replies being wrapped in angle brackets, which broke copied commands",
+          "scope": "Claude Tag",
+          "actionType": "Fixed",
+          "tags": [
+            "IDE & Cloud Ubiquity"
+          ],
+          "impact": "Medium",
+          "version": "2.1.302",
+          "date": "2026-10-16",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Les URLs dans les blocs de code des réponses Slack ne sont plus entourées de chevrons, permettant de copier les commandes."
+          }
+        },
+        {
+          "text": "\\[Claude Tag] Fixed HEIC, SVG, TIFF and BMP images attached in Slack never reaching Claude; they now arrive as files in its working files, like other file types",
+          "cleanText": "Fixed HEIC, SVG, TIFF and BMP images attached in Slack never reaching Claude; they now arrive as files in its working files, like other file types",
+          "scope": "Claude Tag",
+          "actionType": "Fixed",
+          "tags": [
+            "IDE & Cloud Ubiquity"
+          ],
+          "impact": "Medium",
+          "version": "2.1.302",
+          "date": "2026-10-16",
+          "ia": {
+            "domaine": "interface",
+            "impact": "notable",
+            "resume": "Les images HEIC, SVG, TIFF et BMP envoyées dans Slack sont désormais transmises à Claude comme des fichiers."
+          }
+        },
+        {
+          "text": "\\[Claude Tag] Fixed new channel managers losing access to Claude in Slack in organizations that restrict Claude Tag by role; the manager role now also grants Claude Tag in Slack",
+          "cleanText": "Fixed new channel managers losing access to Claude in Slack in organizations that restrict Claude Tag by role; the manager role now also grants Claude Tag in Slack",
+          "scope": "Claude Tag",
+          "actionType": "Fixed",
+          "tags": [
+            "IDE & Cloud Ubiquity"
+          ],
+          "impact": "High",
+          "version": "2.1.302",
+          "date": "2026-10-16",
+          "ia": {
+            "domaine": "securite",
+            "impact": "notable",
+            "resume": "Les nouveaux gestionnaires de canal ont désormais accès à Claude dans Slack dans les organisations restreignant l'accès par rôle."
+          }
+        },
+        {
+          "text": "\\[Claude Tag] Fixed custom connectors whose MCP servers share one host showing as a single connector in Claude Tag admin settings; each server is now its own connector",
+          "cleanText": "Fixed custom connectors whose MCP servers share one host showing as a single connector in Claude Tag admin settings; each server is now its own connector",
+          "scope": "Claude Tag",
+          "actionType": "Fixed",
+          "tags": [
+            "MCP & Tools",
+            "IDE & Cloud Ubiquity"
+          ],
+          "impact": "High",
+          "version": "2.1.302",
+          "date": "2026-10-16",
+          "ia": {
+            "domaine": "mcp",
+            "impact": "mineur",
+            "resume": "Les serveurs MCP hébergés sur le même hôte s'affichent désormais distinctement dans les paramètres d'administration."
+          }
+        },
+        {
+          "text": "\\[Claude Tag] Fixed Claude in Slack sometimes answering a direct message with \"DMs are temporarily unavailable\" and dropping it when a single Slack lookup stalled; it now retries first",
+          "cleanText": "Fixed Claude in Slack sometimes answering a direct message with \"DMs are temporarily unavailable\" and dropping it when a single Slack lookup stalled; it now retries first",
+          "scope": "Claude Tag",
+          "actionType": "Fixed",
+          "tags": [
+            "IDE & Cloud Ubiquity"
+          ],
+          "impact": "Medium",
+          "version": "2.1.302",
+          "date": "2026-10-16",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Claude dans Slack évite les erreurs de messagerie directe en relançant la requête si une recherche initiale échoue."
+          }
+        },
+        {
+          "text": "\\[Claude Tag] Fixed direct messages with Claude on a Slack Enterprise Grid ignoring Slack's workspace dropdown; they now run under the connected workspace you last opened Claude in",
+          "cleanText": "Fixed direct messages with Claude on a Slack Enterprise Grid ignoring Slack's workspace dropdown; they now run under the connected workspace you last opened Claude in",
+          "scope": "Claude Tag",
+          "actionType": "Fixed",
+          "tags": [
+            "IDE & Cloud Ubiquity"
+          ],
+          "impact": "Medium",
+          "version": "2.1.302",
+          "date": "2026-10-16",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Les messages directs dans Slack Enterprise respectent désormais l'espace de travail sélectionné lors de la dernière ouverture."
+          }
+        },
+        {
+          "text": "\\[Claude Tag] Fixed Claude in Slack's notice for a channel's monthly spend limit saying a channel manager can raise it; it now names an organization owner and links the usage page",
+          "cleanText": "Fixed Claude in Slack's notice for a channel's monthly spend limit saying a channel manager can raise it; it now names an organization owner and links the usage page",
+          "scope": "Claude Tag",
+          "actionType": "Fixed",
+          "tags": [
+            "IDE & Cloud Ubiquity"
+          ],
+          "impact": "Medium",
+          "version": "2.1.302",
+          "date": "2026-10-16",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "L'alerte de limite de dépenses mensuelles dans Slack identifie correctement le propriétaire de l'organisation."
+          }
+        },
+        {
+          "text": "\\[Claude Tag] Fixed links in Claude's Slack replies absorbing the closing bold or italic marks, or full-width punctuation, right after them, which broke the link and the formatting",
+          "cleanText": "Fixed links in Claude's Slack replies absorbing the closing bold or italic marks, or full-width punctuation, right after them, which broke the link and the formatting",
+          "scope": "Claude Tag",
+          "actionType": "Fixed",
+          "tags": [
+            "IDE & Cloud Ubiquity"
+          ],
+          "impact": "Medium",
+          "version": "2.1.302",
+          "date": "2026-10-16",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Les liens dans les réponses Slack ne cassent plus la mise en forme du texte qui les suit immédiatement."
+          }
+        },
+        {
+          "text": "\\[Code Review] Fixed Code Review setup not resuming after you leave to connect GitHub; back in admin settings, it now reopens at the repository picker",
+          "cleanText": "Fixed Code Review setup not resuming after you leave to connect GitHub; back in admin settings, it now reopens at the repository picker",
+          "scope": "Code Review",
+          "actionType": "Fixed",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Standard",
+          "version": "2.1.302",
+          "date": "2026-10-16",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "La configuration de Code Review reprend là où elle s'était arrêtée après la connexion à GitHub."
+          }
+        }
+      ]
+    },
     {
       "version": "2.1.301",
       "date": "October 15, 2026",
