@@ -1,15 +1,16 @@
 {
   "metadata": {
-    "lastUpdated": "2026-10-18 07:00:07",
-    "latestVersion": "2.1.302",
-    "latestDate": "October 16, 2026",
-    "totalVersions": 422,
-    "totalItems": 5410,
+    "lastUpdated": "2026-10-19 07:00:07",
+    "latestVersion": "2.1.303",
+    "latestDate": "October 18, 2026",
+    "totalVersions": 423,
+    "totalItems": 5411,
     "highImpactCount": 1191,
-    "lastUpdatedUtc": "2026-10-18T05:00:07Z",
+    "lastUpdatedUtc": "2026-10-19T05:00:07Z",
     "sourceLive": true,
     "analyseIA": {
       "versionsAnalysees": [
+        "2.1.303",
         "2.1.302",
         "2.1.301",
         "2.1.300",
@@ -30,12 +31,39 @@
         "2.1.283",
         "2.1.282"
       ],
-      "entreesAnalysees": 1541,
+      "entreesAnalysees": 1542,
       "enAttente": 0,
       "pannes": []
     }
   },
   "versions": [
+    {
+      "version": "2.1.303",
+      "date": "October 18, 2026",
+      "isoDate": "2026-10-18",
+      "yearMonth": "2026-10",
+      "yearQuarter": "2026-Q4",
+      "itemCount": 1,
+      "items": [
+        {
+          "text": "Bug fixes and reliability improvements",
+          "cleanText": "Bug fixes and reliability improvements",
+          "scope": "Core CLI",
+          "actionType": "Other",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Standard",
+          "version": "2.1.303",
+          "date": "2026-10-18",
+          "ia": {
+            "domaine": "performance",
+            "impact": "mineur",
+            "resume": "Améliorations générales de la fiabilité et corrections de bugs divers."
+          }
+        }
+      ]
+    },
     {
       "version": "2.1.302",
       "date": "October 16, 2026",
@@ -30837,7 +30865,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.272",
-          "date": "2026-09-15"
+          "date": "2026-09-15",
+          "ia": {
+            "domaine": "performance",
+            "impact": "mineur",
+            "resume": "Améliorations générales de la fiabilité et corrections de bugs divers."
+          }
         }
       ]
     },
@@ -35078,7 +35111,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.263",
-          "date": "2026-09-06"
+          "date": "2026-09-06",
+          "ia": {
+            "domaine": "performance",
+            "impact": "mineur",
+            "resume": "Améliorations générales de la fiabilité et corrections de bugs divers."
+          }
         }
       ]
     },
@@ -39014,7 +39052,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.250",
-          "date": "2026-08-28"
+          "date": "2026-08-28",
+          "ia": {
+            "domaine": "performance",
+            "impact": "mineur",
+            "resume": "Améliorations générales de la fiabilité et corrections de bugs divers."
+          }
         }
       ]
     },
@@ -41110,7 +41153,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.241",
-          "date": "2026-08-23"
+          "date": "2026-08-23",
+          "ia": {
+            "domaine": "performance",
+            "impact": "mineur",
+            "resume": "Améliorations générales de la fiabilité et corrections de bugs divers."
+          }
         }
       ]
     },
@@ -41132,7 +41180,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.240",
-          "date": "2026-08-22"
+          "date": "2026-08-22",
+          "ia": {
+            "domaine": "performance",
+            "impact": "mineur",
+            "resume": "Améliorations générales de la fiabilité et corrections de bugs divers."
+          }
         }
       ]
     },
@@ -43298,7 +43351,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.226",
-          "date": "2026-08-08"
+          "date": "2026-08-08",
+          "ia": {
+            "domaine": "performance",
+            "impact": "mineur",
+            "resume": "Améliorations générales de la fiabilité et corrections de bugs divers."
+          }
         }
       ]
     },
@@ -44204,7 +44262,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.220",
-          "date": "2026-07-25"
+          "date": "2026-07-25",
+          "ia": {
+            "domaine": "performance",
+            "impact": "mineur",
+            "resume": "Améliorations générales de la fiabilité et corrections de bugs divers."
+          }
         }
       ]
     },
@@ -47608,7 +47671,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.190",
-          "date": "2026-06-24"
+          "date": "2026-06-24",
+          "ia": {
+            "domaine": "performance",
+            "impact": "mineur",
+            "resume": "Améliorations générales de la fiabilité et corrections de bugs divers."
+          }
         }
       ]
     },
@@ -48931,7 +48999,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.168",
-          "date": "2026-06-06"
+          "date": "2026-06-06",
+          "ia": {
+            "domaine": "performance",
+            "impact": "mineur",
+            "resume": "Améliorations générales de la fiabilité et corrections de bugs divers."
+          }
         }
       ]
     },
@@ -48953,7 +49026,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.167",
-          "date": "2026-06-06"
+          "date": "2026-06-06",
+          "ia": {
+            "domaine": "performance",
+            "impact": "mineur",
+            "resume": "Améliorations générales de la fiabilité et corrections de bugs divers."
+          }
         }
       ]
     },
@@ -49072,7 +49150,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.165",
-          "date": "2026-06-05"
+          "date": "2026-06-05",
+          "ia": {
+            "domaine": "performance",
+            "impact": "mineur",
+            "resume": "Améliorations générales de la fiabilité et corrections de bugs divers."
+          }
         }
       ]
     },

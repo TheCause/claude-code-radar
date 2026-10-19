@@ -1,15 +1,16 @@
 {
   "metadata": {
-    "lastUpdated": "2026-10-18 07:00:07",
-    "latestVersion": "2.1.302",
-    "latestDate": "October 16, 2026",
-    "totalVersions": 422,
-    "totalItems": 5410,
+    "lastUpdated": "2026-10-19 07:00:07",
+    "latestVersion": "2.1.303",
+    "latestDate": "October 18, 2026",
+    "totalVersions": 423,
+    "totalItems": 5411,
     "highImpactCount": 1191,
-    "lastUpdatedUtc": "2026-10-18T05:00:07Z",
+    "lastUpdatedUtc": "2026-10-19T05:00:07Z",
     "sourceLive": true,
     "analyseIA": {
       "versionsAnalysees": [
+        "2.1.303",
         "2.1.302",
         "2.1.301",
         "2.1.300",
@@ -30,23 +31,23 @@
         "2.1.283",
         "2.1.282"
       ],
-      "entreesAnalysees": 1541,
+      "entreesAnalysees": 1542,
       "enAttente": 0,
       "pannes": []
     }
   },
   "actionCounts": {
+    "Other": 986,
     "Added": 909,
     "Changed": 461,
     "Fixed": 2719,
-    "Other": 985,
     "Improved": 282,
     "Removed": 54
   },
   "tagCounts": {
+    "General Core": 1525,
     "Models & Intelligence": 616,
     "Security & Governance": 649,
-    "General Core": 1524,
     "IDE & Cloud Ubiquity": 509,
     "Multi-Agent & Workflows": 680,
     "MCP & Tools": 384,
@@ -55,7 +56,7 @@
     "Performance & Reliability": 702
   },
   "scopeCounts": {
-    "Core CLI": 4778,
+    "Core CLI": 4779,
     "Cloud sessions": 43,
     "Claude Tag": 164,
     "VSCode": 336,
@@ -213,8 +214,8 @@
     },
     {
       "month": "2026-10",
-      "releases": 14,
-      "items": 943,
+      "releases": 15,
+      "items": 944,
       "added": 109,
       "fixed": 689,
       "improved": 11

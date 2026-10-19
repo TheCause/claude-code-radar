@@ -11191,6 +11191,13 @@
    "impact": "mineur",
    "resume": "La configuration de Code Review reprend là où elle s'était arrêtée après la connexion à GitHub.",
    "le": "2026-10-17T05:03:05Z"
+  },
+  "692e42432d2bf3f6": {
+   "version": "2.1.303",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "Améliorations générales de la fiabilité et corrections de bugs divers.",
+   "le": "2026-10-19T05:01:34Z"
   }
  }
 }
