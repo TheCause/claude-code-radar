@@ -11198,6 +11198,454 @@
    "impact": "mineur",
    "resume": "Améliorations générales de la fiabilité et corrections de bugs divers.",
    "le": "2026-10-19T05:01:34Z"
+  },
+  "9f9a455ae359bbd6": {
+   "version": "2.1.304",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Le journal affiche désormais le nom du plugin et de l'événement lorsqu'un hook est ignoré.",
+   "le": "2026-10-20T05:00:42Z"
+  },
+  "f0410913325796b9": {
+   "version": "2.1.304",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Une option permet de restreindre l'approbation des outils aux dialogues ou callbacks, refusant sinon.",
+   "le": "2026-10-20T05:00:42Z"
+  },
+  "13f9c416fbe7b6e4": {
+   "version": "2.1.304",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "L'événement de vérification d'outil indique désormais si l'appel est en lecture seule.",
+   "le": "2026-10-20T05:00:42Z"
+  },
+  "878accd988c74883": {
+   "version": "2.1.304",
+   "domaine": "securite",
+   "impact": "majeur",
+   "resume": "Nouvelle commande guidée pour configurer le mode auto, disponible sur Bedrock, Vertex et Foundry.",
+   "le": "2026-10-20T05:00:42Z"
+  },
+  "c3fbb64ea8f3dfbf": {
+   "version": "2.1.304",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Nouvelle commande pour comparer les réglages des agents gérés avec le guide de sécurité Anthropic.",
+   "le": "2026-10-20T05:00:42Z"
+  },
+  "4b5af2bb02d53b41": {
+   "version": "2.1.304",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "La vue de transcript inclut désormais les noms des outils appelés dans le résumé de compaction.",
+   "le": "2026-10-20T05:00:42Z"
+  },
+  "8412ebb270ed89a1": {
+   "version": "2.1.304",
+   "domaine": "modeles",
+   "impact": "notable",
+   "resume": "Avertissement sur les plans Pro/Max si la reprise d'une conversation consomme une part importante du quota.",
+   "le": "2026-10-20T05:00:42Z"
+  },
+  "cf74386ddfb97c47": {
+   "version": "2.1.304",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Le rendu des mods est désormais disponible dans le panneau de chat VSCode pour les sessions Bedrock, Vertex et Foundry.",
+   "le": "2026-10-20T05:00:42Z"
+  },
+  "02f3f64958486d89": {
+   "version": "2.1.304",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Code Review propose désormais des niveaux de revue (Quick, Standard, Deep) configurables par organisation ou dépôt.",
+   "le": "2026-10-20T05:00:42Z"
+  },
+  "4b1cd49d9238c327": {
+   "version": "2.1.304",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Option pour appliquer la revue Code Review à tous les dépôts d'une organisation GitHub, y compris les futurs.",
+   "le": "2026-10-20T05:00:42Z"
+  },
+  "c85f78aeccb155eb": {
+   "version": "2.1.304",
+   "domaine": "hooks_config",
+   "impact": "notable",
+   "resume": "Les hooks de lecture des réglages reçoivent chaque couche et réécrivent les réglages fusionnés.",
+   "le": "2026-10-20T05:00:42Z"
+  },
+  "a5e53d50d8239a61": {
+   "version": "2.1.304",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "La confirmation de suppression des artefacts affiche désormais des choix numérotés pour garder ou supprimer.",
+   "le": "2026-10-20T05:00:42Z"
+  },
+  "3fff6a13200f1e5b": {
+   "version": "2.1.304",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "La question d'activation des mods est simplifiée en texte brut et reste visible au démarrage d'un nouveau tour.",
+   "le": "2026-10-20T05:00:42Z"
+  },
+  "eeb95cd3b34fbf27": {
+   "version": "2.1.304",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "La recherche d'outils est activée par défaut derrière une URL personnalisée, avec retry en cas d'erreur 400/422.",
+   "le": "2026-10-20T05:00:42Z"
+  },
+  "6cc947343ee8ec8a": {
+   "version": "2.1.304",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "La compaction renvoie à nouveau la liste des compétences, et /reload-skills n'envoie que les nouveautés.",
+   "le": "2026-10-20T05:00:42Z"
+  },
+  "46d16ae6226ebdfe": {
+   "version": "2.1.304",
+   "domaine": "hooks_config",
+   "impact": "mineur",
+   "resume": "Limite de 1 024 hooks et 16 384 caractères de matcheur par source de compétences par session.",
+   "le": "2026-10-20T05:00:42Z"
+  },
+  "c8cf5c052d9b74a0": {
+   "version": "2.1.304",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Les compétences dont les hooks sont bloqués par la politique ne perdent plus leurs outils autorisés.",
+   "le": "2026-10-20T05:00:42Z"
+  },
+  "f0d269a899cee827": {
+   "version": "2.1.304",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "La compétence /claude-api utilise désormais la CLI ant sur AWS au lieu de la SDK ou curl.",
+   "le": "2026-10-20T05:00:42Z"
+  },
+  "ba4f307d792e827e": {
+   "version": "2.1.304",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Suppression des notes prédictives sur l'exécution des hooks dans la validation des plugins.",
+   "le": "2026-10-20T05:00:42Z"
+  },
+  "846d4539e810aa56": {
+   "version": "2.1.304",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Suppression de l'étiquette « recherche préliminaire » du titre du dialogue /fast sur Opus 5.5.",
+   "le": "2026-10-20T05:00:42Z"
+  },
+  "3560581adc6e11f5": {
+   "version": "2.1.304",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Les sous-agents en arrière-plan s'affichent comme une ligne de statut unique dans VSCode, le transcript reste dans /tasks.",
+   "le": "2026-10-20T05:00:42Z"
+  },
+  "3ebfdb46f3177cb6": {
+   "version": "2.1.304",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Correction du rafraîchissement de la politique organisationnelle après approbation d'une clé API ou changement de config.",
+   "le": "2026-10-20T05:00:42Z"
+  },
+  "7cd483a393760aad": {
+   "version": "2.1.304",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Correction des échecs de démarrage des commandes sandboxées sur Linux avec des glob de déni contenant des crochets.",
+   "le": "2026-10-20T05:00:42Z"
+  },
+  "3dbe27a607708d81": {
+   "version": "2.1.304",
+   "domaine": "securite",
+   "impact": "majeur",
+   "resume": "Correction de l'absence de prompt de sécurité pour rm -r sur les volumes montés ou dossiers racine.",
+   "le": "2026-10-20T05:00:42Z"
+  },
+  "59c37f27c05d2d5d": {
+   "version": "2.1.304",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Correction de la perte de messages dans le transcript local lors du remplissage du disque pendant la suppression.",
+   "le": "2026-10-20T05:00:42Z"
+  },
+  "94cacf5d2a6a13e0": {
+   "version": "2.1.304",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Corrige un bug où les sous-agents empêchaient l'arrêt d'une exécution sans tête malgré les limites de tours.",
+   "le": "2026-10-20T05:01:07Z"
+  },
+  "269e0e1649acab9d": {
+   "version": "2.1.304",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Répare le rechargement de modules défaillant qui supprimait les outils de la version active et affichait des messages erronés.",
+   "le": "2026-10-20T05:01:07Z"
+  },
+  "776451d5de508a17": {
+   "version": "2.1.304",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Corrige la perte de clics sur les boutons de modules lors du redessin d'interfaces identiques sans clé unique.",
+   "le": "2026-10-20T05:01:07Z"
+  },
+  "2709fde4988a0474": {
+   "version": "2.1.304",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Répare le partage de modules bloqué par l'analyse des secrets sur les plans d'entreprise et les configurations gérées.",
+   "le": "2026-10-20T05:01:07Z"
+  },
+  "920d6a7df0a18bcd": {
+   "version": "2.1.304",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Élimine les délais de cinq minutes pour les approbations d'URL dans les sessions cloud Cowork avec sous-agents.",
+   "le": "2026-10-20T05:01:07Z"
+  },
+  "e817d51bb0e8bc90": {
+   "version": "2.1.304",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Affiche désormais les chemins absolus ou avec tilde au lieu de chemins relatifs pour les fichiers hors du répertoire de travail.",
+   "le": "2026-10-20T05:01:07Z"
+  },
+  "0c8c18d49e8197a9": {
+   "version": "2.1.304",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Permet l'exécution des compétences des plugins de répertoire via le menu slash dans les sessions cloud Cowork.",
+   "le": "2026-10-20T05:01:07Z"
+  },
+  "6742edf0b06b95f0": {
+   "version": "2.1.304",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Répare la perte permanente de l'historique de conversation sur le bureau lors d'un changement de compte terminal.",
+   "le": "2026-10-20T05:01:07Z"
+  },
+  "c6ce5a724e1da0d1": {
+   "version": "2.1.304",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Corrige l'échec du démarrage du contrôle distant sur Claude Desktop lorsque les variables de télémétrie sont définies.",
+   "le": "2026-10-20T05:01:07Z"
+  },
+  "8260f2d902c533c1": {
+   "version": "2.1.304",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Répare les délais de basculement de modèle et d'interruption causés par une vérification de contexte bloquante.",
+   "le": "2026-10-20T05:01:07Z"
+  },
+  "7d02d9731ef5017f": {
+   "version": "2.1.304",
+   "domaine": "modeles",
+   "impact": "notable",
+   "resume": "Corrige les erreurs de gestion de contexte derrière les passerelles LLM en renvoyant la requête sans le champ problématique.",
+   "le": "2026-10-20T05:01:07Z"
+  },
+  "713231366d8bf3ba": {
+   "version": "2.1.304",
+   "domaine": "hooks_config",
+   "impact": "notable",
+   "resume": "Répare l'ignorance des réglages OpenTelemetry gérés par le serveur après la connexion initiale ou la déconnexion.",
+   "le": "2026-10-20T05:01:07Z"
+  },
+  "cdce97118c752d90": {
+   "version": "2.1.304",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Permet aux commandes Bash non sandboxées de voir les variables d'environnement définies dans les fichiers de démarrage shell.",
+   "le": "2026-10-20T05:01:07Z"
+  },
+  "8e8907a40451970a": {
+   "version": "2.1.304",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Corrige le saut de l'avis des conditions de consommation pendant plus d'un jour après une erreur serveur.",
+   "le": "2026-10-20T05:01:07Z"
+  },
+  "1c2d6cf20565a761": {
+   "version": "2.1.304",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Répare l'affichage d'options de confidentialité inapplicables après une erreur réseau ou serveur dans les réglages.",
+   "le": "2026-10-20T05:01:07Z"
+  },
+  "700a49d5d9cef2ed": {
+   "version": "2.1.304",
+   "domaine": "modeles",
+   "impact": "notable",
+   "resume": "Évite les erreurs de limite de contexte après l'arrêt d'un tour pendant la compaction d'une conversation trop longue.",
+   "le": "2026-10-20T05:01:07Z"
+  },
+  "35e265375d5dc85b": {
+   "version": "2.1.304",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Répare l'oubli du travail récent par les sous-agents lorsqu'ils sont repris ou messagés juste après leur fin.",
+   "le": "2026-10-20T05:01:07Z"
+  },
+  "3f95f3b49e240c3e": {
+   "version": "2.1.304",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Met à jour le texte d'aide des options CLI pour correspondre au comportement réel de l'outil.",
+   "le": "2026-10-20T05:01:07Z"
+  },
+  "34f8ec0637462e58": {
+   "version": "2.1.304",
+   "domaine": "securite",
+   "impact": "majeur",
+   "resume": "Empêche la suppression automatique du worktree et de sa branche à la sortie, évitant la perte de commits.",
+   "le": "2026-10-20T05:01:07Z"
+  },
+  "8291054473cfd541": {
+   "version": "2.1.304",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Réduit l'envoi inutile de la liste complète des compétences lors du rechargement des plugins au démarrage.",
+   "le": "2026-10-20T05:01:07Z"
+  },
+  "a98690a996bf0cd0": {
+   "version": "2.1.304",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Permet l'interruption correcte d'une lecture bloquée sur un tube ou un périphérique nommé comme une image.",
+   "le": "2026-10-20T05:01:07Z"
+  },
+  "c4aa5523028c5d4f": {
+   "version": "2.1.304",
+   "domaine": "modeles",
+   "impact": "mineur",
+   "resume": "Corrige l'affichage d'un niveau d'effort supposé lorsque la variable d'environnement est automatique ou non définie.",
+   "le": "2026-10-20T05:01:07Z"
+  },
+  "15f13ae8eb053d5c": {
+   "version": "2.1.304",
+   "domaine": "hooks_config",
+   "impact": "notable",
+   "resume": "Préserve la raison de refus d'un hook PreToolUse même si un autre hook de rappel expiré sur le même appel.",
+   "le": "2026-10-20T05:01:07Z"
+  },
+  "925fad40a4e68ed8": {
+   "version": "2.1.304",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Empêche la suppression du fichier de sortie d'une grande commande Bash ou PowerShell en cas d'échec de copie.",
+   "le": "2026-10-20T05:01:07Z"
+  },
+  "9c736ecc28a443f6": {
+   "version": "2.1.304",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Affiche intégralement les notes saisies dans les questions à choix multiples sur les terminaux étroits.",
+   "le": "2026-10-20T05:01:07Z"
+  },
+  "ee2c58f809d4c1e9": {
+   "version": "2.1.304",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "Les réveils planifiés évitent désormais de relire la conversation hors cache, optimisant les coûts et la vitesse.",
+   "le": "2026-10-20T05:01:22Z"
+  },
+  "35c306f0b706207c": {
+   "version": "2.1.304",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "L'approbation d'une demande d'arrêt d'un agent ne ferme plus l'ensemble de l'interface en ligne de commande.",
+   "le": "2026-10-20T05:01:22Z"
+  },
+  "aadb45774e82a8a7": {
+   "version": "2.1.304",
+   "domaine": "hooks_config",
+   "impact": "mineur",
+   "resume": "Un hook unique d'une compétence ne supprime plus accidentellement le hook identique d'une autre compétence.",
+   "le": "2026-10-20T05:01:22Z"
+  },
+  "faa88184c9ba6605": {
+   "version": "2.1.304",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Les accolades dans le mode transcription ne décalent plus le curseur ni ne le font sortir de l'écran.",
+   "le": "2026-10-20T05:01:22Z"
+  },
+  "e9fbe0d9ecd32fae": {
+   "version": "2.1.304",
+   "domaine": "hooks_config",
+   "impact": "notable",
+   "resume": "La variable de réglage de la fenêtre de compactage accepte désormais les suffixes k et M et signale les valeurs invalides.",
+   "le": "2026-10-20T05:01:22Z"
+  },
+  "d653b47e61509dd8": {
+   "version": "2.1.304",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Appuyer sur Ctrl+C dans la vue agents ne supprime plus la sélection de texte avant la copie.",
+   "le": "2026-10-20T05:01:22Z"
+  },
+  "2187397500657207": {
+   "version": "2.1.304",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Dans VSCode, le temps d'exécution des hooks de démarrage ne compte plus dans la limite de 60 secondes d'initialisation.",
+   "le": "2026-10-20T05:01:22Z"
+  },
+  "494d4b04c4a7a8b0": {
+   "version": "2.1.304",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Fermer une session VSCode pendant son démarrage ne laisse plus le processus Claude Code actif inutilement.",
+   "le": "2026-10-20T05:01:22Z"
+  },
+  "045a1ddf61603604": {
+   "version": "2.1.304",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Les dessins des modules ne disparaissent plus des panneaux ouverts longtemps sur les machines avec une ancienne version.",
+   "le": "2026-10-20T05:01:22Z"
+  },
+  "035e3eb85abb328c": {
+   "version": "2.1.304",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Les conversations passées ne masquent plus les sessions lorsque l'enveloppe de processus est configurée dans VSCode.",
+   "le": "2026-10-20T05:01:22Z"
+  },
+  "ee72f83e977154d2": {
+   "version": "2.1.304",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Les dossiers dans la liste @ des sessions cloud affichent désormais leur nom au lieu d'ajouter un simple espace.",
+   "le": "2026-10-20T05:01:22Z"
+  },
+  "3ab3ae18a13f197a": {
+   "version": "2.1.304",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Claude ne reste plus silencieux si son canal devient partagé entre espaces Enterprise Grid pendant une tâche.",
+   "le": "2026-10-20T05:01:22Z"
+  },
+  "879842e82c903671": {
+   "version": "2.1.304",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "La commande de fourche hors fil de discussion affiche désormais un message privé indiquant de l'exécuter dans un fil.",
+   "le": "2026-10-20T05:01:22Z"
+  },
+  "d27319da783ec9ab": {
+   "version": "2.1.304",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Les demandes de revue de code créées juste après l'activation de la fonctionnalité sont désormais traitées au lieu d'être ignorées.",
+   "le": "2026-10-20T05:01:22Z"
   }
  }
 }
