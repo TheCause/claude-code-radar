@@ -1,8 +1,15 @@
 #!/usr/bin/env python3
 """
 Claude Code Changelog Ingestion & Intelligence Analyzer
-Fetches the official changelog from code.claude.com, parses all 400+ versions,
+Fetches the official changelog (CHANGELOG.md on GitHub), parses all 400+ versions,
 categorizes items, evaluates strategic impact, and exports structured JSON for visualization.
+
+Source : jusqu'au 20 oct 2026, la page code.claude.com/docs/en/changelog.md (blocs
+<Update label=… description="October 19, 2026">). Le 21 oct, elle a perdu ses blocs et
+ses dates. Elle omettait déjà des entrées : 5 475 lues contre 8 003 dans le CHANGELOG
+GitHub pour les mêmes versions (mesuré le 22 oct 2026). On lit désormais le fichier GitHub.
+Il ne porte aucune date : celles déjà publiées sont reprises de data/changelog.json, et
+une version nouvelle prend sa date de publication sur npm (jour UTC).
 """
 
 import sys
@@ -13,7 +20,8 @@ import urllib.request
 from datetime import datetime, timezone
 from collections import Counter, defaultdict
 
-CHANGELOG_URL = "https://code.claude.com/docs/en/changelog.md"
+CHANGELOG_URL = "https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md"
+NPM_URL = "https://registry.npmjs.org/@anthropic-ai/claude-code"
 WORKSPACE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_DIR = os.path.join(WORKSPACE_DIR, "data")
 PUBLIC_DATA_DIR = os.path.join(WORKSPACE_DIR, "public", "data")
@@ -56,21 +64,71 @@ def fetch_changelog(url=CHANGELOG_URL, allow_cache=True):
                 return f.read()
         raise
 
-def parse_changelog(markdown_text):
+def date_en_texte(jour):
+    """2026-10-02 → « October 2, 2026 », le format des dates déjà publiées."""
+    return f"{jour:%B} {jour.day}, {jour.year}"
+
+
+def dates_connues(chemin=None):
+    """Les dates déjà publiées (version → « October 19, 2026 »). Une date illisible
+    (« Unknown ») n'est pas reprise : elle sera recherchée à nouveau sur npm."""
+    chemin = chemin or os.path.join(DATA_DIR, "changelog.json")
+    try:
+        with open(chemin, encoding="utf-8") as f:
+            anciennes = json.load(f)["versions"]
+    except (OSError, ValueError, KeyError):
+        return {}
+    dates = {}
+    for v in anciennes:
+        try:
+            datetime.strptime(v["date"], "%B %d, %Y")
+        except (KeyError, TypeError, ValueError):
+            continue
+        dates[v["version"]] = v["date"]
+    return dates
+
+
+def fetch_dates_npm(url=NPM_URL):
+    """Date de publication de chaque version sur npm (jour UTC). Une panne rend {} :
+    les versions concernées restent « Unknown » et seront redatées au passage suivant."""
+    req = urllib.request.Request(url, headers={"Accept": "application/json",
+                                               "User-Agent": "Claude-Code-Changelog-Tracker/1.0"})
+    try:
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            temps = json.load(resp)["time"]
+    except Exception as e:
+        print(f"[-] Dates npm indisponibles ({e}) : nouvelles versions datées « Unknown ».")
+        return {}
+    dates = {}
+    for version, horodatage in temps.items():
+        try:
+            jour = datetime.strptime(horodatage[:10], "%Y-%m-%d")
+        except (TypeError, ValueError):
+            continue
+        dates[version] = date_en_texte(jour)
+    return dates
+
+
+def parse_changelog(markdown_text, dates=None):
+    """Titres `## x.y.z` suivis de lignes `- entrée` (CHANGELOG.md de GitHub, à plat ;
+    vérifié le 22 oct 2026 : 428 versions, aucune ligne d'un autre type). `dates` :
+    version → « October 19, 2026 »."""
     print("[*] Parsing changelog sections...")
-    update_regex = re.compile(
-        r'<Update label="([^"]+)" description="([^"]+)">\s*(.*?)\s*</Update>',
-        re.DOTALL
-    )
-    
-    matches = update_regex.findall(markdown_text)
+    dates = dates or {}
+    matches = []
+    for ligne in markdown_text.split("\n"):
+        m = re.match(r"^## (\d+\.\d+\.\d+\S*)\s*$", ligne)
+        if m:
+            matches.append((m.group(1), dates.get(m.group(1), ""), []))
+        elif matches and ligne.startswith("- "):
+            matches[-1][2].append(ligne[2:].strip())
     print(f"[+] Found {len(matches)} version releases.")
-    
+
     parsed_versions = []
-    
-    for label, desc_date, body in matches:
+
+    for label, desc_date, lignes in matches:
         version = label.strip()
-        date_str = desc_date.strip()
+        date_str = desc_date.strip() or "Unknown"
         
         # Parse ISO date
         iso_date = None
@@ -86,10 +144,7 @@ def parse_changelog(markdown_text):
         
         # Parse bullet points
         items = []
-        raw_lines = [l.strip() for l in body.split("\n") if l.strip().startswith("* ")]
-        
-        for raw_line in raw_lines:
-            text = raw_line[2:].strip()
+        for text in lignes:
             item = analyze_change_item(text, version, iso_date)
             items.append(item)
             
@@ -406,8 +461,10 @@ def main():
     with open(os.path.join(DATA_DIR, "raw_changelog.md"), "w", encoding="utf-8") as f:
         f.write(raw_markdown)
         
-    # 2. Parse
-    versions = parse_changelog(raw_markdown)
+    # 2. Parse — dates déjà publiées d'abord, npm seulement pour les versions nouvelles
+    dates = dates_connues()
+    dates = {**fetch_dates_npm(), **dates}
+    versions = parse_changelog(raw_markdown, dates)
     if not versions:
         # Page lue mais méconnaissable (refonte du format) : ne JAMAIS publier un site vide.
         print("[-] Aucune version reconnue dans la source : format changé ? Rien n'est écrit.")
