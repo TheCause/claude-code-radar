@@ -5,11 +5,14 @@ omettait déjà un tiers des entrées. Invariants : la source est le CHANGELOG G
 date déjà publiée ne change jamais, et un format méconnaissable rend ZÉRO version (la
 publication s'arrête au lieu de publier un site vide).
 """
+import io
 import json
 import os
 import sys
 import tempfile
 import unittest
+from contextlib import redirect_stdout
+from unittest import mock
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "scripts"))
 import update_changelog as uc  # noqa: E402
@@ -58,6 +61,52 @@ class LectureDuChangelog(unittest.TestCase):
     def test_source_est_le_changelog_github(self):
         self.assertTrue(uc.CHANGELOG_URL.startswith(
             "https://raw.githubusercontent.com/anthropics/claude-code/"))
+
+
+class ControlesDeFormat(unittest.TestCase):
+    """Chaque contrôle a son test NÉGATIF : une source falsifiée qui doit le faire sonner."""
+    REFERENCE = {"2.1.308": 1, "2.1.307": 2}
+
+    def test_source_saine_ne_dit_rien(self):
+        vs = uc.parse_changelog(CHANGELOG)
+        self.assertEqual(uc.controles_format(CHANGELOG, vs, self.REFERENCE), [])
+
+    def test_rubrique_inattendue_sonne(self):
+        texte = CHANGELOG.replace("## 2.1.307\n", "## 2.1.307\n\n### Added\n")
+        pannes = uc.controles_format(texte, uc.parse_changelog(texte), self.REFERENCE)
+        self.assertEqual(len(pannes), 1)
+        self.assertIn("### Added", pannes[0])
+
+    def test_entree_perdue_sonne(self):
+        texte = CHANGELOG.replace("- Added `/claude-api api-version`\n", "")
+        pannes = uc.controles_format(texte, uc.parse_changelog(texte), self.REFERENCE)
+        self.assertEqual(pannes, ["1 version(s) ont PERDU des entrées : ['2.1.307 (2 → 1)']"])
+
+    def test_version_disparue_sonne(self):
+        texte = CHANGELOG.split("## 2.1.307")[0]
+        pannes = uc.controles_format(texte, uc.parse_changelog(texte), self.REFERENCE)
+        self.assertEqual(pannes, ["1 version(s) publiée(s) DISPARUE(S) : ['2.1.307']"])
+
+    def test_publication_stricte_refusee_rien_n_est_ecrit(self):
+        texte = CHANGELOG.replace("- Added `/claude-api api-version`\n", "")
+        with tempfile.TemporaryDirectory() as d:
+            data, public = os.path.join(d, "data"), os.path.join(d, "public")
+            os.makedirs(data)
+            chemin = os.path.join(data, "changelog.json")
+            with open(chemin, "w", encoding="utf-8") as f:
+                json.dump({"versions": [{"version": "2.1.307", "date": "October 21, 2026",
+                                         "itemCount": 2}]}, f)
+            with mock.patch.multiple(uc, DATA_DIR=data, PUBLIC_DATA_DIR=public,
+                                     fetch_changelog=lambda allow_cache: texte,
+                                     fetch_dates_npm=lambda: {}), \
+                    mock.patch.object(sys, "argv", ["x", "--strict"]), \
+                    redirect_stdout(io.StringIO()):
+                with self.assertRaises(SystemExit) as fin:
+                    uc.main()
+            self.assertEqual(fin.exception.code, 1)
+            with open(chemin, encoding="utf-8") as f:
+                self.assertEqual(json.load(f)["versions"][0]["itemCount"], 2)
+            self.assertFalse(os.path.exists(os.path.join(data, "insights.json")))
 
 
 class Datation(unittest.TestCase):

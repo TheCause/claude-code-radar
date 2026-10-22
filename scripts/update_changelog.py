@@ -88,6 +88,37 @@ def dates_connues(chemin=None):
     return dates
 
 
+def entrees_publiees(chemin=None):
+    """Le nombre d'entrées de chaque version déjà publiée (version → itemCount)."""
+    chemin = chemin or os.path.join(DATA_DIR, "changelog.json")
+    try:
+        with open(chemin, encoding="utf-8") as f:
+            return {v["version"]: v["itemCount"] for v in json.load(f)["versions"]}
+    except (OSError, ValueError, KeyError):
+        return {}
+
+
+def controles_format(markdown_text, versions, reference):
+    """« Zéro version » ne voit que la rupture TOTALE. La perte du 21 oct 2026 était
+    partielle (un tiers des entrées omises par la page docs, tout restait vert). D'où :
+    aucune ligne inconnue, et aucune version publiée qui disparaît ou perd des entrées."""
+    pannes = []
+    inconnues = [l for l in markdown_text.split("\n")
+                 if l.strip() and l.strip() != "# Changelog"
+                 and not re.match(r"^## \d+\.\d+\.\d+\S*\s*$", l) and not l.startswith("- ")]
+    if inconnues:
+        pannes.append(f"{len(inconnues)} ligne(s) non reconnue(s), ex. {inconnues[:3]}")
+    actuel = {v["version"]: v["itemCount"] for v in versions}
+    disparues = [v for v in reference if v not in actuel]
+    if disparues:
+        pannes.append(f"{len(disparues)} version(s) publiée(s) DISPARUE(S) : {disparues[:5]}")
+    amputees = [f"{v} ({n} → {actuel[v]})" for v, n in reference.items()
+                if v in actuel and actuel[v] < n]
+    if amputees:
+        pannes.append(f"{len(amputees)} version(s) ont PERDU des entrées : {amputees[:5]}")
+    return pannes
+
+
 def fetch_dates_npm(url=NPM_URL):
     """Date de publication de chaque version sur npm (jour UTC). Une panne rend {} :
     les versions concernées restent « Unknown » et seront redatées au passage suivant."""
@@ -469,7 +500,18 @@ def main():
         # Page lue mais méconnaissable (refonte du format) : ne JAMAIS publier un site vide.
         print("[-] Aucune version reconnue dans la source : format changé ? Rien n'est écrit.")
         sys.exit(1)
-    
+
+    # 2 bis. Rupture PARTIELLE du format : en publication, on n'écrase pas un site sain
+    # avec des données amputées. Après vérification humaine (suppression voulue en amont) :
+    #   scripts/update_changelog.py --strict --analyse-ia --acquitter-format
+    if "--acquitter-format" not in sys.argv:
+        pannes_format = controles_format(raw_markdown, versions, entrees_publiees())
+        for panne in pannes_format:
+            print(f"[-] Format : {panne}")
+        if pannes_format and strict:
+            print("[-] Publication refusée : rien n'est écrit (--acquitter-format après vérification).")
+            sys.exit(1)
+
     # 3. Analyze & Insights
     insights = compute_insights(versions)
     insights["metadata"]["lastUpdatedUtc"] = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
