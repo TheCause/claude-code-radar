@@ -1,12 +1,12 @@
 {
   "metadata": {
-    "lastUpdated": "2026-10-23 07:13:41",
+    "lastUpdated": "2026-10-23 12:17:57",
     "latestVersion": "2.1.309",
     "latestDate": "October 22, 2026",
     "totalVersions": 429,
     "totalItems": 8166,
     "highImpactCount": 1700,
-    "lastUpdatedUtc": "2026-10-23T05:13:41Z",
+    "lastUpdatedUtc": "2026-10-23T10:17:57Z",
     "sourceLive": true,
     "analyseIA": {
       "versionsAnalysees": [
@@ -37,11 +37,9 @@
         "2.1.283",
         "2.1.282"
       ],
-      "entreesAnalysees": 2199,
-      "enAttente": 25,
-      "pannes": [
-        "modèle injoignable : TimeoutError"
-      ]
+      "entreesAnalysees": 2224,
+      "enAttente": 0,
+      "pannes": []
     }
   },
   "actionCounts": {

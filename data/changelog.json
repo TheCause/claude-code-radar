@@ -1,12 +1,12 @@
 {
   "metadata": {
-    "lastUpdated": "2026-10-23 07:13:41",
+    "lastUpdated": "2026-10-23 12:17:57",
     "latestVersion": "2.1.309",
     "latestDate": "October 22, 2026",
     "totalVersions": 429,
     "totalItems": 8166,
     "highImpactCount": 1700,
-    "lastUpdatedUtc": "2026-10-23T05:13:41Z",
+    "lastUpdatedUtc": "2026-10-23T10:17:57Z",
     "sourceLive": true,
     "analyseIA": {
       "versionsAnalysees": [
@@ -37,11 +37,9 @@
         "2.1.283",
         "2.1.282"
       ],
-      "entreesAnalysees": 2199,
-      "enAttente": 25,
-      "pannes": [
-        "modèle injoignable : TimeoutError"
-      ]
+      "entreesAnalysees": 2224,
+      "enAttente": 0,
+      "pannes": []
     }
   },
   "versions": [
@@ -64,7 +62,12 @@
           ],
           "impact": "High",
           "version": "2.1.309",
-          "date": "2026-10-22"
+          "date": "2026-10-22",
+          "ia": {
+            "domaine": "securite",
+            "impact": "majeur",
+            "resume": "Les commandes Bash sandboxées ne chargent plus les fichiers de démarrage du shell hors sandbox, renforçant l'isolation."
+          }
         },
         {
           "text": "Fixed macOS sandbox `denyWrite` glob patterns not applying at a path's real location when the pattern's folder is reached through a symlink",
@@ -76,7 +79,12 @@
           ],
           "impact": "High",
           "version": "2.1.309",
-          "date": "2026-10-22"
+          "date": "2026-10-22",
+          "ia": {
+            "domaine": "securite",
+            "impact": "mineur",
+            "resume": "Les règles de refus d'écriture s'appliquent désormais correctement aux chemins réels derrière les liens symboliques."
+          }
         },
         {
           "text": "Fixed sandboxed commands and auto-accepted edits being able to modify the MCP config file passed with `--mcp-config`",
@@ -89,7 +97,12 @@
           ],
           "impact": "High",
           "version": "2.1.309",
-          "date": "2026-10-22"
+          "date": "2026-10-22",
+          "ia": {
+            "domaine": "securite",
+            "impact": "notable",
+            "resume": "Les commandes sandboxées et les éditions auto-acceptées ne peuvent plus modifier le fichier de configuration MCP."
+          }
         },
         {
           "text": "Fixed a disabled MCP server being reconnected by a later permission prompt in print and SDK sessions",
@@ -103,7 +116,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.309",
-          "date": "2026-10-22"
+          "date": "2026-10-22",
+          "ia": {
+            "domaine": "mcp",
+            "impact": "mineur",
+            "resume": "Un serveur MCP désactivé n'est plus re-connecté involontairement par une demande de permission ultérieure."
+          }
         },
         {
           "text": "Fixed the Bash permission check trusting a variable set by a command whose redirect can fail to open",
@@ -115,7 +133,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.309",
-          "date": "2026-10-22"
+          "date": "2026-10-22",
+          "ia": {
+            "domaine": "securite",
+            "impact": "notable",
+            "resume": "La vérification des permissions Bash ne fait plus confiance aux variables définies par des commandes dont la redirection échoue."
+          }
         },
         {
           "text": "Fixed Bash permission checks not prompting for some compound commands that change directory before running git when the `cd` is wrapped or prefixed, as they do for a plain `cd`",
@@ -128,7 +151,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.309",
-          "date": "2026-10-22"
+          "date": "2026-10-22",
+          "ia": {
+            "domaine": "securite",
+            "impact": "mineur",
+            "resume": "Les commandes composites changeant de répertoire avant git déclenchent désormais une demande de permission si nécessaire."
+          }
         },
         {
           "text": "Fixed an `Edit(path)` deny rule not blocking a Bash redirect to that path in some commands that also held a subshell",
@@ -140,7 +168,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.309",
-          "date": "2026-10-22"
+          "date": "2026-10-22",
+          "ia": {
+            "domaine": "securite",
+            "impact": "notable",
+            "resume": "Les règles de refus d'édition bloquent désormais correctement les redirections Bash vers les chemins interdits, même avec sous-shell."
+          }
         },
         {
           "text": "Fixed worktree-isolated sessions accepting some locale-prefixed commands the isolation guard should refuse",
@@ -152,7 +185,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.309",
-          "date": "2026-10-22"
+          "date": "2026-10-22",
+          "ia": {
+            "domaine": "securite",
+            "impact": "mineur",
+            "resume": "Les sessions isolées dans des worktrees refusent désormais les commandes préfixées par des paramètres de locale."
+          }
         },
         {
           "text": "Fixed worktree-isolated sessions on zsh accepting some arithmetic commands that the isolation guard should refuse",
@@ -164,7 +202,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.309",
-          "date": "2026-10-22"
+          "date": "2026-10-22",
+          "ia": {
+            "domaine": "securite",
+            "impact": "mineur",
+            "resume": "Les sessions isolées sous zsh refusent désormais les commandes arithmétiques que la garde d'isolation devait bloquer."
+          }
         },
         {
           "text": "Fixed worktrees and branch checkouts that Claude Code creates so they ignore git replace refs, as its other git operations already do",
@@ -176,7 +219,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.309",
-          "date": "2026-10-22"
+          "date": "2026-10-22",
+          "ia": {
+            "domaine": "autre",
+            "impact": "mineur",
+            "resume": "Les worktrees et checkouts créés par Claude Code ignorent désormais les références de remplacement git, comme les autres opérations."
+          }
         },
         {
           "text": "Fixed profile store write protection not applying when the config directory is reached through a symlink",
@@ -188,7 +236,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.309",
-          "date": "2026-10-22"
+          "date": "2026-10-22",
+          "ia": {
+            "domaine": "securite",
+            "impact": "mineur",
+            "resume": "La protection en écriture du profil s'applique désormais correctement lorsque le répertoire de config est atteint via un lien symbolique."
+          }
         },
         {
           "text": "Fixed sessions compacting repeatedly after reading files under a very large nested CLAUDE.md; a nested CLAUDE.md over the size limit now loads only its start",
@@ -200,7 +253,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.309",
-          "date": "2026-10-22"
+          "date": "2026-10-22",
+          "ia": {
+            "domaine": "performance",
+            "impact": "notable",
+            "resume": "La compaction répétée après lecture de grands fichiers CLAUDE.md imbriqués est corrigée ; seuls les débuts sont chargés."
+          }
         },
         {
           "text": "Fixed ctrl+enter (send now) only queuing a message when pressed before the response had started, and restarting a prompt's hooks while leaving the message queued when pressed while those hooks were running",
@@ -213,7 +271,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.309",
-          "date": "2026-10-22"
+          "date": "2026-10-22",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Ctrl+Entrée envoie désormais le message immédiatement, même si les hooks sont en cours d'exécution, sans les relancer."
+          }
         },
         {
           "text": "Fixed key-bound slash commands running in the shell from `!` mode",
@@ -225,7 +288,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.309",
-          "date": "2026-10-22"
+          "date": "2026-10-22",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Les commandes slash liées à des touches ne s'exécutent plus dans le shell depuis le mode '!'."
+          }
         },
         {
           "text": "Fixed ctrl+o not showing messages from other agents and sessions that are still waiting to be delivered; they now appear in full under the transcript, marked as waiting",
@@ -237,7 +305,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.309",
-          "date": "2026-10-22"
+          "date": "2026-10-22",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Ctrl+O affiche désormais les messages en attente d'autres agents ou sessions, marqués comme tels dans la transcription."
+          }
         },
         {
           "text": "Fixed long tool output previews being cut through an emoji, leaving session transcripts that `jq` could not parse",
@@ -249,7 +322,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.309",
-          "date": "2026-10-22"
+          "date": "2026-10-22",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Les aperçus de sorties d'outils longs ne sont plus coupés au milieu d'un emoji, garantissant une validité JSON."
+          }
         },
         {
           "text": "Fixed Read reporting \"File does not exist\" for PDF page ranges in Linux sandboxes that share the parent's `/proc`",
@@ -261,7 +339,12 @@
           ],
           "impact": "High",
           "version": "2.1.309",
-          "date": "2026-10-22"
+          "date": "2026-10-22",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "La lecture de plages de pages PDF fonctionne désormais dans les sandbox Linux partageant le /proc du parent."
+          }
         },
         {
           "text": "Fixed messages from a Claude Desktop-hosted session sometimes being lost when its connection refreshed",
@@ -273,7 +356,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.309",
-          "date": "2026-10-22"
+          "date": "2026-10-22",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Les messages des sessions hébergées par Claude Desktop ne sont plus perdus lors d'un rafraîchissement de connexion."
+          }
         },
         {
           "text": "Fixed features missing from Claude Code sessions in the Claude desktop app when the terminal on the same computer was signed in to a different account or organization",
@@ -285,7 +373,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.309",
-          "date": "2026-10-22"
+          "date": "2026-10-22",
+          "ia": {
+            "domaine": "interface",
+            "impact": "notable",
+            "resume": "Les fonctionnalités manquantes dans l'app bureau sont corrigées même si le terminal local est connecté à un autre compte."
+          }
         },
         {
           "text": "Fixed the `claude remote-control` status line showing `HEAD` as the branch for a folder that is not in a git repository",
@@ -297,7 +390,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.309",
-          "date": "2026-10-22"
+          "date": "2026-10-22",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "La ligne de statut remote-control n'affiche plus 'HEAD' comme branche pour les dossiers non git."
+          }
         },
         {
           "text": "Fixed split-pane agent teammates not inheriting the tool deny and `--tools` rules given on the leader's command line",
@@ -309,7 +407,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.309",
-          "date": "2026-10-22"
+          "date": "2026-10-22",
+          "ia": {
+            "domaine": "agents",
+            "impact": "notable",
+            "resume": "Les coéquipiers agents en split-pane héritent désormais des règles de refus d'outils et des restrictions --tools du leader."
+          }
         },
         {
           "text": "Fixed sessions renamed with `/rename` appearing to other sessions under a generated name after a VS Code window reload or a non-interactive `--resume`",
@@ -322,7 +425,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.309",
-          "date": "2026-10-22"
+          "date": "2026-10-22",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Les sessions renommées conservent leur nom personnalisé après rechargement de VS Code ou reprise non interactive."
+          }
         },
         {
           "text": "Fixed the `/rewind` list showing \"No code changes\" for a turn that changed checkpointed files through `/code-review --fix`, a subagent or a shell command",
@@ -334,7 +442,12 @@
           ],
           "impact": "High",
           "version": "2.1.309",
-          "date": "2026-10-22"
+          "date": "2026-10-22",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "La liste /rewind affiche correctement les changements de fichiers checkpointés via /code-review, sous-agents ou shell."
+          }
         },
         {
           "text": "Fixed `/privacy-settings` showing an out-of-date \"Help improve our AI models\" value; it now also says when the setting can't be fetched",
@@ -346,7 +459,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.309",
-          "date": "2026-10-22"
+          "date": "2026-10-22",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "L'écran /privacy-settings affiche la valeur à jour et indique si la récupération de la configuration a échoué."
+          }
         },
         {
           "text": "Fixed feedback saying \"try again later\" when your organization does not accept feedback; it now shows the server's reason and where to report a bug",
@@ -358,7 +476,12 @@
           ],
           "impact": "Standard",
           "version": "2.1.309",
-          "date": "2026-10-22"
+          "date": "2026-10-22",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Le message de feedback affiche désormais la raison du serveur et où signaler un bug si l'organisation refuse les retours."
+          }
         },
         {
           "text": "Fixed oversized /feedback reports failing instead of being resent without the transcript",

@@ -15797,6 +15797,181 @@
    "impact": "notable",
    "resume": "Empêche le démarrage d'une revue en file d'attente après un arrêt demandé et affiche clairement la raison de la fermeture.",
    "le": "2026-10-23T06:20:43Z"
+  },
+  "ba9d071b32edf73d": {
+   "version": "2.1.309",
+   "domaine": "securite",
+   "impact": "majeur",
+   "resume": "Les commandes Bash sandboxées ne chargent plus les fichiers de démarrage du shell hors sandbox, renforçant l'isolation.",
+   "le": "2026-10-23T10:18:34Z"
+  },
+  "b24b1ad8fcb8d8e4": {
+   "version": "2.1.309",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Les règles de refus d'écriture s'appliquent désormais correctement aux chemins réels derrière les liens symboliques.",
+   "le": "2026-10-23T10:18:34Z"
+  },
+  "35cba230defed9cc": {
+   "version": "2.1.309",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Les commandes sandboxées et les éditions auto-acceptées ne peuvent plus modifier le fichier de configuration MCP.",
+   "le": "2026-10-23T10:18:34Z"
+  },
+  "ac50306c5db104ad": {
+   "version": "2.1.309",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Un serveur MCP désactivé n'est plus re-connecté involontairement par une demande de permission ultérieure.",
+   "le": "2026-10-23T10:18:34Z"
+  },
+  "5415b160482e7b9f": {
+   "version": "2.1.309",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "La vérification des permissions Bash ne fait plus confiance aux variables définies par des commandes dont la redirection échoue.",
+   "le": "2026-10-23T10:18:34Z"
+  },
+  "57482fc7ba3f12d5": {
+   "version": "2.1.309",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Les commandes composites changeant de répertoire avant git déclenchent désormais une demande de permission si nécessaire.",
+   "le": "2026-10-23T10:18:34Z"
+  },
+  "0bd8f0b9bf196597": {
+   "version": "2.1.309",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Les règles de refus d'édition bloquent désormais correctement les redirections Bash vers les chemins interdits, même avec sous-shell.",
+   "le": "2026-10-23T10:18:34Z"
+  },
+  "f7beb902bd9fb131": {
+   "version": "2.1.309",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Les sessions isolées dans des worktrees refusent désormais les commandes préfixées par des paramètres de locale.",
+   "le": "2026-10-23T10:18:34Z"
+  },
+  "67e8b112bb440d79": {
+   "version": "2.1.309",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Les sessions isolées sous zsh refusent désormais les commandes arithmétiques que la garde d'isolation devait bloquer.",
+   "le": "2026-10-23T10:18:34Z"
+  },
+  "65b34e801552cf08": {
+   "version": "2.1.309",
+   "domaine": "autre",
+   "impact": "mineur",
+   "resume": "Les worktrees et checkouts créés par Claude Code ignorent désormais les références de remplacement git, comme les autres opérations.",
+   "le": "2026-10-23T10:18:34Z"
+  },
+  "3600d0847d3ae4d2": {
+   "version": "2.1.309",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "La protection en écriture du profil s'applique désormais correctement lorsque le répertoire de config est atteint via un lien symbolique.",
+   "le": "2026-10-23T10:18:34Z"
+  },
+  "d0463df91703a954": {
+   "version": "2.1.309",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "La compaction répétée après lecture de grands fichiers CLAUDE.md imbriqués est corrigée ; seuls les débuts sont chargés.",
+   "le": "2026-10-23T10:18:34Z"
+  },
+  "6b603ab7f8fc38e2": {
+   "version": "2.1.309",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Ctrl+Entrée envoie désormais le message immédiatement, même si les hooks sont en cours d'exécution, sans les relancer.",
+   "le": "2026-10-23T10:18:34Z"
+  },
+  "2f6d54eb216d0b12": {
+   "version": "2.1.309",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Les commandes slash liées à des touches ne s'exécutent plus dans le shell depuis le mode '!'.",
+   "le": "2026-10-23T10:18:34Z"
+  },
+  "6bfd55dfbccfdb19": {
+   "version": "2.1.309",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Ctrl+O affiche désormais les messages en attente d'autres agents ou sessions, marqués comme tels dans la transcription.",
+   "le": "2026-10-23T10:18:34Z"
+  },
+  "48a74e1051bac529": {
+   "version": "2.1.309",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Les aperçus de sorties d'outils longs ne sont plus coupés au milieu d'un emoji, garantissant une validité JSON.",
+   "le": "2026-10-23T10:18:34Z"
+  },
+  "36b6b0d0e30d035e": {
+   "version": "2.1.309",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "La lecture de plages de pages PDF fonctionne désormais dans les sandbox Linux partageant le /proc du parent.",
+   "le": "2026-10-23T10:18:34Z"
+  },
+  "2d6f5fa86b3a36b8": {
+   "version": "2.1.309",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Les messages des sessions hébergées par Claude Desktop ne sont plus perdus lors d'un rafraîchissement de connexion.",
+   "le": "2026-10-23T10:18:34Z"
+  },
+  "999e9c88803224a5": {
+   "version": "2.1.309",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Les fonctionnalités manquantes dans l'app bureau sont corrigées même si le terminal local est connecté à un autre compte.",
+   "le": "2026-10-23T10:18:34Z"
+  },
+  "6ba71e9d2b3fe14a": {
+   "version": "2.1.309",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "La ligne de statut remote-control n'affiche plus 'HEAD' comme branche pour les dossiers non git.",
+   "le": "2026-10-23T10:18:34Z"
+  },
+  "ab9af6d6a641b538": {
+   "version": "2.1.309",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Les coéquipiers agents en split-pane héritent désormais des règles de refus d'outils et des restrictions --tools du leader.",
+   "le": "2026-10-23T10:18:34Z"
+  },
+  "37663d3371efc9f9": {
+   "version": "2.1.309",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Les sessions renommées conservent leur nom personnalisé après rechargement de VS Code ou reprise non interactive.",
+   "le": "2026-10-23T10:18:34Z"
+  },
+  "8d60dcfce6cba34b": {
+   "version": "2.1.309",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "La liste /rewind affiche correctement les changements de fichiers checkpointés via /code-review, sous-agents ou shell.",
+   "le": "2026-10-23T10:18:34Z"
+  },
+  "cf16f87f084844e1": {
+   "version": "2.1.309",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "L'écran /privacy-settings affiche la valeur à jour et indique si la récupération de la configuration a échoué.",
+   "le": "2026-10-23T10:18:34Z"
+  },
+  "1c3ba25b89671921": {
+   "version": "2.1.309",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Le message de feedback affiche désormais la raison du serveur et où signaler un bug si l'organisation refuse les retours.",
+   "le": "2026-10-23T10:18:34Z"
   }
  }
 }
