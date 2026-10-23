@@ -15419,6 +15419,384 @@
    "impact": "notable",
    "resume": "Les nouveaux espaces de travail Slack suivent désormais le modèle par défaut actuel au lieu de celui de la connexion.",
    "le": "2026-10-22T06:26:30Z"
+  },
+  "38d4cf04515faf44": {
+   "version": "2.1.309",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Les rapports de retour d'information trop volumineux sont désormais renvoyés sans le transcript au lieu d'échouer.",
+   "le": "2026-10-23T06:20:12Z"
+  },
+  "934e32eb8c8b829d": {
+   "version": "2.1.309",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Les compétences dans des dossiers ajoutés sont désormais accessibles même si un autre nom existe, via un préfixe dossier.",
+   "le": "2026-10-23T06:20:12Z"
+  },
+  "f5411d7d37afc42e": {
+   "version": "2.1.309",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Les commandes de vérification et de revue de code trouvent désormais les compétences des paquets imbriqués modifiés depuis le shell.",
+   "le": "2026-10-23T06:20:12Z"
+  },
+  "4b15004448274c98": {
+   "version": "2.1.309",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Correction d'une information erronée dans la compétence API concernant le contexte de trace transmis par la commande de travail.",
+   "le": "2026-10-23T06:20:12Z"
+  },
+  "0be68978294f6a20": {
+   "version": "2.1.309",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "La configuration de traçabilité C# de la compétence API inclut désormais les spans des clients de plateformes cloud manquants.",
+   "le": "2026-10-23T06:20:12Z"
+  },
+  "b0d2d5232ab84355": {
+   "version": "2.1.309",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Correction d'une fausse affirmation dans la compétence API indiquant que les spans AWS ne pouvaient pas rejoindre la trace de l'appelant.",
+   "le": "2026-10-23T06:20:12Z"
+  },
+  "3187bd570430b55b": {
+   "version": "2.1.309",
+   "domaine": "hooks_config",
+   "impact": "notable",
+   "resume": "Les hooks PowerShell bloquent désormais correctement l'exécution en cas d'erreur et ne plus échouent silencieusement si Git pour Windows est absent.",
+   "le": "2026-10-23T06:20:12Z"
+  },
+  "a1ccbb8eae000b1e": {
+   "version": "2.1.309",
+   "domaine": "hooks_config",
+   "impact": "notable",
+   "resume": "Les hooks utilisant des alias de modèles comme 'haiku' fonctionnent désormais au lieu d'échouer avec une erreur de modèle.",
+   "le": "2026-10-23T06:20:12Z"
+  },
+  "4f119326ccc2cf2b": {
+   "version": "2.1.309",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Les plugins et compétences synchronisés depuis claude.ai ne sont plus supprimés en cas d'erreur de lecture disque, même en cours de session.",
+   "le": "2026-10-23T06:20:12Z"
+  },
+  "672749efbedf627d": {
+   "version": "2.1.309",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "La publication et la mise à jour d'artefacts ne sont plus refusées pour des pages ordinaires contenant certains scripts minifiés.",
+   "le": "2026-10-23T06:20:12Z"
+  },
+  "1ab58a7003134c57": {
+   "version": "2.1.309",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Claude ne demande plus la permission pour chaque mise à jour d'artefact après une compaction de conversation dans le même tour.",
+   "le": "2026-10-23T06:20:12Z"
+  },
+  "fcc628e812f2c198": {
+   "version": "2.1.309",
+   "domaine": "modeles",
+   "impact": "notable",
+   "resume": "Le streaming fin des outils fonctionne désormais sur Amazon Bedrock même avec l'URL de base par défaut configurée.",
+   "le": "2026-10-23T06:20:12Z"
+  },
+  "bd58f422bd4b8d16": {
+   "version": "2.1.309",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "L'indication d'attente de réponse API ne clignote plus derrière les passerelles envoyant uniquement des pings de maintien de connexion.",
+   "le": "2026-10-23T06:20:12Z"
+  },
+  "45e51deb10c38e22": {
+   "version": "2.1.309",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Claude ne mentionne plus accidentellement des utilisateurs GitHub non concernés en écrivant des noms de rôles ou des placeholders.",
+   "le": "2026-10-23T06:20:12Z"
+  },
+  "d1fc3322e892f735": {
+   "version": "2.1.309",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Sur Linux, les refus d'écriture du sandbox ne sont plus levés si une commande en arrière-plan survit à la session.",
+   "le": "2026-10-23T06:20:12Z"
+  },
+  "c8ac288cffc9fc3f": {
+   "version": "2.1.309",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Sur Windows, les commandes PowerShell de changement de dossier avec arguments supplémentaires demandent désormais une approbation explicite.",
+   "le": "2026-10-23T06:20:12Z"
+  },
+  "783cc5e8ddf46667": {
+   "version": "2.1.309",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Sur macOS, la boîte de dialogue d'installation des outils de développement ne s'ouvre plus à chaque démarrage si Xcode est absent.",
+   "le": "2026-10-23T06:20:12Z"
+  },
+  "c44fbd79d9ea7594": {
+   "version": "2.1.309",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Le timeout de démarrage ne stoppe plus une session dont le premier prompt est encore en cours dans un sous-agent.",
+   "le": "2026-10-23T06:20:12Z"
+  },
+  "18ebb33332d96095": {
+   "version": "2.1.309",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Les commandes git internes sont plus rapides sur Windows et leurs erreurs s'affichent désormais en anglais quelle que soit la langue de git.",
+   "le": "2026-10-23T06:20:12Z"
+  },
+  "1c07187898d1f3e5": {
+   "version": "2.1.309",
+   "domaine": "hooks_config",
+   "impact": "mineur",
+   "resume": "L'erreur lors du chargement d'un module de hooks trop imbriqué nomme désormais le fichier au lieu d'afficher une simple pile de débordement.",
+   "le": "2026-10-23T06:20:12Z"
+  },
+  "364435db1b104359": {
+   "version": "2.1.309",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Les commandes Bash interrompues par un disque plein indiquent clairement le problème et le dossier à libérer, évitant les erreurs brutes.",
+   "le": "2026-10-23T06:20:12Z"
+  },
+  "e5c52d4e7333b874": {
+   "version": "2.1.309",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "La compétence API propose désormais le traçage API en plus du traçage SDK lors de l'ajout d'OpenTelemetry.",
+   "le": "2026-10-23T06:20:12Z"
+  },
+  "668093d4614c2196": {
+   "version": "2.1.309",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "La compétence API vérifie désormais la documentation en ligne avant d'affirmer qu'une fonctionnalité n'est pas prise en charge.",
+   "le": "2026-10-23T06:20:12Z"
+  },
+  "337f8fb080c3d8a1": {
+   "version": "2.1.309",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Lors d'un changement de runner auto-hébergé, Claude voit désormais l'appel d'outil interrompu marqué comme résultat inconnu.",
+   "le": "2026-10-23T06:20:12Z"
+  },
+  "3356f61f732e2fe4": {
+   "version": "2.1.309",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "La compétence de visualisation de données accepte désormais la mesure APCA pour le contraste et précise la couleur de texte sur fond coloré.",
+   "le": "2026-10-23T06:20:12Z"
+  },
+  "e132be00ee33a5c8": {
+   "version": "2.1.309",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Les clés de service et jetons d'identité peuvent désormais gérer les destinations OpenTelemetry.",
+   "le": "2026-10-23T06:20:37Z"
+  },
+  "6d4f3ee5aaebd13b": {
+   "version": "2.1.309",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "La commande sed -i s'exécute désormais directement sans aperçu simulé et n'est plus annulée par /rewind.",
+   "le": "2026-10-23T06:20:37Z"
+  },
+  "cc8c733075423c9d": {
+   "version": "2.1.309",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "claude ultrareview exige désormais la confiance de l'espace de travail pour s'exécuter en toute sécurité.",
+   "le": "2026-10-23T06:20:37Z"
+  },
+  "1561ef55c81f7e49": {
+   "version": "2.1.309",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Les commandes rm et rmdir sont désormais refusées immédiatement en mode contournement pour éviter les interruptions.",
+   "le": "2026-10-23T06:20:37Z"
+  },
+  "64a16248e141c4be": {
+   "version": "2.1.309",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Les écritures vers des chemins exclus du bac à sable demandent désormais confirmation si le bac à sable est indisponible.",
+   "le": "2026-10-23T06:20:37Z"
+  },
+  "f6b4506e8987b530": {
+   "version": "2.1.309",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "La création de worktrees git ne récupère plus les objets à la demande, améliorant la vitesse dans les clones partiels.",
+   "le": "2026-10-23T06:20:37Z"
+  },
+  "804db4113f493807": {
+   "version": "2.1.309",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Le skill /claude-api utilise désormais des équipes de sous-agents avec workflows dynamiques par défaut.",
+   "le": "2026-10-23T06:20:37Z"
+  },
+  "2f2bd11e6e69ad13": {
+   "version": "2.1.309",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Un avertissement s'affiche dans VS Code si la vérification des certificats échoue, comme derrière un proxy TLS.",
+   "le": "2026-10-23T06:20:37Z"
+  },
+  "c9a12867650d0e29": {
+   "version": "2.1.309",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Le panneau Claude dans VS Code se répare désormais automatiquement s'il reste vide après un cache incomplet.",
+   "le": "2026-10-23T06:20:37Z"
+  },
+  "1f8971fae94c0d15": {
+   "version": "2.1.309",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "L'historique des sessions dans VS Code ne remplit plus avec des sessions vides non nommées.",
+   "le": "2026-10-23T06:20:37Z"
+  },
+  "c70cc15d3df72523": {
+   "version": "2.1.309",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Les longues commandes slash dans VS Code se replient désormais derrière « Afficher plus » pour éviter de saturer le panneau.",
+   "le": "2026-10-23T06:20:37Z"
+  },
+  "ba71654ae5fd45d0": {
+   "version": "2.1.309",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Les longs messages se replient correctement dans VS Code même lorsque le panneau de chat est rétréci.",
+   "le": "2026-10-23T06:20:37Z"
+  },
+  "f09efa9f1b9b29d4": {
+   "version": "2.1.309",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "La touche Ctrl+J dans VS Code insère désormais un retour à la ligne selon les réglages système et de l'éditeur.",
+   "le": "2026-10-23T06:20:37Z"
+  },
+  "470600b0e30e2f2c": {
+   "version": "2.1.309",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "L'étiquette de plugin dans VS Code ne recouvre plus les menus de commandes slash et de mentions.",
+   "le": "2026-10-23T06:20:37Z"
+  },
+  "c93bbd3c024e96d4": {
+   "version": "2.1.309",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Le collage de formules LaTeX dans VS Code ne crée plus d'éléments vides ni de numérotation erronée.",
+   "le": "2026-10-23T06:20:37Z"
+  },
+  "68be0339397b95e3": {
+   "version": "2.1.309",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "L'erreur de retour d'information dans VS Code affiche désormais un message clair si l'organisation refuse les retours.",
+   "le": "2026-10-23T06:20:37Z"
+  },
+  "deb946c34efb2cbb": {
+   "version": "2.1.309",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Les éditions et écritures dans le panneau de chat VS Code sont plus rapides, avec un délai réduit à 0,75 seconde.",
+   "le": "2026-10-23T06:20:37Z"
+  },
+  "40302b8e2ae28a83": {
+   "version": "2.1.309",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "La liste des connecteurs dans les sessions cloud ne s'affiche plus vide pendant le chargement.",
+   "le": "2026-10-23T06:20:37Z"
+  },
+  "cfe233e3985455a0": {
+   "version": "2.1.309",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "L'éditeur d'environnement cloud ne mélange plus les variables ni n'ajoute de barres obliques inutiles.",
+   "le": "2026-10-23T06:20:37Z"
+  },
+  "c0fb935326c12a0e": {
+   "version": "2.1.309",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "La boîte de dialogue des environnements auto-hébergés dans les paramètres admin reste lisible avec un défilement correct.",
+   "le": "2026-10-23T06:20:37Z"
+  },
+  "dadb442fa09255d5": {
+   "version": "2.1.309",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "L'outil « lire la documentation » dans les sessions cloud affiche désormais une page lisible au lieu de JSON échappé.",
+   "le": "2026-10-23T06:20:37Z"
+  },
+  "5b0ba959646b439c": {
+   "version": "2.1.309",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Le panneau des modifications dans les sessions cloud précise désormais s'il liste les commits poussés ou les éditions de Claude.",
+   "le": "2026-10-23T06:20:37Z"
+  },
+  "97b9c3bba4b966bc": {
+   "version": "2.1.309",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Claude dans Slack n'envoie plus par erreur un brouillon approuvé dans un DM au lieu du canal cible.",
+   "le": "2026-10-23T06:20:37Z"
+  },
+  "f686ec3bf786c1f8": {
+   "version": "2.1.309",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Les boutons Autoriser et Refuser dans Slack redémarrent désormais la session si elle était arrêtée.",
+   "le": "2026-10-23T06:20:37Z"
+  },
+  "a0f2268f8bc4a712": {
+   "version": "2.1.309",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Claude dans Slack traite désormais les messages non étiquetés même après un changement d'organisation de l'espace de travail.",
+   "le": "2026-10-23T06:20:37Z"
+  },
+  "0d37558af980550e": {
+   "version": "2.1.309",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Corrige un bug où Claude répondait dans Slack avant d'avoir lu les derniers messages du fil.",
+   "le": "2026-10-23T06:20:43Z"
+  },
+  "5f7e248d287ad7a9": {
+   "version": "2.1.309",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Améliore l'affichage des erreurs dans les paramètres Slack avec un bouton de réessai au lieu d'un message trompeur.",
+   "le": "2026-10-23T06:20:43Z"
+  },
+  "345c916d2c50ca21": {
+   "version": "2.1.309",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Assure l'affichage du statut de revue sur la pull request même si des tentatives précédentes avaient échoué.",
+   "le": "2026-10-23T06:20:43Z"
+  },
+  "c828d5a75362ed15": {
+   "version": "2.1.309",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Empêche le démarrage d'une revue en file d'attente après un arrêt demandé et affiche clairement la raison de la fermeture.",
+   "le": "2026-10-23T06:20:43Z"
   }
  }
 }
