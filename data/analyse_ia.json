@@ -15972,6 +15972,188 @@
    "impact": "mineur",
    "resume": "Le message de feedback affiche désormais la raison du serveur et où signaler un bug si l'organisation refuse les retours.",
    "le": "2026-10-23T10:18:34Z"
+  },
+  "8d792090501705be": {
+   "version": "2.1.310",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Ajout du support des moniteurs de plugins sur Bedrock, Vertex et Foundry, avec blocage des longues attentes.",
+   "le": "2026-10-24T05:08:25Z"
+  },
+  "0ccc334f85b5b279": {
+   "version": "2.1.310",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Correction des échecs de requêtes derrière certains passerelles en retirant les valeurs bêta non supportées.",
+   "le": "2026-10-24T05:08:25Z"
+  },
+  "2e08111d5e98b2ee": {
+   "version": "2.1.310",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "Correction du nettoyage de fond qui supprimait des fichiers récents comme les images collées avec une longue période.",
+   "le": "2026-10-24T05:08:25Z"
+  },
+  "caccab47d6424d24": {
+   "version": "2.1.310",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Amélioration de la compaction après erreur de longueur pour éviter les échecs répétés avec du texte dense.",
+   "le": "2026-10-24T05:08:25Z"
+  },
+  "9d32a9b5a219ef00": {
+   "version": "2.1.310",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Les prompts de permission de lecture de fichiers affichent désormais la destination des liens symboliques.",
+   "le": "2026-10-24T05:08:25Z"
+  },
+  "3c2543d1b1d13852": {
+   "version": "2.1.310",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction du déclenchement prématuré du timeout de continuation automatique après fermeture de l'éditeur externe.",
+   "le": "2026-10-24T05:08:25Z"
+  },
+  "a83b78a58d6ea288": {
+   "version": "2.1.310",
+   "domaine": "hooks_config",
+   "impact": "mineur",
+   "resume": "Correction sur Windows des hooks qui laissaient passer des appels d'outils si Git Bash était absent et la commande citée.",
+   "le": "2026-10-24T05:08:25Z"
+  },
+  "2427477f9ddc5665": {
+   "version": "2.1.310",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Le mode auto précise désormais que le blocage des lectures externes impose des permissions pour les commandes shell.",
+   "le": "2026-10-24T05:08:25Z"
+  },
+  "43ce5ea01baeca88": {
+   "version": "2.1.310",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Réduction de l'utilisation mémoire des sessions non interactives lors de la compaction de grands fichiers de transcript.",
+   "le": "2026-10-24T05:08:25Z"
+  },
+  "eef0a7e27d19f74d": {
+   "version": "2.1.310",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de l'affichage des images dans tmux sur kitty, Ghostty et iTerm2 3.5+ avec le rendu plein écran.",
+   "le": "2026-10-24T05:08:25Z"
+  },
+  "3b63d737d8baabd2": {
+   "version": "2.1.310",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Amélioration des messages d'erreur du sandbox sur Linux pour expliquer la restriction AppArmor d'Ubuntu.",
+   "le": "2026-10-24T05:08:25Z"
+  },
+  "0f983b5a20892975": {
+   "version": "2.1.310",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "En cas de timeout d'outil MCP sans réponse, Claude est informé pour ne pas répéter l'appel inutilement.",
+   "le": "2026-10-24T05:08:25Z"
+  },
+  "b860beb2c2e1c01b": {
+   "version": "2.1.310",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction dans VSCode où Entrée sur le bouton de feedback approuvait le plan au lieu d'envoyer les commentaires.",
+   "le": "2026-10-24T05:08:25Z"
+  },
+  "e87f1c34ccb0ea66": {
+   "version": "2.1.310",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de l'erreur 'Something went wrong' dans le panneau VSCode après changement de branche sur une session cloud.",
+   "le": "2026-10-24T05:08:25Z"
+  },
+  "fc39ab7c548ca0ae": {
+   "version": "2.1.310",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Les rôles Enterprise peuvent désormais contrôler l'accès aux sessions cloud et au contrôle distant via des permissions.",
+   "le": "2026-10-24T05:08:25Z"
+  },
+  "c55ed7da99568232": {
+   "version": "2.1.310",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Ajout d'un bouton pour charger le script de configuration d'un environnement cloud depuis un fichier local.",
+   "le": "2026-10-24T05:08:25Z"
+  },
+  "22893c2d29813082": {
+   "version": "2.1.310",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Les erreurs d'échec de sauvegarde ou d'archivage dans l'éditeur d'environnement cloud s'affichent désormais dans la boîte de dialogue.",
+   "le": "2026-10-24T05:08:25Z"
+  },
+  "f27eab65cc7a6e40": {
+   "version": "2.1.310",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Les erreurs d'actions sur les jetons API de routine s'affichent désormais dans la boîte de dialogue d'édition.",
+   "le": "2026-10-24T05:08:25Z"
+  },
+  "d0d318e8bbdd1022": {
+   "version": "2.1.310",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "La liste de démarrage de session affiche désormais la sortie du script de configuration dans une boîte défilante.",
+   "le": "2026-10-24T05:08:25Z"
+  },
+  "3285b638f149e301": {
+   "version": "2.1.310",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "L'activation des sessions cloud ou du contrôle distant demande confirmation et liste les rôles ayant cette permission.",
+   "le": "2026-10-24T05:08:25Z"
+  },
+  "8664b5d5e655cbae": {
+   "version": "2.1.310",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "La boîte de dialogue d'environnement cloud organise l'accès réseau, le script et les variables par lignes distinctes.",
+   "le": "2026-10-24T05:08:25Z"
+  },
+  "ab8e838b0f926ad5": {
+   "version": "2.1.310",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de Claude Tag qui traitait les commandes en gras ou italique comme des messages ordinaires.",
+   "le": "2026-10-24T05:08:25Z"
+  },
+  "86feda00c06ccc15": {
+   "version": "2.1.310",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction des pages d'administration de Claude Tag qui s'affichaient en erreur lors d'un rafraîchissement de fond.",
+   "le": "2026-10-24T05:08:25Z"
+  },
+  "d79d8201f72c6f44": {
+   "version": "2.1.310",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de la page des limites de dépenses de Claude Tag qui indiquait à tort qu'aucun canal ne correspondait au filtre.",
+   "le": "2026-10-24T05:08:25Z"
+  },
+  "6e41f636a332104c": {
+   "version": "2.1.310",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de la section d'administration Code Review qui masquait les dépôts après un échec de rafraîchissement.",
+   "le": "2026-10-24T05:08:25Z"
+  },
+  "9658c11902042068": {
+   "version": "2.1.310",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Amélioration de la section d'administration de la revue de code avec une nouvelle tentative automatique en cas d'échec.",
+   "le": "2026-10-24T05:08:29Z"
   }
  }
 }

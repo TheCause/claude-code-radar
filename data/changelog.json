@@ -1,15 +1,16 @@
 {
   "metadata": {
-    "lastUpdated": "2026-10-23 12:17:57",
-    "latestVersion": "2.1.309",
-    "latestDate": "October 22, 2026",
-    "totalVersions": 429,
-    "totalItems": 8166,
-    "highImpactCount": 1700,
-    "lastUpdatedUtc": "2026-10-23T10:17:57Z",
+    "lastUpdated": "2026-10-24 07:07:51",
+    "latestVersion": "2.1.310",
+    "latestDate": "October 23, 2026",
+    "totalVersions": 430,
+    "totalItems": 8192,
+    "highImpactCount": 1709,
+    "lastUpdatedUtc": "2026-10-24T05:07:51Z",
     "sourceLive": true,
     "analyseIA": {
       "versionsAnalysees": [
+        "2.1.310",
         "2.1.309",
         "2.1.308",
         "2.1.307",
@@ -37,12 +38,473 @@
         "2.1.283",
         "2.1.282"
       ],
-      "entreesAnalysees": 2224,
+      "entreesAnalysees": 2250,
       "enAttente": 0,
       "pannes": []
     }
   },
   "versions": [
+    {
+      "version": "2.1.310",
+      "date": "October 23, 2026",
+      "isoDate": "2026-10-23",
+      "yearMonth": "2026-10",
+      "yearQuarter": "2026-Q4",
+      "itemCount": 26,
+      "items": [
+        {
+          "text": "Added the Monitor tool and plugin monitors on Bedrock, Vertex, and Foundry, and when telemetry or nonessential traffic is disabled; long foreground sleeps are now blocked there too",
+          "cleanText": "Added the Monitor tool and plugin monitors on Bedrock, Vertex, and Foundry, and when telemetry or nonessential traffic is disabled; long foreground sleeps are now blocked there too",
+          "scope": "Core CLI",
+          "actionType": "Added",
+          "tags": [
+            "Security & Governance",
+            "Plugins & Skills"
+          ],
+          "impact": "High",
+          "version": "2.1.310",
+          "date": "2026-10-23",
+          "ia": {
+            "domaine": "mcp",
+            "impact": "notable",
+            "resume": "Ajout du support des moniteurs de plugins sur Bedrock, Vertex et Foundry, avec blocage des longues attentes."
+          }
+        },
+        {
+          "text": "Fixed requests failing behind some gateways and compatible servers that reject the `effort-2025-11-24` beta value or mid-conversation system messages; Claude Code now retries without them",
+          "cleanText": "Fixed requests failing behind some gateways and compatible servers that reject the `effort-2025-11-24` beta value or mid-conversation system messages; Claude Code now retries without them",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Standard",
+          "version": "2.1.310",
+          "date": "2026-10-23",
+          "ia": {
+            "domaine": "securite",
+            "impact": "mineur",
+            "resume": "Correction des échecs de requêtes derrière certains passerelles en retirant les valeurs bêta non supportées."
+          }
+        },
+        {
+          "text": "Fixed background cleanup deleting some recent files, such as pasted images, when `cleanupPeriodDays` is set to a very large value",
+          "cleanText": "Fixed background cleanup deleting some recent files, such as pasted images, when `cleanupPeriodDays` is set to a very large value",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Standard",
+          "version": "2.1.310",
+          "date": "2026-10-23",
+          "ia": {
+            "domaine": "performance",
+            "impact": "mineur",
+            "resume": "Correction du nettoyage de fond qui supprimait des fichiers récents comme les images collées avec une longue période."
+          }
+        },
+        {
+          "text": "Fixed compaction after a \"Prompt is too long\" error keeping too much of a conversation with dense text, such as base64 or SVG, so the next request could fail again",
+          "cleanText": "Fixed compaction after a \"Prompt is too long\" error keeping too much of a conversation with dense text, such as base64 or SVG, so the next request could fail again",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Terminal & UX"
+          ],
+          "impact": "Standard",
+          "version": "2.1.310",
+          "date": "2026-10-23",
+          "ia": {
+            "domaine": "performance",
+            "impact": "notable",
+            "resume": "Amélioration de la compaction après erreur de longueur pour éviter les échecs répétés avec du texte dense."
+          }
+        },
+        {
+          "text": "Fixed file read permission prompts not showing where a symbolic link leads",
+          "cleanText": "Fixed file read permission prompts not showing where a symbolic link leads",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Security & Governance",
+            "Terminal & UX"
+          ],
+          "impact": "Standard",
+          "version": "2.1.310",
+          "date": "2026-10-23",
+          "ia": {
+            "domaine": "securite",
+            "impact": "mineur",
+            "resume": "Les prompts de permission de lecture de fichiers affichent désormais la destination des liens symboliques."
+          }
+        },
+        {
+          "text": "Fixed a question's auto-continue timeout firing the moment the external editor closed after a long edit",
+          "cleanText": "Fixed a question's auto-continue timeout firing the moment the external editor closed after a long edit",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Standard",
+          "version": "2.1.310",
+          "date": "2026-10-23",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Correction du déclenchement prématuré du timeout de continuation automatique après fermeture de l'éditeur externe."
+          }
+        },
+        {
+          "text": "Windows: Fixed PreToolUse and PermissionRequest hooks letting a tool call through when Git Bash is missing and the hook's command is only quoted strings, such as a quoted path",
+          "cleanText": "Windows: Fixed PreToolUse and PermissionRequest hooks letting a tool call through when Git Bash is missing and the hook's command is only quoted strings, such as a quoted path",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Security & Governance",
+            "Plugins & Skills"
+          ],
+          "impact": "Standard",
+          "version": "2.1.310",
+          "date": "2026-10-23",
+          "ia": {
+            "domaine": "hooks_config",
+            "impact": "mineur",
+            "resume": "Correction sur Windows des hooks qui laissaient passer des appels d'outils si Git Bash était absent et la commande citée."
+          }
+        },
+        {
+          "text": "Improved auto mode's prompt before the first read outside the working directories: it now says when blocking those reads makes shell commands ask for permission",
+          "cleanText": "Improved auto mode's prompt before the first read outside the working directories: it now says when blocking those reads makes shell commands ask for permission",
+          "scope": "Core CLI",
+          "actionType": "Improved",
+          "tags": [
+            "Security & Governance",
+            "Terminal & UX"
+          ],
+          "impact": "High",
+          "version": "2.1.310",
+          "date": "2026-10-23",
+          "ia": {
+            "domaine": "securite",
+            "impact": "notable",
+            "resume": "Le mode auto précise désormais que le blocage des lectures externes impose des permissions pour les commandes shell."
+          }
+        },
+        {
+          "text": "Improved memory use of non-interactive sessions (`-p`, Agent SDK) during compaction when the transcript file is very large",
+          "cleanText": "Improved memory use of non-interactive sessions (`-p`, Agent SDK) during compaction when the transcript file is very large",
+          "scope": "Core CLI",
+          "actionType": "Improved",
+          "tags": [
+            "Multi-Agent & Workflows",
+            "Performance & Reliability"
+          ],
+          "impact": "Medium",
+          "version": "2.1.310",
+          "date": "2026-10-23",
+          "ia": {
+            "domaine": "performance",
+            "impact": "notable",
+            "resume": "Réduction de l'utilisation mémoire des sessions non interactives lors de la compaction de grands fichiers de transcript."
+          }
+        },
+        {
+          "text": "Improved a mod's `Image` to draw inside tmux with `allow-passthrough` and `focus-events` on, in kitty, Ghostty, and iTerm2 3.5+ with fullscreen rendering, where it showed only its `alt` text",
+          "cleanText": "Improved a mod's `Image` to draw inside tmux with `allow-passthrough` and `focus-events` on, in kitty, Ghostty, and iTerm2 3.5+ with fullscreen rendering, where it showed only its `alt` text",
+          "scope": "Core CLI",
+          "actionType": "Improved",
+          "tags": [
+            "Terminal & UX"
+          ],
+          "impact": "Medium",
+          "version": "2.1.310",
+          "date": "2026-10-23",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Correction de l'affichage des images dans tmux sur kitty, Ghostty et iTerm2 3.5+ avec le rendu plein écran."
+          }
+        },
+        {
+          "text": "Linux: Improved `/sandbox` and the sandbox startup warning to name Ubuntu's AppArmor restriction on user namespaces, and how to lift it, when it keeps bubblewrap from starting the sandbox",
+          "cleanText": "Linux: Improved `/sandbox` and the sandbox startup warning to name Ubuntu's AppArmor restriction on user namespaces, and how to lift it, when it keeps bubblewrap from starting the sandbox",
+          "scope": "Core CLI",
+          "actionType": "Improved",
+          "tags": [
+            "Security & Governance",
+            "Performance & Reliability"
+          ],
+          "impact": "High",
+          "version": "2.1.310",
+          "date": "2026-10-23",
+          "ia": {
+            "domaine": "securite",
+            "impact": "mineur",
+            "resume": "Amélioration des messages d'erreur du sandbox sur Linux pour expliquer la restriction AppArmor d'Ubuntu."
+          }
+        },
+        {
+          "text": "Changed the error for an MCP tool call that times out in a non-interactive session while the server's elicitation is unanswered: it now tells Claude that no answer came and not to repeat the call",
+          "cleanText": "Changed the error for an MCP tool call that times out in a non-interactive session while the server's elicitation is unanswered: it now tells Claude that no answer came and not to repeat the call",
+          "scope": "Core CLI",
+          "actionType": "Changed",
+          "tags": [
+            "MCP & Tools"
+          ],
+          "impact": "High",
+          "version": "2.1.310",
+          "date": "2026-10-23",
+          "ia": {
+            "domaine": "mcp",
+            "impact": "notable",
+            "resume": "En cas de timeout d'outil MCP sans réponse, Claude est informé pour ne pas répéter l'appel inutilement."
+          }
+        },
+        {
+          "text": "[VSCode] Fixed pressing Enter on the plan review card's \"Send feedback and keep planning\" button approving the plan instead of sending your comments back",
+          "cleanText": "Fixed pressing Enter on the plan review card's \"Send feedback and keep planning\" button approving the plan instead of sending your comments back",
+          "scope": "VSCode",
+          "actionType": "Fixed",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Medium",
+          "version": "2.1.310",
+          "date": "2026-10-23",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Correction dans VSCode où Entrée sur le bouton de feedback approuvait le plan au lieu d'envoyer les commentaires."
+          }
+        },
+        {
+          "text": "[VSCode] Fixed the panel showing \"Something went wrong\" after \"Switch branch & continue\" on a cloud session opened from Session history's Web tab",
+          "cleanText": "Fixed the panel showing \"Something went wrong\" after \"Switch branch & continue\" on a cloud session opened from Session history's Web tab",
+          "scope": "VSCode",
+          "actionType": "Fixed",
+          "tags": [
+            "IDE & Cloud Ubiquity"
+          ],
+          "impact": "Medium",
+          "version": "2.1.310",
+          "date": "2026-10-23",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Correction de l'erreur 'Something went wrong' dans le panneau VSCode après changement de branche sur une session cloud."
+          }
+        },
+        {
+          "text": "[Cloud sessions] Added Claude Code cloud sessions and Remote Control permissions to Enterprise custom roles, so Owners can control access to each by role",
+          "cleanText": "Added Claude Code cloud sessions and Remote Control permissions to Enterprise custom roles, so Owners can control access to each by role",
+          "scope": "Cloud sessions",
+          "actionType": "Added",
+          "tags": [
+            "Security & Governance",
+            "IDE & Cloud Ubiquity"
+          ],
+          "impact": "High",
+          "version": "2.1.310",
+          "date": "2026-10-23",
+          "ia": {
+            "domaine": "securite",
+            "impact": "notable",
+            "resume": "Les rôles Enterprise peuvent désormais contrôler l'accès aux sessions cloud et au contrôle distant via des permissions."
+          }
+        },
+        {
+          "text": "[Cloud sessions] Added a Choose file button to load a cloud environment's setup script from a file",
+          "cleanText": "Added a Choose file button to load a cloud environment's setup script from a file",
+          "scope": "Cloud sessions",
+          "actionType": "Added",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Medium",
+          "version": "2.1.310",
+          "date": "2026-10-23",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Ajout d'un bouton pour charger le script de configuration d'un environnement cloud depuis un fichier local."
+          }
+        },
+        {
+          "text": "[Cloud sessions] Fixed failed saves and archives in the cloud environment edit dialog showing no error inside the dialog",
+          "cleanText": "Fixed failed saves and archives in the cloud environment edit dialog showing no error inside the dialog",
+          "scope": "Cloud sessions",
+          "actionType": "Fixed",
+          "tags": [
+            "Terminal & UX"
+          ],
+          "impact": "Standard",
+          "version": "2.1.310",
+          "date": "2026-10-23",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Les erreurs d'échec de sauvegarde ou d'archivage dans l'éditeur d'environnement cloud s'affichent désormais dans la boîte de dialogue."
+          }
+        },
+        {
+          "text": "[Cloud sessions] Fixed failed routine API token actions showing only a toast; the error now appears in the routine edit dialog",
+          "cleanText": "Fixed failed routine API token actions showing only a toast; the error now appears in the routine edit dialog",
+          "scope": "Cloud sessions",
+          "actionType": "Fixed",
+          "tags": [
+            "Models & Intelligence",
+            "Terminal & UX"
+          ],
+          "impact": "Standard",
+          "version": "2.1.310",
+          "date": "2026-10-23",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Les erreurs d'actions sur les jetons API de routine s'affichent désormais dans la boîte de dialogue d'édition."
+          }
+        },
+        {
+          "text": "[Cloud sessions] Improved the session start checklist to show a cloud environment's setup script output in a scrolling box",
+          "cleanText": "Improved the session start checklist to show a cloud environment's setup script output in a scrolling box",
+          "scope": "Cloud sessions",
+          "actionType": "Improved",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Medium",
+          "version": "2.1.310",
+          "date": "2026-10-23",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "La liste de démarrage de session affiche désormais la sortie du script de configuration dans une boîte défilante."
+          }
+        },
+        {
+          "text": "[Cloud sessions] Changed turning on Cloud sessions or Remote Control in admin settings to ask for confirmation and list the custom roles that have that permission",
+          "cleanText": "Changed turning on Cloud sessions or Remote Control in admin settings to ask for confirmation and list the custom roles that have that permission",
+          "scope": "Cloud sessions",
+          "actionType": "Changed",
+          "tags": [
+            "Security & Governance",
+            "IDE & Cloud Ubiquity"
+          ],
+          "impact": "High",
+          "version": "2.1.310",
+          "date": "2026-10-23",
+          "ia": {
+            "domaine": "securite",
+            "impact": "notable",
+            "resume": "L'activation des sessions cloud ou du contrôle distant demande confirmation et liste les rôles ayant cette permission."
+          }
+        },
+        {
+          "text": "[Cloud sessions] Changed the cloud environment dialog to open network access, setup script and environment variables from rows instead of listing every editor at once",
+          "cleanText": "Changed the cloud environment dialog to open network access, setup script and environment variables from rows instead of listing every editor at once",
+          "scope": "Cloud sessions",
+          "actionType": "Changed",
+          "tags": [
+            "Terminal & UX"
+          ],
+          "impact": "Standard",
+          "version": "2.1.310",
+          "date": "2026-10-23",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "La boîte de dialogue d'environnement cloud organise l'accès réseau, le script et les variables par lignes distinctes."
+          }
+        },
+        {
+          "text": "[Claude Tag] Fixed Claude Tag treating `!` commands such as `!restart` and `!help` as ordinary messages when sent in bold, italic or strikethrough",
+          "cleanText": "Fixed Claude Tag treating `!` commands such as `!restart` and `!help` as ordinary messages when sent in bold, italic or strikethrough",
+          "scope": "Claude Tag",
+          "actionType": "Fixed",
+          "tags": [
+            "IDE & Cloud Ubiquity"
+          ],
+          "impact": "High",
+          "version": "2.1.310",
+          "date": "2026-10-23",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Correction de Claude Tag qui traitait les commandes en gras ou italique comme des messages ordinaires."
+          }
+        },
+        {
+          "text": "[Claude Tag] Fixed Claude Tag admin channel and workspace pages being replaced by a load error when a background refresh of the bundle list fails",
+          "cleanText": "Fixed Claude Tag admin channel and workspace pages being replaced by a load error when a background refresh of the bundle list fails",
+          "scope": "Claude Tag",
+          "actionType": "Fixed",
+          "tags": [
+            "IDE & Cloud Ubiquity"
+          ],
+          "impact": "High",
+          "version": "2.1.310",
+          "date": "2026-10-23",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Correction des pages d'administration de Claude Tag qui s'affichaient en erreur lors d'un rafraîchissement de fond."
+          }
+        },
+        {
+          "text": "[Claude Tag] Fixed Claude Tag's spend limits page in admin settings reporting that no channels match a filter while channel names are still loading",
+          "cleanText": "Fixed Claude Tag's spend limits page in admin settings reporting that no channels match a filter while channel names are still loading",
+          "scope": "Claude Tag",
+          "actionType": "Fixed",
+          "tags": [
+            "IDE & Cloud Ubiquity"
+          ],
+          "impact": "High",
+          "version": "2.1.310",
+          "date": "2026-10-23",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Correction de la page des limites de dépenses de Claude Tag qui indiquait à tort qu'aucun canal ne correspondait au filtre."
+          }
+        },
+        {
+          "text": "[Code Review] Fixed the Code Review admin section hiding its repositories and switches after a failed refresh of the repository list",
+          "cleanText": "Fixed the Code Review admin section hiding its repositories and switches after a failed refresh of the repository list",
+          "scope": "Code Review",
+          "actionType": "Fixed",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Standard",
+          "version": "2.1.310",
+          "date": "2026-10-23",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Correction de la section d'administration Code Review qui masquait les dépôts après un échec de rafraîchissement."
+          }
+        },
+        {
+          "text": "[Code Review] Improved the Code Review admin section to retry the first load and show one Try again banner when it still fails",
+          "cleanText": "Improved the Code Review admin section to retry the first load and show one Try again banner when it still fails",
+          "scope": "Code Review",
+          "actionType": "Improved",
+          "tags": [
+            "Performance & Reliability"
+          ],
+          "impact": "Medium",
+          "version": "2.1.310",
+          "date": "2026-10-23",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Amélioration de la section d'administration de la revue de code avec une nouvelle tentative automatique en cas d'échec."
+          }
+        }
+      ]
+    },
     {
       "version": "2.1.309",
       "date": "October 22, 2026",
