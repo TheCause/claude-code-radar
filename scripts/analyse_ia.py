@@ -20,6 +20,8 @@ Garde-fous :
 import hashlib
 import json
 import os
+import sys
+import time
 import urllib.error
 import urllib.request
 from datetime import datetime, timezone
@@ -94,7 +96,15 @@ def schema(n):
                            "resume": {"type": "string"}}}}}}
 
 
-def appel_ollama(systeme, utilisateur, n, url=None, modele=None):
+def delai_ollama(caracteres, sortie_max=2048):
+    """Délai selon la taille du prompt : 60 s, plus 1 s par 1 000 jetons lus et 1 s par
+    100 jetons écrits, à 2,7 caractères par jeton (débits mesurés sur le modèle local :
+    lecture ≥ 1 270 jetons/s, écriture ≥ 150 jetons/s). Un délai fixe coupait un long
+    prompt qui avançait, ou laissait une panne invisible 10 min."""
+    return 60 + caracteres / 2.7 / 1000 + sortie_max / 100
+
+
+def appel_ollama(systeme, utilisateur, n, url=None, modele=None, attente_reprise=5):
     url = (url or os.environ.get("OLLAMA_URL", "")).rstrip("/")
     if not url:
         raise PanneAnalyse("OLLAMA_URL non défini")
@@ -106,11 +116,25 @@ def appel_ollama(systeme, utilisateur, n, url=None, modele=None):
                      {"role": "user", "content": utilisateur}]}).encode()
     req = urllib.request.Request(url + "/api/chat", data=corps,
                                  headers={"Content-Type": "application/json"})
-    try:
-        with urllib.request.urlopen(req, timeout=600) as r:
-            return json.loads(r.read())["message"]["content"]
-    except (urllib.error.URLError, OSError, ValueError, KeyError) as e:
-        raise PanneAnalyse(f"modèle injoignable : {type(e).__name__}") from e
+    delai = delai_ollama(len(systeme) + len(utilisateur))
+    # UNE reprise, délai + 300 s, sur expiration ou connexion perdue (elle couvre un chargement à
+    # froid depuis le disque, 226 s mesurées, qu'Ollama annule si le client abandonne) ; une réponse HTTP d'erreur ne se reprend pas.
+    for essai in (1, 2):
+        try:
+            with urllib.request.urlopen(req, timeout=delai if essai == 1 else delai + 300) as r:
+                return json.loads(r.read())["message"]["content"]
+        except urllib.error.HTTPError as e:
+            raise PanneAnalyse(f"modèle en erreur : HTTP {e.code}") from e
+        except (urllib.error.URLError, OSError) as e:
+            if essai == 1:
+                print(f"[!] Analyse IA : reprise après {type(e).__name__} (délai {delai:.0f} s, reprise {delai + 300:.0f} s)",
+                      file=sys.stderr, flush=True)
+                time.sleep(attente_reprise)
+                continue
+            raise PanneAnalyse(f"modèle injoignable : {type(e).__name__}") from e
+        except (ValueError, KeyError) as e:
+            raise PanneAnalyse(f"réponse illisible : {type(e).__name__}") from e
+    raise AssertionError("inatteignable")
 
 
 def verifier_carte(url=None):

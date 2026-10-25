@@ -155,5 +155,74 @@ class TestAnalyseIA(unittest.TestCase):
         self.assertEqual((faites, pannes), (2, []))
 
 
+class _Reponse:
+    def __init__(self, contenu):
+        self.contenu = contenu
+
+    def __enter__(self):
+        return self
+
+    def __exit__(self, *a):
+        return False
+
+    def read(self):
+        return json.dumps({"message": {"content": self.contenu}}).encode()
+
+
+class TestDelaiEtReprise(unittest.TestCase):
+    """Délai selon la taille du prompt, et UNE reprise annoncée (24 oct 2026)."""
+
+    def setUp(self):
+        import urllib.request
+        self.urllib = urllib.request
+        self.vrai = urllib.request.urlopen
+        os.environ.setdefault("OLLAMA_MODELE", "modele-voulu:test")
+
+    def tearDown(self):
+        self.urllib.urlopen = self.vrai
+
+    def scenario(self, issues):
+        appels = []
+
+        def faux(req, timeout=None):
+            appels.append(timeout)
+            issue = issues[len(appels) - 1]
+            if isinstance(issue, BaseException):
+                raise issue
+            return _Reponse(issue)
+        self.urllib.urlopen = faux
+        return appels
+
+    def test_delai_selon_la_taille(self):
+        self.assertAlmostEqual(ia.delai_ollama(0), 60 + 20.48)
+        self.assertAlmostEqual(ia.delai_ollama(270_000, sortie_max=0), 160)
+
+    def test_une_reprise_apres_expiration(self):
+        import io
+        from contextlib import redirect_stderr
+        appels = self.scenario([TimeoutError("timed out"), "{}"])
+        err = io.StringIO()
+        with redirect_stderr(err):
+            self.assertEqual(ia.appel_ollama("s", "u", 1, url="http://x", attente_reprise=0), "{}")
+        self.assertEqual(len(appels), 2)
+        self.assertAlmostEqual(appels[1], appels[0] + 300)
+        self.assertIn("reprise après TimeoutError", err.getvalue())
+
+    def test_deux_expirations_font_une_panne(self):
+        import io
+        from contextlib import redirect_stderr
+        appels = self.scenario([TimeoutError("a"), TimeoutError("b"), "{}"])
+        with redirect_stderr(io.StringIO()), self.assertRaises(ia.PanneAnalyse):
+            ia.appel_ollama("s", "u", 1, url="http://x", attente_reprise=0)
+        self.assertEqual(len(appels), 2)
+
+    def test_erreur_http_sans_reprise(self):
+        import urllib.error
+        appels = self.scenario([urllib.error.HTTPError("http://x", 404, "Not Found", {}, None), "{}"])
+        with self.assertRaises(ia.PanneAnalyse):
+            ia.appel_ollama("s", "u", 1, url="http://x", attente_reprise=0)
+        self.assertEqual(len(appels), 1)
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)
