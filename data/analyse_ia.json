@@ -16154,6 +16154,650 @@
    "impact": "mineur",
    "resume": "Amélioration de la section d'administration de la revue de code avec une nouvelle tentative automatique en cas d'échec.",
    "le": "2026-10-24T05:08:29Z"
+  },
+  "9639d3aa2b58f886": {
+   "version": "2.1.311",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Maintien des sessions inactives pour les runners auto-hébergés afin de gérer les processus restants.",
+   "le": "2026-10-27T06:00:33Z"
+  },
+  "d05c0b95e514e732": {
+   "version": "2.1.311",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Ajout d'un conseil d'utilisation pour le style de sortie explicatif.",
+   "le": "2026-10-27T06:00:33Z"
+  },
+  "40cb632d344643f9": {
+   "version": "2.1.311",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Correction des gels au démarrage et lors de l'édition de fichiers avec de longs CLAUDE.md.",
+   "le": "2026-10-27T06:00:33Z"
+  },
+  "aca5c1fa4751e89b": {
+   "version": "2.1.311",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "L'interruption de Claude est désormais plus réactive lors de l'attente d'un serveur MCP.",
+   "le": "2026-10-27T06:00:33Z"
+  },
+  "320d95f1f4d8f85a": {
+   "version": "2.1.311",
+   "domaine": "modeles",
+   "impact": "majeur",
+   "resume": "La conversation est désormais compactée automatiquement pour éviter les erreurs de limite de contexte.",
+   "le": "2026-10-27T06:00:33Z"
+  },
+  "6817215c2adc2fdb": {
+   "version": "2.1.311",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Correction des ralentissements et des erreurs de rapport lors de modifications massives de fichiers.",
+   "le": "2026-10-27T06:00:33Z"
+  },
+  "5ef42d1544dfe717": {
+   "version": "2.1.311",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Les sous-agents peuvent désormais utiliser les outils MCP même si la connexion est tardive.",
+   "le": "2026-10-27T06:00:33Z"
+  },
+  "a748562b477d03a8": {
+   "version": "2.1.311",
+   "domaine": "hooks_config",
+   "impact": "notable",
+   "resume": "Correction de la lecture de contenus obsolètes dans MEMORY.md et CLAUDE.md après compaction.",
+   "le": "2026-10-27T06:00:33Z"
+  },
+  "d4ec5ea22b8a62d0": {
+   "version": "2.1.311",
+   "domaine": "autre",
+   "impact": "mineur",
+   "resume": "Correction de l'ordre et de la gestion des messages dans les sessions SDK et via l'option -p.",
+   "le": "2026-10-27T06:00:33Z"
+  },
+  "e3e8bb6d22c49d00": {
+   "version": "2.1.311",
+   "domaine": "hooks_config",
+   "impact": "mineur",
+   "resume": "Correction de la fréquence d'exécution des hooks de fin de sous-agent.",
+   "le": "2026-10-27T06:00:33Z"
+  },
+  "54a1b6023704c9d7": {
+   "version": "2.1.311",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Le sélecteur de fichiers respecte désormais correctement les règles d'exclusion .ignore.",
+   "le": "2026-10-27T06:00:33Z"
+  },
+  "427fd191a1624d39": {
+   "version": "2.1.311",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Empêche la suppression prématurée de l'espace de travail d'un sous-agent en arrière-plan.",
+   "le": "2026-10-27T06:00:33Z"
+  },
+  "63631b1d3c0abfdf": {
+   "version": "2.1.311",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Correction du comportement des agents en arrière-plan qui redémarraient mal les tours de parole.",
+   "le": "2026-10-27T06:00:33Z"
+  },
+  "df28a3bc6565a55a": {
+   "version": "2.1.311",
+   "domaine": "autre",
+   "impact": "mineur",
+   "resume": "Correction de la description de l'outil Bash concernant la persistance du répertoire.",
+   "le": "2026-10-27T06:00:33Z"
+  },
+  "59d0520c804e6ccb": {
+   "version": "2.1.311",
+   "domaine": "autre",
+   "impact": "mineur",
+   "resume": "Correction de l'affichage du shell utilisé dans le bloc d'environnement.",
+   "le": "2026-10-27T06:00:33Z"
+  },
+  "5e79c958d6cf6747": {
+   "version": "2.1.311",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Correction de l'enregistrement des serveurs MCP locaux au niveau du projet plutôt que du dossier.",
+   "le": "2026-10-27T06:00:33Z"
+  },
+  "efe55ae55120742d": {
+   "version": "2.1.311",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Suppression des doublons de codes d'erreur lors de l'affichage des échecs de connexion MCP.",
+   "le": "2026-10-27T06:00:33Z"
+  },
+  "93b9557b3a1f65d5": {
+   "version": "2.1.311",
+   "domaine": "autre",
+   "impact": "mineur",
+   "resume": "Réduction du temps d'attente de connexion en cas de blocage par un proxy réseau.",
+   "le": "2026-10-27T06:00:33Z"
+  },
+  "87aa2065a5559c70": {
+   "version": "2.1.311",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Correction d'un bug d'affichage des messages Claude sur les applications mobiles.",
+   "le": "2026-10-27T06:00:33Z"
+  },
+  "ea48f2c8edd1c338": {
+   "version": "2.1.311",
+   "domaine": "autre",
+   "impact": "mineur",
+   "resume": "Meilleure communication des erreurs de disque plein ou de limite de pièces jointes.",
+   "le": "2026-10-27T06:00:33Z"
+  },
+  "efacef3b3a882f45": {
+   "version": "2.1.311",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Évite les blocages des recherches web en ajoutant un délai d'expiration de 300 secondes.",
+   "le": "2026-10-27T06:00:33Z"
+  },
+  "7b7d61f91ff4fe55": {
+   "version": "2.1.311",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Redémarrage automatique des sessions en arrière-plan qui ont planté.",
+   "le": "2026-10-27T06:00:33Z"
+  },
+  "7434ca7b44e47990": {
+   "version": "2.1.311",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de la suggestion de commande lors d'une erreur de réponse du service en arrière-plan.",
+   "le": "2026-10-27T06:00:33Z"
+  },
+  "d20dbf466cb5fc03": {
+   "version": "2.1.311",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction de l'ordre de lancement du service lors de l'utilisation de la commande respawn.",
+   "le": "2026-10-27T06:00:33Z"
+  },
+  "a9abfd166de7d771": {
+   "version": "2.1.311",
+   "domaine": "modeles",
+   "impact": "mineur",
+   "resume": "Avertissement ajouté en cas d'absence de cache lors de l'utilisation de modèles différents.",
+   "le": "2026-10-27T06:00:33Z"
+  },
+  "de074314ace02cc4": {
+   "version": "2.1.311",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction du message de statut lors de l'installation de l'extension VS Code.",
+   "le": "2026-10-27T06:00:42Z"
+  },
+  "8ec8eb9c2cbce9c6": {
+   "version": "2.1.311",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de l'aperçu des fichiers qui décalait les lignes dans les terminaux étroits.",
+   "le": "2026-10-27T06:00:42Z"
+  },
+  "de2c91a1f56de340": {
+   "version": "2.1.311",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction d'un bug d'envoi en double lors de la récupération d'un message en attente.",
+   "le": "2026-10-27T06:00:42Z"
+  },
+  "cd98c67293bb509c": {
+   "version": "2.1.311",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Les sessions cloud conservent désormais leurs outils et connecteurs après un redémarrage.",
+   "le": "2026-10-27T06:00:42Z"
+  },
+  "a95301de75c507e3": {
+   "version": "2.1.311",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Correction de l'affichage de la liste des tâches lors de la reprise d'une session d'équipe.",
+   "le": "2026-10-27T06:00:42Z"
+  },
+  "a1bcdf429111cc33": {
+   "version": "2.1.311",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Le collage d'un chemin d'image l'attache désormais automatiquement au prompt.",
+   "le": "2026-10-27T06:00:42Z"
+  },
+  "2bca47d3e98e31f2": {
+   "version": "2.1.311",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de l'affichage des raccourcis clavier sur la carte de feedback.",
+   "le": "2026-10-27T06:00:42Z"
+  },
+  "d131b129491fc0a8": {
+   "version": "2.1.311",
+   "domaine": "modeles",
+   "impact": "mineur",
+   "resume": "Correction de la disparition des antislashs isolés dans les réponses de Claude.",
+   "le": "2026-10-27T06:00:42Z"
+  },
+  "392232947b9bcc41": {
+   "version": "2.1.311",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction de la compaction de l'historique des coéquipiers agents.",
+   "le": "2026-10-27T06:00:42Z"
+  },
+  "17ec8a3f9f07f001": {
+   "version": "2.1.311",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction des options de résumé dans le menu de retour en arrière.",
+   "le": "2026-10-27T06:00:42Z"
+  },
+  "50b4e1366ebf8a9a": {
+   "version": "2.1.311",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Empêche la réexécution automatique de certaines tâches lors du redémarrage d'une session.",
+   "le": "2026-10-27T06:00:42Z"
+  },
+  "bf84c736943700bb": {
+   "version": "2.1.311",
+   "domaine": "modeles",
+   "impact": "notable",
+   "resume": "Correction de l'interruption prématurée du raisonnement long sur certains fournisseurs cloud.",
+   "le": "2026-10-27T06:00:42Z"
+  },
+  "89b974609dbccb76": {
+   "version": "2.1.311",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction du message de statut erroné concernant l'installation du plugin JetBrains.",
+   "le": "2026-10-27T06:00:42Z"
+  },
+  "43b1bdc14603a1f2": {
+   "version": "2.1.311",
+   "domaine": "autre",
+   "impact": "mineur",
+   "resume": "Amélioration du message d'erreur pour les abonnés Pro/Max concernant la facturation.",
+   "le": "2026-10-27T06:00:42Z"
+  },
+  "e20efea212ae65a2": {
+   "version": "2.1.311",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de l'ouverture intempestive du volet de différence (diff) en plein écran.",
+   "le": "2026-10-27T06:00:42Z"
+  },
+  "74270003a3e0513c": {
+   "version": "2.1.311",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Correction de l'état d'erreur des serveurs MCP distants après une réinitialisation d'authentification.",
+   "le": "2026-10-27T06:00:42Z"
+  },
+  "5739dd65d24eddfd": {
+   "version": "2.1.311",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Correction de l'affichage erroné du statut d'authentification pour les serveurs distants.",
+   "le": "2026-10-27T06:00:42Z"
+  },
+  "764db825519136ea": {
+   "version": "2.1.311",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Correction du chargement des plugins dans un dossier spécifique.",
+   "le": "2026-10-27T06:00:42Z"
+  },
+  "f343ad9591e6abbd": {
+   "version": "2.1.311",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "Correction de l'affichage des échecs de cache de prompt dans les statistiques d'usage.",
+   "le": "2026-10-27T06:00:42Z"
+  },
+  "a65d8ae038e18b1b": {
+   "version": "2.1.311",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction des liens textuels qui ne sont plus cliquables en session de fond.",
+   "le": "2026-10-27T06:00:42Z"
+  },
+  "a78e7b7adb5d2768": {
+   "version": "2.1.311",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction du message de confirmation lors de l'utilisation de la fonction rewind.",
+   "le": "2026-10-27T06:00:42Z"
+  },
+  "1a31124bcd6137f8": {
+   "version": "2.1.311",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction d'un avertissement erroné sur l'impact de la restauration de code.",
+   "le": "2026-10-27T06:00:42Z"
+  },
+  "79abb5986c52efeb": {
+   "version": "2.1.311",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de l'accessibilité pour les lecteurs d'écran lors de l'approbation de plan.",
+   "le": "2026-10-27T06:00:42Z"
+  },
+  "6294d4fc025f641c": {
+   "version": "2.1.311",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Correction des tentatives de requêtes infinies ou inutiles malgré les instructions de l'API.",
+   "le": "2026-10-27T06:00:42Z"
+  },
+  "c2ee383965d23009": {
+   "version": "2.1.311",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Correction d'un échec de commande Bash sandbox sous Linux avec certains réglages.",
+   "le": "2026-10-27T06:00:42Z"
+  },
+  "f2ac4e8255ab2b46": {
+   "version": "2.1.311",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction du démarrage des sessions auto-hébergées en cas de limite de débit sur un dépôt en lecture seule.",
+   "le": "2026-10-27T06:00:51Z"
+  },
+  "237844cd905ed7b7": {
+   "version": "2.1.311",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Démarrage plus rapide pour les comptes Pro et Max grâce à la réduction des requêtes réseau répétitives.",
+   "le": "2026-10-27T06:00:51Z"
+  },
+  "3130c20e0d71d6da": {
+   "version": "2.1.311",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Avertissement lors du chargement d'une session cloud compactée pour signaler les messages résumés manquants.",
+   "le": "2026-10-27T06:00:51Z"
+  },
+  "04304b29485acc11": {
+   "version": "2.1.311",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Messages plus clairs quand un processus en arrière-plan s'arrête, indiquant comment reprendre la session.",
+   "le": "2026-10-27T06:00:51Z"
+  },
+  "6c70377a99885b75": {
+   "version": "2.1.311",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Amélioration de la navigation entre les différentes vues des artefacts via l'URL.",
+   "le": "2026-10-27T06:00:51Z"
+  },
+  "6e0a23bad0fe2d5a": {
+   "version": "2.1.311",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "En cas de timeout, l'affichage montre désormais le résultat partiel et confirme que la commande tourne toujours.",
+   "le": "2026-10-27T06:00:51Z"
+  },
+  "f525f7662e7b6b08": {
+   "version": "2.1.311",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Claude demande un nouveau résumé si la réponse du modèle ne contient pas de synthèse avant de compacter.",
+   "le": "2026-10-27T06:00:51Z"
+  },
+  "93bc22be84c47558": {
+   "version": "2.1.311",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Meilleure distinction entre les artefacts de type 'page' (visuels/interactifs) et 'document' (écriture).",
+   "le": "2026-10-27T06:00:51Z"
+  },
+  "64ad9a5307c25c87": {
+   "version": "2.1.311",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "Accélération du démarrage lorsque l'on lance Claude uniquement avec des options (ex: --model).",
+   "le": "2026-10-27T06:00:51Z"
+  },
+  "1259c4691b614681": {
+   "version": "2.1.311",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "L'erreur de connexion API est plus explicite sur l'origine possible du problème (proxy, VPN, etc.).",
+   "le": "2026-10-27T06:00:51Z"
+  },
+  "03e9d78464db633b": {
+   "version": "2.1.311",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Amélioration de l'accessibilité : confirmation immédiate de la suppression d'une règle de permission.",
+   "le": "2026-10-27T06:00:51Z"
+  },
+  "c18d25dce5d204a7": {
+   "version": "2.1.311",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Message d'erreur plus clair si le code de connexion collé est expiré ou déjà utilisé.",
+   "le": "2026-10-27T06:00:51Z"
+  },
+  "5ce97468ada8c664": {
+   "version": "2.1.311",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Le connecteur Slack vérifie désormais le sujet du canal avant d'y poster des messages.",
+   "le": "2026-10-27T06:00:51Z"
+  },
+  "2de8925cfc0e0e3f": {
+   "version": "2.1.311",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Optimisation du mode lecteur d'écran pour une liste de questions plus épurée.",
+   "le": "2026-10-27T06:00:51Z"
+  },
+  "576f4c73cd03e1a5": {
+   "version": "2.1.311",
+   "domaine": "modeles",
+   "impact": "notable",
+   "resume": "La commande ultrathink utilise désormais un effort maximal sur les modèles récents via l'API.",
+   "le": "2026-10-27T06:00:51Z"
+  },
+  "206aef15dbdbfd85": {
+   "version": "2.1.311",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "L'indicateur visuel ultrathink ne s'affiche plus si le mot est entre guillemets ou dans un chemin de fichier.",
+   "le": "2026-10-27T06:00:51Z"
+  },
+  "4f087797cc5941dd": {
+   "version": "2.1.311",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Le raccourci Ctrl+D quitte l'agent après deux pressions sur une entrée vide.",
+   "le": "2026-10-27T06:00:51Z"
+  },
+  "7bab9d79c98c43fd": {
+   "version": "2.1.311",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Formatage JSON plus robuste avec l'échappement des caractères spéciaux et Unicode.",
+   "le": "2026-10-27T06:00:51Z"
+  },
+  "a7d2065a7cd28d89": {
+   "version": "2.1.311",
+   "domaine": "modeles",
+   "impact": "mineur",
+   "resume": "Nettoyage de l'affichage des noms de modèles en supprimant les suffixes inutiles.",
+   "le": "2026-10-27T06:00:51Z"
+  },
+  "d1e73ac85adc9187": {
+   "version": "2.1.311",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Les avertissements de permissions dans les fichiers de configuration ne s'affichent plus qu'une fois.",
+   "le": "2026-10-27T06:00:51Z"
+  },
+  "928151fa90d6b538": {
+   "version": "2.1.311",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Optimisation de la commande /code-review pour prioriser le niveau d'effort.",
+   "le": "2026-10-27T06:00:51Z"
+  },
+  "72d52ad50ba8224e": {
+   "version": "2.1.311",
+   "domaine": "hooks_config",
+   "impact": "mineur",
+   "resume": "La désactivation de la compaction via les réglages est désormais irréversible.",
+   "le": "2026-10-27T06:00:51Z"
+  },
+  "544cf5ace27cd7a4": {
+   "version": "2.1.311",
+   "domaine": "modeles",
+   "impact": "notable",
+   "resume": "Chargement des paramètres modèles via un fichier signé pour les utilisateurs Bedrock, Vertex et Foundry.",
+   "le": "2026-10-27T06:00:51Z"
+  },
+  "19698cd301e3bca5": {
+   "version": "2.1.311",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "Réutilisation de la liste des compétences (skills) entre sessions pour gagner du temps.",
+   "le": "2026-10-27T06:00:51Z"
+  },
+  "fe8ce6f23db4b894": {
+   "version": "2.1.311",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Amélioration de l'ergonomie des barres de défilement en plein écran.",
+   "le": "2026-10-27T06:00:51Z"
+  },
+  "c4611e8188dce080": {
+   "version": "2.1.311",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Clarification de la commande purge : les données sont supprimées uniquement sur votre ordinateur.",
+   "le": "2026-10-27T06:00:58Z"
+  },
+  "155cec0496075901": {
+   "version": "2.1.311",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Ajout de la coloration syntaxique dans les blocs de code des réponses Claude pour VS Code.",
+   "le": "2026-10-27T06:00:58Z"
+  },
+  "b2c26e26910b2962": {
+   "version": "2.1.311",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Ajout d'un indicateur de chargement et d'une annonce pour les hooks de soumission lents dans VS Code.",
+   "le": "2026-10-27T06:00:58Z"
+  },
+  "33a6fa1f035ec0d3": {
+   "version": "2.1.311",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Correction : les commandes personnalisées incluent désormais le fichier ouvert ou les lignes sélectionnées.",
+   "le": "2026-10-27T06:00:58Z"
+  },
+  "a6f91a5a27406d3c": {
+   "version": "2.1.311",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Correction d'un gel de l'extension VS Code lors du chargement du PATH sur macOS et Linux.",
+   "le": "2026-10-27T06:00:58Z"
+  },
+  "8ca5df31464c8a16": {
+   "version": "2.1.311",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction d'un bug VS Code où la gestion des images ouvrait aussi le texte dans un éditeur.",
+   "le": "2026-10-27T06:00:58Z"
+  },
+  "2af1650def922112": {
+   "version": "2.1.311",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "La dictée vocale s'arrête désormais correctement après l'envoi d'un message dans VS Code.",
+   "le": "2026-10-27T06:00:58Z"
+  },
+  "0f9a5393b2b3ebe0": {
+   "version": "2.1.311",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Respect de la désactivation de la télémétrie dans VS Code pour les sessions Claude Code.",
+   "le": "2026-10-27T06:00:58Z"
+  },
+  "414d2b3495a07ff6": {
+   "version": "2.1.311",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Optimisation du chargement de la liste des sessions Web dans la barre latérale de VS Code.",
+   "le": "2026-10-27T06:00:58Z"
+  },
+  "92715bc32ac7c184": {
+   "version": "2.1.311",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Correction du verrouillage des routines cloud après un départ et retour dans une organisation.",
+   "le": "2026-10-27T06:00:58Z"
+  },
+  "1e981504ce9fe7e7": {
+   "version": "2.1.311",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Affichage d'une notification d'erreur en cas d'échec de gestion des jetons API dans le cloud.",
+   "le": "2026-10-27T06:00:58Z"
+  },
+  "68dcf8228f0d0040": {
+   "version": "2.1.311",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Empêche désormais l'utilisation de noms en double pour les environnements cloud.",
+   "le": "2026-10-27T06:00:58Z"
+  },
+  "c6901d35bacd9504": {
+   "version": "2.1.311",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Nouvelle vue analytique des compétences (Skills) utilisées dans les canaux Slack.",
+   "le": "2026-10-27T06:00:58Z"
+  },
+  "239bd424db3e3d96": {
+   "version": "2.1.311",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Amélioration des routines Slack : plus de messages inutiles si aucun résultat n'est à rapporter.",
+   "le": "2026-10-27T06:00:58Z"
+  },
+  "39ff4eca2aca6f51": {
+   "version": "2.1.311",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Affichage d'un cadenas pour identifier les canaux Slack privés dans les réglages admin.",
+   "le": "2026-10-27T06:00:58Z"
+  },
+  "4961fd809546f457": {
+   "version": "2.1.311",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Amélioration des messages de Code Review en cas d'impossibilité d'analyser un changement.",
+   "le": "2026-10-27T06:00:58Z"
+  },
+  "468ace5702492f18": {
+   "version": "2.1.311",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Le Code Review tente désormais une nouvelle analyse automatique en cas de panne serveur temporaire.",
+   "le": "2026-10-27T06:00:58Z"
   }
  }
 }
