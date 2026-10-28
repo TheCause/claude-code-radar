@@ -16798,6 +16798,279 @@
    "impact": "notable",
    "resume": "Le Code Review tente désormais une nouvelle analyse automatique en cas de panne serveur temporaire.",
    "le": "2026-10-27T06:00:58Z"
+  },
+  "7564efe1740b31e4": {
+   "version": "2.1.312",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Possibilité d'identifier les utilisateurs via d'autres champs que 'sub' (ex: Microsoft Entra ID) pour l'authentification.",
+   "le": "2026-10-28T06:01:00Z"
+  },
+  "a26179815f4569a7": {
+   "version": "2.1.312",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "En plein écran, cliquer sur l'indice d'envoi permet d'expédier immédiatement un message en attente.",
+   "le": "2026-10-28T06:01:00Z"
+  },
+  "abf41d5a0a47edc8": {
+   "version": "2.1.312",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Correction du problème de récupération des paramètres et politiques d'organisation via l'extension VS Code.",
+   "le": "2026-10-28T06:01:00Z"
+  },
+  "1ca495e7f37dfa43": {
+   "version": "2.1.312",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Claude lit désormais l'intégralité des fichiers volumineux (CLAUDE.md, règles) avant de tenter une modification.",
+   "le": "2026-10-28T06:01:00Z"
+  },
+  "c2cd8e759197a3f7": {
+   "version": "2.1.312",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Correction de la perte des compétences liées aux répertoires après un changement de dossier via Bash.",
+   "le": "2026-10-28T06:01:00Z"
+  },
+  "bfdd25bf5d5a8699": {
+   "version": "2.1.312",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction d'un bug où la première réponse après une reprise de session pouvait être manquante.",
+   "le": "2026-10-28T06:01:00Z"
+  },
+  "4f81f5036afd9140": {
+   "version": "2.1.312",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Une commande au nom invalide ne bloque plus le chargement de toutes les autres commandes.",
+   "le": "2026-10-28T06:01:00Z"
+  },
+  "bf69dce5e0196700": {
+   "version": "2.1.312",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction d'un échec de lecture de fichiers PDF lors du nettoyage simultané des fichiers de session.",
+   "le": "2026-10-28T06:01:00Z"
+  },
+  "d5e5aa6a97e7da72": {
+   "version": "2.1.312",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "L'affichage de l'effort et du statut est désormais synchronisé avec le niveau réellement appliqué par le modèle.",
+   "le": "2026-10-28T06:01:00Z"
+  },
+  "f349505a6393b43e": {
+   "version": "2.1.312",
+   "domaine": "modeles",
+   "impact": "mineur",
+   "resume": "Correction de l'avertissement de cache pour refléter plus précisément quand la lecture suivante est attendue.",
+   "le": "2026-10-28T06:01:00Z"
+  },
+  "dc11fbd4a40462a8": {
+   "version": "2.1.312",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction de l'état 'en attente de l'utilisateur' lorsque le message précédent était incomplet.",
+   "le": "2026-10-28T06:01:00Z"
+  },
+  "0240fc3258c6e295": {
+   "version": "2.1.312",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "L'interface de l'agent ne restaure plus par erreur le texte d'entrée effacé juste avant la sortie.",
+   "le": "2026-10-28T06:01:00Z"
+  },
+  "05baa175108747a8": {
+   "version": "2.1.312",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de l'ouverture automatique du mode shell après une sortie via Ctrl+D.",
+   "le": "2026-10-28T06:01:00Z"
+  },
+  "e65a504be333f3fe": {
+   "version": "2.1.312",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Amélioration du mode Vim pour que les commandes de mouvement ne dépassent pas les limites du fichier.",
+   "le": "2026-10-28T06:01:00Z"
+  },
+  "8e53486c5308b3b8": {
+   "version": "2.1.312",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "La commande /verify affiche désormais une description courte et adaptée dans les menus d'aide.",
+   "le": "2026-10-28T06:01:00Z"
+  },
+  "534b8c41a3941446": {
+   "version": "2.1.312",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "L'indicateur d'effort est plus précis sur l'impact des changements effectués en cours de tâche.",
+   "le": "2026-10-28T06:01:00Z"
+  },
+  "064fe086032152f9": {
+   "version": "2.1.312",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Les erreurs de WebFetch expliquent mieux si un hôte est inaccessible à cause des restrictions réseau.",
+   "le": "2026-10-28T06:01:00Z"
+  },
+  "190c7a6e1a75c225": {
+   "version": "2.1.312",
+   "domaine": "modeles",
+   "impact": "notable",
+   "resume": "Utilisation d'un prompt système plus court pour les déploiements personnalisés sur Bedrock, Vertex, etc.",
+   "le": "2026-10-28T06:01:00Z"
+  },
+  "99d51ef6053b0ccb": {
+   "version": "2.1.312",
+   "domaine": "modeles",
+   "impact": "notable",
+   "resume": "Le basculement automatique de modèle après un refus s'applique désormais aux noms de déploiements personnalisés.",
+   "le": "2026-10-28T06:01:00Z"
+  },
+  "1b6b5f72487948d5": {
+   "version": "2.1.312",
+   "domaine": "autre",
+   "impact": "mineur",
+   "resume": "Clarification de la terminologie : 'limite de 5 heures' remplace 'limite de session'.",
+   "le": "2026-10-28T06:01:00Z"
+  },
+  "6b3c20bb8716cc63": {
+   "version": "2.1.312",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Les sessions cloud lancées via le CLI récupèrent désormais leurs noms et branches depuis le serveur.",
+   "le": "2026-10-28T06:01:00Z"
+  },
+  "69e971c4e35aa925": {
+   "version": "2.1.312",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Limitation du nombre de hooks et sous-agents exécutés simultanément pour stabiliser les sessions.",
+   "le": "2026-10-28T06:01:00Z"
+  },
+  "61ba726b1c4bc4de": {
+   "version": "2.1.312",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Correction de la gestion de la fenêtre de compactage automatique pour les sous-agents.",
+   "le": "2026-10-28T06:01:00Z"
+  },
+  "f6af8a88448f2902": {
+   "version": "2.1.312",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Les serveurs MCP distants du marketplace affichent désormais leur vrai nom dans les rapports.",
+   "le": "2026-10-28T06:01:00Z"
+  },
+  "01385e2a00513e1b": {
+   "version": "2.1.312",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Arrêt de l'envoi de l'événement de sécurité 'safety_event' via OpenTelemetry.",
+   "le": "2026-10-28T06:01:00Z"
+  },
+  "b5c01a29f38fa94e": {
+   "version": "2.1.312",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "En cas d'erreur de configuration VSCode, l'onglet affiche désormais le motif et propose de réessayer ou de se reconnecter.",
+   "le": "2026-10-28T06:01:05Z"
+  },
+  "1c16eaac8eeac264": {
+   "version": "2.1.312",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "L'affichage des limites d'utilisation est plus clair avec l'heure précise de réinitialisation et la durée du quota.",
+   "le": "2026-10-28T06:01:05Z"
+  },
+  "02e66feb0a99f0c8": {
+   "version": "2.1.312",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Un niveau d'effort est désormais sélectionnable dans le choix du modèle pour les routines exécutées dans le cloud.",
+   "le": "2026-10-28T06:01:05Z"
+  },
+  "49ec09d76f4b66de": {
+   "version": "2.1.312",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "L'éditeur de script Bash pour les environnements cloud est enrichi de couleurs, de numéros de ligne et d'un bouton copier.",
+   "le": "2026-10-28T06:01:05Z"
+  },
+  "db68b300a4b33911": {
+   "version": "2.1.312",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "L'ajout d'un dépôt dans une session cloud affiche désormais un tableau récapitulatif lisible au lieu du JSON brut.",
+   "le": "2026-10-28T06:01:05Z"
+  },
+  "ed80ba0a19476524": {
+   "version": "2.1.312",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction d'un bug qui pouvait envoyer deux fois un message identique après un échec en session cloud.",
+   "le": "2026-10-28T06:01:05Z"
+  },
+  "ff8fec0eed195cc9": {
+   "version": "2.1.312",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Les erreurs de création d'environnement cloud s'affichent désormais directement dans la boîte de dialogue.",
+   "le": "2026-10-28T06:01:05Z"
+  },
+  "87c15f29415fef40": {
+   "version": "2.1.312",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Le menu d'édition des routines ouvre désormais correctement la boîte de dialogue de modification.",
+   "le": "2026-10-28T06:01:05Z"
+  },
+  "9b3b7914a29b4bce": {
+   "version": "2.1.312",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Le statut d'une session Remote Control passe désormais correctement en 'inactif' si l'ordinateur est déconnecté.",
+   "le": "2026-10-28T06:01:05Z"
+  },
+  "e2758e73f8d74cd4": {
+   "version": "2.1.312",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Les notifications de réessai sur Slack précisent désormais le modèle utilisé ou le dépassement de quota.",
+   "le": "2026-10-28T06:01:05Z"
+  },
+  "38217f77cb5caab3": {
+   "version": "2.1.312",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Correction de la gestion des paramètres d'agent Slack lors du changement de visibilité d'un canal.",
+   "le": "2026-10-28T06:01:05Z"
+  },
+  "34ce1f5165da2c86": {
+   "version": "2.1.312",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Correction d'un problème empêchant Claude de répondre dans les canaux Slack sans accès réseau.",
+   "le": "2026-10-28T06:01:05Z"
+  },
+  "736231dd49e08029": {
+   "version": "2.1.312",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction d'un bug de publication de fichiers dans le mauvais fil de discussion sur Slack.",
+   "le": "2026-10-28T06:01:05Z"
+  },
+  "42d4aac3f99d8716": {
+   "version": "2.1.312",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "La revue de code analyse désormais le commit actuel de la pull request, même en cas de retard de l'événement GitHub.",
+   "le": "2026-10-28T06:01:05Z"
   }
  }
 }
