@@ -17904,6 +17904,391 @@
    "impact": "mineur",
    "resume": "Nettoyage du menu de contrôle des dépôts pour éviter les actions en double.",
    "le": "2026-10-30T06:01:56Z"
+  },
+  "dda2d121b976ab3f": {
+   "version": "2.1.316",
+   "domaine": "modeles",
+   "impact": "mineur",
+   "resume": "Possibilité de désactiver la fonctionnalité de réflexion approfondie (ultrathink).",
+   "le": "2026-10-31T06:00:27Z"
+  },
+  "101c55be7dffd9c4": {
+   "version": "2.1.316",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Ajout de budgets de groupe partagés pour les membres d'une même organisation.",
+   "le": "2026-10-31T06:00:27Z"
+  },
+  "4eb9e835fc876fd2": {
+   "version": "2.1.316",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Option pour conserver les certificats croisés du système pour certains serveurs.",
+   "le": "2026-10-31T06:00:27Z"
+  },
+  "d2bce16ae79dcbda": {
+   "version": "2.1.316",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Possibilité de définir un niveau d'effort spécifique pour les sous-agents.",
+   "le": "2026-10-31T06:00:27Z"
+  },
+  "dafe7f664e9351cf": {
+   "version": "2.1.316",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Nouveau mode de gestion des politiques par couches pour les développeurs.",
+   "le": "2026-10-31T06:00:27Z"
+  },
+  "1f2111a82ee23851": {
+   "version": "2.1.316",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Amélioration de la protection contre les attaques de prompts via Amazon Bedrock.",
+   "le": "2026-10-31T06:00:27Z"
+  },
+  "5ff19d8db3600327": {
+   "version": "2.1.316",
+   "domaine": "modeles",
+   "impact": "majeur",
+   "resume": "Fin prochaine du mode rapide pour Opus 4.8 ; migration vers Opus 5.5 recommandée.",
+   "le": "2026-10-31T06:00:27Z"
+  },
+  "d05918fdbe7cc78d": {
+   "version": "2.1.316",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "Correction des commandes shell qui restaient actives après la fermeture de Claude Code.",
+   "le": "2026-10-31T06:00:27Z"
+  },
+  "70ed6601b468d686": {
+   "version": "2.1.316",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction des erreurs de lecture des alias et fonctions Bash complexes.",
+   "le": "2026-10-31T06:00:27Z"
+  },
+  "996c55020dcd5add": {
+   "version": "2.1.316",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de l'arrêt prématuré des scripts Bash lors de l'utilisation de SHELLOPTS.",
+   "le": "2026-10-31T06:00:27Z"
+  },
+  "4fe3cd9e0721258a": {
+   "version": "2.1.316",
+   "domaine": "hooks_config",
+   "impact": "mineur",
+   "resume": "Correction du blocage des hooks PowerShell lors de certains types de commandes.",
+   "le": "2026-10-31T06:00:27Z"
+  },
+  "24cada874865461c": {
+   "version": "2.1.316",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "Correction des requêtes réseau qui restaient bloquées sur des réponses corrompues.",
+   "le": "2026-10-31T06:00:27Z"
+  },
+  "905c683adf4114ca": {
+   "version": "2.1.316",
+   "domaine": "modeles",
+   "impact": "notable",
+   "resume": "Meilleure gestion du basculement vers des modèles plus anciens sur Vertex et Bedrock.",
+   "le": "2026-10-31T06:00:27Z"
+  },
+  "80827d6404bf4a92": {
+   "version": "2.1.316",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Correction de la vérification des modèles autorisés ou bloqués par la passerelle.",
+   "le": "2026-10-31T06:00:27Z"
+  },
+  "8fd93fb5f7d0621a": {
+   "version": "2.1.316",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Correction de l'authentification dans les environnements avec gestion centralisée.",
+   "le": "2026-10-31T06:00:27Z"
+  },
+  "b81bbc5ee8686759": {
+   "version": "2.1.316",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Correction des fuites de fichiers hors du répertoire de travail en mode restreint.",
+   "le": "2026-10-31T06:00:27Z"
+  },
+  "01ad09f99f182b1e": {
+   "version": "2.1.316",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Nettoyage automatique des caractères invisibles dans les prompts pour un envoi fluide.",
+   "le": "2026-10-31T06:00:27Z"
+  },
+  "96fdb2a8d1701272": {
+   "version": "2.1.316",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction du changement de modèle des sous-agents lors de la reprise d'une tâche.",
+   "le": "2026-10-31T06:00:27Z"
+  },
+  "6f5b67e4ff9e20a2": {
+   "version": "2.1.316",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Correction de la gestion des exceptions dans la liste d'autorisation du mode auto.",
+   "le": "2026-10-31T06:00:27Z"
+  },
+  "a2d0ab73436d590d": {
+   "version": "2.1.316",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction du marquage d'échec des tâches cloud en cas d'arrêt de sécurité.",
+   "le": "2026-10-31T06:00:27Z"
+  },
+  "cf4447068f2a7592": {
+   "version": "2.1.316",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Affichage plus clair des raisons de l'arrêt du mode auto en arrière-plan.",
+   "le": "2026-10-31T06:00:27Z"
+  },
+  "8f5458f01be4644e": {
+   "version": "2.1.316",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Correction de l'ignorance du mode serveur auto via certains proxys ou passerelles.",
+   "le": "2026-10-31T06:00:27Z"
+  },
+  "8751bc7a2419eb6f": {
+   "version": "2.1.316",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Correction de la corruption des variables d'environnement pour les scripts MCP.",
+   "le": "2026-10-31T06:00:27Z"
+  },
+  "57b2720e3e726d1c": {
+   "version": "2.1.316",
+   "domaine": "hooks_config",
+   "impact": "notable",
+   "resume": "Correction du chargement du fichier CLAUDE.md en dehors du répertoire de travail.",
+   "le": "2026-10-31T06:00:27Z"
+  },
+  "a1c6aa2172d55da0": {
+   "version": "2.1.316",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de l'affichage des règles d'accès à la base de données des artefacts.",
+   "le": "2026-10-31T06:00:27Z"
+  },
+  "626c7e3fd3c721d4": {
+   "version": "2.1.316",
+   "domaine": "modeles",
+   "impact": "mineur",
+   "resume": "Correction d'un avertissement manquant lors de l'utilisation d'un modèle inconnu avec une fenêtre de contexte erronée.",
+   "le": "2026-10-31T06:00:35Z"
+  },
+  "7eb4888365eeb477": {
+   "version": "2.1.316",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de l'affichage de l'aide pour la commande vocale et du raccourci de dictée.",
+   "le": "2026-10-31T06:00:35Z"
+  },
+  "b72a2bc7a2e34eff": {
+   "version": "2.1.316",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "Résolution d'un blocage des recherches Grep et Glob sur Windows en cas de timeout.",
+   "le": "2026-10-31T06:00:35Z"
+  },
+  "046af5797d9c40ca": {
+   "version": "2.1.316",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction d'un bug où le plan de travail était perdu lors de la reprise d'une conversation.",
+   "le": "2026-10-31T06:00:35Z"
+  },
+  "5192bc72754e9752": {
+   "version": "2.1.316",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de l'affichage des notes de sécurité et de l'installation dans les terminaux étroits.",
+   "le": "2026-10-31T06:00:35Z"
+  },
+  "53a6b68d3ff30902": {
+   "version": "2.1.316",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Amélioration de la saisie des réponses au sondage Enterprise pour nécessiter la touche Entrée.",
+   "le": "2026-10-31T06:00:35Z"
+  },
+  "05b4aca5001cf022": {
+   "version": "2.1.316",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction de la réception des messages sur les serveurs auto-hébergés après un arrêt.",
+   "le": "2026-10-31T06:00:35Z"
+  },
+  "17f1068cb3efc04b": {
+   "version": "2.1.316",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Correction de la perte de l'état des serveurs MCP lors du déplacement d'une session.",
+   "le": "2026-10-31T06:00:35Z"
+  },
+  "ef8568b040ebc344": {
+   "version": "2.1.316",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de la perte des alias et fonctions Bash dans Git Bash sur Windows.",
+   "le": "2026-10-31T06:00:35Z"
+  },
+  "ba53dd1306b904d2": {
+   "version": "2.1.316",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Amélioration de l'affichage des résultats de revue de code dans Claude Desktop et sur le web.",
+   "le": "2026-10-31T06:00:35Z"
+  },
+  "11f556497b38aed7": {
+   "version": "2.1.316",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Optimisation de la commande /diff pour les grands dépôts afin de réduire la charge Git.",
+   "le": "2026-10-31T06:00:35Z"
+  },
+  "02a69a638f785452": {
+   "version": "2.1.316",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Messages d'aide plus clairs et corrections des suggestions de commandes GitHub.",
+   "le": "2026-10-31T06:00:35Z"
+  },
+  "54ff96361d29771f": {
+   "version": "2.1.316",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Meilleure identification et aide pour la résolution des erreurs de certificat SSL.",
+   "le": "2026-10-31T06:00:35Z"
+  },
+  "6aa857366f8a5ad3": {
+   "version": "2.1.316",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Correction du mode auto pour préserver les règles de sécurité par défaut lors de la configuration.",
+   "le": "2026-10-31T06:00:35Z"
+  },
+  "22db99471b7889a2": {
+   "version": "2.1.316",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Simplification de l'application des paramètres gérés par le serveur pour les comptes Team et Enterprise.",
+   "le": "2026-10-31T06:00:35Z"
+  },
+  "29754bf1799a19c3": {
+   "version": "2.1.316",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "[VSCode] Connexion simplifiée aux applications Claude directement depuis le panneau de chat.",
+   "le": "2026-10-31T06:00:35Z"
+  },
+  "5b14f470d9b93d2a": {
+   "version": "2.1.316",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "[VSCode] Amélioration visuelle et de l'effort de réflexion pour la fonction ultrathink.",
+   "le": "2026-10-31T06:00:35Z"
+  },
+  "899e2e12836011e6": {
+   "version": "2.1.316",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "[VSCode] Correction de l'affichage des réglages de modèle et de l'effort pour les modèles à large contexte.",
+   "le": "2026-10-31T06:00:35Z"
+  },
+  "9c29458c27aba15e": {
+   "version": "2.1.316",
+   "domaine": "hooks_config",
+   "impact": "mineur",
+   "resume": "[VSCode] Correction de la suppression prématurée de l'historique des questions secondaires.",
+   "le": "2026-10-31T06:00:35Z"
+  },
+  "af1ee81245191782": {
+   "version": "2.1.316",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "[VSCode] Correction du mode Auto qui reprenait une conversation après un redémarrage.",
+   "le": "2026-10-31T06:00:35Z"
+  },
+  "3ffa05c6a2bb86fe": {
+   "version": "2.1.316",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "[Cloud] Ajout de formulaires interactifs pour répondre aux demandes des serveurs MCP.",
+   "le": "2026-10-31T06:00:35Z"
+  },
+  "32f0f72dbaf1bc68": {
+   "version": "2.1.316",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "[Cloud] Ajout d'un indicateur de synchronisation lors du retour sur une session cloud.",
+   "le": "2026-10-31T06:00:35Z"
+  },
+  "cf5d54120b4209ef": {
+   "version": "2.1.316",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "[Cloud] Autonomie accrue des membres Enterprise pour la gestion des secrets réseau.",
+   "le": "2026-10-31T06:00:35Z"
+  },
+  "b861259f99dd48be": {
+   "version": "2.1.316",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "[Cloud] Amélioration de l'affichage du volet des changements pour plus de clarté.",
+   "le": "2026-10-31T06:00:35Z"
+  },
+  "51ce167b794cbc73": {
+   "version": "2.1.316",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "[Cloud] Correction de l'affichage des chemins de fichiers dans le volet de recherche.",
+   "le": "2026-10-31T06:00:35Z"
+  },
+  "90169e21a8450066": {
+   "version": "2.1.316",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction d'un bug empêchant Claude de modifier un canvas partagé entre plusieurs canaux ou messages privés.",
+   "le": "2026-10-31T06:00:38Z"
+  },
+  "2abbc07cd12cd100": {
+   "version": "2.1.316",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Résolution d'un problème de réponses ignorées dans les fils Slack Connect entre deux organisations différentes.",
+   "le": "2026-10-31T06:00:38Z"
+  },
+  "994c2c6d5a3a1b36": {
+   "version": "2.1.316",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Amélioration du suivi des tâches planifiées : Claude peut désormais mettre à jour ses messages de statut en direct.",
+   "le": "2026-10-31T06:00:38Z"
+  },
+  "ad8fcd249a53dd34": {
+   "version": "2.1.316",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Clarification du paramètre de réponse automatique dans les réglages des canaux Slack et de l'administration.",
+   "le": "2026-10-31T06:00:38Z"
+  },
+  "4928c3a921069f88": {
+   "version": "2.1.316",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Nouvelle carte d'analyse dans la revue de code pour visualiser les résultats par niveau de sévérité.",
+   "le": "2026-10-31T06:00:38Z"
   }
  }
 }
