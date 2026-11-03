@@ -18289,6 +18289,440 @@
    "impact": "notable",
    "resume": "Nouvelle carte d'analyse dans la revue de code pour visualiser les résultats par niveau de sévérité.",
    "le": "2026-10-31T06:00:38Z"
+  },
+  "f60ab10b487ed10b": {
+   "version": "2.1.317",
+   "domaine": "hooks_config",
+   "impact": "mineur",
+   "resume": "Correction d'un délai d'application des modifications apportées aux fichiers de configuration au démarrage.",
+   "le": "2026-11-03T06:22:43Z"
+  },
+  "cd3791e273f93a6a": {
+   "version": "2.1.317",
+   "domaine": "autre",
+   "impact": "mineur",
+   "resume": "Résolution d'un problème de nettoyage des anciens historiques de session.",
+   "le": "2026-11-03T06:22:43Z"
+  },
+  "3b2c7580096057e3": {
+   "version": "2.1.317",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Empêche la recréation accidentelle d'une boîte de réception d'équipe supprimée.",
+   "le": "2026-11-03T06:22:43Z"
+  },
+  "ec398de738720928": {
+   "version": "2.1.317",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction d'un bug de suppression d'un membre d'équipe lors d'une approbation de fermeture.",
+   "le": "2026-11-03T06:22:43Z"
+  },
+  "ac6dee668a11875e": {
+   "version": "2.1.317",
+   "domaine": "hooks_config",
+   "impact": "mineur",
+   "resume": "Permet de nouveau de lister ou supprimer les tâches planifiées même si elles sont désactivées.",
+   "le": "2026-11-03T06:22:43Z"
+  },
+  "9befc8ff8a62bc9e": {
+   "version": "2.1.317",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Évite la suppression erronée du guide d'onboarding le plus récent par Claude.",
+   "le": "2026-11-03T06:22:43Z"
+  },
+  "6fbbd2e6d76d598c": {
+   "version": "2.1.317",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction d'une fausse confirmation de suppression d'un guide d'onboarding.",
+   "le": "2026-11-03T06:22:43Z"
+  },
+  "a8600d17c43fd210": {
+   "version": "2.1.317",
+   "domaine": "modeles",
+   "impact": "notable",
+   "resume": "Affichage correct des erreurs de limite de contexte pour Amazon Bedrock.",
+   "le": "2026-11-03T06:22:43Z"
+  },
+  "b713a3fcd93f4ac7": {
+   "version": "2.1.317",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Correction de la perte de l'historique de conversation lors du redémarrage de sessions auto-hébergées.",
+   "le": "2026-11-03T06:22:43Z"
+  },
+  "45b70b8b128ea6fd": {
+   "version": "2.1.317",
+   "domaine": "modeles",
+   "impact": "notable",
+   "resume": "Résolution des erreurs de limite de prompt liées aux modifications du fichier CLAUDE.md.",
+   "le": "2026-11-03T06:22:43Z"
+  },
+  "e7162d3e96c97815": {
+   "version": "2.1.317",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Amélioration de la vitesse de démarrage et de la consommation mémoire pour les sessions sans interface.",
+   "le": "2026-11-03T06:22:43Z"
+  },
+  "5fc239f44af863ce": {
+   "version": "2.1.317",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Amélioration de la gestion des identifiants AWS pour les serveurs MCP via stdio.",
+   "le": "2026-11-03T06:22:43Z"
+  },
+  "d60795b9c4b4e4f2": {
+   "version": "2.1.317",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Correction des échecs de connexion TLS derrière certains proxys d'inspection.",
+   "le": "2026-11-03T06:22:43Z"
+  },
+  "c7d32d0ca80fc005": {
+   "version": "2.1.317",
+   "domaine": "modeles",
+   "impact": "notable",
+   "resume": "Empêche la perte du résumé des conversations très longues lors de la compaction.",
+   "le": "2026-11-03T06:22:43Z"
+  },
+  "12fc025a3c1284df": {
+   "version": "2.1.317",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction du comptage des pages PDF lors de la lecture ou des mentions.",
+   "le": "2026-11-03T06:22:43Z"
+  },
+  "c64fd501ad6e7b13": {
+   "version": "2.1.317",
+   "domaine": "modeles",
+   "impact": "mineur",
+   "resume": "Correction de l'inefficacité des options de désactivation du cache pour certains modèles.",
+   "le": "2026-11-03T06:22:43Z"
+  },
+  "e200804fd74ee41e": {
+   "version": "2.1.317",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de l'affichage de la liste des artefacts partagés pour les utilisateurs volumineux.",
+   "le": "2026-11-03T06:22:43Z"
+  },
+  "f7b3edce78fe4eea": {
+   "version": "2.1.317",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Évite que Claude ne traite des résultats de recherche incomplets comme étant totaux.",
+   "le": "2026-11-03T06:22:43Z"
+  },
+  "13cac9c6db482b4a": {
+   "version": "2.1.317",
+   "domaine": "autre",
+   "impact": "mineur",
+   "resume": "Correction de l'envoi des exports OpenTelemetry via un proxy HTTPS.",
+   "le": "2026-11-03T06:22:43Z"
+  },
+  "013d5adbcde6b8b9": {
+   "version": "2.1.317",
+   "domaine": "autre",
+   "impact": "mineur",
+   "resume": "Réduction des tentatives de connexion excessives vers les proxys bloquant OpenTelemetry.",
+   "le": "2026-11-03T06:22:43Z"
+  },
+  "1df9a36aea0cf540": {
+   "version": "2.1.317",
+   "domaine": "autre",
+   "impact": "mineur",
+   "resume": "Ajout de délais d'expiration pour les exports OpenTelemetry bloqués par un proxy.",
+   "le": "2026-11-03T06:22:43Z"
+  },
+  "3d0cce88a972c4ed": {
+   "version": "2.1.317",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Évite que Claude ne répète des informations sur des fichiers déjà modifiés lors d'une reprise.",
+   "le": "2026-11-03T06:22:43Z"
+  },
+  "59c3b762b3c23be6": {
+   "version": "2.1.317",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Correction de l'utilisation des outils intégrés lors de la reprise d'une session.",
+   "le": "2026-11-03T06:22:43Z"
+  },
+  "c4e015bd62e68bbe": {
+   "version": "2.1.317",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Amélioration des messages d'erreur pour la commande de contrôle à distance.",
+   "le": "2026-11-03T06:22:43Z"
+  },
+  "aec491b6e71805f3": {
+   "version": "2.1.317",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Synchronisation du mode (auto/manuel) entre la session principale et les membres d'équipe.",
+   "le": "2026-11-03T06:22:43Z"
+  },
+  "4ccb9ab64d9fde39": {
+   "version": "2.1.317",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Correction d'un bug où les changements de mode de permission pouvaient être perdus lors d'une mise à jour de session.",
+   "le": "2026-11-03T06:22:51Z"
+  },
+  "812f6fc8692f0e6c": {
+   "version": "2.1.317",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "L'appui sur Ctrl+C n'arrête plus tous les agents en arrière-plan quand on veut simplement effacer du texte.",
+   "le": "2026-11-03T06:22:51Z"
+  },
+  "f8c00446bab4cd96": {
+   "version": "2.1.317",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction d'un message d'attente confus lors de l'envoi d'un rapport via la commande /feedback.",
+   "le": "2026-11-03T06:22:51Z"
+  },
+  "d0a7c38f8659b472": {
+   "version": "2.1.317",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction de l'envoi de signaux de fermeture en double qui empêchaient certains programmes de bien se nettoyer.",
+   "le": "2026-11-03T06:22:51Z"
+  },
+  "ce9f44d275def920": {
+   "version": "2.1.317",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Évite que les sessions de runners cloud ne partagent et ne corrompent le même historique de conversation.",
+   "le": "2026-11-03T06:22:51Z"
+  },
+  "4ee18a7fadbb3d7b": {
+   "version": "2.1.317",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Empêche la génération de titres de session inappropriés lors de l'utilisation de runners cloud.",
+   "le": "2026-11-03T06:22:51Z"
+  },
+  "ae5779ba72f3163d": {
+   "version": "2.1.317",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Meilleur message d'erreur pour les problèmes d'identifiants Azure sur Microsoft Foundry.",
+   "le": "2026-11-03T06:22:51Z"
+  },
+  "b17a67b03774266b": {
+   "version": "2.1.317",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Le processus de synchronisation de design est plus clair et s'arrête avant l'envoi en cas de problème.",
+   "le": "2026-11-03T06:22:51Z"
+  },
+  "6a3f7af31489668e": {
+   "version": "2.1.317",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Les erreurs de connexion au gateway sont désormais plus explicites sur l'origine (réseau ou certificat TLS).",
+   "le": "2026-11-03T06:22:51Z"
+  },
+  "61305081454c3203": {
+   "version": "2.1.317",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "L'aide à la reprise de session affiche désormais les options de lancement initiales pour plus de clarté.",
+   "le": "2026-11-03T06:22:51Z"
+  },
+  "48ad70bd0139447c": {
+   "version": "2.1.317",
+   "domaine": "autre",
+   "impact": "notable",
+   "resume": "Amélioration de la récupération des erreurs serveur pour les runners auto-hébergés via de nouvelles connexions.",
+   "le": "2026-11-03T06:22:51Z"
+  },
+  "0238c3abb63c8e81": {
+   "version": "2.1.317",
+   "domaine": "autre",
+   "impact": "notable",
+   "resume": "Les sessions de runners auto-hébergés gèrent mieux les erreurs serveur en ouvrant de nouvelles connexions.",
+   "le": "2026-11-03T06:22:51Z"
+  },
+  "ed02b9790d6cae2a": {
+   "version": "2.1.317",
+   "domaine": "autre",
+   "impact": "notable",
+   "resume": "Meilleure gestion des sessions de runners quand les connexions ne répondent plus (heartbeat).",
+   "le": "2026-11-03T06:22:51Z"
+  },
+  "08cd987cf8fd0936": {
+   "version": "2.1.317",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Les messages envoyés à un agent en arrière-plan sont traités plus rapidement sans interrompre sa tâche.",
+   "le": "2026-11-03T06:22:51Z"
+  },
+  "70b241d2779c429d": {
+   "version": "2.1.317",
+   "domaine": "modeles",
+   "impact": "notable",
+   "resume": "Les sous-agents utilisent désormais leur propre niveau d'effort plutôt que celui de la session principale.",
+   "le": "2026-11-03T06:22:51Z"
+  },
+  "5b7e9b9d2282bcd9": {
+   "version": "2.1.317",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Suppression de la demande de confirmation de travail en arrière-plan lors de la fermeture pour les moniteurs de plugins.",
+   "le": "2026-11-03T06:22:51Z"
+  },
+  "a8f989fc5f7f187d": {
+   "version": "2.1.317",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "La compétence de création de plugins propose désormais de partager votre mod une fois qu'il fonctionne.",
+   "le": "2026-11-03T06:22:51Z"
+  },
+  "3ed983882dd1b32c": {
+   "version": "2.1.317",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "L'outil de lecture renvoie désormais le contenu même si le fichier n'a pas changé depuis la dernière lecture.",
+   "le": "2026-11-03T06:22:51Z"
+  },
+  "166eb2ecc6854003": {
+   "version": "2.1.317",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Windows : Correction des refus d'accès aux outils sur certains volumes grâce à une meilleure identification des dossiers.",
+   "le": "2026-11-03T06:22:51Z"
+  },
+  "63b31dbd182216c0": {
+   "version": "2.1.317",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Windows : Correction du problème de limite de caractères de chemin pour les projets dans les sessions temporaires.",
+   "le": "2026-11-03T06:22:51Z"
+  },
+  "5aa6cffd048ca3f8": {
+   "version": "2.1.317",
+   "domaine": "modeles",
+   "impact": "mineur",
+   "resume": "Correction de l'affichage de l'utilisation du budget pour les développeurs utilisant un budget de groupe.",
+   "le": "2026-11-03T06:22:51Z"
+  },
+  "b6f26597b1e42742": {
+   "version": "2.1.317",
+   "domaine": "autre",
+   "impact": "notable",
+   "resume": "Correction de la visibilité des appels d'outils interrompus lors du passage d'un runner à un autre.",
+   "le": "2026-11-03T06:22:51Z"
+  },
+  "4e4c50be7796a208": {
+   "version": "2.1.317",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Correction d'un bug où un serveur MCP désactivé se réactivait lors d'un changement de machine.",
+   "le": "2026-11-03T06:22:51Z"
+  },
+  "21f6662dccdfb86c": {
+   "version": "2.1.317",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Amélioration de la nomenclature des forks pour une meilleure distinction dans le contrôle à distance.",
+   "le": "2026-11-03T06:22:51Z"
+  },
+  "ade77fd97338af8a": {
+   "version": "2.1.317",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "[VSCode] Correction de la perte de messages et d'appels d'outils dans les conversations dupliquées.",
+   "le": "2026-11-03T06:22:51Z"
+  },
+  "2f1259d592242451": {
+   "version": "2.1.317",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "L'extension VSCode relance automatiquement Claude en cas d'échec du démarrage initial.",
+   "le": "2026-11-03T06:22:56Z"
+  },
+  "77d2232760a64242": {
+   "version": "2.1.317",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Correction de l'affichage de l'écran de connexion lors d'un blocage réseau ou régional.",
+   "le": "2026-11-03T06:22:56Z"
+  },
+  "543eb1de5e4bceea": {
+   "version": "2.1.317",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de la casse du nom du forfait dans le panneau de compte.",
+   "le": "2026-11-03T06:22:56Z"
+  },
+  "e6ab7a20c19c394f": {
+   "version": "2.1.317",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Les liens de fichiers ouvrent désormais dans un nouveau groupe d'éditeur plutôt que sur le chat.",
+   "le": "2026-11-03T06:22:56Z"
+  },
+  "eb5283c3c2b8daf4": {
+   "version": "2.1.317",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de la taille des éléments de l'interface VSCode lors de l'augmentation de la police.",
+   "le": "2026-11-03T06:22:56Z"
+  },
+  "66260973ecc13a0a": {
+   "version": "2.1.317",
+   "domaine": "modeles",
+   "impact": "mineur",
+   "resume": "Correction de l'affichage visuel et de l'effort pour le mode ultrathink sans télémétrie.",
+   "le": "2026-11-03T06:22:56Z"
+  },
+  "d178c65b4da45e14": {
+   "version": "2.1.317",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Les liens demandés par un serveur MCP sont désormais visibles via une carte de lien dans les sessions cloud.",
+   "le": "2026-11-03T06:22:56Z"
+  },
+  "36c76c0db5442ece": {
+   "version": "2.1.317",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Uniformisation du design des dialogues de configuration d'organisation pour les administrateurs.",
+   "le": "2026-11-03T06:22:56Z"
+  },
+  "007d138fd9ff545a": {
+   "version": "2.1.317",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Empêche le remplacement silencieux d'un secret réseau existant lors de l'ajout d'un nouveau.",
+   "le": "2026-11-03T06:22:56Z"
+  },
+  "30ae853f899a69a0": {
+   "version": "2.1.317",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Les tâches planifiées utilisent désormais l'environnement par défaut défini par l'administrateur.",
+   "le": "2026-11-03T06:22:56Z"
+  },
+  "55649c8f9f7e8474": {
+   "version": "2.1.317",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction d'un bug de réponse aux messages envoyés à une session inactive après redémarrage.",
+   "le": "2026-11-03T06:22:56Z"
+  },
+  "530a23fbbd043c0a": {
+   "version": "2.1.317",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Les liens d'artefacts collés dans Slack affichent désormais une carte simplifiée avec un bouton d'ouverture.",
+   "le": "2026-11-03T06:22:56Z"
   }
  }
 }
