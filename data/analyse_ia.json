@@ -18723,6 +18723,769 @@
    "impact": "notable",
    "resume": "Les liens d'artefacts collés dans Slack affichent désormais une carte simplifiée avec un bouton d'ouverture.",
    "le": "2026-11-03T06:22:56Z"
+  },
+  "3d26f5c1b40999b7": {
+   "version": "2.1.318",
+   "domaine": "hooks_config",
+   "impact": "mineur",
+   "resume": "Claude Code mémorise désormais votre réponse lors de l'activation des modes de session.",
+   "le": "2026-11-04T06:00:29Z"
+  },
+  "8c2f212412f7a0d5": {
+   "version": "2.1.318",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Support de l'assomption de rôle AWS pour une meilleure gestion des coûts et des comptes.",
+   "le": "2026-11-04T06:00:29Z"
+  },
+  "c25d895ea4ebba5f": {
+   "version": "2.1.318",
+   "domaine": "modeles",
+   "impact": "notable",
+   "resume": "Possibilité de définir un niveau d'effort réduit pour les tâches rapides via les forks de modèles.",
+   "le": "2026-11-04T06:00:29Z"
+  },
+  "6e56b33482d9a05f": {
+   "version": "2.1.318",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Affichage de la date d'expiration de la connexion lors de l'inspection du statut d'authentification.",
+   "le": "2026-11-04T06:00:29Z"
+  },
+  "2351f29eb2d8ff05": {
+   "version": "2.1.318",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Avertissement dans le terminal 10 jours avant l'expiration de votre session Claude.ai.",
+   "le": "2026-11-04T06:00:29Z"
+  },
+  "18b3418cbfe3f2d7": {
+   "version": "2.1.318",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Correction d'une perte de l'historique de conversation lors de l'utilisation de l'option --continue.",
+   "le": "2026-11-04T06:00:29Z"
+  },
+  "b9133ff74a466fe1": {
+   "version": "2.1.318",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Résolution d'un problème de blocage et de consommation de mémoire sur macOS avec beaucoup de commandes Bash.",
+   "le": "2026-11-04T06:00:29Z"
+  },
+  "17e458c245b3d91c": {
+   "version": "2.1.318",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Correction des erreurs de validation des permissions causées par des frappes de touches accidentelles.",
+   "le": "2026-11-04T06:00:29Z"
+  },
+  "f1bddddf074d6ac6": {
+   "version": "2.1.318",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Correction des échecs de déconnexion et de configuration sur les répertoires réseau partagés.",
+   "le": "2026-11-04T06:00:29Z"
+  },
+  "2cc33ba913b93709": {
+   "version": "2.1.318",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Correction des erreurs de connexion lors d'une reconnexion simultanée sur le même compte.",
+   "le": "2026-11-04T06:00:29Z"
+  },
+  "0f8d7748aa724917": {
+   "version": "2.1.318",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Gestion sécurisée des fichiers de configuration MCP via un système de verrouillage (lock).",
+   "le": "2026-11-04T06:00:29Z"
+  },
+  "04aeb2c90e601527": {
+   "version": "2.1.318",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Correction d'un bug de rafraîchissement de jeton qui pouvait provoquer une déconnexion inattendue.",
+   "le": "2026-11-04T06:00:29Z"
+  },
+  "3af38d6e9d32cc6d": {
+   "version": "2.1.318",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Correction d'une incohérence de validation lors de l'ajout de plugins du marketplace.",
+   "le": "2026-11-04T06:00:29Z"
+  },
+  "6b95a2e030cf6fb1": {
+   "version": "2.1.318",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Amélioration de la stabilité des serveurs MCP stdio lors des tentatives de connexion répétées.",
+   "le": "2026-11-04T06:00:29Z"
+  },
+  "dd4f46909cbb6760": {
+   "version": "2.1.318",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Correction des refus de session causés par des listes de fournisseurs stockées par d'autres sessions.",
+   "le": "2026-11-04T06:00:29Z"
+  },
+  "e49bafb1131f6994": {
+   "version": "2.1.318",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction d'un bug où la compaction de session remplaçait par erreur une réponse par un résumé.",
+   "le": "2026-11-04T06:00:29Z"
+  },
+  "848886b05bc3c616": {
+   "version": "2.1.318",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Suppression de l'affichage répétitif de l'alerte de crédit lors de l'exécution d'un sous-agent.",
+   "le": "2026-11-04T06:00:29Z"
+  },
+  "74b890813523c250": {
+   "version": "2.1.318",
+   "domaine": "hooks_config",
+   "impact": "notable",
+   "resume": "Correction de l'absence de sortie pour les commandes slash personnalisées en mode non-interactif.",
+   "le": "2026-11-04T06:00:29Z"
+  },
+  "0bfd396aedd15053": {
+   "version": "2.1.318",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Correction des faux rapports de succès en cas d'erreur API interrompant une réponse.",
+   "le": "2026-11-04T06:00:29Z"
+  },
+  "0075a146b675ce9f": {
+   "version": "2.1.318",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "L'arrêt d'une session interrompt désormais correctement les messages envoyés juste avant le changement de modèle.",
+   "le": "2026-11-04T06:00:29Z"
+  },
+  "50608f88ba2be261": {
+   "version": "2.1.318",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction de la recréation automatique de transcriptions de sessions supprimées.",
+   "le": "2026-11-04T06:00:29Z"
+  },
+  "1f91de5bfc71ed7f": {
+   "version": "2.1.318",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Résolution des échecs de démarrage des sessions pour le contrôle à distance après une mise à jour.",
+   "le": "2026-11-04T06:00:29Z"
+  },
+  "ce14d5965b189cde": {
+   "version": "2.1.318",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Empêche la suppression accidentelle du binaire d'un processus Claude Code appartenant à un autre utilisateur.",
+   "le": "2026-11-04T06:00:29Z"
+  },
+  "f73cbb67cb26ff7e": {
+   "version": "2.1.318",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de l'affichage erroné d'une session disponible après un échec de connexion à distance.",
+   "le": "2026-11-04T06:00:29Z"
+  },
+  "5795c5094be6a098": {
+   "version": "2.1.318",
+   "domaine": "hooks_config",
+   "impact": "mineur",
+   "resume": "Correction d'un faux rapport de succès lors de l'échec d'une commande de révocation de design.",
+   "le": "2026-11-04T06:00:29Z"
+  },
+  "4b2d140213d8eec7": {
+   "version": "2.1.318",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction du dossier de travail lors de l'exécution de commandes shell après un redémarrage de session.",
+   "le": "2026-11-04T06:00:39Z"
+  },
+  "3a5cb5c67f85be35": {
+   "version": "2.1.318",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Claude est désormais informé si un outil de connecteur approuvé est indisponible après un redémarrage.",
+   "le": "2026-11-04T06:00:39Z"
+  },
+  "5a73a9eb70a5e166": {
+   "version": "2.1.318",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction de l'interruption brutale des sessions cloud lors de refus temporaires d'upload.",
+   "le": "2026-11-04T06:00:39Z"
+  },
+  "8f70b6ff4786784d": {
+   "version": "2.1.318",
+   "domaine": "hooks_config",
+   "impact": "mineur",
+   "resume": "Les variables écrites par un hook Setup dans CLAUDE_ENV_FILE sont désormais bien transmises à l'outil Bash.",
+   "le": "2026-11-04T06:00:39Z"
+  },
+  "d1b38ff79251bcea": {
+   "version": "2.1.318",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de l'affichage de l'état des sessions sur l'application iPhone.",
+   "le": "2026-11-04T06:00:39Z"
+  },
+  "516c4be9d2335411": {
+   "version": "2.1.318",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction de l'ordre d'envoi des messages lors du redémarrage d'une session après une erreur API.",
+   "le": "2026-11-04T06:00:39Z"
+  },
+  "dd0c8f10cfaddc36": {
+   "version": "2.1.318",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Évite la perte du tour en cours lors d'un redémarrage après la lecture d'une image ou un essai d'outil.",
+   "le": "2026-11-04T06:00:39Z"
+  },
+  "e3506e78eea63eff": {
+   "version": "2.1.318",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Amélioration de la gestion des certificats SSL pour éviter l'échec de toutes les connexions.",
+   "le": "2026-11-04T06:00:39Z"
+  },
+  "0d1a0dc1545cbf71": {
+   "version": "2.1.318",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction des workflows qui relançaient des agents déjà terminés après une limite d'usage.",
+   "le": "2026-11-04T06:00:39Z"
+  },
+  "d843e40411e0b0a3": {
+   "version": "2.1.318",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "L'affichage des outils MCP indique désormais précisément combien d'outils sont réellement disponibles.",
+   "le": "2026-11-04T06:00:39Z"
+  },
+  "400fc6e66c6f2443": {
+   "version": "2.1.318",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Suppression d'une notification en double lors de l'envoi de notifications push.",
+   "le": "2026-11-04T06:00:39Z"
+  },
+  "1232991d8ab29f4a": {
+   "version": "2.1.318",
+   "domaine": "modeles",
+   "impact": "mineur",
+   "resume": "Correction du message d'erreur concernant la taille maximale des images lors de requêtes multiples.",
+   "le": "2026-11-04T06:00:39Z"
+  },
+  "1e79378db3de32cf": {
+   "version": "2.1.318",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de l'affichage du temps d'exécution dans les détails du shell en arrière-plan.",
+   "le": "2026-11-04T06:00:39Z"
+  },
+  "b488b9e70e7b43eb": {
+   "version": "2.1.318",
+   "domaine": "hooks_config",
+   "impact": "mineur",
+   "resume": "Correction d'un hook de mod qui marquait une réponse interrompue comme réussie.",
+   "le": "2026-11-04T06:00:39Z"
+  },
+  "ffb3aae9809069ce": {
+   "version": "2.1.318",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Sécurisation de la sauvegarde du fichier de configuration avant le nettoyage de la rétention.",
+   "le": "2026-11-04T06:00:39Z"
+  },
+  "7f8db14543f5e154": {
+   "version": "2.1.318",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Protection des identifiants de connexion contre la corruption sur les disques réseau saturés.",
+   "le": "2026-11-04T06:00:39Z"
+  },
+  "563ab4fbee1f41d9": {
+   "version": "2.1.318",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Correction du refus des jetons setup-token pour les organisations autorisées.",
+   "le": "2026-11-04T06:00:39Z"
+  },
+  "33e750d42ba604fb": {
+   "version": "2.1.318",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Empêche la corruption du fichier de configuration JSON invalide lors des lancements non-interactifs.",
+   "le": "2026-11-04T06:00:39Z"
+  },
+  "7d9c375d05638992": {
+   "version": "2.1.318",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Correction du signalement de corruption pour un fichier de configuration vide.",
+   "le": "2026-11-04T06:00:39Z"
+  },
+  "e1a6dd22a1770987": {
+   "version": "2.1.318",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Amélioration des messages de la commande de restauration du fichier de configuration.",
+   "le": "2026-11-04T06:00:39Z"
+  },
+  "751711be9e51e534": {
+   "version": "2.1.318",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Meilleure gestion et guidage lors de l'expiration de la session de connexion claude.ai.",
+   "le": "2026-11-04T06:00:39Z"
+  },
+  "43002f95e09c4c3e": {
+   "version": "2.1.318",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Meilleure résilience des fichiers de configuration et de connexion sur les disques réseau partagés.",
+   "le": "2026-11-04T06:00:39Z"
+  },
+  "3cc80fecaa96868f": {
+   "version": "2.1.318",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Récupération automatique des serveurs MCP et dossiers de confiance sur les systèmes de fichiers réseau.",
+   "le": "2026-11-04T06:00:39Z"
+  },
+  "a3f26fb2df813ccf": {
+   "version": "2.1.318",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Les erreurs d'outils MCP renvoient désormais le schéma attendu si l'appel est fait trop tôt.",
+   "le": "2026-11-04T06:00:39Z"
+  },
+  "10ef11bce21c9878": {
+   "version": "2.1.318",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Fiabilisation des commits Git et des Pull Requests via l'outil Bash sur macOS.",
+   "le": "2026-11-04T06:00:39Z"
+  },
+  "aac3d8443e13ad0c": {
+   "version": "2.1.318",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "La demande d'augmentation de quota auprès de l'administrateur se fait désormais en une seule étape.",
+   "le": "2026-11-04T06:00:49Z"
+  },
+  "f18c3a179debc6e7": {
+   "version": "2.1.318",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "La reconnexion des sessions distantes après une pause ou une mise en veille est plus rapide.",
+   "le": "2026-11-04T06:00:49Z"
+  },
+  "3904b0e31758ba7d": {
+   "version": "2.1.318",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Les notifications d'erreur suggèrent désormais de 'réessayer' plutôt que d'utiliser une touche spécifique au terminal.",
+   "le": "2026-11-04T06:00:49Z"
+  },
+  "db4c23673220db64": {
+   "version": "2.1.318",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "L'auto-mise à jour est plus fiable grâce à une tentative immédiate en cas d'échec réseau passager.",
+   "le": "2026-11-04T06:00:49Z"
+  },
+  "e3ef305e04478630": {
+   "version": "2.1.318",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Les exécutions automatisées n'écrivent plus inutilement dans le fichier de configuration si rien n'a changé.",
+   "le": "2026-11-04T06:00:49Z"
+  },
+  "39214dea27780df3": {
+   "version": "2.1.318",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Claude Code n'installe plus automatiquement l'extension IDE lorsqu'il est lancé depuis un terminal d'IDE.",
+   "le": "2026-11-04T06:00:49Z"
+  },
+  "e08ac0578f75d46a": {
+   "version": "2.1.318",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Les sous-agents s'arrêtent désormais au lieu de changer de modèle si l'option de demande manuelle est activée.",
+   "le": "2026-11-04T06:00:49Z"
+  },
+  "2d6d5158f87f1bee": {
+   "version": "2.1.318",
+   "domaine": "modeles",
+   "impact": "notable",
+   "resume": "Les commandes en arrière-plan sont basculées pour éviter l'expiration du cache de prompt pendant l'exécution.",
+   "le": "2026-11-04T06:00:49Z"
+  },
+  "6f858a3613193648": {
+   "version": "2.1.318",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Le temps d'attente pour la réponse d'un sous-agent peut atteindre 5 minutes sur certains fournisseurs sans cache.",
+   "le": "2026-11-04T06:00:49Z"
+  },
+  "dcffcef585c71132": {
+   "version": "2.1.318",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Les modifications apportées par un modèle restent dans le tour de l'utilisateur plutôt que d'être traitées comme un message système.",
+   "le": "2026-11-04T06:00:49Z"
+  },
+  "572a03f1a064eb7f": {
+   "version": "2.1.318",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Le blocage des serveurs MCP est renforcé pour inclure les serveurs Anthropic et les connecteurs cloud.",
+   "le": "2026-11-04T06:00:49Z"
+  },
+  "4cef07e0278ba545": {
+   "version": "2.1.318",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "L'interface des permissions utilise désormais des boîtes de dialogue standard et gère mieux l'annulation (Ctrl+C).",
+   "le": "2026-11-04T06:00:49Z"
+  },
+  "02c8546bbe5ad0e8": {
+   "version": "2.1.318",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Les nouveaux agents reçoivent par défaut la permission 'auto' pour les actions risquées, comme sur la console Claude.",
+   "le": "2026-11-04T06:00:49Z"
+  },
+  "6f1fff5ed5f97064": {
+   "version": "2.1.318",
+   "domaine": "modeles",
+   "impact": "mineur",
+   "resume": "La reprise de conversation peut désormais entraîner la perte du raisonnement précédent du modèle.",
+   "le": "2026-11-04T06:00:49Z"
+  },
+  "9af7385d0ec36752": {
+   "version": "2.1.318",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Un avertissement est ajouté lorsqu'un jeton d'accès Google via fédération est sur le point d'expirer.",
+   "le": "2026-11-04T06:00:49Z"
+  },
+  "2ce72f261b695551": {
+   "version": "2.1.318",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Les instructions sur la configuration des proxies de confiance sont plus claires et précises.",
+   "le": "2026-11-04T06:00:49Z"
+  },
+  "b8485118e32ea9d5": {
+   "version": "2.1.318",
+   "domaine": "modeles",
+   "impact": "mineur",
+   "resume": "Les messages d'erreur concernant le comptage de jetons sur AWS Bedrock sont plus explicites.",
+   "le": "2026-11-04T06:00:49Z"
+  },
+  "1546ce8a05e059ac": {
+   "version": "2.1.318",
+   "domaine": "autre",
+   "impact": "mineur",
+   "resume": "Ajout d'une variable d'environnement pour identifier la raison du lancement d'un runner auto-hébergé.",
+   "le": "2026-11-04T06:00:49Z"
+  },
+  "c11e6c7fdc0d86a2": {
+   "version": "2.1.318",
+   "domaine": "autre",
+   "impact": "mineur",
+   "resume": "Ajout d'un avertissement au démarrage en cas de mauvaise configuration de l'option de session inactive.",
+   "le": "2026-11-04T06:00:49Z"
+  },
+  "ca784cf72ba44b77": {
+   "version": "2.1.318",
+   "domaine": "autre",
+   "impact": "mineur",
+   "resume": "Amélioration de la clarté et de la structure des logs pour l'orchestrateur des runners auto-hébergés.",
+   "le": "2026-11-04T06:00:49Z"
+  },
+  "cded057c72ae91ea": {
+   "version": "2.1.318",
+   "domaine": "autre",
+   "impact": "mineur",
+   "resume": "L'erreur de dossier de travail manquant dans le contrôle à distance affiche désormais le nom du dossier concerné.",
+   "le": "2026-11-04T06:00:49Z"
+  },
+  "b5ce7edf572255d5": {
+   "version": "2.1.318",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Amélioration du titre lors de la création d'un fork de terminal pour une meilleure identification.",
+   "le": "2026-11-04T06:00:49Z"
+  },
+  "68a9b159e7e7bcd7": {
+   "version": "2.1.318",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "[VSCode] Correction d'un bug où les paramètres d'organisation relançaient Claude Code en boucle.",
+   "le": "2026-11-04T06:00:49Z"
+  },
+  "d591f0fd029e04da": {
+   "version": "2.1.318",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "[VSCode] Correction d'un problème d'affichage où un mot trop long masquait le bouton de fermeture des erreurs.",
+   "le": "2026-11-04T06:00:49Z"
+  },
+  "d8b65c83bb596e43": {
+   "version": "2.1.318",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "[VSCode] L'écran de connexion affiche désormais les détails techniques en cas d'échec de vérification du statut.",
+   "le": "2026-11-04T06:00:49Z"
+  },
+  "9d5e166724be9716": {
+   "version": "2.1.318",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Possibilité de démarrer une session cloud sans avoir à sélectionner de dépôt de code.",
+   "le": "2026-11-04T06:00:59Z"
+  },
+  "53043a3bbdcdd84c": {
+   "version": "2.1.318",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Meilleure compatibilité des sessions cloud avec les outils utilisant Chromium via des noms standards.",
+   "le": "2026-11-04T06:00:59Z"
+  },
+  "471092d4533ff83a": {
+   "version": "2.1.318",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Ajout d'un bouton pour créer une nouvelle session après la suppression d'un environnement cloud.",
+   "le": "2026-11-04T06:00:59Z"
+  },
+  "dff6d544ea5f7050": {
+   "version": "2.1.318",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Correction de la lecture des logs GitHub Actions dans les sessions cloud.",
+   "le": "2026-11-04T06:00:59Z"
+  },
+  "efef4610120ac4ef": {
+   "version": "2.1.318",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Les messages d'erreur lors de la création de PR sont désormais plus explicites et utiles.",
+   "le": "2026-11-04T06:00:59Z"
+  },
+  "2c5ddc1486b63c2a": {
+   "version": "2.1.318",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Précision apportée à Claude sur la portée limitée de la recherche de connecteurs.",
+   "le": "2026-11-04T06:00:59Z"
+  },
+  "df64222e1732a284": {
+   "version": "2.1.318",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de l'affichage des noms de dossiers pour les checkouts côte à côte en Remote Control.",
+   "le": "2026-11-04T06:00:59Z"
+  },
+  "a2801447123ee2b1": {
+   "version": "2.1.318",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Amélioration de l'accessibilité et de la gestion du focus clavier pour Claude Tag.",
+   "le": "2026-11-04T06:00:59Z"
+  },
+  "e87ca0887053b5ba": {
+   "version": "2.1.318",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Amélioration de la résilience de la page d'analyse de Code Review face aux erreurs réseau.",
+   "le": "2026-11-04T06:00:59Z"
+  },
+  "1119b77a7c029a23": {
+   "version": "2.1.317",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Avertissement si une tâche planifiée cloud obtient des connecteurs non sollicités.",
+   "le": "2026-11-04T06:00:59Z"
+  },
+  "644881046a216cd5": {
+   "version": "2.1.317",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Demande de confirmation avant d'envoyer votre adresse email via un outil web ou shell.",
+   "le": "2026-11-04T06:00:59Z"
+  },
+  "98f1fec2b4b09d9c": {
+   "version": "2.1.317",
+   "domaine": "hooks_config",
+   "impact": "notable",
+   "resume": "Possibilité de bloquer une action si un callback de l'Agent SDK échoue.",
+   "le": "2026-11-04T06:00:59Z"
+  },
+  "2f78b569cd42e65b": {
+   "version": "2.1.317",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Notifications sur l'état de chargement des paramètres gérés à distance dans Claude Desktop.",
+   "le": "2026-11-04T06:00:59Z"
+  },
+  "a6b9eb261949ef90": {
+   "version": "2.1.317",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Affichage d'un avis quand le mode auto n'a pas de réponse pour l'appel d'un sous-agent.",
+   "le": "2026-11-04T06:00:59Z"
+  },
+  "4589994c1b94e709": {
+   "version": "2.1.317",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "Ajout de métriques détaillées sur les plans et fournisseurs dans les données OTel.",
+   "le": "2026-11-04T06:00:59Z"
+  },
+  "290fb48311ab0b98": {
+   "version": "2.1.317",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Nouvelle API pour consulter les rapports de coûts détaillés par développeur ou groupe.",
+   "le": "2026-11-04T06:00:59Z"
+  },
+  "90f558a477388643": {
+   "version": "2.1.317",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Suivi quotidien des groupes d'identité pour les rapports de coûts administrateurs.",
+   "le": "2026-11-04T06:00:59Z"
+  },
+  "8e2aef4760ec4eb8": {
+   "version": "2.1.317",
+   "domaine": "hooks_config",
+   "impact": "mineur",
+   "resume": "Nouvelle option pour gérer l'ID de session imbriquée sur les runners auto-hébergés.",
+   "le": "2026-11-04T06:00:59Z"
+  },
+  "b4ebfa67df3111d4": {
+   "version": "2.1.317",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Correction des déconnexions des serveurs MCP locaux dans Claude Desktop.",
+   "le": "2026-11-04T06:00:59Z"
+  },
+  "8563f023fb3e39ef": {
+   "version": "2.1.317",
+   "domaine": "modeles",
+   "impact": "notable",
+   "resume": "Correction du mode auto qui échouait face à certaines réponses de sécurité des passerelles LLM.",
+   "le": "2026-11-04T06:00:59Z"
+  },
+  "1ec987ee961fa735": {
+   "version": "2.1.317",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Correction d'un bug d'authentification qui pouvait déconnecter l'utilisateur lors d'un rafraîchissement lent.",
+   "le": "2026-11-04T06:00:59Z"
+  },
+  "70b2b262c2ebb546": {
+   "version": "2.1.317",
+   "domaine": "hooks_config",
+   "impact": "mineur",
+   "resume": "Correction de l'ignorance du paramètre de niveau d'effort dans certaines sessions anticipées.",
+   "le": "2026-11-04T06:00:59Z"
+  },
+  "822d7309867fc652": {
+   "version": "2.1.317",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de la recherche de conversations via l'option de Pull Request dans les gros projets.",
+   "le": "2026-11-04T06:00:59Z"
+  },
+  "cb3078a8e2194a1e": {
+   "version": "2.1.317",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Correction de l'affichage des chemins de fichiers dans les demandes de permission.",
+   "le": "2026-11-04T06:00:59Z"
+  },
+  "387b75684397abd3": {
+   "version": "2.1.317",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Correction de l'option 'ne plus demander' pour les appels d'outils des mods.",
+   "le": "2026-11-04T06:00:59Z"
+  },
+  "b668f6dce9d4a425": {
+   "version": "2.1.317",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction d'un bug qui faisait perdre le titre de la session lors de l'envoi d'un message ou d'un arrêt.",
+   "le": "2026-11-04T06:01:03Z"
+  },
+  "80e5625984437406": {
+   "version": "2.1.317",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Résolution d'un problème de planification des cycles de travail automatique lors de requêtes incomplètes.",
+   "le": "2026-11-04T06:01:03Z"
+  },
+  "c67121e1dc7d2d23": {
+   "version": "2.1.317",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "L'auto mode ne s'arrête plus inutilement pour approbation lors de l'utilisation d'outils d'écriture ou de base de données.",
+   "le": "2026-11-04T06:01:03Z"
+  },
+  "c7a968d119af0029": {
+   "version": "2.1.317",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Correction de la synchronisation des compétences depuis claude.ai pour éviter les téléchargements répétés.",
+   "le": "2026-11-04T06:01:03Z"
+  },
+  "8005952cfe4babff": {
+   "version": "2.1.317",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction de l'affichage des résultats pour la commande /schedule concernant la prochaine exécution.",
+   "le": "2026-11-04T06:01:03Z"
+  },
+  "c020c09cdb875b81": {
+   "version": "2.1.317",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Amélioration de l'accessibilité : les lecteurs d'écran ne lisent plus en boucle le temps et les jetons des sous-agents.",
+   "le": "2026-11-04T06:01:03Z"
+  },
+  "ed1b2dd0b27ba0b0": {
+   "version": "2.1.317",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Les erreurs de blocage réseau (403) sont désormais clairement identifiées au lieu d'être confondues avec un échec de connexion.",
+   "le": "2026-11-04T06:01:03Z"
+  },
+  "c3f48281c49e9926": {
+   "version": "2.1.317",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Correction des erreurs d'autorisation erronées lors de l'utilisation de connecteurs déjà présents via des plugins synchronisés.",
+   "le": "2026-11-04T06:01:03Z"
+  },
+  "dc97ca302c081a85": {
+   "version": "2.1.317",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "L'outil signale désormais correctement les erreurs d'écriture (disque plein ou quota atteint) au lieu de s'arrêter sans erreur.",
+   "le": "2026-11-04T06:01:03Z"
   }
  }
 }
