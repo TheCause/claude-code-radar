@@ -20508,6 +20508,839 @@
    "impact": "notable",
    "resume": "Empêche la modification des règles du mode auto par un administrateur d'écraser celles d'un autre.",
    "le": "2026-11-07T06:07:37Z"
+  },
+  "41f0301a1c38583d": {
+   "version": "2.1.322",
+   "domaine": "modeles",
+   "impact": "notable",
+   "resume": "Le mode rapide est disponible sur Vertex (US/EU) avec un retour automatique au mode standard en cas d'échec.",
+   "le": "2026-11-10T06:00:51Z"
+  },
+  "ed8672e1c0a69dfb": {
+   "version": "2.1.321",
+   "domaine": "modeles",
+   "impact": "majeur",
+   "resume": "Intégration du modèle Claude Fable 5.2 par défaut avec une fenêtre de contexte de 1M de tokens.",
+   "le": "2026-11-10T06:00:51Z"
+  },
+  "ec43c98f5ff73e80": {
+   "version": "2.1.321",
+   "domaine": "hooks_config",
+   "impact": "notable",
+   "resume": "Possibilité d'appliquer un fichier de configuration automatique à chaque session via remote-control.",
+   "le": "2026-11-10T06:00:51Z"
+  },
+  "a9dc8ba16be52437": {
+   "version": "2.1.321",
+   "domaine": "securite",
+   "impact": "majeur",
+   "resume": "Correction d'une fuite de jetons secrets lors de redirections de requêtes OAuth via un serveur MCP.",
+   "le": "2026-11-10T06:00:51Z"
+  },
+  "f3b79a8146d6006c": {
+   "version": "2.1.321",
+   "domaine": "securite",
+   "impact": "majeur",
+   "resume": "Correction d'une faille permettant l'exécution de commandes Bash hors de la sandbox sans permission.",
+   "le": "2026-11-10T06:00:51Z"
+  },
+  "0d509543524b6082": {
+   "version": "2.1.321",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Correction des vérifications de permission Bash lors de l'écriture de fichiers dans des dossiers.",
+   "le": "2026-11-10T06:00:51Z"
+  },
+  "6c8156423c5c04e9": {
+   "version": "2.1.321",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Les règles de protection s'appliquent désormais correctement lors des opérations de copie ou de déplacement.",
+   "le": "2026-11-10T06:00:51Z"
+  },
+  "a5bfd81bef030aec": {
+   "version": "2.1.321",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction d'un message erroné concernant l'utilisation des crédits pour les comptes Enterprise.",
+   "le": "2026-11-10T06:00:51Z"
+  },
+  "328ca6da2483dabc": {
+   "version": "2.1.321",
+   "domaine": "modeles",
+   "impact": "mineur",
+   "resume": "Correction du comportement du modèle de secours lorsqu'un premier modèle est bloqué.",
+   "le": "2026-11-10T06:00:51Z"
+  },
+  "cbf49b8399ff0a94": {
+   "version": "2.1.321",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Suppression d'un avertissement d'émetteur répétitif lors de la connexion aux serveurs MCP.",
+   "le": "2026-11-10T06:00:51Z"
+  },
+  "b92c3fda8145299e": {
+   "version": "2.1.321",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Correction de l'écrasement de cellules dans les notebooks sur les chemins réseau (WSL, UNC).",
+   "le": "2026-11-10T06:00:51Z"
+  },
+  "9abb6f07ff135849": {
+   "version": "2.1.321",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Correction des erreurs d'édition de fichiers et de notebooks sur les chemins réseau.",
+   "le": "2026-11-10T06:00:51Z"
+  },
+  "2c6921f7b7db693b": {
+   "version": "2.1.321",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de l'affichage du mode de permission par défaut et de la sauvegarde des réglages.",
+   "le": "2026-11-10T06:00:51Z"
+  },
+  "8999fec1b5149532": {
+   "version": "2.1.321",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "Correction des hooks de changement de fichier sur Windows avec des lettres de lecteur en minuscule.",
+   "le": "2026-11-10T06:00:51Z"
+  },
+  "10466e3ccd0a50fa": {
+   "version": "2.1.321",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Correction de l'écriture des fichiers de types générés pour les plugins intégrés.",
+   "le": "2026-11-10T06:00:51Z"
+  },
+  "4902202c791ff1b3": {
+   "version": "2.1.321",
+   "domaine": "modeles",
+   "impact": "mineur",
+   "resume": "Correction de la surestimation de l'utilisation du contexte liée aux définitions d'outils.",
+   "le": "2026-11-10T06:00:51Z"
+  },
+  "7c9013b2a3d98c0d": {
+   "version": "2.1.321",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction d'un doublon de la commande /compact dans l'interface Remote Control.",
+   "le": "2026-11-10T06:00:51Z"
+  },
+  "c25cdbbf8b8e0dd8": {
+   "version": "2.1.321",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Évite le téléchargement multiple des plugins lors de l'utilisation de plusieurs worktrees.",
+   "le": "2026-11-10T06:00:51Z"
+  },
+  "a8b0f810e6f262c1": {
+   "version": "2.1.321",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Correction de la perte de rapports de sous-agents lors de la compaction de la conversation.",
+   "le": "2026-11-10T06:00:51Z"
+  },
+  "eaa5d1306c091430": {
+   "version": "2.1.321",
+   "domaine": "hooks_config",
+   "impact": "notable",
+   "resume": "Correction de la disparition des compétences et agents du projet après un git stash.",
+   "le": "2026-11-10T06:00:51Z"
+  },
+  "d79b63b90bcf29a6": {
+   "version": "2.1.321",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction de l'information erronée sur la durée de vie des commandes en arrière-plan.",
+   "le": "2026-11-10T06:00:51Z"
+  },
+  "24a9bb6354cd658e": {
+   "version": "2.1.321",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction des commandes de processus (pkill, pgrep) dans les sessions cloud.",
+   "le": "2026-11-10T06:00:51Z"
+  },
+  "7c8acb7da48fbb20": {
+   "version": "2.1.321",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "Correction des processus Chrome et Computer Use qui restaient actifs inutilement.",
+   "le": "2026-11-10T06:00:51Z"
+  },
+  "03178d35421a44c3": {
+   "version": "2.1.321",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Correction d'une confusion entre les sorties de différents hooks dans le contexte.",
+   "le": "2026-11-10T06:00:51Z"
+  },
+  "5df0fc035bf07912": {
+   "version": "2.1.321",
+   "domaine": "hooks_config",
+   "impact": "notable",
+   "resume": "Correction de la gestion des demandes de permission entre plusieurs hooks imbriqués.",
+   "le": "2026-11-10T06:00:51Z"
+  },
+  "79a02714f45290ad": {
+   "version": "2.1.321",
+   "domaine": "hooks_config",
+   "impact": "mineur",
+   "resume": "Correction d'un bug où une demande de confirmation était perdue lors de l'exécution de plusieurs hooks.",
+   "le": "2026-11-10T06:00:59Z"
+  },
+  "6297acc587d581ac": {
+   "version": "2.1.321",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Correction d'un plantage rare lors des demandes de permissions et des tâches de fond.",
+   "le": "2026-11-10T06:00:59Z"
+  },
+  "d1a0c0890c6df596": {
+   "version": "2.1.321",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Restauration des compétences, commandes et agents dans le menu après l'entrée dans un worktree.",
+   "le": "2026-11-10T06:00:59Z"
+  },
+  "f755a6b609d54961": {
+   "version": "2.1.321",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de la détection de Claude Desktop sur macOS lorsque l'app est dans ~/Applications.",
+   "le": "2026-11-10T06:00:59Z"
+  },
+  "d08128c3c96242e7": {
+   "version": "2.1.321",
+   "domaine": "autre",
+   "impact": "mineur",
+   "resume": "Correction du suivi des attributs de dépôt OpenTelemetry dans les sessions Desktop.",
+   "le": "2026-11-10T06:00:59Z"
+  },
+  "b44053b72085f747": {
+   "version": "2.1.321",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "WebFetch renvoie désormais une erreur claire au lieu d'un message vide si le modèle ne produit aucun texte.",
+   "le": "2026-11-10T06:00:59Z"
+  },
+  "9b3f700734bfc4ee": {
+   "version": "2.1.321",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction d'un délai au démarrage du mode lecteur d'écran lié au décalage de l'horloge système.",
+   "le": "2026-11-10T06:00:59Z"
+  },
+  "66e69843291f27dd": {
+   "version": "2.1.321",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction d'un problème d'affichage où le panneau de commande ne réapparaissait pas après une boîte de dialogue.",
+   "le": "2026-11-10T06:00:59Z"
+  },
+  "2a4ce1cf6c305bb4": {
+   "version": "2.1.321",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Correction de la déconnexion d'un serveur MCP en cas de conflit de nom avec l'application Desktop.",
+   "le": "2026-11-10T06:00:59Z"
+  },
+  "eae3efb19312d31d": {
+   "version": "2.1.321",
+   "domaine": "modeles",
+   "impact": "mineur",
+   "resume": "Meilleure gestion des erreurs TLS : la réponse partielle est conservée ou la requête est retentée.",
+   "le": "2026-11-10T06:00:59Z"
+  },
+  "492ca0bc3b4830c9": {
+   "version": "2.1.321",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Réduction de la consommation mémoire lors de la lecture répétée de lignes dans de grands fichiers.",
+   "le": "2026-11-10T06:00:59Z"
+  },
+  "78732b28a7f6c137": {
+   "version": "2.1.321",
+   "domaine": "modeles",
+   "impact": "notable",
+   "resume": "Le mode rapide bascule désormais sur la vitesse standard en cas de surcharge au lieu de perdre des réponses.",
+   "le": "2026-11-10T06:00:59Z"
+  },
+  "4b5cf67ea9769278": {
+   "version": "2.1.321",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction de l'envoi excessif de rapports d'agents de fond lors de l'arrêt de Claude.",
+   "le": "2026-11-10T06:00:59Z"
+  },
+  "cf9a6d9b8b2a5f4c": {
+   "version": "2.1.321",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction du blocage des messages entre sessions Desktop lors de l'exécution de tâches.",
+   "le": "2026-11-10T06:00:59Z"
+  },
+  "0f9e5043c46e20f9": {
+   "version": "2.1.321",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Correction de l'ignorance de certains paramètres de configuration lors de l'utilisation de la commande agents.",
+   "le": "2026-11-10T06:00:59Z"
+  },
+  "5bfed4ff28fb9faf": {
+   "version": "2.1.321",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Correction d'un faux message de session expirée pour le contrôle à distance dans l'app Desktop.",
+   "le": "2026-11-10T06:00:59Z"
+  },
+  "753019bf700c33a0": {
+   "version": "2.1.321",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction de la réception prématurée des messages mis en attente pour le contrôle à distance.",
+   "le": "2026-11-10T06:00:59Z"
+  },
+  "dbba35ab677b8998": {
+   "version": "2.1.321",
+   "domaine": "autre",
+   "impact": "mineur",
+   "resume": "Le statut Git est désormais marqué comme indisponible en cas d'échec de la commande au démarrage.",
+   "le": "2026-11-10T06:00:59Z"
+  },
+  "3a04da1a5a505a4a": {
+   "version": "2.1.321",
+   "domaine": "autre",
+   "impact": "mineur",
+   "resume": "Correction d'une erreur d'affichage du statut Git indiquant des fichiers comme indexés à tort.",
+   "le": "2026-11-10T06:00:59Z"
+  },
+  "470d5c81465f03c1": {
+   "version": "2.1.321",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Correction d'un plantage par manque de mémoire avec des ressources aux noms très longs en session cloud.",
+   "le": "2026-11-10T06:00:59Z"
+  },
+  "d247fd1291244316": {
+   "version": "2.1.321",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de l'état de connexion du contrôle à distance lors de l'envoi de l'historique.",
+   "le": "2026-11-10T06:00:59Z"
+  },
+  "23660c90f6bdedee": {
+   "version": "2.1.321",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Le mode lecteur d'écran reste désormais actif lors du retour d'une vue agent vers une conversation.",
+   "le": "2026-11-10T06:00:59Z"
+  },
+  "419c4d262bb10a4d": {
+   "version": "2.1.321",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction du mode lecteur d'écran qui interprétait mal les caractères isolés dans les questions.",
+   "le": "2026-11-10T06:00:59Z"
+  },
+  "5bbee561c22383bf": {
+   "version": "2.1.321",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Correction des faux messages d'interdiction d'accès liés aux proxys réseau en session cloud.",
+   "le": "2026-11-10T06:00:59Z"
+  },
+  "acaec2c0d0a07394": {
+   "version": "2.1.321",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Correction d'un serveur MCP affichant une connexion sans outils après un changement de répertoire.",
+   "le": "2026-11-10T06:00:59Z"
+  },
+  "ab86f4170944c4fa": {
+   "version": "2.1.321",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Correction d'un bug où les commandes Bash s'exécutaient dans le mauvais dossier après un changement de répertoire.",
+   "le": "2026-11-10T06:01:08Z"
+  },
+  "28efb2d59a28f5a2": {
+   "version": "2.1.321",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Tentative de renvoi automatique en cas d'échec de téléchargement de fichier via un proxy (erreur HTTP 507).",
+   "le": "2026-11-10T06:01:08Z"
+  },
+  "b5e7d5b2b02b16c4": {
+   "version": "2.1.321",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Correction des plantages et de la perte de messages lorsque la mémoire sature lors de la lecture des historiques.",
+   "le": "2026-11-10T06:01:08Z"
+  },
+  "ff992ac140b01c5c": {
+   "version": "2.1.321",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Résolution des blocages lors de la connexion ou de la déconnexion en cas de problème de handshake TLS réseau.",
+   "le": "2026-11-10T06:01:08Z"
+  },
+  "c9488f6c36b7512a": {
+   "version": "2.1.321",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Refus d'envoi des fichiers dont le nom contient des caractères de contrôle ou de direction de texte problématiques.",
+   "le": "2026-11-10T06:01:08Z"
+  },
+  "02620f9aabf56052": {
+   "version": "2.1.321",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Optimisation des résumés de progression des sous-agents pour éviter des requêtes inutiles après un appel d'outil.",
+   "le": "2026-11-10T06:01:08Z"
+  },
+  "ebf30e3f972132ec": {
+   "version": "2.1.321",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Élimination des demandes de permission redondantes pour des commandes Bash utilisant des chemins relatifs ou variables.",
+   "le": "2026-11-10T06:01:08Z"
+  },
+  "06e6074a1db7e985": {
+   "version": "2.1.321",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Le gateway Claude Apps accepte désormais les paramètres MCP plus récents au lieu de refuser de démarrer.",
+   "le": "2026-11-10T06:01:08Z"
+  },
+  "6efd7edf606eabfe": {
+   "version": "2.1.321",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction des commandes Bash qui renvoyaient un résultat vide pour les utilisateurs de zsh avec certaines options.",
+   "le": "2026-11-10T06:01:08Z"
+  },
+  "747417e72b5b3fd8": {
+   "version": "2.1.321",
+   "domaine": "autre",
+   "impact": "mineur",
+   "resume": "Amélioration de la lecture des profils MDM sur macOS avec des tentatives de lecture et une gestion des timeouts.",
+   "le": "2026-11-10T06:01:08Z"
+  },
+  "107c9c4fc267ffd5": {
+   "version": "2.1.321",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction d'un bug effaçant le texte saisi dans l'interface des agents lors d'une mise à jour.",
+   "le": "2026-11-10T06:01:08Z"
+  },
+  "a3087abf1e77249f": {
+   "version": "2.1.321",
+   "domaine": "hooks_config",
+   "impact": "notable",
+   "resume": "Les hooks de soumission de prompt ne bloquent plus les réponses de permission lors du redémarrage d'une session.",
+   "le": "2026-11-10T06:01:08Z"
+  },
+  "4b1335c92eb6a742": {
+   "version": "2.1.321",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de la validation automatique d'une réponse 'y' sans Entrée dans le mode remote-control.",
+   "le": "2026-11-10T06:01:08Z"
+  },
+  "d26af63fd62d1c6e": {
+   "version": "2.1.321",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Affichage correct des avertissements de limite de dépenses dans l'application Claude Desktop.",
+   "le": "2026-11-10T06:01:08Z"
+  },
+  "809ab02b81ef02f3": {
+   "version": "2.1.321",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction d'erreurs en mode plein écran lors du défilement de résultats d'outils trop courts.",
+   "le": "2026-11-10T06:01:08Z"
+  },
+  "34dfab42ba7cf400": {
+   "version": "2.1.321",
+   "domaine": "modeles",
+   "impact": "mineur",
+   "resume": "Réduction des requêtes API inutiles lors de l'utilisation des suggestions de prompts.",
+   "le": "2026-11-10T06:01:08Z"
+  },
+  "07b1a9ad136d2105": {
+   "version": "2.1.321",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Gestion des hooks MCP dépassant 16 MiB pour éviter les erreurs de traitement.",
+   "le": "2026-11-10T06:01:08Z"
+  },
+  "987f8555a3f747de": {
+   "version": "2.1.321",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Refus des noms de commandes contenant des caractères spéciaux invisibles ou mal affichés par les polices.",
+   "le": "2026-11-10T06:01:08Z"
+  },
+  "c45a85bc8e16580a": {
+   "version": "2.1.321",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "Amélioration de la gestion des erreurs sur Linux en cas de perte de données sur un système de fichiers NFS.",
+   "le": "2026-11-10T06:01:08Z"
+  },
+  "92f805721db0629c": {
+   "version": "2.1.321",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Correction du statut des agents en arrière-plan qui étaient signalés comme arrêtés par erreur après une coupure réseau.",
+   "le": "2026-11-10T06:01:08Z"
+  },
+  "d2be69a82458e767": {
+   "version": "2.1.321",
+   "domaine": "hooks_config",
+   "impact": "mineur",
+   "resume": "Correction des rapports de succès erronés de NotebookEdit en cas d'échec de modification.",
+   "le": "2026-11-10T06:01:08Z"
+  },
+  "57a7d9e343173628": {
+   "version": "2.1.321",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Résolution des problèmes de démarrage et de liste MCP causés par des enregistrements de connexion corrompus.",
+   "le": "2026-11-10T06:01:08Z"
+  },
+  "6d6e13b4e195fa44": {
+   "version": "2.1.321",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "L'outil Artifact gère désormais mieux les bases de données volumineuses en demandant une lecture page par page.",
+   "le": "2026-11-10T06:01:08Z"
+  },
+  "6726041f811b954f": {
+   "version": "2.1.321",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction de la perte de messages contenant de grandes images lors du redémarrage d'une session cloud.",
+   "le": "2026-11-10T06:01:08Z"
+  },
+  "80e9a8cb7e6dbeb7": {
+   "version": "2.1.321",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction des messages de sous-agents restés sans réponse après le redémarrage d'une session cloud.",
+   "le": "2026-11-10T06:01:08Z"
+  },
+  "ef871927471b95bf": {
+   "version": "2.1.321",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Claude est désormais informé quand un workflow est arrêté ou mis en pause.",
+   "le": "2026-11-10T06:01:16Z"
+  },
+  "83f384e7ed0e815c": {
+   "version": "2.1.321",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "L'interface de sélection des modèles est plus claire et mieux organisée.",
+   "le": "2026-11-10T06:01:16Z"
+  },
+  "4e7183a6a8fbd526": {
+   "version": "2.1.321",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Meilleure gestion des limites de dépenses et enregistrement plus rapide sur les répliques actives.",
+   "le": "2026-11-10T06:01:16Z"
+  },
+  "c378887212871025": {
+   "version": "2.1.321",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Les messages de limite de connexion sont plus discrets sur les paramètres de la passerelle.",
+   "le": "2026-11-10T06:01:16Z"
+  },
+  "040bb5afb7502044": {
+   "version": "2.1.321",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "L'installation via `claude install` est plus rapide de quelques secondes.",
+   "le": "2026-11-10T06:01:16Z"
+  },
+  "e14cc5b1e73debeb": {
+   "version": "2.1.321",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Récupération plus rapide des messages après le crash d'une session de contrôle à distance.",
+   "le": "2026-11-10T06:01:16Z"
+  },
+  "bc262c96a12dcc6a": {
+   "version": "2.1.321",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Démarrage plus rapide sur Windows grâce à une recherche optimisée du PATH.",
+   "le": "2026-11-10T06:01:16Z"
+  },
+  "dd357243184662b7": {
+   "version": "2.1.321",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Optimisation des appels de modèle pour les sous-agents en arrière-plan (mode auto).",
+   "le": "2026-11-10T06:01:16Z"
+  },
+  "5a3cd96e1c755029": {
+   "version": "2.1.321",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Affichage plus précis des erreurs de configuration de worktree dans la vue agent.",
+   "le": "2026-11-10T06:01:16Z"
+  },
+  "cf31a660c1b11717": {
+   "version": "2.1.321",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Meilleure gestion des messages concernant les artefacts appartenant à d'autres organisations.",
+   "le": "2026-11-10T06:01:16Z"
+  },
+  "86378cc8dd4d23f3": {
+   "version": "2.1.321",
+   "domaine": "modeles",
+   "impact": "notable",
+   "resume": "Gestion optimisée des sessions avec de nombreuses images pour éviter les lectures inutiles.",
+   "le": "2026-11-10T06:01:16Z"
+  },
+  "67fd5de8f04553ef": {
+   "version": "2.1.321",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Instructions plus claires pour la première utilisation du contrôle à distance.",
+   "le": "2026-11-10T06:01:16Z"
+  },
+  "06e71b2926699df4": {
+   "version": "2.1.321",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "Accélération du temps de démarrage via un chargement plus rapide des certificats TLS.",
+   "le": "2026-11-10T06:01:16Z"
+  },
+  "7b8edd4218fba35f": {
+   "version": "2.1.321",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Les messages d'erreur de la passerelle n'affichent plus d'identifiants personnels.",
+   "le": "2026-11-10T06:01:16Z"
+  },
+  "b8ab396e72a7e30f": {
+   "version": "2.1.321",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "L'heure de réinitialisation des limites de dépenses s'affiche désormais en heure locale.",
+   "le": "2026-11-10T06:01:16Z"
+  },
+  "716a6b3b8b36023d": {
+   "version": "2.1.321",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "Démarrage plus rapide sur Windows avec Git for Windows.",
+   "le": "2026-11-10T06:01:16Z"
+  },
+  "a1057f592aff5fb0": {
+   "version": "2.1.321",
+   "domaine": "hooks_config",
+   "impact": "mineur",
+   "resume": "Mise à jour des descriptions pour inclure les nouveaux plans Ultra et les options de connexion.",
+   "le": "2026-11-10T06:01:16Z"
+  },
+  "2aae3254e5c2e001": {
+   "version": "2.1.321",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Amélioration des suggestions de métriques pour les compétences de visualisation de données.",
+   "le": "2026-11-10T06:01:16Z"
+  },
+  "f99b4bbc43d306bd": {
+   "version": "2.1.321",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Mise à jour des options d'abonnement pour inclure le plan Ultra.",
+   "le": "2026-11-10T06:01:16Z"
+  },
+  "06a8da03711be664": {
+   "version": "2.1.321",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Les modifications automatiques sont appliquées sans demande en modes auto et bypass.",
+   "le": "2026-11-10T06:01:16Z"
+  },
+  "e9d58be52b1418c9": {
+   "version": "2.1.321",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Les appels d'outils des mods ne déclenchent plus de demande de permission interne.",
+   "le": "2026-11-10T06:01:16Z"
+  },
+  "69b88bf1ec1e6801": {
+   "version": "2.1.321",
+   "domaine": "modeles",
+   "impact": "mineur",
+   "resume": "Migration des sélections du modèle Fable 5.1 vers un nouveau nom de commande.",
+   "le": "2026-11-10T06:01:16Z"
+  },
+  "91c7e8486b029f47": {
+   "version": "2.1.321",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Affichage du modèle actuel dans les étiquettes du mode rapide.",
+   "le": "2026-11-10T06:01:16Z"
+  },
+  "c1c9afe586cc118a": {
+   "version": "2.1.321",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Correction du chargement des dossiers de compétences imbriqués dans les plugins.",
+   "le": "2026-11-10T06:01:16Z"
+  },
+  "950c5e10f9742a57": {
+   "version": "2.1.321",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction du code de sortie pour les exécuteurs auto-hébergés inutilisés.",
+   "le": "2026-11-10T06:01:16Z"
+  },
+  "694aedcf974d997c": {
+   "version": "2.1.321",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Amélioration de la détection des programmes (comme git) sur Windows en évitant les chemins réseau et relatifs.",
+   "le": "2026-11-10T06:01:24Z"
+  },
+  "7c983ee696799974": {
+   "version": "2.1.321",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "Ajustement des statistiques de suivi (OpenTelemetry) lors des sessions non interactives sous Bash et PowerShell.",
+   "le": "2026-11-10T06:01:24Z"
+  },
+  "4799a1e4f9273868": {
+   "version": "2.1.321",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Le nombre de messages autorisés entre sessions dans l'onglet Code de Claude Desktop passe de 10 à 20.",
+   "le": "2026-11-10T06:01:24Z"
+  },
+  "2de79317d3bcdddf": {
+   "version": "2.1.321",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Sécurisation de la fonction AskUserQuestion pour empêcher la modification d'un champ de configuration non documenté.",
+   "le": "2026-11-10T06:01:24Z"
+  },
+  "3ca15ee9e28d7999": {
+   "version": "2.1.321",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Meilleure gestion des places de marché de plugins pour éviter les doublons et assurer la réinstallation.",
+   "le": "2026-11-10T06:01:24Z"
+  },
+  "e60a3cd5e976013b": {
+   "version": "2.1.321",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Respect des politiques d'organisation pour l'utilisation des outils Claude dans le navigateur Chrome.",
+   "le": "2026-11-10T06:01:24Z"
+  },
+  "621b63558ea97a35": {
+   "version": "2.1.321",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Mise à jour de la gestion des politiques MCP pour permettre une accumulation des règles lors de la mise à jour.",
+   "le": "2026-11-10T06:01:24Z"
+  },
+  "81ce8e6487be2234": {
+   "version": "2.1.321",
+   "domaine": "modeles",
+   "impact": "notable",
+   "resume": "Les services Bedrock, Vertex et Foundry ignorent désormais les variables d'URL de base globales de l'environnement.",
+   "le": "2026-11-10T06:01:24Z"
+  },
+  "c77c5200de0da554": {
+   "version": "2.1.321",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Les sessions sans interface rechargent désormais automatiquement les compétences (skills) modifiées.",
+   "le": "2026-11-10T06:01:24Z"
+  },
+  "5cd58a88225f90fd": {
+   "version": "2.1.321",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Harmonisation du texte de vérification cyber avec celui utilisé sur claude.ai.",
+   "le": "2026-11-10T06:01:24Z"
+  },
+  "cb5403af4747143d": {
+   "version": "2.1.321",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Sécurisation des sessions cloud pour empêcher le remplacement des réponses utilisateur par des outils.",
+   "le": "2026-11-10T06:01:24Z"
+  },
+  "aaa031998af8dce8": {
+   "version": "2.1.321",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Application des mêmes vérifications de chemin pour les commandes cp et mv lorsqu'un chemin absolu est utilisé.",
+   "le": "2026-11-10T06:01:24Z"
+  },
+  "430af2d3753f3c68": {
+   "version": "2.1.321",
+   "domaine": "modeles",
+   "impact": "notable",
+   "resume": "Réduction de la consommation de contexte en tronquant les notifications de commandes trop longues.",
+   "le": "2026-11-10T06:01:24Z"
+  },
+  "3498569fae7019a3": {
+   "version": "2.1.321",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Mise à jour des recommandations de polices de caractères par défaut pour les artefacts.",
+   "le": "2026-11-10T06:01:24Z"
+  },
+  "be450feea47714de": {
+   "version": "2.1.321",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Simplification de la vérification d'e-mail pour éviter les interruptions lors des tâches automatisées.",
+   "le": "2026-11-10T06:01:24Z"
+  },
+  "06b9d958939595c3": {
+   "version": "2.1.321",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Verrouillage du dossier de travail pour les sessions de contrôle à distance.",
+   "le": "2026-11-10T06:01:24Z"
+  },
+  "7405476beaf42177": {
+   "version": "2.1.321",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Protection des données et secrets lors du changement de gestion des places de marché de plugins.",
+   "le": "2026-11-10T06:01:24Z"
+  },
+  "b9b2716ff905b5d0": {
+   "version": "2.1.321",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "[VSCode] Ajout d'un avertissement en cas de conflit entre un jeton d'authentification et une clé API.",
+   "le": "2026-11-10T06:01:24Z"
+  },
+  "68a0730175ec88be": {
+   "version": "2.1.321",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "[VSCode] Correction de l'affichage du nom lors des demandes de permission de plugins.",
+   "le": "2026-11-10T06:01:24Z"
   }
  }
 }
