@@ -21341,6 +21341,2064 @@
    "impact": "mineur",
    "resume": "[VSCode] Correction de l'affichage du nom lors des demandes de permission de plugins.",
    "le": "2026-11-10T06:01:24Z"
+  },
+  "937ecad922c66060": {
+   "version": "2.1.323",
+   "domaine": "agents",
+   "impact": "majeur",
+   "resume": "Lancement du mode expérimental Code Mode où Claude utilise du JavaScript pour piloter ses outils.",
+   "le": "2026-11-13T06:00:26Z"
+  },
+  "87247cf52362fffe": {
+   "version": "2.1.323",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Gestion plus stricte de la compatibilité des versions pour l'installation et la mise à jour des plugins.",
+   "le": "2026-11-13T06:00:26Z"
+  },
+  "96ceb5a18f6752a1": {
+   "version": "2.1.323",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Ajout de la vérification de type TypeScript pour les modules de hooks lors de la validation des plugins.",
+   "le": "2026-11-13T06:00:26Z"
+  },
+  "e8fd8a3a5053c598": {
+   "version": "2.1.323",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Amélioration de la validation des plugins pour détecter les changements de noms de ressources (nouns).",
+   "le": "2026-11-13T06:00:26Z"
+  },
+  "8ab1c4f7374c0410": {
+   "version": "2.1.323",
+   "domaine": "modeles",
+   "impact": "notable",
+   "resume": "Possibilité de configurer le modèle du mode auto pour les sessions Claude Desktop via une variable.",
+   "le": "2026-11-13T06:00:26Z"
+  },
+  "06f11e922174590f": {
+   "version": "2.1.323",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Affichage d'un menu d'options (arrêt, crédit, mise à niveau) en cas de manque de crédits d'utilisation.",
+   "le": "2026-11-13T06:00:26Z"
+  },
+  "e9869620855e57c9": {
+   "version": "2.1.323",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Ajout d'un signal de vie toutes les 30 secondes pour éviter que l'hôte ne coupe les sessions longues.",
+   "le": "2026-11-13T06:00:26Z"
+  },
+  "bca482d40e0d4429": {
+   "version": "2.1.323",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Prise en charge des fichiers .docx pour l'envoi de documents via l'outil Artifact.",
+   "le": "2026-11-13T06:00:26Z"
+  },
+  "31cfee6f2f4a99c2": {
+   "version": "2.1.323",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Ajout d'indices visuels pour fermer le panneau de diff et mise à jour du guide des raccourcis.",
+   "le": "2026-11-13T06:00:26Z"
+  },
+  "640177a18dc04031": {
+   "version": "2.1.323",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Avertissement au démarrage si des règles d'autorisation Bash utilisent des caractères génériques risqués.",
+   "le": "2026-11-13T06:00:26Z"
+  },
+  "73671c51d2550824": {
+   "version": "2.1.323",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Message d'erreur explicite si le serveur de langage d'un plugin ne parvient pas à démarrer.",
+   "le": "2026-11-13T06:00:26Z"
+  },
+  "093de256c81ef453": {
+   "version": "2.1.323",
+   "domaine": "autre",
+   "impact": "mineur",
+   "resume": "Notification au démarrage si des paramètres Perforce sont détectés mais que le mode est désactivé.",
+   "le": "2026-11-13T06:00:26Z"
+  },
+  "2290b407406edae7": {
+   "version": "2.1.323",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Option pour désactiver les résumés de progression des sous-agents et réduire les requêtes associées.",
+   "le": "2026-11-13T06:00:26Z"
+  },
+  "4e2a3925a2ef31bb": {
+   "version": "2.1.323",
+   "domaine": "hooks_config",
+   "impact": "mineur",
+   "resume": "Possibilité pour un programme externe de personnaliser la commande de reprise suggérée à la sortie.",
+   "le": "2026-11-13T06:00:26Z"
+  },
+  "4b28bd491909654e": {
+   "version": "2.1.323",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Indication du nombre d'options de configuration utilisateur non encore définies lors de l'installation.",
+   "le": "2026-11-13T06:00:26Z"
+  },
+  "76d26d6d5ce0781c": {
+   "version": "2.1.323",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Détection de l'obstruction de la zone de saisie par un élément d'interface pour les développeurs de mods.",
+   "le": "2026-11-13T06:00:26Z"
+  },
+  "73a1749e65be4a93": {
+   "version": "2.1.323",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Correction d'un bug où la commande /compact pouvait supprimer des messages non encore répondus.",
+   "le": "2026-11-13T06:00:26Z"
+  },
+  "776bb19bfd7d3201": {
+   "version": "2.1.323",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Correction d'un problème de fusion de messages lors de la reprise d'une session interrompue.",
+   "le": "2026-11-13T06:00:26Z"
+  },
+  "4a8c2e89cc55efd4": {
+   "version": "2.1.323",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Correction d'un pic de consommation mémoire après la modification d'un fichier très volumineux.",
+   "le": "2026-11-13T06:00:26Z"
+  },
+  "ec586b7169fe298f": {
+   "version": "2.1.323",
+   "domaine": "hooks_config",
+   "impact": "notable",
+   "resume": "Correction d'un conflit où les paramètres en session écrasaient les modifications manuelles du fichier config.",
+   "le": "2026-11-13T06:00:26Z"
+  },
+  "4101786f3524788d": {
+   "version": "2.1.323",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Correction d'une déconnexion intempestive du profil Console lors du renouvellement du jeton.",
+   "le": "2026-11-13T06:00:26Z"
+  },
+  "6c3aa7b91a7c5c46": {
+   "version": "2.1.323",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Correction de problèmes de mémoire et de blocages lors de l'édition de certains fichiers système.",
+   "le": "2026-11-13T06:00:26Z"
+  },
+  "7bdf2aa3758e7e41": {
+   "version": "2.1.323",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Correction d'échecs de démarrage et de problèmes de suppression de credentials liés à la mémoire.",
+   "le": "2026-11-13T06:00:26Z"
+  },
+  "d29d1db1ffca4a17": {
+   "version": "2.1.323",
+   "domaine": "modeles",
+   "impact": "notable",
+   "resume": "Amélioration de la gestion des erreurs pour les requêtes sans streaming (images, pensée, etc.).",
+   "le": "2026-11-13T06:00:26Z"
+  },
+  "dc4393530c4faa77": {
+   "version": "2.1.323",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Correction d'un bug de répertoire incorrect lors de l'utilisation de /resume ou de l'exit worktree.",
+   "le": "2026-11-13T06:00:26Z"
+  },
+  "40949f4c1219d0af": {
+   "version": "2.1.323",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de l'affichage des accents et des caractères spéciaux lors du retour à la ligne.",
+   "le": "2026-11-13T06:00:36Z"
+  },
+  "972b4e4e4390b1ff": {
+   "version": "2.1.323",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction du comportement des raccourcis clavier (chords) dans les champs de texte des boîtes de dialogue.",
+   "le": "2026-11-13T06:00:36Z"
+  },
+  "64e10f87502323a8": {
+   "version": "2.1.323",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "Correction de l'accumulation de processus 'ps' en cas de commande trop longue.",
+   "le": "2026-11-13T06:00:36Z"
+  },
+  "bba0526a3ceec35c": {
+   "version": "2.1.323",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Les transcriptions de sous-agents et les gros résultats d'outils sont désormais correctement sauvegardés.",
+   "le": "2026-11-13T06:00:36Z"
+  },
+  "f6bb7532f7fce652": {
+   "version": "2.1.323",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Correction des problèmes de basculement de compte lors de l'utilisation de profils Anthropic nommés.",
+   "le": "2026-11-13T06:00:36Z"
+  },
+  "58f20aee32207a3e": {
+   "version": "2.1.323",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Une session en arrière-plan s'arrête désormais proprement si le profil Anthropic est manquant ou modifié.",
+   "le": "2026-11-13T06:00:36Z"
+  },
+  "69d263b02cf42397": {
+   "version": "2.1.323",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Empêche le basculement involontaire de compte pour les sessions utilisant des clés API ou jetons d'identité.",
+   "le": "2026-11-13T06:00:36Z"
+  },
+  "aa1e0ecd7f9aeb31": {
+   "version": "2.1.323",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Les erreurs de jeton expiré lors d'appels d'outils MCP déclenchent désormais une demande de connexion.",
+   "le": "2026-11-13T06:00:36Z"
+  },
+  "313bce9bba4e8127": {
+   "version": "2.1.323",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Correction d'un message d'erreur erroné concernant le solde de crédits lors d'une session expirée.",
+   "le": "2026-11-13T06:00:36Z"
+  },
+  "341b4ff074799029": {
+   "version": "2.1.323",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Correction du transfert de session vers d'anciens services de fond incapables de maintenir la connexion.",
+   "le": "2026-11-13T06:00:36Z"
+  },
+  "65290bd42a539507": {
+   "version": "2.1.323",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Nettoyage systématique des identifiants précédents lors du changement de compte en arrière-plan.",
+   "le": "2026-11-13T06:00:36Z"
+  },
+  "07cac327180f95f0": {
+   "version": "2.1.323",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Correction des erreurs de profil lors du redémarrage des sessions en arrière-plan après une mise à jour.",
+   "le": "2026-11-13T06:00:36Z"
+  },
+  "d3a389b505835088": {
+   "version": "2.1.323",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Empêche la persistance de drapeaux de fonctionnalités non authentifiés après une connexion.",
+   "le": "2026-11-13T06:00:36Z"
+  },
+  "54ef404324e50dc6": {
+   "version": "2.1.323",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Les sessions bloquées par un jeton expiré reprennent automatiquement après une nouvelle connexion.",
+   "le": "2026-11-13T06:00:36Z"
+  },
+  "651958b6bc33f272": {
+   "version": "2.1.323",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Correction de l'affichage du nom de l'organisation dans les avis de facturation avec clé API personnalisée.",
+   "le": "2026-11-13T06:00:36Z"
+  },
+  "4f777edbe41ebc4e": {
+   "version": "2.1.323",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Correction sur macOS des problèmes de détection de connexion liés à la lenteur du trousseau d'accès.",
+   "le": "2026-11-13T06:00:36Z"
+  },
+  "76229ad0bc611129": {
+   "version": "2.1.323",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Claude Code demande désormais un nouveau jeton à Claude Desktop en cas d'expiration (erreur 403).",
+   "le": "2026-11-13T06:00:36Z"
+  },
+  "711d65d616408723": {
+   "version": "2.1.323",
+   "domaine": "modeles",
+   "impact": "mineur",
+   "resume": "Amélioration du message d'erreur Amazon Bedrock pour indiquer l'activation du modèle plutôt que les clés AWS.",
+   "le": "2026-11-13T06:00:36Z"
+  },
+  "673016f9ed6eef47": {
+   "version": "2.1.323",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Correction du double rafraîchissement des identifiants AWS/GCP lors de connexions simultanées.",
+   "le": "2026-11-13T06:00:36Z"
+  },
+  "453158ead787cbc4": {
+   "version": "2.1.323",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Précision sur le fait que la déconnexion supprime aussi les secrets des serveurs MCP et plugins.",
+   "le": "2026-11-13T06:00:36Z"
+  },
+  "d6e37ed28fc7326e": {
+   "version": "2.1.323",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Correction des règles 'ne plus demander' pour les commandes Bash écrivant dans des chemins sensibles.",
+   "le": "2026-11-13T06:00:36Z"
+  },
+  "a95ddc211550d3b6": {
+   "version": "2.1.323",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Correction d'un contournement des demandes de permission lors de l'exécution de commandes lsof.",
+   "le": "2026-11-13T06:00:36Z"
+  },
+  "2c17097dab9391e3": {
+   "version": "2.1.323",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction de l'affichage de l'activité Bash lors de l'utilisation de redirections de fichiers (EOF).",
+   "le": "2026-11-13T06:00:36Z"
+  },
+  "e0a8c6d65b564ece": {
+   "version": "2.1.323",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Correction d'une faille de sécurité permettant de supprimer des fichiers sans confirmation.",
+   "le": "2026-11-13T06:00:36Z"
+  },
+  "2155800c1d4e086c": {
+   "version": "2.1.323",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Le mode automatique démarre désormais en mode manuel par sécurité si l'auto-mode est indisponible.",
+   "le": "2026-11-13T06:00:36Z"
+  },
+  "10681762aa356e90": {
+   "version": "2.1.323",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Empêche l'écriture de fichiers de planification en dehors du projet lorsque le répertoire est configuré.",
+   "le": "2026-11-13T06:00:45Z"
+  },
+  "041243b3c4986e04": {
+   "version": "2.1.323",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Supprime une demande de permission inutile lors de la lecture des sorties de commandes en arrière-plan.",
+   "le": "2026-11-13T06:00:45Z"
+  },
+  "63340eeeca4966de": {
+   "version": "2.1.323",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Correction des vérifications de permissions pour les commandes Bash.",
+   "le": "2026-11-13T06:00:45Z"
+  },
+  "38eff4931e08b849": {
+   "version": "2.1.323",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Correction d'un bug où le bac à sable (sandbox) Bash pouvait se désactiver durant une session.",
+   "le": "2026-11-13T06:00:45Z"
+  },
+  "77d19fc500424012": {
+   "version": "2.1.323",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Amélioration de la gestion des règles d'autorisation Bash avec des caractères génériques.",
+   "le": "2026-11-13T06:00:45Z"
+  },
+  "d575699a86c63def": {
+   "version": "2.1.323",
+   "domaine": "modeles",
+   "impact": "mineur",
+   "resume": "Correction de l'utilisation du mode auto avec certains modèles via des passerelles spécifiques.",
+   "le": "2026-11-13T06:00:45Z"
+  },
+  "073ca65ef3740577": {
+   "version": "2.1.323",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Les règles d'interdiction et de demande Bash s'appliquent désormais aussi aux commandes via sudo ou env.",
+   "le": "2026-11-13T06:00:45Z"
+  },
+  "107d61f03f2084dc": {
+   "version": "2.1.323",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Correction des règles d'autorisation Bash utilisant des drapeaux sudo combinés.",
+   "le": "2026-11-13T06:00:45Z"
+  },
+  "c5e8c63182497441": {
+   "version": "2.1.323",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Correction d'une faille permettant l'exécution de commandes hors du bac à sable via les exclusions.",
+   "le": "2026-11-13T06:00:45Z"
+  },
+  "93ecef35c674bcd2": {
+   "version": "2.1.323",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Empêche les outils d'écriture de contourner les règles d'interdiction de lecture.",
+   "le": "2026-11-13T06:00:45Z"
+  },
+  "196a0997901ac186": {
+   "version": "2.1.323",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Correction des demandes de permission Bash pour les utilisateurs de zsh avec des options spécifiques.",
+   "le": "2026-11-13T06:00:45Z"
+  },
+  "ce7375baa0705f48": {
+   "version": "2.1.323",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Renforcement de la protection de la configuration de Claude Code par le bac à sable.",
+   "le": "2026-11-13T06:00:45Z"
+  },
+  "e132aad0a3dcf438": {
+   "version": "2.1.323",
+   "domaine": "hooks_config",
+   "impact": "mineur",
+   "resume": "Correction de l'affichage du nom du plugin lors d'une demande de permission via un hook.",
+   "le": "2026-11-13T06:00:45Z"
+  },
+  "463e388278c69202": {
+   "version": "2.1.323",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Empêche les commandes isolées de lire les copies de sauvegarde des fichiers de configuration.",
+   "le": "2026-11-13T06:00:45Z"
+  },
+  "f9d2fdf3263186a2": {
+   "version": "2.1.323",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Correction d'un bug où l'utilisation de la fonction 'rewind' modifiait le mode de permission.",
+   "le": "2026-11-13T06:00:45Z"
+  },
+  "7b88c149956a3c8b": {
+   "version": "2.1.323",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Correction de la lecture des paramètres de projet via des liens symboliques.",
+   "le": "2026-11-13T06:00:45Z"
+  },
+  "13923212e711e757": {
+   "version": "2.1.323",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "Correction d'erreurs HTTP 500 sur Linux lors de l'utilisation de certains paramètres d'environnement.",
+   "le": "2026-11-13T06:00:45Z"
+  },
+  "e286940ebb30aa59": {
+   "version": "2.1.323",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Empêche l'exécution de Bash sans bac à sable en cas de configuration invalide au démarrage.",
+   "le": "2026-11-13T06:00:45Z"
+  },
+  "37a379929d4f3bdf": {
+   "version": "2.1.323",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Correction de l'arrêt prématuré de la commande /export suite à l'utilisation d'un outil MCP déchargé.",
+   "le": "2026-11-13T06:00:45Z"
+  },
+  "3863ed0c4ec7ee5a": {
+   "version": "2.1.323",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Amélioration de la reprise de conversation et de l'historique lors d'une connexion tardive MCP.",
+   "le": "2026-11-13T06:00:45Z"
+  },
+  "52132efba77b1f8d": {
+   "version": "2.1.323",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de l'affichage de l'aide pour l'ajout de MCP dans les terminaux étroits.",
+   "le": "2026-11-13T06:00:45Z"
+  },
+  "a851da3e658b4f5e": {
+   "version": "2.1.323",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Correction de la persistance de l'état des plugins désactivés dans les sessions cloud.",
+   "le": "2026-11-13T06:00:45Z"
+  },
+  "a81fb7caf9982186": {
+   "version": "2.1.323",
+   "domaine": "hooks_config",
+   "impact": "mineur",
+   "resume": "Correction de l'appel des hooks de configuration lors de l'activation du mode rapide sur Vertex.",
+   "le": "2026-11-13T06:00:45Z"
+  },
+  "fc8343394f572fe2": {
+   "version": "2.1.323",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de l'ouverture des documents via le connecteur Claude Docs dans le navigateur.",
+   "le": "2026-11-13T06:00:45Z"
+  },
+  "4d807f4d743d4bff": {
+   "version": "2.1.323",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Amélioration des messages d'erreur pour les plugins non installés.",
+   "le": "2026-11-13T06:00:45Z"
+  },
+  "e4f01ea60e9f6025": {
+   "version": "2.1.323",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Les mods ne peuvent plus reformuler les questions de confirmation de Claude Code.",
+   "le": "2026-11-13T06:00:55Z"
+  },
+  "370e960e99b744b9": {
+   "version": "2.1.323",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Correction du rechargement à chaud des mods qui ignorait parfois les nouveaux fichiers.",
+   "le": "2026-11-13T06:00:55Z"
+  },
+  "e744f823b644d202": {
+   "version": "2.1.323",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Les noms de marketplaces comme npm ou github ne sont plus considérés comme réservés.",
+   "le": "2026-11-13T06:00:55Z"
+  },
+  "77dcdb624344c722": {
+   "version": "2.1.323",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "L'affichage des commandes ou appels MCP interrompus est désormais plus explicite.",
+   "le": "2026-11-13T06:00:55Z"
+  },
+  "061f22578111c669": {
+   "version": "2.1.323",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Les erreurs de chargement des plugins sont désormais listées dans les paramètres gérés.",
+   "le": "2026-11-13T06:00:55Z"
+  },
+  "6a3ec7c3ccbe65ea": {
+   "version": "2.1.323",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Les messages d'erreur (stderr) lors de l'installation des plugins sont maintenant visibles.",
+   "le": "2026-11-13T06:00:55Z"
+  },
+  "7630a9aa4e3eb8e3": {
+   "version": "2.1.323",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Correction d'une erreur de renommage qui bloquait les autres changements d'une marketplace.",
+   "le": "2026-11-13T06:00:55Z"
+  },
+  "f5424d1e267bc3f7": {
+   "version": "2.1.323",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Le mode sécurisé ne demande plus de confirmation pour des serveurs MCP qu'il n'active pas.",
+   "le": "2026-11-13T06:00:55Z"
+  },
+  "db0ebf4dcfcb88f1": {
+   "version": "2.1.323",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Précision ajoutée lors de l'acceptation de liens non-HTTP pour éviter les erreurs d'ouverture.",
+   "le": "2026-11-13T06:00:55Z"
+  },
+  "4d251fabee8ebebf": {
+   "version": "2.1.323",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "L'interface de gestion MCP propose désormais de se reconnecter en cas de besoin d'authentification.",
+   "le": "2026-11-13T06:00:55Z"
+  },
+  "cfdf69eb83c9ccd6": {
+   "version": "2.1.323",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "L'outil explique désormais pourquoi un plugin reste désactivé dans la liste.",
+   "le": "2026-11-13T06:00:55Z"
+  },
+  "b7d6dbf498e20a33": {
+   "version": "2.1.323",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Correction des échecs d'installation de plugins sur Windows liés à la limite de chemin de fichier.",
+   "le": "2026-11-13T06:00:55Z"
+  },
+  "b6ddde76e85ae373": {
+   "version": "2.1.323",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "L'arrêt d'un message en cours de traitement n'est plus affiché comme une erreur.",
+   "le": "2026-11-13T06:00:55Z"
+  },
+  "3c148b680ac68d8f": {
+   "version": "2.1.323",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Correction d'un problème de déconnexion persistante d'un serveur MCP après réajout.",
+   "le": "2026-11-13T06:00:55Z"
+  },
+  "1e2a77ffd44bae65": {
+   "version": "2.1.323",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Affichage des erreurs stderr lors du plantage d'un hook de mod en mode plugin.",
+   "le": "2026-11-13T06:00:55Z"
+  },
+  "60a97af08333a6d4": {
+   "version": "2.1.323",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Correction du délai de démarrage des serveurs MCP lors de la modification des réglages.",
+   "le": "2026-11-13T06:00:55Z"
+  },
+  "4291b6cbeb3e282b": {
+   "version": "2.1.323",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Correction de la fermeture inattendue des sessions sans interface lors d'une liste d'outils vide.",
+   "le": "2026-11-13T06:00:55Z"
+  },
+  "145384f76a56bd47": {
+   "version": "2.1.323",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction de l'extraction de données WebFetch qui décalait les colonnes des tableaux.",
+   "le": "2026-11-13T06:00:55Z"
+  },
+  "dffa11daab7835a7": {
+   "version": "2.1.323",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "Les fichiers temporaires sont mieux nettoyés lors de l'expiration des sessions.",
+   "le": "2026-11-13T06:00:55Z"
+  },
+  "0fe4ee11b32ce8bb": {
+   "version": "2.1.323",
+   "domaine": "hooks_config",
+   "impact": "notable",
+   "resume": "Meilleure lecture des paramètres gérés pour éviter les erreurs lors d'écritures simultanées.",
+   "le": "2026-11-13T06:00:55Z"
+  },
+  "c96e1417d3c7012b": {
+   "version": "2.1.323",
+   "domaine": "hooks_config",
+   "impact": "mineur",
+   "resume": "Le fichier de configuration locale est désormais correctement ignoré par le système.",
+   "le": "2026-11-13T06:00:55Z"
+  },
+  "74779ef98b0e82f8": {
+   "version": "2.1.323",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Le panneau de diff se ferme désormais immédiatement après la fin de la génération.",
+   "le": "2026-11-13T06:00:55Z"
+  },
+  "1fbf37a909c9427b": {
+   "version": "2.1.323",
+   "domaine": "hooks_config",
+   "impact": "mineur",
+   "resume": "Correction de l'affichage des chemins de dossiers dans la commande de mémoire.",
+   "le": "2026-11-13T06:00:55Z"
+  },
+  "336bf2709de0c55e": {
+   "version": "2.1.323",
+   "domaine": "modeles",
+   "impact": "mineur",
+   "resume": "Suppression d'un caractère emoji corrompu qui faisait échouer le format JSON.",
+   "le": "2026-11-13T06:00:55Z"
+  },
+  "e12d1b1e6357c188": {
+   "version": "2.1.323",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "L'interface indique désormais clairement qu'un outil n'a pas été exécuté après un rejet.",
+   "le": "2026-11-13T06:00:55Z"
+  },
+  "f34cf05851e3d887": {
+   "version": "2.1.323",
+   "domaine": "autre",
+   "impact": "mineur",
+   "resume": "Correction d'une perte de données de session sur les systèmes de fichiers NFS ou FUSE.",
+   "le": "2026-11-13T06:01:03Z"
+  },
+  "734f70d402ba7b7b": {
+   "version": "2.1.323",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "WebFetch respecte désormais systématiquement les politiques d'organisation et les désactivations.",
+   "le": "2026-11-13T06:01:03Z"
+  },
+  "1fb56e7dbd9f6404": {
+   "version": "2.1.323",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de l'interprétation erronée des mentions @ provenant de Claude.ai ou de l'app desktop.",
+   "le": "2026-11-13T06:01:03Z"
+  },
+  "e1b1e369aeeea550": {
+   "version": "2.1.323",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "La barre de statut reste visible même avec un prompt très long en mode plein écran.",
+   "le": "2026-11-13T06:01:03Z"
+  },
+  "fe916325e086e1bc": {
+   "version": "2.1.323",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Correction de la persistance des erreurs de certificat lors de l'utilisation d'un proxy TLS.",
+   "le": "2026-11-13T06:01:03Z"
+  },
+  "0a682fb5aaddb1fa": {
+   "version": "2.1.323",
+   "domaine": "modeles",
+   "impact": "mineur",
+   "resume": "Évite de proposer des brouillons de feedback refusés par l'organisation de l'utilisateur.",
+   "le": "2026-11-13T06:01:03Z"
+  },
+  "b1e8d87f744937d6": {
+   "version": "2.1.323",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction d'un message d'erreur trompeur concernant l'activation de Claude dans Chrome.",
+   "le": "2026-11-13T06:01:03Z"
+  },
+  "6f250772c579bf14": {
+   "version": "2.1.323",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "L'aperçu des artefacts affiche désormais le bon contenu après publication.",
+   "le": "2026-11-13T06:01:03Z"
+  },
+  "a548ba2eb0a437d2": {
+   "version": "2.1.323",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Les erreurs de certificat échouent immédiatement avec un message explicatif clair.",
+   "le": "2026-11-13T06:01:03Z"
+  },
+  "4c914c66f6e66fb9": {
+   "version": "2.1.323",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction des sessions vides ou des sorties silencieuses lors de l'utilisation de --teleport.",
+   "le": "2026-11-13T06:01:03Z"
+  },
+  "b028b3aa43514de6": {
+   "version": "2.1.323",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Les raccourcis clavier mal orthographiés sont désormais ignorés au lieu d'exécuter la touche seule.",
+   "le": "2026-11-13T06:01:03Z"
+  },
+  "8a86cd18a49b0da3": {
+   "version": "2.1.323",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Les réponses et résumés de la commande /btw ne mélangent plus les anciens messages.",
+   "le": "2026-11-13T06:01:03Z"
+  },
+  "dfeb17202a4c14dd": {
+   "version": "2.1.323",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Correction du basculement incorrect vers les paramètres proxy utilisateur en cas d'échec de lecture.",
+   "le": "2026-11-13T06:01:03Z"
+  },
+  "b08e8a140aeb7e39": {
+   "version": "2.1.323",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Claude fournit désormais une raison correcte en cas d'interruption d'un envoi de fichier.",
+   "le": "2026-11-13T06:01:03Z"
+  },
+  "3031c1090f8bb380": {
+   "version": "2.1.323",
+   "domaine": "hooks_config",
+   "impact": "notable",
+   "resume": "Empêche la reprise automatique d'un tour de parole stoppé par un hook.",
+   "le": "2026-11-13T06:01:03Z"
+  },
+  "62d93b0e88127186": {
+   "version": "2.1.323",
+   "domaine": "modeles",
+   "impact": "mineur",
+   "resume": "Correction de l'état du changement automatique de modèle lors de l'arrêt d'un sous-agent.",
+   "le": "2026-11-13T06:01:03Z"
+  },
+  "024ef487b62e0731": {
+   "version": "2.1.323",
+   "domaine": "autre",
+   "impact": "mineur",
+   "resume": "La liste des fichiers modifiés inclut désormais les fichiers ajoutés avec git add -N.",
+   "le": "2026-11-13T06:01:03Z"
+  },
+  "000206cc2f8b4ad9": {
+   "version": "2.1.323",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Affichage correct du nom des outils dans les transcriptions et le suivi des sous-agents.",
+   "le": "2026-11-13T06:01:03Z"
+  },
+  "daa14a9bbc5a90e7": {
+   "version": "2.1.323",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction d'un oubli de mise à jour dans le résumé de progression des sous-agents.",
+   "le": "2026-11-13T06:01:03Z"
+  },
+  "c937be240057273d": {
+   "version": "2.1.323",
+   "domaine": "hooks_config",
+   "impact": "mineur",
+   "resume": "Correction des informations de statut concernant la lecture des fichiers de paramètres.",
+   "le": "2026-11-13T06:01:03Z"
+  },
+  "321602a61479e7e2": {
+   "version": "2.1.323",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Indique désormais clairement si la politique d'organisation bloque Claude dans Chrome.",
+   "le": "2026-11-13T06:01:03Z"
+  },
+  "20a0b191abde63e8": {
+   "version": "2.1.323",
+   "domaine": "autre",
+   "impact": "notable",
+   "resume": "Amélioration de la fiabilité et de la vitesse de la commande /rewind sur les réseaux.",
+   "le": "2026-11-13T06:01:03Z"
+  },
+  "d401b85ad9c38301": {
+   "version": "2.1.323",
+   "domaine": "autre",
+   "impact": "mineur",
+   "resume": "Évite que les fichiers de debug ne remplacent un fichier nommé 'latest'.",
+   "le": "2026-11-13T06:01:03Z"
+  },
+  "32f0a5149cc20cf4": {
+   "version": "2.1.323",
+   "domaine": "autre",
+   "impact": "mineur",
+   "resume": "Le message d'erreur de feedback indique désormais un timeout plutôt qu'une taille excessive.",
+   "le": "2026-11-13T06:01:03Z"
+  },
+  "ed9b3e1274a7b8bd": {
+   "version": "2.1.323",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction du mode lecteur d'écran qui pouvait être coupé par le changement d'heure.",
+   "le": "2026-11-13T06:01:03Z"
+  },
+  "07100ccef54519bf": {
+   "version": "2.1.323",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction du mode lecteur d'écran qui supprimait le texte dicté, collé ou les emojis dans les questions et permissions.",
+   "le": "2026-11-13T06:01:13Z"
+  },
+  "c4c655aceb378983": {
+   "version": "2.1.323",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de l'affichage des étiquettes de nom qui masquaient une partie du nom de certains agents dans les dialogues.",
+   "le": "2026-11-13T06:01:13Z"
+  },
+  "8febec079446f11b": {
+   "version": "2.1.323",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "Correction d'un bug où l'arrêt de la mise à jour via Ctrl+C pouvait supprimer la commande claude.",
+   "le": "2026-11-13T06:01:13Z"
+  },
+  "e04b0996778bcb39": {
+   "version": "2.1.323",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de l'affichage erroné du niveau d'effort du modèle dans l'en-tête plein écran pour les sous-agents.",
+   "le": "2026-11-13T06:01:13Z"
+  },
+  "d46679401cf45cee": {
+   "version": "2.1.323",
+   "domaine": "modeles",
+   "impact": "mineur",
+   "resume": "Correction de l'affichage du niveau d'effort dans le sélecteur de modèle lorsqu'une variable d'environnement est définie.",
+   "le": "2026-11-13T06:01:13Z"
+  },
+  "64add48bd0f21dbd": {
+   "version": "2.1.323",
+   "domaine": "hooks_config",
+   "impact": "notable",
+   "resume": "Correction d'un conseil de configuration sparsePaths qui pouvait entraîner l'absence de vos réglages de projet.",
+   "le": "2026-11-13T06:01:13Z"
+  },
+  "23350fdbce42a42a": {
+   "version": "2.1.323",
+   "domaine": "modeles",
+   "impact": "mineur",
+   "resume": "Correction de l'absence de mise en évidence du tout dernier modèle dans le sélecteur via la commande /model.",
+   "le": "2026-11-13T06:01:13Z"
+  },
+  "c23feffd7935afba": {
+   "version": "2.1.323",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Affichage de l'adresse URL en cas d'échec de l'ouverture du navigateur lors d'une mise à jour ou d'un clic sur un lien.",
+   "le": "2026-11-13T06:01:13Z"
+  },
+  "a780abeb7a66f862": {
+   "version": "2.1.323",
+   "domaine": "autre",
+   "impact": "mineur",
+   "resume": "Correction d'un double échappement des caractères de contrôle dans les journaux JSON de la passerelle Claude.",
+   "le": "2026-11-13T06:01:13Z"
+  },
+  "ac14d51817a4b879": {
+   "version": "2.1.323",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de l'interprétation erronée des séquences de contrôle du terminal dans les messages de sous-agents étendus.",
+   "le": "2026-11-13T06:01:13Z"
+  },
+  "f07c4bc99485402e": {
+   "version": "2.1.323",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Clarification des instructions de redémarrage pour configurer Claude dans Chrome.",
+   "le": "2026-11-13T06:01:13Z"
+  },
+  "62f82e3a319a27ea": {
+   "version": "2.1.323",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de l'affichage intempestif d'indices de touches Option sur certains claviers internationaux.",
+   "le": "2026-11-13T06:01:13Z"
+  },
+  "3561e1ad8bbd8ee6": {
+   "version": "2.1.323",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Correction d'un blocage de session Claude Desktop suite à l'envoi de messages multiples ou dupliqués.",
+   "le": "2026-11-13T06:01:13Z"
+  },
+  "0d9e2d315765d119": {
+   "version": "2.1.323",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Suppression automatique des résultats d'outils volumineux sur le disque lors de la fermeture d'une session sans persistance.",
+   "le": "2026-11-13T06:01:13Z"
+  },
+  "91734ff0597234df": {
+   "version": "2.1.323",
+   "domaine": "hooks_config",
+   "impact": "mineur",
+   "resume": "Correction des hooks de compaction qui ne recevaient pas l'identifiant et le type de l'agent concerné.",
+   "le": "2026-11-13T06:01:13Z"
+  },
+  "50c01955da5c688d": {
+   "version": "2.1.323",
+   "domaine": "hooks_config",
+   "impact": "mineur",
+   "resume": "Correction de la perte de messages dans les transcripts lors d'un nettoyage simultané par un autre processus.",
+   "le": "2026-11-13T06:01:13Z"
+  },
+  "dc7e2b6a40a7df58": {
+   "version": "2.1.323",
+   "domaine": "modeles",
+   "impact": "mineur",
+   "resume": "Correction de l'affichage erroné ou répétitif des notifications concernant l'utilisation des crédits.",
+   "le": "2026-11-13T06:01:13Z"
+  },
+  "d235e162a1191b91": {
+   "version": "2.1.323",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de l'affichage des limites hebdomadaires et du menu d'options dans le terminal.",
+   "le": "2026-11-13T06:01:13Z"
+  },
+  "cccc4c6281fd9e28": {
+   "version": "2.1.323",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction du menu de limite d'utilisation qui ne s'ouvrait pas correctement après un refus de requête.",
+   "le": "2026-11-13T06:01:13Z"
+  },
+  "7b7876ab808159ee": {
+   "version": "2.1.323",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction du menu de limite de dépenses proposant des valeurs incorrectes en cas d'échec de chargement.",
+   "le": "2026-11-13T06:01:13Z"
+  },
+  "e1fe12fffc68421a": {
+   "version": "2.1.323",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Amélioration de la commande /usage pour mieux expliquer l'absence de certaines barres de limites de jetons.",
+   "le": "2026-11-13T06:01:13Z"
+  },
+  "1c972c09e46f745a": {
+   "version": "2.1.323",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction des statistiques de la commande /usage concernant les pourcentages et le calcul du temps de session.",
+   "le": "2026-11-13T06:01:13Z"
+  },
+  "85affed31d42b37c": {
+   "version": "2.1.323",
+   "domaine": "autre",
+   "impact": "notable",
+   "resume": "Correction de l'état de déconnexion prolongé des sessions lors d'un changement de réseau ou VPN.",
+   "le": "2026-11-13T06:01:13Z"
+  },
+  "283cd543ed378f77": {
+   "version": "2.1.323",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Affichage correct des questions sur l'utilisation des crédits dans l'application Claude lors du contrôle à distance.",
+   "le": "2026-11-13T06:01:13Z"
+  },
+  "0dd89dd469753794": {
+   "version": "2.1.323",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Correction de l'état de session indiquant 'en cours' alors qu'elle attend une permission dans le terminal.",
+   "le": "2026-11-13T06:01:13Z"
+  },
+  "cd46348506f82c0a": {
+   "version": "2.1.323",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "L'identité de l'ordinateur distant est désormais conservée jusqu'à 30 jours après un redémarrage.",
+   "le": "2026-11-13T06:01:22Z"
+  },
+  "98c9ac19c1eafde7": {
+   "version": "2.1.323",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction de la gestion des sessions et des ressources lors d'un arrêt du disque dur.",
+   "le": "2026-11-13T06:01:22Z"
+  },
+  "3be875bc13414831": {
+   "version": "2.1.323",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Les notifications de permission s'affichent désormais correctement malgré les restrictions de télémétrie.",
+   "le": "2026-11-13T06:01:22Z"
+  },
+  "432f235254a3f77d": {
+   "version": "2.1.323",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction d'un plantage lors de l'exécution d'outils dont les arguments sont des types non textuels.",
+   "le": "2026-11-13T06:01:22Z"
+  },
+  "03a6d46197708db8": {
+   "version": "2.1.323",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction d'un blocage de l'hôte en cas de défaillance du système de fichiers.",
+   "le": "2026-11-13T06:01:22Z"
+  },
+  "cc006b138024ebf0": {
+   "version": "2.1.323",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "L'état des sous-agents en arrière-plan est désormais correctement synchronisé sur l'application mobile.",
+   "le": "2026-11-13T06:01:22Z"
+  },
+  "009c67caf9494e30": {
+   "version": "2.1.323",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Le SDK respecte désormais les interrupteurs de contrôle de l'interface et des workflows.",
+   "le": "2026-11-13T06:01:22Z"
+  },
+  "383f77dff25bdce8": {
+   "version": "2.1.323",
+   "domaine": "autre",
+   "impact": "mineur",
+   "resume": "L'exportation OpenTelemetry utilise désormais le protocole http/protobuf par défaut.",
+   "le": "2026-11-13T06:01:22Z"
+  },
+  "3fc0d0855b491b01": {
+   "version": "2.1.323",
+   "domaine": "autre",
+   "impact": "mineur",
+   "resume": "Correction de l'exportation OpenTelemetry via un proxy configuré.",
+   "le": "2026-11-13T06:01:22Z"
+  },
+  "c11b836b2d940003": {
+   "version": "2.1.323",
+   "domaine": "autre",
+   "impact": "mineur",
+   "resume": "Correction de la perte d'attributs dans les variables de ressources OpenTelemetry.",
+   "le": "2026-11-13T06:01:22Z"
+  },
+  "3ed93422a5f042f2": {
+   "version": "2.1.323",
+   "domaine": "autre",
+   "impact": "mineur",
+   "resume": "Correction de l'enregistrement des réponses des agents en arrière-plan dans la télémétrie.",
+   "le": "2026-11-13T06:01:22Z"
+  },
+  "6ba693d7ff9d91ab": {
+   "version": "2.1.323",
+   "domaine": "autre",
+   "impact": "mineur",
+   "resume": "Augmentation du délai d'attente pour l'exportation OpenTelemetry via proxy.",
+   "le": "2026-11-13T06:01:22Z"
+  },
+  "2251fde98865ce6e": {
+   "version": "2.1.323",
+   "domaine": "autre",
+   "impact": "mineur",
+   "resume": "Correction de l'affichage du nom de l'agent dans les données de télémétrie.",
+   "le": "2026-11-13T06:01:22Z"
+  },
+  "3fa449a87f0270fc": {
+   "version": "2.1.323",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction de l'affichage du statut lors de la reprise d'une session d'agent.",
+   "le": "2026-11-13T06:01:22Z"
+  },
+  "2a150608f9c4d428": {
+   "version": "2.1.323",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Correction des problèmes d'approbation pour les commandes Git en lecture seule sous Linux.",
+   "le": "2026-11-13T06:01:22Z"
+  },
+  "e66a35b44e79737b": {
+   "version": "2.1.323",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Amélioration de la gestion de la saisie de texte et de l'annulation avec la touche Échap.",
+   "le": "2026-11-13T06:01:22Z"
+  },
+  "9c20fae926a49544": {
+   "version": "2.1.323",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Correction du raccourci clavier pour passer une session en arrière-plan.",
+   "le": "2026-11-13T06:01:22Z"
+  },
+  "783651d881d0ddad": {
+   "version": "2.1.323",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Les sessions en arrière-plan respectent désormais la désactivation des rapports d'erreurs.",
+   "le": "2026-11-13T06:01:22Z"
+  },
+  "fee02c9521694679": {
+   "version": "2.1.323",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Suppression des notifications de saisie erronées après une réponse d'agent.",
+   "le": "2026-11-13T06:01:22Z"
+  },
+  "bdba1731dd168d6d": {
+   "version": "2.1.323",
+   "domaine": "modeles",
+   "impact": "notable",
+   "resume": "Avertissement désormais affiché si le modèle demandé est bloqué par les paramètres.",
+   "le": "2026-11-13T06:01:22Z"
+  },
+  "8ff0ac9034f68b5a": {
+   "version": "2.1.323",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Réduction du bruit visuel concernant les modèles autorisés ou interdits au démarrage.",
+   "le": "2026-11-13T06:01:22Z"
+  },
+  "3a60d9770f9cccbd": {
+   "version": "2.1.323",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Windows : Ajout de demandes de permission pour la lecture de fichiers via des jokers (wildcards).",
+   "le": "2026-11-13T06:01:22Z"
+  },
+  "73601b7c18d66fb2": {
+   "version": "2.1.323",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Windows : Correction de l'exécution des fichiers .exe au lieu des wrappers .cmd ou .bat.",
+   "le": "2026-11-13T06:01:22Z"
+  },
+  "ac7787c6bf41441a": {
+   "version": "2.1.323",
+   "domaine": "autre",
+   "impact": "mineur",
+   "resume": "Windows : Correction d'erreurs de répertoire de travail sur certains lecteurs.",
+   "le": "2026-11-13T06:01:22Z"
+  },
+  "3ce137ccdc93e54a": {
+   "version": "2.1.323",
+   "domaine": "autre",
+   "impact": "mineur",
+   "resume": "Protection de l'historique des sessions cloud contre la corruption lors d'un arrêt brutal.",
+   "le": "2026-11-13T06:01:22Z"
+  },
+  "84827573ee314f5e": {
+   "version": "2.1.323",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction du problème de lancement des tâches planifiées lors du passage d'une session à une autre.",
+   "le": "2026-11-13T06:01:32Z"
+  },
+  "11b8916e3d88f8ea": {
+   "version": "2.1.323",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction d'une erreur de mode plan empêchant la validation d'un plan après un redémarrage de session.",
+   "le": "2026-11-13T06:01:32Z"
+  },
+  "0682374b472d8540": {
+   "version": "2.1.323",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction de la perte de réponses utilisateur lors d'un redémarrage de session cloud en longue conversation.",
+   "le": "2026-11-13T06:01:32Z"
+  },
+  "4a136a84a3d04880": {
+   "version": "2.1.323",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction de la disparition de messages dans les sessions cloud lors d'un redémarrage prématuré.",
+   "le": "2026-11-13T06:01:32Z"
+  },
+  "c52db7184521fbd6": {
+   "version": "2.1.323",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction d'une erreur où Claude affirmait qu'une image jointe était manquante alors qu'elle était nommée.",
+   "le": "2026-11-13T06:01:32Z"
+  },
+  "7ddb9b1a2bbfb368": {
+   "version": "2.1.323",
+   "domaine": "modeles",
+   "impact": "mineur",
+   "resume": "Correction d'un appel de modèle inutile lors de la reprise d'une session cloud.",
+   "le": "2026-11-13T06:01:32Z"
+  },
+  "f68af00190abc256": {
+   "version": "2.1.323",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction des réponses tronquées dans les sessions cloud si le conteneur s'arrêtait durant l'envoi.",
+   "le": "2026-11-13T06:01:32Z"
+  },
+  "16ff8eff3a938417": {
+   "version": "2.1.323",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Correction des échecs de téléchargement des fichiers de compétences dans les sessions Cowork.",
+   "le": "2026-11-13T06:01:32Z"
+  },
+  "1da538c00bdba243": {
+   "version": "2.1.323",
+   "domaine": "autre",
+   "impact": "mineur",
+   "resume": "Rétablissement du code de sortie correct pour les runners on-demand dont la commande est remplacée.",
+   "le": "2026-11-13T06:01:32Z"
+  },
+  "905d2b9a82d686fa": {
+   "version": "2.1.323",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Amélioration des messages d'erreur lors de la connexion pour mieux diagnostiquer les échecs.",
+   "le": "2026-11-13T06:01:32Z"
+  },
+  "861536ea5349e6b4": {
+   "version": "2.1.323",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Fiabilisation de la vérification des permissions Bash sur les machines lentes ou surchargées.",
+   "le": "2026-11-13T06:01:32Z"
+  },
+  "b66abdd4abdd0e5f": {
+   "version": "2.1.323",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Demande de permission pour les commandes Bash dont le comportement peut varier après vérification.",
+   "le": "2026-11-13T06:01:32Z"
+  },
+  "d3b41678e3922d0c": {
+   "version": "2.1.323",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Affichage détaillé des outils MCP ignorés et des raisons liées au schéma de l'API.",
+   "le": "2026-11-13T06:01:32Z"
+  },
+  "8f12fa52b2eeb2ea": {
+   "version": "2.1.323",
+   "domaine": "hooks_config",
+   "impact": "mineur",
+   "resume": "Précision sur le moment de chargement des modifications quand l'option 'Pas maintenant' est choisie.",
+   "le": "2026-11-13T06:01:32Z"
+  },
+  "05c9c949d549de65": {
+   "version": "2.1.323",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Meilleure identification de l'outil à appeler en cas d'erreur de frappe dans l'ID du connecteur MCP.",
+   "le": "2026-11-13T06:01:32Z"
+  },
+  "54ffea72146a8f64": {
+   "version": "2.1.323",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Démarrage plus rapide et explications sur les plugins manquants pour les comptes avec de nombreux plugins.",
+   "le": "2026-11-13T06:01:32Z"
+  },
+  "34b00b651c8f8b86": {
+   "version": "2.1.323",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Optimisation de la mémoire en libérant plus tôt les transcriptions des sous-agents terminés.",
+   "le": "2026-11-13T06:01:32Z"
+  },
+  "8b5a18ecc3653076": {
+   "version": "2.1.323",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "Optimisation du script d'installation pour éviter de télécharger deux fois la dernière version.",
+   "le": "2026-11-13T06:01:32Z"
+  },
+  "e0613e06560f4da2": {
+   "version": "2.1.323",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Amélioration de la vitesse et de la mémoire pour l'extraction de contenu web sur pages profondes.",
+   "le": "2026-11-13T06:01:32Z"
+  },
+  "bbc8965febe8e96c": {
+   "version": "2.1.323",
+   "domaine": "autre",
+   "impact": "mineur",
+   "resume": "Le nettoyage automatique signale désormais comme erreur les dossiers illisibles.",
+   "le": "2026-11-13T06:01:32Z"
+  },
+  "a410879a78427b48": {
+   "version": "2.1.323",
+   "domaine": "modeles",
+   "impact": "mineur",
+   "resume": "Affichage de la limite de jetons d'entrée pour les modèles dont la fenêtre de contexte est connue.",
+   "le": "2026-11-13T06:01:32Z"
+  },
+  "d62aaccaa05bd372": {
+   "version": "2.1.323",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Indication qu'un outil recherché est déjà disponible au lieu de simplement signaler l'absence.",
+   "le": "2026-11-13T06:01:32Z"
+  },
+  "ece3395dc9461dea": {
+   "version": "2.1.323",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Amélioration du démarrage sous Linux avec des montages automatiques de dossiers personnels.",
+   "le": "2026-11-13T06:01:32Z"
+  },
+  "12042bd7184372b1": {
+   "version": "2.1.323",
+   "domaine": "modeles",
+   "impact": "notable",
+   "resume": "Message de limite de jetons plus clair indiquant quand la limite sera réinitialisée.",
+   "le": "2026-11-13T06:01:32Z"
+  },
+  "1e623a2a3bed16af": {
+   "version": "2.1.323",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Demande de confirmation pour l'examen de sécurité et pour les commandes Git dans certains dossiers.",
+   "le": "2026-11-13T06:01:32Z"
+  },
+  "4abfa3a9f2a6a758": {
+   "version": "2.1.323",
+   "domaine": "agents",
+   "impact": "majeur",
+   "resume": "Le nombre de messages échangés automatiquement entre vos sessions sur une même machine passe de 20 à 100 000.",
+   "le": "2026-11-13T06:01:42Z"
+  },
+  "d015f9fb38f51059": {
+   "version": "2.1.323",
+   "domaine": "agents",
+   "impact": "majeur",
+   "resume": "Les sessions d'onglets Claude Desktop peuvent désormais échanger jusqu'à 100 000 messages sans intervention humaine.",
+   "le": "2026-11-13T06:01:42Z"
+  },
+  "35727ed8c7a8f98e": {
+   "version": "2.1.323",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Les paramètres d'organisation utilisent désormais HTTPS_PROXY au lieu de ALL_PROXY pour les requêtes de politique.",
+   "le": "2026-11-13T06:01:42Z"
+  },
+  "1211a32e293f53c7": {
+   "version": "2.1.323",
+   "domaine": "modeles",
+   "impact": "notable",
+   "resume": "La fenêtre de contexte par défaut pour les modèles inconnus passe de 200k à 1M de tokens.",
+   "le": "2026-11-13T06:01:42Z"
+  },
+  "f89e622e9e7421f9": {
+   "version": "2.1.323",
+   "domaine": "modeles",
+   "impact": "notable",
+   "resume": "Risque d'échec des sessions sur modèles à petite fenêtre une fois le contexte plein ; utilisez /clear ou limitez le contexte.",
+   "le": "2026-11-13T06:01:42Z"
+  },
+  "5cfe15a378c99e5a": {
+   "version": "2.1.323",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Les commandes git et ripgrep internes n'utilisent plus vos jetons de connexion pour plus de sécurité.",
+   "le": "2026-11-13T06:01:42Z"
+  },
+  "293741cd917f5f29": {
+   "version": "2.1.323",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Le client MCP v1 est supprimé ; le mode compatibilité v2 est activé via MCP_SDK_GENERATION=v1.",
+   "le": "2026-11-13T06:01:42Z"
+  },
+  "b6c05ab0878e1919": {
+   "version": "2.1.323",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Une confirmation est désormais requise pour finaliser la connexion à un serveur MCP, même en mode auto.",
+   "le": "2026-11-13T06:01:42Z"
+  },
+  "7ad7576a7315d41f": {
+   "version": "2.1.323",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Les sessions sur runners auto-hébergés sont mises en pause lors des demandes d'approbation ou de connexion.",
+   "le": "2026-11-13T06:01:42Z"
+  },
+  "8be98991278bfc4d": {
+   "version": "2.1.323",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Une confirmation est demandée avant de mettre à jour un artefact si sa visibilité externe est incertaine.",
+   "le": "2026-11-13T06:01:42Z"
+  },
+  "2c13f0e336fbe766": {
+   "version": "2.1.323",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Les commandes de configuration glab locales échouent désormais dans le sandbox Bash.",
+   "le": "2026-11-13T06:01:42Z"
+  },
+  "7e7590256d07ecb3": {
+   "version": "2.1.323",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Le sandbox ignore désormais les accès en écriture via des liens symboliques vers des chemins externes ou manquants.",
+   "le": "2026-11-13T06:01:42Z"
+  },
+  "bd2b87a83946fa98": {
+   "version": "2.1.323",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Les règles d'autorisation contenant des secrets ne sont plus sauvegardées de façon permanente pour la sécurité.",
+   "le": "2026-11-13T06:01:42Z"
+  },
+  "ed1e9ded026e8d54": {
+   "version": "2.1.323",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Restrictions accrues sur le sandbox : les commandes git worktree et certains déplacements de fichiers sont limités.",
+   "le": "2026-11-13T06:01:42Z"
+  },
+  "dfe9025854379346": {
+   "version": "2.1.323",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "Le démarrage s'arrête si le fichier de paramètres n'est pas un JSON valide contenant une clé sandbox.",
+   "le": "2026-11-13T06:01:42Z"
+  },
+  "82ed85412c2975a3": {
+   "version": "2.1.323",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "En cas d'erreur après un hook d'autorisation, Claude décide de l'appel comme si aucun hook n'avait répondu.",
+   "le": "2026-11-13T06:01:42Z"
+  },
+  "d46032aa8b7f951e": {
+   "version": "2.1.323",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Claude redemande une autorisation si l'entrée a été modifiée par un hook de permission.",
+   "le": "2026-11-13T06:01:42Z"
+  },
+  "ec3e3a98de6bad67": {
+   "version": "2.1.323",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Le badge de merge request GitLab ne s'affiche désormais que pour le dépôt ouvert par la session.",
+   "le": "2026-11-13T06:01:42Z"
+  },
+  "94c5f1c7aa3b2ccd": {
+   "version": "2.1.323",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "L'exemple d'aide pour l'ajout de plugin MCP utilise désormais une commande locale.",
+   "le": "2026-11-13T06:01:42Z"
+  },
+  "d2fdd869a9cd7465": {
+   "version": "2.1.323",
+   "domaine": "hooks_config",
+   "impact": "notable",
+   "resume": "Modification du comportement des hooks engine.create : les sélecteurs génériques deviennent de simples observateurs.",
+   "le": "2026-11-13T06:01:42Z"
+  },
+  "87d8cc94d56413e3": {
+   "version": "2.1.323",
+   "domaine": "hooks_config",
+   "impact": "notable",
+   "resume": "La validation des plugins échoue désormais si le hook engine.create n'est pas écrit selon le format requis.",
+   "le": "2026-11-13T06:01:42Z"
+  },
+  "5bc44a875745d81d": {
+   "version": "2.1.323",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "L'installation de plugins ou du marketplace échoue si un sous-module git n'est pas à jour.",
+   "le": "2026-11-13T06:01:42Z"
+  },
+  "f1b312cf9938c687": {
+   "version": "2.1.323",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "L'approbation des serveurs MCP dans .mcp.json exige désormais une correspondance exacte du nom.",
+   "le": "2026-11-13T06:01:42Z"
+  },
+  "311039182b03c07c": {
+   "version": "2.1.323",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Sécurité renforcée : les réglages du dépôt ne peuvent plus désactiver vos hooks en mode non approuvé.",
+   "le": "2026-11-13T06:01:42Z"
+  },
+  "f5a048d58a8c928a": {
+   "version": "2.1.323",
+   "domaine": "hooks_config",
+   "impact": "notable",
+   "resume": "Les hooks de liste d'outils s'appliquent désormais au modèle et à tous les agents.",
+   "le": "2026-11-13T06:01:42Z"
+  },
+  "a8ae54b49b16dd9a": {
+   "version": "2.1.323",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Un avertissement s'affiche désormais si l'installation d'un plugin échoue via la sortie d'erreur standard.",
+   "le": "2026-11-13T06:01:52Z"
+  },
+  "ed98e027cd416527": {
+   "version": "2.1.323",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Claude vérifie désormais la présence de clés secrètes dans les fichiers de plugins avant tout envoi.",
+   "le": "2026-11-13T06:01:52Z"
+  },
+  "b0fbf751d98ba75c": {
+   "version": "2.1.323",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "La terminologie est clarifiée : une session est 'retirée de la liste' mais pas réellement supprimée.",
+   "le": "2026-11-13T06:01:52Z"
+  },
+  "f216a301ef296e62": {
+   "version": "2.1.323",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "La commande /stickers indique maintenant que les packs sont épuisés au lieu d'ouvrir un navigateur.",
+   "le": "2026-11-13T06:01:52Z"
+  },
+  "ad720ab5fd2b8859": {
+   "version": "2.1.323",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Renforcement de la sécurité des paramètres gérés qui n'acceptent plus de variables d'environnement externes.",
+   "le": "2026-11-13T06:01:52Z"
+  },
+  "eb434569eddafaf0": {
+   "version": "2.1.323",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction d'un comportement où certaines commandes entre deux fichiers n'étaient pas prises en compte.",
+   "le": "2026-11-13T06:01:52Z"
+  },
+  "e6b135da4e33b65f": {
+   "version": "2.1.323",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Sécurisation des agents en équipe : les requêtes doivent désormais être validées par le chef d'équipe.",
+   "le": "2026-11-13T06:01:52Z"
+  },
+  "51e504854add4f35": {
+   "version": "2.1.323",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "La création de worktrees refuse désormais les dossiers .git utilisant des liens symboliques ou matériels.",
+   "le": "2026-11-13T06:01:52Z"
+  },
+  "1d58ec8de07e71cf": {
+   "version": "2.1.323",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "En cas de blocage par les garde-fous, Claude propose de réessayer avec un prompt plus précis.",
+   "le": "2026-11-13T06:01:52Z"
+  },
+  "65e82b9672191a7b": {
+   "version": "2.1.323",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Amélioration de la gestion des caractères spéciaux et du JSON pour les outils de navigation web.",
+   "le": "2026-11-13T06:01:52Z"
+  },
+  "27fd7478279019f6": {
+   "version": "2.1.323",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Les prompts marqués comme 'non saisis' par une application ne sont plus transmis aux agents.",
+   "le": "2026-11-13T06:01:52Z"
+  },
+  "1722f2a98b3958ee": {
+   "version": "2.1.323",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Sur macOS, l'utilisation de l'ordinateur refuse désormais certains raccourcis système sensibles.",
+   "le": "2026-11-13T06:01:52Z"
+  },
+  "395284a7be16b66a": {
+   "version": "2.1.323",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Clarification des réglages de la touche Option lors de la configuration initiale dans le Terminal.",
+   "le": "2026-11-13T06:01:52Z"
+  },
+  "32fffcf8ac38fe00": {
+   "version": "2.1.323",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "Augmentation du délai maximal autorisé pour les tentatives de reconnexion automatique.",
+   "le": "2026-11-13T06:01:52Z"
+  },
+  "0895927fe92277f6": {
+   "version": "2.1.323",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Les workflows dans l'onglet Code de l'app desktop se mettent en pause lors du dépassement de quota.",
+   "le": "2026-11-13T06:01:52Z"
+  },
+  "fa51ec27647b28a6": {
+   "version": "2.1.323",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Suppression des liens web dans les messages d'erreur liés aux limites de dépenses ou de contexte.",
+   "le": "2026-11-13T06:01:52Z"
+  },
+  "97d91f153e36890f": {
+   "version": "2.1.323",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Mise à jour de la manière dont les serveurs MCP sont nommés dans les rapports de télémétrie.",
+   "le": "2026-11-13T06:01:52Z"
+  },
+  "98659512a9333d9e": {
+   "version": "2.1.323",
+   "domaine": "securite",
+   "impact": "majeur",
+   "resume": "La commande /logout déconnecte désormais toutes les sessions et efface les secrets stockés.",
+   "le": "2026-11-13T06:01:52Z"
+  },
+  "e6809dbb0d029fb0": {
+   "version": "2.1.323",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Sur macOS, le bac à sable Bash limite désormais la visibilité des processus via l'outil lsof.",
+   "le": "2026-11-13T06:01:52Z"
+  },
+  "ad4f2e541ff2d820": {
+   "version": "2.1.323",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Sécurisation des tâches planifiées pour empêcher le remplacement du plan d'action par des hooks.",
+   "le": "2026-11-13T06:01:52Z"
+  },
+  "980a6f834ab1009b": {
+   "version": "2.1.323",
+   "domaine": "hooks_config",
+   "impact": "mineur",
+   "resume": "Ajustement de l'application du paramètre de compactage automatique dans les sessions cloud.",
+   "le": "2026-11-13T06:01:52Z"
+  },
+  "4310d6aa941c402b": {
+   "version": "2.1.323",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Suppression du réglage de style pour les lignes des sous-agents, désormais standardisées.",
+   "le": "2026-11-13T06:01:52Z"
+  },
+  "67c09f1742d56dad": {
+   "version": "2.1.323",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Le paramètre 'agent' des plugins est désormais obsolète et génère un avertissement.",
+   "le": "2026-11-13T06:01:52Z"
+  },
+  "da0c6cf7aca4ea29": {
+   "version": "2.1.323",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "[VSCode] Ajout d'une demande de confiance avant d'utiliser les paramètres d'un nouveau dossier.",
+   "le": "2026-11-13T06:01:52Z"
+  },
+  "1f0cd660a52c9837": {
+   "version": "2.1.323",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "[VSCode] L'affichage du chat inclut désormais la sortie en direct des commandes Bash ou PowerShell.",
+   "le": "2026-11-13T06:01:52Z"
+  },
+  "d6428610eb8d3499": {
+   "version": "2.1.323",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction d'un bug d'affichage d'une réponse erronée après une tentative de correction de l'outil.",
+   "le": "2026-11-13T06:02:02Z"
+  },
+  "844687fb5e672a44": {
+   "version": "2.1.323",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction d'un message manquant dans l'historique après une synthèse de conversation.",
+   "le": "2026-11-13T06:02:02Z"
+  },
+  "0d2f0e199cc3bf4d": {
+   "version": "2.1.323",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Correction d'un problème de validation de paiement lié au bouton d'achat de crédits.",
+   "le": "2026-11-13T06:02:02Z"
+  },
+  "5bef6822efabab1a": {
+   "version": "2.1.323",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Suppression de l'avertissement récurrent de relance du terminal lors du redémarrage de la fenêtre.",
+   "le": "2026-11-13T06:02:02Z"
+  },
+  "d7fd28b8e818276f": {
+   "version": "2.1.323",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction d'une erreur de chargement de l'historique lors du redémarrage du processus Claude.",
+   "le": "2026-11-13T06:02:02Z"
+  },
+  "f89f904cf42652a2": {
+   "version": "2.1.323",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Amélioration de l'affichage de la connexion pour éviter les répétitions de choix après le code.",
+   "le": "2026-11-13T06:02:02Z"
+  },
+  "05b9f05e4f1abd99": {
+   "version": "2.1.323",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de l'affichage persistant du message de limite de consommation après changement de modèle.",
+   "le": "2026-11-13T06:02:02Z"
+  },
+  "5eaf3ab91009b079": {
+   "version": "2.1.323",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction des messages d'avertissement sur l'utilisation des crédits dans les panneaux intégrés.",
+   "le": "2026-11-13T06:02:02Z"
+  },
+  "5cb1c8f0f98d4377": {
+   "version": "2.1.323",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de l'onglet de comparaison (diff) pour les modifications multi-lignes sur Windows (CRLF).",
+   "le": "2026-11-13T06:02:02Z"
+  },
+  "3b858bc515786f5f": {
+   "version": "2.1.323",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction du problème de dictée qui continuait d'enregistrer après un changement de session.",
+   "le": "2026-11-13T06:02:02Z"
+  },
+  "59e79b65b9fa2c12": {
+   "version": "2.1.323",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Meilleure gestion et explications des erreurs de connexion via des proxys avec inspection TLS.",
+   "le": "2026-11-13T06:02:02Z"
+  },
+  "28a3a1443abc2ca7": {
+   "version": "2.1.323",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "L'extension ne change plus automatiquement de branche lors de l'ouverture d'une session web en mode sandbox.",
+   "le": "2026-11-13T06:02:02Z"
+  },
+  "244893f8baf2a4a5": {
+   "version": "2.1.323",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Affichage plus précis des raisons d'échec lors de l'upload de fichiers dans une session cloud.",
+   "le": "2026-11-13T06:02:02Z"
+  },
+  "0e0474d00cf85f77": {
+   "version": "2.1.323",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Simplification de l'ajout de dépôts inaccessibles avec un bouton de reconnexion GitHub.",
+   "le": "2026-11-13T06:02:02Z"
+  },
+  "9b57bc12bb883962": {
+   "version": "2.1.323",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction du blocage sur l'écran de démarrage pour les sessions auto-hébergées reprises.",
+   "le": "2026-11-13T06:02:02Z"
+  },
+  "f7447883b7d97fd6": {
+   "version": "2.1.323",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction d'un bug d'affichage des boutons d'envoi sur les sessions auto-hébergées en pause.",
+   "le": "2026-11-13T06:02:02Z"
+  },
+  "448ee7d8c3bb73e1": {
+   "version": "2.1.323",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Les liens de pull request GitHub Enterprise pointent désormais vers votre serveur et non github.com.",
+   "le": "2026-11-13T06:02:02Z"
+  },
+  "40b5f277d331566d": {
+   "version": "2.1.323",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Meilleure visibilité et détails sur les secrets réseau impossibles à ajouter en environnement cloud.",
+   "le": "2026-11-13T06:02:02Z"
+  },
+  "f9b27ee86c8c8479": {
+   "version": "2.1.323",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Correction du téléchargement incomplet des gros journaux de travail GitHub Actions.",
+   "le": "2026-11-13T06:02:02Z"
+  },
+  "449f886828cb869d": {
+   "version": "2.1.323",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Amélioration de la sélection de dépôt quand le SSO GitHub masque certaines organisations.",
+   "le": "2026-11-13T06:02:02Z"
+  },
+  "c65549471a07612e": {
+   "version": "2.1.323",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction de la création de branche pour les sessions cloud lancées depuis l'application iOS.",
+   "le": "2026-11-13T06:02:02Z"
+  },
+  "f341b4bd77b6a650": {
+   "version": "2.1.323",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Tentative de reconnexion automatique en cas de déconnexion d'une session cloud ou distante.",
+   "le": "2026-11-13T06:02:02Z"
+  },
+  "dc0f5750d6392481": {
+   "version": "2.1.323",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Le bouton 'Réessayer' déclenche désormais une reconnexion au lieu d'envoyer un message vide.",
+   "le": "2026-11-13T06:02:02Z"
+  },
+  "9b1e9c73e1b000a0": {
+   "version": "2.1.323",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de la disparition du bouton d'arrêt pendant une réponse longue en cours de génération.",
+   "le": "2026-11-13T06:02:02Z"
+  },
+  "b0e5bda98b521eb8": {
+   "version": "2.1.323",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de la disparition des demandes d'approbation lors de la libération d'une session.",
+   "le": "2026-11-13T06:02:02Z"
+  },
+  "215308aa5bc013d1": {
+   "version": "2.1.323",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Notification d'échec si une tâche planifiée ne peut pas démarrer par manque de sandbox disponible.",
+   "le": "2026-11-13T06:02:09Z"
+  },
+  "0174a302879bec8e": {
+   "version": "2.1.323",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "L'expiration de la connexion GitHub demande désormais de se reconnecter au lieu de masquer les organisations.",
+   "le": "2026-11-13T06:02:09Z"
+  },
+  "db3ca07f49f7a895": {
+   "version": "2.1.323",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Correction du transfert involontaire de déclencheurs GitHub lors de la suppression d'un dépôt d'une tâche.",
+   "le": "2026-11-13T06:02:09Z"
+  },
+  "33e068d207734284": {
+   "version": "2.1.323",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "Correction des interruptions de clones ou fetch Git trop longs en session cloud.",
+   "le": "2026-11-13T06:02:09Z"
+  },
+  "4323a983e664551b": {
+   "version": "2.1.323",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Ajout de l'option 'Aucun dépôt' dans le sélecteur pour les environnements auto-hébergés.",
+   "le": "2026-11-13T06:02:09Z"
+  },
+  "de0246088d319359": {
+   "version": "2.1.323",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Avertissement lors de la suppression d'une session cloud si cela met en pause des tâches planifiées.",
+   "le": "2026-11-13T06:02:09Z"
+  },
+  "ccbb95d78dab7b16": {
+   "version": "2.1.323",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction du message d'erreur indiquant une suppression d'environnement erronée lors d'une déconnexion.",
+   "le": "2026-11-13T06:02:09Z"
+  },
+  "21f83a0ae5566c56": {
+   "version": "2.1.323",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Les sessions déconnectées s'affichent désormais comme inactives ou avec une erreur au lieu de rester 'en cours'.",
+   "le": "2026-11-13T06:02:09Z"
+  },
+  "6befb553f3c5e31b": {
+   "version": "2.1.323",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Ajout d'un bouton 'Réessayer' en cas de déconnexion de l'ordinateur distant de Claude Code.",
+   "le": "2026-11-13T06:02:09Z"
+  },
+  "a67b5664b750cb97": {
+   "version": "2.1.323",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Les sessions Slack sont désormais listées et lisibles via l'API de conformité pour les comptes Enterprise.",
+   "le": "2026-11-13T06:02:09Z"
+  },
+  "15a1930307976fa6": {
+   "version": "2.1.323",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Étape de confirmation ajoutée lorsqu'un administrateur désactive Claude Tag pour une organisation.",
+   "le": "2026-11-13T06:02:09Z"
+  },
+  "c4619ab80c9cf08c": {
+   "version": "2.1.323",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction des tâches planifiées Slack qui ne fonctionnaient plus après un déplacement de workspace.",
+   "le": "2026-11-13T06:02:09Z"
+  },
+  "260f2e4204ca5e92": {
+   "version": "2.1.323",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Suppression de l'affichage des cartes d'approbation dans les canaux privés ou Slack Connect restreints.",
+   "le": "2026-11-13T06:02:09Z"
+  },
+  "bb343849fdad1801": {
+   "version": "2.1.323",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Ajout d'un bouton 'Réessayer' pour charger les paramètres d'un canal Slack en cas d'échec.",
+   "le": "2026-11-13T06:02:09Z"
+  },
+  "c3489a566621c518": {
+   "version": "2.1.323",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Nouveau filtre par périmètre pour télécharger les événements réseau d'un groupe spécifique.",
+   "le": "2026-11-13T06:02:09Z"
+  },
+  "c8c5083920ea56d2": {
+   "version": "2.1.323",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Correction de la suppression des connecteurs qui échouait si les identifiants étaient partagés.",
+   "le": "2026-11-13T06:02:09Z"
+  },
+  "99baaca3362bfa06": {
+   "version": "2.1.323",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Amélioration de l'affichage des canaux pour qu'ils apparaissent directement sous leur workspace.",
+   "le": "2026-11-13T06:02:09Z"
+  },
+  "2f0d83e3721ff109": {
+   "version": "2.1.323",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction du lien de configuration qui redirige désormais vers le bon onglet des paramètres.",
+   "le": "2026-11-13T06:02:09Z"
+  },
+  "9d7e35057f3ed550": {
+   "version": "2.1.323",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Possibilité d'exporter les coûts de revue de code en format CSV par dépôt ou organisation.",
+   "le": "2026-11-13T06:02:09Z"
   }
  }
 }
