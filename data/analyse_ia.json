@@ -23399,6 +23399,979 @@
    "impact": "notable",
    "resume": "Possibilité d'exporter les coûts de revue de code en format CSV par dépôt ou organisation.",
    "le": "2026-11-13T06:02:09Z"
+  },
+  "8baf5e3cccc41450": {
+   "version": "2.1.325",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Correction d'une faille de sécurité lors du décodage des réponses compressées en zstd.",
+   "le": "2026-11-14T06:00:25Z"
+  },
+  "72ab8992b6299a63": {
+   "version": "2.1.325",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Ajout d'un indicateur visuel dans les terminaux intégrés lors de la lecture ou modification de notebooks Jupyter.",
+   "le": "2026-11-14T06:00:25Z"
+  },
+  "a2f5fd5f1987caff": {
+   "version": "2.1.325",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Affichage de conseils pour contourner les restrictions de politique d'organisation via les commandes /rewind ou /clear.",
+   "le": "2026-11-14T06:00:25Z"
+  },
+  "1885994e86703ade": {
+   "version": "2.1.325",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Claude est désormais averti lorsqu'il ne peut pas modifier des fichiers protégés lors d'opérations Git en sandbox.",
+   "le": "2026-11-14T06:00:25Z"
+  },
+  "c72141868322e26d": {
+   "version": "2.1.325",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction des erreurs de commandes Git lors de l'utilisation de worktrees ou de configurations Git spécifiques.",
+   "le": "2026-11-14T06:00:25Z"
+  },
+  "148ba45a5d0710bc": {
+   "version": "2.1.325",
+   "domaine": "modeles",
+   "impact": "notable",
+   "resume": "Correction d'un problème où les sous-agents changeaient de modèle de raisonnement de manière incorrecte.",
+   "le": "2026-11-14T06:00:25Z"
+  },
+  "832c99e1ad99ac9b": {
+   "version": "2.1.325",
+   "domaine": "modeles",
+   "impact": "notable",
+   "resume": "Correction de l'incohérence de taille de contexte entre les sous-agents et la session principale.",
+   "le": "2026-11-14T06:00:25Z"
+  },
+  "ec0653ee5591cca1": {
+   "version": "2.1.325",
+   "domaine": "modeles",
+   "impact": "notable",
+   "resume": "Résolution des erreurs de longueur de contexte sur les passerelles tierces et Foundry grâce à une meilleure compaction.",
+   "le": "2026-11-14T06:00:25Z"
+  },
+  "1eb9df6df0f4d572": {
+   "version": "2.1.325",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Correction de la perte de l'historique récent lors de la reprise d'une session après un arrêt brutal.",
+   "le": "2026-11-14T06:00:25Z"
+  },
+  "0845864b77273dae": {
+   "version": "2.1.325",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Les commandes shell échouent désormais proprement si le répertoire de travail a été supprimé.",
+   "le": "2026-11-14T06:00:25Z"
+  },
+  "ff92fcc74bbbdfe7": {
+   "version": "2.1.325",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Sauvegarde automatique des plans dans le dossier par défaut si le dossier spécifique est inaccessible.",
+   "le": "2026-11-14T06:00:25Z"
+  },
+  "91babd293d59902b": {
+   "version": "2.1.325",
+   "domaine": "modeles",
+   "impact": "mineur",
+   "resume": "Correction d'un bug de réécriture de paramètre de modèle lors d'une nouvelle installation.",
+   "le": "2026-11-14T06:00:25Z"
+  },
+  "98379a47604fba2a": {
+   "version": "2.1.325",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de l'affichage de la réponse qui pouvait être masquée par une tâche planifiée.",
+   "le": "2026-11-14T06:00:25Z"
+  },
+  "0ca2c87752b3f27e": {
+   "version": "2.1.325",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de la visibilité du prompt pour les sous-agents en arrière-plan.",
+   "le": "2026-11-14T06:00:25Z"
+  },
+  "15e26df46ddfca60": {
+   "version": "2.1.325",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Amélioration de l'affichage des listes et des permissions sur les terminaux étroits.",
+   "le": "2026-11-14T06:00:25Z"
+  },
+  "d5bcfd7529cfe2e7": {
+   "version": "2.1.325",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction du marquage automatique comme 'vu' pour les avertissements de permissions défilés hors écran.",
+   "le": "2026-11-14T06:00:25Z"
+  },
+  "4fd658cb5439cb98": {
+   "version": "2.1.325",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de l'affichage du header de bienvenue avec des caractères spéciaux ou des sauts de ligne.",
+   "le": "2026-11-14T06:00:25Z"
+  },
+  "3cea020a984ac418": {
+   "version": "2.1.325",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Clarification visuelle lorsqu'une commande nécessite une exécution manuelle par l'utilisateur.",
+   "le": "2026-11-14T06:00:25Z"
+  },
+  "a77808e3b6629c61": {
+   "version": "2.1.325",
+   "domaine": "autre",
+   "impact": "mineur",
+   "resume": "Correction du calcul du nombre de jours d'activité dans les statistiques.",
+   "le": "2026-11-14T06:00:25Z"
+  },
+  "32fe52f2f636befc": {
+   "version": "2.1.325",
+   "domaine": "autre",
+   "impact": "mineur",
+   "resume": "Correction des erreurs de rapport dans la commande /insights.",
+   "le": "2026-11-14T06:00:25Z"
+  },
+  "5eb0c921f644d123": {
+   "version": "2.1.325",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Précision accrue sur l'origine des réglages du mode vocal.",
+   "le": "2026-11-14T06:00:25Z"
+  },
+  "833089ad56f01e73": {
+   "version": "2.1.325",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction des raccourcis clavier Windows et Linux dans le dialogue de bienvenue de l'IDE.",
+   "le": "2026-11-14T06:00:25Z"
+  },
+  "41c2707fdbe2f4d2": {
+   "version": "2.1.325",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de l'affichage des conseils Slack en cas de restriction de politique d'organisation.",
+   "le": "2026-11-14T06:00:25Z"
+  },
+  "87f4f55a64814e1e": {
+   "version": "2.1.325",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Correction des blocages et problèmes de saisie clavier lors de l'utilisation de 'claude purge'.",
+   "le": "2026-11-14T06:00:25Z"
+  },
+  "123ed9f4ed6968ce": {
+   "version": "2.1.325",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Correction de l'écriture de rapports dans le dossier courant lors de l'évaluation de plugins.",
+   "le": "2026-11-14T06:00:25Z"
+  },
+  "8cc0d05c1020dbc7": {
+   "version": "2.1.325",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de l'affichage du texte dans le terminal lors de l'utilisation de séquences de contrôle complexes.",
+   "le": "2026-11-14T06:00:35Z"
+  },
+  "e76806737b20b249": {
+   "version": "2.1.325",
+   "domaine": "autre",
+   "impact": "mineur",
+   "resume": "Suppression des fichiers temporaires de verrouillage OAuth qui s'accumulaient inutilement dans le dossier de configuration.",
+   "le": "2026-11-14T06:00:35Z"
+  },
+  "a04373b595a8d6b3": {
+   "version": "2.1.325",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction d'un message d'erreur erroné concernant la désactivation du mode rapide lors de la connexion Console.",
+   "le": "2026-11-14T06:00:35Z"
+  },
+  "689524394612ea77": {
+   "version": "2.1.325",
+   "domaine": "modeles",
+   "impact": "mineur",
+   "resume": "Correction d'un message indiquant une restriction de modèle alors que la vérification n'a pas pu être effectuée.",
+   "le": "2026-11-14T06:00:35Z"
+  },
+  "f1f93ac5dc7eb05a": {
+   "version": "2.1.325",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Correction d'un bug où la commande de connexion remplaçait votre session actuelle si vous appuyiez sur Échap.",
+   "le": "2026-11-14T06:00:35Z"
+  },
+  "b192fc2876d746aa": {
+   "version": "2.1.325",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de l'affichage de la page de succès dans le navigateur lors d'une échec ou annulation de connexion.",
+   "le": "2026-11-14T06:00:35Z"
+  },
+  "6549126582fbb286": {
+   "version": "2.1.325",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Correction d'un problème de verrouillage qui faisait attendre la session suivante pendant une minute.",
+   "le": "2026-11-14T06:00:35Z"
+  },
+  "a834400fbb253025": {
+   "version": "2.1.325",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Correction de la facturation erronée via une clé API lors de l'utilisation de sessions en arrière-plan.",
+   "le": "2026-11-14T06:00:35Z"
+  },
+  "a6e957c1bd58f5a0": {
+   "version": "2.1.325",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Meilleure gestion des changements de compte en arrière-plan pour éviter les basculements de session non désirés.",
+   "le": "2026-11-14T06:00:35Z"
+  },
+  "45312f160b0b2914": {
+   "version": "2.1.325",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction de l'arrêt du travail en arrière-plan lors de l'utilisation de la touche Entrée dans le dialogue de sortie.",
+   "le": "2026-11-14T06:00:35Z"
+  },
+  "135e7e09473e89ac": {
+   "version": "2.1.325",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Correction de l'envoi de données vers Amazon Bedrock malgré les restrictions de configuration des fournisseurs.",
+   "le": "2026-11-14T06:00:35Z"
+  },
+  "f4a26db22138f67b": {
+   "version": "2.1.325",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Correction de l'échec des identifiants AWS et Google Cloud lorsque la variable d'environnement HOME est absente.",
+   "le": "2026-11-14T06:00:35Z"
+  },
+  "3f11740e7a7a1719": {
+   "version": "2.1.325",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Correction d'un retour involontaire à un mode de permission antérieur après l'approbation d'un plan d'agent.",
+   "le": "2026-11-14T06:00:35Z"
+  },
+  "33e80d32ef189998": {
+   "version": "2.1.325",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction d'une erreur dans le SDK d'agent qui ignorait silencieusement les paramètres de configuration.",
+   "le": "2026-11-14T06:00:35Z"
+  },
+  "18926c732b88aa56": {
+   "version": "2.1.325",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de l'affichage de session en attente pour des pull requests déjà finalisées.",
+   "le": "2026-11-14T06:00:35Z"
+  },
+  "9c7f03ea151860c5": {
+   "version": "2.1.325",
+   "domaine": "hooks_config",
+   "impact": "mineur",
+   "resume": "Signalement explicite des valeurs de configuration de mode équipe non reconnues au lieu de les ignorer.",
+   "le": "2026-11-14T06:00:35Z"
+  },
+  "fe8adb75c93ab373": {
+   "version": "2.1.325",
+   "domaine": "hooks_config",
+   "impact": "mineur",
+   "resume": "Correction de l'omission d'un hook de création de worktree lors de la première exécution avec un plugin.",
+   "le": "2026-11-14T06:00:35Z"
+  },
+  "548237160668eaba": {
+   "version": "2.1.325",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction des doublons de réponses dans les sessions en mode bref comme Dispatch.",
+   "le": "2026-11-14T06:00:35Z"
+  },
+  "949a6263118a249f": {
+   "version": "2.1.325",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Correction des faux rapports d'échec des connecteurs Atlassian, Asana ou Sentry dus à des URL de plugins.",
+   "le": "2026-11-14T06:00:35Z"
+  },
+  "22e6c8e31d60f0bb": {
+   "version": "2.1.325",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Amélioration de la détection et de la connexion des serveurs MCP locaux après un déplacement de dossier.",
+   "le": "2026-11-14T06:00:35Z"
+  },
+  "9787162b8b3005f9": {
+   "version": "2.1.325",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Correction de l'affichage persistant d'un serveur MCP après son retrait via le rechargement d'un plugin.",
+   "le": "2026-11-14T06:00:35Z"
+  },
+  "27a90a7193076ec7": {
+   "version": "2.1.325",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Correction des problèmes d'authentification et de hooks MCP après le rafraîchissement d'un jeton.",
+   "le": "2026-11-14T06:00:35Z"
+  },
+  "c67fb6c38b341bd2": {
+   "version": "2.1.325",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Correction de l'annulation automatique des requêtes MCP en mode sans interface lors d'un remplacement de serveur.",
+   "le": "2026-11-14T06:00:35Z"
+  },
+  "f7cf8410e6543e9e": {
+   "version": "2.1.325",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Correction des erreurs de connexion lors des appels d'outils MCP après une reconnexion automatique.",
+   "le": "2026-11-14T06:00:35Z"
+  },
+  "a614232077ec56ee": {
+   "version": "2.1.325",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Correction des tâches MCP bloquées après une annulation ou une nouvelle question via la commande /tasks.",
+   "le": "2026-11-14T06:00:35Z"
+  },
+  "3cffd59559319ead": {
+   "version": "2.1.325",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Correction du problème de mise à jour des tâches MCP en arrière-plan après une reconnexion au serveur.",
+   "le": "2026-11-14T06:00:45Z"
+  },
+  "9cf09bb728ebe11b": {
+   "version": "2.1.325",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Les questions en arrière-plan attendent désormais la fin de votre saisie avant de s'afficher.",
+   "le": "2026-11-14T06:00:45Z"
+  },
+  "2019325c65f69a7b": {
+   "version": "2.1.325",
+   "domaine": "autre",
+   "impact": "mineur",
+   "resume": "Correction de l'absence des fichiers racines lors de clones partiels avec les anciennes versions de Git.",
+   "le": "2026-11-14T06:00:45Z"
+  },
+  "990e89cfeb97e131": {
+   "version": "2.1.325",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction de l'impossibilité d'utiliser un nouveau dépôt ajouté en cours de session sur les runners auto-hébergés.",
+   "le": "2026-11-14T06:00:45Z"
+  },
+  "10a155970ca859d0": {
+   "version": "2.1.325",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Claude ne demande plus de permission pour lire vos propres artefacts ou données.",
+   "le": "2026-11-14T06:00:45Z"
+  },
+  "ebd6824006d461b9": {
+   "version": "2.1.325",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Correction de l'application des règles de permission et des hooks pour l'outil Artifact en session cloud.",
+   "le": "2026-11-14T06:00:45Z"
+  },
+  "0f2ba8e7ad54691d": {
+   "version": "2.1.325",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Correction de divers bugs de scripts en Code Mode, de chemins erronés et d'affichage d'état MCP.",
+   "le": "2026-11-14T06:00:45Z"
+  },
+  "c8d0ed76e80b34d1": {
+   "version": "2.1.325",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Correction d'un bug où les réponses 'Yes' aux dialogues de permission n'étaient pas transmises à Claude.",
+   "le": "2026-11-14T06:00:45Z"
+  },
+  "a8c12be45525faf0": {
+   "version": "2.1.325",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Claude attend désormais votre prochain prompt au lieu de reprendre le travail seul après une reprise de session.",
+   "le": "2026-11-14T06:00:45Z"
+  },
+  "2cb51663a4704e09": {
+   "version": "2.1.325",
+   "domaine": "autre",
+   "impact": "mineur",
+   "resume": "Correction du suivi des événements OpenTelemetry lors de l'envoi de messages pendant l'exécution d'outils.",
+   "le": "2026-11-14T06:00:45Z"
+  },
+  "d5ace64c6db4a671": {
+   "version": "2.1.325",
+   "domaine": "autre",
+   "impact": "mineur",
+   "resume": "Correction de l'omission de messages précédents dans les événements OpenTelemetry sous VS Code.",
+   "le": "2026-11-14T06:00:45Z"
+  },
+  "428fe1fd673e62dd": {
+   "version": "2.1.325",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Les restrictions d'outils des commandes slash s'appliquent désormais correctement aux agents en arrière-plan.",
+   "le": "2026-11-14T06:00:45Z"
+  },
+  "b15c3ea0804dc173": {
+   "version": "2.1.325",
+   "domaine": "autre",
+   "impact": "mineur",
+   "resume": "Les commandes de feedback et de bug n'envoient désormais que les sessions liées à votre compte.",
+   "le": "2026-11-14T06:00:45Z"
+  },
+  "92fe0e0735e163e7": {
+   "version": "2.1.325",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Les règles de permission relatives s'appliquent désormais correctement même après un changement de répertoire.",
+   "le": "2026-11-14T06:00:45Z"
+  },
+  "dd23e06b8f9c48fe": {
+   "version": "2.1.325",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Correction de la sensibilité à la casse pour les règles de permission liées aux plugins MCP.",
+   "le": "2026-11-14T06:00:45Z"
+  },
+  "3f5ff65d4176784a": {
+   "version": "2.1.325",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Les règles de refus sont désormais appliquées après un redémarrage de Claude Code en session distante.",
+   "le": "2026-11-14T06:00:45Z"
+  },
+  "82d01fa016452c50": {
+   "version": "2.1.325",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Empêche la confusion entre les paramètres locaux d'un projet et les paramètres utilisateur.",
+   "le": "2026-11-14T06:00:45Z"
+  },
+  "339b7eb0ebbca9b3": {
+   "version": "2.1.325",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Correction de l'application des règles de refus sur certaines commandes Bash.",
+   "le": "2026-11-14T06:00:45Z"
+  },
+  "7cb65a126532897a": {
+   "version": "2.1.325",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Les commandes Bash complexes demandent désormais systématiquement une permission.",
+   "le": "2026-11-14T06:00:45Z"
+  },
+  "7324887f7cb5b77f": {
+   "version": "2.1.325",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Correction d'une faille permettant d'exécuter un programme différent de celui autorisé en Bash.",
+   "le": "2026-11-14T06:00:45Z"
+  },
+  "b45a52d832cff544": {
+   "version": "2.1.325",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Correction de l'approbation automatique de certains outils pendant le chargement des plugins.",
+   "le": "2026-11-14T06:00:45Z"
+  },
+  "3e853b0f6624f846": {
+   "version": "2.1.325",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Les sous-agents demandent désormais une permission avant de modifier des artefacts publics.",
+   "le": "2026-11-14T06:00:45Z"
+  },
+  "aa6026a89669a740": {
+   "version": "2.1.325",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Rétablissement de la confirmation pour la publication d'artefacts visibles par des tiers.",
+   "le": "2026-11-14T06:00:45Z"
+  },
+  "89a36883e02ad0cd": {
+   "version": "2.1.325",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "L'approbation automatique en mode auto ne couvre désormais que la modification spécifique validée.",
+   "le": "2026-11-14T06:00:45Z"
+  },
+  "3e5ce804e4afec1e": {
+   "version": "2.1.325",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Le verrouillage des personnalisations de plugins s'applique désormais aux sessions déjà actives.",
+   "le": "2026-11-14T06:00:45Z"
+  },
+  "d31efac0cae0ba58": {
+   "version": "2.1.325",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Correction d'une faille permettant aux commandes sandbox d'écrire dans le dossier de téléchargement du programme de mise à jour.",
+   "le": "2026-11-14T06:00:56Z"
+  },
+  "dab4756f8f9ea0ff": {
+   "version": "2.1.325",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Amélioration de la protection du bac à sable Bash pour les paramètres et les hooks d'un worktree.",
+   "le": "2026-11-14T06:00:56Z"
+  },
+  "bc32dad1cf59836f": {
+   "version": "2.1.325",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Renforcement de la protection du dossier git partagé lors de l'utilisation de worktrees liés dans le bac à sable Bash.",
+   "le": "2026-11-14T06:00:56Z"
+  },
+  "4e72ba249ef75162": {
+   "version": "2.1.325",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "La commande /teleport gère mieux les états git inhabituels en demandant une action plutôt qu'en choisissant un stash.",
+   "le": "2026-11-14T06:00:56Z"
+  },
+  "9b36be374ef66a96": {
+   "version": "2.1.325",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "Correction d'un blocage au démarrage sur Windows lié à des dossiers sans permission d'accès dans le PATH.",
+   "le": "2026-11-14T06:00:56Z"
+  },
+  "53c0650871ad5336": {
+   "version": "2.1.325",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de la commande /resume sur Windows pour mieux gérer les différences de casse des lettres de lecteurs.",
+   "le": "2026-11-14T06:00:56Z"
+  },
+  "08ac2677c26fc81a": {
+   "version": "2.1.325",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Correction d'un bug sur Windows où la confiance accordée à un projet était perdue lors d'une reprise de session.",
+   "le": "2026-11-14T06:00:56Z"
+  },
+  "90d1ddb13a0d7799": {
+   "version": "2.1.325",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Résolution d'un échec des commandes Bash sandbox sous Linux dans certains répertoires avec des liens symboliques.",
+   "le": "2026-11-14T06:00:56Z"
+  },
+  "760160d52f97a1a2": {
+   "version": "2.1.325",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction du blocage de l'état 'Stopping' pour les déploiements tiers de Claude Desktop lors du renouvellement de jeton.",
+   "le": "2026-11-14T06:00:56Z"
+  },
+  "d43d14cab6f263ca": {
+   "version": "2.1.325",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Les sous-agents coupés par la limite de jetons sont maintenant relancés pour fournir une réponse complète et concise.",
+   "le": "2026-11-14T06:00:56Z"
+  },
+  "0a9106e2b6105887": {
+   "version": "2.1.325",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Démarrage plus rapide lors de la connexion via Console ou profil Anthropic grâce à la réutilisation des jetons valides.",
+   "le": "2026-11-14T06:00:56Z"
+  },
+  "22562f9adfc089cf": {
+   "version": "2.1.325",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Renforcement de la vérification d'email pour empêcher l'usurpation d'identité dans les scripts et appels MCP.",
+   "le": "2026-11-14T06:00:56Z"
+  },
+  "bb79b77fd4b99a48": {
+   "version": "2.1.325",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Message d'erreur plus explicite pour les échecs d'authentification HTTPS sur les places de marché de plugins privés.",
+   "le": "2026-11-14T06:00:56Z"
+  },
+  "a516353c2cd4ab93": {
+   "version": "2.1.325",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Avertissements plus clairs sur les risques de sécurité lors de l'installation ou de la recommandation de plugins.",
+   "le": "2026-11-14T06:00:56Z"
+  },
+  "346acfcc02dffcb3": {
+   "version": "2.1.325",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "L'erreur de connexion 'claude --desktop' précise désormais quelle clé API ou quel paramètre pose problème.",
+   "le": "2026-11-14T06:00:56Z"
+  },
+  "30167f25230d08ed": {
+   "version": "2.1.325",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Amélioration du message d'absence d'audio sur macOS et Windows en indiquant où configurer le microphone.",
+   "le": "2026-11-14T06:00:56Z"
+  },
+  "c04bfb8d1f6d5674": {
+   "version": "2.1.325",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Claude informe désormais quand une tâche MCP attend une réponse et peut vous rediriger vers /tasks.",
+   "le": "2026-11-14T06:00:56Z"
+  },
+  "43e40383f651e329": {
+   "version": "2.1.325",
+   "domaine": "autre",
+   "impact": "mineur",
+   "resume": "Amélioration des codes de sortie de 'claude remote-control' pour faciliter la gestion par un service système.",
+   "le": "2026-11-14T06:00:56Z"
+  },
+  "6b79e18d639f0288": {
+   "version": "2.1.325",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Messages plus précis lorsque les sessions en arrière-plan ne peuvent pas utiliser leur clé API.",
+   "le": "2026-11-14T06:00:56Z"
+  },
+  "32ce45fa0b533584": {
+   "version": "2.1.325",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Amélioration des conseils de visualisation de données pour les images statiques et les données ordonnées.",
+   "le": "2026-11-14T06:00:56Z"
+  },
+  "4fd87512851157ac": {
+   "version": "2.1.325",
+   "domaine": "securite",
+   "impact": "majeur",
+   "resume": "Les commandes Bash sandbox demandent désormais une autorisation par défaut, sauf si configuré autrement.",
+   "le": "2026-11-14T06:00:56Z"
+  },
+  "3de92ab7a2fce01e": {
+   "version": "2.1.325",
+   "domaine": "securite",
+   "impact": "majeur",
+   "resume": "Changement de la gestion du bac à sable : nécessite un réglage explicite pour éviter les demandes d'autorisation.",
+   "le": "2026-11-14T06:00:56Z"
+  },
+  "16cf351874f2c656": {
+   "version": "2.1.325",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Les commandes git en lecture seule demandent désormais une autorisation pour les dépôts non approuvés.",
+   "le": "2026-11-14T06:00:56Z"
+  },
+  "db29a0d530ef70e8": {
+   "version": "2.1.325",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Les tâches planifiées et la boucle /loop demandent désormais une autorisation avant d'utiliser des outils spécifiques.",
+   "le": "2026-11-14T06:00:56Z"
+  },
+  "7bf538aacc90443c": {
+   "version": "2.1.325",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "L'option 'Toujours autoriser' est proposée de manière plus prudente pour éviter les exécutions automatiques imprévues.",
+   "le": "2026-11-14T06:00:56Z"
+  },
+  "4537b55c3e017e39": {
+   "version": "2.1.325",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Le sandbox interdit désormais l'écriture des fichiers de configuration Claude dans les répertoires ajoutés.",
+   "le": "2026-11-14T06:01:05Z"
+  },
+  "f3fd82bfca9e898c": {
+   "version": "2.1.325",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "L'isolation des worktrees bloque désormais certaines commandes Git et Scalar pour plus de sécurité.",
+   "le": "2026-11-14T06:01:05Z"
+  },
+  "90f1535af6093f4a": {
+   "version": "2.1.325",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Les bundles de plugins sont décompressés dans le dossier plugins, permettant de charger des dossiers en lecture seule.",
+   "le": "2026-11-14T06:01:05Z"
+  },
+  "aa0ab2a8b07896a0": {
+   "version": "2.1.325",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Simplification de la gestion des plugins d'un marketplace distant et obsolescence de pluginDigests.",
+   "le": "2026-11-14T06:01:05Z"
+  },
+  "e8c96f4b72a9b231": {
+   "version": "2.1.325",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Le chargement des plugins ignore désormais les chemins et liens potentiellement dangereux.",
+   "le": "2026-11-14T06:01:05Z"
+  },
+  "5d89831525bc578c": {
+   "version": "2.1.325",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Correction du chargement des compétences imbriquées dans les dossiers de plugins.",
+   "le": "2026-11-14T06:01:05Z"
+  },
+  "0172262f3a4cff4f": {
+   "version": "2.1.325",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Refus des hooks de création de worktree passant par un lien symbolique pour éviter les erreurs de chemin.",
+   "le": "2026-11-14T06:01:05Z"
+  },
+  "bdfae9677c137cee": {
+   "version": "2.1.325",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Les sessions tmux et iTerm2 s'ouvrent désormais directement dans le dossier de la session.",
+   "le": "2026-11-14T06:01:05Z"
+  },
+  "f8da84ff6248da2c": {
+   "version": "2.1.325",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Réduction de la fréquence de rafraîchissement des suggestions pour économiser les ressources en tâche de fond.",
+   "le": "2026-11-14T06:01:05Z"
+  },
+  "39f338307dd6f4e6": {
+   "version": "2.1.325",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "La touche Échap permet de reporter une question MCP sans rien envoyer au serveur.",
+   "le": "2026-11-14T06:01:05Z"
+  },
+  "921e4095e37e1a24": {
+   "version": "2.1.325",
+   "domaine": "modeles",
+   "impact": "mineur",
+   "resume": "La variable de limite de contexte s'applique désormais aussi aux modèles Claude non reconnus.",
+   "le": "2026-11-14T06:01:05Z"
+  },
+  "679134322bd74701": {
+   "version": "2.1.325",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "La commande /login demande désormais l'autorisation pour modifier vos paramètres de confidentialité.",
+   "le": "2026-11-14T06:01:05Z"
+  },
+  "4d2509be5d627ce2": {
+   "version": "2.1.325",
+   "domaine": "modeles",
+   "impact": "notable",
+   "resume": "Le suivi des coûts et des jetons inclut désormais les appels de classification et de complétion des modèles.",
+   "le": "2026-11-14T06:01:05Z"
+  },
+  "ec724bca30f4cf05": {
+   "version": "2.1.325",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Les programmes du sandbox tournent désormais sans vos jetons de connexion et clés API dans leur environnement.",
+   "le": "2026-11-14T06:01:05Z"
+  },
+  "a62926d72a6fc639": {
+   "version": "2.1.325",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Les outils comme ripgrep ou git s'exécutent sans la phrase de passe de la clé mTLS dans leur environnement.",
+   "le": "2026-11-14T06:01:05Z"
+  },
+  "b52e1df3812f6ea0": {
+   "version": "2.1.325",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Les commandes de reprise de session se déconnectent d'abord si un lien de partage est actif.",
+   "le": "2026-11-14T06:01:05Z"
+  },
+  "f7328bbae4429d92": {
+   "version": "2.1.325",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Les tâches cloud et sessions Cowork démarrent désormais malgré l'absence de sandbox de commande.",
+   "le": "2026-11-14T06:01:05Z"
+  },
+  "09b7dac43663cd22": {
+   "version": "2.1.325",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Restriction des demandes de paramètres ou de permissions lors de sessions cloud ou auto-hébergées.",
+   "le": "2026-11-14T06:01:05Z"
+  },
+  "ef7a83f4396e626a": {
+   "version": "2.1.325",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "Un léger délai est ajouté au premier lancement sans données de compte pour garantir la synchronisation.",
+   "le": "2026-11-14T06:01:05Z"
+  },
+  "de15eeb3eef23099": {
+   "version": "2.1.325",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Claude est désormais conseillé de ne pas stocker de fichiers importants dans son dossier temporaire.",
+   "le": "2026-11-14T06:01:05Z"
+  },
+  "7c9c2e2a3d435e1a": {
+   "version": "2.1.325",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Le marketplace accepte désormais les identifiants complets de commits, tags ou branches.",
+   "le": "2026-11-14T06:01:05Z"
+  },
+  "5840eea151851cd1": {
+   "version": "2.1.325",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Utilisation du tunnel CONNECT pour les téléchargements de plugins via un proxy.",
+   "le": "2026-11-14T06:01:05Z"
+  },
+  "b78f2a10590fdbf9": {
+   "version": "2.1.325",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Les règles de configuration locale ne s'appliquent qu'une fois le dossier de travail approuvé.",
+   "le": "2026-11-14T06:01:05Z"
+  },
+  "fa94dab2a9982647": {
+   "version": "2.1.325",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Les exécuteurs auto-hébergés refusent les sessions utilisant des liens symboliques pour le dépôt.",
+   "le": "2026-11-14T06:01:05Z"
+  },
+  "cb7ed1771f22b2a1": {
+   "version": "2.1.325",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Suppression d'un message d'erreur inutile concernant les limites de budget en cloud.",
+   "le": "2026-11-14T06:01:05Z"
+  },
+  "c88e476210c2fda4": {
+   "version": "2.1.325",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Ajout de suggestions de commandes dans le terminal VSCode avec validation par la touche Tab.",
+   "le": "2026-11-14T06:01:11Z"
+  },
+  "3919184c81b9ac89": {
+   "version": "2.1.325",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Nouvelle option de connexion via la console qui ne nécessite pas la création d'une clé API.",
+   "le": "2026-11-14T06:01:11Z"
+  },
+  "bfbb4f79598c5ca8": {
+   "version": "2.1.325",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Possibilité de coller l'URL de redirection pour connecter un serveur MCP en environnement distant.",
+   "le": "2026-11-14T06:01:11Z"
+  },
+  "d30383915e38acff": {
+   "version": "2.1.325",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de l'affichage de la coche du sélecteur de modèle après un redémarrage ou changement.",
+   "le": "2026-11-14T06:01:11Z"
+  },
+  "5d446455c53ab183": {
+   "version": "2.1.325",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction du sélecteur de niveau d'effort qui affichait des options dépassant les limites autorisées.",
+   "le": "2026-11-14T06:01:11Z"
+  },
+  "638c02816eaf194b": {
+   "version": "2.1.325",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Correction de l'écran de connexion qui proposait des fournisseurs interdits par l'organisation.",
+   "le": "2026-11-14T06:01:11Z"
+  },
+  "f1c043e59a6239a4": {
+   "version": "2.1.325",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Amélioration de la clarté des demandes de permission lors de l'utilisation d'outils MCP.",
+   "le": "2026-11-14T06:01:11Z"
+  },
+  "6960ea53b18f159a": {
+   "version": "2.1.325",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction du message d'erreur lors du chargement des paramètres d'organisation.",
+   "le": "2026-11-14T06:01:11Z"
+  },
+  "3e34b358a43d10f1": {
+   "version": "2.1.325",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Meilleure explication sur la raison de la désactivation de l'extension pour les dossiers non approuvés.",
+   "le": "2026-11-14T06:01:11Z"
+  },
+  "3309aac86b81d594": {
+   "version": "2.1.325",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Message d'erreur plus clair en cas de blocage du programme par le système informatique.",
+   "le": "2026-11-14T06:01:11Z"
+  },
+  "b807ca97283912a7": {
+   "version": "2.1.325",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Instructions ajoutées sur la carte de connexion en cas d'erreur de connexion localhost dans le navigateur.",
+   "le": "2026-11-14T06:01:11Z"
+  },
+  "6bac32951ba039a7": {
+   "version": "2.1.325",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Modification du texte du bouton de confirmation pour l'installation depuis le Marketplace.",
+   "le": "2026-11-14T06:01:11Z"
+  },
+  "8ac20f8a6a394951": {
+   "version": "2.1.325",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Augmentation de la limite de caractères pour les descriptions d'outils MCP sur la version web.",
+   "le": "2026-11-14T06:01:11Z"
+  },
+  "a69d3f0ab3c74b91": {
+   "version": "2.1.325",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de l'affichage des liens d'artefacts dans Slack en cas de session expirée.",
+   "le": "2026-11-14T06:01:11Z"
   }
  }
 }
