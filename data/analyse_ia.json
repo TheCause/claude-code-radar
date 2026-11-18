@@ -26941,6 +26941,1210 @@
    "impact": "mineur",
    "resume": "Amélioration de la gestion des messages d'erreur de l'extension.",
    "le": "2026-11-17T06:02:26Z"
+  },
+  "67f437a807751524": {
+   "version": "2.1.327",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Une confirmation est désormais demandée avant de modifier un dépôt via la commande /install-github-app.",
+   "le": "2026-11-18T06:01:26Z"
+  },
+  "7d0f8ed01d6133be": {
+   "version": "2.1.327",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Possibilité d'ajouter un serveur MCP via l'entrée standard pour éviter d'exposer les jetons dans l'historique de commande.",
+   "le": "2026-11-18T06:01:26Z"
+  },
+  "cf93937b925fc665": {
+   "version": "2.1.327",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Affichage d'une ligne d'information si les messages précédents d'une session reprise ne peuvent pas être chargés.",
+   "le": "2026-11-18T06:01:26Z"
+  },
+  "59fc11d19ebfaf70": {
+   "version": "2.1.327",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "La commande /status liste désormais les erreurs de configuration, de sandbox, de permissions et de hooks.",
+   "le": "2026-11-18T06:01:26Z"
+  },
+  "e05446efa21a2703": {
+   "version": "2.1.327",
+   "domaine": "hooks_config",
+   "impact": "mineur",
+   "resume": "Une note indique dans /config si d'autres paramètres sont en train de surcharger un réglage.",
+   "le": "2026-11-18T06:01:26Z"
+  },
+  "431dc5c1c42e3596": {
+   "version": "2.1.327",
+   "domaine": "autre",
+   "impact": "mineur",
+   "resume": "Ajout d'un checksum de configuration gérée dans les en-têtes de signalisation du gateway.",
+   "le": "2026-11-18T06:01:26Z"
+  },
+  "c5ddceaca12e7bff": {
+   "version": "2.1.327",
+   "domaine": "autre",
+   "impact": "mineur",
+   "resume": "Support du nommage des groupes de facturation via le paramètre attributionProject pour les passerelles Claude.",
+   "le": "2026-11-18T06:01:26Z"
+  },
+  "d65d08b44aa42b5c": {
+   "version": "2.1.327",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Introduction de /tui classic pour utiliser le mode d'affichage non plein écran.",
+   "le": "2026-11-18T06:01:26Z"
+  },
+  "ca855e829124f00d": {
+   "version": "2.1.327",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Correction d'un bug supprimant par erreur les fichiers ignorés par git lors de l'arrêt du serveur en mode worktree.",
+   "le": "2026-11-18T06:01:26Z"
+  },
+  "1461a36c0b4b0a03": {
+   "version": "2.1.327",
+   "domaine": "autre",
+   "impact": "mineur",
+   "resume": "Correction d'un problème où les runners auto-hébergés supprimaient des répertoires lors du démarrage.",
+   "le": "2026-11-18T06:01:26Z"
+  },
+  "ec563455a1d7397f": {
+   "version": "2.1.327",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Correction de la suppression accidentelle de clés importantes dans le fichier .mcp.json lors de modifications.",
+   "le": "2026-11-18T06:01:26Z"
+  },
+  "36f333b9fee06a29": {
+   "version": "2.1.327",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "La commande /export demande désormais confirmation avant d'écraser un fichier existant.",
+   "le": "2026-11-18T06:01:26Z"
+  },
+  "eb3c98740a438e2a": {
+   "version": "2.1.327",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Correction d'une commande autorisée qui continuait de s'exécuter malgré un arrêt après redémarrage.",
+   "le": "2026-11-18T06:01:26Z"
+  },
+  "ffd4e6771e1ff6de": {
+   "version": "2.1.327",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de la touche Entrée pour fermer l'écran d'erreur de chargement de /teleport.",
+   "le": "2026-11-18T06:01:26Z"
+  },
+  "d50f19d94146628d": {
+   "version": "2.1.327",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction d'un problème d'interaction clavier lors de l'installation ou de la désactivation d'un plugin.",
+   "le": "2026-11-18T06:01:26Z"
+  },
+  "6e9b76386efc3850": {
+   "version": "2.1.327",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de l'exécution accidentelle d'une commande incomplète lors de l'appui sur Entrée.",
+   "le": "2026-11-18T06:01:26Z"
+  },
+  "de657882a34cd1a1": {
+   "version": "2.1.327",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Correction de l'application de certaines règles d'outils interdits contenant des parenthèses.",
+   "le": "2026-11-18T06:01:26Z"
+  },
+  "15ac0d6f6965519e": {
+   "version": "2.1.327",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Correction de l'ignorance de certaines règles PowerShell avec des caractères de wildcard en mode auto.",
+   "le": "2026-11-18T06:01:26Z"
+  },
+  "099d93a1dce46639": {
+   "version": "2.1.327",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Correction des demandes de permission intempestives lors de l'exécution de scripts multiples en mode auto.",
+   "le": "2026-11-18T06:01:26Z"
+  },
+  "aded719e18f1e1b6": {
+   "version": "2.1.327",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Les sessions en arrière-plan sont désormais abandonnées après un changement de compte.",
+   "le": "2026-11-18T06:01:26Z"
+  },
+  "1dd6fbe048dfa70e": {
+   "version": "2.1.327",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Un workflow en pause suite à une limite d'usage reste en pause après une reconnexion.",
+   "le": "2026-11-18T06:01:26Z"
+  },
+  "6d988dd4a80d4230": {
+   "version": "2.1.327",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Correction des problèmes d'authentification et de portée des jetons lors de commandes imbriquées.",
+   "le": "2026-11-18T06:01:26Z"
+  },
+  "156db718b389df70": {
+   "version": "2.1.327",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Correction de la perte de messages stockés lors de la reprise de sessions sans interface graphique.",
+   "le": "2026-11-18T06:01:26Z"
+  },
+  "958ae5967712575a": {
+   "version": "2.1.327",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Correction de la perte de réponses ou de prompts lors de reprises de sessions après un crash.",
+   "le": "2026-11-18T06:01:26Z"
+  },
+  "b8a876dc7c52e4a1": {
+   "version": "2.1.327",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Correction de l'oubli de messages envoyés juste avant un redémarrage ou un crash en session distante.",
+   "le": "2026-11-18T06:01:26Z"
+  },
+  "9e7f0fb2ae01e97a": {
+   "version": "2.1.327",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction de la perte de tâches lors de la reprise d'une session cloud ou auto-hébergée.",
+   "le": "2026-11-18T06:01:35Z"
+  },
+  "4a1f79ee1c8bf5e8": {
+   "version": "2.1.327",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction d'une perte d'appel d'outil lors d'une compaction après une réponse tronquée.",
+   "le": "2026-11-18T06:01:35Z"
+  },
+  "1032b1c37517570f": {
+   "version": "2.1.327",
+   "domaine": "hooks_config",
+   "impact": "notable",
+   "resume": "Les changements de configuration sont désormais sauvegardés avec une confirmation visuelle.",
+   "le": "2026-11-18T06:01:35Z"
+  },
+  "4f3ee949a72254ef": {
+   "version": "2.1.327",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction de la commande /rewind qui se fermait silencieusement en cas d'échec de restauration.",
+   "le": "2026-11-18T06:01:35Z"
+  },
+  "74f63a88469bea88": {
+   "version": "2.1.327",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction du problème où les images collées étaient ignorées si le prompt commençait par un chemin de fichier.",
+   "le": "2026-11-18T06:01:35Z"
+  },
+  "c351498c90c7aa7b": {
+   "version": "2.1.327",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Les agents spécifiés via l'option --agents ne sont plus perdus lors du chargement de plugins.",
+   "le": "2026-11-18T06:01:35Z"
+  },
+  "e46a3bb31ed47465": {
+   "version": "2.1.327",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction de la perte d'un agent de plugin lors de la reprise d'une session.",
+   "le": "2026-11-18T06:01:35Z"
+  },
+  "1f21d545f02545e6": {
+   "version": "2.1.327",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Correction du démarrage refusé avec un proxy HTTPS dans des environnements non terminaux.",
+   "le": "2026-11-18T06:01:35Z"
+  },
+  "4a62a328e01715ab": {
+   "version": "2.1.327",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "Correction d'un retour intempestif au shell Linux lors du redémarrage de Claude Code.",
+   "le": "2026-11-18T06:01:35Z"
+  },
+  "8c9640ca34d1a148": {
+   "version": "2.1.327",
+   "domaine": "modeles",
+   "impact": "notable",
+   "resume": "Évite le blocage de la commande -p si la récupération des paramètres du modèle échoue.",
+   "le": "2026-11-18T06:01:35Z"
+  },
+  "10dc82b91364afe9": {
+   "version": "2.1.327",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction d'un écran figé ou blanc après une erreur de mémoire insuffisante.",
+   "le": "2026-11-18T06:01:35Z"
+  },
+  "eca95b59adc327bc": {
+   "version": "2.1.327",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction d'un bug d'affichage rare pouvant figer l'écran ou terminer la session.",
+   "le": "2026-11-18T06:01:35Z"
+  },
+  "0e6534d9211dfd59": {
+   "version": "2.1.327",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "Correction des sessions cloud qui plantaient à cause d'un trop grand nombre de connexions réseau.",
+   "le": "2026-11-18T06:01:35Z"
+  },
+  "f68d49f15c309612": {
+   "version": "2.1.327",
+   "domaine": "modeles",
+   "impact": "notable",
+   "resume": "Gestion immédiate des erreurs de limite d'utilisation pour les appels de modèles dans les mods.",
+   "le": "2026-11-18T06:01:35Z"
+  },
+  "28dff1806cfedd58": {
+   "version": "2.1.327",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "Amélioration de la stabilité lors de la compaction et limitation de la taille des URLs WebFetch.",
+   "le": "2026-11-18T06:01:35Z"
+  },
+  "ed0acf46c99f83f3": {
+   "version": "2.1.327",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "Limitation à 100 mentions @ pour éviter les blocages lors des réponses.",
+   "le": "2026-11-18T06:01:35Z"
+  },
+  "448c76afea231c46": {
+   "version": "2.1.327",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Le prompt ne freeze plus après le refus d'écriture d'un fichier géant et affiche un aperçu.",
+   "le": "2026-11-18T06:01:35Z"
+  },
+  "506eb599e7aab3e5": {
+   "version": "2.1.327",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction d'un crash lors d'une saisie rapide dans la barre de recherche de plugin.",
+   "le": "2026-11-18T06:01:35Z"
+  },
+  "35df5f5489f32ae5": {
+   "version": "2.1.327",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Correction d'un faux rapport de crash lié aux politiques de sécurité Linux lors de la reprise de session.",
+   "le": "2026-11-18T06:01:35Z"
+  },
+  "fba311e5ed741deb": {
+   "version": "2.1.327",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Reconnexion automatique en arrière-plan des serveurs MCP distants après une coupure réseau.",
+   "le": "2026-11-18T06:01:35Z"
+  },
+  "ce74aec91f8b905a": {
+   "version": "2.1.327",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction d'une erreur de lecture de fichier lors de l'utilisation de l'outil Edit après compaction.",
+   "le": "2026-11-18T06:01:35Z"
+  },
+  "e42396cd53169d93": {
+   "version": "2.1.327",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction de l'outil Grep pour assurer un tri cohérent des résultats par chemin de fichier.",
+   "le": "2026-11-18T06:01:35Z"
+  },
+  "fdb10de8dcb32e76": {
+   "version": "2.1.327",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction de l'échec de lecture des notebooks Jupyter avec des sorties de type inconnu.",
+   "le": "2026-11-18T06:01:35Z"
+  },
+  "525ba7559a3be7ec": {
+   "version": "2.1.327",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction de la suppression accidentelle du saut de ligne final dans les notebooks.",
+   "le": "2026-11-18T06:01:35Z"
+  },
+  "1318ec3234fc2198": {
+   "version": "2.1.327",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction de l'affichage de la taille des fichiers très volumineux lors de la lecture.",
+   "le": "2026-11-18T06:01:35Z"
+  },
+  "e70cf9118555554a": {
+   "version": "2.1.327",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de l'affichage des diffs Bash pour les fichiers binaires ou trop volumineux.",
+   "le": "2026-11-18T06:01:43Z"
+  },
+  "b091893a0a89af0b": {
+   "version": "2.1.327",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Résolution d'un échec de publication d'artéfact dû à un changement de timestamp.",
+   "le": "2026-11-18T06:01:43Z"
+  },
+  "d12e8f616b6e6288": {
+   "version": "2.1.327",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Correction du refus d'artéfacts approuvés dans les tâches cloud planifiées.",
+   "le": "2026-11-18T06:01:43Z"
+  },
+  "dcc35d2a60c9dca2": {
+   "version": "2.1.327",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Correction du refus d'artéfacts approuvés via l'Agent SDK.",
+   "le": "2026-11-18T06:01:43Z"
+  },
+  "5453c44971ddd12a": {
+   "version": "2.1.327",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Amélioration de la fiabilité de l'affichage de la liste des artéfacts via `/artifacts`.",
+   "le": "2026-11-18T06:01:43Z"
+  },
+  "58e20244f6c6c001": {
+   "version": "2.1.327",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Les sous-agents utilisent désormais leur propre modèle et leur propre limite de contexte.",
+   "le": "2026-11-18T06:01:43Z"
+  },
+  "3616c31da876eb9a": {
+   "version": "2.1.327",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Correction de la reprise d'un sous-agent utilisant les mauvais paramètres de son voisin.",
+   "le": "2026-11-18T06:01:43Z"
+  },
+  "814d5d009f5d7dff": {
+   "version": "2.1.327",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "La conversation principale est mieux informée de la fin d'un agent en arrière-plan.",
+   "le": "2026-11-18T06:01:43Z"
+  },
+  "5d83721671678237": {
+   "version": "2.1.327",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Correction de l'état de l'agent en arrière-plan lors d'une attente de permission.",
+   "le": "2026-11-18T06:01:43Z"
+  },
+  "b92b76ee0bf4f8c2": {
+   "version": "2.1.327",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Meilleure gestion des réponses perdues et réduction des réveils inutiles en mode auto.",
+   "le": "2026-11-18T06:01:43Z"
+  },
+  "10db17ec14c1e5b4": {
+   "version": "2.1.327",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de l'affichage des notifications de tâches brutes dans l'interface.",
+   "le": "2026-11-18T06:01:43Z"
+  },
+  "63da2f7713dd357c": {
+   "version": "2.1.327",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Les messages à priorité différée attendent désormais la fin du tour en cours.",
+   "le": "2026-11-18T06:01:43Z"
+  },
+  "ae86e3b719f1276a": {
+   "version": "2.1.327",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Meilleure gestion des erreurs de connexion et de timeout pour les sessions cloud.",
+   "le": "2026-11-18T06:01:43Z"
+  },
+  "37b5f68785ceb4a0": {
+   "version": "2.1.327",
+   "domaine": "hooks_config",
+   "impact": "mineur",
+   "resume": "Correction d'un manque d'erreur lorsqu'un hook bloque un message en cours de travail.",
+   "le": "2026-11-18T06:01:43Z"
+  },
+  "3a299259f856f882": {
+   "version": "2.1.327",
+   "domaine": "hooks_config",
+   "impact": "mineur",
+   "resume": "Affichage des erreurs pour les hooks qui échouent en arrière-plan ou lors de changements.",
+   "le": "2026-11-18T06:01:43Z"
+  },
+  "9a22c31c3d8cf824": {
+   "version": "2.1.327",
+   "domaine": "hooks_config",
+   "impact": "mineur",
+   "resume": "Correction de l'affichage des erreurs pour les hooks d'arrêt qui ne s'exécutent pas.",
+   "le": "2026-11-18T06:01:43Z"
+  },
+  "5f119f546bd29d5e": {
+   "version": "2.1.327",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de l'affichage de la vue focus pendant l'exécution d'un hook d'arrêt.",
+   "le": "2026-11-18T06:01:43Z"
+  },
+  "aa9cbc371f26cfbc": {
+   "version": "2.1.327",
+   "domaine": "hooks_config",
+   "impact": "mineur",
+   "resume": "Évite la duplication des sorties de hooks de gestion lors de l'ajout de contexte.",
+   "le": "2026-11-18T06:01:43Z"
+  },
+  "264af2a73006dd34": {
+   "version": "2.1.327",
+   "domaine": "modeles",
+   "impact": "notable",
+   "resume": "Correction de la liste des modèles via `/model` avec des passerelles LLM personnalisées.",
+   "le": "2026-11-18T06:01:43Z"
+  },
+  "7cca86261a97b81d": {
+   "version": "2.1.327",
+   "domaine": "hooks_config",
+   "impact": "mineur",
+   "resume": "Correction de l'écriture de la configuration vers le mauvais répertoire.",
+   "le": "2026-11-18T06:01:43Z"
+  },
+  "0907a82e1c586b53": {
+   "version": "2.1.327",
+   "domaine": "hooks_config",
+   "impact": "mineur",
+   "resume": "Correction de la correspondance des motifs d'exclusion sur Windows (casse des lecteurs).",
+   "le": "2026-11-18T06:01:43Z"
+  },
+  "fc7620de9f1f6638": {
+   "version": "2.1.327",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction du refus de suppression de sessions contenant un fichier nommé `HEAD`.",
+   "le": "2026-11-18T06:01:43Z"
+  },
+  "88724019ac52db35": {
+   "version": "2.1.327",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Pagination de la liste des agents pour les comptes ayant de nombreuses sessions.",
+   "le": "2026-11-18T06:01:43Z"
+  },
+  "72aead69b85ed06b": {
+   "version": "2.1.327",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Amélioration de la vitesse des sessions avec de très nombreuses permissions d'outils.",
+   "le": "2026-11-18T06:01:43Z"
+  },
+  "5bb0828963f2fd34": {
+   "version": "2.1.327",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "Correction de l'héritage des paramètres de retry pour les runners auto-hébergés.",
+   "le": "2026-11-18T06:01:43Z"
+  },
+  "40c429c6c027b21e": {
+   "version": "2.1.327",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Correction de l'affichage de la limite de dépenses lorsque le serveur la refuse.",
+   "le": "2026-11-18T06:01:52Z"
+  },
+  "10946c68e2238759": {
+   "version": "2.1.327",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction d'un bug où la touche 'x' dans les détails d'une tâche arrêtait la tâche suivante.",
+   "le": "2026-11-18T06:01:52Z"
+  },
+  "f80285b21d45005a": {
+   "version": "2.1.327",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "La touche Échap est désormais correctement prise en compte lors des demandes de permission.",
+   "le": "2026-11-18T06:01:52Z"
+  },
+  "87b14f6f7dba4225": {
+   "version": "2.1.327",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de la navigation au clavier (Entrée et flèches) dans les listes à chargement différé.",
+   "le": "2026-11-18T06:01:52Z"
+  },
+  "206bf73993054a73": {
+   "version": "2.1.327",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Amélioration de la fermeture de la commande /autofix-pr et meilleur suivi des erreurs d'arrêt.",
+   "le": "2026-11-18T06:01:52Z"
+  },
+  "a64cb5814b8ffe9b": {
+   "version": "2.1.327",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction d'un écran blanc et de codes parasites lors d'une sortie brutale avec Ctrl+C.",
+   "le": "2026-11-18T06:01:52Z"
+  },
+  "810bed757570b3c5": {
+   "version": "2.1.327",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction d'un problème de plein écran persistant après un Ctrl+C lors de la question de confiance.",
+   "le": "2026-11-18T06:01:52Z"
+  },
+  "73c7a53508b1354c": {
+   "version": "2.1.327",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Suppression du flash visuel lors de l'ouverture de la vue des agents en plein écran.",
+   "le": "2026-11-18T06:01:52Z"
+  },
+  "a8234ff7d82d0c23": {
+   "version": "2.1.327",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Correction de nombreux problèmes d'affichage du terminal selon l'émulateur utilisé (Ghostty, Windows, etc.).",
+   "le": "2026-11-18T06:01:52Z"
+  },
+  "103ecd344b34ad22": {
+   "version": "2.1.327",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de lignes corrompues dans tmux lors de l'utilisation de certains terminaux.",
+   "le": "2026-11-18T06:01:52Z"
+  },
+  "3d39267fc55ff409": {
+   "version": "2.1.327",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "La commande /mcp affiche désormais correctement l'état des serveurs ajoutés en cours de session.",
+   "le": "2026-11-18T06:01:52Z"
+  },
+  "f76ea5e1ec02f3ef": {
+   "version": "2.1.327",
+   "domaine": "hooks_config",
+   "impact": "notable",
+   "resume": "Correction de l'oubli des hooks configurés via l'option --settings.",
+   "le": "2026-11-18T06:01:52Z"
+  },
+  "e388e4ca6c7cbb33": {
+   "version": "2.1.327",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Nettoyage du menu '/' qui listait plusieurs fois les compétences de même nom.",
+   "le": "2026-11-18T06:01:52Z"
+  },
+  "17baf4f7ce91be0b": {
+   "version": "2.1.327",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Affichage d'un message en cas d'échec de la reprise d'une session avec /teleport.",
+   "le": "2026-11-18T06:01:52Z"
+  },
+  "785b9aed9c39a669": {
+   "version": "2.1.327",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de la recherche dans les transcriptions avec les touches n et N.",
+   "le": "2026-11-18T06:01:52Z"
+  },
+  "3ec18ed53c77da4b": {
+   "version": "2.1.327",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction du positionnement lors de l'annulation d'une recherche dans une longue transcription.",
+   "le": "2026-11-18T06:01:52Z"
+  },
+  "0fa025200aa83707": {
+   "version": "2.1.327",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de la position du curseur lors de la navigation verticale sur des lignes courtes.",
+   "le": "2026-11-18T06:01:52Z"
+  },
+  "768183135b314a02": {
+   "version": "2.1.327",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Amélioration de l'autocomplétion par tabulation dans le shell après des opérateurs de commande.",
+   "le": "2026-11-18T06:01:52Z"
+  },
+  "2c6d215517c1c09a": {
+   "version": "2.1.327",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de l'affichage des sessions reprises avec des chemins ou noms de branches longs.",
+   "le": "2026-11-18T06:01:52Z"
+  },
+  "f068fbb2b08e77f1": {
+   "version": "2.1.327",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Correction de la perte de position dans la liste des outils MCP lors d'un retour en arrière.",
+   "le": "2026-11-18T06:01:52Z"
+  },
+  "a0352ce9173f7e6e": {
+   "version": "2.1.327",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de l'affichage des sessions et des messages d'aide suite à une limite de budget.",
+   "le": "2026-11-18T06:01:52Z"
+  },
+  "c0d35483dfa11ae2": {
+   "version": "2.1.327",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Correction de problèmes de texte coupé ou caché dans les menus MCP et les champs de saisie.",
+   "le": "2026-11-18T06:01:52Z"
+  },
+  "b5c26d6e77ed2951": {
+   "version": "2.1.327",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction du comptage de lignes et de l'affichage de l'aide dans les transcriptions.",
+   "le": "2026-11-18T06:01:52Z"
+  },
+  "a476f6dd5e6a4da9": {
+   "version": "2.1.327",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de la fermeture de la commande /chrome avec un double Ctrl+C.",
+   "le": "2026-11-18T06:01:52Z"
+  },
+  "51de860f903d0b2b": {
+   "version": "2.1.327",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de la saisie de chiffres en mode lecteur d'écran lors de l'approbation d'un plan.",
+   "le": "2026-11-18T06:01:52Z"
+  },
+  "f87a4d61bfc948ed": {
+   "version": "2.1.327",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction d'une erreur où Claude tentait de lire des fichiers de design inexistants.",
+   "le": "2026-11-18T06:02:00Z"
+  },
+  "bae9b4f3094e1424": {
+   "version": "2.1.327",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "L'annonce de fermeture indique désormais correctement si un worktree est conservé.",
+   "le": "2026-11-18T06:02:00Z"
+  },
+  "d106202aac53b28d": {
+   "version": "2.1.327",
+   "domaine": "hooks_config",
+   "impact": "mineur",
+   "resume": "Correction des noms de champs dans l'aide de la commande /hooks.",
+   "le": "2026-11-18T06:02:00Z"
+  },
+  "432800264db92950": {
+   "version": "2.1.327",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction du raccourci Ctrl+G dans les boîtes de dialogue après changement de l'éditeur.",
+   "le": "2026-11-18T06:02:00Z"
+  },
+  "ce89f9ef52d88f37": {
+   "version": "2.1.327",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Correction de messages d'erreur de connexion erronés pour le mode console.",
+   "le": "2026-11-18T06:02:00Z"
+  },
+  "619ed53cd0006415": {
+   "version": "2.1.327",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "La commande /config confirme désormais correctement le changement de thème.",
+   "le": "2026-11-18T06:02:00Z"
+  },
+  "cc6817a4644b6317": {
+   "version": "2.1.327",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Accélération du premier Bash en exécutant les fichiers de config avant approbation.",
+   "le": "2026-11-18T06:02:00Z"
+  },
+  "b8aefda9b794210d": {
+   "version": "2.1.327",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Meilleure prévention des commits de fichiers contenant potentiellement des secrets.",
+   "le": "2026-11-18T06:02:00Z"
+  },
+  "9abc3eb033ec8945": {
+   "version": "2.1.327",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Amélioration de la détection des commandes sortant de la sandbox.",
+   "le": "2026-11-18T06:02:00Z"
+  },
+  "5007ee05903ab7c5": {
+   "version": "2.1.327",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Claude peut désormais renvoyer des commandes sans 'rm' au lieu d'abandonner.",
+   "le": "2026-11-18T06:02:00Z"
+  },
+  "e3e015d6da790881": {
+   "version": "2.1.327",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Réduction des pertes de messages lors de la reprise de sessions très longues.",
+   "le": "2026-11-18T06:02:00Z"
+  },
+  "3aeed4ff4222cd9c": {
+   "version": "2.1.327",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Meilleure gestion des réponses de sous-agents dépassant la limite de tokens.",
+   "le": "2026-11-18T06:02:00Z"
+  },
+  "9ce75a7aadde3a61": {
+   "version": "2.1.327",
+   "domaine": "modeles",
+   "impact": "notable",
+   "resume": "Extension de la limite de tokens pour les longues réponses sur modèles non reconnus.",
+   "le": "2026-11-18T06:02:00Z"
+  },
+  "1560b3766deaeb1b": {
+   "version": "2.1.327",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Amélioration de la communication avec les sous-agents après une compaction.",
+   "le": "2026-11-18T06:02:00Z"
+  },
+  "6f09bcf111950f1f": {
+   "version": "2.1.327",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Clarification de l'utilisation entre clé API et profil Anthropic.",
+   "le": "2026-11-18T06:02:00Z"
+  },
+  "61663dcaca7d6469": {
+   "version": "2.1.327",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Précisions sur la suppression des données lors du retrait d'un plugin.",
+   "le": "2026-11-18T06:02:00Z"
+  },
+  "fdb03f036c853022": {
+   "version": "2.1.327",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Démarrage plus rapide sur Windows grâce à une meilleure détection de PowerShell.",
+   "le": "2026-11-18T06:02:00Z"
+  },
+  "bf1a3b4da5e5bba0": {
+   "version": "2.1.327",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Accélération du démarrage sur Windows via un accès direct à git.exe.",
+   "le": "2026-11-18T06:02:00Z"
+  },
+  "e69d9939fa3a0f6d": {
+   "version": "2.1.327",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Gain de vitesse sur l'outil PowerShell sous Windows.",
+   "le": "2026-11-18T06:02:00Z"
+  },
+  "69b352b6bc8ca36a": {
+   "version": "2.1.327",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Disponibilité plus rapide des diffs Bash en mode automatique.",
+   "le": "2026-11-18T06:02:00Z"
+  },
+  "cfa80680b2c747e2": {
+   "version": "2.1.327",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Accélération des vérifications de permissions et du masquage de secrets.",
+   "le": "2026-11-18T06:02:00Z"
+  },
+  "0381eaa5d155c8df": {
+   "version": "2.1.327",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "La recherche dans l'historique inclut désormais les fichiers écrits et édités.",
+   "le": "2026-11-18T06:02:00Z"
+  },
+  "683dc0dd5b1fa0cf": {
+   "version": "2.1.327",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Lecture plus rapide des images PNG et meilleure qualité JPEG alternative.",
+   "le": "2026-11-18T06:02:00Z"
+  },
+  "68ef290e45be66e4": {
+   "version": "2.1.327",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "L'outil Artifact peut désormais lire un fichier via son adresse affichée.",
+   "le": "2026-11-18T06:02:00Z"
+  },
+  "f53afd92cb9d748b": {
+   "version": "2.1.327",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "L'outil Artifact ignore désormais les paramètres inutiles au lieu d'échouer.",
+   "le": "2026-11-18T06:02:00Z"
+  },
+  "eddb7d685db72be9": {
+   "version": "2.1.327",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "L'affichage des serveurs MCP est uniformisé et la navigation se fait désormais aux flèches et avec Entrée.",
+   "le": "2026-11-18T06:02:10Z"
+  },
+  "4a615e7628b06481": {
+   "version": "2.1.327",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "L'affichage est optimisé pour les terminaux étroits, améliorant la lisibilité des commandes et des formulaires.",
+   "le": "2026-11-18T06:02:10Z"
+  },
+  "b1b85ad06dc4d133": {
+   "version": "2.1.327",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "L'installation de l'application GitHub est plus fluide avec des listes standard et des messages plus clairs.",
+   "le": "2026-11-18T06:02:10Z"
+  },
+  "010cac2cbb10535b": {
+   "version": "2.1.327",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "La question de téléchargement pour la version bureau utilise désormais une liste standard plutôt que y/n.",
+   "le": "2026-11-18T06:02:10Z"
+  },
+  "fbedf305f035b200": {
+   "version": "2.1.327",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Une confirmation est désormais demandée avant de supprimer un worktree contenant des modifications non enregistrées.",
+   "le": "2026-11-18T06:02:10Z"
+  },
+  "4fd2b5e7c5c47b33": {
+   "version": "2.1.327",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "L'ajout de serveurs MCP au projet s'arrête désormais au lieu d'écraser le fichier si le format est incorrect.",
+   "le": "2026-11-18T06:02:10Z"
+  },
+  "acc36be33cb9665a": {
+   "version": "2.1.327",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "La navigation aux flèches dans les demandes de permission s'arrête désormais sur 'Non' au lieu de boucler.",
+   "le": "2026-11-18T06:02:10Z"
+  },
+  "2cdea4c180fc47b0": {
+   "version": "2.1.327",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Certains liens symboliques sont désormais refusés lors des vérifications de chemin.",
+   "le": "2026-11-18T06:02:10Z"
+  },
+  "82111f24f0960d5c": {
+   "version": "2.1.327",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "La définition du répertoire de travail change, entraînant de nouvelles demandes de permission pour certains chemins.",
+   "le": "2026-11-18T06:02:10Z"
+  },
+  "bd070f1ecc81eadb": {
+   "version": "2.1.327",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Renforcement des restrictions sur les commandes Bash tentant de lire en dehors du répertoire de travail.",
+   "le": "2026-11-18T06:02:10Z"
+  },
+  "48a4932b50a837ce": {
+   "version": "2.1.327",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Plus de commandes Bash sont automatiquement refusées si elles ciblent des chemins interdits par vos règles.",
+   "le": "2026-11-18T06:02:10Z"
+  },
+  "420529e7a0accdd5": {
+   "version": "2.1.327",
+   "domaine": "modeles",
+   "impact": "notable",
+   "resume": "L'alerte sur le mode auto précise qu'une mise à jour supprimera le recours automatique aux modèles payants.",
+   "le": "2026-11-18T06:02:10Z"
+  },
+  "248d03bf299f7bd1": {
+   "version": "2.1.327",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Le mode auto ignore désormais certaines règles d'autorisation trop permissives pour garantir la sécurité.",
+   "le": "2026-11-18T06:02:10Z"
+  },
+  "db23bc3edbaa2dc0": {
+   "version": "2.1.327",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Les listes de configuration et le sandbox utilisent désormais la navigation par flèches sans numérotation.",
+   "le": "2026-11-18T06:02:10Z"
+  },
+  "d5e62df53a6172ef": {
+   "version": "2.1.327",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Les commandes Bash générant des variables trop longues sont refusées pour éviter les erreurs.",
+   "le": "2026-11-18T06:02:10Z"
+  },
+  "52dbeefe11d01132": {
+   "version": "2.1.327",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "L'outil PowerShell demande désormais une confirmation supplémentaire avant d'exécuter une commande.",
+   "le": "2026-11-18T06:02:10Z"
+  },
+  "23eb7cfffee98b0e": {
+   "version": "2.1.327",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Les sous-agents reprennent désormais les paramètres de permission de la session en cours.",
+   "le": "2026-11-18T06:02:10Z"
+  },
+  "a313c5d250c6be0a": {
+   "version": "2.1.327",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Correction de la gestion du bac à sable Bash lors de l'utilisation de chemins relatifs avec --worktree.",
+   "le": "2026-11-18T06:02:10Z"
+  },
+  "a0d1f6fc27993ea6": {
+   "version": "2.1.327",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Amélioration de l'isolation du bac à sable pour les sessions en arrière-plan avec des chemins supérieurs.",
+   "le": "2026-11-18T06:02:10Z"
+  },
+  "34917c3167d4034a": {
+   "version": "2.1.327",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Claude dans Chrome refuse désormais l'envoi automatique de certains fichiers d'identifiants.",
+   "le": "2026-11-18T06:02:10Z"
+  },
+  "30bf2003c07ffae9": {
+   "version": "2.1.327",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Gestion affinée de l'approbation des artefacts pour les organisations exigeantes.",
+   "le": "2026-11-18T06:02:10Z"
+  },
+  "75a754238d258dca": {
+   "version": "2.1.327",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Refus automatique des nouveaux artefacts dans les sessions sans utilisateur actif pour les organisations.",
+   "le": "2026-11-18T06:02:10Z"
+  },
+  "bec79ab88bee64fa": {
+   "version": "2.1.327",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "L'outil Artifact refuse désormais les appels si l'option est désactivée, même en cours de session.",
+   "le": "2026-11-18T06:02:10Z"
+  },
+  "572d2c88cda98270": {
+   "version": "2.1.327",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "L'option 'ne plus demander' pour la publication d'artefacts est supprimée dans certains contextes automatiques.",
+   "le": "2026-11-18T06:02:10Z"
+  },
+  "b4cb91dee91a6802": {
+   "version": "2.1.327",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "L'évaluation des plugins respecte désormais strictement les règles de refus lors des tests de permissions.",
+   "le": "2026-11-18T06:02:10Z"
+  },
+  "53f4dffe32866a43": {
+   "version": "2.1.327",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Les logs des serveurs MCP sont plus discrets et ne conservent plus le contenu complet des requêtes et réponses.",
+   "le": "2026-11-18T06:02:18Z"
+  },
+  "55a353b40a294586": {
+   "version": "2.1.327",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Après une reprise avec 'fg', les prompts ignorent désormais la plupart des réponses sauf la touche Échap.",
+   "le": "2026-11-18T06:02:18Z"
+  },
+  "a3e999a802e57887": {
+   "version": "2.1.327",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Le mode Code démarre désormais même si un outil de mod hook est installé.",
+   "le": "2026-11-18T06:02:18Z"
+  },
+  "8a5ff68250e5e030": {
+   "version": "2.1.327",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Les sous-agents conservent leur modèle initial lors de la reprise, même après un changement de modèle.",
+   "le": "2026-11-18T06:02:18Z"
+  },
+  "083f37bed24b6e5c": {
+   "version": "2.1.327",
+   "domaine": "modeles",
+   "impact": "notable",
+   "resume": "Les sous-agents attendent désormais la configuration du modèle pour éviter de démarrer sans paramètres.",
+   "le": "2026-11-18T06:02:18Z"
+  },
+  "f29619afcf65551a": {
+   "version": "2.1.327",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Les sous-agents en arrière-plan attendent désormais le chargement complet des plugins avant de s'activer.",
+   "le": "2026-11-18T06:02:18Z"
+  },
+  "e1830ceddabcb921": {
+   "version": "2.1.327",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "L'historique des prompts est nettoyé des commandes de lancement automatiques des sessions en arrière-plan.",
+   "le": "2026-11-18T06:02:18Z"
+  },
+  "6009313fb50671d6": {
+   "version": "2.1.327",
+   "domaine": "modeles",
+   "impact": "notable",
+   "resume": "Réduction de la consommation de tokens pour les résumés de sous-agents sur Bedrock, Vertex AI et Foundry.",
+   "le": "2026-11-18T06:02:18Z"
+  },
+  "9412e0e4fb6a6fe3": {
+   "version": "2.1.327",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "Le mode non-interactif exécute moins de commandes git avant la première requête pour gagner du temps.",
+   "le": "2026-11-18T06:02:18Z"
+  },
+  "39752de0795846b9": {
+   "version": "2.1.327",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "L'installation initiale saute la configuration du terminal dans les environnements de développement distants.",
+   "le": "2026-11-18T06:02:18Z"
+  },
+  "946cf76a79e96a1f": {
+   "version": "2.1.327",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "La sélection de texte plein écran exclut désormais les symboles des lignes système et de réflexion.",
+   "le": "2026-11-18T06:02:18Z"
+  },
+  "34e64fec304f5c3f": {
+   "version": "2.1.327",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Les sessions cloud Anthropic ignorent davantage certains réglages de trafic et de plugins du dépôt.",
+   "le": "2026-11-18T06:02:18Z"
+  },
+  "72aeb2c411552e59": {
+   "version": "2.1.327",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "[VSCode] Ajout d'une option pour ajouter des fichiers ou dossiers sélectionnés directement au chat via un clic droit.",
+   "le": "2026-11-18T06:02:18Z"
+  },
+  "2800b232d4c26ee0": {
+   "version": "2.1.327",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "[VSCode] Correction de l'affichage de la raison lors des demandes de permission via un hook PreToolUse.",
+   "le": "2026-11-18T06:02:18Z"
+  },
+  "39d8919ce88e2a7b": {
+   "version": "2.1.327",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "[VSCode] Les noms longs de fichiers ou d'outils ne sont plus coupés dans les titres de demande de permission.",
+   "le": "2026-11-18T06:02:18Z"
+  },
+  "ced0f254c3542bfa": {
+   "version": "2.1.327",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "[VSCode] Correction de l'affichage des diffs lors d'éditions successives sur un même fichier.",
+   "le": "2026-11-18T06:02:18Z"
+  },
+  "3087496265abfb77": {
+   "version": "2.1.327",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "[VSCode] La touche Échap ne coupe plus la réponse de Claude lorsqu'elle ferme un menu ou une fenêtre contextuelle.",
+   "le": "2026-11-18T06:02:18Z"
+  },
+  "2bb4aff0341063db": {
+   "version": "2.1.327",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "[VSCode] Accélération des modifications successives en regroupant l'attente de détection d'erreurs.",
+   "le": "2026-11-18T06:02:18Z"
+  },
+  "1d8971b1e2e54ff8": {
+   "version": "2.1.327",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "[VSCode] Recherche de fichiers via @-mention plus rapide dans les grands espaces de travail grâce à 'rg'.",
+   "le": "2026-11-18T06:02:18Z"
+  },
+  "1645ef66092fa3b3": {
+   "version": "2.1.327",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "[VSCode] Démarrage plus rapide du sélecteur de modèle dans les nouveaux dossiers ou arbres de travail.",
+   "le": "2026-11-18T06:02:18Z"
+  },
+  "553fa98c9dfa1381": {
+   "version": "2.1.327",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "[VSCode] Le diff d'une édition de chat reste ouvert et demande l'approbation même si un prompt est envoyé ailleurs.",
+   "le": "2026-11-18T06:02:18Z"
+  },
+  "1f643957a291d8d7": {
+   "version": "2.1.327",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "[VSCode] Suppression des outils d'IDE inutilisés pour simplifier la connexion.",
+   "le": "2026-11-18T06:02:18Z"
   }
  }
 }
