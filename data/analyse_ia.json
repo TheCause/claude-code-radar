@@ -28145,6 +28145,1014 @@
    "impact": "mineur",
    "resume": "[VSCode] Suppression des outils d'IDE inutilisés pour simplifier la connexion.",
    "le": "2026-11-18T06:02:18Z"
+  },
+  "9741fb1e9f7e4612": {
+   "version": "2.1.328",
+   "domaine": "agents",
+   "impact": "majeur",
+   "resume": "L'auto mode est disponible sur plusieurs plateformes cloud, lançant des sessions interactives sans demande de permission.",
+   "le": "2026-11-19T06:03:29Z"
+  },
+  "2c9828057d0b4758": {
+   "version": "2.1.328",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "L'échec d'un hook mcp_tool peut désormais bloquer l'action en cours via l'option onFailure: block.",
+   "le": "2026-11-19T06:03:29Z"
+  },
+  "b660655e53dbbfde": {
+   "version": "2.1.328",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Avertissement si un message risque d'être perdu lors d'une session cloud sans demande de permission.",
+   "le": "2026-11-19T06:03:29Z"
+  },
+  "96b3325d865ca692": {
+   "version": "2.1.328",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "Notification si l'exportateur OpenTelemetry est mal configuré, risquant de perdre des données.",
+   "le": "2026-11-19T06:03:29Z"
+  },
+  "f9e8be67b72399db": {
+   "version": "2.1.328",
+   "domaine": "hooks_config",
+   "impact": "notable",
+   "resume": "Nouvelle option pour empêcher l'exécution automatique d'outils différés lors de la reprise d'une session.",
+   "le": "2026-11-19T06:03:29Z"
+  },
+  "ba4534173576e6d8": {
+   "version": "2.1.328",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Support de l'option de restriction aux modèles gérés pour les applications intégrant Claude Code.",
+   "le": "2026-11-19T06:03:29Z"
+  },
+  "cb47087bfe936ef8": {
+   "version": "2.1.328",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Avertissement si le niveau d'effort maximal défini dans une politique est invalide.",
+   "le": "2026-11-19T06:03:29Z"
+  },
+  "76660c26db75b1a2": {
+   "version": "2.1.328",
+   "domaine": "autre",
+   "impact": "notable",
+   "resume": "Amélioration de la gestion des dossiers de dépôt pour les runners auto-hébergés.",
+   "le": "2026-11-19T06:03:29Z"
+  },
+  "ba129db495b1d872": {
+   "version": "2.1.328",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Avertissement si le mode de permission par défaut du runner ignore les réglages de l'hôte.",
+   "le": "2026-11-19T06:03:29Z"
+  },
+  "592c55d436490c64": {
+   "version": "2.1.328",
+   "domaine": "hooks_config",
+   "impact": "notable",
+   "resume": "Possibilité d'ajouter des étiquettes personnalisées aux sessions via l'orchestrateur auto-hébergé.",
+   "le": "2026-11-19T06:03:29Z"
+  },
+  "0602103156d53d39": {
+   "version": "2.1.328",
+   "domaine": "hooks_config",
+   "impact": "notable",
+   "resume": "Ajout de métadonnées personnalisées pour étiqueter les sessions dans l'environnement auto-hébergé.",
+   "le": "2026-11-19T06:03:29Z"
+  },
+  "27f62ab426586833": {
+   "version": "2.1.328",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "Nouvelle métrique pour distinguer le temps d'attente d'une session reprise de celui d'une nouvelle.",
+   "le": "2026-11-19T06:03:29Z"
+  },
+  "9b6a11ef809ddf6b": {
+   "version": "2.1.328",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "Nouvelle métrique comptabilisant les échecs de démarrage de runners par cause.",
+   "le": "2026-11-19T06:03:29Z"
+  },
+  "ac08c88713b44e25": {
+   "version": "2.1.328",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction d'une erreur zsh qui interprétait mal les commandes commençant par un signe égal.",
+   "le": "2026-11-19T06:03:29Z"
+  },
+  "d60dfd9dd4c27667": {
+   "version": "2.1.328",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Correction de la compaction automatique qui ne reconstruisait pas correctement le prompt système.",
+   "le": "2026-11-19T06:03:29Z"
+  },
+  "df5ca53cd72b25bd": {
+   "version": "2.1.328",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction d'un gel de l'affichage markdown sur des entrées très longues ou malformées.",
+   "le": "2026-11-19T06:03:29Z"
+  },
+  "59cd7e2b70924be9": {
+   "version": "2.1.328",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de rares gels de l'écran.",
+   "le": "2026-11-19T06:03:29Z"
+  },
+  "7c96e656e2f5dce1": {
+   "version": "2.1.328",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Amélioration de la gestion de la touche Échap et des touches Alt/Option lors des prompts.",
+   "le": "2026-11-19T06:03:29Z"
+  },
+  "a01b016cda0d1184": {
+   "version": "2.1.328",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction d'un problème d'insertion de texte lors de connexions lentes.",
+   "le": "2026-11-19T06:03:29Z"
+  },
+  "67ea931ee1bf289b": {
+   "version": "2.1.328",
+   "domaine": "hooks_config",
+   "impact": "notable",
+   "resume": "Correction d'une perte de tâches planifiées lors de l'enregistrement d'une nouvelle tâche.",
+   "le": "2026-11-19T06:03:29Z"
+  },
+  "bec9585a33a5de97": {
+   "version": "2.1.328",
+   "domaine": "hooks_config",
+   "impact": "mineur",
+   "resume": "Correction de la suppression accidentelle d'une tâche contenant une erreur de syntaxe.",
+   "le": "2026-11-19T06:03:29Z"
+  },
+  "162bb24cdaa82187": {
+   "version": "2.1.328",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Correction de la perte de l'historique ou du résumé lors de la reprise d'une session cloud.",
+   "le": "2026-11-19T06:03:29Z"
+  },
+  "cd40720879485bcf": {
+   "version": "2.1.328",
+   "domaine": "modeles",
+   "impact": "mineur",
+   "resume": "Correction des erreurs de calcul des jetons (tokens) pour les sous-agents et les tentatives.",
+   "le": "2026-11-19T06:03:29Z"
+  },
+  "a36f73709d80ed01": {
+   "version": "2.1.328",
+   "domaine": "modeles",
+   "impact": "mineur",
+   "resume": "Correction d'un message d'erreur erroné indiquant une limite de débit lors d'un épuisement de crédits.",
+   "le": "2026-11-19T06:03:29Z"
+  },
+  "557ffeca9a1b849a": {
+   "version": "2.1.328",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Correction de l'échec de l'auto mode sur certaines passerelles cloud avec des restrictions de bêta.",
+   "le": "2026-11-19T06:03:29Z"
+  },
+  "6fe7192017811186": {
+   "version": "2.1.328",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Correction du délai de connexion limite sur les passerelles et fournisseurs cloud personnalisés.",
+   "le": "2026-11-19T06:03:38Z"
+  },
+  "c310572c876b7d0d": {
+   "version": "2.1.328",
+   "domaine": "modeles",
+   "impact": "notable",
+   "resume": "Évite la fermeture définitive des sessions sur les fournisseurs tiers après des résultats d'outils trop volumineux.",
+   "le": "2026-11-19T06:03:38Z"
+  },
+  "edeb2f042c194df1": {
+   "version": "2.1.328",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Restaure la visibilité des outils MCP utilisant des schémas complexes sur certains fournisseurs tiers.",
+   "le": "2026-11-19T06:03:38Z"
+  },
+  "f004df3acf65a672": {
+   "version": "2.1.328",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Améliore la gestion des outils MCP ayant un schéma invalide en informant Claude de l'erreur.",
+   "le": "2026-11-19T06:03:38Z"
+  },
+  "e3fff4d5ffaba6af": {
+   "version": "2.1.328",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Correction d'un bug désactivant l'estimation de l'effort des sous-agents sur Bedrock ou Google Cloud.",
+   "le": "2026-11-19T06:03:38Z"
+  },
+  "4c000017543768c1": {
+   "version": "2.1.328",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Empêche l'arrêt automatique des scripts si une demande de permission reste en attente trop longtemps.",
+   "le": "2026-11-19T06:03:38Z"
+  },
+  "c4e520bd530e25d8": {
+   "version": "2.1.328",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Permet aux scripts en mode auto d'appeler un serveur MCP connecté durant l'exécution précédente.",
+   "le": "2026-11-19T06:03:38Z"
+  },
+  "335598e7f92b75dc": {
+   "version": "2.1.328",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Restaure l'exécution des scripts en arrière-plan lors de la reprise d'une session via le sélecteur.",
+   "le": "2026-11-19T06:03:38Z"
+  },
+  "a78f30133a067d4a": {
+   "version": "2.1.328",
+   "domaine": "hooks_config",
+   "impact": "notable",
+   "resume": "Évite la perte des compétences, du contexte de hook ou des notes lors de la reprise d'une session.",
+   "le": "2026-11-19T06:03:38Z"
+  },
+  "ebe8de21651ec105": {
+   "version": "2.1.328",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Claude est désormais informé si un script a été interrompu lors de la reprise d'une session.",
+   "le": "2026-11-19T06:03:38Z"
+  },
+  "fc8e8079bdbf1453": {
+   "version": "2.1.328",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction de l'utilisation de variables indéfinies par les scripts suite à un échec précédent.",
+   "le": "2026-11-19T06:03:38Z"
+  },
+  "f22b7348bfb68274": {
+   "version": "2.1.328",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Claude est désormais averti quand la sortie d'une commande échouée est tronquée.",
+   "le": "2026-11-19T06:03:38Z"
+  },
+  "69f0eb7d732bba29": {
+   "version": "2.1.328",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction du refus de scripts valides commençant par un bloc d'accolades.",
+   "le": "2026-11-19T06:03:38Z"
+  },
+  "d4ecb185b39deb60": {
+   "version": "2.1.328",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction du refus de scripts utilisant à la fois await et return au niveau supérieur.",
+   "le": "2026-11-19T06:03:38Z"
+  },
+  "23d725d17ca2ce51": {
+   "version": "2.1.328",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de l'oubli de fichiers mentionnés avec @ après une lecture ou écriture par un script.",
+   "le": "2026-11-19T06:03:38Z"
+  },
+  "3b4428bd27641ed9": {
+   "version": "2.1.328",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Empêche les sous-agents en lecture seule de proposer des fonctions d'écriture ou d'édition.",
+   "le": "2026-11-19T06:03:38Z"
+  },
+  "bf87eb2a948685aa": {
+   "version": "2.1.328",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Évite que Claude ne démarre un tour de lui-même après l'utilisation de la touche Échap.",
+   "le": "2026-11-19T06:03:38Z"
+  },
+  "0b881de75e5beafd": {
+   "version": "2.1.328",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Respect des réglages de configuration concernant l'exécution des workflows.",
+   "le": "2026-11-19T06:03:38Z"
+  },
+  "c3e276825b87942b": {
+   "version": "2.1.328",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction des messages d'erreur répétitifs et erronés du mode Remote Control.",
+   "le": "2026-11-19T06:03:38Z"
+  },
+  "2cba2847fb9d7e3f": {
+   "version": "2.1.328",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Empêche la perte des réponses aux demandes de permission lors du redémarrage d'une session distante.",
+   "le": "2026-11-19T06:03:38Z"
+  },
+  "5f72317c7478d098": {
+   "version": "2.1.328",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction de la reprise de conversations vidées après un retour en arrière et une commande clear.",
+   "le": "2026-11-19T06:03:38Z"
+  },
+  "ae479c6d4b4d1e1d": {
+   "version": "2.1.328",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Évite la perte des appels d'outils et de leurs résultats lors d'une déconnexion du runner.",
+   "le": "2026-11-19T06:03:38Z"
+  },
+  "0b06405fec4add5d": {
+   "version": "2.1.328",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de l'inaccessibilité de certaines sessions cloud lors de l'utilisation de Remote Control.",
+   "le": "2026-11-19T06:03:38Z"
+  },
+  "08eb325e3932f514": {
+   "version": "2.1.328",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Amélioration de la capacité de Claude à savoir quand et comment obtenir une réponse en session cloud.",
+   "le": "2026-11-19T06:03:38Z"
+  },
+  "1c6cae03c59bf53a": {
+   "version": "2.1.328",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Correction de l'omission de travaux validés dans les vues de différences (diff) lors de changements de dépôt.",
+   "le": "2026-11-19T06:03:38Z"
+  },
+  "efac913d7569d302": {
+   "version": "2.1.328",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction de l'affichage des agents actifs lors de l'utilisation via une extension IDE après une longue pause.",
+   "le": "2026-11-19T06:03:47Z"
+  },
+  "6a16e1a69e6584bc": {
+   "version": "2.1.328",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction d'un bug indiquant qu'une session est active alors qu'elle est inactive.",
+   "le": "2026-11-19T06:03:47Z"
+  },
+  "eb19ddff591027ea": {
+   "version": "2.1.328",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Le modèle ne prétendra plus que des agents de fond sont actifs après une interruption par SDK.",
+   "le": "2026-11-19T06:03:47Z"
+  },
+  "93705a397233d621": {
+   "version": "2.1.328",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction des rapports de recherche web indiquant à tort l'absence de résultats après un arrêt.",
+   "le": "2026-11-19T06:03:47Z"
+  },
+  "842616a77abdde6c": {
+   "version": "2.1.328",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de la saisie accidentelle de raccourcis clavier dans le prompt du terminal.",
+   "le": "2026-11-19T06:03:47Z"
+  },
+  "9864f73e333e8e75": {
+   "version": "2.1.328",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de divers problèmes de souris et de défilement dans le terminal GNOME.",
+   "le": "2026-11-19T06:03:47Z"
+  },
+  "e232b32ad5767ec2": {
+   "version": "2.1.328",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction des raccourcis clavier Alt et Shift+Enter sur certains terminaux et claviers.",
+   "le": "2026-11-19T06:03:47Z"
+  },
+  "cbc7ccf8780c5c16": {
+   "version": "2.1.328",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "Correction d'un gel du presse-papier Linux lors de la suspension de Claude Code.",
+   "le": "2026-11-19T06:03:47Z"
+  },
+  "6e198a5500af6d6d": {
+   "version": "2.1.328",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction du collage d'images via le presse-papier sous Linux.",
+   "le": "2026-11-19T06:03:47Z"
+  },
+  "c6a65dff72b82977": {
+   "version": "2.1.328",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction des erreurs de copier-coller de texte en mode plein écran.",
+   "le": "2026-11-19T06:03:47Z"
+  },
+  "bbdcf8120f6cd300": {
+   "version": "2.1.328",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction du traitement des chemins d'images lors de l'utilisation de la commande '!'.",
+   "le": "2026-11-19T06:03:47Z"
+  },
+  "46ceadf7b9a4cc95": {
+   "version": "2.1.328",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de l'absence d'avertissement de sortie lors de l'utilisation de Ctrl+C.",
+   "le": "2026-11-19T06:03:47Z"
+  },
+  "98b63a18a934c466": {
+   "version": "2.1.328",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de problèmes de saisie et de sélection dans les menus de recherche et de thème.",
+   "le": "2026-11-19T06:03:47Z"
+  },
+  "f3da2800d6c94bd3": {
+   "version": "2.1.328",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction des couleurs dans l'environnement GNU screen.",
+   "le": "2026-11-19T06:03:47Z"
+  },
+  "06ee1d47212105eb": {
+   "version": "2.1.328",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction du chevauchement des notifications sur les boîtes de dialogue en plein écran.",
+   "le": "2026-11-19T06:03:47Z"
+  },
+  "a270ecb8af1fae34": {
+   "version": "2.1.328",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de l'affichage des chemins de fichiers à la place des images collées.",
+   "le": "2026-11-19T06:03:47Z"
+  },
+  "cc498ee27059dfe8": {
+   "version": "2.1.328",
+   "domaine": "hooks_config",
+   "impact": "mineur",
+   "resume": "Correction de conflits entre les hooks lors de l'utilisation de la commande /goal.",
+   "le": "2026-11-19T06:03:47Z"
+  },
+  "4aa9d413f4acb0f7": {
+   "version": "2.1.328",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction d'un message erroné après l'envoi d'un rapport de bug.",
+   "le": "2026-11-19T06:03:47Z"
+  },
+  "2172501dbd67da5d": {
+   "version": "2.1.328",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de la touche Échap pour fermer la question de partage de transcription.",
+   "le": "2026-11-19T06:03:47Z"
+  },
+  "996556c9cebdc6cf": {
+   "version": "2.1.328",
+   "domaine": "hooks_config",
+   "impact": "mineur",
+   "resume": "Correction de la perte de position lors de la navigation dans /hooks.",
+   "le": "2026-11-19T06:03:47Z"
+  },
+  "a745ca582ac2d522": {
+   "version": "2.1.328",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de l'exportation de fichiers avec un nom vide.",
+   "le": "2026-11-19T06:03:47Z"
+  },
+  "becf96b6a9edaad1": {
+   "version": "2.1.328",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de la gestion des liens symboliques dans la configuration de Zed.",
+   "le": "2026-11-19T06:03:47Z"
+  },
+  "f5e30e0fe39e3175": {
+   "version": "2.1.328",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction de l'ajout de workflows redondants lors de l'installation de l'app GitHub.",
+   "le": "2026-11-19T06:03:47Z"
+  },
+  "14ddc2de53535203": {
+   "version": "2.1.328",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Correction de la fermeture inattendue de pages lors de la gestion des plugins.",
+   "le": "2026-11-19T06:03:47Z"
+  },
+  "f2f2daf5f4a58cb9": {
+   "version": "2.1.328",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Correction de problèmes de désinstallation et de navigation dans les plugins.",
+   "le": "2026-11-19T06:03:47Z"
+  },
+  "8344ebbd8687790c": {
+   "version": "2.1.328",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de la navigation au clavier et des flèches dans l'onglet des plugins installés.",
+   "le": "2026-11-19T06:03:56Z"
+  },
+  "f62b995ff8b95824": {
+   "version": "2.1.328",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Correction d'un bug où maintenir Entrée désactivait plusieurs plugins installés.",
+   "le": "2026-11-19T06:03:56Z"
+  },
+  "210871f375e0466b": {
+   "version": "2.1.328",
+   "domaine": "modeles",
+   "impact": "notable",
+   "resume": "Correction des erreurs de calcul et de plafonnement du nombre de tokens dans les commandes d'usage.",
+   "le": "2026-11-19T06:03:56Z"
+  },
+  "60471cb51315323f": {
+   "version": "2.1.328",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Correction de la touche Échap lors de l'étape de saisie des clés d'accès Bedrock.",
+   "le": "2026-11-19T06:03:56Z"
+  },
+  "8cf73bbc555038e5": {
+   "version": "2.1.328",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Uniformisation des messages de sortie et des avertissements sur les workflows en cours.",
+   "le": "2026-11-19T06:03:56Z"
+  },
+  "80cc3261033f38e5": {
+   "version": "2.1.328",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Correction des erreurs de confidentialité concernant l'accès aux artefacts partagés.",
+   "le": "2026-11-19T06:03:56Z"
+  },
+  "ae102b8aeac39530": {
+   "version": "2.1.328",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction d'un bug d'affichage des notifications (toasts) pour les plugins.",
+   "le": "2026-11-19T06:03:56Z"
+  },
+  "eb7cc179cf18e6ff": {
+   "version": "2.1.328",
+   "domaine": "hooks_config",
+   "impact": "mineur",
+   "resume": "Correction du rechargement intempestif des modifications en cours de tour.",
+   "le": "2026-11-19T06:03:56Z"
+  },
+  "7ab76624970ad487": {
+   "version": "2.1.328",
+   "domaine": "autre",
+   "impact": "mineur",
+   "resume": "Correction de la gestion des attributs de ressources OTEL pour éviter la perte de données.",
+   "le": "2026-11-19T06:03:56Z"
+  },
+  "b15c662a39604138": {
+   "version": "2.1.328",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction des dépassements de délai (timeout) des hooks d'agents lors de la compaction.",
+   "le": "2026-11-19T06:03:56Z"
+  },
+  "68cc9dea103d93b8": {
+   "version": "2.1.328",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "Correction d'un plantage au démarrage lié à la configuration des couleurs.",
+   "le": "2026-11-19T06:03:56Z"
+  },
+  "895d1853f9fb5cb7": {
+   "version": "2.1.328",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Correction d'un plantage du masquage des secrets en cas de manque de mémoire vive.",
+   "le": "2026-11-19T06:03:56Z"
+  },
+  "d2aa29ef276155ca": {
+   "version": "2.1.328",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Correction du renommage erroné du fichier .git/HEAD dans le sandbox Bash sous Linux.",
+   "le": "2026-11-19T06:03:56Z"
+  },
+  "5a4263129a91073a": {
+   "version": "2.1.328",
+   "domaine": "autre",
+   "impact": "notable",
+   "resume": "Amélioration de la résilience des runners auto-hébergés face aux réponses HTTP vides.",
+   "le": "2026-11-19T06:03:56Z"
+  },
+  "10c76b90e0d02fc4": {
+   "version": "2.1.328",
+   "domaine": "autre",
+   "impact": "notable",
+   "resume": "Sécurisation des données des runners auto-hébergés en cas d'erreur disque temporaire.",
+   "le": "2026-11-19T06:03:56Z"
+  },
+  "61c0773d564407d3": {
+   "version": "2.1.328",
+   "domaine": "autre",
+   "impact": "mineur",
+   "resume": "Correction des arrêts de runners auto-hébergés dus à un décalage d'horloge système.",
+   "le": "2026-11-19T06:03:56Z"
+  },
+  "974fcff63578aa96": {
+   "version": "2.1.328",
+   "domaine": "autre",
+   "impact": "notable",
+   "resume": "Correction de la perte d'accès Git sur les runners auto-hébergés après l'exécution de commandes.",
+   "le": "2026-11-19T06:03:56Z"
+  },
+  "5b91fa5d2afb90ea": {
+   "version": "2.1.328",
+   "domaine": "autre",
+   "impact": "notable",
+   "resume": "Correction des problèmes de push/fetch Git sur les runners avec authentification proactive.",
+   "le": "2026-11-19T06:03:56Z"
+  },
+  "3bc86336e0956544": {
+   "version": "2.1.328",
+   "domaine": "autre",
+   "impact": "notable",
+   "resume": "Amélioration du reporting d'erreur et de la désinscription des runners en cas d'échec.",
+   "le": "2026-11-19T06:03:56Z"
+  },
+  "6d6a641f8b889e1e": {
+   "version": "2.1.328",
+   "domaine": "autre",
+   "impact": "mineur",
+   "resume": "Correction de la gestion de l'archivage des sessions sur les runners multi-capacités.",
+   "le": "2026-11-19T06:03:56Z"
+  },
+  "420eb1c9afe13154": {
+   "version": "2.1.328",
+   "domaine": "hooks_config",
+   "impact": "notable",
+   "resume": "Correction du démarrage des sessions avec un fichier de configuration corrompu.",
+   "le": "2026-11-19T06:03:56Z"
+  },
+  "d6b277452d712f34": {
+   "version": "2.1.328",
+   "domaine": "autre",
+   "impact": "mineur",
+   "resume": "Correction de la perte de détails dans les messages d'erreur de démarrage des runners.",
+   "le": "2026-11-19T06:03:56Z"
+  },
+  "f31be62e41edd184": {
+   "version": "2.1.328",
+   "domaine": "autre",
+   "impact": "mineur",
+   "resume": "Correction de l'omission des hooks de fin de session sur les disques lents.",
+   "le": "2026-11-19T06:03:56Z"
+  },
+  "486d25d2171a09ab": {
+   "version": "2.1.328",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Correction de la perte de la liste des tâches lors de la reprise d'une session.",
+   "le": "2026-11-19T06:03:56Z"
+  },
+  "113588ecc279bf26": {
+   "version": "2.1.328",
+   "domaine": "autre",
+   "impact": "mineur",
+   "resume": "Correction de l'absence d'information sur l'absence de dépôts lors du démarrage d'une session.",
+   "le": "2026-11-19T06:03:56Z"
+  },
+  "87292797b34a7bdd": {
+   "version": "2.1.328",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction du transfert de l'identifiant de corrélation vers le hook de lancement du runner auto-hébergé.",
+   "le": "2026-11-19T06:04:04Z"
+  },
+  "6a252dbf541fb38f": {
+   "version": "2.1.328",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "L'assistant de configuration prévient désormais qu'une révocation de clé interrompt les sessions actives.",
+   "le": "2026-11-19T06:04:04Z"
+  },
+  "ffc237d06357c775": {
+   "version": "2.1.328",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Récupération automatique en arrière-plan des plugins gérés via Git pour les sessions futures.",
+   "le": "2026-11-19T06:04:04Z"
+  },
+  "afb53d8c50f443d7": {
+   "version": "2.1.328",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Chargement plus rapide des plugins du marketplace lors de l'utilisation d'une nouvelle machine.",
+   "le": "2026-11-19T06:04:04Z"
+  },
+  "9d5b13e3c6824611": {
+   "version": "2.1.328",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Réduction du temps nécessaire pour reprendre de grandes sessions de travail.",
+   "le": "2026-11-19T06:04:04Z"
+  },
+  "8743537d7a800600": {
+   "version": "2.1.328",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Optimisation de la mémoire lors de la reprise de sessions contenant de nombreuses images.",
+   "le": "2026-11-19T06:04:04Z"
+  },
+  "2af03d90c4869179": {
+   "version": "2.1.328",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Meilleure gestion de la mémoire et rapidité accrue pour les sessions longues avec des outils lents.",
+   "le": "2026-11-19T06:04:04Z"
+  },
+  "3bf765310d04f66a": {
+   "version": "2.1.328",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Accélération du Code Mode en supprimant une pause systématique après l'exécution des scripts.",
+   "le": "2026-11-19T06:04:04Z"
+  },
+  "0637715cab4a8d64": {
+   "version": "2.1.328",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Amélioration du cache et meilleur suivi de l'état de connexion des serveurs MCP.",
+   "le": "2026-11-19T06:04:04Z"
+  },
+  "7239bffd22b8de16": {
+   "version": "2.1.328",
+   "domaine": "modeles",
+   "impact": "notable",
+   "resume": "Réduction de la consommation de tokens dans le Code Mode grâce à des descriptions d'outils plus courtes.",
+   "le": "2026-11-19T06:04:04Z"
+  },
+  "e73f62f4bebbb7a7": {
+   "version": "2.1.328",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Affichage en temps réel de la commande exécutée et de sa sortie dans le Code Mode.",
+   "le": "2026-11-19T06:04:04Z"
+  },
+  "f939007607418548": {
+   "version": "2.1.328",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Amélioration de la gestion des erreurs d'édition et de la continuité des scripts.",
+   "le": "2026-11-19T06:04:04Z"
+  },
+  "c82909ac2e05ac93": {
+   "version": "2.1.328",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Claude identifie désormais quels appels d'outils étaient encore en cours lors d'un échec de script.",
+   "le": "2026-11-19T06:04:04Z"
+  },
+  "17d00b6419481f19": {
+   "version": "2.1.328",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Les serveurs de développement sont lancés en tâche de fond et visibles dans le menu /tasks.",
+   "le": "2026-11-19T06:04:04Z"
+  },
+  "38c7e2899b18a67b": {
+   "version": "2.1.328",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Meilleure compatibilité Windows en précisant l'usage de Git Bash et des alias PowerShell.",
+   "le": "2026-11-19T06:04:04Z"
+  },
+  "8d8115d1dd75115a": {
+   "version": "2.1.328",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Réduction des erreurs de verrouillage lors du lancement simultané de plusieurs agents.",
+   "le": "2026-11-19T06:04:04Z"
+  },
+  "adbdd8d93404119e": {
+   "version": "2.1.328",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Le dialogue d'approbation pour l'usage de l'ordinateur est plus clair sur les accès accordés.",
+   "le": "2026-11-19T06:04:04Z"
+  },
+  "5a28584093677376": {
+   "version": "2.1.328",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Explication plus explicite de l'état du contrôle à distance lors des échanges entre sessions.",
+   "le": "2026-11-19T06:04:04Z"
+  },
+  "37d29ffb9d8e54ac": {
+   "version": "2.1.328",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Notification sur stderr en cas de messages de session perdus ou en attente.",
+   "le": "2026-11-19T06:04:04Z"
+  },
+  "d76b3fb38e0cc91d": {
+   "version": "2.1.328",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Claude vérifie désormais l'état réel des artefacts publiés au lieu de répéter une réponse passée.",
+   "le": "2026-11-19T06:04:04Z"
+  },
+  "045e3df16e3076e3": {
+   "version": "2.1.328",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Vérification automatique de la présence des travaux précédents lors de la reprise d'un runner.",
+   "le": "2026-11-19T06:04:04Z"
+  },
+  "58e5e4f99846d020": {
+   "version": "2.1.328",
+   "domaine": "modeles",
+   "impact": "notable",
+   "resume": "L'auto mode est désormais proposé par défaut pour les modèles Opus et Sonnet via des tiers.",
+   "le": "2026-11-19T06:04:04Z"
+  },
+  "80f866d195157149": {
+   "version": "2.1.328",
+   "domaine": "hooks_config",
+   "impact": "notable",
+   "resume": "Changement du fonctionnement des hooks sur la sortie des scripts pour la protection des données.",
+   "le": "2026-11-19T06:04:04Z"
+  },
+  "c5d5130545a757c3": {
+   "version": "2.1.328",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "La commande /code-review se concentre désormais uniquement sur les bugs et les règles CLAUDE.md.",
+   "le": "2026-11-19T06:04:04Z"
+  },
+  "7768e2b6244bda0a": {
+   "version": "2.1.328",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "La revue de code est plus précise avec un classement des erreurs et des suggestions de correction.",
+   "le": "2026-11-19T06:04:04Z"
+  },
+  "d83adc80fc4a7604": {
+   "version": "2.1.328",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Les serveurs MCP refusés s'appliquent désormais aussi aux sessions cloud et aux runners auto-hébergés.",
+   "le": "2026-11-19T06:04:12Z"
+  },
+  "378c9a1aa52cc340": {
+   "version": "2.1.328",
+   "domaine": "hooks_config",
+   "impact": "notable",
+   "resume": "Les hooks de post-utilisation d'outils ne se déclenchent plus si l'appel a été refusé au préalable.",
+   "le": "2026-11-19T06:04:12Z"
+  },
+  "d209feb8cba047c9": {
+   "version": "2.1.328",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "La commande /bug demande désormais une confirmation pour éviter les envois accidentels.",
+   "le": "2026-11-19T06:04:12Z"
+  },
+  "e5ba6ddcda9136b7": {
+   "version": "2.1.328",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Les sous-agents attendent désormais leurs propres sous-agents par défaut avec une configuration spécifique.",
+   "le": "2026-11-19T06:04:12Z"
+  },
+  "0162cedfa8a1f527": {
+   "version": "2.1.328",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Optimisation du décompte du temps d'attente pour les chaînes de sous-agents en arrière-plan.",
+   "le": "2026-11-19T06:04:12Z"
+  },
+  "a1c8eccb8d33b943": {
+   "version": "2.1.328",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Les commandes réécrites par un hook de permission peuvent désormais s'exécuter hors de la sandbox.",
+   "le": "2026-11-19T06:04:12Z"
+  },
+  "61d41eb31827640a": {
+   "version": "2.1.328",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Clarification sur le fait que Claude Code demande la permission avant d'agir sur un site web.",
+   "le": "2026-11-19T06:04:12Z"
+  },
+  "a7e408e5810b3b5a": {
+   "version": "2.1.328",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Les sessions se terminent proprement si elles sont fermées alors qu'une question est en attente.",
+   "le": "2026-11-19T06:04:12Z"
+  },
+  "6f22fb9359f5c10c": {
+   "version": "2.1.328",
+   "domaine": "modeles",
+   "impact": "mineur",
+   "resume": "Le texte collé est désormais explicitement marqué comme tel pour l'intelligence artificielle.",
+   "le": "2026-11-19T06:04:12Z"
+  },
+  "b8b4fe28b49b13fa": {
+   "version": "2.1.328",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Les résumés de progression des sous-agents utilisent un modèle plus petit et consomment moins de jetons.",
+   "le": "2026-11-19T06:04:12Z"
+  },
+  "246d07d3377d7b63": {
+   "version": "2.1.328",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Meilleure gestion et signalement lorsqu'une sandbox ne peut pas démarrer.",
+   "le": "2026-11-19T06:04:12Z"
+  },
+  "87fabf2d46c3402d": {
+   "version": "2.1.328",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "La commande /list-agents affiche désormais la liste de manière privée pour l'utilisateur.",
+   "le": "2026-11-19T06:04:12Z"
+  },
+  "6c4e9f9b79cc279a": {
+   "version": "2.1.328",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Désactivation par défaut de l'API GitHub intégrée pour les runners auto-hébergés.",
+   "le": "2026-11-19T06:04:12Z"
+  },
+  "2361d7e6ee182937": {
+   "version": "2.1.328",
+   "domaine": "autre",
+   "impact": "mineur",
+   "resume": "Gestion de Git améliorée pour les scripts de wrapper sur les runners auto-hébergés.",
+   "le": "2026-11-19T06:04:12Z"
+  },
+  "7d0580cf5056666d": {
+   "version": "2.1.328",
+   "domaine": "hooks_config",
+   "impact": "mineur",
+   "resume": "Les identifiants de session sont désormais transmis aux hooks de checkout et de post-session.",
+   "le": "2026-11-19T06:04:12Z"
+  },
+  "2f54dfec70179e81": {
+   "version": "2.1.328",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Refus préventif des sessions utilisant des liens symboliques pour les dépôts sur les runners limités.",
+   "le": "2026-11-19T06:04:12Z"
+  },
+  "178c712cee27bd13": {
+   "version": "2.1.328",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "[VSCode] Notification et lien vers les réglages lorsqu'un message d'une autre session est en attente.",
+   "le": "2026-11-19T06:04:12Z"
+  },
+  "d9b661fa4bfbb3c7": {
+   "version": "2.1.328",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "[VSCode] Correction de l'affichage des fenêtres de permission tronquées.",
+   "le": "2026-11-19T06:04:12Z"
+  },
+  "3e433beb3d36330f": {
+   "version": "2.1.328",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "[VSCode] Correction de l'affichage des raisons d'échec des outils et des erreurs de recherche.",
+   "le": "2026-11-19T06:04:12Z"
   }
  }
 }
