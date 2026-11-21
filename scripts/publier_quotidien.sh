@@ -3,7 +3,9 @@
 #   1. lit le changelog officiel (--strict : aucun repli sur une copie en cache) ;
 #   2. analyse les nouvelles entrées avec le modèle local (--analyse-ia, voir analyse_ia.py) ;
 #   3. commite les SEULS fichiers de données, puis pousse sur main ;
-#   4. le push déclenche GitHub Actions, qui publie le site (.github/workflows/publication.yml).
+#   4. le push déclenche GitHub Actions, qui publie le site (.github/workflows/publication.yml) ;
+#   5. attend la mise en ligne et la vérifie sur le site public (verifier_deploiement.py),
+#      avec UNE relance si le déploiement échoue.
 #
 # Variables d'environnement (fournies par le planificateur, jamais écrites dans le dépôt) :
 #   OLLAMA_URL      obligatoire pour l'analyse (ex. http://hote:11434)
@@ -11,6 +13,7 @@
 #   PYTHON          facultatif : interpréteur (défaut python3)
 #
 # Code de sortie non nul = rien n'a été publié ; le journal dit pourquoi.
+# Exceptions : 5 et 6 = données POUSSÉES, mais mise en ligne en échec (5) ou non confirmée (6).
 set -euo pipefail
 
 RACINE="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
@@ -48,4 +51,11 @@ fi
 version="$("$PYTHON" -c 'import json; print(json.load(open("data/insights.json"))["metadata"]["latestVersion"])')"
 git commit --quiet -m "données : synchronisation du changelog (v$version), analyse locale"
 git push --quiet origin main
-journal "publié : $(git rev-parse --short HEAD) (v$version) — GitHub Actions prend le relais"
+sha="$(git rev-parse HEAD)"
+journal "poussé : ${sha:0:7} (v$version) — attente de la mise en ligne par GitHub Actions"
+
+# Le push ne prouve pas la mise en ligne (21 nov 2026 : déploiement Pages en échec, journal
+# « publié », code 0, panne invisible 5 h). « publié » n'est écrit que si le site EN LIGNE
+# sert ces données ; sinon code 5 ou 6, que la veille de 07 h 40 transforme en alerte.
+"$PYTHON" scripts/verifier_deploiement.py "$sha" data/insights.json
+journal "publié et EN LIGNE : ${sha:0:7} (v$version)"
