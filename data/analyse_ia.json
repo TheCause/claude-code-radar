@@ -31057,6 +31057,951 @@
    "impact": "mineur",
    "resume": "Affichage d'un message explicatif précis au lieu d'une erreur générique pour les comptes suspendus.",
    "le": "2026-11-21T06:04:02Z"
+  },
+  "5fa3f793c30c5510": {
+   "version": "2.1.331",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Le mode Code est désormais disponible sur Amazon Bedrock, Google Cloud, Microsoft Foundry et Claude Platform sur AWS.",
+   "le": "2026-11-24T06:04:06Z"
+  },
+  "2621185fc331ff2e": {
+   "version": "2.1.331",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Ajout du support JSONPath pour lire les groupes d'utilisateurs via l'authentification OIDC dans les passerelles Claude.",
+   "le": "2026-11-24T06:04:06Z"
+  },
+  "f20fb15722a1861e": {
+   "version": "2.1.331",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "La commande `claude doctor` inclut désormais un test de connectivité API avec des détails sur l'erreur ou le statut HTTP.",
+   "le": "2026-11-24T06:04:06Z"
+  },
+  "c1e405f0e3fba8da": {
+   "version": "2.1.331",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Une notification prévient désormais l'utilisateur quand la dictée vocale s'arrête automatiquement.",
+   "le": "2026-11-24T06:04:06Z"
+  },
+  "f76f5816d4b696d2": {
+   "version": "2.1.331",
+   "domaine": "modeles",
+   "impact": "mineur",
+   "resume": "Possibilité de désactiver la compression des réponses pour éviter les coupures via certains proxys.",
+   "le": "2026-11-24T06:04:06Z"
+  },
+  "cf4963f68b1211ec": {
+   "version": "2.1.331",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Amélioration de la gestion de l'authentification proxy pour les passerelles d'applications Claude.",
+   "le": "2026-11-24T06:04:06Z"
+  },
+  "c89d4df56d7c923c": {
+   "version": "2.1.331",
+   "domaine": "modeles",
+   "impact": "notable",
+   "resume": "Ajout de détails précis sur l'utilisation des jetons (dont le cache) et le modèle utilisé dans les traces de requêtes.",
+   "le": "2026-11-24T06:04:06Z"
+  },
+  "0366ddd281e7177f": {
+   "version": "2.1.331",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Les plugins peuvent désormais déclarer des dépendances optionnelles pour être installés ou désinstallés séparément.",
+   "le": "2026-11-24T06:04:06Z"
+  },
+  "29a660d1beb6a9a1": {
+   "version": "2.1.331",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Correction d'un bug où les appels d'outils MCP pouvaient rester bloqués indéfiniment sur des réponses malformées.",
+   "le": "2026-11-24T06:04:06Z"
+  },
+  "ebec7f3da4690a6a": {
+   "version": "2.1.331",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de l'affichage des notifications push lors des exécutions automatisées sans terminal.",
+   "le": "2026-11-24T06:04:06Z"
+  },
+  "92703d165973e8cb": {
+   "version": "2.1.331",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction du flux d'installation de l'application GitHub et de la navigation avec la touche Échap.",
+   "le": "2026-11-24T06:04:06Z"
+  },
+  "0eb9f8e953015033": {
+   "version": "2.1.331",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de divers problèmes d'affichage des résultats d'outils et des permissions dans les fenêtres étroites.",
+   "le": "2026-11-24T06:04:06Z"
+  },
+  "88b2179fe02d8527": {
+   "version": "2.1.331",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de l'affichage des commandes `/diff` et de la détection des fichiers ajoutés via Git.",
+   "le": "2026-11-24T06:04:06Z"
+  },
+  "f8b1069c58fc91a6": {
+   "version": "2.1.331",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction des problèmes d'affichage des thèmes et des commandes de statistiques sur les écrans courts ou hauts.",
+   "le": "2026-11-24T06:04:06Z"
+  },
+  "a74b03cf65f9f117": {
+   "version": "2.1.331",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de l'affichage des réponses lors du signalement de bugs en mode plein écran.",
+   "le": "2026-11-24T06:04:06Z"
+  },
+  "4ffa8f83e78427ce": {
+   "version": "2.1.331",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Correction d'une perte de résumé de conversation lors de l'utilisation de certaines balises XML.",
+   "le": "2026-11-24T06:04:06Z"
+  },
+  "526042b0e3047353": {
+   "version": "2.1.331",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Correction d'un problème où des messages étaient perdus entre l'agent et ses sous-agents à cause des règles de permission.",
+   "le": "2026-11-24T06:04:06Z"
+  },
+  "eb5d413c71106d70": {
+   "version": "2.1.331",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de l'ordre d'affichage des messages en mode Remote Control.",
+   "le": "2026-11-24T06:04:06Z"
+  },
+  "73c0e1e394e86fe9": {
+   "version": "2.1.331",
+   "domaine": "hooks_config",
+   "impact": "notable",
+   "resume": "Correction des hooks d'arrêt qui ne récupéraient pas la dernière réponse de la conversation.",
+   "le": "2026-11-24T06:04:06Z"
+  },
+  "0c73f6c00ca0bf26": {
+   "version": "2.1.331",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Claude Code tentera désormais de renvoyer une requête si une réponse reste silencieuse en session cloud.",
+   "le": "2026-11-24T06:04:06Z"
+  },
+  "cf80fc225bf82f54": {
+   "version": "2.1.331",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Réduction du temps d'attente lors de l'utilisation des touches Échap ou Stop si un fichier réseau est bloqué.",
+   "le": "2026-11-24T06:04:06Z"
+  },
+  "7222a551fbab3598": {
+   "version": "2.1.331",
+   "domaine": "modeles",
+   "impact": "notable",
+   "resume": "Correction de la perte du cache et de la réflexion lors de la reprise d'une session Code Mode.",
+   "le": "2026-11-24T06:04:06Z"
+  },
+  "d9484dae4a9cf17d": {
+   "version": "2.1.331",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Correction d'un envoi excessif de requêtes lors de la saisie de commandes pendant l'exécution d'un script.",
+   "le": "2026-11-24T06:04:06Z"
+  },
+  "8565d094bc494ec5": {
+   "version": "2.1.331",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Correction des dossiers de plugins corrompus après une mise à jour interrompue.",
+   "le": "2026-11-24T06:04:06Z"
+  },
+  "fbb91509c0ff9ae5": {
+   "version": "2.1.331",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Windows : Correction des demandes de permission répétitives lors de l'écriture sur des disques FAT32/exFAT.",
+   "le": "2026-11-24T06:04:06Z"
+  },
+  "9f8ec08882098fd7": {
+   "version": "2.1.331",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction de la lecture des notebooks contenant des sorties nulles ou des erreurs sans trace.",
+   "le": "2026-11-24T06:04:14Z"
+  },
+  "b00aec0df96390c1": {
+   "version": "2.1.331",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction d'un bug où la fonction rewind supprimait des fichiers après l'échec d'une restauration.",
+   "le": "2026-11-24T06:04:14Z"
+  },
+  "a9fb0921b55a3b4d": {
+   "version": "2.1.331",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "L'auto mode respecte désormais correctement l'arrêt d'une boucle de commande.",
+   "le": "2026-11-24T06:04:14Z"
+  },
+  "34dbc28fff6df904": {
+   "version": "2.1.331",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Les shells et serveurs MCP d'un agent de workflow sont mieux nettoyés après son rapport.",
+   "le": "2026-11-24T06:04:14Z"
+  },
+  "8183245450113009": {
+   "version": "2.1.331",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction du téléchargement de l'installateur Claude Desktop sur Windows via /desktop.",
+   "le": "2026-11-24T06:04:14Z"
+  },
+  "9fa42bf251ab6e43": {
+   "version": "2.1.331",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Résolution des blocages lors de l'installation de plugins quand une approbation est requise.",
+   "le": "2026-11-24T06:04:14Z"
+  },
+  "0ff023829608a48a": {
+   "version": "2.1.331",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Correction des règles de permission bloquant les messages de suivi vers un sous-agent.",
+   "le": "2026-11-24T06:04:14Z"
+  },
+  "b71bd3166e936f8e": {
+   "version": "2.1.331",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Les règles d'autorisation pour les compétences (Skills) sont désormais bien sauvegardées.",
+   "le": "2026-11-24T06:04:14Z"
+  },
+  "3779554459cd38c1": {
+   "version": "2.1.331",
+   "domaine": "autre",
+   "impact": "mineur",
+   "resume": "Correction des messages d'erreur concernant les limites de budget d'équipe.",
+   "le": "2026-11-24T06:04:14Z"
+  },
+  "bbdaabb3c2e7e9ea": {
+   "version": "2.1.331",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Le Code Mode ne tronque plus les longs scripts et accède au texte complet via un chemin.",
+   "le": "2026-11-24T06:04:14Z"
+  },
+  "25a8da61cec9ff2a": {
+   "version": "2.1.331",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Amélioration de la dictation vocale qui s'arrêtait prématurément quand Claude était occupé.",
+   "le": "2026-11-24T06:04:14Z"
+  },
+  "d47c7b5bbe8e8f50": {
+   "version": "2.1.331",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Le mode --bare informe désormais Claude des capacités d'appel de ses scripts.",
+   "le": "2026-11-24T06:04:14Z"
+  },
+  "0e185432aae97cbe": {
+   "version": "2.1.331",
+   "domaine": "modeles",
+   "impact": "mineur",
+   "resume": "Évite un crash si un point de terminaison API renvoie un appel d'outil sans nom.",
+   "le": "2026-11-24T06:04:14Z"
+  },
+  "f6258e6fc0739f99": {
+   "version": "2.1.331",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "Correction d'un crash potentiel sur Windows en cas de manque de mémoire vive.",
+   "le": "2026-11-24T06:04:14Z"
+  },
+  "a8112045e0e24006": {
+   "version": "2.1.331",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction des gels de l'interface et des problèmes d'affichage du texte cité.",
+   "le": "2026-11-24T06:04:14Z"
+  },
+  "9bec743600aa465f": {
+   "version": "2.1.331",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction du démarrage sur Windows avec des caractères non-ASCII dans le registre.",
+   "le": "2026-11-24T06:04:14Z"
+  },
+  "d47182917a0dcd96": {
+   "version": "2.1.331",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Affichage correct des étapes des sous-agents pour les clients Remote Control sur Windows.",
+   "le": "2026-11-24T06:04:14Z"
+  },
+  "9824648429064216": {
+   "version": "2.1.331",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Les mentions de lignes spécifiques (@file#10-12) n'attachent plus tout le fichier.",
+   "le": "2026-11-24T06:04:14Z"
+  },
+  "85a0c337b62d0124": {
+   "version": "2.1.331",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Amélioration de la gestion des liens d'invitation d'artefacts collés.",
+   "le": "2026-11-24T06:04:14Z"
+  },
+  "0f58b674698cc830": {
+   "version": "2.1.331",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Correction de l'échec des commandes Bash sandbox quand le disque temporaire est plein.",
+   "le": "2026-11-24T06:04:14Z"
+  },
+  "730496802298cd4d": {
+   "version": "2.1.331",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Vitesse de frappe améliorée pour les utilisateurs de lecteurs d'écran.",
+   "le": "2026-11-24T06:04:14Z"
+  },
+  "4b9e15076e7c0ee3": {
+   "version": "2.1.331",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Démarrage plus rapide en évitant des attentes inutiles sur les modèles ou git.",
+   "le": "2026-11-24T06:04:14Z"
+  },
+  "195babb50bdabc36": {
+   "version": "2.1.331",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "Accélération de la première commande Bash sur Windows sans shell personnalisé.",
+   "le": "2026-11-24T06:04:14Z"
+  },
+  "b1feadfbc3c7e7b9": {
+   "version": "2.1.331",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "L'avis de mise à jour distingue mieux les nouveaux plugins des mises à jour.",
+   "le": "2026-11-24T06:04:14Z"
+  },
+  "e61575bd5f4b976b": {
+   "version": "2.1.331",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Recherche d'outils améliorée avec plus de détails sur les descriptions MCP.",
+   "le": "2026-11-24T06:04:14Z"
+  },
+  "b18707a1791e97ed": {
+   "version": "2.1.331",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Le lien de connexion Console affiché par les commandes d'authentification est désormais beaucoup plus court.",
+   "le": "2026-11-24T06:04:24Z"
+  },
+  "b805f6a467655c0e": {
+   "version": "2.1.331",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Claude identifie mieux les pages web dans ses artefacts pour éviter de tenter de les ouvrir avec le connecteur de documentation.",
+   "le": "2026-11-24T06:04:24Z"
+  },
+  "83f6247bf4fbd3c1": {
+   "version": "2.1.331",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Optimisation de l'affichage des demandes de confiance des dossiers dans les terminaux à écran réduit.",
+   "le": "2026-11-24T06:04:24Z"
+  },
+  "705ed7f2c90edc7b": {
+   "version": "2.1.331",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Inversion de l'ordre des réponses (Oui en premier) pour les questions d'arrêt automatique et de nettoyage.",
+   "le": "2026-11-24T06:04:24Z"
+  },
+  "18719deb2fdd83db": {
+   "version": "2.1.331",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Le mode de répétition après refus de permission ne s'active désormais que si l'appel initial était explicitement demandé.",
+   "le": "2026-11-24T06:04:24Z"
+  },
+  "360a7a430bf327b1": {
+   "version": "2.1.331",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Les marketplaces de plugins gérés seront mis à jour automatiquement par défaut dès fin novembre 2026.",
+   "le": "2026-11-24T06:04:24Z"
+  },
+  "45494ad9033b48f4": {
+   "version": "2.1.331",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Sur Windows, les politiques de registre HKLM priment sur les paramètres gérés et peuvent bloquer le démarrage.",
+   "le": "2026-11-24T06:04:24Z"
+  },
+  "47618b5729cc139a": {
+   "version": "2.1.331",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "[VSCode] Ajout d'un avertissement et d'un lien pour révoquer la session lors de la déconnexion.",
+   "le": "2026-11-24T06:04:24Z"
+  },
+  "a4e96d8e0d767eae": {
+   "version": "2.1.331",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "[VSCode] Alertes et conseils améliorés lors de l'envoi de sélections ou de fichiers trop volumineux.",
+   "le": "2026-11-24T06:04:24Z"
+  },
+  "433b9925f02fda51": {
+   "version": "2.1.331",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "[VSCode] Possibilité d'ajouter une cellule de notebook au chat avec ses sorties ou erreurs.",
+   "le": "2026-11-24T06:04:24Z"
+  },
+  "e9077ece7724e4e5": {
+   "version": "2.1.331",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "[VSCode] Nouveau raccourci pour corriger automatiquement les erreurs, avertissements ou tests échoués via le chat.",
+   "le": "2026-11-24T06:04:24Z"
+  },
+  "280be11a3f8fda02": {
+   "version": "2.1.331",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "[VSCode] Option pour ajouter rapidement un fichier modifié au chat via le menu contextuel du contrôle de source.",
+   "le": "2026-11-24T06:04:24Z"
+  },
+  "ce00e5080edf517e": {
+   "version": "2.1.331",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "[VSCode] Ajout d'une option pour résoudre les conflits de fusion directement depuis l'éditeur ou le contrôle de source.",
+   "le": "2026-11-24T06:04:24Z"
+  },
+  "1ef7c0bf52582e2b": {
+   "version": "2.1.331",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "[VSCode] Correction de divers bugs d'affichage (menus, boutons, images de connexion et barres d'acceptation).",
+   "le": "2026-11-24T06:04:24Z"
+  },
+  "cd0ea792265bd944": {
+   "version": "2.1.331",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "[VSCode] Correction d'un bug où une conversation bifurquée écrasait le fichier de plan original.",
+   "le": "2026-11-24T06:04:24Z"
+  },
+  "235144f1c191b426": {
+   "version": "2.1.331",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "[VSCode] Amélioration des messages d'erreur lors de l'utilisation de la dictée vocale.",
+   "le": "2026-11-24T06:04:24Z"
+  },
+  "a32c893b97b6be59": {
+   "version": "2.1.331",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "[VSCode] Correction d'une perte de question non envoyée lors de la fermeture d'un panneau.",
+   "le": "2026-11-24T06:04:24Z"
+  },
+  "0226ddc98d55f99e": {
+   "version": "2.1.331",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "[VSCode] Correction des problèmes de navigation et de saisie liés à la touche Échap et l'historique des sessions.",
+   "le": "2026-11-24T06:04:24Z"
+  },
+  "f6b75ba8321e8778": {
+   "version": "2.1.331",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "[VSCode] Correction du message 'toujours en cours de connexion' lors de la reprise d'une session historique.",
+   "le": "2026-11-24T06:04:24Z"
+  },
+  "abd83e7b2489583c": {
+   "version": "2.1.331",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "[VSCode] Correction de problèmes d'affichage (tableaux coupés, erreurs masquées, thèmes de plugins).",
+   "le": "2026-11-24T06:04:24Z"
+  },
+  "b49d2dce0d414a00": {
+   "version": "2.1.331",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "[VSCode] Correction de chevauchements de fenêtres et de sauts de focus inattendus dans l'interface.",
+   "le": "2026-11-24T06:04:24Z"
+  },
+  "aabc3da41c0de09f": {
+   "version": "2.1.331",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "[VSCode] Correction du menu de commande qui maintenait une ancienne sélection lors de la saisie d'un filtre.",
+   "le": "2026-11-24T06:04:24Z"
+  },
+  "946ba98e994d503c": {
+   "version": "2.1.331",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "[VSCode] Correction du menu @ qui affichait 'aucun fichier trouvé' avant la fin de la recherche ou sur de très grands espaces.",
+   "le": "2026-11-24T06:04:24Z"
+  },
+  "aad3effc096e9a09": {
+   "version": "2.1.331",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "[VSCode] Correction de l'impossibilité d'utiliser la touche Échap pour fermer certains panneaux ou confirmations.",
+   "le": "2026-11-24T06:04:24Z"
+  },
+  "e03529b1f0fae333": {
+   "version": "2.1.331",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "[VSCode] Correction de l'affichage de boîtes vides à la place des signes plus et moins dans les diffs.",
+   "le": "2026-11-24T06:04:24Z"
+  },
+  "7b7b19b197b5ce9e": {
+   "version": "2.1.331",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Le chat suit à nouveau correctement les réponses de Claude après un redimensionnement ou l'affichage du panneau.",
+   "le": "2026-11-24T06:04:34Z"
+  },
+  "9e4be4b3d1ec6dcd": {
+   "version": "2.1.331",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Le mode de permission initial est désormais respecté lors de la réouverture d'un chat.",
+   "le": "2026-11-24T06:04:34Z"
+  },
+  "093eb148fdd9dc45": {
+   "version": "2.1.331",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction d'un gel du panneau de chat lors de l'affichage de blocs de code CSS ou de diffs.",
+   "le": "2026-11-24T06:04:34Z"
+  },
+  "3aa931594f597096": {
+   "version": "2.1.331",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "L'indicateur d'utilisation du contexte reste visible même après une erreur API ou une commande slash.",
+   "le": "2026-11-24T06:04:34Z"
+  },
+  "86a123cf80a97c2e": {
+   "version": "2.1.331",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction d'une perte de message lorsqu'il est mis en attente derrière une commande /clear.",
+   "le": "2026-11-24T06:04:34Z"
+  },
+  "38f5c5f016ec4522": {
+   "version": "2.1.331",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Amélioration de l'interface de gestion des plugins (recherche et messages d'erreur de chargement).",
+   "le": "2026-11-24T06:04:34Z"
+  },
+  "e3ff0f479dd863c0": {
+   "version": "2.1.331",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Les modifications proposées dans les éditeurs personnalisés affichent désormais les boutons Accepter/Refuser.",
+   "le": "2026-11-24T06:04:34Z"
+  },
+  "1c86e9bf0ee8ee23": {
+   "version": "2.1.331",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction du message de limite de dépenses pour les comptes Team et Enterprise.",
+   "le": "2026-11-24T06:04:34Z"
+  },
+  "74eccb3c509495b5": {
+   "version": "2.1.331",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction d'un bug où la touche Tab effaçait le texte saisi dans certains menus ou suggestions.",
+   "le": "2026-11-24T06:04:34Z"
+  },
+  "ac648ed7d24ac0c2": {
+   "version": "2.1.331",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Claude s'arrête désormais de modifier les fichiers si vous utilisez la fonction de retour en arrière (rewind).",
+   "le": "2026-11-24T06:04:34Z"
+  },
+  "dcc2940c695ccc16": {
+   "version": "2.1.331",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Le texte saisi n'est plus perdu lors de l'utilisation de diverses commandes slash.",
+   "le": "2026-11-24T06:04:34Z"
+  },
+  "cebad85f02eb9d79": {
+   "version": "2.1.331",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction du comportement erroné de la carte de question lors de la saisie d'une réponse 'Autre'.",
+   "le": "2026-11-24T06:04:34Z"
+  },
+  "ce4cef9e5eb00500": {
+   "version": "2.1.331",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction d'une erreur 'Something went wrong' liée à des appels d'outils mal nommés.",
+   "le": "2026-11-24T06:04:34Z"
+  },
+  "ed121e918e069817": {
+   "version": "2.1.331",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Les modifications non sauvegardées et les liens symboliques (symlinks) sont désormais correctement gérés.",
+   "le": "2026-11-24T06:04:34Z"
+  },
+  "78fb9b3f73257714": {
+   "version": "2.1.331",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Les mentions @ sont désormais correctement associées aux fichiers après un changement de dossier.",
+   "le": "2026-11-24T06:04:34Z"
+  },
+  "7d8e8993ddf90033": {
+   "version": "2.1.331",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction des touches fléchées qui remplaçaient le texte saisi par d'anciens prompts.",
+   "le": "2026-11-24T06:04:34Z"
+  },
+  "a6d7011799bad758": {
+   "version": "2.1.331",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Les mentions @ ajoutées pendant une demande de permission ne sont plus perdues.",
+   "le": "2026-11-24T06:04:34Z"
+  },
+  "0bcecec1b0099f0a": {
+   "version": "2.1.331",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Correction des raccourcis clavier qui déclenchaient des actions imprévues dans les boîtes de dialogue.",
+   "le": "2026-11-24T06:04:34Z"
+  },
+  "a1a2ee8472accd11": {
+   "version": "2.1.331",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Les prompts commençant par un chemin de fichier incluent désormais correctement le code sélectionné.",
+   "le": "2026-11-24T06:04:34Z"
+  },
+  "5acc08272286dc94": {
+   "version": "2.1.331",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Les liens de fichiers dans le chat respectent désormais vos associations d'éditeurs habituelles.",
+   "le": "2026-11-24T06:04:34Z"
+  },
+  "59486fe1a51c4d08": {
+   "version": "2.1.331",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Les lignes sélectionnées ne restent plus attachées à votre message si l'onglet du fichier est fermé.",
+   "le": "2026-11-24T06:04:34Z"
+  },
+  "7f3ee88df6ccb5b5": {
+   "version": "2.1.331",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction du passage automatique en mode Edit lors de la navigation entre les modes.",
+   "le": "2026-11-24T06:04:34Z"
+  },
+  "e07cd585d7cf3f39": {
+   "version": "2.1.331",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Les sauts de ligne sont désormais préservés dans les commandes éditées via les demandes de permission.",
+   "le": "2026-11-24T06:04:34Z"
+  },
+  "70a651a3acb41ad7": {
+   "version": "2.1.331",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction du focus clavier lors de l'ouverture d'un nouvel onglet Claude.",
+   "le": "2026-11-24T06:04:34Z"
+  },
+  "9bcb819bd16d28ac": {
+   "version": "2.1.331",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "La sélection de plages de lignes (ex: #5-10) envoie désormais uniquement les lignes choisies.",
+   "le": "2026-11-24T06:04:34Z"
+  },
+  "49b3eba2ec6a1445": {
+   "version": "2.1.331",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de l'ordre des onglets de diff et des annulations d'éditions lors de l'utilisation de sous-agents.",
+   "le": "2026-11-24T06:04:42Z"
+  },
+  "559641b84060154c": {
+   "version": "2.1.331",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de la touche Entrée qui déclenchait mal des commandes slash ou réécrivait des messages avec des chemins de fichiers.",
+   "le": "2026-11-24T06:04:42Z"
+  },
+  "6aced687a6375c4c": {
+   "version": "2.1.331",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Résolution des problèmes de lancement d'applications Electron et de tests d'extensions via Claude ou un serveur MCP.",
+   "le": "2026-11-24T06:04:42Z"
+  },
+  "558f04f406bb5e57": {
+   "version": "2.1.331",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Claude est désormais informé lorsque vous rejetez ou modifiez une partie d'une proposition d'édition.",
+   "le": "2026-11-24T06:04:42Z"
+  },
+  "996032ecf3fc1f46": {
+   "version": "2.1.331",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "La touche Échap annule désormais correctement une demande de permission au lieu d'envoyer un message incomplet.",
+   "le": "2026-11-24T06:04:42Z"
+  },
+  "ef59295c41e1a79e": {
+   "version": "2.1.331",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction des raccourcis Ctrl+J et Ctrl+O qui ouvraient par erreur des fonctions natives de VS Code.",
+   "le": "2026-11-24T06:04:42Z"
+  },
+  "c7610b5e27f50034": {
+   "version": "2.1.331",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction du menu @ pour la sélection de fichiers et l'envoi de messages se terminant par une mention.",
+   "le": "2026-11-24T06:04:42Z"
+  },
+  "7b0bd4100e4bf578": {
+   "version": "2.1.331",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction des onglets Claude vides et de la barre latérale qui ne chargeait pas après la fermeture d'un onglet.",
+   "le": "2026-11-24T06:04:42Z"
+  },
+  "a103b6a8695a9e17": {
+   "version": "2.1.331",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction des erreurs de clic double dans le panneau de contrôle et de l'usage du cercle de consommation.",
+   "le": "2026-11-24T06:04:42Z"
+  },
+  "586436345ac3e495": {
+   "version": "2.1.331",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de l'erreur de fichier de configuration JSON invalide lorsque le fichier settings.json est vide.",
+   "le": "2026-11-24T06:04:42Z"
+  },
+  "bada8386d4cb8c94": {
+   "version": "2.1.331",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Correction d'une fuite de mémoire lors de l'utilisation de l'historique dans de longues conversations.",
+   "le": "2026-11-24T06:04:42Z"
+  },
+  "2397bc5b4141db4f": {
+   "version": "2.1.331",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Les commentaires de plan s'affichent désormais correctement sur la carte d'approbation en mode Focus.",
+   "le": "2026-11-24T06:04:42Z"
+  },
+  "e85a7936e4ac97a3": {
+   "version": "2.1.331",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction du curseur qui revenait à la ligne 1 lors du clic sur des liens de fichiers sans numéro de ligne.",
+   "le": "2026-11-24T06:04:42Z"
+  },
+  "faf690e4962d7cda": {
+   "version": "2.1.331",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Ajout d'une notification quand une conversation en arrière-plan nécessite une permission ou une réponse.",
+   "le": "2026-11-24T06:04:42Z"
+  },
+  "8db4645cc247f532": {
+   "version": "2.1.331",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "La gestion des plugins est désormais accessible même si Claude Code ou un plugin bloque le démarrage.",
+   "le": "2026-11-24T06:04:42Z"
+  },
+  "22ffde95e12e0224": {
+   "version": "2.1.331",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de l'affichage de texte corrompu dans les diffs lorsque l'encodage n'est pas en UTF-8.",
+   "le": "2026-11-24T06:04:42Z"
+  },
+  "9bdff109ee21ffb8": {
+   "version": "2.1.331",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de l'enregistrement des caractères de droite à gauche (arabe, hébreu, etc.) dans les éditions approuvées.",
+   "le": "2026-11-24T06:04:42Z"
+  },
+  "0e41bb01735e2a67": {
+   "version": "2.1.331",
+   "domaine": "modeles",
+   "impact": "mineur",
+   "resume": "Correction d'un problème où le choix du modèle était ignoré après le redémarrage du processus Claude.",
+   "le": "2026-11-24T06:04:42Z"
+  },
+  "5db86a58877f666a": {
+   "version": "2.1.331",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction du message 'No active session' dans l'historique après la fin du processus Claude.",
+   "le": "2026-11-24T06:04:42Z"
+  },
+  "be9e88ea74282150": {
+   "version": "2.1.331",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "Optimisation des processus d'aide à la saisie @ pour éviter les processus fantômes sans navigateur.",
+   "le": "2026-11-24T06:04:42Z"
+  },
+  "544302ae470a62d2": {
+   "version": "2.1.331",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Correction du chargement massif de toutes les sessions qui pouvait ralentir l'éditeur.",
+   "le": "2026-11-24T06:04:42Z"
+  },
+  "b9b31a1cb2f26448": {
+   "version": "2.1.331",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "Réduction du temps de réponse initial dans les dossiers sans Python malgré l'extension installée.",
+   "le": "2026-11-24T06:04:42Z"
+  },
+  "c331249f0da2c9ee": {
+   "version": "2.1.331",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Amélioration de l'écran de connexion pour indiquer clairement les erreurs de requête refusée.",
+   "le": "2026-11-24T06:04:42Z"
+  },
+  "5477c59b698471fe": {
+   "version": "2.1.331",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Accélération de l'ouverture et de la commutation entre les longues conversations avec beaucoup d'éditions.",
+   "le": "2026-11-24T06:04:42Z"
+  },
+  "771014f80ecf898b": {
+   "version": "2.1.331",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Amélioration de la fluidité de saisie et de la réactivité des demandes de permission dans les longs chats.",
+   "le": "2026-11-24T06:04:42Z"
+  },
+  "5e3843cee2b8e96a": {
+   "version": "2.1.331",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Démarrage plus rapide de l'interface VSCode et réponse accélérée du premier message dans un nouvel onglet.",
+   "le": "2026-11-24T06:04:47Z"
+  },
+  "dbafe7ccd36ea59e": {
+   "version": "2.1.331",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Amélioration de la réactivité et de la vitesse d'affichage lors de l'utilisation de VSCode en mode distant (SSH, WSL, conteneurs).",
+   "le": "2026-11-24T06:04:47Z"
+  },
+  "14668688253974c8": {
+   "version": "2.1.331",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "Réduction du temps de réponse du premier message après une période d'inactivité sur les machines à faible mémoire.",
+   "le": "2026-11-24T06:04:47Z"
+  },
+  "fe944e415fd8351e": {
+   "version": "2.1.331",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Accélération de l'ouverture des chats et de l'historique, même sur des disques lents ou scannés par un antivirus.",
+   "le": "2026-11-24T06:04:47Z"
+  },
+  "e4cf4dce14d8d05f": {
+   "version": "2.1.331",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Affichage plus rapide des différences (diffs) dans les conversations et suppression de menus inutiles.",
+   "le": "2026-11-24T06:04:47Z"
+  },
+  "d45f7725d464ce65": {
+   "version": "2.1.331",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Le menu @ file priorise désormais les fichiers des onglets ouverts et les fichiers récemment utilisés.",
+   "le": "2026-11-24T06:04:47Z"
+  },
+  "739d9af7b83e8dc1": {
+   "version": "2.1.331",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Sécurisation de l'application des diffs : l'acceptation nécessite désormais une interaction directe dans la zone de modification.",
+   "le": "2026-11-24T06:04:47Z"
+  },
+  "99346b61b1654980": {
+   "version": "2.1.331",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "L'ouverture des diffs depuis le terminal ne déplace plus le focus clavier et s'affiche à côté des fichiers non enregistrés.",
+   "le": "2026-11-24T06:04:47Z"
+  },
+  "af602ceb7dbd0783": {
+   "version": "2.1.331",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Simplification de l'affichage des cartes de permission et ajustement du comportement de la touche 2.",
+   "le": "2026-11-24T06:04:47Z"
+  },
+  "2bf936f7c870cb24": {
+   "version": "2.1.331",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "L'onglet Claude ignore désormais la touche Entrée si la boîte de recherche n'a pas le focus clavier.",
+   "le": "2026-11-24T06:04:47Z"
   }
  }
 }

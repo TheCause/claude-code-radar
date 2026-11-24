@@ -1,15 +1,16 @@
 {
   "metadata": {
-    "lastUpdated": "2026-11-23 07:00:07",
-    "latestVersion": "2.1.330",
-    "latestDate": "November 20, 2026",
-    "totalVersions": 446,
-    "totalItems": 10322,
-    "highImpactCount": 2150,
-    "lastUpdatedUtc": "2026-11-23T06:00:07Z",
+    "lastUpdated": "2026-11-24 07:00:08",
+    "latestVersion": "2.1.331",
+    "latestDate": "November 23, 2026",
+    "totalVersions": 447,
+    "totalItems": 10457,
+    "highImpactCount": 2169,
+    "lastUpdatedUtc": "2026-11-24T06:00:08Z",
     "sourceLive": true,
     "analyseIA": {
       "versionsAnalysees": [
+        "2.1.331",
         "2.1.330",
         "2.1.329",
         "2.1.328",
@@ -54,12 +55,2355 @@
         "2.1.283",
         "2.1.282"
       ],
-      "entreesAnalysees": 4379,
+      "entreesAnalysees": 4514,
       "enAttente": 0,
       "pannes": []
     }
   },
   "versions": [
+    {
+      "version": "2.1.331",
+      "date": "November 23, 2026",
+      "isoDate": "2026-11-23",
+      "yearMonth": "2026-11",
+      "yearQuarter": "2026-Q4",
+      "itemCount": 135,
+      "items": [
+        {
+          "text": "Added Code Mode support in terminal sessions on Amazon Bedrock, Google Cloud's Agent Platform, Microsoft Foundry and Claude Platform on AWS",
+          "cleanText": "Added Code Mode support in terminal sessions on Amazon Bedrock, Google Cloud's Agent Platform, Microsoft Foundry and Claude Platform on AWS",
+          "scope": "Core CLI",
+          "actionType": "Added",
+          "tags": [
+            "Multi-Agent & Workflows",
+            "Security & Governance",
+            "Terminal & UX"
+          ],
+          "impact": "High",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "agents",
+            "impact": "notable",
+            "resume": "Le mode Code est désormais disponible sur Amazon Bedrock, Google Cloud, Microsoft Foundry et Claude Platform sur AWS."
+          }
+        },
+        {
+          "text": "Added `oidc.groups_jsonpath` to the Claude apps gateway, to read groups from the matching entries of a list of objects with a small subset of JSONPath (RFC 9535)",
+          "cleanText": "Added `oidc.groups_jsonpath` to the Claude apps gateway, to read groups from the matching entries of a list of objects with a small subset of JSONPath (RFC 9535)",
+          "scope": "Core CLI",
+          "actionType": "Added",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "High",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "securite",
+            "impact": "mineur",
+            "resume": "Ajout du support JSONPath pour lire les groupes d'utilisateurs via l'authentification OIDC dans les passerelles Claude."
+          }
+        },
+        {
+          "text": "Added an API connectivity section to `claude doctor` that reports whether the API can be reached, with the HTTP status or the error, or says why it wasn't tested",
+          "cleanText": "Added an API connectivity section to `claude doctor` that reports whether the API can be reached, with the HTTP status or the error, or says why it wasn't tested",
+          "scope": "Core CLI",
+          "actionType": "Added",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "interface",
+            "impact": "notable",
+            "resume": "La commande `claude doctor` inclut désormais un test de connectivité API avec des détails sur l'erreur ou le statut HTTP."
+          }
+        },
+        {
+          "text": "Added a notice when tap-mode voice dictation stops by itself, after 15 seconds without recognized speech or at its 2-minute limit",
+          "cleanText": "Added a notice when tap-mode voice dictation stops by itself, after 15 seconds without recognized speech or at its 2-minute limit",
+          "scope": "Core CLI",
+          "actionType": "Added",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Une notification prévient désormais l'utilisateur quand la dictée vocale s'arrête automatiquement."
+          }
+        },
+        {
+          "text": "Added `CLAUDE_CODE_DISABLE_RESPONSE_COMPRESSION` to ask for uncompressed model responses behind a proxy that cuts compressed ones off; not advised yet for self-hosted runners or Remote Control",
+          "cleanText": "Added `CLAUDE_CODE_DISABLE_RESPONSE_COMPRESSION` to ask for uncompressed model responses behind a proxy that cuts compressed ones off; not advised yet for self-hosted runners or Remote Control",
+          "scope": "Core CLI",
+          "actionType": "Added",
+          "tags": [
+            "Models & Intelligence",
+            "IDE & Cloud Ubiquity"
+          ],
+          "impact": "High",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "modeles",
+            "impact": "mineur",
+            "resume": "Possibilité de désactiver la compression des réponses pour éviter les coupures via certains proxys."
+          }
+        },
+        {
+          "text": "Added `CLAUDE_GATEWAY_IDP_CONNECT_BY_HOSTNAME=1` for Claude apps gateways: with `oidc.use_proxy: true`, sign-in requests hand the proxy an `https` IdP's hostname even with `NO_PROXY` set",
+          "cleanText": "Added `CLAUDE_GATEWAY_IDP_CONNECT_BY_HOSTNAME=1` for Claude apps gateways: with `oidc.use_proxy: true`, sign-in requests hand the proxy an `https` IdP's hostname even with `NO_PROXY` set",
+          "scope": "Core CLI",
+          "actionType": "Added",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "High",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "securite",
+            "impact": "mineur",
+            "resume": "Amélioration de la gestion de l'authentification proxy pour les passerelles d'applications Claude."
+          }
+        },
+        {
+          "text": "Added `gen_ai.usage.*`, `gen_ai.response.model` and `gen_ai.operation.name` to `claude_code.llm_request` trace spans; `gen_ai.usage.input_tokens` includes prompt cache tokens",
+          "cleanText": "Added `gen_ai.usage.*`, `gen_ai.response.model` and `gen_ai.operation.name` to `claude_code.llm_request` trace spans; `gen_ai.usage.input_tokens` includes prompt cache tokens",
+          "scope": "Core CLI",
+          "actionType": "Added",
+          "tags": [
+            "Models & Intelligence",
+            "Terminal & UX"
+          ],
+          "impact": "High",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "modeles",
+            "impact": "notable",
+            "resume": "Ajout de détails précis sur l'utilisation des jetons (dont le cache) et le modèle utilisé dans les traces de requêtes."
+          }
+        },
+        {
+          "text": "Added `optionalDependencies` to plugin manifests: plugins that install with the plugin listing them and can be disabled or uninstalled on their own",
+          "cleanText": "Added `optionalDependencies` to plugin manifests: plugins that install with the plugin listing them and can be disabled or uninstalled on their own",
+          "scope": "Core CLI",
+          "actionType": "Added",
+          "tags": [
+            "Plugins & Skills"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "mcp",
+            "impact": "notable",
+            "resume": "Les plugins peuvent désormais déclarer des dépendances optionnelles pour être installés ou désinstallés séparément."
+          }
+        },
+        {
+          "text": "Fixed MCP tool calls hanging for up to 30 minutes on some malformed replies from a local or WebSocket server",
+          "cleanText": "Fixed MCP tool calls hanging for up to 30 minutes on some malformed replies from a local or WebSocket server",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "MCP & Tools",
+            "IDE & Cloud Ubiquity"
+          ],
+          "impact": "Standard",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "mcp",
+            "impact": "notable",
+            "resume": "Correction d'un bug où les appels d'outils MCP pouvaient rester bloqués indéfiniment sur des réponses malformées."
+          }
+        },
+        {
+          "text": "Fixed PushNotification telling a headless run, such as a scheduled one, that the terminal was active in its first minute, instead of saying whether a mobile push was requested",
+          "cleanText": "Fixed PushNotification telling a headless run, such as a scheduled one, that the terminal was active in its first minute, instead of saying whether a mobile push was requested",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Terminal & UX"
+          ],
+          "impact": "High",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Correction de l'affichage des notifications push lors des exécutions automatisées sans terminal."
+          }
+        },
+        {
+          "text": "Fixed `/install-github-app` skipping the repository step after setup warnings when no repository was found, and Esc not going back from its workflow list and sign-in steps",
+          "cleanText": "Fixed `/install-github-app` skipping the repository step after setup warnings when no repository was found, and Esc not going back from its workflow list and sign-in steps",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Multi-Agent & Workflows"
+          ],
+          "impact": "Standard",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Correction du flux d'installation de l'application GitHub et de la navigation avec la touche Échap."
+          }
+        },
+        {
+          "text": "Fixed one-line tool results cut with no ellipsis in narrow windows, Markdown stars in the Auto mode tab of /permissions, and a hook's reason to stop a forked skill showing twice",
+          "cleanText": "Fixed one-line tool results cut with no ellipsis in narrow windows, Markdown stars in the Auto mode tab of /permissions, and a hook's reason to stop a forked skill showing twice",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Security & Governance",
+            "Plugins & Skills"
+          ],
+          "impact": "High",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Correction de divers problèmes d'affichage des résultats d'outils et des permissions dans les fenêtres étroites."
+          }
+        },
+        {
+          "text": "Fixed `/diff` hiding its key hints and not selecting files in windows of 24 to 26 rows, and leaving out files added with `git add -N` in a repository with no commits",
+          "cleanText": "Fixed `/diff` hiding its key hints and not selecting files in windows of 24 to 26 rows, and leaving out files added with `git add -N` in a repository with no commits",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Terminal & UX"
+          ],
+          "impact": "Standard",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Correction de l'affichage des commandes `/diff` et de la détection des fichiers ajoutés via Git."
+          }
+        },
+        {
+          "text": "Fixed the first-run theme list showing too few themes in short windows, and /usage and other tall screens coming out garbled there",
+          "cleanText": "Fixed the first-run theme list showing too few themes in short windows, and /usage and other tall screens coming out garbled there",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Standard",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Correction des problèmes d'affichage des thèmes et des commandes de statistiques sur les écrans courts ou hauts."
+          }
+        },
+        {
+          "text": "Fixed `/bug` in fullscreen hiding its Yes and No answers behind a long report, and Yes staying out of view in very short windows",
+          "cleanText": "Fixed `/bug` in fullscreen hiding its Yes and No answers behind a long report, and Yes staying out of view in very short windows",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Terminal & UX"
+          ],
+          "impact": "Standard",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Correction de l'affichage des réponses lors du signalement de bugs en mode plein écran."
+          }
+        },
+        {
+          "text": "Fixed /compact and auto-compact sometimes losing part of the conversation summary when the summary quoted certain XML tags",
+          "cleanText": "Fixed /compact and auto-compact sometimes losing part of the conversation summary when the summary quoted certain XML tags",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Standard",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "agents",
+            "impact": "notable",
+            "resume": "Correction d'une perte de résumé de conversation lors de l'utilisation de certaines balises XML."
+          }
+        },
+        {
+          "text": "Fixed Claude not being told when permission rules on the Agent tool dropped its queued message to a subagent that had already ended",
+          "cleanText": "Fixed Claude not being told when permission rules on the Agent tool dropped its queued message to a subagent that had already ended",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Multi-Agent & Workflows",
+            "Security & Governance"
+          ],
+          "impact": "High",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "agents",
+            "impact": "notable",
+            "resume": "Correction d'un problème où des messages étaient perdus entre l'agent et ses sous-agents à cause des règles de permission."
+          }
+        },
+        {
+          "text": "Fixed a Remote Control message sometimes showing above the reply that was finishing when it was sent",
+          "cleanText": "Fixed a Remote Control message sometimes showing above the reply that was finishing when it was sent",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "IDE & Cloud Ubiquity"
+          ],
+          "impact": "High",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Correction de l'ordre d'affichage des messages en mode Remote Control."
+          }
+        },
+        {
+          "text": "Fixed Stop hooks that read the transcript missing the last reply in Claude Desktop; SubagentStop hooks now wait for it too",
+          "cleanText": "Fixed Stop hooks that read the transcript missing the last reply in Claude Desktop; SubagentStop hooks now wait for it too",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Multi-Agent & Workflows",
+            "Plugins & Skills"
+          ],
+          "impact": "High",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "hooks_config",
+            "impact": "notable",
+            "resume": "Correction des hooks d'arrêt qui ne récupéraient pas la dernière réponse de la conversation."
+          }
+        },
+        {
+          "text": "Fixed turns and subagents failing in cloud sessions, or timing out on long replies elsewhere, when a reply went silent while Claude was still thinking; Claude Code now tries the request once more",
+          "cleanText": "Fixed turns and subagents failing in cloud sessions, or timing out on long replies elsewhere, when a reply went silent while Claude was still thinking; Claude Code now tries the request once more",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Multi-Agent & Workflows",
+            "Models & Intelligence"
+          ],
+          "impact": "High",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "agents",
+            "impact": "notable",
+            "resume": "Claude Code tentera désormais de renvoyer une requête si une réponse reste silencieuse en session cloud."
+          }
+        },
+        {
+          "text": "Fixed Esc and Stop waiting about a minute or more when the contents of a cloud or network file that Claude is reading stall",
+          "cleanText": "Fixed Esc and Stop waiting about a minute or more when the contents of a cloud or network file that Claude is reading stall",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Standard",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Réduction du temps d'attente lors de l'utilisation des touches Échap ou Stop si un fichier réseau est bloqué."
+          }
+        },
+        {
+          "text": "Fixed Code Mode sessions resumed with `--resume` or `--continue` in another permission mode losing thinking and the prompt cache; one begun in a mode that asks keeps that mode's limits on scripts",
+          "cleanText": "Fixed Code Mode sessions resumed with `--resume` or `--continue` in another permission mode losing thinking and the prompt cache; one begun in a mode that asks keeps that mode's limits on scripts",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Models & Intelligence",
+            "Security & Governance",
+            "Performance & Reliability",
+            "Terminal & UX"
+          ],
+          "impact": "High",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "modeles",
+            "impact": "notable",
+            "resume": "Correction de la perte du cache et de la réflexion lors de la reprise d'une session Code Mode."
+          }
+        },
+        {
+          "text": "Fixed Code Mode sending a request about every second when a `!` or slash command was typed while a script was running",
+          "cleanText": "Fixed Code Mode sending a request about every second when a `!` or slash command was typed while a script was running",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Standard",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "performance",
+            "impact": "notable",
+            "resume": "Correction d'un envoi excessif de requêtes lors de la saisie de commandes pendant l'exécution d'un script."
+          }
+        },
+        {
+          "text": "Fixed an interrupted or failed plugin update leaving a partial plugin folder that later loaded with skills or other components missing (anthropics/claude-code#102186)",
+          "cleanText": "Fixed an interrupted or failed plugin update leaving a partial plugin folder that later loaded with skills or other components missing (anthropics/claude-code#102186)",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Plugins & Skills"
+          ],
+          "impact": "Standard",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "mcp",
+            "impact": "notable",
+            "resume": "Correction des dossiers de plugins corrompus après une mise à jour interrompue."
+          }
+        },
+        {
+          "text": "Windows: Fixed file writes on FAT32 and exFAT drives asking for permission every time in some plugin sessions",
+          "cleanText": "Windows: Fixed file writes on FAT32 and exFAT drives asking for permission every time in some plugin sessions",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Security & Governance",
+            "Plugins & Skills"
+          ],
+          "impact": "Standard",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "securite",
+            "impact": "mineur",
+            "resume": "Windows : Correction des demandes de permission répétitives lors de l'écriture sur des disques FAT32/exFAT."
+          }
+        },
+        {
+          "text": "Fixed Claude failing to read a notebook that has a null output or an error output with no traceback",
+          "cleanText": "Fixed Claude failing to read a notebook that has a null output or an error output with no traceback",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Standard",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "agents",
+            "impact": "mineur",
+            "resume": "Correction de la lecture des notebooks contenant des sorties nulles ou des erreurs sans trace."
+          }
+        },
+        {
+          "text": "Fixed a rewind deleting files after a restore had failed",
+          "cleanText": "Fixed a rewind deleting files after a restore had failed",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Standard",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "agents",
+            "impact": "mineur",
+            "resume": "Correction d'un bug où la fonction rewind supprimait des fichiers après l'échec d'une restauration."
+          }
+        },
+        {
+          "text": "Fixed auto mode sometimes refusing Claude's call to stop a /loop, which left the next wake-up to fire",
+          "cleanText": "Fixed auto mode sometimes refusing Claude's call to stop a /loop, which left the next wake-up to fire",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Security & Governance"
+          ],
+          "impact": "High",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "agents",
+            "impact": "mineur",
+            "resume": "L'auto mode respecte désormais correctement l'arrêt d'une boucle de commande."
+          }
+        },
+        {
+          "text": "Fixed a Workflow agent's background shells and MCP servers sometimes being left running after it handed back its report",
+          "cleanText": "Fixed a Workflow agent's background shells and MCP servers sometimes being left running after it handed back its report",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "MCP & Tools",
+            "Multi-Agent & Workflows"
+          ],
+          "impact": "Standard",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "agents",
+            "impact": "mineur",
+            "resume": "Les shells et serveurs MCP d'un agent de workflow sont mieux nettoyés après son rapport."
+          }
+        },
+        {
+          "text": "Windows: Fixed `/desktop` downloading the older Claude Desktop installer, and asking for an update when an older install's folder was left behind",
+          "cleanText": "Windows: Fixed `/desktop` downloading the older Claude Desktop installer, and asking for an update when an older install's folder was left behind",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Standard",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Correction du téléchargement de l'installateur Claude Desktop sur Windows via /desktop."
+          }
+        },
+        {
+          "text": "Fixed `claude plugin install`, `marketplace add` and similar commands hanging with no output when managed settings needed an approval that could not be asked for",
+          "cleanText": "Fixed `claude plugin install`, `marketplace add` and similar commands hanging with no output when managed settings needed an approval that could not be asked for",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Plugins & Skills"
+          ],
+          "impact": "Standard",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "mcp",
+            "impact": "mineur",
+            "resume": "Résolution des blocages lors de l'installation de plugins quand une approbation est requise."
+          }
+        },
+        {
+          "text": "Fixed a permission rule on a subagent's model, such as `Agent(model:*)`, blocking Claude's follow-up message to a subagent started on this version with no model named",
+          "cleanText": "Fixed a permission rule on a subagent's model, such as `Agent(model:*)`, blocking Claude's follow-up message to a subagent started on this version with no model named",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Multi-Agent & Workflows",
+            "Models & Intelligence",
+            "Security & Governance"
+          ],
+          "impact": "High",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "securite",
+            "impact": "mineur",
+            "resume": "Correction des règles de permission bloquant les messages de suivi vers un sous-agent."
+          }
+        },
+        {
+          "text": "Fixed PermissionRequest hooks not saving `Skill(name:*)` allow rules outside local settings",
+          "cleanText": "Fixed PermissionRequest hooks not saving `Skill(name:*)` allow rules outside local settings",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Security & Governance",
+            "Plugins & Skills"
+          ],
+          "impact": "Standard",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "securite",
+            "impact": "mineur",
+            "resume": "Les règles d'autorisation pour les compétences (Skills) sont désormais bien sauvegardées."
+          }
+        },
+        {
+          "text": "Fixed \"Ask your admin\" asking to raise your own limit when your team's pooled group budget blocked you, and saying \"Request sent\" when an admin had approved your request in the last few minutes",
+          "cleanText": "Fixed \"Ask your admin\" asking to raise your own limit when your team's pooled group budget blocked you, and saying \"Request sent\" when an admin had approved your request in the last few minutes",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Standard",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "autre",
+            "impact": "mineur",
+            "resume": "Correction des messages d'erreur concernant les limites de budget d'équipe."
+          }
+        },
+        {
+          "text": "Fixed Code Mode losing the middle of a long script output; Claude now gets a path to the uncut text (anthropics/claude-code#111373)",
+          "cleanText": "Fixed Code Mode losing the middle of a long script output; Claude now gets a path to the uncut text (anthropics/claude-code#111373)",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Standard",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "agents",
+            "impact": "notable",
+            "resume": "Le Code Mode ne tronque plus les longs scripts et accède au texte complet via un chemin."
+          }
+        },
+        {
+          "text": "Fixed hold-to-talk dictation stopping early and losing words when Claude Code was busy",
+          "cleanText": "Fixed hold-to-talk dictation stopping early and losing words when Claude Code was busy",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Standard",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Amélioration de la dictation vocale qui s'arrêtait prématurément quand Claude était occupé."
+          }
+        },
+        {
+          "text": "Fixed Code Mode with `--bare` not telling Claude what its scripts can call",
+          "cleanText": "Fixed Code Mode with `--bare` not telling Claude what its scripts can call",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Standard",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "agents",
+            "impact": "mineur",
+            "resume": "Le mode --bare informe désormais Claude des capacités d'appel de ses scripts."
+          }
+        },
+        {
+          "text": "Fixed a crash when a custom API endpoint returned a tool call with no tool name; the call now fails with an error and the session continues",
+          "cleanText": "Fixed a crash when a custom API endpoint returned a tool call with no tool name; the call now fails with an error and the session continues",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Performance & Reliability"
+          ],
+          "impact": "Standard",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "modeles",
+            "impact": "mineur",
+            "resume": "Évite un crash si un point de terminaison API renvoie un appel d'outil sans nom."
+          }
+        },
+        {
+          "text": "Windows: Fixed a possible crash when the machine is almost out of memory",
+          "cleanText": "Windows: Fixed a possible crash when the machine is almost out of memory",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Performance & Reliability"
+          ],
+          "impact": "Standard",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "performance",
+            "impact": "mineur",
+            "resume": "Correction d'un crash potentiel sur Windows en cas de manque de mémoire vive."
+          }
+        },
+        {
+          "text": "Fixed the CLI freezing on some replies, and quoted text sometimes going missing or showing twice",
+          "cleanText": "Fixed the CLI freezing on some replies, and quoted text sometimes going missing or showing twice",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Standard",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Correction des gels de l'interface et des problèmes d'affichage du texte cité."
+          }
+        },
+        {
+          "text": "Windows: Fixed Claude Code refusing to start when managed settings in the registry contain non-ASCII characters such as Japanese (anthropics/claude-code#93280)",
+          "cleanText": "Windows: Fixed Claude Code refusing to start when managed settings in the registry contain non-ASCII characters such as Japanese (anthropics/claude-code#93280)",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Standard",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Correction du démarrage sur Windows avec des caractères non-ASCII dans le registre."
+          }
+        },
+        {
+          "text": "Windows: Fixed Remote Control clients showing no steps for a new subagent",
+          "cleanText": "Windows: Fixed Remote Control clients showing no steps for a new subagent",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Multi-Agent & Workflows",
+            "IDE & Cloud Ubiquity"
+          ],
+          "impact": "High",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Affichage correct des étapes des sous-agents pour les clients Remote Control sur Windows."
+          }
+        },
+        {
+          "text": "Fixed @-mentions written as `@file#10-12` attaching the whole file instead of those lines",
+          "cleanText": "Fixed @-mentions written as `@file#10-12` attaching the whole file instead of those lines",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Standard",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "interface",
+            "impact": "notable",
+            "resume": "Les mentions de lignes spécifiques (@file#10-12) n'attachent plus tout le fichier."
+          }
+        },
+        {
+          "text": "Fixed Claude misreading a pasted artifact invitation link; it now asks you to accept the invitation and paste the artifact's own link",
+          "cleanText": "Fixed Claude misreading a pasted artifact invitation link; it now asks you to accept the invitation and paste the artifact's own link",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Standard",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Amélioration de la gestion des liens d'invitation d'artefacts collés."
+          }
+        },
+        {
+          "text": "Fixed sandboxed Bash commands sometimes failing to start on a full temp disk, for sandboxes whose file rules keep commands out of the temp directory",
+          "cleanText": "Fixed sandboxed Bash commands sometimes failing to start on a full temp disk, for sandboxes whose file rules keep commands out of the temp directory",
+          "scope": "Core CLI",
+          "actionType": "Fixed",
+          "tags": [
+            "Security & Governance"
+          ],
+          "impact": "High",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "securite",
+            "impact": "mineur",
+            "resume": "Correction de l'échec des commandes Bash sandbox quand le disque temporaire est plein."
+          }
+        },
+        {
+          "text": "Improved typing speed in screen reader mode, most of all in long sessions",
+          "cleanText": "Improved typing speed in screen reader mode, most of all in long sessions",
+          "scope": "Core CLI",
+          "actionType": "Improved",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "interface",
+            "impact": "notable",
+            "resume": "Vitesse de frappe améliorée pour les utilisateurs de lecteurs d'écran."
+          }
+        },
+        {
+          "text": "Improved start-up time: a session started soon after another no longer waits for the model list, and one outside a git repository without `.claude/settings.local.json` no longer waits on git",
+          "cleanText": "Improved start-up time: a session started soon after another no longer waits for the model list, and one outside a git repository without `.claude/settings.local.json` no longer waits on git",
+          "scope": "Core CLI",
+          "actionType": "Improved",
+          "tags": [
+            "Models & Intelligence"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "performance",
+            "impact": "notable",
+            "resume": "Démarrage plus rapide en évitant des attentes inutiles sur les modèles ou git."
+          }
+        },
+        {
+          "text": "Windows: Improved the speed of the first Bash command in a session on machines with no custom shell start-up files",
+          "cleanText": "Windows: Improved the speed of the first Bash command in a session on machines with no custom shell start-up files",
+          "scope": "Core CLI",
+          "actionType": "Improved",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "performance",
+            "impact": "mineur",
+            "resume": "Accélération de la première commande Bash sur Windows sans shell personnalisé."
+          }
+        },
+        {
+          "text": "Improved the plugin auto-update notice to name plugins it newly installs as dependencies, separately from updated plugins",
+          "cleanText": "Improved the plugin auto-update notice to name plugins it newly installs as dependencies, separately from updated plugins",
+          "scope": "Core CLI",
+          "actionType": "Improved",
+          "tags": [
+            "Plugins & Skills"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "mcp",
+            "impact": "mineur",
+            "resume": "L'avis de mise à jour distingue mieux les nouveaux plugins des mises à jour."
+          }
+        },
+        {
+          "text": "Improved Code Mode tool search to show more of an MCP tool's description, with its limits, formats and defaults",
+          "cleanText": "Improved Code Mode tool search to show more of an MCP tool's description, with its limits, formats and defaults",
+          "scope": "Core CLI",
+          "actionType": "Improved",
+          "tags": [
+            "MCP & Tools"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "mcp",
+            "impact": "notable",
+            "resume": "Recherche d'outils améliorée avec plus de détails sur les descriptions MCP."
+          }
+        },
+        {
+          "text": "Improved the Console sign-in link shown by /login and `claude auth login --console`: it is now much shorter",
+          "cleanText": "Improved the Console sign-in link shown by /login and `claude auth login --console`: it is now much shorter",
+          "scope": "Core CLI",
+          "actionType": "Improved",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Le lien de connexion Console affiché par les commandes d'authentification est désormais beaucoup plus court."
+          }
+        },
+        {
+          "text": "Improved Claude's list of your artifacts: it now marks web pages, so Claude is less likely to try opening one with the Claude Docs connector",
+          "cleanText": "Improved Claude's list of your artifacts: it now marks web pages, so Claude is less likely to try opening one with the Claude Docs connector",
+          "scope": "Core CLI",
+          "actionType": "Improved",
+          "tags": [
+            "IDE & Cloud Ubiquity"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "agents",
+            "impact": "notable",
+            "resume": "Claude identifie mieux les pages web dans ses artefacts pour éviter de tenter de les ouvrir avec le connecteur de documentation."
+          }
+        },
+        {
+          "text": "Improved the folder trust prompts in short terminals: fullscreen `/cd` and `/add-dir` show their choices in fewer rows, and the prompt at launch keeps the folder path in view when it has many warnings",
+          "cleanText": "Improved the folder trust prompts in short terminals: fullscreen `/cd` and `/add-dir` show their choices in fewer rows, and the prompt at launch keeps the folder path in view when it has many warnings",
+          "scope": "Core CLI",
+          "actionType": "Improved",
+          "tags": [
+            "Security & Governance",
+            "Terminal & UX"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "interface",
+            "impact": "notable",
+            "resume": "Optimisation de l'affichage des demandes de confiance des dossiers dans les terminaux à écran réduit."
+          }
+        },
+        {
+          "text": "Changed the questions for stopping auto-connect in `/ide` and for `/clear`, `/compact` or `/rewind` in a subagent's view to list Yes first; they still start on No, so Down then Enter now answers No",
+          "cleanText": "Changed the questions for stopping auto-connect in `/ide` and for `/clear`, `/compact` or `/rewind` in a subagent's view to list Yes first; they still start on No, so Down then Enter now answers No",
+          "scope": "Core CLI",
+          "actionType": "Changed",
+          "tags": [
+            "Multi-Agent & Workflows"
+          ],
+          "impact": "High",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Inversion de l'ordre des réponses (Oui en premier) pour les questions d'arrêt automatique et de nettoyage."
+          }
+        },
+        {
+          "text": "Changed what a `PermissionDenied` hook's `retry: true` tells Claude: make the refused call again only if you asked for that call",
+          "cleanText": "Changed what a `PermissionDenied` hook's `retry: true` tells Claude: make the refused call again only if you asked for that call",
+          "scope": "Core CLI",
+          "actionType": "Changed",
+          "tags": [
+            "Security & Governance",
+            "Plugins & Skills",
+            "Performance & Reliability"
+          ],
+          "impact": "Standard",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "securite",
+            "impact": "notable",
+            "resume": "Le mode de répétition après refus de permission ne s'active désormais que si l'appel initial était explicitement demandé."
+          }
+        },
+        {
+          "text": "Changed in a future release, on or after November 30, 2026: plugin marketplaces in managed `extraKnownMarketplaces` will auto-update by default. To opt one out, set `\"autoUpdate\": false` on its entry",
+          "cleanText": "Changed in a future release, on or after November 30, 2026: plugin marketplaces in managed `extraKnownMarketplaces` will auto-update by default. To opt one out, set `\"autoUpdate\": false` on its entry",
+          "scope": "Core CLI",
+          "actionType": "Changed",
+          "tags": [
+            "Plugins & Skills"
+          ],
+          "impact": "Standard",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "mcp",
+            "impact": "notable",
+            "resume": "Les marketplaces de plugins gérés seront mis à jour automatiquement par défaut dès fin novembre 2026."
+          }
+        },
+        {
+          "text": "Windows: Changed start-up with managed settings in the registry: check them before upgrading, as an `HKLM` policy outranks `managed-settings.json` and a broken value can stop the start",
+          "cleanText": "Windows: Changed start-up with managed settings in the registry: check them before upgrading, as an `HKLM` policy outranks `managed-settings.json` and a broken value can stop the start",
+          "scope": "Core CLI",
+          "actionType": "Changed",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Standard",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "securite",
+            "impact": "notable",
+            "resume": "Sur Windows, les politiques de registre HKLM priment sur les paramètres gérés et peuvent bloquer le démarrage."
+          }
+        },
+        {
+          "text": "[VSCode] Added a warning and a link to the revoke page when you log out and the request to revoke your claude.ai login isn't confirmed",
+          "cleanText": "Added a warning and a link to the revoke page when you log out and the request to revoke your claude.ai login isn't confirmed",
+          "scope": "VSCode",
+          "actionType": "Added",
+          "tags": [
+            "IDE & Cloud Ubiquity"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "securite",
+            "impact": "mineur",
+            "resume": "[VSCode] Ajout d'un avertissement et d'un lien pour révoquer la session lors de la déconnexion."
+          }
+        },
+        {
+          "text": "[VSCode] Added a notice before sending a very large selection or attached text file, and advice under \"Prompt is too long\" that names the large part and what to do next",
+          "cleanText": "Added a notice before sending a very large selection or attached text file, and advice under \"Prompt is too long\" that names the large part and what to do next",
+          "scope": "VSCode",
+          "actionType": "Added",
+          "tags": [
+            "Terminal & UX"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "interface",
+            "impact": "notable",
+            "resume": "[VSCode] Alertes et conseils améliorés lors de l'envoi de sélections ou de fichiers trop volumineux."
+          }
+        },
+        {
+          "text": "[VSCode] Added \"Add Cell to Chat\" to the notebook cell menu, which attaches a cell with its outputs or error",
+          "cleanText": "Added \"Add Cell to Chat\" to the notebook cell menu, which attaches a cell with its outputs or error",
+          "scope": "VSCode",
+          "actionType": "Added",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "interface",
+            "impact": "notable",
+            "resume": "[VSCode] Possibilité d'ajouter une cellule de notebook au chat avec ses sorties ou erreurs."
+          }
+        },
+        {
+          "text": "[VSCode] Added \"Fix with Claude Code\" as a quick fix for errors and warnings and to failed tests in the test peek and the Test Results view, which puts the problem into the chat box",
+          "cleanText": "Added \"Fix with Claude Code\" as a quick fix for errors and warnings and to failed tests in the test peek and the Test Results view, which puts the problem into the chat box",
+          "scope": "VSCode",
+          "actionType": "Added",
+          "tags": [
+            "Terminal & UX"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "agents",
+            "impact": "notable",
+            "resume": "[VSCode] Nouveau raccourci pour corriger automatiquement les erreurs, avertissements ou tests échoués via le chat."
+          }
+        },
+        {
+          "text": "[VSCode] Added \"Add to Chat\" to the right-click menu of changed files in the Source Control view",
+          "cleanText": "Added \"Add to Chat\" to the right-click menu of changed files in the Source Control view",
+          "scope": "VSCode",
+          "actionType": "Added",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "interface",
+            "impact": "notable",
+            "resume": "[VSCode] Option pour ajouter rapidement un fichier modifié au chat via le menu contextuel du contrôle de source."
+          }
+        },
+        {
+          "text": "[VSCode] Added \"Resolve Merge Conflicts\" to the editor title of a file with merge conflicts and to the Merge Changes group in Source Control",
+          "cleanText": "Added \"Resolve Merge Conflicts\" to the editor title of a file with merge conflicts and to the Merge Changes group in Source Control",
+          "scope": "VSCode",
+          "actionType": "Added",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "interface",
+            "impact": "notable",
+            "resume": "[VSCode] Ajout d'une option pour résoudre les conflits de fusion directement depuis l'éditeur ou le contrôle de source."
+          }
+        },
+        {
+          "text": "[VSCode] Fixed raw tags for selected code under a reworded prompt, the mode button flashing Manual, the slash menu hiding its highlighted row, a broken sign-in image, and a blinking Accept/Reject bar",
+          "cleanText": "Fixed raw tags for selected code under a reworded prompt, the mode button flashing Manual, the slash menu hiding its highlighted row, a broken sign-in image, and a blinking Accept/Reject bar",
+          "scope": "VSCode",
+          "actionType": "Fixed",
+          "tags": [
+            "Terminal & UX"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "[VSCode] Correction de divers bugs d'affichage (menus, boutons, images de connexion et barres d'acceptation)."
+          }
+        },
+        {
+          "text": "[VSCode] Fixed a forked conversation overwriting the original conversation's plan file; a fork or rewind that can't copy the plan now shows a warning",
+          "cleanText": "Fixed a forked conversation overwriting the original conversation's plan file; a fork or rewind that can't copy the plan now shows a warning",
+          "scope": "VSCode",
+          "actionType": "Fixed",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "agents",
+            "impact": "mineur",
+            "resume": "[VSCode] Correction d'un bug où une conversation bifurquée écrasait le fichier de plan original."
+          }
+        },
+        {
+          "text": "[VSCode] Fixed voice dictation saying no speech was recognized when its connection closed or never opened; it now says the connection was lost or couldn't connect",
+          "cleanText": "Fixed voice dictation saying no speech was recognized when its connection closed or never opened; it now says the connection was lost or couldn't connect",
+          "scope": "VSCode",
+          "actionType": "Fixed",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "[VSCode] Amélioration des messages d'erreur lors de l'utilisation de la dictée vocale."
+          }
+        },
+        {
+          "text": "[VSCode] Fixed an unsent side question being lost when its panel closes",
+          "cleanText": "Fixed an unsent side question being lost when its panel closes",
+          "scope": "VSCode",
+          "actionType": "Fixed",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "[VSCode] Correction d'une perte de question non envoyée lors de la fermeture d'un panneau."
+          }
+        },
+        {
+          "text": "[VSCode] Fixed Escape stopping Claude after renaming a session, and typing going nowhere after closing the session history with Escape",
+          "cleanText": "Fixed Escape stopping Claude after renaming a session, and typing going nowhere after closing the session history with Escape",
+          "scope": "VSCode",
+          "actionType": "Fixed",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "[VSCode] Correction des problèmes de navigation et de saisie liés à la touche Échap et l'historique des sessions."
+          }
+        },
+        {
+          "text": "[VSCode] Fixed Rename, Mark as Unread and Add to Group saying \"still connecting\" on a tab that resumed a session from its history",
+          "cleanText": "Fixed Rename, Mark as Unread and Add to Group saying \"still connecting\" on a tab that resumed a session from its history",
+          "scope": "VSCode",
+          "actionType": "Fixed",
+          "tags": [
+            "Performance & Reliability"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "[VSCode] Correction du message 'toujours en cours de connexion' lors de la reprise d'une session historique."
+          }
+        },
+        {
+          "text": "[VSCode] Fixed wide tables and long paths cut off, long errors hiding their close button, errors out of view in the Add MCP server form and Chrome dialog, and plugin pictures ignoring the editor theme",
+          "cleanText": "Fixed wide tables and long paths cut off, long errors hiding their close button, errors out of view in the Add MCP server form and Chrome dialog, and plugin pictures ignoring the editor theme",
+          "scope": "VSCode",
+          "actionType": "Fixed",
+          "tags": [
+            "MCP & Tools",
+            "Plugins & Skills",
+            "Terminal & UX"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "[VSCode] Correction de problèmes d'affichage (tableaux coupés, erreurs masquées, thèmes de plugins)."
+          }
+        },
+        {
+          "text": "[VSCode] Fixed later prompts and the message box covering the Rewind code dialog, and focus jumping from \"Never mind\" to \"Rewind\" when it finishes checking files",
+          "cleanText": "Fixed later prompts and the message box covering the Rewind code dialog, and focus jumping from \"Never mind\" to \"Rewind\" when it finishes checking files",
+          "scope": "VSCode",
+          "actionType": "Fixed",
+          "tags": [
+            "Terminal & UX"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "[VSCode] Correction de chevauchements de fenêtres et de sauts de focus inattendus dans l'interface."
+          }
+        },
+        {
+          "text": "[VSCode] Fixed the command menu keeping an earlier match highlighted while you type more in its filter, so Enter could run the wrong row",
+          "cleanText": "Fixed the command menu keeping an earlier match highlighted while you type more in its filter, so Enter could run the wrong row",
+          "scope": "VSCode",
+          "actionType": "Fixed",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "[VSCode] Correction du menu de commande qui maintenait une ancienne sélection lors de la saisie d'un filtre."
+          }
+        },
+        {
+          "text": "[VSCode] Fixed the @ menu showing \"No files found\" before its first search results arrived, or when it couldn't search all files of a very large workspace, which it now says",
+          "cleanText": "Fixed the @ menu showing \"No files found\" before its first search results arrived, or when it couldn't search all files of a very large workspace, which it now says",
+          "scope": "VSCode",
+          "actionType": "Fixed",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "[VSCode] Correction du menu @ qui affichait 'aucun fichier trouvé' avant la fin de la recherche ou sur de très grands espaces."
+          }
+        },
+        {
+          "text": "[VSCode] Fixed Escape stopping Claude at a Remove or Delete confirmation in MCP, Hooks and Memory dialogs, on a side question panel's button or link, and on the Bookmarks button with its panel open",
+          "cleanText": "Fixed Escape stopping Claude at a Remove or Delete confirmation in MCP, Hooks and Memory dialogs, on a side question panel's button or link, and on the Bookmarks button with its panel open",
+          "scope": "VSCode",
+          "actionType": "Fixed",
+          "tags": [
+            "MCP & Tools",
+            "Plugins & Skills",
+            "Performance & Reliability",
+            "Terminal & UX"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "[VSCode] Correction de l'impossibilité d'utiliser la touche Échap pour fermer certains panneaux ou confirmations."
+          }
+        },
+        {
+          "text": "[VSCode] Fixed empty boxes showing instead of the + and − signs in diffs (anthropics/claude-code#73069)",
+          "cleanText": "Fixed empty boxes showing instead of the + and − signs in diffs (anthropics/claude-code#73069)",
+          "scope": "VSCode",
+          "actionType": "Fixed",
+          "tags": [
+            "Terminal & UX"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "[VSCode] Correction de l'affichage de boîtes vides à la place des signes plus et moins dans les diffs."
+          }
+        },
+        {
+          "text": "[VSCode] Fixed the chat no longer following Claude's reply after the panel was resized, or hidden and shown again",
+          "cleanText": "Fixed the chat no longer following Claude's reply after the panel was resized, or hidden and shown again",
+          "scope": "VSCode",
+          "actionType": "Fixed",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Le chat suit à nouveau correctement les réponses de Claude après un redimensionnement ou l'affichage du panneau."
+          }
+        },
+        {
+          "text": "[VSCode] Fixed a chat left in bypass permissions mode reopening in Auto mode instead of your initial permission mode when settings disable bypass",
+          "cleanText": "Fixed a chat left in bypass permissions mode reopening in Auto mode instead of your initial permission mode when settings disable bypass",
+          "scope": "VSCode",
+          "actionType": "Fixed",
+          "tags": [
+            "Security & Governance"
+          ],
+          "impact": "High",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "securite",
+            "impact": "notable",
+            "resume": "Le mode de permission initial est désormais respecté lors de la réouverture d'un chat."
+          }
+        },
+        {
+          "text": "[VSCode] Fixed the chat panel freezing on some CSS code blocks and diffs",
+          "cleanText": "Fixed the chat panel freezing on some CSS code blocks and diffs",
+          "scope": "VSCode",
+          "actionType": "Fixed",
+          "tags": [
+            "Terminal & UX"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Correction d'un gel du panneau de chat lors de l'affichage de blocs de code CSS ou de diffs."
+          }
+        },
+        {
+          "text": "[VSCode] Fixed the context usage indicator disappearing after an API error, \"Prompt is too long\", or a slash command",
+          "cleanText": "Fixed the context usage indicator disappearing after an API error, \"Prompt is too long\", or a slash command",
+          "scope": "VSCode",
+          "actionType": "Fixed",
+          "tags": [
+            "Terminal & UX"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "L'indicateur d'utilisation du contexte reste visible même après une erreur API ou une commande slash."
+          }
+        },
+        {
+          "text": "[VSCode] Fixed a message queued behind a queued /clear being lost",
+          "cleanText": "Fixed a message queued behind a queued /clear being lost",
+          "scope": "VSCode",
+          "actionType": "Fixed",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "agents",
+            "impact": "mineur",
+            "resume": "Correction d'une perte de message lorsqu'il est mis en attente derrière une commande /clear."
+          }
+        },
+        {
+          "text": "[VSCode] Fixed Manage Plugins losing its search box or showing no message when a search has no match, and not saying that the list of available plugins failed to load",
+          "cleanText": "Fixed Manage Plugins losing its search box or showing no message when a search has no match, and not saying that the list of available plugins failed to load",
+          "scope": "VSCode",
+          "actionType": "Fixed",
+          "tags": [
+            "Plugins & Skills"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "mcp",
+            "impact": "mineur",
+            "resume": "Amélioration de l'interface de gestion des plugins (recherche et messages d'erreur de chargement)."
+          }
+        },
+        {
+          "text": "[VSCode] Fixed proposed changes to notebooks and files with a custom editor opening in a tab with no Accept or Reject that stayed open after the answer",
+          "cleanText": "Fixed proposed changes to notebooks and files with a custom editor opening in a tab with no Accept or Reject that stayed open after the answer",
+          "scope": "VSCode",
+          "actionType": "Fixed",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "interface",
+            "impact": "notable",
+            "resume": "Les modifications proposées dans les éditeurs personnalisés affichent désormais les boutons Accepter/Refuser."
+          }
+        },
+        {
+          "text": "[VSCode] Fixed the spend limit message telling Team and Enterprise members to run `/usage-credits`, which can't send a request to their admin from the panel",
+          "cleanText": "Fixed the spend limit message telling Team and Enterprise members to run `/usage-credits`, which can't send a request to their admin from the panel",
+          "scope": "VSCode",
+          "actionType": "Fixed",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Correction du message de limite de dépenses pour les comptes Team et Enterprise."
+          }
+        },
+        {
+          "text": "[VSCode] Fixed a written message being wiped by Tab on a command in the \"/\" button's menu or by a click on an onboarding suggestion",
+          "cleanText": "Fixed a written message being wiped by Tab on a command in the \"/\" button's menu or by a click on an onboarding suggestion",
+          "scope": "VSCode",
+          "actionType": "Fixed",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Correction d'un bug où la touche Tab effaçait le texte saisi dans certains menus ou suggestions."
+          }
+        },
+        {
+          "text": "[VSCode] Fixed Claude continuing to edit files after you rewind code while it is working",
+          "cleanText": "Fixed Claude continuing to edit files after you rewind code while it is working",
+          "scope": "VSCode",
+          "actionType": "Fixed",
+          "tags": [
+            "Terminal & UX"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "agents",
+            "impact": "notable",
+            "resume": "Claude s'arrête désormais de modifier les fichiers si vous utilisez la fonction de retour en arrière (rewind)."
+          }
+        },
+        {
+          "text": "[VSCode] Fixed typed text being lost after /tasks, /copy, /export, a skipped /feedback, or /plan while already in plan mode",
+          "cleanText": "Fixed typed text being lost after /tasks, /copy, /export, a skipped /feedback, or /plan while already in plan mode",
+          "scope": "VSCode",
+          "actionType": "Fixed",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Le texte saisi n'est plus perdu lors de l'utilisation de diverses commandes slash."
+          }
+        },
+        {
+          "text": "[VSCode] Fixed the question card dropping a typed \"Other\" answer on Ctrl/Cmd+Enter, and sending the word \"Other\" when nothing was typed",
+          "cleanText": "Fixed the question card dropping a typed \"Other\" answer on Ctrl/Cmd+Enter, and sending the word \"Other\" when nothing was typed",
+          "scope": "VSCode",
+          "actionType": "Fixed",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Correction du comportement erroné de la carte de question lors de la saisie d'une réponse 'Autre'."
+          }
+        },
+        {
+          "text": "[VSCode] Fixed the panel showing \"Something went wrong\" for a conversation in which a gateway sent a tool call with no name",
+          "cleanText": "Fixed the panel showing \"Something went wrong\" for a conversation in which a gateway sent a tool call with no name",
+          "scope": "VSCode",
+          "actionType": "Fixed",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "agents",
+            "impact": "mineur",
+            "resume": "Correction d'une erreur 'Something went wrong' liée à des appels d'outils mal nommés."
+          }
+        },
+        {
+          "text": "[VSCode] Fixed unsaved changes being missed, and Claude's edit being overwritten by the next save, in a folder opened through a symlink",
+          "cleanText": "Fixed unsaved changes being missed, and Claude's edit being overwritten by the next save, in a folder opened through a symlink",
+          "scope": "VSCode",
+          "actionType": "Fixed",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "agents",
+            "impact": "notable",
+            "resume": "Les modifications non sauvegardées et les liens symboliques (symlinks) sont désormais correctement gérés."
+          }
+        },
+        {
+          "text": "[VSCode] Fixed @-mentions attaching nothing, or another file of the same name, after Claude changed folders with `cd`",
+          "cleanText": "Fixed @-mentions attaching nothing, or another file of the same name, after Claude changed folders with `cd`",
+          "scope": "VSCode",
+          "actionType": "Fixed",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "agents",
+            "impact": "notable",
+            "resume": "Les mentions @ sont désormais correctement associées aux fichiers après un changement de dossier."
+          }
+        },
+        {
+          "text": "[VSCode] Fixed the arrow keys replacing typed text with an old prompt while selecting, and dropping edits to a recalled prompt",
+          "cleanText": "Fixed the arrow keys replacing typed text with an old prompt while selecting, and dropping edits to a recalled prompt",
+          "scope": "VSCode",
+          "actionType": "Fixed",
+          "tags": [
+            "Terminal & UX"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Correction des touches fléchées qui remplaçaient le texte saisi par d'anciens prompts."
+          }
+        },
+        {
+          "text": "[VSCode] Fixed an @-mention added while a permission prompt was open being lost",
+          "cleanText": "Fixed an @-mention added while a permission prompt was open being lost",
+          "scope": "VSCode",
+          "actionType": "Fixed",
+          "tags": [
+            "Security & Governance",
+            "Terminal & UX"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Les mentions @ ajoutées pendant une demande de permission ne sont plus perdues."
+          }
+        },
+        {
+          "text": "[VSCode] Fixed shortcuts such as Ctrl+1, Alt+1 or Ctrl+Space answering an open dialog, which could restore files in the rewind confirmation or switch the git branch",
+          "cleanText": "Fixed shortcuts such as Ctrl+1, Alt+1 or Ctrl+Space answering an open dialog, which could restore files in the rewind confirmation or switch the git branch",
+          "scope": "VSCode",
+          "actionType": "Fixed",
+          "tags": [
+            "Terminal & UX"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "interface",
+            "impact": "notable",
+            "resume": "Correction des raccourcis clavier qui déclenchaient des actions imprévues dans les boîtes de dialogue."
+          }
+        },
+        {
+          "text": "[VSCode] Fixed prompts that start with a file path or code comment being sent without the selected code and having no fork or rewind menu",
+          "cleanText": "Fixed prompts that start with a file path or code comment being sent without the selected code and having no fork or rewind menu",
+          "scope": "VSCode",
+          "actionType": "Fixed",
+          "tags": [
+            "Terminal & UX"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "agents",
+            "impact": "notable",
+            "resume": "Les prompts commençant par un chemin de fichier incluent désormais correctement le code sélectionné."
+          }
+        },
+        {
+          "text": "[VSCode] Fixed file links in the chat ignoring your editor associations for files in the workspace, except notebooks (anthropics/claude-code#81482)",
+          "cleanText": "Fixed file links in the chat ignoring your editor associations for files in the workspace, except notebooks (anthropics/claude-code#81482)",
+          "scope": "VSCode",
+          "actionType": "Fixed",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Les liens de fichiers dans le chat respectent désormais vos associations d'éditeurs habituelles."
+          }
+        },
+        {
+          "text": "[VSCode] Fixed selected lines staying attached to your next message after their file's tab was closed",
+          "cleanText": "Fixed selected lines staying attached to your next message after their file's tab was closed",
+          "scope": "VSCode",
+          "actionType": "Fixed",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Les lignes sélectionnées ne restent plus attachées à votre message si l'onglet du fichier est fermé."
+          }
+        },
+        {
+          "text": "[VSCode] Fixed new sessions starting in Edit automatically after pressing Shift+Tab through it to reach Plan mode",
+          "cleanText": "Fixed new sessions starting in Edit automatically after pressing Shift+Tab through it to reach Plan mode",
+          "scope": "VSCode",
+          "actionType": "Fixed",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "agents",
+            "impact": "mineur",
+            "resume": "Correction du passage automatique en mode Edit lors de la navigation entre les modes."
+          }
+        },
+        {
+          "text": "[VSCode] Fixed an edited command on the permission prompt running without the line breaks that were typed or pasted into it",
+          "cleanText": "Fixed an edited command on the permission prompt running without the line breaks that were typed or pasted into it",
+          "scope": "VSCode",
+          "actionType": "Fixed",
+          "tags": [
+            "Security & Governance",
+            "Terminal & UX"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Les sauts de ligne sont désormais préservés dans les commandes éditées via les demandes de permission."
+          }
+        },
+        {
+          "text": "[VSCode] Fixed a newly opened Claude tab not focusing its message box, or taking the keyboard late from the terminal or command palette and sending the typed text as a prompt",
+          "cleanText": "Fixed a newly opened Claude tab not focusing its message box, or taking the keyboard late from the terminal or command palette and sending the typed text as a prompt",
+          "scope": "VSCode",
+          "actionType": "Fixed",
+          "tags": [
+            "Terminal & UX"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Correction du focus clavier lors de l'ouverture d'un nouvel onglet Claude."
+          }
+        },
+        {
+          "text": "[VSCode] Fixed Alt+K line ranges such as `@app.ts#5-10` sending the whole file, or its first 2,000 lines, instead of the selected lines",
+          "cleanText": "Fixed Alt+K line ranges such as `@app.ts#5-10` sending the whole file, or its first 2,000 lines, instead of the selected lines",
+          "scope": "VSCode",
+          "actionType": "Fixed",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "agents",
+            "impact": "notable",
+            "resume": "La sélection de plages de lignes (ex: #5-10) envoie désormais uniquement les lignes choisies."
+          }
+        },
+        {
+          "text": "[VSCode] Fixed diff tabs opening out of order when several subagents wait for approval, and a later edit to the same file cancelling an earlier one",
+          "cleanText": "Fixed diff tabs opening out of order when several subagents wait for approval, and a later edit to the same file cancelling an earlier one",
+          "scope": "VSCode",
+          "actionType": "Fixed",
+          "tags": [
+            "Multi-Agent & Workflows",
+            "Terminal & UX"
+          ],
+          "impact": "High",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Correction de l'ordre des onglets de diff et des annulations d'éditions lors de l'utilisation de sous-agents."
+          }
+        },
+        {
+          "text": "[VSCode] Fixed Enter rewriting a message or running a menu action when a `/word` such as the path `/api` stands beside other text, and running a typed slash command without its arguments",
+          "cleanText": "Fixed Enter rewriting a message or running a menu action when a `/word` such as the path `/api` stands beside other text, and running a typed slash command without its arguments",
+          "scope": "VSCode",
+          "actionType": "Fixed",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Correction de la touche Entrée qui déclenchait mal des commandes slash ou réécrivait des messages avec des chemins de fichiers."
+          }
+        },
+        {
+          "text": "[VSCode] Fixed Electron apps and extension tests failing to start from Claude, a hook or an MCP server; a wrapper, hook or server that runs VS Code as Node must now set `ELECTRON_RUN_AS_NODE=1`",
+          "cleanText": "Fixed Electron apps and extension tests failing to start from Claude, a hook or an MCP server; a wrapper, hook or server that runs VS Code as Node must now set `ELECTRON_RUN_AS_NODE=1`",
+          "scope": "VSCode",
+          "actionType": "Fixed",
+          "tags": [
+            "MCP & Tools",
+            "IDE & Cloud Ubiquity",
+            "Plugins & Skills"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "mcp",
+            "impact": "mineur",
+            "resume": "Résolution des problèmes de lancement d'applications Electron et de tests d'extensions via Claude ou un serveur MCP."
+          }
+        },
+        {
+          "text": "[VSCode] Fixed Claude not being told when you reject part of a proposed edit or change it in the diff view before accepting",
+          "cleanText": "Fixed Claude not being told when you reject part of a proposed edit or change it in the diff view before accepting",
+          "scope": "VSCode",
+          "actionType": "Fixed",
+          "tags": [
+            "Terminal & UX"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "agents",
+            "impact": "notable",
+            "resume": "Claude est désormais informé lorsque vous rejetez ou modifiez une partie d'une proposition d'édition."
+          }
+        },
+        {
+          "text": "[VSCode] Fixed Escape on a permission prompt sending a half-typed instruction to Claude instead of cancelling",
+          "cleanText": "Fixed Escape on a permission prompt sending a half-typed instruction to Claude instead of cancelling",
+          "scope": "VSCode",
+          "actionType": "Fixed",
+          "tags": [
+            "Security & Governance",
+            "Terminal & UX"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "securite",
+            "impact": "mineur",
+            "resume": "La touche Échap annule désormais correctement une demande de permission au lieu d'envoyer un message incomplet."
+          }
+        },
+        {
+          "text": "[VSCode] Fixed Ctrl+J and Ctrl+O in the chat also opening VS Code's terminal or Open File dialog on Windows and Linux",
+          "cleanText": "Fixed Ctrl+J and Ctrl+O in the chat also opening VS Code's terminal or Open File dialog on Windows and Linux",
+          "scope": "VSCode",
+          "actionType": "Fixed",
+          "tags": [
+            "IDE & Cloud Ubiquity",
+            "Terminal & UX"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Correction des raccourcis Ctrl+J et Ctrl+O qui ouvraient par erreur des fonctions natives de VS Code."
+          }
+        },
+        {
+          "text": "[VSCode] Fixed the @ menu inserting the wrong file on a quick Tab or Enter, and Enter not sending a prompt that ends in an @word with no matching file",
+          "cleanText": "Fixed the @ menu inserting the wrong file on a quick Tab or Enter, and Enter not sending a prompt that ends in an @word with no matching file",
+          "scope": "VSCode",
+          "actionType": "Fixed",
+          "tags": [
+            "Terminal & UX"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Correction du menu @ pour la sélection de fichiers et l'envoi de messages se terminant par une mention."
+          }
+        },
+        {
+          "text": "[VSCode] Fixed new Claude tabs staying blank and the side bar failing to load after closing a tab while Claude was still starting",
+          "cleanText": "Fixed new Claude tabs staying blank and the side bar failing to load after closing a tab while Claude was still starting",
+          "scope": "VSCode",
+          "actionType": "Fixed",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Correction des onglets Claude vides et de la barre latérale qui ne chargeait pas après la fermeture d'un onglet."
+          }
+        },
+        {
+          "text": "[VSCode] Fixed a quick double click in the panel pressing a button or row that appeared after the first click, or starting a second compaction from the context usage circle",
+          "cleanText": "Fixed a quick double click in the panel pressing a button or row that appeared after the first click, or starting a second compaction from the context usage circle",
+          "scope": "VSCode",
+          "actionType": "Fixed",
+          "tags": [
+            "Terminal & UX"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Correction des erreurs de clic double dans le panneau de contrôle et de l'usage du cercle de consommation."
+          }
+        },
+        {
+          "text": "[VSCode] Fixed switching models failing with \"Settings file is not valid JSON\" when settings.json is empty or starts with a byte order mark",
+          "cleanText": "Fixed switching models failing with \"Settings file is not valid JSON\" when settings.json is empty or starts with a byte order mark",
+          "scope": "VSCode",
+          "actionType": "Fixed",
+          "tags": [
+            "Models & Intelligence"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Correction de l'erreur de fichier de configuration JSON invalide lorsque le fichier settings.json est vide."
+          }
+        },
+        {
+          "text": "[VSCode] Fixed memory growing with each fork or rewind of a long conversation until the window was reloaded",
+          "cleanText": "Fixed memory growing with each fork or rewind of a long conversation until the window was reloaded",
+          "scope": "VSCode",
+          "actionType": "Fixed",
+          "tags": [
+            "Performance & Reliability"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "performance",
+            "impact": "notable",
+            "resume": "Correction d'une fuite de mémoire lors de l'utilisation de l'historique dans de longues conversations."
+          }
+        },
+        {
+          "text": "[VSCode] Fixed plan comments not showing on the plan approval card in Focus view",
+          "cleanText": "Fixed plan comments not showing on the plan approval card in Focus view",
+          "scope": "VSCode",
+          "actionType": "Fixed",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Les commentaires de plan s'affichent désormais correctement sur la carte d'approbation en mode Focus."
+          }
+        },
+        {
+          "text": "[VSCode] Fixed file links without a line number moving the cursor of an open file to line 1",
+          "cleanText": "Fixed file links without a line number moving the cursor of an open file to line 1",
+          "scope": "VSCode",
+          "actionType": "Fixed",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Correction du curseur qui revenait à la ligne 1 lors du clic sur des liens de fichiers sans numéro de ligne."
+          }
+        },
+        {
+          "text": "[VSCode] Fixed a missing notification when a conversation running behind another one in the same panel needs a permission or an answer",
+          "cleanText": "Fixed a missing notification when a conversation running behind another one in the same panel needs a permission or an answer",
+          "scope": "VSCode",
+          "actionType": "Fixed",
+          "tags": [
+            "Security & Governance"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Ajout d'une notification quand une conversation en arrière-plan nécessite une permission ou une réponse."
+          }
+        },
+        {
+          "text": "[VSCode] Fixed Manage Plugins not loading when Claude Code is slow to start or fails to start, so a plugin that blocks startup can be turned off",
+          "cleanText": "Fixed Manage Plugins not loading when Claude Code is slow to start or fails to start, so a plugin that blocks startup can be turned off",
+          "scope": "VSCode",
+          "actionType": "Fixed",
+          "tags": [
+            "Plugins & Skills",
+            "Performance & Reliability"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "mcp",
+            "impact": "notable",
+            "resume": "La gestion des plugins est désormais accessible même si Claude Code ou un plugin bloque le démarrage."
+          }
+        },
+        {
+          "text": "[VSCode] Fixed proposed diffs showing and saving garbled non-ASCII text when `files.encoding` is not UTF-8",
+          "cleanText": "Fixed proposed diffs showing and saving garbled non-ASCII text when `files.encoding` is not UTF-8",
+          "scope": "VSCode",
+          "actionType": "Fixed",
+          "tags": [
+            "Terminal & UX"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Correction de l'affichage de texte corrompu dans les diffs lorsque l'encodage n'est pas en UTF-8."
+          }
+        },
+        {
+          "text": "[VSCode] Fixed approved edits and writes saving right-to-left marks as literal `\\u200F` escapes on lines with Hebrew, Arabic or Persian text",
+          "cleanText": "Fixed approved edits and writes saving right-to-left marks as literal `\\u200F` escapes on lines with Hebrew, Arabic or Persian text",
+          "scope": "VSCode",
+          "actionType": "Fixed",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Correction de l'enregistrement des caractères de droite à gauche (arabe, hébreu, etc.) dans les éditions approuvées."
+          }
+        },
+        {
+          "text": "[VSCode] Fixed a model pick being ignored for the next message when Claude's process had ended or was still starting",
+          "cleanText": "Fixed a model pick being ignored for the next message when Claude's process had ended or was still starting",
+          "scope": "VSCode",
+          "actionType": "Fixed",
+          "tags": [
+            "Models & Intelligence"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "modeles",
+            "impact": "mineur",
+            "resume": "Correction d'un problème où le choix du modèle était ignoré après le redémarrage du processus Claude."
+          }
+        },
+        {
+          "text": "[VSCode] Fixed Rewind showing \"No active session\" after Claude's process had ended",
+          "cleanText": "Fixed Rewind showing \"No active session\" after Claude's process had ended",
+          "scope": "VSCode",
+          "actionType": "Fixed",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Correction du message 'No active session' dans l'historique après la fin du processus Claude."
+          }
+        },
+        {
+          "text": "[VSCode] Fixed typing @ leaving a helper process running per tab when no browser is connected, except when Claude in Chrome's service can't be reached",
+          "cleanText": "Fixed typing @ leaving a helper process running per tab when no browser is connected, except when Claude in Chrome's service can't be reached",
+          "scope": "VSCode",
+          "actionType": "Fixed",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "performance",
+            "impact": "mineur",
+            "resume": "Optimisation des processus d'aide à la saisie @ pour éviter les processus fantômes sans navigateur."
+          }
+        },
+        {
+          "text": "[VSCode] Fixed the session list opening every transcript at once, which stalled the editor's extensions and could leave sessions out in projects with many sessions",
+          "cleanText": "Fixed the session list opening every transcript at once, which stalled the editor's extensions and could leave sessions out in projects with many sessions",
+          "scope": "VSCode",
+          "actionType": "Fixed",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "performance",
+            "impact": "notable",
+            "resume": "Correction du chargement massif de toutes les sessions qui pouvait ralentir l'éditeur."
+          }
+        },
+        {
+          "text": "[VSCode] Improved the time to the first reply in a new folder when the Python extension is installed and the folder has no Python",
+          "cleanText": "Improved the time to the first reply in a new folder when the Python extension is installed and the folder has no Python",
+          "scope": "VSCode",
+          "actionType": "Improved",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "performance",
+            "impact": "mineur",
+            "resume": "Réduction du temps de réponse initial dans les dossiers sans Python malgré l'extension installée."
+          }
+        },
+        {
+          "text": "[VSCode] Improved the sign-in screen to say when it opened because a request was refused",
+          "cleanText": "Improved the sign-in screen to say when it opened because a request was refused",
+          "scope": "VSCode",
+          "actionType": "Improved",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Amélioration de l'écran de connexion pour indiquer clairement les erreurs de requête refusée."
+          }
+        },
+        {
+          "text": "[VSCode] Improved the speed of opening, restoring and switching back to long conversations, most of all with many file edits or where git is slow",
+          "cleanText": "Improved the speed of opening, restoring and switching back to long conversations, most of all with many file edits or where git is slow",
+          "scope": "VSCode",
+          "actionType": "Improved",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "performance",
+            "impact": "notable",
+            "resume": "Accélération de l'ouverture et de la commutation entre les longues conversations avec beaucoup d'éditions."
+          }
+        },
+        {
+          "text": "[VSCode] Improved responsiveness in long chats: smooth typing and large file writes while a reply streams, faster permission prompts, and far less freezing on send with accessibility support on",
+          "cleanText": "Improved responsiveness in long chats: smooth typing and large file writes while a reply streams, faster permission prompts, and far less freezing on send with accessibility support on",
+          "scope": "VSCode",
+          "actionType": "Improved",
+          "tags": [
+            "Security & Governance",
+            "Performance & Reliability",
+            "Terminal & UX"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "performance",
+            "impact": "notable",
+            "resume": "Amélioration de la fluidité de saisie et de la réactivité des demandes de permission dans les longs chats."
+          }
+        },
+        {
+          "text": "[VSCode] Improved startup and memory use: the panel and new chat tabs open faster, a first message in a new tab is answered sooner, and on Pro and Max plans the folder trust dialog comes up sooner",
+          "cleanText": "Improved startup and memory use: the panel and new chat tabs open faster, a first message in a new tab is answered sooner, and on Pro and Max plans the folder trust dialog comes up sooner",
+          "scope": "VSCode",
+          "actionType": "Improved",
+          "tags": [
+            "Security & Governance",
+            "Performance & Reliability",
+            "Terminal & UX"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "performance",
+            "impact": "notable",
+            "resume": "Démarrage plus rapide de l'interface VSCode et réponse accélérée du premier message dans un nouvel onglet."
+          }
+        },
+        {
+          "text": "[VSCode] Improved speed in remote windows (SSH, WSL, containers): the panel starts, replies appear and sessions reopen faster",
+          "cleanText": "Improved speed in remote windows (SSH, WSL, containers): the panel starts, replies appear and sessions reopen faster",
+          "scope": "VSCode",
+          "actionType": "Improved",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "performance",
+            "impact": "notable",
+            "resume": "Amélioration de la réactivité et de la vitesse d'affichage lors de l'utilisation de VSCode en mode distant (SSH, WSL, conteneurs)."
+          }
+        },
+        {
+          "text": "[VSCode] Improved the time to a response for the first message after a chat has been idle for a few minutes on a machine that is low on memory",
+          "cleanText": "Improved the time to a response for the first message after a chat has been idle for a few minutes on a machine that is low on memory",
+          "scope": "VSCode",
+          "actionType": "Improved",
+          "tags": [
+            "Performance & Reliability"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "performance",
+            "impact": "mineur",
+            "resume": "Réduction du temps de réponse du premier message après une période d'inactivité sur les machines à faible mémoire."
+          }
+        },
+        {
+          "text": "[VSCode] Improved how fast chats start, open from history and come back after a restart on slow or antivirus-scanned disks",
+          "cleanText": "Improved how fast chats start, open from history and come back after a restart on slow or antivirus-scanned disks",
+          "scope": "VSCode",
+          "actionType": "Improved",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "performance",
+            "impact": "notable",
+            "resume": "Accélération de l'ouverture des chats et de l'historique, même sur des disques lents ou scannés par un antivirus."
+          }
+        },
+        {
+          "text": "[VSCode] Improved how fast diffs appear in reopened conversations, and removed diff menu entries that did not work",
+          "cleanText": "Improved how fast diffs appear in reopened conversations, and removed diff menu entries that did not work",
+          "scope": "VSCode",
+          "actionType": "Improved",
+          "tags": [
+            "Terminal & UX"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "Affichage plus rapide des différences (diffs) dans les conversations et suppression de menus inutiles."
+          }
+        },
+        {
+          "text": "[VSCode] Improved the @ file menu to list the files of open editor tabs first, the most recently used on top",
+          "cleanText": "Improved the @ file menu to list the files of open editor tabs first, the most recently used on top",
+          "scope": "VSCode",
+          "actionType": "Improved",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "interface",
+            "impact": "notable",
+            "resume": "Le menu @ file priorise désormais les fichiers des onglets ouverts et les fichiers récemment utilisés."
+          }
+        },
+        {
+          "text": "[VSCode] Changed saving a proposed diff to accept it only after you click or type in its proposed (right) side; a notification says when a save is refused or a close with Save applies nothing",
+          "cleanText": "Changed saving a proposed diff to accept it only after you click or type in its proposed (right) side; a notification says when a save is refused or a close with Save applies nothing",
+          "scope": "VSCode",
+          "actionType": "Changed",
+          "tags": [
+            "Terminal & UX"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "interface",
+            "impact": "notable",
+            "resume": "Sécurisation de l'application des diffs : l'acceptation nécessite désormais une interaction directe dans la zone de modification."
+          }
+        },
+        {
+          "text": "[VSCode] Changed diffs from a terminal session to open without moving keyboard focus, and beside a file with unsaved changes; to answer, click Accept or use the terminal",
+          "cleanText": "Changed diffs from a terminal session to open without moving keyboard focus, and beside a file with unsaved changes; to answer, click Accept or use the terminal",
+          "scope": "VSCode",
+          "actionType": "Changed",
+          "tags": [
+            "Terminal & UX"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "interface",
+            "impact": "notable",
+            "resume": "L'ouverture des diffs depuis le terminal ne déplace plus le focus clavier et s'affiche à côté des fichiers non enregistrés."
+          }
+        },
+        {
+          "text": "[VSCode] Changed permission cards to show only Yes and No when `allowManagedPermissionRulesOnly` is set and the card would offer an allow rule; key 2 on those cards now answers No",
+          "cleanText": "Changed permission cards to show only Yes and No when `allowManagedPermissionRulesOnly` is set and the card would offer an allow rule; key 2 on those cards now answers No",
+          "scope": "VSCode",
+          "actionType": "Changed",
+          "tags": [
+            "Security & Governance"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "securite",
+            "impact": "mineur",
+            "resume": "Simplification de l'affichage des cartes de permission et ajustement du comportement de la touche 2."
+          }
+        },
+        {
+          "text": "[VSCode] Changed a Claude tab to ignore Enter and show a notice when its Find box has lost the keyboard",
+          "cleanText": "Changed a Claude tab to ignore Enter and show a notice when its Find box has lost the keyboard",
+          "scope": "VSCode",
+          "actionType": "Changed",
+          "tags": [
+            "General Core"
+          ],
+          "impact": "Medium",
+          "version": "2.1.331",
+          "date": "2026-11-23",
+          "ia": {
+            "domaine": "interface",
+            "impact": "mineur",
+            "resume": "L'onglet Claude ignore désormais la touche Entrée si la boîte de recherche n'a pas le focus clavier."
+          }
+        }
+      ]
+    },
     {
       "version": "2.1.330",
       "date": "November 20, 2026",
