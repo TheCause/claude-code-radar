@@ -32002,6 +32002,1056 @@
    "impact": "mineur",
    "resume": "L'onglet Claude ignore désormais la touche Entrée si la boîte de recherche n'a pas le focus clavier.",
    "le": "2026-11-24T06:04:47Z"
+  },
+  "e93dc3909f58c94b": {
+   "version": "2.1.332",
+   "domaine": "mcp",
+   "impact": "majeur",
+   "resume": "Les compétences des serveurs MCP sont désormais accessibles via le menu de commandes avec un préfixe spécifique.",
+   "le": "2026-11-25T06:00:40Z"
+  },
+  "6f0b3f7bb23895dc": {
+   "version": "2.1.332",
+   "domaine": "hooks_config",
+   "impact": "notable",
+   "resume": "Nouveau hook permettant de bloquer des commandes shell avant leur exécution lors du chargement d'une compétence.",
+   "le": "2026-11-25T06:00:40Z"
+  },
+  "55a2e2d410c4cdea": {
+   "version": "2.1.332",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Option 'Always deliver' ajoutée pour garantir l'envoi des messages en attente provenant d'autres sessions.",
+   "le": "2026-11-25T06:00:40Z"
+  },
+  "562608300adeb8e0": {
+   "version": "2.1.332",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Un indicateur en pied de page signale si votre session utilise un modèle différent de celui sélectionné.",
+   "le": "2026-11-25T06:00:40Z"
+  },
+  "2a7456db94fed453": {
+   "version": "2.1.332",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "Ajout d'un événement de télémétrie pour suivre les réponses textuelles de l'assistant si le logging est actif.",
+   "le": "2026-11-25T06:00:40Z"
+  },
+  "909bb58ac9fb1e11": {
+   "version": "2.1.332",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Avertissement dans VS Code et Desktop si une session ne peut pas être sauvegardée, avec conseil d'utiliser /compact.",
+   "le": "2026-11-25T06:00:40Z"
+  },
+  "802d271aae35f270": {
+   "version": "2.1.332",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Notification dans l'interface si l'historique des messages d'une session reprise n'a pas pu être chargé.",
+   "le": "2026-11-25T06:00:40Z"
+  },
+  "6aae2e30f9128fc5": {
+   "version": "2.1.332",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Affichage de votre niveau d'accès au programme de vérification Cyber dans l'en-tête de démarrage.",
+   "le": "2026-11-25T06:00:40Z"
+  },
+  "24875d60d1bc8e01": {
+   "version": "2.1.332",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Correction de l'authentification : l'outil signale désormais correctement les erreurs de sauvegarde de session.",
+   "le": "2026-11-25T06:00:40Z"
+  },
+  "3111fe7c934fdfd1": {
+   "version": "2.1.332",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Évite les blocages lors de la lecture de fichiers (comme .env) sur des flux de données inactifs.",
+   "le": "2026-11-25T06:00:40Z"
+  },
+  "51fbd2163a425efe": {
+   "version": "2.1.332",
+   "domaine": "modeles",
+   "impact": "notable",
+   "resume": "Correction des erreurs de limite de contexte qui bloquaient la session malgré la possibilité de compacter.",
+   "le": "2026-11-25T06:00:40Z"
+  },
+  "ee98dc68b7b1735d": {
+   "version": "2.1.332",
+   "domaine": "modeles",
+   "impact": "notable",
+   "resume": "Amélioration de la compaction : demande un résumé plus court si le précédent dépasse la limite de sortie.",
+   "le": "2026-11-25T06:00:40Z"
+  },
+  "c5560dcb38a8ab23": {
+   "version": "2.1.332",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "Correction d'un gel lors de la vérification de règles de permission complexes avec des caractères génériques.",
+   "le": "2026-11-25T06:00:40Z"
+  },
+  "469a42de64d3c260": {
+   "version": "2.1.332",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Correction des gels et de la consommation excessive de mémoire causés par des hooks produisant un flux infini.",
+   "le": "2026-11-25T06:00:40Z"
+  },
+  "9d9d37eeb756421e": {
+   "version": "2.1.332",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Évite les gels et dépassements de contexte en tronquant les logs trop volumineux lors de l'usage de hooks.",
+   "le": "2026-11-25T06:00:40Z"
+  },
+  "13928a195a21ef75": {
+   "version": "2.1.332",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Empêche le terminal de geler ou d'ignorer le Ctrl+C si un serveur MCP sature la sortie standard.",
+   "le": "2026-11-25T06:00:40Z"
+  },
+  "2fd15e6d505339a2": {
+   "version": "2.1.332",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "Correction d'un gel causé par des chaînes de caractères très longues sans espace après un symbole @.",
+   "le": "2026-11-25T06:00:40Z"
+  },
+  "4161efb6956b2fb0": {
+   "version": "2.1.332",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "Correction d'un gel lors de l'utilisation de la fonction 'rewind' après la modification d'un gros fichier.",
+   "le": "2026-11-25T06:00:40Z"
+  },
+  "0006b5aa9c7a3114": {
+   "version": "2.1.332",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Correction des serveurs MCP SSE qui restaient bloqués après une déconnexion ou un changement d'endpoint.",
+   "le": "2026-11-25T06:00:40Z"
+  },
+  "f4da46e6b7f4c8af": {
+   "version": "2.1.332",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Correction de l'état de session dans Remote Control qui restait 'en cours' pendant une attente de dialogue.",
+   "le": "2026-11-25T06:00:40Z"
+  },
+  "45dfed997ce4d946": {
+   "version": "2.1.332",
+   "domaine": "modeles",
+   "impact": "notable",
+   "resume": "Correction de l'affichage erroné des limites d'utilisation déjà réinitialisées sur les clients distants.",
+   "le": "2026-11-25T06:00:40Z"
+  },
+  "97550a8c54ee0521": {
+   "version": "2.1.332",
+   "domaine": "hooks_config",
+   "impact": "notable",
+   "resume": "Évite l'envoi redondant des fichiers de règles et CLAUDE.md lors du passage dans un nouveau worktree.",
+   "le": "2026-11-25T06:00:40Z"
+  },
+  "20a3fc26eede8d24": {
+   "version": "2.1.332",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction du résumé des sessions où des appels d'outils refusés étaient comptés comme exécutés.",
+   "le": "2026-11-25T06:00:40Z"
+  },
+  "b5359323c513e6f3": {
+   "version": "2.1.332",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Linux : Correction de l'affichage des diffs Bash pour les liens symboliques inchangés.",
+   "le": "2026-11-25T06:00:40Z"
+  },
+  "e9d4633b1f15800e": {
+   "version": "2.1.332",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "Correction des lenteurs lors de la reprise d'une session contenant des lignes de transcription corrompues.",
+   "le": "2026-11-25T06:00:40Z"
+  },
+  "2c9706e501187400": {
+   "version": "2.1.332",
+   "domaine": "modeles",
+   "impact": "mineur",
+   "resume": "Correction du paramètre de repli du modèle lorsqu'une version spécifique est indisponible.",
+   "le": "2026-11-25T06:00:50Z"
+  },
+  "07c0be245b8846e6": {
+   "version": "2.1.332",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Suppression des ralentissements de saisie lors de la lecture de longs historiques ou de logs volumineux.",
+   "le": "2026-11-25T06:00:50Z"
+  },
+  "aea6678856843d9c": {
+   "version": "2.1.332",
+   "domaine": "modeles",
+   "impact": "notable",
+   "resume": "Correction des échecs de session liés à l'indisponibilité du modèle par défaut sur le cloud.",
+   "le": "2026-11-25T06:00:50Z"
+  },
+  "56b82b32498f988a": {
+   "version": "2.1.332",
+   "domaine": "modeles",
+   "impact": "notable",
+   "resume": "Amélioration de la gestion du repli vers un modèle inférieur sur Google Cloud et Foundry.",
+   "le": "2026-11-25T06:00:50Z"
+  },
+  "1c07e28724f5208f": {
+   "version": "2.1.332",
+   "domaine": "modeles",
+   "impact": "notable",
+   "resume": "Correction de l'échec du modèle Opus sur Bedrock et Google Cloud via une meilleure gestion du repli.",
+   "le": "2026-11-25T06:00:50Z"
+  },
+  "f6115b67d410f66f": {
+   "version": "2.1.332",
+   "domaine": "modeles",
+   "impact": "mineur",
+   "resume": "Correction de l'affichage du modèle proposé lors de la mise à jour sur Bedrock et Google Cloud.",
+   "le": "2026-11-25T06:00:50Z"
+  },
+  "0e5298cd5c08b0c7": {
+   "version": "2.1.332",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Les sous-agents Bedrock utilisent désormais le profil du modèle si celui du parent est absent.",
+   "le": "2026-11-25T06:00:50Z"
+  },
+  "378340f6ac1889b0": {
+   "version": "2.1.332",
+   "domaine": "modeles",
+   "impact": "notable",
+   "resume": "Meilleure gestion des restrictions de modèles sur Foundry en utilisant la version autorisée la plus récente.",
+   "le": "2026-11-25T06:00:50Z"
+  },
+  "e901d96783a415e2": {
+   "version": "2.1.332",
+   "domaine": "modeles",
+   "impact": "mineur",
+   "resume": "Correction de l'alias Sonnet sur Bedrock pour pointer vers la bonne version.",
+   "le": "2026-11-25T06:00:50Z"
+  },
+  "cf4b9b69250347c4": {
+   "version": "2.1.332",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Correction du comportement de Ctrl+C pour l'arrêt des agents et la sortie du terminal.",
+   "le": "2026-11-25T06:00:50Z"
+  },
+  "904385d64c56378e": {
+   "version": "2.1.332",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction d'un bug de sélection dans le flux d'installation de l'application GitHub.",
+   "le": "2026-11-25T06:00:50Z"
+  },
+  "f44e9123f7d1b190": {
+   "version": "2.1.332",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Correction de la perte de texte lors de la dictée dépassant 10 000 caractères.",
+   "le": "2026-11-25T06:00:50Z"
+  },
+  "19cd4b52db1282ad": {
+   "version": "2.1.332",
+   "domaine": "modeles",
+   "impact": "mineur",
+   "resume": "Amélioration de la clarté des messages d'erreur lors des échecs de réponse API.",
+   "le": "2026-11-25T06:00:50Z"
+  },
+  "e81e7187289f43fb": {
+   "version": "2.1.332",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "La touche Échap permet désormais d'arrêter l'utilisation de l'ordinateur sur macOS, même si une autre app est au premier plan.",
+   "le": "2026-11-25T06:00:50Z"
+  },
+  "7aa77a048ba78516": {
+   "version": "2.1.332",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "Correction d'un blocage rare lors de l'exécution de commandes d'aide dépassant le délai imparti.",
+   "le": "2026-11-25T06:00:50Z"
+  },
+  "2d3499e95561214d": {
+   "version": "2.1.332",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction d'un problème d'affichage du pied de page en mode plein écran lors de la sélection de texte.",
+   "le": "2026-11-25T06:00:50Z"
+  },
+  "ac101186afea77c3": {
+   "version": "2.1.332",
+   "domaine": "hooks_config",
+   "impact": "notable",
+   "resume": "Affichage correct de la raison des hooks PreToolUse lors des demandes d'accès aux fichiers.",
+   "le": "2026-11-25T06:00:50Z"
+  },
+  "df4f31ffc34a1d81": {
+   "version": "2.1.332",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "Évite l'accumulation de dossiers temporaires lors de l'échec du téléchargement de plugins.",
+   "le": "2026-11-25T06:00:50Z"
+  },
+  "5659d2e54de918f1": {
+   "version": "2.1.332",
+   "domaine": "hooks_config",
+   "impact": "mineur",
+   "resume": "Correction de l'ignorance du paramètre d'effort lors de sessions interactives avec environnement.",
+   "le": "2026-11-25T06:00:50Z"
+  },
+  "2b3964b3c109f9c5": {
+   "version": "2.1.332",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Correction du signal de fin prématuré des appels d'agents dans les sessions cloud et headless.",
+   "le": "2026-11-25T06:00:50Z"
+  },
+  "266c101328a5b105": {
+   "version": "2.1.332",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Les serveurs MCP locaux conservent désormais le bon ID de session après un redémarrage.",
+   "le": "2026-11-25T06:00:50Z"
+  },
+  "6f5a4b3ea851559c": {
+   "version": "2.1.332",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "Optimisation de la compaction des données pour les utilisateurs sous leurs limites hebdomadaires.",
+   "le": "2026-11-25T06:00:50Z"
+  },
+  "f445e7dbcbc880e4": {
+   "version": "2.1.332",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Claude peut désormais lire les fichiers mentionnés même si leur début dépasse la limite de lecture.",
+   "le": "2026-11-25T06:00:50Z"
+  },
+  "2b63da3926050566": {
+   "version": "2.1.332",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Correction du message d'erreur indiquant la mauvaise commande pour recharger les plugins.",
+   "le": "2026-11-25T06:00:50Z"
+  },
+  "c20c57548465a46b": {
+   "version": "2.1.332",
+   "domaine": "autre",
+   "impact": "notable",
+   "resume": "Correction des échecs de clonage Git sur les sessions avec des configurations Git spécifiques.",
+   "le": "2026-11-25T06:00:50Z"
+  },
+  "38b0e7833bb897ff": {
+   "version": "2.1.332",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction d'une erreur de limite d'utilisation s'affichant par erreur au début de certaines réponses.",
+   "le": "2026-11-25T06:00:58Z"
+  },
+  "771af1b2547cd372": {
+   "version": "2.1.332",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Les conversations reprises après un crash ne perdent plus leurs derniers messages sur les plateformes tierces.",
+   "le": "2026-11-25T06:00:58Z"
+  },
+  "626dc5c17c632a3f": {
+   "version": "2.1.332",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction de l'enregistrement de notebooks invalides lors du changement de type de cellule.",
+   "le": "2026-11-25T06:00:58Z"
+  },
+  "65f560bc42adac9b": {
+   "version": "2.1.332",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Restauration de la liste des fichiers à charger pour les longs README de systèmes de design.",
+   "le": "2026-11-25T06:00:58Z"
+  },
+  "90eb5337f71e62f8": {
+   "version": "2.1.332",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Support d'identifiants de tâches MCP beaucoup plus longs (jusqu'à 1024 caractères).",
+   "le": "2026-11-25T06:00:58Z"
+  },
+  "c2da75604ede0da9": {
+   "version": "2.1.332",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "Correction de la détection de Git pour les exécuteurs auto-hébergés.",
+   "le": "2026-11-25T06:00:58Z"
+  },
+  "0cbf1769627e144a": {
+   "version": "2.1.332",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Correction de la gestion des identifiants de tâches pour éviter la réutilisation de tâches supprimées.",
+   "le": "2026-11-25T06:00:58Z"
+  },
+  "27f513b3ce7d2811": {
+   "version": "2.1.332",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de l'affichage des doublons dans l'historique plein écran lors de messages simultanés.",
+   "le": "2026-11-25T06:00:58Z"
+  },
+  "4301d5b0d567436e": {
+   "version": "2.1.332",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Correction des blocages de Code Mode lors de l'utilisation de listes ou de tableaux très volumineux.",
+   "le": "2026-11-25T06:00:58Z"
+  },
+  "8f3c78f4246ce693": {
+   "version": "2.1.332",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Amélioration de la gestion de la touche Échap pour ne pas perdre de messages en cours de saisie.",
+   "le": "2026-11-25T06:00:58Z"
+  },
+  "b245a476b14017a3": {
+   "version": "2.1.332",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Meilleure communication sur l'état des commandes lentes passant en arrière-plan.",
+   "le": "2026-11-25T06:00:58Z"
+  },
+  "5fd672fc7bfa9255": {
+   "version": "2.1.332",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Correction des délais d'attente excessifs sur des commandes déjà arrêtées.",
+   "le": "2026-11-25T06:00:58Z"
+  },
+  "e854e1831396a89a": {
+   "version": "2.1.332",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction de l'exécution des commandes shell inline après un script en arrière-plan.",
+   "le": "2026-11-25T06:00:58Z"
+  },
+  "856d9778743c6a01": {
+   "version": "2.1.332",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Correction de la perte de la dernière réponse de Claude lors de la reprise de sessions interrompues.",
+   "le": "2026-11-25T06:00:58Z"
+  },
+  "b41930882c38c286": {
+   "version": "2.1.332",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de l'état 'inactif' affiché lors de l'exécution de la commande /compact.",
+   "le": "2026-11-25T06:00:58Z"
+  },
+  "92278f0aeeb3a44b": {
+   "version": "2.1.332",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction de la perte du statut 'nécessite une saisie' dans Claude Desktop.",
+   "le": "2026-11-25T06:00:58Z"
+  },
+  "36a4106e48acb71d": {
+   "version": "2.1.332",
+   "domaine": "autre",
+   "impact": "notable",
+   "resume": "Amélioration de la précision et des options de recherche de la commande Grep.",
+   "le": "2026-11-25T06:00:58Z"
+  },
+  "f65701435ddf9e0c": {
+   "version": "2.1.332",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de la gestion des raccourcis clavier lors de la suppression de combinaisons.",
+   "le": "2026-11-25T06:00:58Z"
+  },
+  "68683740502f0637": {
+   "version": "2.1.332",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction d'une erreur de chargement lors du passage d'une session vide en arrière-plan.",
+   "le": "2026-11-25T06:00:58Z"
+  },
+  "a79b3e5134cf2802": {
+   "version": "2.1.332",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Suppression des rapports d'erreur inutiles pour les serveurs MCP non activés.",
+   "le": "2026-11-25T06:00:58Z"
+  },
+  "cd4e71b35749fd09": {
+   "version": "2.1.332",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Correction de l'impossibilité d'arrêter une commande Bash dans les gros dépôts Git.",
+   "le": "2026-11-25T06:00:58Z"
+  },
+  "883f7b6e4abf6f3a": {
+   "version": "2.1.332",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction du comportement des liens et chemins d'images collés tardivement.",
+   "le": "2026-11-25T06:00:58Z"
+  },
+  "9898c2df75172095": {
+   "version": "2.1.332",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Correction du comptage des serveurs intégrés non activés dans les commandes MCP.",
+   "le": "2026-11-25T06:00:58Z"
+  },
+  "3cb259fb541c5f11": {
+   "version": "2.1.332",
+   "domaine": "hooks_config",
+   "impact": "mineur",
+   "resume": "Correction du message d'erreur lors de l'interruption d'un hook de type 'turn.step'.",
+   "le": "2026-11-25T06:00:58Z"
+  },
+  "4721e5dd630a4ca8": {
+   "version": "2.1.332",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Correction des faux rapports de corruption du fichier de configuration lors d'une sauvegarde simultanée.",
+   "le": "2026-11-25T06:00:58Z"
+  },
+  "d9ff54fabd4eb00b": {
+   "version": "2.1.332",
+   "domaine": "agents",
+   "impact": "mineur",
+   "resume": "Correction des erreurs de recherche web liées aux listes de domaines autorisés ou bloqués.",
+   "le": "2026-11-25T06:01:05Z"
+  },
+  "4954493fa7e3ea56": {
+   "version": "2.1.332",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "La reprise d'un workflow en pause en mode Code est désormais plus fluide et rapide.",
+   "le": "2026-11-25T06:01:05Z"
+  },
+  "0fbd84322fc4ad62": {
+   "version": "2.1.332",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Correction du blocage des sous-agents lors de l'exécution de scripts longs en mode Code.",
+   "le": "2026-11-25T06:01:05Z"
+  },
+  "e7ce929a6cdf996d": {
+   "version": "2.1.332",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "L'ajout de plugins sur Windows est plus robuste face aux scans antivirus temporaires.",
+   "le": "2026-11-25T06:01:05Z"
+  },
+  "89ee7021d000f2e4": {
+   "version": "2.1.332",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Amélioration de la stabilité de Claude Code sur les PC d'entreprise sous Windows.",
+   "le": "2026-11-25T06:01:05Z"
+  },
+  "c257424c7ed58cd4": {
+   "version": "2.1.332",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "L'autorisation d'enregistrement d'écran permet désormais de redémarrer et reprendre le chat.",
+   "le": "2026-11-25T06:01:05Z"
+  },
+  "3e2019bc163125e6": {
+   "version": "2.1.332",
+   "domaine": "modeles",
+   "impact": "notable",
+   "resume": "L'utilisation de l'ordinateur consomme moins de contexte avant d'être réellement activée.",
+   "le": "2026-11-25T06:01:05Z"
+  },
+  "e777535b6f9011f1": {
+   "version": "2.1.332",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Les erreurs de proxy ou de compression sont désormais affichées de manière lisible.",
+   "le": "2026-11-25T06:01:05Z"
+  },
+  "ba1c3e01512e12ff": {
+   "version": "2.1.332",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "L'affichage de la commande /context est optimisé pour le plein écran.",
+   "le": "2026-11-25T06:01:05Z"
+  },
+  "1ae5168f8207ced3": {
+   "version": "2.1.332",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "La commande /usage est plus rapide et consomme moins de mémoire sur les gros historiques.",
+   "le": "2026-11-25T06:01:05Z"
+  },
+  "ffc03492f445e02e": {
+   "version": "2.1.332",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "La commande /permissions refuse désormais les règles inefficaces et explique pourquoi.",
+   "le": "2026-11-25T06:01:05Z"
+  },
+  "dff080518a8b0cf2": {
+   "version": "2.1.332",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Claude est prévenu lors d'une reprise de session que les variables de script sont perdues.",
+   "le": "2026-11-25T06:01:05Z"
+  },
+  "90ba81588bd0af9a": {
+   "version": "2.1.332",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Amélioration de la gestion des changements de travail et des artefacts en mode Code.",
+   "le": "2026-11-25T06:01:05Z"
+  },
+  "9828aa277e90eaf7": {
+   "version": "2.1.332",
+   "domaine": "mcp",
+   "impact": "notable",
+   "resume": "Les descriptions d'outils MCP longs sont mieux affichées pour éviter les erreurs d'appel.",
+   "le": "2026-11-25T06:01:05Z"
+  },
+  "cd74ff18a5fed258": {
+   "version": "2.1.332",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Sur Linux, le message d'erreur pour le copier-coller suggère désormais le bon paquet.",
+   "le": "2026-11-25T06:01:05Z"
+  },
+  "813dc6c61b81f769": {
+   "version": "2.1.332",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Meilleure récupération des conversations longues derrière un proxy limitant la taille des requêtes.",
+   "le": "2026-11-25T06:01:05Z"
+  },
+  "bd20764289dd5001": {
+   "version": "2.1.332",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Accélération de la recherche de fichiers (Glob) sur Windows grâce au parallélisme.",
+   "le": "2026-11-25T06:01:05Z"
+  },
+  "418f1cb84326c747": {
+   "version": "2.1.332",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "Réduction de la consommation mémoire lors de la reprise de longues conversations.",
+   "le": "2026-11-25T06:01:05Z"
+  },
+  "ce0b6ac0d32483f1": {
+   "version": "2.1.332",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "Moins de mémoire utilisée au démarrage avec des serveurs MCP contenant beaucoup d'outils.",
+   "le": "2026-11-25T06:01:05Z"
+  },
+  "845c1a4e73a3755a": {
+   "version": "2.1.332",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "Optimisation de la mémoire au lancement des sessions via le SDK ou l'option -p.",
+   "le": "2026-11-25T06:01:05Z"
+  },
+  "39e09060019e9e70": {
+   "version": "2.1.332",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Mise à jour des règles de sécurité sur macOS, impactant la vitesse de frappe.",
+   "le": "2026-11-25T06:01:05Z"
+  },
+  "775bf7ca3846c495": {
+   "version": "2.1.332",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Activation automatique du mode auto pour certaines plateformes utilisant Sonnet 5/5.5.",
+   "le": "2026-11-25T06:01:05Z"
+  },
+  "a8c561348e49f347": {
+   "version": "2.1.332",
+   "domaine": "modeles",
+   "impact": "notable",
+   "resume": "Mise à jour des alias de modèles vers Sonnet 5.5 sur Google Cloud et Microsoft Foundry.",
+   "le": "2026-11-25T06:01:05Z"
+  },
+  "b490e71135d80053": {
+   "version": "2.1.332",
+   "domaine": "modeles",
+   "impact": "notable",
+   "resume": "Le modèle par défaut sur Microsoft Foundry passe désormais à Sonnet 5.5.",
+   "le": "2026-11-25T06:01:05Z"
+  },
+  "acb14b591a74aaf8": {
+   "version": "2.1.332",
+   "domaine": "modeles",
+   "impact": "mineur",
+   "resume": "Ajustement de la configuration régionale pour les requêtes Sonnet sur Google Cloud.",
+   "le": "2026-11-25T06:01:05Z"
+  },
+  "04771a9a3a9a8783": {
+   "version": "2.1.332",
+   "domaine": "modeles",
+   "impact": "notable",
+   "resume": "En cas d'indisponibilité, le système bascule sur un modèle plus ancien au lieu de s'arrêter avec une erreur.",
+   "le": "2026-11-25T06:01:15Z"
+  },
+  "e39de6993c70614e": {
+   "version": "2.1.332",
+   "domaine": "modeles",
+   "impact": "notable",
+   "resume": "Les modèles Sonnet 4 et Opus 4 sont désormais considérés comme obsolètes, avec des avertissements de retrait.",
+   "le": "2026-11-25T06:01:15Z"
+  },
+  "584c567b39cbc501": {
+   "version": "2.1.332",
+   "domaine": "modeles",
+   "impact": "notable",
+   "resume": "Mise à jour de la liste des modèles par défaut, incluant l'arrivée de Sonnet 5.5.",
+   "le": "2026-11-25T06:01:15Z"
+  },
+  "c0a8d0aa5e59515a": {
+   "version": "2.1.332",
+   "domaine": "modeles",
+   "impact": "mineur",
+   "resume": "Les messages via SDK ou commande sont désormais comptabilisés comme des messages utilisateur par défaut.",
+   "le": "2026-11-25T06:01:15Z"
+  },
+  "cc23f9ae10acab63": {
+   "version": "2.1.332",
+   "domaine": "agents",
+   "impact": "majeur",
+   "resume": "Le nom 'computer-use' est désormais réservé sur Mac ; il faut renommer vos propres compétences ou commandes portant ce nom.",
+   "le": "2026-11-25T06:01:15Z"
+  },
+  "57b862807a99acf0": {
+   "version": "2.1.332",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "Changement du nom de service OpenTelemetry par défaut pour les sessions de l'onglet Code sur desktop.",
+   "le": "2026-11-25T06:01:15Z"
+  },
+  "43a668172704ae1e": {
+   "version": "2.1.332",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Réduction de la visibilité des données dans les logs OpenTelemetry pour ne montrer que la longueur du texte envoyé.",
+   "le": "2026-11-25T06:01:15Z"
+  },
+  "063db8878dca8096": {
+   "version": "2.1.332",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Mise à jour du support des nouveaux préfixes de jetons OAuth et masquage complet de la valeur pour la sécurité.",
+   "le": "2026-11-25T06:01:15Z"
+  },
+  "9d2c04728709b54a": {
+   "version": "2.1.332",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "La configuration du runner auto-hébergé demande maintenant la clé d'environnement de manière masquée dans le terminal.",
+   "le": "2026-11-25T06:01:15Z"
+  },
+  "11248772f4ddd179": {
+   "version": "2.1.332",
+   "domaine": "modeles",
+   "impact": "mineur",
+   "resume": "L'onglet Code de Claude Desktop ignore désormais les identifiants de modèles personnalisés ne commençant pas par 'claude'.",
+   "le": "2026-11-25T06:01:15Z"
+  },
+  "0b75e149e3f51b42": {
+   "version": "2.1.332",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "L'ajustement automatique de la fenêtre de contexte est désormais géré via la commande /autocompact.",
+   "le": "2026-11-25T06:01:15Z"
+  },
+  "95077959f5e7b5a7": {
+   "version": "2.1.332",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Le mode plan demande désormais une approbation au lieu de refuser si la sécurité ne peut pas juger une commande.",
+   "le": "2026-11-25T06:01:15Z"
+  },
+  "7c3249ce475e388f": {
+   "version": "2.1.332",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Les touches PgUp et Home sélectionnent désormais 'Non' pour les questions de suppression destructive.",
+   "le": "2026-11-25T06:01:15Z"
+  },
+  "7f1c454ee9fe430e": {
+   "version": "2.1.332",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Amélioration de l'interface de brouillon pour la commande /feedback dans le terminal.",
+   "le": "2026-11-25T06:01:15Z"
+  },
+  "5f2ecd5f4a761f0b": {
+   "version": "2.1.332",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "La dictée vocale en mode tap reste active plus longtemps avant de s'éteindre automatiquement.",
+   "le": "2026-11-25T06:01:15Z"
+  },
+  "fae321d5f72b368e": {
+   "version": "2.1.332",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Amélioration de la gestion de l'arrêt de la dictée vocale lors de l'envoi ou de l'édition du texte.",
+   "le": "2026-11-25T06:01:15Z"
+  },
+  "6bd86fb1cdc04150": {
+   "version": "2.1.332",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Clarification de la terminologie pour les tâches planifiées dans le cloud.",
+   "le": "2026-11-25T06:01:15Z"
+  },
+  "55d59f009d619a56": {
+   "version": "2.1.332",
+   "domaine": "modeles",
+   "impact": "notable",
+   "resume": "Le changement de modèle sur mobile ou web conserve désormais votre niveau d'effort personnalisé.",
+   "le": "2026-11-25T06:01:15Z"
+  },
+  "5f569eaa60190a9e": {
+   "version": "2.1.332",
+   "domaine": "hooks_config",
+   "impact": "mineur",
+   "resume": "Ajustement de l'affichage des indices (hints) pour les hooks de modification de prompt.",
+   "le": "2026-11-25T06:01:15Z"
+  },
+  "e3938832bb8ca7b8": {
+   "version": "2.1.332",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "L'exportation des identifiants AWS expire désormais après 10 minutes au lieu d'attendre indéfiniment.",
+   "le": "2026-11-25T06:01:15Z"
+  },
+  "23363584c3bad024": {
+   "version": "2.1.332",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "[VSCode] Meilleure notification lorsque la fermeture d'un diff laisse une modification non appliquée.",
+   "le": "2026-11-25T06:01:15Z"
+  },
+  "14c5288b585ef679": {
+   "version": "2.1.332",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "[VSCode] Ajout d'un avertissement si l'utilisation de /rewind interrompt une boucle automatique.",
+   "le": "2026-11-25T06:01:15Z"
+  },
+  "4ab4bb5c7447c038": {
+   "version": "2.1.332",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "[VSCode] Affichage de la version installée dans la gestion des plugins.",
+   "le": "2026-11-25T06:01:15Z"
+  },
+  "ded02a1ea6878c63": {
+   "version": "2.1.332",
+   "domaine": "performance",
+   "impact": "mineur",
+   "resume": "[VSCode] Correction d'un blocage de l'interface lors de l'utilisation de la fonction Rewind.",
+   "le": "2026-11-25T06:01:15Z"
+  },
+  "effd5a5ba18dc31d": {
+   "version": "2.1.332",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "[VSCode] Correction de la navigation au clavier et de l'accessibilité dans le sélecteur de modèle.",
+   "le": "2026-11-25T06:01:15Z"
+  },
+  "0c827377d125d704": {
+   "version": "2.1.332",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction des erreurs de copie de lignes dans la vue diff de VS Code.",
+   "le": "2026-11-25T06:01:23Z"
+  },
+  "1b12962731b2ac79": {
+   "version": "2.1.332",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de divers problèmes d'affichage et d'interface dans VS Code.",
+   "le": "2026-11-25T06:01:23Z"
+  },
+  "5589ce4c1111b378": {
+   "version": "2.1.332",
+   "domaine": "securite",
+   "impact": "mineur",
+   "resume": "Correction du processus de déconnexion et ajout d'un bouton de logs en cas d'échec.",
+   "le": "2026-11-25T06:01:23Z"
+  },
+  "e5f4b2dcdac66e08": {
+   "version": "2.1.332",
+   "domaine": "agents",
+   "impact": "notable",
+   "resume": "Ajout d'une notification quand une tâche de fond ou un agent se termine.",
+   "le": "2026-11-25T06:01:23Z"
+  },
+  "eae643a8150f44a0": {
+   "version": "2.1.332",
+   "domaine": "autre",
+   "impact": "notable",
+   "resume": "Correction de bugs de sauvegarde et de mémoire sur les disques NTFS sous Windows 11.",
+   "le": "2026-11-25T06:01:23Z"
+  },
+  "cfeddabecf95a330": {
+   "version": "2.1.332",
+   "domaine": "mcp",
+   "impact": "mineur",
+   "resume": "Correction de l'affichage de succès lors d'erreurs de récupération Web.",
+   "le": "2026-11-25T06:01:23Z"
+  },
+  "af51f1f5b46d1573": {
+   "version": "2.1.332",
+   "domaine": "hooks_config",
+   "impact": "mineur",
+   "resume": "Correction de l'affichage des résumés de compaction dans l'historique.",
+   "le": "2026-11-25T06:01:23Z"
+  },
+  "3733af79277c686a": {
+   "version": "2.1.332",
+   "domaine": "hooks_config",
+   "impact": "mineur",
+   "resume": "Correction du paramètre ignorant les verbes de chargement (spinnerVerbs).",
+   "le": "2026-11-25T06:01:23Z"
+  },
+  "1f7dd7340cedf96c": {
+   "version": "2.1.332",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de l'affichage du texte de droite à gauche et des panneaux.",
+   "le": "2026-11-25T06:01:23Z"
+  },
+  "c1c24f02a0237f4a": {
+   "version": "2.1.332",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction d'un volet d'éditeur vide qui restait affiché après fermeture.",
+   "le": "2026-11-25T06:01:23Z"
+  },
+  "9f27a12c15cd43c3": {
+   "version": "2.1.332",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de la sauvegarde des noms de session et de l'accessibilité lecteur d'écran.",
+   "le": "2026-11-25T06:01:23Z"
+  },
+  "3c9687874b7fee16": {
+   "version": "2.1.332",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de l'affichage des notifications et de l'ordre des questions.",
+   "le": "2026-11-25T06:01:23Z"
+  },
+  "7a001143bb88c11c": {
+   "version": "2.1.332",
+   "domaine": "securite",
+   "impact": "notable",
+   "resume": "Correction des erreurs de connexion et d'authentification sans message.",
+   "le": "2026-11-25T06:01:23Z"
+  },
+  "5184af8ba0c19660": {
+   "version": "2.1.332",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction des sauts de chat et amélioration du compteur d'appels d'outils.",
+   "le": "2026-11-25T06:01:23Z"
+  },
+  "a2bafbfc10da0609": {
+   "version": "2.1.332",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction des liens vers les fichiers sans extension et les dossiers.",
+   "le": "2026-11-25T06:01:23Z"
+  },
+  "cbdc44ffa3a96525": {
+   "version": "2.1.332",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de l'ordre d'affichage des messages et fichiers lors de la réouverture.",
+   "le": "2026-11-25T06:01:23Z"
+  },
+  "cd0aaf6a71e1988c": {
+   "version": "2.1.332",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction d'un message d'erreur générique pour les résultats vides.",
+   "le": "2026-11-25T06:01:23Z"
+  },
+  "1c950f08a018f182": {
+   "version": "2.1.332",
+   "domaine": "modeles",
+   "impact": "mineur",
+   "resume": "Correction de l'affichage des pensées (thinking) masquées.",
+   "le": "2026-11-25T06:01:23Z"
+  },
+  "b767890e8e1a5cad": {
+   "version": "2.1.332",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction du soulignement lors de la saisie via une méthode d'entrée (IME).",
+   "le": "2026-11-25T06:01:23Z"
+  },
+  "c7c33caa0f418015": {
+   "version": "2.1.332",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Correction de la gestion des touches fléchées dans la zone de saisie.",
+   "le": "2026-11-25T06:01:23Z"
+  },
+  "d0138230a48fe963": {
+   "version": "2.1.332",
+   "domaine": "modeles",
+   "impact": "mineur",
+   "resume": "Correction du sélecteur de modèle avec la touche Tab.",
+   "le": "2026-11-25T06:01:23Z"
+  },
+  "3d542c00f48b4a15": {
+   "version": "2.1.332",
+   "domaine": "performance",
+   "impact": "notable",
+   "resume": "Amélioration de la vitesse d'ouverture, du streaming et des diagnostics.",
+   "le": "2026-11-25T06:01:23Z"
+  },
+  "d270d621881115ab": {
+   "version": "2.1.332",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Amélioration du retour à la ligne pour les commandes en texte brut.",
+   "le": "2026-11-25T06:01:23Z"
+  },
+  "c58f85f6bd935542": {
+   "version": "2.1.332",
+   "domaine": "interface",
+   "impact": "notable",
+   "resume": "Augmentation de la durée d'activation automatique du micro en dictée vocale.",
+   "le": "2026-11-25T06:01:23Z"
+  },
+  "82ec129c386d3be8": {
+   "version": "2.1.332",
+   "domaine": "interface",
+   "impact": "mineur",
+   "resume": "Amélioration de l'arrêt et de l'explication de la dictée vocale.",
+   "le": "2026-11-25T06:01:23Z"
   }
  }
 }
